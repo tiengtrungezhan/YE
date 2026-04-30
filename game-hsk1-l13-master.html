@@ -25,6 +25,9 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
@@ -63,7 +66,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "猫呢明号月午说ị在喜买老叫对个朋小见昨了生下儿后看现名七去钱系些n天杯面不作哪脑g语影他师医很没候少请雨回什岁学八字喂大住有十谁时前觉样中đ吃点年怎汉二那五客茶菜饭习星爱姐妈九么话这读起谢好睡 你同商家写会今h狗吗校喝和来她电椅再本友桌打国店热视米欢六想爸气三水我期ữ院一块子工关果书是太人冷多几女四们里上";
+                        const cumulativeChars = "我妈习客二同块吃觉不狗医来校钱会喂怎工商电星h米院热这中生午写回里对师学语明朋七杯五岁人小六店茶老作样冷有影候们八n好喝谢少什她爱月气书桌雨想菜汉住面昨现起话欢你下呢和九些多十字没子爸果见椅猫太哪đ个友名四水三睡买关ị姐是那本在叫年今g么后前ữ系女饭期儿看再家说号请大读天谁去上几时吗一很点 视他国打喜脑了";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

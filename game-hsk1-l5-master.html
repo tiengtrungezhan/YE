@@ -25,6 +25,9 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
@@ -63,7 +66,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "他师再友呢没九么国什岁ị八六学老叫对朋字气大见我起ữ了谢好生有儿一 十谁你同名七关系她nđ中是人h汉多几二吗女不四们五客哪g语";
+                        const cumulativeChars = "我见六客二老同不ữ系女人有们儿八n好谢再哪什她đ友四名气大谁h中生汉几关ị吗是一起你没对师学语朋呢七五 九岁他叫么多十国g字了";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

@@ -99,6 +99,9 @@ def generate_hsk_games(level):
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <header class="game-header">
             <a href="game-hsk{level}.html" class="back-btn" style="position: absolute; left: 0; top: 0;">← Quay lại</a>
@@ -254,6 +257,9 @@ def generate_hsk_games(level):
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <a href="game-hsk{level}.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
@@ -488,6 +494,9 @@ def generate_hsk_games(level):
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <a href="game-hsk{level}.html" class="back-btn">← Quay lại</a>
         <div class="game-container">
@@ -707,6 +716,9 @@ def generate_hsk_games(level):
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <header class="game-header">
             <a href="game-hsk{level}.html" class="back-btn" style="position: absolute; left: 0; top: 0;">← Quay lại</a>

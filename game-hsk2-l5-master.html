@@ -25,6 +25,9 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
     <div class="page-container">
         <a href="game-hsk2.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
@@ -63,7 +66,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "病猫乐西呢送明号月错午说备ị在喜买老叫对个朋动机快小见昨高它了生长下为儿车问后看现名七去钱系些n服床件天杯面不作钟哪脑最纸要g语影他师非两医就很没候少牛眼请知表雨回粉什岁学八身字喂大住苹有认十睛谁时步边色前觉给识样中đ真息吃新点每年分汉怎颜二那五试客道茶菜饭可习得准星爱丈姐妈九么始以千坐药话旅手奶东这租读起谢衣报好也听能睡 游开你同已商家间接写外咖会左今h兴狗吗旁做踢考校喝和球来她电椅再本红运休友帮还桌打夫国店热视体米飞欢六跑忙日想爸气三绍介水我期ữ吧院经一都常块足子工晚亮关果书是太先人鱼啡冷多几女四们房里漂上早出";
+                        const cumulativeChars = "我妈习客二表送同块吃觉息不机狗医来校粉钱鱼能会喂怎就工商旅牛做身电星问h分米院睛热这中生乐午写先件服回里对兴师语明朋七杯学五知岁租备试它人小飞都店六茶听老长已外作边真样冷跑漂车有旁影候们八早n好喝谢少什她爱月也气书桌以雨想球菜识汉住面昨现运忙丈起话欢你下足道晚呢红左和九游些多十出脑字没子爸见果床椅每猫快亮给东太常哪đ个友名四坐水衣三病介药最睡眼买关ị姐是日动新咖西那啡本认考在叫年今g么帮后体颜前ữ系女饭色绍期为非儿休看始苹再家说高踢号请得大读天谁两去上千纸奶错几时手房吗一步很报夫接还要准点钟可 视他国打间吧喜开经了";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
