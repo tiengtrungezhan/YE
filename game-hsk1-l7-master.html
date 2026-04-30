@@ -32,7 +32,10 @@
         <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
             <div id="game-ui">
-                <div class="progress-container"><div class="progress-fill" id="progress"></div></div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div class="progress-container" style="margin-bottom: 0; flex: 1;"><div class="progress-fill" id="progress"></div></div>
+                    <div id="progress-text" style="font-weight: bold; color: var(--primary-dark); font-size: 1.1rem; min-width: 50px; text-align: right;"></div>
+                </div>
                 <div class="quiz-card" id="quiz-card"></div>
             </div>
             <div id="result-ui" class="result-screen">
@@ -66,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "我妈客二同不校会怎星h中生写对师学语朋七五岁人六老有们八n好谢什她月气书菜汉起你呢九多十字没见哪đ友四名关ị是叫今g么ữ系女期儿看再说号请大读天谁去几吗一很 他国了";
+                        const cumulativeChars = "叫五读很师nữ关十了妈没六见不哪书起汉友生七期再好月看 说有她什天么四语系客几同呢们大你朋八怎他我岁九h儿中老二去一星名谢国请ị今号校多女对会đ吗是写谁学菜气字g人";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
@@ -102,6 +105,7 @@
         function renderQuestion() {
             const q = questions[currentQuestion], card = document.getElementById('quiz-card'), progress = document.getElementById('progress');
             progress.style.width = (currentQuestion / totalQuestions) * 100 + '%';
+            document.getElementById('progress-text').innerText = (currentQuestion + 1) + '/' + totalQuestions;
             let html = '';
             if (q.type === 0) {
                 html = `<div class="question-text">Nghe và chọn từ đúng:</div><button class="audio-btn" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;

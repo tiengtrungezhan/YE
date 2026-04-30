@@ -32,7 +32,10 @@
         <a href="game-hsk2.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
             <div id="game-ui">
-                <div class="progress-container"><div class="progress-fill" id="progress"></div></div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div class="progress-container" style="margin-bottom: 0; flex: 1;"><div class="progress-fill" id="progress"></div></div>
+                    <div id="progress-text" style="font-weight: bold; color: var(--primary-dark); font-size: 1.1rem; min-width: 50px; text-align: right;"></div>
+                </div>
                 <div class="quiz-card" id="quiz-card"></div>
             </div>
             <div id="result-ui" class="result-screen">
@@ -66,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "我妈习客二同块吃觉不机狗医来校钱能会喂怎工商旅做电星h分米院睛热这中生午写先服回里对兴师语明朋七杯学五岁租它人小飞都店六茶听老作样冷漂车有影候们八n好喝谢少什她爱月也气书桌雨想球菜识汉住面昨现运起话欢你下足呢和九游些多十出脑字没子爸见果椅猫亮东太哪đ个友名四坐水衣三最睡眼买关ị姐是动新西那本认在叫年今g么后前ữ系女饭期为儿看苹再家说高踢号请得大读天谁去上几时吗一很要点钟 视他国打喜开了";
+                        const cumulativeChars = "视为喂习叫它五亮读出很师n钟买午ữ关先动苹医新十游电想了妈少没机本睛喜来分得眼爸开太漂坐六作见不哪书起吃茶个水商汉和爱兴友生子下七脑认期再好面喝月看能 说这有飞她前样什天么要四雨话杯语系旅客运几饭果识同工呢大你狗们朋住踢东八怎三他足我听姐回九睡岁租h西高家冷猫些儿热中老衣球二去钱一星块名谢国候做请也欢ị今上影时号校里那服多车对女会明đ现桌吗是在觉打写谁米院点后椅昨年都学小最气菜字g店人";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
@@ -102,6 +105,7 @@
         function renderQuestion() {
             const q = questions[currentQuestion], card = document.getElementById('quiz-card'), progress = document.getElementById('progress');
             progress.style.width = (currentQuestion / totalQuestions) * 100 + '%';
+            document.getElementById('progress-text').innerText = (currentQuestion + 1) + '/' + totalQuestions;
             let html = '';
             if (q.type === 0) {
                 html = `<div class="question-text">Nghe và chọn từ đúng:</div><button class="audio-btn" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;

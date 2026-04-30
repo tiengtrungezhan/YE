@@ -32,7 +32,10 @@
         <a href="game-hsk2.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
             <div id="game-ui">
-                <div class="progress-container"><div class="progress-fill" id="progress"></div></div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div class="progress-container" style="margin-bottom: 0; flex: 1;"><div class="progress-fill" id="progress"></div></div>
+                    <div id="progress-text" style="font-weight: bold; color: var(--primary-dark); font-size: 1.1rem; min-width: 50px; text-align: right;"></div>
+                </div>
                 <div class="quiz-card" id="quiz-card"></div>
             </div>
             <div id="result-ui" class="result-screen">
@@ -66,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "我吃觉钱牛第身热件诉让对语明五岁都老已室外样漂旁好少什月也以球菜识运丈话呢左和游羊没见椅给四路睡眼买ị新西题门考教帮后体等前系色非始汽苹踢得上千奶几步夫钟吧脑开妈客息机情所喂工做电星问舞中乐午写服师七杯公跳备它小六茶边找车早事n气桌汉现足道红些子果床告đ友衣介关是动走从饭期休看家大纸房一报要准他打间经二同块不狗医校粉商旅场院到这生先里兴学朋店慢长务有们八喝望希爱想住面忙起九十出字每亮常太迎水三病药最姐咖那本认条叫年白颜ữ黑绍再高行懂因号请读两去错时贵完肉远习送表来鱼能会怎就h分米睛离回知租试泳人飞听作真冷跑影候篮谢过班她书雨昨欢你下自晚多爸猫快东哪个名坐日啡在员今g斤么女为儿说司天谁手吗很接还共点可 视国喜了";
+                        const cumulativeChars = "自为叫过买ữ关贵苹了少等喜分斤日六哪书起水爱乐生下脑认面月能吧说她常运几床果纸踢大狗八休九高老衣事去一走晚做条今手那左非会明đ是在班觉谁后气菜店报颜它亮读n医想机完爸泳开色绍漂汽坐药兴友子再好 飞舞什四语送可肉接快忙怎三听睡西些热球懂第跑谢经篮影校场找慢错步问就椅年学g视五迎出跳师件钟动先身间电教帮没得始作不个和到七道看有早前么要话杯系客远饭识呢们以足公岁还表旁儿钱国候欢两ị考告号里服车对备吗知门外打体昨务都白题红喂习边很啡午丈路真新十游希因妈本睛来眼介望太室见牛吃茶商汉房行病期喝司这共员每长情样天雨旅同鱼工住你朋从东羊他我试准姐诉回租h离猫家冷黑奶中二星块名请也上已息时夫粉多女桌现给写米千院点让小最所咖字人";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
@@ -102,6 +105,7 @@
         function renderQuestion() {
             const q = questions[currentQuestion], card = document.getElementById('quiz-card'), progress = document.getElementById('progress');
             progress.style.width = (currentQuestion / totalQuestions) * 100 + '%';
+            document.getElementById('progress-text').innerText = (currentQuestion + 1) + '/' + totalQuestions;
             let html = '';
             if (q.type === 0) {
                 html = `<div class="question-text">Nghe và chọn từ đúng:</div><button class="audio-btn" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;

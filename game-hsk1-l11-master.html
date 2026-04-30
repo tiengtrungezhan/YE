@@ -32,7 +32,10 @@
         <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
         <div class="game-wrapper">
             <div id="game-ui">
-                <div class="progress-container"><div class="progress-fill" id="progress"></div></div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div class="progress-container" style="margin-bottom: 0; flex: 1;"><div class="progress-fill" id="progress"></div></div>
+                    <div id="progress-text" style="font-weight: bold; color: var(--primary-dark); font-size: 1.1rem; min-width: 50px; text-align: right;"></div>
+                </div>
                 <div class="quiz-card" id="quiz-card"></div>
             </div>
             <div id="result-ui" class="result-screen">
@@ -66,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "我妈客二同块吃不狗医校钱会怎工商电星h米院这中生午写回里对师学语明朋七杯五岁人小六店茶老作有影候们八n好喝谢少什她月气书想菜汉住面昨现起欢你下呢和九多十字没子爸见椅猫哪đ个友名四三买关ị是本在叫年今g么后前ữ系女饭期儿看再家说号请大读天谁去上几时吗一很点 他国喜脑了";
+                        const cumulativeChars = "叫五读很师n买午ữ关医十电想了妈少没本喜爸六作见不哪书起吃茶个商汉和友生子下七脑期再好面喝月看 说这有她前什天么四杯语系客几饭同工呢大你狗们朋住八怎三他我回九岁h猫家儿中老二去钱一星块名谢国候请欢ị今上影时号校里多女对会明đ现吗是在写谁米院点后椅昨年学小气菜字g店人";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
@@ -102,6 +105,7 @@
         function renderQuestion() {
             const q = questions[currentQuestion], card = document.getElementById('quiz-card'), progress = document.getElementById('progress');
             progress.style.width = (currentQuestion / totalQuestions) * 100 + '%';
+            document.getElementById('progress-text').innerText = (currentQuestion + 1) + '/' + totalQuestions;
             let html = '';
             if (q.type === 0) {
                 html = `<div class="question-text">Nghe và chọn từ đúng:</div><button class="audio-btn" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;
