@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - EZHAN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            background: var(--primary-light);
+            border-color: var(--primary-color);
+        }
+
+        .social-card i {
+            font-size: 2rem;
+            color: var(--primary-dark);
+        }
+
+        .social-card.facebook i { color: #1877F2; }
+        .social-card.tiktok i { color: #000000; }
+        .social-card.zalo i { color: #0068FF; }
+        .social-card.email i { color: #EA4335; }
+
+        .contact-form-container {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 32px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--glass-border);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--primary-dark);
+        }
+
+        input, select, textarea {
+            padding: 0.9rem 1.2rem;
+            border: 2px solid #edf2f7;
+            border-radius: 14px;
+            font-size: 1rem;
+            background: #f8fafc;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(165, 207, 218, 0.15);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.1rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(138, 184, 197, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn.loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        @media (max-width: 992px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            .social-links {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .success-message i {
+            font-size: 4rem;
+            color: #48BB78;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Quay lại trang chủ</a>
+        
+        <div class="contact-header" style="margin-bottom: 3rem; text-align: center;">
+            <h1 style="color: var(--primary-dark); font-size: 2.5rem; margin-bottom: 1rem;">Liên Hệ Với EZHAN</h1>
+            <p style="font-size: 1.1rem; opacity: 0.8;">Kết nối với chúng tôi để được tư vấn lộ trình học tiếng Trung hiệu quả nhất.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Left Side: Social Info -->
+            <div class="contact-info">
+                <h3 style="color: var(--text-color); margin-bottom: 0.5rem;">Thông tin liên hệ</h3>
+                <p style="margin-bottom: 1.5rem; line-height: 1.6;">Bạn có thể liên hệ trực tiếp qua các kênh mạng xã hội hoặc để lại lời nhắn qua form bên cạnh.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/tiengtrungezhan.edu.vn" target="_blank" class="social-card facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@chang.chang334" target="_blank" class="social-card tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>Tiktok</span>
+                    </a>
+                    <a href="https://zalo.me/0818004397" target="_blank" class="social-card zalo">
+                        <i class="fas fa-comment-sms"></i>
+                        <span>Zalo</span>
+                    </a>
+                    <a href="mailto:tiengtrungezhan@gmail.com" class="social-card email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+
+                <div style="margin-top: 2rem; background: var(--primary-light); padding: 1.5rem; border-radius: 20px; border-left: 5px solid var(--primary-dark);">
+                    <p style="font-weight: 600; color: var(--primary-dark);"><i class="fas fa-phone-alt"></i> Hotline/Zalo:</p>
+                    <p style="font-size: 1.2rem; font-weight: 700;">081 800 4397</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form-container">
+                <form id="ezhanContactForm" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Họ và tên</label>
+                            <input type="text" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label>SĐT</label>
+                            <input type="tel" name="phone" placeholder="081 800 xxxx" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Bạn đã học tiếng Trung bao lâu?</label>
+                            <select name="experience" required>
+                                <option value="" disabled selected>Chọn thời gian học</option>
+                                <option value="chưa học">Chưa học</option>
+                                <option value="dưới 3 tháng">Dưới 3 tháng</option>
+                                <option value="dưới 6 tháng">Dưới 6 tháng</option>
+                                <option value="dưới 1 năm">Dưới 1 năm</option>
+                                <option value="trên 1 năm">Trên 1 năm</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Khoá học bạn quan tâm</label>
+                            <select name="course" required>
+                                <option value="" disabled selected>Chọn khoá học</option>
+                                <option value="HSK">HSK</option>
+                                <option value="Giao tiếp">Giao tiếp</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Yêu cầu của bạn</label>
+                            <textarea name="message" rows="4" placeholder="Bạn muốn tư vấn thêm về điều gì?"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Gửi Tin Nhắn
+                    </button>
+                </form>
+
+                <div id="successMessage" class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <h2>Cảm ơn bạn!</h2>
+                    <p>Thông tin của bạn đã được gửi thành công. EZHAN sẽ liên hệ với bạn sớm nhất có thể!</p>
+                    <button onclick="location.reload()" style="margin-top: 1.5rem; background: var(--primary-color); border: none; padding: 0.8rem 1.5rem; border-radius: 12px; cursor: pointer; font-weight: 600;">Gửi tin nhắn khác</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('ezhanContactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Thay đổi trạng thái nút
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
+            submitBtn.classList.add('loading');
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                // URL này cần được thay thế bằng URL của Google Apps Script sau khi bạn deploy
+                // Tôi sẽ cung cấp script để bạn tạo URL này
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz_H_M_S_M_S_M_S_M_S/exec'; // Placeholder
+                
+                // Vì demo, tôi sẽ giả lập việc gửi thành công sau 1.5s
+                // Khi bạn có SCRIPT_URL thực tế, hãy bỏ comment phần fetch bên dưới
+                
+                /*
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Cần thiết cho Google Apps Script
+                    body: JSON.stringify(data)
+                });
+                */
+
+                // Giả lập delay
+                await new Promise(resolve => setTimeout(resolve, 1500));
+
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau hoặc liên hệ trực tiếp qua Zalo.');
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Gửi Tin Nhắn';
+                submitBtn.classList.remove('loading');
+            }
+        });
+    </script>
+</body>
+</html>

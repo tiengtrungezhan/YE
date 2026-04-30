@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZHAN - Từ Học Đến Hành | Tiếng Trung Pro</title>
+    <meta name="description" content="EZHAN - Nền tảng học tiếng Trung qua trò chơi cực thú vị. Từ 学 đến 习, từ học đến hành.">
+    
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Floating background elements for extra "wow" */
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--primary-color);
+            filter: blur(80px);
+            opacity: 0.2;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        .blob-1 { top: -100px; left: -100px; }
+        .blob-2 { bottom: -100px; right: -100px; }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo">EZHAN</div>
+            <div class="tagline">Từ <span>学</span> đến <span>习</span>, Từ học đến hành</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="options-container">
+            <a href="guide.html" class="option-card" id="btn-guide">
+                <div class="option-icon">
+                    <img src="mascot-guide.png" alt="Guide Icon">
+                </div>
+                <div class="option-text">
+                    <div class="option-title">Hướng Dẫn</div>
+                </div>
+            </a>
+
+            <a href="game.html" class="option-card" id="btn-game">
+                <div class="option-icon">
+                    <img src="mascot-game.png" alt="Game Icon">
+                </div>
+                <div class="option-text">
+                    <div class="option-title">Vào Game</div>
+                </div>
+            </a>
+
+            <a href="course.html" class="option-card" id="btn-course">
+                <div class="option-icon">
+                    <img src="mascot-course.png" alt="Course Icon">
+                </div>
+                <div class="option-text">
+                    <div class="option-title">Khoá Học</div>
+                </div>
+            </a>
+
+            <a href="contact.html" class="option-card" id="btn-contact">
+                <div class="option-icon">
+                    <img src="mascot-contact.png" alt="Contact Icon">
+                </div>
+                <div class="option-text">
+                    <div class="option-title">Liên Hệ</div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer style="padding: 2rem; text-align: center; opacity: 0.6; font-size: 0.9rem;">
+        &copy; 2026 EZHAN Team. All rights reserved.
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

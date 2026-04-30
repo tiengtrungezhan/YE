@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy Tìm Cặp Đôi - HSK 2 Bài 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #fdf2f8; }
+        .game-container { max-width: 800px; margin: 0 auto; padding: 2rem; text-align: center; }
+        .memory-grid { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 1rem; 
+            margin-top: 2rem; 
+        }
+        .memory-card {
+            aspect-ratio: 1/1;
+            background-color: var(--white);
+            cursor: pointer;
+            position: relative;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-weight: bold;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--primary-light);
+            transition: transform 0.2s, background-color 0.2s, opacity 0.6s, border-color 0.2s;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .memory-card:hover:not(.matched):not(.selected) {
+            border-color: var(--primary-color);
+            background-color: #f0f9ff;
+            transform: translateY(-2px);
+        }
+        .memory-card.hanzi {
+            font-size: 2rem;
+            color: var(--primary-dark);
+        }
+        .memory-card.selected {
+            background-color: var(--primary-light);
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        .memory-card.matched {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .stats {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+            display: flex;
+            justify-content: space-around;
+        }
+        .result-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.9);
+            z-index: 100;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .result-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .btn-restart {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+            .memory-grid { grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+            .memory-card { font-size: 0.9rem; }
+            .memory-card.hanzi { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="game-hsk2.html" class="back-btn">← Quay lại</a>
+        <div class="game-container">
+            <h1 style="color: var(--primary-dark); margin-bottom: 1rem;">Truy Tìm Cặp Đôi: Bài 7</h1>
+            <div class="stats">
+                <div>Lượt: <span id="moves">0</span></div>
+                <div>Thời gian: <span id="timer">0</span>s</div>
+                <div>Cặp: <span id="matches">0/8</span></div>
+            </div>
+            <div class="memory-grid" id="gameGrid"></div>
+        </div>
+    </div>
+
+    <div id="resultOverlay" class="result-overlay">
+        <div class="result-content" id="resultContent">
+            <!-- Content will be injected by JS -->
+        </div>
+    </div>
+
+    <script>
+        const allVocabulary = [{"hanzi": "教室", "pinyin": "jiàoshì", "meaning": "lớp học", "lesson": "7"}, {"hanzi": "机场", "pinyin": "jīchǎng", "meaning": "sân bay", "lesson": "7"}, {"hanzi": "路", "pinyin": "lù", "meaning": "đường", "lesson": "7"}, {"hanzi": "离", "pinyin": "lí", "meaning": "cách", "lesson": "7"}, {"hanzi": "公司", "pinyin": "gōngsī", "meaning": "công ty", "lesson": "7"}, {"hanzi": "远", "pinyin": "yuǎn", "meaning": "xa", "lesson": "7"}, {"hanzi": "公共汽车", "pinyin": "gōnggòng qìchē", "meaning": "xe buýt", "lesson": "7"}, {"hanzi": "小时", "pinyin": "xiǎoshí", "meaning": "tiếng đồng hồ", "lesson": "7"}, {"hanzi": "慢", "pinyin": "màn", "meaning": "chậm", "lesson": "7"}, {"hanzi": "快", "pinyin": "kuài", "meaning": "nhanh", "lesson": "7"}, {"hanzi": "过", "pinyin": "guò", "meaning": "qua, đón (lễ)", "lesson": "7"}, {"hanzi": "走", "pinyin": "zǒu", "meaning": "đi", "lesson": "7"}, {"hanzi": "到", "pinyin": "dào", "meaning": "đến", "lesson": "7"}];
+        let remainingWords = [...allVocabulary];
+        let currentRoundWords = [];
+        let cardsData = [];
+        let selectedCards = [];
+        let matchedPairs = 0;
+        let moves = 0;
+        let canSelect = true;
+        let timer = 0;
+        let timerInterval = null;
+        let gameStarted = false;
+
+        function initGame(isNewGame = true) {
+            if (isNewGame) {
+                remainingWords = [...allVocabulary].sort(() => Math.random() - 0.5);
+                moves = 0;
+                timer = 0;
+                gameStarted = false;
+                clearInterval(timerInterval);
+                document.getElementById('timer').innerText = '0';
+                document.getElementById('moves').innerText = '0';
+            }
+
+            const gameGrid = document.getElementById('gameGrid');
+            gameGrid.innerHTML = '';
+            cardsData = [];
+            
+            // Take up to 8 words for this round
+            currentRoundWords = remainingWords.splice(0, 8);
+
+            currentRoundWords.forEach((item, index) => {
+                cardsData.push({ id: index, content: item.hanzi, type: 'hanzi' });
+                cardsData.push({ id: index, content: item.meaning, type: 'meaning' });
+            });
+
+            cardsData.sort(() => Math.random() - 0.5);
+
+            cardsData.forEach((data) => {
+                const card = document.createElement('div');
+                card.className = `memory-card ${data.type}`;
+                card.innerText = data.content;
+                card.dataset.id = data.id;
+                
+                card.addEventListener('click', () => selectCard(card));
+                gameGrid.appendChild(card);
+            });
+
+            matchedPairs = 0;
+            selectedCards = [];
+            canSelect = true;
+            updateStats();
+        }
+
+        function startTimer() {
+            if (gameStarted) return;
+            gameStarted = true;
+            timerInterval = setInterval(() => {
+                timer++;
+                document.getElementById('timer').innerText = timer;
+            }, 1000);
+        }
+
+        function selectCard(card) {
+            if (!canSelect || card.classList.contains('selected') || card.classList.contains('matched')) return;
+
+            startTimer();
+            card.classList.add('selected');
+            selectedCards.push(card);
+
+            if (selectedCards.length === 2) {
+                moves++;
+                checkMatch();
+            }
+        }
+
+        function checkMatch() {
+            canSelect = false;
+            const [card1, card2] = selectedCards;
+            const isMatch = card1.dataset.id === card2.dataset.id;
+
+            if (isMatch) {
+                setTimeout(() => {
+                    card1.classList.add('matched');
+                    card2.classList.add('matched');
+                    matchedPairs++;
+                    updateStats();
+                    selectedCards = [];
+                    canSelect = true;
+                    
+                    if (matchedPairs === currentRoundWords.length) {
+                        if (remainingWords.length > 0) {
+                            showNextRoundPrompt();
+                        } else {
+                            clearInterval(timerInterval);
+                            showFinalResult();
+                        }
+                    }
+                }, 400);
+            } else {
+                setTimeout(() => {
+                    card1.classList.remove('selected');
+                    card2.classList.remove('selected');
+                    selectedCards = [];
+                    canSelect = true;
+                }, 600);
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('moves').innerText = moves;
+            document.getElementById('matches').innerText = `${matchedPairs}/${currentRoundWords.length}`;
+            document.getElementById('timer').innerText = timer;
+        }
+
+        function showNextRoundPrompt() {
+            const content = document.getElementById('resultContent');
+            content.innerHTML = `
+                <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1rem;">Xong hiệp này!</h2>
+                <p style="font-size: 1.1rem;">Còn ${remainingWords.length} từ vựng nữa.</p>
+                <button class="btn-restart" onclick="nextRound()">Tiếp tục hiệp kế</button>
+            `;
+            document.getElementById('resultOverlay').style.display = 'flex';
+        }
+
+        function showFinalResult() {
+            const content = document.getElementById('resultContent');
+            content.innerHTML = `
+                <h2 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 1rem;">Hoàn thành!</h2>
+                <p style="font-size: 1.2rem;">Bạn đã học hết từ vựng của bài này.</p>
+                <div style="margin: 1.5rem 0; font-weight: bold; font-size: 1.1rem;">
+                    Tổng thời gian: ${timer} giây<br>
+                    Tổng số lượt: ${moves}
+                </div>
+                <button class="btn-restart" onclick="resetGame()">Chơi Lại Từ Đầu</button>
+            `;
+            document.getElementById('resultOverlay').style.display = 'flex';
+        }
+
+        function nextRound() {
+            document.getElementById('resultOverlay').style.display = 'none';
+            initGame(false);
+        }
+
+        function resetGame() {
+            document.getElementById('resultOverlay').style.display = 'none';
+            initGame(true);
+        }
+
+        initGame();
+    </script>
+</body>
+</html>

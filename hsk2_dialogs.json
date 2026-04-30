@@ -1,0 +1,387 @@
+[
+  {
+    "lesson": 1,
+    "dialogs": [
+      {
+        "location": "Ở trường",
+        "content": "我要去北京旅游，你觉得什么时候去最好？九月去北京旅游最好。为什么？九月的北京天气不冷也不热。",
+        "lines": [
+          { "hanzi": "我要去北京旅游，你觉得什么时候去最好？", "pinyin": "Wǒ yào qù Běijīng lǚyóu, nǐ juéde shénme shíhou qù zuì hǎo?" },
+          { "hanzi": "九月去北京旅游最好。", "pinyin": "Jiǔyuè qù Běijīng lǚyóu zuì hǎo." },
+          { "hanzi": "为什么？", "pinyin": "Wèishénme?" },
+          { "hanzi": "九月的北京天气不冷也不热。", "pinyin": "Jiǔyuè de Běijīng tiānqì bù lěng yě bú rè." }
+        ]
+      },
+      {
+        "location": "Xem ảnh",
+        "content": "你喜欢什么运动？我最喜欢踢足球。下午我们一起去踢足球吧。好啊！",
+        "lines": [
+          { "hanzi": "你喜欢什么运动？", "pinyin": "Nǐ xǐhuān shénme yùndòng?" },
+          { "hanzi": "我最喜欢踢足球。", "pinyin": "Wǒ zuì xǐhuān tī zúqiú." },
+          { "hanzi": "下午我们一起去踢足球吧。", "pinyin": "Xiàwǔ wǒmen yìqǐ qù tī zúqiú ba." },
+          { "hanzi": "好啊！", "pinyin": "Hǎo a!" }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "dialogs": [
+      {
+        "location": "Ở sân vận động",
+        "content": "你很少生病，是不是喜欢运动？是啊，我每天早上都要出去跑步。你每天几点起床？我每天六点起床。",
+        "lines": [
+          { "hanzi": "你很少生病，是不是喜欢运动？", "pinyin": "Nǐ hěn shǎo shēngbìng, shì bú shì xǐhuān yùndòng?" },
+          { "hanzi": "是啊，我每天早上都要出去跑步。", "pinyin": "Shì a, wǒ měitiān zǎoshang dōu yào chūqu pǎobù." },
+          { "hanzi": "你每天几点起床？", "pinyin": "Nǐ měitiān jǐ diǎn qǐchuáng?" },
+          { "hanzi": "我每天六点起床。", "pinyin": "Wǒ měitiān liù diǎn qǐchuáng." }
+        ]
+      },
+      {
+        "location": "Trong bệnh viện",
+        "content": "吃药了吗？现在身体怎么样？吃了。现在好多了。什么时候能出院？医生说下个星期。",
+        "lines": [
+          { "hanzi": "吃药了吗？现在身体怎么样？", "pinyin": "Chī yào le ma? Xiànzài shēntǐ zěnmeyàng?" },
+          { "hanzi": "吃了。现在好多了。", "pinyin": "Chī le. Xiànzài hǎo duō le." },
+          { "hanzi": "什么时候能出院？", "pinyin": "Shénme shíhou néng chūyuàn?" },
+          { "hanzi": "医生说下个星期。", "pinyin": "Yīshēng shuō xià ge xīngqī." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 3,
+    "dialogs": [
+      {
+        "location": "Trong phòng",
+        "content": "这块手表是你的吗？不是我的。是我爸爸的。多少钱买的？三千多块。",
+        "lines": [
+          { "hanzi": "这块手表是你的吗？", "pinyin": "Zhè kuài shǒubiǎo shì nǐ de ma?" },
+          { "hanzi": "不是我的。是我爸爸的。", "pinyin": "Bú shì wǒ de. Shì wǒ bàba de." },
+          { "hanzi": "多少钱买的？", "pinyin": "Duōshao qián mǎi de?" },
+          { "hanzi": "三千多块。", "pinyin": "Sānqiān duō kuài." }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "这是谁的房间？是我和我丈夫的，旁边那个小的房间是我女儿的。你女儿的房间真漂亮！都是粉色的。是啊，粉色是我女儿最喜欢的颜色。",
+        "lines": [
+          { "hanzi": "这是谁的房间？", "pinyin": "Zhè shì shéi de fángjiān?" },
+          { "hanzi": "是我和我丈夫的，旁边那个小的房间是我女儿的。", "pinyin": "Shì wǒ hé wǒ zhàngfu de, pángbiān nàge xiǎo de fángjiān shì wǒ nǚ'ér de." },
+          { "hanzi": "你女儿的房间真漂亮！", "pinyin": "Nǐ nǚ'ér de fángjiān zhēn piàoliang!" },
+          { "hanzi": "都是粉色的。", "pinyin": "Dōu shì fěnsè de." },
+          { "hanzi": "是啊，粉色是我女儿最喜欢的颜色。", "pinyin": "Shì a, fěnsè shì wǒ nǚ'ér zuì xǐhuān de yánsè." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "生日快乐！这是送给你的。是什么？是一本书吗？对，这本书是我写的。太谢谢你了！",
+        "lines": [
+          { "hanzi": "生日快乐！这是送给你的。", "pinyin": "Shēngrì kuàilè! Zhè shì sòng gěi nǐ de." },
+          { "hanzi": "是什么？是一本书吗？", "pinyin": "Shì shénme? Shì yì běn shū ma?" },
+          { "hanzi": "对，这本书是我写的。", "pinyin": "Duì, zhè běn shū shì wǒ xiě de." },
+          { "hanzi": "太谢谢你了！", "pinyin": "Tài xièxie nǐ le!" }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "早上有你一个电话。电话是谁打的？不知道，是儿子接的。好，晚上我问一下儿子。",
+        "lines": [
+          { "hanzi": "早上有你一个电话。", "pinyin": "Zǎoshang yǒu nǐ yí ge diànhuà." },
+          { "hanzi": "电话是谁打的？", "pinyin": "Diànhuà shì shéi dǎ de?" },
+          { "hanzi": "不知道，是儿子接的。", "pinyin": "Bù zhīdào, shì érzi jiē de." },
+          { "hanzi": "好，晚上我问一下儿子。", "pinyin": "Hǎo, wǎnshang wǒ wèn yíxià érzi." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "晚上我们去饭馆吃饭，怎么样？我不想去外面吃，我想在家吃。那你准备做什么呢？就做你爱吃的鱼吧。",
+        "lines": [
+          { "hanzi": "晚上我们去饭馆吃饭，怎么样？", "pinyin": "Wǎnshang wǒmen qù fànguǎn chī fàn, zěnmeyàng?" },
+          { "hanzi": "我不想去外面吃，我想在家吃。", "pinyin": "Wǒ bù xiǎng qù wàimiàn chī, wǒ xiǎng zài jiā chī." },
+          { "hanzi": "那你准备做什么呢？", "pinyin": "Nà nǐ zhǔnbèi zuò shénme ne?" },
+          { "hanzi": "就做你爱吃的鱼吧。", "pinyin": "Jiù zuò nǐ ài chī de yú ba." }
+        ]
+      },
+      {
+        "location": "Ở cửa hàng",
+        "content": "帮我看一下这件衣服怎么样。颜色还可以，就是有点儿大。这件小的怎么样？这件不错，就买这件吧。",
+        "lines": [
+          { "hanzi": "帮我看一下这件衣服怎么样。", "pinyin": "Bāng wǒ kàn yíxià zhè jiàn yīfu zěnmeyàng." },
+          { "hanzi": "颜色还可以，就是有点儿大。", "pinyin": "Yánsè hái kěyǐ, jiùshì yǒudiǎnr dà." },
+          { "hanzi": "这件小的怎么样？", "pinyin": "Zhè jiàn xiǎo de zěnmeyàng?" },
+          { "hanzi": "这件不错，就买這件吧。", "pinyin": "Zhè jiàn búcuò, jiù mǎi zhè jiàn ba." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 6,
+    "dialogs": [
+      {
+        "location": "Ở trường",
+        "content": "你知道小王今天什么时候来学校吗？他已经来了。你怎么知道他来了？我在门外看见他的自行车了。",
+        "lines": [
+          { "hanzi": "你知道小王今天什么时候来学校吗？", "pinyin": "Nǐ zhīdào Xiǎo Wáng jīntiān shénme shíhou lái xuéxiào ma?" },
+          { "hanzi": "他已经来了。", "pinyin": "Tā yǐjīng lái le." },
+          { "hanzi": "你怎么知道 he came?", "pinyin": "Nǐ zěnme zhīdào tā lái le?" },
+          { "hanzi": "我在门外看见他的自行车了。", "pinyin": "Wǒ zài mén wài kànjiàn tā de zìxíngchē le." }
+        ]
+      },
+      {
+        "location": "Ở quán ăn",
+        "content": "今天的羊肉很好吃，你怎么不吃了？这个星期天天都吃羊肉，不想吃了。那你还想吃什么？来一点儿面条吧。",
+        "lines": [
+          { "hanzi": "今天的羊肉很好吃，你怎么不吃了？", "pinyin": "Jīntiān de yángròu hěn hǎochī, nǐ zěnme bù chī le?" },
+          { "hanzi": "这个星期天天都吃羊肉，不想吃了。", "pinyin": "Zhège xīngqī tiāntiān dōu chī yángròu, bù xiǎng chī le." },
+          { "hanzi": "那你还想吃什么？", "pinyin": "Nà nǐ hái xiǎng chī shénme?" },
+          { "hanzi": "来一点儿面条吧。", "pinyin": "Lái yìdiǎnr miàntiáo ba." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "大卫回来了吗？没有，他还在教室学习呢。已经九点多了，他怎么还在学习？明天有考试，他说今天要好好准备。",
+        "lines": [
+          { "hanzi": "大卫回来了吗？", "pinyin": "Dàwèi huílai le ma?" },
+          { "hanzi": "没有，他还在教室学习呢。", "pinyin": "Méiyǒu, tā hái zài jiàoshì xuéxí ne." },
+          { "hanzi": "已经九点多了，他怎么还在学习？", "pinyin": "Yǐjīng jiǔ diǎn duō le, tā zěnme hái zài xuéxí?" },
+          { "hanzi": "明天有考试，他说今天要好好准备。", "pinyin": "Míngtiān yǒu kǎoshì, tā shuō jīntiān yào hǎohǎo zhǔnbèi." }
+        ]
+      },
+      {
+        "location": "Trên đường ra sân bay",
+        "content": "你现在在哪儿呢？在去机场的路上。你已经到了吗？我下飞机了。你还有多长时间能到这儿？二十分钟就到。",
+        "lines": [
+          { "hanzi": "你现在在哪儿呢？", "pinyin": "Nǐ xiànzài zài nǎr ne?" },
+          { "hanzi": "在去机场的路上。", "pinyin": "Zài qù jīchǎng de lùshàng." },
+          { "hanzi": "你已经到了吗？", "pinyin": "Nǐ yǐjīng dào le ma?" },
+          { "hanzi": "我下飞机了。", "pinyin": "Wǒ xià fēijī le." },
+          { "hanzi": "你还有多长时间能到这儿？", "pinyin": "Nǐ hái yǒu duō cháng shíjiān néng dào zhèr?" },
+          { "hanzi": "二十分钟就到。", "pinyin": "Èrshí fēnzhōng jiù dào." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "我们下午去看电影，好吗？今天下午没有时间，明天下午再去吧。你想看什么电影？让我想想再告诉你。",
+        "lines": [
+          { "hanzi": "我们下午去看电影，好吗？", "pinyin": "Wǒmen xiàwǔ qù kàn diànyǐng, hǎo ma?" },
+          { "hanzi": "今天下午没有时间，明天下午再去吧。", "pinyin": "Jīntiān xiàwǔ méiyǒu shíjiān, míngtiān xiàwǔ zài qù ba." },
+          { "hanzi": "你想看什么电影？", "pinyin": "Nǐ xiǎng kàn shénme diànyǐng?" },
+          { "hanzi": "让我想想再告诉你。", "pinyin": "Ràng wǒ xiǎngxiang zài gàosu nǐ." }
+        ]
+      },
+      {
+        "location": "Ở cửa hàng",
+        "content": "你看这几件衣服怎么样？这件白的有点儿长，那件黑的有点儿贵。这件红的呢？这是今天新来的。让我再看看。",
+        "lines": [
+          { "hanzi": "你看这几件衣服怎么样？", "pinyin": "Nǐ kàn zhè jǐ jiàn yīfu zěnmeyàng?" },
+          { "hanzi": "这件白的有点儿长，那件黑的有点儿贵。", "pinyin": "Zhè jiàn bái de yǒudiǎnr cháng, nà jiàn hēi de yǒudiǎnr guì." },
+          { "hanzi": "这件红的呢？", "pinyin": "Zhè jiàn hóng de ne?" },
+          { "hanzi": "这是今天新来的。", "pinyin": "Zhè shì jīntiān xīn lái de." },
+          { "hanzi": "让我再看看。", "pinyin": "Ràng wǒ zài kànkan." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 9,
+    "dialogs": [
+      {
+        "location": "Ở trường",
+        "content": "您从几岁开始学习跳舞？我第一次跳舞是在七岁的时候。我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？没问题，非常欢迎。",
+        "lines": [
+          { "hanzi": "您从几岁开始学习跳舞？", "pinyin": "Nín cóng jǐ suì kāishǐ xuéxí tiàowǔ?" },
+          { "hanzi": "我第一次跳舞是在七岁的时候。", "pinyin": "Wǒ dì yī cì tiàowǔ shì zài qī suì de shíhou." },
+          { "hanzi": "我女儿今年也七岁了。", "pinyin": "Wǒ nǚ'ér jīntiān yě qī suì le." },
+          { "hanzi": "我希望她能跟您学跳舞，可以吗？", "pinyin": "Wǒ xīwàng tā néng gēn nín xué tiàowǔ, kěyǐ ma?" },
+          { "hanzi": "没问题，非常欢迎。", "pinyin": "Méi wèntí, fēicháng huānyíng." }
+        ]
+      },
+      {
+        "location": "Trong lớp học",
+        "content": "昨天的考试怎么样？你都听懂了吗？听懂了。你都做完了没有？题太多，我没做完。",
+        "lines": [
+          { "hanzi": "昨天的考试怎么样？", "pinyin": "Zuótiān de kǎoshì zěnmeyàng?" },
+          { "hanzi": "你都听懂了吗？", "pinyin": "Nǐ dōu tīng dǒng le ma?" },
+          { "hanzi": "听懂了。", "pinyin": "Tīng dǒng le." },
+          { "hanzi": "你都做完了没有？", "pinyin": "Nǐ dōu zuò wán le méiyǒu?" },
+          { "hanzi": "题太多，我没做完。", "pinyin": "Tí tài duō, wǒ méi zuò wán." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 10,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "不要看电视了，明天上午还有汉语课呢。看电视对学习汉语有帮助。明天的课你都准备好了吗？都准备好了。",
+        "lines": [
+          { "hanzi": "不要看电视了，明天上午还有汉语课呢。", "pinyin": "Búyào kàn diànshì le, míngtiān shàngwǔ hái yǒu Hànyǔ kè ne." },
+          { "hanzi": "看电视对学习汉语有帮助。", "pinyin": "Kàn diànshì duì xuéxí Hànyǔ yǒu bāngzhù." },
+          { "hanzi": "明天的课你都准备好了吗？", "pinyin": "Míngtiān de kè nǐ dōu zhǔnbèi hǎo le ma?" },
+          { "hanzi": "都准备好了。", "pinyin": "Dōu zhǔnbèi hǎo le." }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "你在找什么？你看见我的手机了吗？白色的。别找了，手机在桌子上呢，电脑旁边。你看见我的衣服了吗？红色的那件。那件衣服我帮你洗了，在外面呢。",
+        "lines": [
+          { "hanzi": "你在找什么？", "pinyin": "Nǐ zài zhǎo shénme?" },
+          { "hanzi": "你看见我的手机了吗？白色的。", "pinyin": "Nǐ kànjiàn wǒ de shǒujī le ma? Báisè de." },
+          { "hanzi": "别找了，手机在桌子上呢，电脑旁边。", "pinyin": "Bié zhǎo le, shǒujī zài zhuōzi shang ne, diànnǎo pángbiān." },
+          { "hanzi": "你看见我的衣服了吗？红色的那件。", "pinyin": "Nǐ kànjiàn wǒ de yīfu le ma? Hóngsè de nà jiàn." },
+          { "hanzi": "那件衣服我帮你洗了，在外面呢。", "pinyin": "Nà jiàn yīfu wǒ bāng nǐ xǐ le, zài wàimiàn ne." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 11,
+    "dialogs": [
+      {
+        "location": "Ở quán karaoke",
+        "content": "王方，昨天和你一起唱歌的人是谁？一个朋友。什么朋友？是不是男朋友？不是不是，我同学介绍的，昨天第一次见。",
+        "lines": [
+          { "hanzi": "王方，昨天和你一起唱歌的人是谁？", "pinyin": "Wáng Fāng, zuótiān hé nǐ yìqǐ chàng gē de rén shì shéi?" },
+          { "hanzi": "一个朋友。", "pinyin": "Yí ge péngyou." },
+          { "hanzi": "什么朋友？是不是男朋友？", "pinyin": "Shénme péngyou? Shì bú shì nán péngyou?" },
+          { "hanzi": "不是不是，我同学介绍的，昨天第一次见。", "pinyin": "Bú shì bú shì, wǒ tóngxué jièshào de, zuótiān dì yī cì jiàn." }
+        ]
+      },
+      {
+        "location": "Ở ký túc xá",
+        "content": "左边这个看报纸的女孩子是你姐姐吗？是，右边写字的那个热人是我哥哥。你哥哥多大？25岁，他比我大三岁。",
+        "lines": [
+          { "hanzi": "左边这个看报纸的女孩子是你姐姐吗？", "pinyin": "Zuǒbian zhège kàn bàozhǐ de nǚ háizi shì nǐ jiějie ma?" },
+          { "hanzi": "是，右边写字的那个热人是我哥哥。", "pinyin": "Shì, yòubian xiě zì de nàge rén shì wǒ gēge." },
+          { "hanzi": "你哥哥多大？", "pinyin": "Nǐ gēge duō dà?" },
+          { "hanzi": "25岁，他比我大三岁。", "pinyin": "25 suì, tā bǐ wǒ dà sān suì." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 12,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "你每天早上几点起床？六点多。你比我早起一个小时。我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",
+        "lines": [
+          { "hanzi": "你每天早上几点起床？", "pinyin": "Nǐ měitiān zǎoshang jǐ diǎn qǐchuáng?" },
+          { "hanzi": "六点多。", "pinyin": "Liù diǎn duō." },
+          { "hanzi": "你比我早起一个小时。", "pinyin": "Nǐ bǐ wǒ zǎo qǐ yí ge xiǎoshí." },
+          { "hanzi": "我睡得也早，我每天晚上十点就睡觉。", "pinyin": "Wǒ shuì de yě zǎo, wǒ měitiān wǎnshang shí diǎn jiù shuìjiào." },
+          { "hanzi": "早睡早起身体好。", "pinyin": "Zǎo shuì zǎo qǐ shēntǐ hǎo." }
+        ]
+      },
+      {
+        "location": "Ở nhà bạn",
+        "content": "再来点儿米饭吧，你吃得太少了。不少了，今天吃得很好，太谢谢你了。你做饭做得怎么样？不怎么样，我妻子比我做得好。",
+        "lines": [
+          { "hanzi": "再来点儿米饭吧，你吃得太少了。", "pinyin": "Zài lái diǎnr mǐfàn ba, nǐ chī de tài shǎo le." },
+          { "hanzi": "不少了，今天吃得很好，太谢谢你了。", "pinyin": "Bù shǎo le, jīntiān chī de hěn hǎo, tài xièxie nǐ le." },
+          { "hanzi": "你做饭做得怎么样？", "pinyin": "Nǐ zuò fàn zuò de zěnmeyàng?" },
+          { "hanzi": "不怎么样，我妻子比我做得好。", "pinyin": "Bù zěnmeyàng, wǒ qīzi bǐ wǒ zuò de hǎo." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 13,
+    "dialogs": [
+      {
+        "location": "Trong văn phòng",
+        "content": "门开着呢，请进。请问，张先生在吗？他出去了。你下午再来吧。好的，谢谢！",
+        "lines": [
+          { "hanzi": "门开着呢，请进。", "pinyin": "Mén kāi zhe ne, qǐng jìn." },
+          { "hanzi": "请问，张先生在吗？", "pinyin": "Qǐngwèn, Zhāng xiānsheng zài ma?" },
+          { "hanzi": "他出去了。你下午再来吧。", "pinyin": "Tā chūqu le. Nǐ xiàwǔ zài lái ba." },
+          { "hanzi": "好的，谢谢！", "pinyin": "Hǎo de, xièxie!" }
+        ]
+      },
+      {
+        "location": "Ở sân vận động",
+        "content": "听说你有女朋友了？我认识她吗？就是我们班那个长着两个大眼睛，非常爱笑的女孩。她不是有男朋友吗？那个已经是她的前男朋友了。",
+        "lines": [
+          { "hanzi": "听说你有女朋友了？我认识她吗？", "pinyin": "Tīngshuō nǐ yǒu nǚ péngyou le? Wǒ rènshi tā ma?" },
+          { "hanzi": "就是我们班那个长着两个大眼睛，非常爱笑的女孩。", "pinyin": "Jiùshì wǒmen bān nàge zhǎng zhe liǎng ge dà yǎnjing, fēicháng ài xiào de nǚháir." },
+          { "hanzi": "她不是有男朋友吗？", "pinyin": "Tā bú shì yǒu nán péngyou ma?" },
+          { "hanzi": "那个已经是她的前男朋友了。", "pinyin": "Nàge yǐjīng shì tā de qián nán péngyou le." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 14,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "看过那个电影没有？没看过，听说很有意思。那我们下个星期一起去看吧？可以，但是我女朋友也想去。",
+        "lines": [
+          { "hanzi": "看过那个电影没有？", "pinyin": "Kàn guo nàge diànyǐng méiyǒu?" },
+          { "hanzi": "没看过，听说很有意思。", "pinyin": "Méi kàn guo, tīngshuō hěn yǒu yìsi." },
+          { "hanzi": "那我们下个星期一起去看吧？", "pinyin": "Nà wǒmen xià ge xīngqī yìqǐ qù kàn ba?" },
+          { "hanzi": "可以，但是我女朋友也想去。", "pinyin": "Kěyǐ, dànshì wǒ nǚ péngyou yě xiǎng qù." }
+        ]
+      },
+      {
+        "location": "Trong phòng",
+        "content": "明天天气怎么样？虽然是晴天，但是很冷。那还能去跑步吗？可以，但是你自己去吧，我还有很多事情要做。",
+        "lines": [
+          { "hanzi": "明天天气怎么样？", "pinyin": "Míngtiān tiānqì zěnmeyàng?" },
+          { "hanzi": "虽然是晴天，但是很冷。", "pinyin": "Suīrán shì qíngtiān, dànshì hěn lěng." },
+          { "hanzi": "那还能去跑步吗？", "pinyin": "Nà hái néng qù pǎobù ma?" },
+          { "hanzi": "可以，但是你自己去吧，我还有很多事情要做。", "pinyin": "Kěyǐ, dànshì nǐ zìjǐ qù ba, wǒ hái yǒu hěn duō shìqing yào zuò." }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 15,
+    "dialogs": [
+      {
+        "location": "Ở nhà bạn",
+        "content": "今天是12月20日，新年就要到了。新年你准备做什么？我想去北京旅游，北京很不错，我也去过一次。你买票了吗？还没有呢，明天就去火车站买票。",
+        "lines": [
+          { "hanzi": "今天是12月20日，新年就要到了。", "pinyin": "Jīntiān shì 12 yuè 20 rì, xīnnián jiù yào dào le." },
+          { "hanzi": "新年你准备做什么？", "pinyin": "Xīnnián nǐ zhǔnbèi zuò shénme?" },
+          { "hanzi": "我想去北京旅游，北京很不错，我也去过一次。", "pinyin": "Wǒ xiǎng qù Běijīng lǚyóu, Běijīng hěn búcuò, wǒ yě qù guo yí cì." },
+          { "hanzi": "你买票了吗？", "pinyin": "Nǐ mǎi piào le ma?" },
+          { "hanzi": "还没有呢，明天就去火车站买票。", "pinyin": "Hái méiyǒu ne, míngtiān jiù qù huǒchēzhàn mǎi piào." }
+        ]
+      },
+      {
+        "location": "Ở bến xe",
+        "content": "你妹妹怎么还没来？都八点四十了！我们再等她几分钟吧。都等她半个小时了！她来了，我听见她说话了。",
+        "lines": [
+          { "hanzi": "你妹妹怎么还没来？", "pinyin": "Nǐ mèimei zěnme hái méi lái?" },
+          { "hanzi": "都八点四十了！", "pinyin": "Dōu bā diǎn sìshí le!" },
+          { "hanzi": "我们再等她几分钟吧。", "pinyin": "Wǒmen zài děng tā jǐ fēnzhōng ba." },
+          { "hanzi": "都等 ella 半个小时了！", "pinyin": "Dōu děng tā bàn ge xiǎoshí le!" },
+          { "hanzi": "她来了，我听见她说话了。", "pinyin": "Tā lái le, wǒ tīngjiàn tā shuōhuà le." }
+        ]
+      }
+    ]
+  }
+]

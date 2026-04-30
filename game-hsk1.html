@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game HSK 1 - EZHAN</title>
+    
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        .lesson-card {
+            background: #fff;
+            border: 1px solid var(--primary-light);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .lesson-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            background: #f0f7f9;
+        }
+        .lesson-number { font-size: 0.8rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; }
+        .lesson-title { font-weight: 800; font-size: 1.5rem; color: var(--primary-dark); }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 62, 66, 0.5);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 30px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            animation: popUp 0.3s ease-out;
+            position: relative;
+        }
+        @keyframes popUp {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        .modal-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 2rem; color: var(--text-color); }
+        .game-select-buttons { display: flex; flex-direction: column; gap: 1rem; }
+        .game-select-btn {
+            padding: 1.2rem;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+        .btn-flip { background: var(--primary-light); color: var(--text-color); border: 1px solid var(--primary-color); }
+        .btn-flip { background: #e3f2fd; color: #1976d2; border: 1px solid #bbdefb; }
+        .btn-master { background: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
+        .btn-match { background: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+        .btn-speak { background: #fce4ec; color: #c2185b; border: 1px solid #f8bbd0; }
+        .game-select-btn:hover { transform: scale(1.05); filter: brightness(0.95); }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="game.html" class="back-btn">← Quay lại cấp độ HSK</a>
+        
+        <div class="content-box">
+            <h1 style="margin-bottom: 1.5rem; color: var(--primary-dark); display: flex; align-items: center; gap: 0.5rem;">
+                <div class="hsk-badge" style="width: 40px; height: 40px; font-size: 1rem;">1</div>
+                HSK 1: Chọn Bài Học
+            </h1>
+            <p>Nhấn vào một bài học để chọn chế độ chơi:</p>
+
+            <div class="lesson-grid">
+                <script>
+                    for (let i = 1; i <= 15; i++) {
+                        document.write(`
+                            <div class="lesson-card" onclick="openGameSelect(${i})">
+                                <div class="lesson-number">Bài học</div>
+                                <div class="lesson-title">${i}</div>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Selection Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-title" id="modalTitle">Bài học 1</div>
+            <div class="game-select-buttons">
+                <a href="#" id="flipLink" class="game-select-btn btn-flip">LẬT THẺ BÀI</a>
+                <a href="#" id="masterLink" class="game-select-btn btn-master">TRÙM TỪ VỰNG</a>
+                <a href="#" id="matchLink" class="game-select-btn btn-match">TRUY TÌM CẶP ĐÔI</a>
+                <a href="#" id="speakLink" class="game-select-btn btn-speak" style="display: none;">NÓI ĐI</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('gameModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const flipLink = document.getElementById('flipLink');
+        const masterLink = document.getElementById('masterLink');
+        const matchLink = document.getElementById('matchLink');
+        const speakLink = document.getElementById('speakLink');
+
+        function openGameSelect(lessonId) {
+            modalTitle.innerText = `Bài học ${lessonId}`;
+            
+            // Default games for all 15 lessons
+            flipLink.href = `game-hsk1-l${lessonId}-flip.html`;
+            masterLink.href = `game-hsk1-l${lessonId}-master.html`;
+            matchLink.href = `game-hsk1-l${lessonId}-match.html`;
+            flipLink.style.display = "flex";
+            masterLink.style.display = "flex";
+            matchLink.style.display = "flex";
+
+            // Special game "NÓI ĐI" only for Lesson 5
+            if (lessonId === 5) {
+                speakLink.href = "game-hsk1-l5-speak.html";
+                speakLink.style.display = "flex";
+            } else {
+                speakLink.style.display = "none";
+            }
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

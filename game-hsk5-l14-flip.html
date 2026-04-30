@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lật Thẻ Thông Minh - HSK 5 Bài 14</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #f0f9ff; }
+        .game-header { text-align: center; margin-bottom: 2rem; position: relative; }
+        .mascot-container { 
+            position: absolute; right: 0; top: -20px; width: 100px; 
+            animation: bounce 2s infinite ease-in-out; 
+        }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .mascot-bubble {
+            background: white; padding: 10px 15px; border-radius: 20px; box-shadow: var(--shadow);
+            font-size: 0.85rem; position: absolute; right: 110px; top: 10px; width: 150px;
+            color: var(--primary-dark); font-weight: 700; z-index: 10;
+        }
+        .game-container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .flip-card { background-color: transparent; width: 100%; height: 350px; perspective: 1000px; cursor: pointer; }
+        .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
+        .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card-front, .flip-card-back { 
+            position: absolute; width: 100%; height: 100%; backface-visibility: hidden; 
+            display: flex; flex-direction: column; border-radius: 30px; padding: 1.2rem; 
+            border: 2px solid var(--primary-light); background: white;
+            box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2);
+        }
+        .flip-card-front { justify-content: center; align-items: center; }
+        .flip-card-front .hanzi { font-size: 3rem; font-weight: 800; color: var(--primary-dark); }
+        .flip-card-back { transform: rotateY(180deg); text-align: left; background: #fff; border-color: var(--primary-color); overflow-y: auto; }
+        .flip-card.mastered .flip-card-front, .flip-card.mastered .flip-card-back { border-color: #ffd700; background: #fffdf0; }
+        .master-badge { position: absolute; top: 15px; right: 15px; font-size: 1.5rem; display: none; z-index: 5; }
+        .flip-card.mastered .master-badge { display: block; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+        .back-header { width: 100%; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+        .back-hanzi { font-size: 1.5rem; font-weight: 800; color: var(--primary-dark); }
+        .back-pinyin { font-size: 1rem; color: #e67e22; font-weight: 700; }
+        .back-type { font-size: 0.75rem; background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 5px; font-weight: 700; margin-bottom: 0.5rem; align-self: flex-start; }
+        .btn-speak { background: var(--primary-light); border: none; width: 35px; height: 35px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+        .btn-speak:hover { background: var(--primary-color); transform: scale(1.1); }
+        .back-meaning { font-size: 1rem; font-weight: 700; color: #444; margin-bottom: 0.5rem; }
+        .back-example { font-size: 0.8rem; background: #f9f9f9; padding: 0.8rem; border-radius: 12px; line-height: 1.3; }
+        .back-example strong { display: block; color: var(--primary-dark); margin-bottom: 3px; }
+        .master-btn { margin-top: 1rem; width: 100%; padding: 0.6rem; border-radius: 12px; border: 2px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 0.85rem; }
+        .master-btn.active { background: var(--primary-color); color: white; }
+        .progress-container { background: white; padding: 1.5rem; border-radius: 20px; box-shadow: var(--shadow); margin: 2rem 0; }
+        .progress-text { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 700; color: #555; }
+        .progress-bar { width: 100%; height: 12px; background: #eee; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary-color), var(--primary-dark)); width: 0%; transition: width 0.5s ease-out; }
+        .controls { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+        .btn-control { padding: 0.5rem 1rem; border-radius: 10px; border: 1px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 700; cursor: pointer; transition: 0.3s; font-size: 0.9rem; }
+        .celebration-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.95); z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center; animation: fadeIn 0.5s; }
+        .trophy { font-size: 5rem; animation: trophyPop 1s infinite alternate; }
+        @keyframes trophyPop { from { transform: scale(1); } to { transform: scale(1.2) rotate(5deg); } }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="game-header">
+            <a href="game-hsk5.html" class="back-btn" style="position: absolute; left: 0; top: 0;">← Quay lại</a>
+            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh</h1>
+            <p>HSK 5 Bài 14 - 北京的四合院</p>
+            <div class="mascot-container">
+                <div class="mascot-bubble" id="mascotSpeech">Chào bạn! Cùng học HSK 5 nhé! 🐼</div>
+                <img src="mascot-guide.png" style="width: 100%; mix-blend-mode: multiply;" alt="Mascot">
+            </div>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-text"><span>Tiến độ học tập</span><span id="progressPercent">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+            <div class="stats-info" style="margin-top:0.5rem">Bạn đã thuộc <span id="masteredCount">0</span> / <span id="totalCount">0</span> từ</div>
+            <div class="controls">
+                <button class="btn-control" onclick="shuffleCards()">🔀 Trộn thẻ</button>
+                <button class="btn-control" onclick="resetProgress()">🔄 Học lại</button>
+            </div>
+        </div>
+        <div class="card-grid" id="cardGrid"></div>
+    </div>
+
+    <div class="celebration-overlay" id="celebration">
+        <div class="trophy">🏆</div>
+        <h2 style="font-size: 2rem; color: var(--primary-dark); margin: 1rem 0;">TUYỆT VỜI!</h2>
+        <p>Bạn đã làm chủ hoàn toàn bài học này!</p>
+        <button class="btn-control" style="margin-top: 2rem; padding: 1rem 2rem; background: var(--primary-color); color: white;" onclick="document.getElementById('celebration').style.display='none'">Tiếp tục luyện tập</button>
+    </div>
+
+    <script>
+        let vocabData = [
+  {
+    "hanzi": "四合院",
+    "pinyin": "sìhéyuàn",
+    "type": "Danh từ",
+    "meaning": "Tứ hợp viện",
+    "ex_cn": "四合院是北京传统建筑的代表。",
+    "ex_py": "Sìhéyuàn shì Běijīng chuántǒng jiànzhù de dàibiǎo.",
+    "ex_vn": "Tứ hợp viện là đại diện của kiến trúc truyền thống Bắc Kinh."
+  },
+  {
+    "hanzi": "民居",
+    "pinyin": "mínjū",
+    "type": "Danh từ",
+    "meaning": "Nhà ở dân gian",
+    "ex_cn": "这里的民居保留了古代的风格。",
+    "ex_py": "Zhèlǐ de mínjū bǎoliúle gǔdài de fēnggé.",
+    "ex_vn": "Nhà dân ở đây vẫn giữ được phong cách cổ đại."
+  },
+  {
+    "hanzi": "组合",
+    "pinyin": "zǔhé",
+    "type": "Động từ, Danh từ",
+    "meaning": "Tổ hợp, kết hợp",
+    "ex_cn": "这组沙发可以根据需要自由组合。",
+    "ex_py": "Zhè zǔ shāfā kěyǐ gēnjù xūyào zìyóu zǔhé.",
+    "ex_vn": "Bộ sofa này có thể tự do kết hợp theo nhu cầu."
+  },
+  {
+    "hanzi": "建筑",
+    "pinyin": "jiànzhù",
+    "type": "Danh từ, Động từ",
+    "meaning": "Kiến trúc, xây dựng",
+    "ex_cn": "北京有很多著名的古代建筑。",
+    "ex_py": "Běijīng yǒu hěnduō zhùmíng de gǔdài jiànzhù.",
+    "ex_vn": "Bắc Kinh có rất nhiều công trình kiến trúc cổ đại nổi tiếng."
+  },
+  {
+    "hanzi": "形式",
+    "pinyin": "xíngshì",
+    "type": "Danh từ",
+    "meaning": "Hình thức",
+    "ex_cn": "这种艺术形式非常受大家欢迎。",
+    "ex_py": "Zhèzhǒng yìshù xíngshì fēicháng shòu dàjiā huānyíng.",
+    "ex_vn": "Hình thức nghệ thuật này rất được mọi người ưa chuộng."
+  },
+  {
+    "hanzi": "所谓",
+    "pinyin": "suǒwèi",
+    "type": "Tính từ",
+    "meaning": "Cái gọi là",
+    "ex_cn": "所谓成功，就是不断地努力。",
+    "ex_py": "Suǒwèi chénggōng, jiùshì bùduàn de nǔlì.",
+    "ex_vn": "Cái gọi là thành công chính là không ngừng nỗ lực."
+  },
+  {
+    "hanzi": "方",
+    "pinyin": "fāng",
+    "type": "Tính từ, Danh từ",
+    "meaning": "Vuông, phía",
+    "ex_cn": "这个盒子是方方的，很可爱。",
+    "ex_py": "Zhège hézi shì fāngfāng de, hěn kě'ài.",
+    "ex_vn": "Cái hộp này vuông vuông, rất đáng yêu."
+  },
+  {
+    "hanzi": "广泛",
+    "pinyin": "guǎngfàn",
+    "type": "Tính từ",
+    "meaning": "Rộng rãi, phổ biến",
+    "ex_cn": "电脑在现代生活中应用广泛。",
+    "ex_py": "Diànnǎo zài xiàndài shēnghuó zhōng yìngyòng guǎngfàn.",
+    "ex_vn": "Máy tính được ứng dụng rộng rãi trong cuộc sống hiện đại."
+  },
+  {
+    "hanzi": "样式",
+    "pinyin": "yàngshì",
+    "type": "Danh từ",
+    "meaning": "Kiểu dáng, mẫu mã",
+    "ex_cn": "这件衣服的样式很新颖。",
+    "ex_py": "Zhè jiàn yīfu de yàngshì hěn xīnyǐng.",
+    "ex_vn": "Kiểu dáng của bộ quần áo này rất mới mẻ."
+  },
+  {
+    "hanzi": "代表",
+    "pinyin": "dàibiǎo",
+    "type": "Danh từ, Động từ",
+    "meaning": "Đại biểu, đại diện",
+    "ex_cn": "他代表公司参加了会议。",
+    "ex_py": "Tā dàibiǎo gōngsī cānjiāle huìyì.",
+    "ex_vn": "Anh ấy đại diện công ty tham gia cuộc họp."
+  },
+  {
+    "hanzi": "通常",
+    "pinyin": "tōngcháng",
+    "type": "Trạng từ, Tính từ",
+    "meaning": "Thông thường",
+    "ex_cn": "我通常早上七点起床。",
+    "ex_py": "Wǒ tōngcháng zǎoshang qīdiǎn qǐchuáng.",
+    "ex_vn": "Tôi thông thường thức dậy lúc 7 giờ sáng."
+  },
+  {
+    "hanzi": "并列",
+    "pinyin": "bìngliè",
+    "type": "Động từ",
+    "meaning": "Song song, ngang hàng",
+    "ex_cn": "两辆车 ở 公路上并列行驶。",
+    "ex_py": "Liǎng liàng chē zài gōnglù shàng bìngliè xíngshǐ.",
+    "ex_vn": "Hai chiếc xe chạy song song trên đường cái."
+  },
+  {
+    "hanzi": "组成",
+    "pinyin": "zǔchéng",
+    "type": "Động từ",
+    "meaning": "Cấu thành, hợp thành",
+    "ex_cn": "这个家庭由五口人组成。",
+    "ex_py": "Zhège jiātíng yóu wǔ kǒu rén zǔchéng.",
+    "ex_vn": "Gia đình này được hợp thành từ 5 người."
+  },
+  {
+    "hanzi": "长辈",
+    "pinyin": "zhǎngbèi",
+    "type": "Danh từ",
+    "meaning": "Bậc tiền bối, người lớn tuổi",
+    "ex_cn": "我们要尊敬家里的长辈。",
+    "ex_py": "Wǒmen yào zūnjìng jiālǐ de zhǎngbèi.",
+    "ex_vn": "Chúng ta phải tôn trọng người lớn tuổi trong nhà."
+  },
+  {
+    "hanzi": "具备",
+    "pinyin": "jùbèi",
+    "type": "Động từ",
+    "meaning": "Có đủ, trang bị đủ",
+    "ex_cn": "他具备了成为律师的所有条件。",
+    "ex_py": "Tā jùbèile chéngwéi lǜshī de suǒyǒu tiáojiàn.",
+    "ex_vn": "Anh ấy có đủ mọi điều kiện để trở thành luật sư."
+  },
+  {
+    "hanzi": "日常",
+    "pinyin": "rìcháng",
+    "type": "Tính từ",
+    "meaning": "Hàng ngày",
+    "ex_cn": "这些是我们的日常用品。",
+    "ex_py": "Zhèxiē shì wǒmen de rìcháng yòngpǐn.",
+    "ex_vn": "Đây là những vật dụng hàng ngày của chúng tôi."
+  },
+  {
+    "hanzi": "起居",
+    "pinyin": "qǐjū",
+    "type": "Danh từ",
+    "meaning": "Sinh hoạt hàng ngày",
+    "ex_cn": "照顾老人的生活起居很不容易。",
+    "ex_py": "Zhàogù lǎorén de shēnghuó qǐjū hěn bù róngyì.",
+    "ex_vn": "Chăm sóc sinh hoạt hàng ngày của người già không hề dễ dàng."
+  },
+  {
+    "hanzi": "接待",
+    "pinyin": "jiēdài",
+    "type": "Động từ",
+    "meaning": "Tiếp đãi, đón tiếp",
+    "ex_cn": "这家酒店接待过很多外国游客。",
+    "ex_py": "Zhè jiā jiǔdiàn jiēdàiguò hěnduō wàiguó yóukè.",
+    "ex_vn": "Khách sạn này đã từng đón tiếp rất nhiều du khách nước ngoài."
+  },
+  {
+    "hanzi": "功能",
+    "pinyin": "gōngnéng",
+    "type": "Danh từ",
+    "meaning": "Công năng, chức năng",
+    "ex_cn": "这部手机有很多新功能。",
+    "ex_py": "Zhè bù shǒujī yǒu hěnduō xīn gōngnéng.",
+    "ex_vn": "Chiếc điện thoại này có rất nhiều chức năng mới."
+  },
+  {
+    "hanzi": "厢房",
+    "pinyin": "xiāngfáng",
+    "type": "Danh từ",
+    "meaning": "Gian bên, nhà hai bên sân",
+    "ex_cn": "四合院的厢房通常给晚辈住。",
+    "ex_py": "Sìhéyuàn de xiāngfáng tōngcháng gěi wǎnbèi zhù.",
+    "ex_vn": "Gian bên của Tứ hợp viện thông thường để cho con cháu ở."
+  },
+  {
+    "hanzi": "走廊",
+    "pinyin": "zǒuláng",
+    "type": "Danh từ",
+    "meaning": "Hành lang",
+    "ex_cn": "医院的走廊里很安静。",
+    "ex_py": "Yīyuàn de zǒuláng lǐ hěn ānjìng.",
+    "ex_vn": "Hành lang trong bệnh viện rất yên tĩnh."
+  },
+  {
+    "hanzi": "空间",
+    "pinyin": "kōngjiān",
+    "type": "Danh từ",
+    "meaning": "Không gian",
+    "ex_cn": "我们要给孩子足够的活动空间。",
+    "ex_py": "Wǒmen yào gěi háizi zúgòu de huódòng kōngjiān.",
+    "ex_vn": "Chúng ta phải cho trẻ con đủ không gian hoạt động."
+  },
+  {
+    "hanzi": "种",
+    "pinyin": "zhòng",
+    "type": "Động từ",
+    "meaning": "Trồng",
+    "ex_cn": "爷爷在后院种了很多菜。",
+    "ex_py": "Yéye zài hòuyuàn zhòngle hěnduō cài.",
+    "ex_vn": "Ông nội trồng rất nhiều rau ở sân sau."
+  },
+  {
+    "hanzi": "竹子",
+    "pinyin": "zhúzi",
+    "type": "Danh từ",
+    "meaning": "Cây tre",
+    "ex_cn": "大熊猫最喜欢吃竹子。",
+    "ex_py": "Dàxióngmāo zuì xǐhuān chī zhúzi.",
+    "ex_vn": "Gấu trúc thích ăn tre nhất."
+  },
+  {
+    "hanzi": "则",
+    "pinyin": "zé",
+    "type": "Liên từ",
+    "meaning": "Thì, lại",
+    "ex_cn": "有些人喜欢静，有些人则喜欢闹。",
+    "ex_py": "Yǒuxiē rén xǐhuān jìng, yǒuxiē rén zé xǐhuān nào.",
+    "ex_vn": "Có một số người thích tĩnh, một số người lại thích náo nhiệt."
+  },
+  {
+    "hanzi": "金鱼",
+    "pinyin": "jīnyú",
+    "type": "Danh từ",
+    "meaning": "Cá vàng",
+    "ex_cn": "鱼缸里有几条漂亮的金鱼。",
+    "ex_py": "Yúgāng lǐ yǒu jǐ tiáo piàoliang de jīnyú.",
+    "ex_vn": "Trong bể cá có vài chú cá vàng xinh đẹp."
+  },
+  {
+    "hanzi": "创造",
+    "pinyin": "chuàngzào",
+    "type": "Động từ",
+    "meaning": "Sáng tạo",
+    "ex_cn": "人类创造了灿烂的文化。",
+    "ex_py": "Rénlèi chuàngzàole cànlàn de wénhuà.",
+    "ex_vn": "Loài người đã sáng tạo nên nền văn hóa rực rỡ."
+  },
+  {
+    "hanzi": "情趣",
+    "pinyin": "qíngqù",
+    "type": "Danh từ",
+    "meaning": "Thú vui, hứng thú",
+    "ex_cn": "这种生活充满了艺术情趣。",
+    "ex_py": "Zhèzhǒng shēnghuó chōngmǎnle yìshù qíngqù.",
+    "ex_vn": "Cuộc sống này tràn đầy thú vui nghệ thuật."
+  },
+  {
+    "hanzi": "因而",
+    "pinyin": "yīn'ér",
+    "type": "Liên từ",
+    "meaning": "Cho nên, vì thế",
+    "ex_cn": "他学习刻苦，因而成绩很好。",
+    "ex_py": "Tā xuéxí kèkǔ, yīn'ér chéngjì hěn hǎo.",
+    "ex_vn": "Anh ấy học tập khổ luyện, cho nên thành tích rất tốt."
+  },
+  {
+    "hanzi": "为",
+    "pinyin": "wéi",
+    "type": "Động từ",
+    "meaning": "Là, trở thành",
+    "ex_cn": "我们要为社会做贡献。",
+    "ex_py": "Wǒmen yào wèi shèhuì zuò gòngxiàn.",
+    "ex_vn": "Chúng ta phải đóng góp cho xã hội."
+  },
+  {
+    "hanzi": "关闭",
+    "pinyin": "guānbì",
+    "type": "Động từ",
+    "meaning": "Đóng, khép",
+    "ex_cn": "离开前请关闭所有门窗。",
+    "ex_py": "Líkāi qián qǐng guānbì suǒyǒu ménchuāng.",
+    "ex_vn": "Trước khi rời đi vui lòng đóng tất cả cửa sổ và cửa ra vào."
+  },
+  {
+    "hanzi": "封闭",
+    "pinyin": "fēngbì",
+    "type": "Động từ, Tính từ",
+    "meaning": "Phong tỏa, khép kín",
+    "ex_cn": "四合院是一个封闭的院落。",
+    "ex_py": "Sìhéyuàn shì yīgè fēngbì de yuànluò.",
+    "ex_vn": "Tứ hợp viện là một khuôn viên khép kín."
+  },
+  {
+    "hanzi": "打交道",
+    "pinyin": "dǎ jiāodào",
+    "type": "Động từ",
+    "meaning": "Giao tiếp, tiếp xúc",
+    "ex_cn": "做生意要和各种人打交道。",
+    "ex_py": "Zuò shēngyì yào hé gèzhǒng rén dǎ jiāodào.",
+    "ex_vn": "Làm kinh doanh phải tiếp xúc với đủ loại người."
+  },
+  {
+    "hanzi": "日子",
+    "pinyin": "rìzi",
+    "type": "Danh từ",
+    "meaning": "Ngày tháng, cuộc sống",
+    "ex_cn": "虽然生活辛苦，但日子很有盼头。",
+    "ex_py": "Suīrán shēnghuó xīnkǔ, dàn rìzi hěn yǒu pàntou.",
+    "ex_vn": "Tuy cuộc sống vất vả, nhưng những ngày tháng vẫn có hy vọng."
+  },
+  {
+    "hanzi": "充分",
+    "pinyin": "chōngfèn",
+    "type": "Tính từ, Trạng từ",
+    "meaning": "Đầy đủ, dồi dào",
+    "ex_cn": "我们要充分利用现有的资源。",
+    "ex_py": "Wǒmen yào chōngfèn lìyòng xiànyǒu de zīyuán.",
+    "ex_vn": "Chúng ta phải tận dụng đầy đủ các nguồn lực hiện có."
+  },
+  {
+    "hanzi": "令",
+    "pinyin": "lìng",
+    "type": "Động từ",
+    "meaning": "Khiến cho, làm cho",
+    "ex_cn": "这个消息令人感到惊讶。",
+    "ex_py": "Zhège xiāoxi lìngrén gǎndào jīngyà.",
+    "ex_vn": "Tin tức này khiến cho mọi người cảm thấy kinh ngạc."
+  },
+  {
+    "hanzi": "亲切",
+    "pinyin": "qīnqiè",
+    "type": "Tính từ",
+    "meaning": "Thân thiết, gần gũi",
+    "ex_cn": "老师的笑容让人感到很亲切。",
+    "ex_py": "Lǎoshī de xiàoróng ràng rén gǎndào hěn qīnqiè.",
+    "ex_vn": "Nụ cười của thầy giáo làm cho mọi người cảm thấy rất gần gũi."
+  },
+  {
+    "hanzi": "劳动",
+    "pinyin": "láodòng",
+    "type": "Động từ, Danh từ",
+    "meaning": "Lao động",
+    "ex_cn": "劳动创造了财富。",
+    "ex_py": "Láodòng chuàngzàole cáifù.",
+    "ex_vn": "Lao động đã sáng tạo nên của cải."
+  },
+  {
+    "hanzi": "人民",
+    "pinyin": "rénmín",
+    "type": "Danh từ",
+    "meaning": "Nhân dân",
+    "ex_cn": "全心全意为人民服务。",
+    "ex_py": "Quánxīnquányì wèi rénmín fúwù.",
+    "ex_vn": "Toàn tâm toàn ý phục vụ nhân dân."
+  },
+  {
+    "hanzi": "矛盾",
+    "pinyin": "máodùn",
+    "type": "Danh từ, Tính từ",
+    "meaning": "Mâu thuẫn",
+    "ex_cn": "他们之间产生了一些小矛盾。",
+    "ex_py": "Tāmen zhījiān chǎnshēngle yīxiē xiǎo máodùn.",
+    "ex_vn": "Giữa họ đã phát sinh một số mâu thuẫn nhỏ."
+  },
+  {
+    "hanzi": "浓",
+    "pinyin": "nóng",
+    "type": "Tính từ",
+    "meaning": "Đậm, dày",
+    "ex_cn": "这杯咖啡的味道很浓。",
+    "ex_py": "Zhè bēi kāfēi de wèidào hěn nóng.",
+    "ex_vn": "Vị của ly cà phê này rất đậm."
+  }
+];
+        const grid = document.getElementById('cardGrid');
+        const progressFill = document.getElementById('progress');
+        const progressPercent = document.getElementById('progressPercent');
+        const masteredCountEl = document.getElementById('masteredCount');
+        const totalCountEl = document.getElementById('totalCount');
+        const mascotSpeech = document.getElementById('mascotSpeech');
+        const celebration = document.getElementById('celebration');
+
+        let masteredSet = new Set();
+        totalCountEl.innerText = vocabData.length;
+
+        function renderCards() {
+            grid.innerHTML = '';
+            vocabData.forEach((word, index) => {
+                const card = document.createElement('div');
+                card.className = 'flip-card' + (masteredSet.has(index) ? ' mastered' : '');
+                card.innerHTML = `
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="master-badge">⭐</div>
+                            <div class="hanzi">${word.hanzi}</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-header">
+                                <span class="back-hanzi">${word.hanzi}</span>
+                                <span class="back-pinyin">${word.pinyin}</span>
+                            </div>
+                            <div class="back-type">${word.type}</div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                                <button class="btn-speak" onclick="event.stopPropagation(); speak('${word.hanzi}')">🔊</button>
+                                <div class="back-meaning">${word.meaning}</div>
+                            </div>
+                            <div class="back-example">
+                                <strong>Ví dụ:</strong>
+                                ${word.ex_cn}
+                                <div style="color: #e67e22; font-style: italic; font-size: 0.75rem;">${word.ex_py}</div>
+                                <div style="color: #666; font-size: 0.75rem; border-top: 1px dashed #eee; margin-top:2px; padding-top:2px;">${word.ex_vn}</div>
+                            </div>
+                            <button class="master-btn ${masteredSet.has(index) ? 'active' : ''}" onclick="event.stopPropagation(); toggleMaster(${index}, this)">
+                                ${masteredSet.has(index) ? 'Bỏ thuộc' : 'Đã thuộc'}
+                            </button>
+                        </div>
+                    </div>`;
+                card.addEventListener('click', () => card.classList.toggle('flipped'));
+                grid.appendChild(card);
+            });
+        }
+
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'zh-CN';
+            utterance.rate = 0.8;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function updateProgress() {
+            const count = masteredSet.size;
+            const percent = Math.round((count / vocabData.length) * 100);
+            progressFill.style.width = percent + '%';
+            progressPercent.innerText = percent + '%';
+            masteredCountEl.innerText = count;
+
+            if (percent === 100) {
+                mascotSpeech.innerText = "Tuyệt vời! Bạn đã thuộc hết rồi! 🏆";
+                celebration.style.display = 'flex';
+            } else if (percent >= 50) mascotSpeech.innerText = "Sắp xong rồi, bạn học nhanh quá! 🚀";
+            else if (percent > 0) mascotSpeech.innerText = "Giỏi lắm! Cố gắng lên nhé! 💪";
+        }
+
+        window.toggleMaster = function(index, btn) {
+            if (masteredSet.has(index)) {
+                masteredSet.delete(index);
+            } else {
+                masteredSet.add(index);
+            }
+            renderCards();
+            updateProgress();
+        };
+
+        window.shuffleCards = function() {
+            vocabData.sort(() => Math.random() - 0.5);
+            masteredSet.clear();
+            renderCards();
+            updateProgress();
+        };
+
+        window.resetProgress = function() {
+            masteredSet.clear();
+            renderCards();
+            updateProgress();
+        };
+
+        renderCards();
+    </script>
+</body>
+</html>

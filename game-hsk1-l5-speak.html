@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NÓI ĐI - HSK 1 Bài 5 (Hội thoại)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #fff5f7; }
+        .chat-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .chat-box {
+            background: var(--white);
+            border-radius: 30px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            position: relative;
+        }
+        .bubble {
+            padding: 1rem 1.5rem;
+            border-radius: 20px;
+            max-width: 85%;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            position: relative;
+            animation: fadeIn 0.3s ease;
+        }
+        .bubble-ai {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+            font-family: "STKaiti", "KaiTi", "楷体", serif;
+            font-size: 1.8rem;
+        }
+        .bubble-user {
+            background: #eef2f5;
+            color: var(--text-color);
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+            font-style: italic;
+        }
+        .suggestion-box {
+            background: #fff8f0;
+            border: 2px dashed #f39c12;
+            padding: 1.2rem;
+            border-radius: 20px;
+            margin-top: auto;
+            text-align: center;
+        }
+        .suggestion-label {
+            font-size: 0.8rem;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .suggestion-text {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            font-family: "STKaiti", "KaiTi", "楷体", serif;
+        }
+        .pinyin-hint {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.3rem;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+        }
+        .mic-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .mic-btn {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(165, 207, 218, 0.4);
+        }
+        .mic-btn.listening {
+            background: #ff4757;
+            animation: pulse 1.5s infinite;
+        }
+        .status-msg {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 0.8rem;
+            height: 1.2rem;
+        }
+        .error-msg {
+            color: #ff4757;
+            font-weight: 600;
+            background: #fff0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            display: none;
+            margin-top: 0.5rem;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 15px rgba(255, 71, 87, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
+        
+        <div class="chat-container">
+            <h1 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary-dark);">Luyện Nói Hội Thoại</h1>
+            
+            <div class="chat-box" id="chat-box">
+                <!-- Dialogue will appear here -->
+                
+                <div class="suggestion-box" id="suggestion-box" style="visibility: hidden;">
+                    <span class="suggestion-label">Gợi ý trả lời</span>
+                    <div class="suggestion-text" id="sugg-hanzi">你好</div>
+                    <div class="pinyin-hint" id="sugg-pinyin">nǐ hǎo</div>
+                </div>
+
+                <div class="mic-container">
+                    <button class="mic-btn" id="mic-btn">🎤</button>
+                    <div class="status-msg" id="status-msg">Nhấn micro để trả lời</div>
+                    <div class="error-msg" id="error-msg">Nếu quên mất câu trả lời, hãy đọc ví dụ phía dưới nhé.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dialogue = [
+            {
+                question: "你好！",
+                qPinyin: "Nǐ hǎo!",
+                answer: "你好",
+                aPinyin: "nǐ hǎo"
+            },
+            {
+                question: "你家有几口人？",
+                qPinyin: "Nǐ jiā yǒu jǐ kǒu rén?",
+                answer: "我家有四口人",
+                aPinyin: "wǒ jiā yǒu sì kǒu rén"
+            },
+            {
+                question: "你家有谁？",
+                qPinyin: "Nǐ jiā yǒu shéi?",
+                answer: "我家 có 爸爸、妈妈和我",
+                aPinyin: "wǒ jiā yǒu bàba, māma hé wǒ",
+                targetHanzi: "我家有爸爸、妈妈和我" // Normalizing for speech recognition
+            }
+        ];
+
+        let currentStep = 0;
+        let isListening = false;
+
+        const chatBox = document.getElementById('chat-box');
+        const suggHanzi = document.getElementById('sugg-hanzi');
+        const suggPinyin = document.getElementById('sugg-pinyin');
+        const micBtn = document.getElementById('mic-btn');
+        const statusMsg = document.getElementById('status-msg');
+        const errorMsg = document.getElementById('error-msg');
+        const suggestionBox = document.getElementById('suggestion-box');
+
+        // Speech Recognition Setup
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        let recognition = null;
+
+        try {
+            if (SpeechRecognition) {
+                recognition = new SpeechRecognition();
+                recognition.lang = 'zh-CN';
+                recognition.interimResults = false;
+                recognition.continuous = false;
+
+                recognition.onstart = () => {
+                    isListening = true;
+                    micBtn.classList.add('listening');
+                    statusMsg.innerText = "Đang lắng nghe...";
+                    errorMsg.style.display = "none";
+                };
+
+                recognition.onresult = (event) => {
+                    const speechResult = event.results[0][0].transcript.replace(/[。？！，]/g, '');
+                    const target = dialogue[currentStep].targetHanzi || dialogue[currentStep].answer.replace(/[。？！，]/g, '');
+                    
+                    addMessage(speechResult, 'user');
+
+                    if (speechResult.includes(target) || target.includes(speechResult)) {
+                        currentStep++;
+                        if (currentStep < dialogue.length) {
+                            setTimeout(playNextStep, 1000);
+                        } else {
+                            setTimeout(() => {
+                                addMessage("太棒了！Bạn đã hoàn thành đoạn hội thoại.", 'ai');
+                                speak("太棒了！");
+                                suggestionBox.style.visibility = "hidden";
+                                micBtn.style.display = "none";
+                                statusMsg.innerText = "Hội thoại kết thúc";
+                            }, 1000);
+                        }
+                    } else {
+                        errorMsg.style.display = "block";
+                        statusMsg.innerText = "Thử lại nhé!";
+                    }
+                };
+
+                recognition.onerror = (event) => {
+                    console.error("Speech Recognition Error:", event.error);
+                    isListening = false;
+                    micBtn.classList.remove('listening');
+                    
+                    if (event.error === 'not-allowed') {
+                        alert("Lỗi: Trình duyệt đã chặn Micro. Vui lòng kiểm tra quyền truy cập Micro trong cài đặt trình duyệt (nếu bạn chạy file trực tiếp từ thư mục, hãy thử dùng một trình duyệt khác hoặc mở bằng Live Server).");
+                    } else if (event.error === 'network') {
+                        alert("Lỗi mạng: Nhận diện giọng nói yêu cầu kết nối Internet.");
+                    } else {
+                        statusMsg.innerText = "Lỗi: " + event.error;
+                    }
+                };
+
+                recognition.onend = () => {
+                    isListening = false;
+                    micBtn.classList.remove('listening');
+                    if (statusMsg.innerText === "Đang lắng nghe...") {
+                        statusMsg.innerText = "Nhấn micro để trả lời";
+                    }
+                };
+            }
+        } catch (e) {
+            console.error("Initialization Error:", e);
+        }
+
+        if (!recognition) {
+            statusMsg.innerText = "Trình duyệt không hỗ trợ Nhận diện giọng nói.";
+            micBtn.style.opacity = "0.5";
+            micBtn.disabled = true;
+        }
+
+        micBtn.addEventListener('click', () => {
+            if (isListening) {
+                recognition.stop();
+            } else {
+                try {
+                    recognition.start();
+                } catch (e) {
+                    console.error("Start Error:", e);
+                    // Handle case where recognition is already started
+                    if (e.name === 'InvalidStateError') {
+                        recognition.stop();
+                    }
+                }
+            }
+        });
+
+        function addMessage(text, side) {
+            const bubble = document.createElement('div');
+            bubble.className = `bubble bubble-${side}`;
+            bubble.innerText = text;
+            chatBox.insertBefore(bubble, suggestionBox);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function speak(text) {
+            const msg = new SpeechSynthesisUtterance();
+            msg.text = text;
+            msg.lang = 'zh-CN';
+            window.speechSynthesis.speak(msg);
+        }
+
+        function playNextStep() {
+            const step = dialogue[currentStep];
+            addMessage(step.question, 'ai');
+            speak(step.question);
+            
+            // Show suggestion
+            suggestionBox.style.visibility = "visible";
+            suggHanzi.innerText = step.answer;
+            suggPinyin.innerText = step.aPinyin;
+        }
+
+        // Start the game
+        setTimeout(playNextStep, 500);
+
+    </script>
+</body>
+</html>
