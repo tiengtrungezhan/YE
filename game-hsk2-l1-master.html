@@ -56,7 +56,24 @@
             for (let i = 0; i < totalQuestions; i++) {
                 const word = shuffled[i % shuffled.length];
                 let availableTypes = [0, 1, 2, 3];
-                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                if (word.ex_cn && word.ex_cn.length > 2) {
+                    let isAllowed = true;
+                    if (2 === 1 && parseInt('1') < 4) isAllowed = false;
+                    
+                    if (isAllowed) {
+                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                        const cumulativeChars = "猫西呢明号月午说ị在喜买老叫对个朋动机小见昨高它了生下为儿车后看现名七去钱系些n服天杯面不作钟哪脑最要g语影他师医很没候少眼请雨回什岁学八字喂大住苹有认十睛谁时前觉识样中đ吃新点年分汉怎二那五客茶菜饭习得星爱姐妈九么坐话旅东这租读起谢衣好也听能睡 游开你同商家写会今h兴狗吗做踢校喝和球来她电椅再本运友桌打国店热视米飞欢六想爸气三水我期ữ院一都块足子工亮关果书是太先人冷多几女四们里漂上出";
+                        for (let c of cleanSentence) {
+                            if (!cumulativeChars.includes(c)) {
+                                isAllowed = false;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (isAllowed) availableTypes.push(5);
+                }
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = { type, word };

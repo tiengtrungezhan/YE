@@ -56,7 +56,24 @@
             for (let i = 0; i < totalQuestions; i++) {
                 const word = shuffled[i % shuffled.length];
                 let availableTypes = [0, 1, 2, 3];
-                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                if (word.ex_cn && word.ex_cn.length > 2) {
+                    let isAllowed = true;
+                    if (1 === 1 && parseInt('6') < 4) isAllowed = false;
+                    
+                    if (isAllowed) {
+                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                        const cumulativeChars = "他师再友很呢妈九没么国什说岁ị八六学老叫对朋字气读大见我起ữ了谢好生有儿一 十谁你同名七关系她nđ写会是中人h怎汉多几二吗女不四们五客哪菜g语";
+                        for (let c of cleanSentence) {
+                            if (!cumulativeChars.includes(c)) {
+                                isAllowed = false;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (isAllowed) availableTypes.push(5);
+                }
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = { type, word };

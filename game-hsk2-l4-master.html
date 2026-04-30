@@ -56,7 +56,24 @@
             for (let i = 0; i < totalQuestions; i++) {
                 const word = shuffled[i % shuffled.length];
                 let availableTypes = [0, 1, 2, 3];
-                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                if (word.ex_cn && word.ex_cn.length > 2) {
+                    let isAllowed = true;
+                    if (2 === 1 && parseInt('4') < 4) isAllowed = false;
+                    
+                    if (isAllowed) {
+                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                        const cumulativeChars = "病猫乐西呢送明号月午说ị在喜买老叫对个朋动机快小见昨高它了生长下为儿车问后看现名七去钱系些n服床天杯面不作钟哪脑最纸要g语影他师非两医很没候少牛眼请知表雨回粉什岁学八身字喂大住苹有认十睛谁时步边色前觉给识样中đ真息吃新点每年分汉怎颜二那五客道茶菜饭习得星爱丈姐妈九么始千坐药话旅手奶东这租读起谢衣报好也听能睡 游开你同已商家间接写会左今h兴狗吗旁做踢校喝和球来她电椅再本红运休友帮桌打夫国店热视体米飞欢六跑忙日想爸气三绍介水我期ữ院经一都常块足子工晚亮关果书是太先人冷多几女四们房里漂上早出";
+                        for (let c of cleanSentence) {
+                            if (!cumulativeChars.includes(c)) {
+                                isAllowed = false;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (isAllowed) availableTypes.push(5);
+                }
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = { type, word };

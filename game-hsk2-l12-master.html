@@ -56,7 +56,24 @@
             for (let i = 0; i < totalQuestions; i++) {
                 const word = shuffled[i % shuffled.length];
                 let availableTypes = [0, 1, 2, 3];
-                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                if (word.ex_cn && word.ex_cn.length > 2) {
+                    let isAllowed = true;
+                    if (2 === 1 && parseInt('12') < 4) isAllowed = false;
+                    
+                    if (isAllowed) {
+                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                        const cumulativeChars = "明号月午买老斤贵慢高后现去服天室不钟课脑最公要雪第眼八字谁步给中吃每分饭习得孩星丈以药男旅手东也听务 游已接咖电椅本远运帮热忙想完吧晚太们房上自早乐教哥ị喜朋快小昨它长儿车系床宜g师就牛让表从岁喂题汽因时跳边点年怎汉妻那五道茶菜肉爱九坐助这租起谢衣瓜开你会今h狗吗近球桌打事店视六气绍我ữ弟块关书啡比人冷几度里病猫西便呢错说在个机了正迎下洗看钱n件哪纸影过他进两医走很没少粉请学望住认情十色前觉样真新颜试客可准等条姐千姓路员奶舞报离司商家间外写左踢校别和来她红还夫体米羊日爸水到期院经常懂足子先篮多女漂唱出鸡送门备叫对黑动见生诉穿为问行名七些场杯面作共语非候知雨回什身歌大苹有泳睛班识đ息二妈么始话读找好能睡同兴旁做考喝右白希再蛋休友国告欢飞跑三介一都工所亮果是鱼四零";
+                        for (let c of cleanSentence) {
+                            if (!cumulativeChars.includes(c)) {
+                                isAllowed = false;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (isAllowed) availableTypes.push(5);
+                }
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = { type, word };

@@ -56,7 +56,24 @@
             for (let i = 0; i < totalQuestions; i++) {
                 const word = shuffled[i % shuffled.length];
                 let availableTypes = [0, 1, 2, 3];
-                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                if (word.ex_cn && word.ex_cn.length > 2) {
+                    let isAllowed = true;
+                    if (2 === 1 && parseInt('8') < 4) isAllowed = false;
+                    
+                    if (isAllowed) {
+                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                        const cumulativeChars = "病猫乐西呢送明号门月错午说备教ị在喜买老叫对个朋黑斤动贵机快慢小见昨高它了生长诉下为儿车问后看现名七去行钱系些n服床件天场杯面不作室钟哪脑最纸公要g语共影过他师非两医就走很没候少牛让眼请知表雨回粉什岁学八身字喂大住苹汽有认因泳情十睛谁时步边色前觉给识样中đ真息吃新点每年分汉怎颜二那五试客道茶菜饭可肉习得准等星爱条丈姐妈九么始以千坐药话旅路手员奶东这租读找起谢衣报好也听离司能睡 务游开你同已商家间接写外咖会左今h兴狗吗旁做踢考校喝和球白来她电椅再本红远运休友帮还桌打夫国店告事热视体米飞欢六跑忙羊日想爸气三绍介水到我期ữ吧院经一都常块足子工所晚亮关果书是太先人鱼啡冷篮多几女四们房里漂上自早出";
+                        for (let c of cleanSentence) {
+                            if (!cumulativeChars.includes(c)) {
+                                isAllowed = false;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (isAllowed) availableTypes.push(5);
+                }
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = { type, word };

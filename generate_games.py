@@ -1,6 +1,25 @@
 import json
 import os
 
+# Build a global mapping of all vocab grouped by level and lesson
+all_vocab = {}
+for lvl in range(1, 7):
+    json_file = f'hsk{lvl}_vocab_data.json'
+    if os.path.exists(json_file):
+        with open(json_file, 'r', encoding='utf-8') as f:
+            all_vocab[lvl] = json.load(f)
+
+def get_cumulative_chars(target_level, target_lesson):
+    chars = set()
+    for lvl in range(1, target_level + 1):
+        if lvl in all_vocab:
+            for item in all_vocab[lvl]:
+                l_id = int(item['lesson'])
+                if lvl < target_level or l_id <= target_lesson:
+                    for char in item['hanzi']:
+                        chars.add(char)
+    return "".join(chars)
+
 def generate_hsk_games(level):
     json_file = f'hsk{level}_vocab_data.json'
     if not os.path.exists(json_file):
@@ -266,7 +285,24 @@ def generate_hsk_games(level):
             for (let i = 0; i < totalQuestions; i++) {{
                 const word = shuffled[i % shuffled.length];
                 let availableTypes = [0, 1, 2, 3];
-                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                if (word.ex_cn && word.ex_cn.length > 2) {{
+                    let isAllowed = true;
+                    if ({level} === 1 && parseInt('{lesson_id}') < 4) isAllowed = false;
+                    
+                    if (isAllowed) {{
+                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                        const cumulativeChars = "{cumulative_chars}";
+                        for (let c of cleanSentence) {{
+                            if (!cumulativeChars.includes(c)) {{
+                                isAllowed = false;
+                                break;
+                            }}
+                        }}
+                    }}
+                    
+                    if (isAllowed) availableTypes.push(5);
+                }}
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = {{ type, word }};
@@ -863,8 +899,9 @@ def generate_hsk_games(level):
             f.write(FLIP_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json))
         
         # Master Page
+        cumulative_chars = get_cumulative_chars(level, int(lesson_id))
         with open(f'game-hsk{level}-l{lesson_id}-master.html', 'w', encoding='utf-8') as f:
-            f.write(MASTER_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json))
+            f.write(MASTER_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json, cumulative_chars=cumulative_chars))
 
         # Match Page (HSK 1 and HSK 2 only)
         if level <= 2:
