@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "多儿大女同气老八名你了什再学客几他汉岁谢是有nữ见ị哪 友七国四系吗đ六关字朋叫九没g中师一对们好人h生谁呢不语么她我二五十起";
+                        const cumulativeChars = "八生同名国对谁大不岁好六ữ 友师再九呢她有见什女语ị多g汉一二们儿十đ朋我起系谢n没他吗学你关几哪四五中人客气h叫么了七字老是";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
