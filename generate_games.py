@@ -313,20 +313,20 @@ def generate_hsk_games(level):
         function checkAnswer(s, c, b) {{
             document.querySelectorAll('.option-btn').forEach(x => x.disabled = true);
             if (s === c) {{ b.classList.add('correct'); score++; }} else {{ b.classList.add('wrong'); document.querySelectorAll('.option-btn').forEach(x => {{ if(x.innerText===c) x.classList.add('correct'); }}); }}
-            setTimeout(next, 1500);
+            showNextButton();
         }}
         function checkTyping(c) {{
             const i = document.getElementById('typing-ans'), v = i.value.trim();
             if (v === c) {{ i.style.borderColor = "#28a745"; score++; }} else {{ i.style.borderColor = "#dc3545"; alert('Đáp án đúng: ' + c); }}
-            setTimeout(next, 1000);
+            showNextButton();
         }}
         function startRecording(correct) {{
             const btn = document.getElementById('record-btn');
             const res = document.getElementById('record-result');
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             if (!SpeechRecognition) {{
-                res.innerText = "Trình duyệt không hỗ trợ. Tự động qua câu...";
-                setTimeout(next, 2000);
+                res.innerText = "Trình duyệt không hỗ trợ thu âm.";
+                showNextButton();
                 return;
             }}
             const recognition = new SpeechRecognition();
@@ -342,16 +342,15 @@ def generate_hsk_games(level):
                 if (transcript.includes(correct)) {{
                     res.style.color = '#28a745';
                     score++;
-                    setTimeout(next, 1500);
                 }} else {{
                     res.style.color = '#dc3545';
                     res.innerText += " (Chưa chính xác)";
-                    setTimeout(next, 2500);
                 }}
+                showNextButton();
             }};
             recognition.onerror = function() {{
-                res.innerText = "Chưa nghe rõ. Bỏ qua câu này.";
-                setTimeout(next, 1500);
+                res.innerText = "Chưa nghe rõ.";
+                showNextButton();
             }};
             recognition.onend = function() {{
                 btn.style.backgroundColor = 'var(--primary-light)';
@@ -372,13 +371,20 @@ def generate_hsk_games(level):
                     dropZone.style.borderColor = '#28a745';
                     dropZone.style.backgroundColor = '#d4edda';
                     score++;
-                    setTimeout(next, 1000);
                 }} else {{
                     dropZone.style.borderColor = '#dc3545';
                     dropZone.style.backgroundColor = '#f8d7da';
-                    alert('Sai rồi! Câu đúng là: ' + correctSentence);
-                    setTimeout(next, 2000);
+                    let alertDiv = document.createElement('div');
+                    alertDiv.style = "color: #dc3545; font-weight: bold; margin-top: 1rem;";
+                    alertDiv.innerText = "Sai rồi! Câu đúng là: " + correctSentence;
+                    document.getElementById('quiz-card').appendChild(alertDiv);
                 }}
+                showNextButton();
+            }}
+        }}
+        function showNextButton() {{
+            if (!document.getElementById('next-btn')) {{
+                document.getElementById('quiz-card').insertAdjacentHTML('beforeend', '<button id="next-btn" class="submit-btn" style="margin-top: 1.5rem; background: #17a2b8;" onclick="next()">Tiếp Tục ➡</button>');
             }}
         }}
         function next() {{ currentQuestion++; if (currentQuestion < totalQuestions) renderQuestion(); else showResults(); }}
