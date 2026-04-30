@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "爱", "pinyin": "ài", "meaning": "yêu, thích", "lesson": "12"}, {"hanzi": "来", "pinyin": "lái", "meaning": "đến, tới", "lesson": "12"}, {"hanzi": "冷", "pinyin": "lěng", "meaning": "lạnh", "lesson": "12"}, {"hanzi": "那", "pinyin": "nà", "meaning": "kia, đó", "lesson": "12"}, {"hanzi": "那儿", "pinyin": "nàr", "meaning": "đằng kia, ở đó", "lesson": "12"}, {"hanzi": "热", "pinyin": "rè", "meaning": "nóng", "lesson": "12"}, {"hanzi": "上", "pinyin": "shàng", "meaning": "trên", "lesson": "12"}, {"hanzi": "水", "pinyin": "shuǐ", "meaning": "nước", "lesson": "12"}, {"hanzi": "水果", "pinyin": "shuïguǒ", "meaning": "trái cây", "lesson": "12"}, {"hanzi": "太", "pinyin": "tài", "meaning": "quá, lắm", "lesson": "12"}, {"hanzi": "天气", "pinyin": "tiānqì", "meaning": "thời tiết", "lesson": "12"}, {"hanzi": "下雨", "pinyin": "xià yǔ", "meaning": "có mưa, đổ mưa", "lesson": "12"}, {"hanzi": "小姐", "pinyin": "xiǎojiě", "meaning": "cô", "lesson": "12"}, {"hanzi": "些", "pinyin": "xiē", "meaning": "một ít, một vài", "lesson": "12"}, {"hanzi": "怎么样", "pinyin": "zěnmeyàng", "meaning": "thế nào", "lesson": "12"}, {"hanzi": "这儿", "pinyin": "zhèr", "meaning": "ở đây, chỗ này", "lesson": "12"}, {"hanzi": "桌子", "pinyin": "zhuōzi", "meaning": "cái bàn", "lesson": "12"}];
+        const vocabulary = [{"hanzi": "来", "pinyin": "lái", "meaning": "đến, tới", "lesson": "12"}, {"hanzi": "冷", "pinyin": "lěng", "meaning": "lạnh", "lesson": "12"}, {"hanzi": "那", "pinyin": "nà", "meaning": "kia, đó", "lesson": "12"}, {"hanzi": "那儿", "pinyin": "nàr", "meaning": "đằng kia, ở đó", "lesson": "12"}, {"hanzi": "热", "pinyin": "rè", "meaning": "nóng", "lesson": "12"}, {"hanzi": "水果", "pinyin": "shuïguǒ", "meaning": "trái cây", "lesson": "12"}, {"hanzi": "水", "pinyin": "shuǐ", "meaning": "nước", "lesson": "12"}, {"hanzi": "上", "pinyin": "shàng", "meaning": "trên", "lesson": "12"}, {"hanzi": "天气", "pinyin": "tiānqì", "meaning": "thời tiết", "lesson": "12"}, {"hanzi": "太", "pinyin": "tài", "meaning": "quá, lắm", "lesson": "12"}, {"hanzi": "下雨", "pinyin": "xià yǔ", "meaning": "có mưa, đổ mưa", "lesson": "12"}, {"hanzi": "些", "pinyin": "xiē", "meaning": "một ít, một vài", "lesson": "12"}, {"hanzi": "小姐", "pinyin": "xiǎojiě", "meaning": "cô", "lesson": "12"}, {"hanzi": "桌子", "pinyin": "zhuōzi", "meaning": "cái bàn", "lesson": "12"}, {"hanzi": "这儿", "pinyin": "zhèr", "meaning": "ở đây, chỗ này", "lesson": "12"}, {"hanzi": "怎么样", "pinyin": "zěnmeyàng", "meaning": "thế nào", "lesson": "12"}, {"hanzi": "爱", "pinyin": "ài", "meaning": "yêu, thích", "lesson": "12"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生同些年星大不岁说买友再呢她椅见什在杯汉小看点儿十去影家谢面没午你时医中客脑爸果字爱是狗名对吃好九天喜女ị钱书月写đ朋我明系子院n上想号吗关几热四五前茶h气了老怎八后国谁六ữ 今回本喝语猫g多一那们水太作请起下块他桌哪和姐人电很三现饭欢读叫个么候七商住期昨校师会有工二妈里冷来样少学菜店雨这米";
+                        const cumulativeChars = "书国六工买谁八女住写h九吗岁小菜桌样同人老姐家想什脑有多读她米关喜二块我冷不杯电少怎ữ午会子来雨在爱猫年明你是他下说吃里医那院ị些起十您号哪天儿店欢对椅回再太个中g客喝爸商茶饭气几谢朋狗名友语很了一 上汉点叫和呢果这见七今妈后星影面字đ学看大们好钱月三现请水时校作昨师没候生热四么系前去五期n本";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

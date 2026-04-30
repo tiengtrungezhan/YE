@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生同星大不岁说买友再呢她椅见什在杯汉小看儿十去家谢面没午你医中客脑爸字是狗名对吃好九天喜女ị钱书月写đ朋我系子院n想号吗关几五四前茶h气了老怎八后国谁六ữ 今本喝语猫g多一们作请起下块他哪和人电很饭欢读叫个么七商期校师会有工二妈里少学菜店这米";
+                        const cumulativeChars = "书国六工买谁八女写h九吗岁小菜同人老家想什脑有多读她米关喜二块我不杯电少怎ữ午会子在猫是你他下说吃里医院ị起十您号哪天儿店欢对椅再个中g客喝爸商茶饭气几谢朋狗名友语很了一 汉叫和呢这见七今妈后星面字đ学看大们好钱月请校作师没生四么系前去五期n本";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

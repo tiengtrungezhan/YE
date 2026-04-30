@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6"}, {"hanzi": "妈妈", "pinyin": "māma", "meaning": "mẹ", "lesson": "6"}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6"}];
+        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6"}, {"hanzi": "妈妈", "pinyin": "māma", "meaning": "mẹ", "lesson": "6"}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "八生同名国对谁大不岁好六ữ 友说师再九呢会她有见什女语ị多g汉一二妈们儿十đ朋写我起系谢n没他吗学你怎关几哪四五中人菜客气h很读叫么了七字老是";
+                        const cumulativeChars = "七妈国六我g二不客字đ学怎ữ谁大们会好八女再是他你写气说h九几吗岁菜谢朋师没生同名人老ị友家起语很了什 系么汉十您一四有哪叫儿多对五呢读她n关中见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "不客气", "pinyin": "bú kèqi", "meaning": "đừng khách sáo", "lesson": "2", "ex_cn": "不客气。", "ex_py": "Bú kèqi.", "ex_vn": "Đừng khách sáo."}, {"hanzi": "不", "pinyin": "bù", "meaning": "không cần, không, đừng", "lesson": "2", "ex_cn": "我不买。", "ex_py": "Wǒ bù mǎi.", "ex_vn": "Tôi không mua."}, {"hanzi": "对不起", "pinyin": "duìbuqǐ", "meaning": "xin lỗi", "lesson": "2", "ex_cn": "对不起，我迟到了。", "ex_py": "Duìbuqǐ, wǒ chídào le.", "ex_vn": "Xin lỗi, tôi đến muộn."}, {"hanzi": "没关系", "pinyin": "méiguānxi", "meaning": "không sao đâu", "lesson": "2", "ex_cn": "没关系。", "ex_py": "Méiguānxi.", "ex_vn": "Không sao đâu."}, {"hanzi": "谢谢", "pinyin": "xièxie", "meaning": "cảm ơn", "lesson": "2", "ex_cn": "谢谢你。", "ex_py": "Xièxie nǐ.", "ex_vn": "Cảm ơn bạn."}];
+        const vocabulary = [{"hanzi": "不", "pinyin": "bù", "meaning": "không cần, không, đừng", "lesson": "2", "ex_cn": "我不买。", "ex_py": "Wǒ bù mǎi.", "ex_vn": "Tôi không mua."}, {"hanzi": "不客气", "pinyin": "bú kèqi", "meaning": "đừng khách sáo", "lesson": "2", "ex_cn": "不客气。", "ex_py": "Bú kèqi.", "ex_vn": "Đừng khách sáo."}, {"hanzi": "对不起", "pinyin": "duìbuqǐ", "meaning": "xin lỗi", "lesson": "2", "ex_cn": "对不起，我迟到了。", "ex_py": "Duìbuqǐ, wǒ chídào le.", "ex_vn": "Xin lỗi, tôi đến muộn."}, {"hanzi": "没关系", "pinyin": "méiguānxi", "meaning": "không sao đâu", "lesson": "2", "ex_cn": "没关系。", "ex_py": "Méiguānxi.", "ex_vn": "Không sao đâu."}, {"hanzi": "谢谢", "pinyin": "xièxie", "meaning": "cảm ơn", "lesson": "2", "ex_cn": "谢谢你。", "ex_py": "Xièxie nǐ.", "ex_vn": "Cảm ơn bạn."}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "对不好师再她见们我起系谢没他你关客气老";
+                        const cumulativeChars = "我不客学大们再好他你气谢师没同老家起系您对她关见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

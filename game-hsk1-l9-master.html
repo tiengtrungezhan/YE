@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "爸爸", "pinyin": "bàba", "meaning": "bố, cha", "lesson": "9"}, {"hanzi": "儿子", "pinyin": "érzi", "meaning": "con trai", "lesson": "9"}, {"hanzi": "工作", "pinyin": "gōngzuò", "meaning": "làm việc; công việc", "lesson": "9"}, {"hanzi": "狗", "pinyin": "gǒu", "meaning": "chó", "lesson": "9"}, {"hanzi": "家", "pinyin": "jiā", "meaning": "nhà", "lesson": "9"}, {"hanzi": "猫", "pinyin": "māo", "meaning": "mèo", "lesson": "9"}, {"hanzi": "哪儿", "pinyin": "nǎr", "meaning": "ở đâu", "lesson": "9"}, {"hanzi": "商店", "pinyin": "shāngdiàn", "meaning": "cửa hàng", "lesson": "9"}, {"hanzi": "少", "pinyin": "shǎo", "meaning": "ít", "lesson": "9"}, {"hanzi": "下", "pinyin": "xià", "meaning": "bên dưới, phía dưới", "lesson": "9"}, {"hanzi": "小", "pinyin": "xiǎo", "meaning": "nhỏ, bé", "lesson": "9"}, {"hanzi": "医生", "pinyin": "yīshēng", "meaning": "bác sĩ", "lesson": "9"}, {"hanzi": "医院", "pinyin": "yīyuàn", "meaning": "bệnh viện", "lesson": "9"}, {"hanzi": "椅子", "pinyin": "yǐzi", "meaning": "ghế dựa", "lesson": "9"}, {"hanzi": "在", "pinyin": "zài", "meaning": "ở, tại, đang", "lesson": "9"}];
+        const vocabulary = [{"hanzi": "爸爸", "pinyin": "bàba", "meaning": "bố, cha", "lesson": "9"}, {"hanzi": "工作", "pinyin": "gōngzuò", "meaning": "làm việc; công việc", "lesson": "9"}, {"hanzi": "狗", "pinyin": "gǒu", "meaning": "chó", "lesson": "9"}, {"hanzi": "家", "pinyin": "jiā", "meaning": "nhà", "lesson": "9"}, {"hanzi": "猫", "pinyin": "māo", "meaning": "mèo", "lesson": "9"}, {"hanzi": "哪儿", "pinyin": "nǎr", "meaning": "ở đâu", "lesson": "9"}, {"hanzi": "商店", "pinyin": "shāngdiàn", "meaning": "cửa hàng", "lesson": "9"}, {"hanzi": "少", "pinyin": "shǎo", "meaning": "ít", "lesson": "9"}, {"hanzi": "下", "pinyin": "xià", "meaning": "bên dưới, phía dưới", "lesson": "9"}, {"hanzi": "小", "pinyin": "xiǎo", "meaning": "nhỏ, bé", "lesson": "9"}, {"hanzi": "医生", "pinyin": "yīshēng", "meaning": "bác sĩ", "lesson": "9"}, {"hanzi": "医院", "pinyin": "yīyuàn", "meaning": "bệnh viện", "lesson": "9"}, {"hanzi": "椅子", "pinyin": "yǐzi", "meaning": "ghế dựa", "lesson": "9"}, {"hanzi": "在", "pinyin": "zài", "meaning": "ở, tại, đang", "lesson": "9"}, {"hanzi": "儿子", "pinyin": "érzi", "meaning": "con trai", "lesson": "9"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生同星大不岁说买友再呢她椅见什在杯汉小看儿十去家谢没午你医中客爸字是狗名对吃好九天女ị钱书月写đ朋我系子院n想号吗关几五四茶h气了老怎八国谁六ữ 今喝语猫g多一们作请起下块他哪人很饭读叫个么七商期校师会有工二妈少学菜店这米";
+                        const cumulativeChars = "书国六工买谁八女写h九吗岁小菜同人老家想什有多读她米关二块我不杯少怎ữ午会子在猫是你他下说吃医院ị起十您号哪天儿店对椅再个中g客喝爸商茶饭气几谢朋狗名友语很了一 汉叫呢这见七今妈星字đ学看大们好钱月请校作师没生四么系去五期n";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
