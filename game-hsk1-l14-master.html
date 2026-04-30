@@ -55,7 +55,7 @@
             let qs = [], shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
             for (let i = 0; i < totalQuestions; i++) {
                 const word = shuffled[i % shuffled.length];
-                let availableTypes = [0, 1, 2, 3, 4];
+                let availableTypes = [0, 1, 2, 3];
                 if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
                 
                 const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
@@ -92,8 +92,6 @@
                 html = `<div class="question-text">Từ "${q.word.hanzi}" có phiên âm là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.pinyin}', '${q.word.pinyin}', this)">${opt.pinyin}</button>`).join('')}</div>`;
             } else if (q.type === 3) {
                 html = `<div class="question-text">"${q.word.meaning}" trong tiếng Trung viết là gì?</div><div class="input-area"><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập chữ Hán..."><button class="submit-btn" onclick="checkTyping('${q.word.hanzi}')">Gửi</button></div>`;
-            } else if (q.type === 4) {
-                html = `<div class="question-text">Nhấn giữ Micro và đọc to:</div><div style="font-size: 3.5rem; font-weight: bold; color: var(--primary-dark); margin-bottom: 0.5rem;">${q.word.hanzi}</div><div style="color: #666; margin-bottom: 2rem; font-size: 1.2rem;">${q.word.pinyin} - ${q.word.meaning}</div><button class="audio-btn" id="record-btn" style="user-select: none; touch-action: none;" onmousedown="startHoldRecord('${q.word.hanzi}')" onmouseup="stopHoldRecord()" onmouseleave="stopHoldRecord()" ontouchstart="startHoldRecord('${q.word.hanzi}')" ontouchend="stopHoldRecord()" oncontextmenu="return false;">🎤</button><div id="record-result" style="margin-top: 1rem; font-weight: bold; font-size: 1.1rem; min-height: 1.5rem;"></div>`;
             } else if (q.type === 5) {
                 html = `<div class="question-text">Sắp xếp thành câu đúng:</div><div style="color: #666; margin-bottom: 1.5rem; font-size: 1.1rem;">Nghĩa: ${q.word.ex_vn || q.word.meaning}</div><div id="drop-zone" style="min-height: 70px; padding: 1rem; border: 2px dashed #ccc; border-radius: 15px; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; align-items: center;"></div><div id="drag-zone" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">${q.chars.map((char, i) => `<button class="option-btn" style="padding: 0.8rem 1.2rem; font-size: 1.5rem;" onclick="moveChar(this, '${q.correctSentence}')">${char}</button>`).join('')}</div>`;
             }
@@ -109,67 +107,6 @@
             const i = document.getElementById('typing-ans'), v = i.value.trim();
             if (v === c) { i.style.borderColor = "#28a745"; score++; } else { i.style.borderColor = "#dc3545"; alert('Đáp án đúng: ' + c); }
             showNextButton();
-        }
-        let activeRecognition = null;
-        function startHoldRecord(correct) {
-            const btn = document.getElementById('record-btn');
-            if (btn.disabled) return;
-            const res = document.getElementById('record-result');
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            if (!SpeechRecognition) {
-                res.innerText = "Trình duyệt không hỗ trợ thu âm.";
-                showNextButton();
-                return;
-            }
-            if (activeRecognition) return;
-            activeRecognition = new SpeechRecognition();
-            activeRecognition.lang = 'zh-CN';
-            
-            activeRecognition.onstart = function() {
-                btn.style.backgroundColor = '#ff4444';
-                btn.style.color = 'white';
-                res.innerText = "Đang nghe...";
-                res.style.color = 'initial';
-            };
-            
-            activeRecognition.onresult = function(event) {
-                const transcript = event.results[0][0].transcript.replace(/[，。？！、\s]/g, '');
-                res.innerText = "Bạn đọc: " + transcript;
-                if (transcript.includes(correct)) {
-                    res.style.color = '#28a745';
-                    score++;
-                } else {
-                    res.style.color = '#dc3545';
-                    res.innerText += " (Chưa chính xác)";
-                }
-                btn.disabled = true;
-                showNextButton();
-            };
-            
-            activeRecognition.onerror = function(e) {
-                if (e.error === 'no-speech') {
-                    res.innerText = "Chưa nghe rõ. Bạn hãy nhấn giữ lại.";
-                } else {
-                    res.innerText = "Lỗi thu âm. Bỏ qua câu này.";
-                    showNextButton();
-                }
-                activeRecognition = null;
-                btn.style.backgroundColor = 'var(--primary-light)';
-                btn.style.color = 'initial';
-            };
-            
-            activeRecognition.onend = function() {
-                btn.style.backgroundColor = 'var(--primary-light)';
-                btn.style.color = 'initial';
-                activeRecognition = null;
-            };
-            
-            try { activeRecognition.start(); } catch(e) {}
-        }
-        function stopHoldRecord() {
-            if (activeRecognition) {
-                activeRecognition.stop();
-            }
         }
         function moveChar(btn, correctSentence) {
             const dropZone = document.getElementById('drop-zone');
