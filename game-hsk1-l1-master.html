@@ -45,14 +45,28 @@
     </div>
     <script>
         const vocabulary = [{"hanzi": "好", "pinyin": "hǎo", "meaning": "khỏe, tốt", "lesson": "1", "ex_cn": "你好！", "ex_py": "Nǐ hǎo!", "ex_vn": "Chào bạn!"}, {"hanzi": "老师", "pinyin": "lǎoshī", "meaning": "thầy/cô giáo", "lesson": "1", "ex_cn": "老师好！", "ex_py": "Lǎoshī hǎo!", "ex_vn": "Chào thầy/cô!"}, {"hanzi": "你", "pinyin": "nǐ", "meaning": "bạn, anh, chị", "lesson": "1", "ex_cn": "你叫什么名字？", "ex_py": "Nǐ jiào shénme míngzi?", "ex_vn": "Bạn tên là gì?"}, {"hanzi": "他", "pinyin": "tā", "meaning": "anh ấy, ông ấy", "lesson": "1", "ex_cn": "他是我的朋友。", "ex_py": "Tā shì wǒ de péngyou.", "ex_vn": "Anh ấy là bạn của tôi."}, {"hanzi": "她", "pinyin": "tā", "meaning": "cô ấy, bà ấy", "lesson": "1", "ex_cn": "她很高兴。", "ex_py": "Tā hěn gāoxìng.", "ex_vn": "Cô ấy rất vui."}, {"hanzi": "我", "pinyin": "wǒ", "meaning": "tôi, ta", "lesson": "1", "ex_cn": "我很忙。", "ex_py": "Wǒ hěn máng.", "ex_vn": "Tôi rất bận."}, {"hanzi": "我们", "pinyin": "wǒmen", "meaning": "chúng tôi, chúng ta", "lesson": "1", "ex_cn": "我们去学校吧。", "ex_py": "Wǒmen qù xuéxiào ba.", "ex_vn": "Chúng ta đi học thôi."}, {"hanzi": "再见", "pinyin": "zàijiàn", "meaning": "tạm biệt", "lesson": "1", "ex_cn": "老师，再见！", "ex_py": "Lǎoshī, zàijiàn!", "ex_vn": "Chào tạm biệt thầy/cô!"}];
-        let currentQuestion = 0, score = 0, questions = [], totalQuestions = Math.min(10, vocabulary.length);
-        function initGame() { questions = generateQuestions(); renderQuestion(); }
+        let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
+        function initGame() { 
+            totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
+            questions = generateQuestions(); 
+            renderQuestion(); 
+        }
         function generateQuestions() {
             let qs = [], shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
             for (let i = 0; i < totalQuestions; i++) {
-                const type = Math.floor(Math.random() * 4), word = shuffled[i % shuffled.length];
+                const word = shuffled[i % shuffled.length];
+                let availableTypes = [0, 1, 2, 3, 4];
+                if (word.ex_cn && word.ex_cn.length > 2) availableTypes.push(5);
+                
+                const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
                 let q = { type, word };
-                if (type !== 3) q.options = generateOptions(word, type);
+                
+                if (type === 0 || type === 1 || type === 2) q.options = generateOptions(word, type);
+                if (type === 5) {
+                    let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                    q.chars = cleanSentence.split('').sort(() => Math.random() - 0.5);
+                    q.correctSentence = cleanSentence;
+                }
                 qs.push(q);
             }
             return qs;
@@ -76,8 +90,12 @@
                 html = `<div class="question-text">Từ "${q.word.hanzi}" có nghĩa là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.meaning}', '${q.word.meaning}', this)">${opt.meaning}</button>`).join('')}</div>`;
             } else if (q.type === 2) {
                 html = `<div class="question-text">Từ "${q.word.hanzi}" có phiên âm là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.pinyin}', '${q.word.pinyin}', this)">${opt.pinyin}</button>`).join('')}</div>`;
-            } else {
+            } else if (q.type === 3) {
                 html = `<div class="question-text">"${q.word.meaning}" trong tiếng Trung viết là gì?</div><div class="input-area"><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập chữ Hán..."><button class="submit-btn" onclick="checkTyping('${q.word.hanzi}')">Gửi</button></div>`;
+            } else if (q.type === 4) {
+                html = `<div class="question-text">Đọc to từ sau:</div><div style="font-size: 3.5rem; font-weight: bold; color: var(--primary-dark); margin-bottom: 0.5rem;">${q.word.hanzi}</div><div style="color: #666; margin-bottom: 2rem; font-size: 1.2rem;">${q.word.pinyin} - ${q.word.meaning}</div><button class="audio-btn" id="record-btn" onclick="startRecording('${q.word.hanzi}')">🎤</button><div id="record-result" style="margin-top: 1rem; font-weight: bold; font-size: 1.1rem; min-height: 1.5rem;"></div>`;
+            } else if (q.type === 5) {
+                html = `<div class="question-text">Sắp xếp thành câu đúng:</div><div style="color: #666; margin-bottom: 1.5rem; font-size: 1.1rem;">Nghĩa: ${q.word.ex_vn || q.word.meaning}</div><div id="drop-zone" style="min-height: 70px; padding: 1rem; border: 2px dashed #ccc; border-radius: 15px; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; align-items: center;"></div><div id="drag-zone" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">${q.chars.map((char, i) => `<button class="option-btn" style="padding: 0.8rem 1.2rem; font-size: 1.5rem;" onclick="moveChar(this, '${q.correctSentence}')">${char}</button>`).join('')}</div>`;
             }
             card.innerHTML = html;
         }
@@ -91,6 +109,67 @@
             const i = document.getElementById('typing-ans'), v = i.value.trim();
             if (v === c) { i.style.borderColor = "#28a745"; score++; } else { i.style.borderColor = "#dc3545"; alert('Đáp án đúng: ' + c); }
             setTimeout(next, 1000);
+        }
+        function startRecording(correct) {
+            const btn = document.getElementById('record-btn');
+            const res = document.getElementById('record-result');
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!SpeechRecognition) {
+                res.innerText = "Trình duyệt không hỗ trợ. Tự động qua câu...";
+                setTimeout(next, 2000);
+                return;
+            }
+            const recognition = new SpeechRecognition();
+            recognition.lang = 'zh-CN';
+            recognition.start();
+            btn.style.backgroundColor = '#ff4444';
+            btn.style.color = 'white';
+            res.innerText = "Đang nghe...";
+            
+            recognition.onresult = function(event) {
+                const transcript = event.results[0][0].transcript.replace(/[，。？！、\s]/g, '');
+                res.innerText = "Bạn đọc: " + transcript;
+                if (transcript.includes(correct)) {
+                    res.style.color = '#28a745';
+                    score++;
+                    setTimeout(next, 1500);
+                } else {
+                    res.style.color = '#dc3545';
+                    res.innerText += " (Chưa chính xác)";
+                    setTimeout(next, 2500);
+                }
+            };
+            recognition.onerror = function() {
+                res.innerText = "Chưa nghe rõ. Bỏ qua câu này.";
+                setTimeout(next, 1500);
+            };
+            recognition.onend = function() {
+                btn.style.backgroundColor = 'var(--primary-light)';
+                btn.style.color = 'initial';
+            };
+        }
+        function moveChar(btn, correctSentence) {
+            const dropZone = document.getElementById('drop-zone');
+            if (btn.parentElement.id === 'drag-zone') {
+                dropZone.appendChild(btn);
+            } else {
+                document.getElementById('drag-zone').appendChild(btn);
+            }
+            
+            let currentStr = Array.from(dropZone.children).map(c => c.innerText).join('');
+            if (document.getElementById('drag-zone').children.length === 0) {
+                if (currentStr === correctSentence) {
+                    dropZone.style.borderColor = '#28a745';
+                    dropZone.style.backgroundColor = '#d4edda';
+                    score++;
+                    setTimeout(next, 1000);
+                } else {
+                    dropZone.style.borderColor = '#dc3545';
+                    dropZone.style.backgroundColor = '#f8d7da';
+                    alert('Sai rồi! Câu đúng là: ' + correctSentence);
+                    setTimeout(next, 2000);
+                }
+            }
         }
         function next() { currentQuestion++; if (currentQuestion < totalQuestions) renderQuestion(); else showResults(); }
         function showResults() { document.getElementById('game-ui').style.display = 'none'; document.getElementById('result-ui').style.display = 'block'; document.getElementById('final-score').innerText = Math.round((score/totalQuestions)*100)+'%'; document.getElementById('score-text').innerText = `Bạn đúng ${score}/${totalQuestions} câu.`; }
