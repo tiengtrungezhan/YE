@@ -103,8 +103,8 @@ def generate_hsk_games(level):
         <img src="mascot.png" alt="Home">
     </a>
     <div class="page-container">
+        <a href="game-hsk{level}.html" class="back-btn">← Quay lại</a>
         <header class="game-header">
-            <a href="game-hsk{level}.html" class="back-btn" style="position: absolute; left: 0; top: 0;">← Quay lại</a>
             <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh</h1>
             <p>Bài {lesson_id} - Khám phá từ vựng</p>
             <div class="mascot-container">
@@ -724,8 +724,8 @@ def generate_hsk_games(level):
         <img src="mascot.png" alt="Home">
     </a>
     <div class="page-container">
+        <a href="game-hsk{level}.html" class="back-btn">← Quay lại</a>
         <header class="game-header">
-            <a href="game-hsk{level}.html" class="back-btn" style="position: absolute; left: 0; top: 0;">← Quay lại</a>
             <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Siêu Trí Nhớ 🧠</h1>
             <p>HSK {level} Bài {lesson_id}: Nghe và kể lại bài khóa</p>
         </header>
