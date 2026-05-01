@@ -71,7 +71,7 @@ def generate_hsk_games(level):
             box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2);
         }}
         .flip-card-front {{ justify-content: center; align-items: center; }}
-        .flip-card-front .hanzi {{ font-size: 8rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }}
+        .flip-card-front .hanzi {{ font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 8rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }}
         .flip-card:hover .hanzi {{ transform: scale(1.1); }}
         .flip-card-back {{ transform: rotateY(180deg); text-align: left; background: #fff; border-color: var(--primary-color); }}
         .flip-card.mastered .flip-card-front, .flip-card.mastered .flip-card-back {{ border-color: #ffd700; background: #fffdf0; }}
@@ -79,7 +79,7 @@ def generate_hsk_games(level):
         .flip-card.mastered .master-badge {{ display: block; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }}
         @keyframes pop {{ from {{ transform: scale(0); }} to {{ transform: scale(1); }} }}
         .back-header {{ width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }}
-        .back-hanzi {{ font-size: 3rem; font-weight: 800; color: var(--primary-dark); }}
+        .back-hanzi {{ font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 3rem; font-weight: 800; color: var(--primary-dark); }}
         .back-pinyin {{ font-size: 1.8rem; color: #e67e22; font-weight: 700; }}
         .btn-speak {{ background: var(--primary-light); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: 0.3s; }}
         .btn-speak:hover {{ background: var(--primary-color); transform: scale(1.1); }}
@@ -176,7 +176,7 @@ def generate_hsk_games(level):
                         </div>
                         <div class="back-example">
                             <strong>Ví dụ:</strong>
-                            <div style="margin-top:5px; font-size: 1.5rem;">${{word.ex_cn || word.hanzi}}</div>
+                            <div style="font-family: 'KaiTi', '楷体', 'STKaiti', serif; margin-top:5px; font-size: 1.5rem;">${{word.ex_cn || word.hanzi}}</div>
                             <div style="color: #e67e22; font-style: italic; font-size: 1.2rem;">${{word.ex_py || word.pinyin}}</div>
                             <div style="color: #666; font-size: 1.1rem; border-top: 1px dashed #ccc; margin-top:5px; padding-top:5px;">${{word.ex_vn || word.meaning}}</div>
                         </div>
