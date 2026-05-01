@@ -1371,5 +1371,102 @@
     "ex_cn": "你是哪国人？",
     "ex_py": "Nǐ shì nǎ guó rén?",
     "ex_vn": "Bạn là người nước nào?"
+  },
+  {
+    "hanzi": "不用谢",
+    "pinyin": "bú yòng xiè",
+    "meaning": "không cần cảm ơn",
+    "lesson": "2",
+    "type": "Trợ từ",
+    "ex_cn": "不用谢，这是我应该做的。",
+    "ex_py": "Bú yòng xiè, zhè shì wǒ yīnggāi zuò de.",
+    "ex_vn": "Không cần cảm ơn, đây là việc tôi nên làm."
+  },
+  {
+    "hanzi": "没事",
+    "pinyin": "méi shì",
+    "meaning": "không có gì, không sao",
+    "lesson": "2",
+    "type": "Động từ",
+    "ex_cn": "没事，别担心。",
+    "ex_py": "Méi shì, bié dānxīn.",
+    "ex_vn": "Không sao đâu, đừng lo lắng."
+  },
+  {
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "một",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "hai",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "ba",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "bốn",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning": "năm",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "sáu",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "七",
+    "pinyin": "qī",
+    "meaning": "bảy",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "八",
+    "pinyin": "bā",
+    "meaning": "tám",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "chín",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning": "mười",
+    "lesson": "2",
+    "type": "Số từ"
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "số không",
+    "lesson": "2",
+    "type": "Số từ"
   }
 ]
