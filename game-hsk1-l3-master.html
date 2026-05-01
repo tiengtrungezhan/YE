@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "叫", "pinyin": "jiào", "meaning": "tên (là)", "lesson": "3"}, {"hanzi": "吗", "pinyin": "ma", "meaning": "được dùng ở cuối câu hỏi", "lesson": "3"}, {"hanzi": "名字", "pinyin": "míngzi", "meaning": "tên", "lesson": "3"}, {"hanzi": "呢", "pinyin": "ne", "meaning": "được dùng ở cuối câu hỏi", "lesson": "3"}, {"hanzi": "人", "pinyin": "rén", "meaning": "người", "lesson": "3"}, {"hanzi": "什么", "pinyin": "shénme", "meaning": "cái gì", "lesson": "3"}, {"hanzi": "是", "pinyin": "shì", "meaning": "là", "lesson": "3"}, {"hanzi": "学生", "pinyin": "xuésheng", "meaning": "học sinh", "lesson": "3"}, {"hanzi": "中国", "pinyin": "Zhōngguó", "meaning": "Trung Quốc", "lesson": "3"}];
+        const vocabulary = [{"hanzi": "叫", "pinyin": "jiào", "meaning": "tên (là)", "lesson": "3", "type": "Danh từ"}, {"hanzi": "吗", "pinyin": "ma", "meaning": "được dùng ở cuối câu hỏi", "lesson": "3", "type": "Trợ từ"}, {"hanzi": "名字", "pinyin": "míngzi", "meaning": "tên", "lesson": "3", "type": "Danh từ"}, {"hanzi": "呢", "pinyin": "ne", "meaning": "được dùng ở cuối câu hỏi", "lesson": "3", "type": "Trợ từ"}, {"hanzi": "人", "pinyin": "rén", "meaning": "người", "lesson": "3", "type": "Danh từ"}, {"hanzi": "什么", "pinyin": "shénme", "meaning": "cái gì", "lesson": "3", "type": "Đại từ"}, {"hanzi": "是", "pinyin": "shì", "meaning": "là", "lesson": "3", "type": "Động từ"}, {"hanzi": "学生", "pinyin": "xuésheng", "meaning": "học sinh", "lesson": "3", "type": "Động từ"}, {"hanzi": "中国", "pinyin": "Zhōngguó", "meaning": "Trung Quốc", "lesson": "3", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "名再吗关人么好没呢学师他您气老你同见中对系她是不家谢生国客们起叫什大我字";
+                        const cumulativeChars = "你起客中好对我关气没他谢老吗系再见么名叫国您们生字她大是同人师不家呢学什";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

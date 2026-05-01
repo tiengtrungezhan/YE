@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "杯子", "pinyin": "bēizi", "meaning": "ly, tách", "lesson": "8"}, {"hanzi": "茶", "pinyin": "chá", "meaning": "trà", "lesson": "8"}, {"hanzi": "吃", "pinyin": "chī", "meaning": "ăn", "lesson": "8"}, {"hanzi": "多少", "pinyin": "duōshao", "meaning": "bao nhiêu", "lesson": "8"}, {"hanzi": "个", "pinyin": "gè", "meaning": "cái", "lesson": "8"}, {"hanzi": "喝", "pinyin": "hē", "meaning": "uống", "lesson": "8"}, {"hanzi": "块", "pinyin": "kuài", "meaning": "đồng (đơn vị tiền tệ)", "lesson": "8"}, {"hanzi": "买", "pinyin": "mǎi", "meaning": "mua", "lesson": "8"}, {"hanzi": "米饭", "pinyin": "mǐfàn", "meaning": "cơm", "lesson": "8"}, {"hanzi": "钱", "pinyin": "qián", "meaning": "tiền", "lesson": "8"}, {"hanzi": "下午", "pinyin": "xiàwǔ", "meaning": "buổi chiều", "lesson": "8"}, {"hanzi": "想", "pinyin": "xiǎng", "meaning": "muốn", "lesson": "8"}, {"hanzi": "这", "pinyin": "zhè", "meaning": "đây, này", "lesson": "8"}];
+        const vocabulary = [{"hanzi": "杯子", "pinyin": "bēizi", "meaning": "ly, tách", "lesson": "8", "type": "Danh từ"}, {"hanzi": "茶", "pinyin": "chá", "meaning": "trà", "lesson": "8", "type": "Danh từ"}, {"hanzi": "吃", "pinyin": "chī", "meaning": "ăn", "lesson": "8", "type": "Động từ"}, {"hanzi": "多少", "pinyin": "duōshao", "meaning": "bao nhiêu", "lesson": "8", "type": "Danh từ"}, {"hanzi": "个", "pinyin": "gè", "meaning": "cái", "lesson": "8", "type": "Lượng từ"}, {"hanzi": "喝", "pinyin": "hē", "meaning": "uống", "lesson": "8", "type": "Động từ"}, {"hanzi": "块", "pinyin": "kuài", "meaning": "đồng (đơn vị tiền tệ)", "lesson": "8", "type": "Lượng từ"}, {"hanzi": "买", "pinyin": "mǎi", "meaning": "mua", "lesson": "8", "type": "Động từ"}, {"hanzi": "米饭", "pinyin": "mǐfàn", "meaning": "cơm", "lesson": "8", "type": "Danh từ"}, {"hanzi": "钱", "pinyin": "qián", "meaning": "tiền", "lesson": "8", "type": "Danh từ"}, {"hanzi": "下午", "pinyin": "xiàwǔ", "meaning": "buổi chiều", "lesson": "8", "type": "Danh từ"}, {"hanzi": "想", "pinyin": "xiǎng", "meaning": "muốn", "lesson": "8", "type": "Động từ"}, {"hanzi": "这", "pinyin": "zhè", "meaning": "đây, này", "lesson": "8", "type": "Đại từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "饭吗么杯朋老同中系想她看是读儿们了少个大我友名谁十天关九g钱午 女您一你见说校写二客去起买八多号好怎没呢学他块这气对汉哪四会月米几吃六岁请妈生国期叫ị茶七什字下再五子人书喝师语有星不家谢菜đh今n很ữ";
+                        const cumulativeChars = "你客起个h会我号再汉么块茶字八她六同不 米喝四吃呢写学谁中好这对去气怎他语国您请多生读书天n大友杯说儿ữ二有星关饭九吗菜名叫校今đ钱ị是人师岁家期一买朋什很五女没谢老系哪g月们看十几少午下想了七子妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

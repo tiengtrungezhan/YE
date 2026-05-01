@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "电影", "pinyin": "diànyǐng", "meaning": "phim", "lesson": "11"}, {"hanzi": "点", "pinyin": "diǎn", "meaning": "giờ", "lesson": "11"}, {"hanzi": "回", "pinyin": "huí", "meaning": "về", "lesson": "11"}, {"hanzi": "明天", "pinyin": "míngtiān", "meaning": "ngày mai", "lesson": "11"}, {"hanzi": "年", "pinyin": "nián", "meaning": "năm", "lesson": "11"}, {"hanzi": "上午", "pinyin": "shàngwǔ", "meaning": "buổi sáng", "lesson": "11"}, {"hanzi": "时候", "pinyin": "shíhou", "meaning": "lúc, khi", "lesson": "11"}, {"hanzi": "三", "pinyin": "sān", "meaning": "ba", "lesson": "11"}, {"hanzi": "现在", "pinyin": "xiànzài", "meaning": "bây giờ, hiện tại", "lesson": "11"}, {"hanzi": "住", "pinyin": "zhù", "meaning": "ở, cư trú", "lesson": "11"}, {"hanzi": "中午", "pinyin": "zhōngwǔ", "meaning": "buổi trưa", "lesson": "11"}, {"hanzi": "昨天", "pinyin": "zuótiān", "meaning": "hôm qua", "lesson": "11"}];
+        const vocabulary = [{"hanzi": "电影", "pinyin": "diànyǐng", "meaning": "phim", "lesson": "11", "type": "Danh từ"}, {"hanzi": "点", "pinyin": "diǎn", "meaning": "giờ", "lesson": "11", "type": "Danh từ"}, {"hanzi": "回", "pinyin": "huí", "meaning": "về", "lesson": "11", "type": "Danh từ"}, {"hanzi": "明天", "pinyin": "míngtiān", "meaning": "ngày mai", "lesson": "11", "type": "Danh từ"}, {"hanzi": "年", "pinyin": "nián", "meaning": "năm", "lesson": "11", "type": "Danh từ"}, {"hanzi": "上午", "pinyin": "shàngwǔ", "meaning": "buổi sáng", "lesson": "11", "type": "Danh từ"}, {"hanzi": "时候", "pinyin": "shíhou", "meaning": "lúc, khi", "lesson": "11", "type": "Danh từ"}, {"hanzi": "三", "pinyin": "sān", "meaning": "ba", "lesson": "11", "type": "Số từ"}, {"hanzi": "现在", "pinyin": "xiànzài", "meaning": "bây giờ, hiện tại", "lesson": "11", "type": "Giới từ"}, {"hanzi": "住", "pinyin": "zhù", "meaning": "ở, cư trú", "lesson": "11", "type": "Động từ"}, {"hanzi": "中午", "pinyin": "zhōngwǔ", "meaning": "buổi trưa", "lesson": "11", "type": "Danh từ"}, {"hanzi": "昨天", "pinyin": "zuótiān", "meaning": "hôm qua", "lesson": "11", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "小脑饭吗么杯朋老同中昨系店三想点她看是读儿们了少个大我友商名谁十天关九g钱午 女您狗一你时见说院住椅校写二作客去起买电回八多号在医后好怎没呢和学他明块这气爸对汉哪欢四会月米几候吃六岁请妈生国喜期叫ị茶面七什字下再五子人书喝师语上工有本星不家前影里谢年菜đ现h猫今n很ữ";
+                        const cumulativeChars = "商你昨客起个h会我号再汉里么块小茶字八作她六和同不 医米喝四吃呢写谁学候后中好这院对店去气怎他语国您请多生三读书天n大友杯说欢电儿ữ面二上现有前喜星关饭九吗椅菜名叫校影今爸đ年时本钱ị点工是人师岁家期一狗买朋猫什明很回五在女没住谢老系哪g月们看十几少午下脑想了七子妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

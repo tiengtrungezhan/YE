@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "生病", "pinyin": "shēng bìng", "meaning": "sinh bệnh, ốm", "lesson": "2"}, {"hanzi": "每", "pinyin": "měi", "meaning": "mỗi", "lesson": "2"}, {"hanzi": "早上", "pinyin": "zǎoshang", "meaning": "buổi sáng", "lesson": "2"}, {"hanzi": "跑步", "pinyin": "pǎo bù", "meaning": "chạy bộ", "lesson": "2"}, {"hanzi": "起床", "pinyin": "qǐ chuáng", "meaning": "ngủ dậy", "lesson": "2"}, {"hanzi": "药", "pinyin": "yào", "meaning": "thuốc", "lesson": "2"}, {"hanzi": "身体", "pinyin": "shēntǐ", "meaning": "thân thể, sức khỏe", "lesson": "2"}, {"hanzi": "出院", "pinyin": "chū yuàn", "meaning": "xuất viện", "lesson": "2"}, {"hanzi": "高", "pinyin": "gāo", "meaning": "cao", "lesson": "2"}, {"hanzi": "米", "pinyin": "mǐ", "meaning": "mét", "lesson": "2"}, {"hanzi": "知道", "pinyin": "zhīdào", "meaning": "biết", "lesson": "2"}, {"hanzi": "休息", "pinyin": "xiūxi", "meaning": "nghỉ ngơi", "lesson": "2"}, {"hanzi": "忙", "pinyin": "máng", "meaning": "bận", "lesson": "2"}, {"hanzi": "时间", "pinyin": "shíjiān", "meaning": "thời gian", "lesson": "2"}];
+        const vocabulary = [{"hanzi": "生病", "pinyin": "shēng bìng", "meaning": "sinh bệnh, ốm", "lesson": "2", "type": "Động từ"}, {"hanzi": "每", "pinyin": "měi", "meaning": "mỗi", "lesson": "2", "type": "Danh từ"}, {"hanzi": "早上", "pinyin": "zǎoshang", "meaning": "buổi sáng", "lesson": "2", "type": "Danh từ"}, {"hanzi": "跑步", "pinyin": "pǎo bù", "meaning": "chạy bộ", "lesson": "2", "type": "Động từ"}, {"hanzi": "起床", "pinyin": "qǐ chuáng", "meaning": "ngủ dậy", "lesson": "2", "type": "Động từ"}, {"hanzi": "药", "pinyin": "yào", "meaning": "thuốc", "lesson": "2", "type": "Danh từ"}, {"hanzi": "身体", "pinyin": "shēntǐ", "meaning": "thân thể, sức khỏe", "lesson": "2", "type": "Danh từ"}, {"hanzi": "出院", "pinyin": "chū yuàn", "meaning": "xuất viện", "lesson": "2", "type": "Động từ"}, {"hanzi": "高", "pinyin": "gāo", "meaning": "cao", "lesson": "2", "type": "Tính từ"}, {"hanzi": "米", "pinyin": "mǐ", "meaning": "mét", "lesson": "2", "type": "Danh từ"}, {"hanzi": "知道", "pinyin": "zhīdào", "meaning": "biết", "lesson": "2", "type": "Động từ"}, {"hanzi": "休息", "pinyin": "xiūxi", "meaning": "nghỉ ngơi", "lesson": "2", "type": "Động từ"}, {"hanzi": "忙", "pinyin": "máng", "meaning": "bận", "lesson": "2", "type": "Danh từ"}, {"hanzi": "时间", "pinyin": "shíjiān", "meaning": "thời gian", "lesson": "2", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "小脑饭能吗服么出杯跑要朋苹体老同中认水西昨系店最三得机想点她看是读病那儿们听热了足东样睛少个大喂我友商名识谁视知十天关九g钱午步做 女您兴狗一为见你时姐说踢院住椅都动校写桌二爱作客去起打买药雨电觉回八多道飞号在医后每好怎坐没呢和学他明块忙这果气开爸球车对衣汉哪欢四会月旅休太米来几候眼吃早六岁请妈生国息喜期叫ị茶面七什习也字下再游分五子人书身钟喝师些语上工租睡冷有本新它运先星高漂不家前影里谢年菜đ现h猫今话亮床n很间ữ";
+                        const cumulativeChars = "商姐你昨客起病高个h会我药号再汉里租果么些动块小视冷雨茶眼字八开作认机她六床和样同不 医米也要喝四喂飞吃呢写睡谁学候后中好这院对店去气怎他都话语国每桌您得道请多做识太三生读书天n那西大友间杯说欢电儿ữ足面它二坐能听上钟现有前喜星关饭分九苹身吗热椅跑菜名叫校习运影新打今爸đ息来年时本钱ị点忙工是人师岁家东爱衣期一狗买朋车猫什旅明休很先回漂五在服亮兴女没最住谢老系哪球为g月们看知睛十几出觉早水少游午体下步踢脑想了七子妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

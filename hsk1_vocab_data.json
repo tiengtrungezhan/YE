@@ -3,7 +3,8 @@
     "hanzi": "爸爸",
     "pinyin": "bàba",
     "meaning": "bố, cha",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "不",
@@ -12,7 +13,8 @@
     "lesson": "2",
     "ex_cn": "我不买。",
     "ex_py": "Wǒ bù mǎi.",
-    "ex_vn": "Tôi không mua."
+    "ex_vn": "Tôi không mua.",
+    "type": "Phó từ"
   },
   {
     "hanzi": "不客气",
@@ -21,79 +23,92 @@
     "lesson": "2",
     "ex_cn": "不客气。",
     "ex_py": "Bú kèqi.",
-    "ex_vn": "Đừng khách sáo."
+    "ex_vn": "Đừng khách sáo.",
+    "type": "Phó từ"
   },
   {
     "hanzi": "八",
     "pinyin": "bā",
     "meaning": "số 8",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "杯子",
     "pinyin": "bēizi",
     "meaning": "ly, tách",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Danh từ"
   },
   {
     "hanzi": "本",
     "pinyin": "běn",
     "meaning": "quyển, cuốn",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Lượng từ"
   },
   {
     "hanzi": "茶",
     "pinyin": "chá",
     "meaning": "trà",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Danh từ"
   },
   {
     "hanzi": "吃",
     "pinyin": "chī",
     "meaning": "ăn",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Động từ"
   },
   {
     "hanzi": "出租车",
     "pinyin": "chūzūchē",
     "meaning": "taxi",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Danh từ"
   },
   {
     "hanzi": "菜",
     "pinyin": "cài",
     "meaning": "món ăn, thức ăn",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Động từ"
   },
   {
     "hanzi": "định ngữ",
     "pinyin": "de",
     "meaning": "của, thuộc về",
-    "lesson": "4"
+    "lesson": "4",
+    "type": "Danh từ"
   },
   {
     "hanzi": "电脑",
     "pinyin": "diànnǎo",
     "meaning": "máy tính",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Danh từ"
   },
   {
     "hanzi": "电视",
     "pinyin": "diànshì",
     "meaning": "tivi",
-    "lesson": "13"
+    "lesson": "13",
+    "type": "Danh từ"
   },
   {
     "hanzi": "电影",
     "pinyin": "diànyǐng",
     "meaning": "phim",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "点",
     "pinyin": "diǎn",
     "meaning": "giờ",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "对不起",
@@ -102,25 +117,29 @@
     "lesson": "2",
     "ex_cn": "对不起，我迟到了。",
     "ex_py": "Duìbuqǐ, wǒ chídào le.",
-    "ex_vn": "Xin lỗi, tôi đến muộn."
+    "ex_vn": "Xin lỗi, tôi đến muộn.",
+    "type": "Danh từ"
   },
   {
     "hanzi": "多",
     "pinyin": "duō",
     "meaning": "nhiều",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Tính từ"
   },
   {
     "hanzi": "多少",
     "pinyin": "duōshao",
     "meaning": "bao nhiêu",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Danh từ"
   },
   {
     "hanzi": "大",
     "pinyin": "dà",
     "meaning": "lớn",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Tính từ"
   },
   {
     "hanzi": "大家",
@@ -129,121 +148,141 @@
     "lesson": "1",
     "ex_cn": "大家好！",
     "ex_py": "Dàjiā hǎo!",
-    "ex_vn": "Chào mọi người!"
+    "ex_vn": "Chào mọi người!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "读",
     "pinyin": "dú",
     "meaning": "đọc",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Động từ"
   },
   {
     "hanzi": "东西",
     "pinyin": "dōngxi",
     "meaning": "đồ, đồ đạc",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Danh từ"
   },
   {
     "hanzi": "都",
     "pinyin": "dōu",
     "meaning": "đều",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Phó từ"
   },
   {
     "hanzi": "打电话",
     "pinyin": "dǎ diànhuà",
     "meaning": "gọi điện thoại",
-    "lesson": "13"
+    "lesson": "13",
+    "type": "Danh từ"
   },
   {
     "hanzi": "饭店",
     "pinyin": "fàndiàn",
     "meaning": "khách sạn, nhà hàng",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Danh từ"
   },
   {
     "hanzi": "飞机",
     "pinyin": "fēijī",
     "meaning": "máy bay",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Danh từ"
   },
   {
     "hanzi": "分钟",
     "pinyin": "fēnzhōng",
     "meaning": "phút",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Danh từ"
   },
   {
     "hanzi": "个",
     "pinyin": "gè",
     "meaning": "cái",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Lượng từ"
   },
   {
     "hanzi": "高兴",
     "pinyin": "gāoxìng",
     "meaning": "vui, phấn khởi",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Danh từ"
   },
   {
     "hanzi": "工作",
     "pinyin": "gōngzuò",
     "meaning": "làm việc; công việc",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Động từ"
   },
   {
     "hanzi": "狗",
     "pinyin": "gǒu",
     "meaning": "chó",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "会",
     "pinyin": "huì",
     "meaning": "biết (qua học tập)",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Động từ"
   },
   {
     "hanzi": "回",
     "pinyin": "huí",
     "meaning": "về",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "汉语",
     "pinyin": "Hànyǔ",
     "meaning": "tiếng Trung Quốc",
-    "lesson": "4"
+    "lesson": "4",
+    "type": "Danh từ"
   },
   {
     "hanzi": "号",
     "pinyin": "hào",
     "meaning": "ngày",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "和",
     "pinyin": "hé",
     "meaning": "và",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Liên từ"
   },
   {
     "hanzi": "后面",
     "pinyin": "hòumiàn",
     "meaning": "phía sau",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Danh từ"
   },
   {
     "hanzi": "喝",
     "pinyin": "hē",
     "meaning": "uống",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Động từ"
   },
   {
     "hanzi": "很",
     "pinyin": "hěn",
     "meaning": "rất",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Phó từ"
   },
   {
     "hanzi": "好",
@@ -252,85 +291,99 @@
     "lesson": "1",
     "ex_cn": "你好！",
     "ex_py": "Nǐ hǎo!",
-    "ex_vn": "Chào bạn!"
+    "ex_vn": "Chào bạn!",
+    "type": "Tính từ"
   },
   {
     "hanzi": "叫",
     "pinyin": "jiào",
     "meaning": "tên (là)",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Danh từ"
   },
   {
     "hanzi": "家",
     "pinyin": "jiā",
     "meaning": "nhà",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "九",
     "pinyin": "jiǔ",
     "meaning": "số 9",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "今天",
     "pinyin": "jīntiān",
     "meaning": "hôm nay",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "几",
     "pinyin": "jǐ",
     "meaning": "mấy",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Danh từ"
   },
   {
     "hanzi": "块",
     "pinyin": "kuài",
     "meaning": "đồng (đơn vị tiền tệ)",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Lượng từ"
   },
   {
     "hanzi": "看",
     "pinyin": "kàn",
     "meaning": "nhìn, xem",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Động từ"
   },
   {
     "hanzi": "看见",
     "pinyin": "kànjiàn",
     "meaning": "nhìn thấy",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Động từ"
   },
   {
     "hanzi": "开",
     "pinyin": "kāi",
     "meaning": "lái",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Danh từ"
   },
   {
     "hanzi": "了",
     "pinyin": "le",
     "meaning": "được dùng để chỉ sự thay đổi",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Trợ từ"
   },
   {
     "hanzi": "六",
     "pinyin": "liù",
     "meaning": "số 6",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "来",
     "pinyin": "lái",
     "meaning": "đến, tới",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Động từ"
   },
   {
     "hanzi": "冷",
     "pinyin": "lěng",
     "meaning": "lạnh",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Tính từ"
   },
   {
     "hanzi": "老师",
@@ -339,19 +392,22 @@
     "lesson": "1",
     "ex_cn": "老师，您好！",
     "ex_py": "Lǎoshī, nín hǎo!",
-    "ex_vn": "Chào thầy/cô!"
+    "ex_vn": "Chào thầy/cô!",
+    "type": "Danh từ"
   },
   {
     "hanzi": "里",
     "pinyin": "lǐ",
     "meaning": "trong, bên trong",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Danh từ"
   },
   {
     "hanzi": "吗",
     "pinyin": "ma",
     "meaning": "được dùng ở cuối câu hỏi",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Trợ từ"
   },
   {
     "hanzi": "没关系",
@@ -360,79 +416,92 @@
     "lesson": "2",
     "ex_cn": "没关系。",
     "ex_py": "Méiguānxi.",
-    "ex_vn": "Không sao đâu."
+    "ex_vn": "Không sao đâu.",
+    "type": "Đại từ"
   },
   {
     "hanzi": "没有",
     "pinyin": "méiyǒu",
     "meaning": "không có",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Phó từ"
   },
   {
     "hanzi": "明天",
     "pinyin": "míngtiān",
     "meaning": "ngày mai",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "名字",
     "pinyin": "míngzi",
     "meaning": "tên",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Danh từ"
   },
   {
     "hanzi": "妈妈",
     "pinyin": "māma",
     "meaning": "mẹ",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Danh từ"
   },
   {
     "hanzi": "猫",
     "pinyin": "māo",
     "meaning": "mèo",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "买",
     "pinyin": "mǎi",
     "meaning": "mua",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Động từ"
   },
   {
     "hanzi": "米饭",
     "pinyin": "mǐfàn",
     "meaning": "cơm",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Danh từ"
   },
   {
     "hanzi": "呢",
     "pinyin": "ne",
     "meaning": "được dùng ở cuối câu hỏi",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Trợ từ"
   },
   {
     "hanzi": "年",
     "pinyin": "nián",
     "meaning": "năm",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "那",
     "pinyin": "nà",
     "meaning": "kia, đó",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Đại từ"
   },
   {
     "hanzi": "那儿",
     "pinyin": "nàr",
     "meaning": "đằng kia, ở đó",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Đại từ"
   },
   {
     "hanzi": "能",
     "pinyin": "néng",
     "meaning": "có thể",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Động từ"
   },
   {
     "hanzi": "您",
@@ -441,19 +510,22 @@
     "lesson": "1",
     "ex_cn": "老师，您好！",
     "ex_py": "Lǎoshī, nín hǎo!",
-    "ex_vn": "Chào thầy/cô!"
+    "ex_vn": "Chào thầy/cô!",
+    "type": "Danh từ"
   },
   {
     "hanzi": "哪",
     "pinyin": "nǎ",
     "meaning": "nào",
-    "lesson": "4"
+    "lesson": "4",
+    "type": "Đại từ"
   },
   {
     "hanzi": "哪儿",
     "pinyin": "nǎr",
     "meaning": "ở đâu",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Đại từ"
   },
   {
     "hanzi": "你",
@@ -462,7 +534,8 @@
     "lesson": "1",
     "ex_cn": "同学，你好！",
     "ex_py": "Tóngxué, nǐ hǎo!",
-    "ex_vn": "Chào bạn!"
+    "ex_vn": "Chào bạn!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "你们",
@@ -471,199 +544,232 @@
     "lesson": "1",
     "ex_cn": "同学们，你们好！",
     "ex_py": "Tóngxuémen, nǐmen hǎo!",
-    "ex_vn": "Chào các bạn học sinh!"
+    "ex_vn": "Chào các bạn học sinh!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "女儿",
     "pinyin": "nǚ'ér",
     "meaning": "con gái",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Danh từ"
   },
   {
     "hanzi": "漂亮",
     "pinyin": "piàoliang",
     "meaning": "đẹp",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Tính từ"
   },
   {
     "hanzi": "朋友",
     "pinyin": "péngyou",
     "meaning": "bạn",
-    "lesson": "4"
+    "lesson": "4",
+    "type": "Đại từ"
   },
   {
     "hanzi": "苹果",
     "pinyin": "píngguǒ",
     "meaning": "táo",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Danh từ"
   },
   {
     "hanzi": "钱",
     "pinyin": "qián",
     "meaning": "tiền",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Danh từ"
   },
   {
     "hanzi": "前面",
     "pinyin": "qiánmiàn",
     "meaning": "phía trước",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Danh từ"
   },
   {
     "hanzi": "去",
     "pinyin": "qù",
     "meaning": "đi, đi đến",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Động từ"
   },
   {
     "hanzi": "七",
     "pinyin": "qī",
     "meaning": "số 7",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "请",
     "pinyin": "qǐng",
     "meaning": "mời, xin",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "热",
     "pinyin": "rè",
     "meaning": "nóng",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Tính từ"
   },
   {
     "hanzi": "认识",
     "pinyin": "rènshi",
     "meaning": "quen, biết",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Động từ"
   },
   {
     "hanzi": "人",
     "pinyin": "rén",
     "meaning": "người",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Danh từ"
   },
   {
     "hanzi": "睡觉",
     "pinyin": "shuìjiào",
     "meaning": "ngủ",
-    "lesson": "13"
+    "lesson": "13",
+    "type": "Động từ"
   },
   {
     "hanzi": "水果",
     "pinyin": "shuïguǒ",
     "meaning": "trái cây",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "说",
     "pinyin": "shuō",
     "meaning": "nói",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Động từ"
   },
   {
     "hanzi": "说话",
     "pinyin": "shuōhuà",
     "meaning": "nói chuyện",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Động từ"
   },
   {
     "hanzi": "水",
     "pinyin": "shuǐ",
     "meaning": "nước",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "上",
     "pinyin": "shàng",
     "meaning": "trên",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "上午",
     "pinyin": "shàngwǔ",
     "meaning": "buổi sáng",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "谁",
     "pinyin": "shéi",
     "meaning": "ai",
-    "lesson": "4"
+    "lesson": "4",
+    "type": "Đại từ"
   },
   {
     "hanzi": "什么",
     "pinyin": "shénme",
     "meaning": "cái gì",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Đại từ"
   },
   {
     "hanzi": "是",
     "pinyin": "shì",
     "meaning": "là",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Động từ"
   },
   {
     "hanzi": "十",
     "pinyin": "shí",
     "meaning": "số 10",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "时候",
     "pinyin": "shíhou",
     "meaning": "lúc, khi",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "商店",
     "pinyin": "shāngdiàn",
     "meaning": "cửa hàng",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "书",
     "pinyin": "shū",
     "meaning": "sách",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "少",
     "pinyin": "shǎo",
     "meaning": "ít",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Tính từ"
   },
   {
     "hanzi": "岁",
     "pinyin": "suì",
     "meaning": "tuổi",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Danh từ"
   },
   {
     "hanzi": "四",
     "pinyin": "sì",
     "meaning": "số 4",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "三",
     "pinyin": "sān",
     "meaning": "ba",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Số từ"
   },
   {
     "hanzi": "天气",
     "pinyin": "tiānqì",
     "meaning": "thời tiết",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "太",
     "pinyin": "tài",
     "meaning": "quá, lắm",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Phó từ"
   },
   {
     "hanzi": "同学",
@@ -672,7 +778,8 @@
     "lesson": "1",
     "ex_cn": "同学们，再见！",
     "ex_py": "Tóngxuémen, zàijiàn!",
-    "ex_vn": "Tạm biệt các em học sinh!"
+    "ex_vn": "Tạm biệt các em học sinh!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "他",
@@ -681,7 +788,8 @@
     "lesson": "1",
     "ex_cn": "老师，他好！",
     "ex_py": "Lǎoshī, tā hǎo!",
-    "ex_vn": "Chào cô, bạn ấy khỏe!"
+    "ex_vn": "Chào cô, bạn ấy khỏe!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "她",
@@ -690,7 +798,8 @@
     "lesson": "1",
     "ex_cn": "老师，她好！",
     "ex_py": "Lǎoshī, tā hǎo!",
-    "ex_vn": "Chào cô, bạn ấy khỏe!"
+    "ex_vn": "Chào cô, bạn ấy khỏe!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "他们",
@@ -699,7 +808,8 @@
     "lesson": "1",
     "ex_cn": "老师，他们好！",
     "ex_py": "Lǎoshī, tāmen hǎo!",
-    "ex_vn": "Thưa cô, các bạn ấy khỏe!"
+    "ex_vn": "Thưa cô, các bạn ấy khỏe!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "她们",
@@ -708,19 +818,22 @@
     "lesson": "1",
     "ex_cn": "老师，她们好！",
     "ex_py": "Lǎoshī, tāmen hǎo!",
-    "ex_vn": "Thưa cô, các bạn ấy khỏe!"
+    "ex_vn": "Thưa cô, các bạn ấy khỏe!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "听",
     "pinyin": "tīng",
     "meaning": "nghe",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Động từ"
   },
   {
     "hanzi": "喂",
     "pinyin": "wèi",
     "meaning": "alo",
-    "lesson": "13"
+    "lesson": "13",
+    "type": "Danh từ"
   },
   {
     "hanzi": "我",
@@ -729,46 +842,50 @@
     "lesson": "1",
     "ex_cn": "老师，我好！",
     "ex_py": "Lǎoshī, wǒ hǎo!",
-    "ex_vn": "Thưa cô, em khỏe!"
+    "ex_vn": "Thưa cô, em khỏe!",
+    "type": "Đại từ"
   },
   {
     "hanzi": "我们",
     "pinyin": "wǒmen",
     "meaning": "chúng tôi, chúng ta",
     "lesson": "1",
-    "ex_cn": "老师，我们再见！",
-    "ex_py": "Lǎoshī, wǒmen zàijiàn!",
-    "ex_vn": "Thưa cô, chúng em tạm biệt ạ!"
+    "type": "Đại từ"
   },
   {
     "hanzi": "五",
     "pinyin": "wǔ",
     "meaning": "năm",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "下",
     "pinyin": "xià",
     "meaning": "bên dưới, phía dưới",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "下雨",
     "pinyin": "xià yǔ",
     "meaning": "có mưa, đổ mưa",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "现在",
     "pinyin": "xiànzài",
     "meaning": "bây giờ, hiện tại",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Giới từ"
   },
   {
     "hanzi": "下午",
     "pinyin": "xiàwǔ",
     "meaning": "buổi chiều",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Danh từ"
   },
   {
     "hanzi": "谢谢",
@@ -777,181 +894,211 @@
     "lesson": "2",
     "ex_cn": "谢谢你。",
     "ex_py": "Xièxie nǐ.",
-    "ex_vn": "Cảm ơn bạn."
+    "ex_vn": "Cảm ơn bạn.",
+    "type": "Danh từ"
   },
   {
     "hanzi": "先生",
     "pinyin": "xiānsheng",
     "meaning": "ông, ngài",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Danh từ"
   },
   {
     "hanzi": "些",
     "pinyin": "xiē",
     "meaning": "một ít, một vài",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Số từ"
   },
   {
     "hanzi": "写",
     "pinyin": "xiě",
     "meaning": "viết",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Động từ"
   },
   {
     "hanzi": "想",
     "pinyin": "xiǎng",
     "meaning": "muốn",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Động từ"
   },
   {
     "hanzi": "小",
     "pinyin": "xiǎo",
     "meaning": "nhỏ, bé",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Tính từ"
   },
   {
     "hanzi": "小姐",
     "pinyin": "xiǎojiě",
     "meaning": "cô",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "学生",
     "pinyin": "xuésheng",
     "meaning": "học sinh",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Động từ"
   },
   {
     "hanzi": "学校",
     "pinyin": "xuéxiào",
     "meaning": "trường",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "学习",
     "pinyin": "xuéxí",
     "meaning": "học",
-    "lesson": "13"
+    "lesson": "13",
+    "type": "Động từ"
   },
   {
     "hanzi": "星期",
     "pinyin": "xīngqī",
     "meaning": "thứ, tuần",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "喜欢",
     "pinyin": "xǐhuan",
     "meaning": "thích",
-    "lesson": "10"
+    "lesson": "10",
+    "type": "Danh từ"
   },
   {
     "hanzi": "月",
     "pinyin": "yuè",
     "meaning": "tháng",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "一点儿",
     "pinyin": "yìdiǎnr",
     "meaning": "một ít, một chút",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Tính từ"
   },
   {
     "hanzi": "一",
     "pinyin": "yī",
     "meaning": "số 1",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "衣服",
     "pinyin": "yīfu",
     "meaning": "quần áo",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Danh từ"
   },
   {
     "hanzi": "医生",
     "pinyin": "yīshēng",
     "meaning": "bác sĩ",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "医院",
     "pinyin": "yīyuàn",
     "meaning": "bệnh viện",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "椅子",
     "pinyin": "yǐzi",
     "meaning": "ghế dựa",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   },
   {
     "hanzi": "有",
     "pinyin": "yǒu",
     "meaning": "có",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Động từ"
   },
   {
     "hanzi": "桌子",
     "pinyin": "zhuōzi",
     "meaning": "cái bàn",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "这",
     "pinyin": "zhè",
     "meaning": "đây, này",
-    "lesson": "8"
+    "lesson": "8",
+    "type": "Đại từ"
   },
   {
     "hanzi": "这儿",
     "pinyin": "zhèr",
     "meaning": "ở đây, chỗ này",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Đại từ"
   },
   {
     "hanzi": "住",
     "pinyin": "zhù",
     "meaning": "ở, cư trú",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Động từ"
   },
   {
     "hanzi": "中国",
     "pinyin": "Zhōngguó",
     "meaning": "Trung Quốc",
-    "lesson": "3"
+    "lesson": "3",
+    "type": "Danh từ"
   },
   {
     "hanzi": "中午",
     "pinyin": "zhōngwǔ",
     "meaning": "buổi trưa",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "坐",
     "pinyin": "zuò",
     "meaning": "ngồi",
-    "lesson": "15"
+    "lesson": "15",
+    "type": "Động từ"
   },
   {
     "hanzi": "做",
     "pinyin": "zuò",
     "meaning": "làm",
-    "lesson": "14"
+    "lesson": "14",
+    "type": "Động từ"
   },
   {
     "hanzi": "昨天",
     "pinyin": "zuótiān",
     "meaning": "hôm qua",
-    "lesson": "11"
+    "lesson": "11",
+    "type": "Danh từ"
   },
   {
     "hanzi": "在",
     "pinyin": "zài",
     "meaning": "ở, tại, đang",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Giới từ"
   },
   {
     "hanzi": "再见",
@@ -960,42 +1107,49 @@
     "lesson": "1",
     "ex_cn": "大家再见！",
     "ex_py": "Dàjiā zàijiàn!",
-    "ex_vn": "Tạm biệt mọi người!"
+    "ex_vn": "Tạm biệt mọi người!",
+    "type": "Danh từ"
   },
   {
     "hanzi": "字",
     "pinyin": "zì",
     "meaning": "chữ",
-    "lesson": "7"
+    "lesson": "7",
+    "type": "Danh từ"
   },
   {
     "hanzi": "怎么",
     "pinyin": "zěnme",
     "meaning": "thế nào, làm sao",
-    "lesson": "6"
+    "lesson": "6",
+    "type": "Đại từ"
   },
   {
     "hanzi": "怎么样",
     "pinyin": "zěnmeyàng",
     "meaning": "thế nào",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Đại từ"
   },
   {
     "hanzi": "爱",
     "pinyin": "ài",
     "meaning": "yêu, thích",
-    "lesson": "12"
+    "lesson": "12",
+    "type": "Danh từ"
   },
   {
     "hanzi": "二",
     "pinyin": "èr",
     "meaning": "số 2",
-    "lesson": "5"
+    "lesson": "5",
+    "type": "Số từ"
   },
   {
     "hanzi": "儿子",
     "pinyin": "érzi",
     "meaning": "con trai",
-    "lesson": "9"
+    "lesson": "9",
+    "type": "Danh từ"
   }
 ]

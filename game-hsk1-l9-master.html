@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "爸爸", "pinyin": "bàba", "meaning": "bố, cha", "lesson": "9"}, {"hanzi": "工作", "pinyin": "gōngzuò", "meaning": "làm việc; công việc", "lesson": "9"}, {"hanzi": "狗", "pinyin": "gǒu", "meaning": "chó", "lesson": "9"}, {"hanzi": "家", "pinyin": "jiā", "meaning": "nhà", "lesson": "9"}, {"hanzi": "猫", "pinyin": "māo", "meaning": "mèo", "lesson": "9"}, {"hanzi": "哪儿", "pinyin": "nǎr", "meaning": "ở đâu", "lesson": "9"}, {"hanzi": "商店", "pinyin": "shāngdiàn", "meaning": "cửa hàng", "lesson": "9"}, {"hanzi": "少", "pinyin": "shǎo", "meaning": "ít", "lesson": "9"}, {"hanzi": "下", "pinyin": "xià", "meaning": "bên dưới, phía dưới", "lesson": "9"}, {"hanzi": "小", "pinyin": "xiǎo", "meaning": "nhỏ, bé", "lesson": "9"}, {"hanzi": "医生", "pinyin": "yīshēng", "meaning": "bác sĩ", "lesson": "9"}, {"hanzi": "医院", "pinyin": "yīyuàn", "meaning": "bệnh viện", "lesson": "9"}, {"hanzi": "椅子", "pinyin": "yǐzi", "meaning": "ghế dựa", "lesson": "9"}, {"hanzi": "在", "pinyin": "zài", "meaning": "ở, tại, đang", "lesson": "9"}, {"hanzi": "儿子", "pinyin": "érzi", "meaning": "con trai", "lesson": "9"}];
+        const vocabulary = [{"hanzi": "爸爸", "pinyin": "bàba", "meaning": "bố, cha", "lesson": "9", "type": "Danh từ"}, {"hanzi": "工作", "pinyin": "gōngzuò", "meaning": "làm việc; công việc", "lesson": "9", "type": "Động từ"}, {"hanzi": "狗", "pinyin": "gǒu", "meaning": "chó", "lesson": "9", "type": "Danh từ"}, {"hanzi": "家", "pinyin": "jiā", "meaning": "nhà", "lesson": "9", "type": "Danh từ"}, {"hanzi": "猫", "pinyin": "māo", "meaning": "mèo", "lesson": "9", "type": "Danh từ"}, {"hanzi": "哪儿", "pinyin": "nǎr", "meaning": "ở đâu", "lesson": "9", "type": "Đại từ"}, {"hanzi": "商店", "pinyin": "shāngdiàn", "meaning": "cửa hàng", "lesson": "9", "type": "Danh từ"}, {"hanzi": "少", "pinyin": "shǎo", "meaning": "ít", "lesson": "9", "type": "Tính từ"}, {"hanzi": "下", "pinyin": "xià", "meaning": "bên dưới, phía dưới", "lesson": "9", "type": "Danh từ"}, {"hanzi": "小", "pinyin": "xiǎo", "meaning": "nhỏ, bé", "lesson": "9", "type": "Tính từ"}, {"hanzi": "医生", "pinyin": "yīshēng", "meaning": "bác sĩ", "lesson": "9", "type": "Danh từ"}, {"hanzi": "医院", "pinyin": "yīyuàn", "meaning": "bệnh viện", "lesson": "9", "type": "Danh từ"}, {"hanzi": "椅子", "pinyin": "yǐzi", "meaning": "ghế dựa", "lesson": "9", "type": "Danh từ"}, {"hanzi": "在", "pinyin": "zài", "meaning": "ở, tại, đang", "lesson": "9", "type": "Giới từ"}, {"hanzi": "儿子", "pinyin": "érzi", "meaning": "con trai", "lesson": "9", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "小饭吗么杯朋老同中系店想她看是读儿们了少个大我友商名谁十天关九g钱午 女您狗一你见说院椅校写二作客去起买八多号在医好怎没呢学他块这气爸对汉哪四会月米几吃六岁请妈生国期叫ị茶七什字下再五子人书喝师语工有星不家谢菜đh猫今n很ữ";
+                        const cumulativeChars = "商你客起个h会我号再汉么块小茶字八作她六同不 医米喝四吃呢写谁学中好这院对店去气怎他语国您请多生读书天n大友杯说儿ữ二有星关饭九吗椅菜名叫校今爸đ钱ị工是人师岁家期一狗买朋猫什很五在女没谢老系哪g月们看十几少午下想了七子妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

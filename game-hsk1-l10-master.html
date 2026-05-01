@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "本", "pinyin": "běn", "meaning": "quyển, cuốn", "lesson": "10"}, {"hanzi": "电脑", "pinyin": "diànnǎo", "meaning": "máy tính", "lesson": "10"}, {"hanzi": "和", "pinyin": "hé", "meaning": "và", "lesson": "10"}, {"hanzi": "后面", "pinyin": "hòumiàn", "meaning": "phía sau", "lesson": "10"}, {"hanzi": "里", "pinyin": "lǐ", "meaning": "trong, bên trong", "lesson": "10"}, {"hanzi": "没有", "pinyin": "méiyǒu", "meaning": "không có", "lesson": "10"}, {"hanzi": "前面", "pinyin": "qiánmiàn", "meaning": "phía trước", "lesson": "10"}, {"hanzi": "喜欢", "pinyin": "xǐhuan", "meaning": "thích", "lesson": "10"}];
+        const vocabulary = [{"hanzi": "本", "pinyin": "běn", "meaning": "quyển, cuốn", "lesson": "10", "type": "Lượng từ"}, {"hanzi": "电脑", "pinyin": "diànnǎo", "meaning": "máy tính", "lesson": "10", "type": "Danh từ"}, {"hanzi": "和", "pinyin": "hé", "meaning": "và", "lesson": "10", "type": "Liên từ"}, {"hanzi": "后面", "pinyin": "hòumiàn", "meaning": "phía sau", "lesson": "10", "type": "Danh từ"}, {"hanzi": "里", "pinyin": "lǐ", "meaning": "trong, bên trong", "lesson": "10", "type": "Danh từ"}, {"hanzi": "没有", "pinyin": "méiyǒu", "meaning": "không có", "lesson": "10", "type": "Phó từ"}, {"hanzi": "前面", "pinyin": "qiánmiàn", "meaning": "phía trước", "lesson": "10", "type": "Danh từ"}, {"hanzi": "喜欢", "pinyin": "xǐhuan", "meaning": "thích", "lesson": "10", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "小脑饭吗么杯朋老同中系店想她看是读儿们了少个大我友商名谁十天关九g钱午 女您狗一你见说院椅校写二作客去起买电八多号在医后好怎没呢和学他块这气爸对汉哪欢四会月米几吃六岁请妈生国喜期叫ị茶面七什字下再五子人书喝师语工有本星不家前里谢菜đh猫今n很ữ";
+                        const cumulativeChars = "商你客起个h会我号再汉里么块小茶字八作她六和同不 医米喝四吃呢写谁学后中好这院对店去气怎他语国您请多生读书天n大友杯说欢电儿ữ面二有前喜星关饭九吗椅菜名叫校今爸đ本钱ị工是人师岁家期一狗买朋猫什很五在女没谢老系哪g月们看十几少午下脑想了七子妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

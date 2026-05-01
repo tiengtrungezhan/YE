@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "电视", "pinyin": "diànshì", "meaning": "tivi", "lesson": "13"}, {"hanzi": "打电话", "pinyin": "dǎ diànhuà", "meaning": "gọi điện thoại", "lesson": "13"}, {"hanzi": "睡觉", "pinyin": "shuìjiào", "meaning": "ngủ", "lesson": "13"}, {"hanzi": "喂", "pinyin": "wèi", "meaning": "alo", "lesson": "13"}, {"hanzi": "学习", "pinyin": "xuéxí", "meaning": "học", "lesson": "13"}];
+        const vocabulary = [{"hanzi": "电视", "pinyin": "diànshì", "meaning": "tivi", "lesson": "13", "type": "Danh từ"}, {"hanzi": "打电话", "pinyin": "dǎ diànhuà", "meaning": "gọi điện thoại", "lesson": "13", "type": "Danh từ"}, {"hanzi": "睡觉", "pinyin": "shuìjiào", "meaning": "ngủ", "lesson": "13", "type": "Động từ"}, {"hanzi": "喂", "pinyin": "wèi", "meaning": "alo", "lesson": "13", "type": "Danh từ"}, {"hanzi": "学习", "pinyin": "xuéxí", "meaning": "học", "lesson": "13", "type": "Động từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "小脑饭吗么杯朋老同中水昨系店三想点她看是读那儿们热了样少个大喂我友商名谁视十天关九g钱午 女您狗一你时见姐说院住椅校写桌二爱作客去起打买雨电觉回八多号在医后好怎没呢和学他明块这果气爸对汉哪欢四会月太米来几候吃六岁请妈生国喜期叫ị茶面七什习字下再五子人书喝师些语上工睡冷有本星不家前影里谢年菜đ现h猫今话n很ữ";
+                        const cumulativeChars = "商姐你昨客起个h会我号再汉里果么些块小视冷雨茶字八作她六和样同不 医米喝四喂吃呢写睡谁学候后中好这院对店去气怎他话语国桌您请多太生三读书天n那大友杯说欢电儿ữ面二上现有前喜星关饭九吗热椅菜名叫校习影打今爸đ来年时本钱ị点工是人师岁家爱期一狗买朋猫什明很回五在女没住谢老系哪g月们看十几觉水少午下脑想了七子妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

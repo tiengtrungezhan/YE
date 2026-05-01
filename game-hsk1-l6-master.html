@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6"}, {"hanzi": "妈妈", "pinyin": "māma", "meaning": "mẹ", "lesson": "6"}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6"}];
+        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6", "type": "Động từ"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6", "type": "Động từ"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6", "type": "Động từ"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6", "type": "Phó từ"}, {"hanzi": "妈妈", "pinyin": "māma", "meaning": "mẹ", "lesson": "6", "type": "Danh từ"}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6", "type": "Động từ"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6", "type": "Động từ"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6", "type": "Đại từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "名谁再十五吗关人九g好么怎没呢 师学女语他您一朋气老你同有说见字中对汉哪系四会她是不家读几写六岁谢妈生国二儿菜客们đ起很叫ịh了七大什我n友八ữ多";
+                        const cumulativeChars = "你二客起中有好学很对我h会关五气九女没怎他谢老吗系汉哪再见菜语叫名么国您g们多生đ字八读几十n她ị六大是同友人师岁不家 说四一儿呢ữ朋了七写妈谁什";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

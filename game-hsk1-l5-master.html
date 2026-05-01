@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "八", "pinyin": "bā", "meaning": "số 8", "lesson": "5"}, {"hanzi": "多", "pinyin": "duō", "meaning": "nhiều", "lesson": "5"}, {"hanzi": "大", "pinyin": "dà", "meaning": "lớn", "lesson": "5"}, {"hanzi": "九", "pinyin": "jiǔ", "meaning": "số 9", "lesson": "5"}, {"hanzi": "几", "pinyin": "jǐ", "meaning": "mấy", "lesson": "5"}, {"hanzi": "了", "pinyin": "le", "meaning": "được dùng để chỉ sự thay đổi", "lesson": "5"}, {"hanzi": "六", "pinyin": "liù", "meaning": "số 6", "lesson": "5"}, {"hanzi": "女儿", "pinyin": "nǚ'ér", "meaning": "con gái", "lesson": "5"}, {"hanzi": "七", "pinyin": "qī", "meaning": "số 7", "lesson": "5"}, {"hanzi": "十", "pinyin": "shí", "meaning": "số 10", "lesson": "5"}, {"hanzi": "岁", "pinyin": "suì", "meaning": "tuổi", "lesson": "5"}, {"hanzi": "四", "pinyin": "sì", "meaning": "số 4", "lesson": "5"}, {"hanzi": "五", "pinyin": "wǔ", "meaning": "năm", "lesson": "5"}, {"hanzi": "一", "pinyin": "yī", "meaning": "số 1", "lesson": "5"}, {"hanzi": "有", "pinyin": "yǒu", "meaning": "có", "lesson": "5"}, {"hanzi": "二", "pinyin": "èr", "meaning": "số 2", "lesson": "5"}];
+        const vocabulary = [{"hanzi": "八", "pinyin": "bā", "meaning": "số 8", "lesson": "5", "type": "Số từ"}, {"hanzi": "多", "pinyin": "duō", "meaning": "nhiều", "lesson": "5", "type": "Tính từ"}, {"hanzi": "大", "pinyin": "dà", "meaning": "lớn", "lesson": "5", "type": "Tính từ"}, {"hanzi": "九", "pinyin": "jiǔ", "meaning": "số 9", "lesson": "5", "type": "Số từ"}, {"hanzi": "几", "pinyin": "jǐ", "meaning": "mấy", "lesson": "5", "type": "Danh từ"}, {"hanzi": "了", "pinyin": "le", "meaning": "được dùng để chỉ sự thay đổi", "lesson": "5", "type": "Trợ từ"}, {"hanzi": "六", "pinyin": "liù", "meaning": "số 6", "lesson": "5", "type": "Số từ"}, {"hanzi": "女儿", "pinyin": "nǚ'ér", "meaning": "con gái", "lesson": "5", "type": "Danh từ"}, {"hanzi": "七", "pinyin": "qī", "meaning": "số 7", "lesson": "5", "type": "Số từ"}, {"hanzi": "十", "pinyin": "shí", "meaning": "số 10", "lesson": "5", "type": "Số từ"}, {"hanzi": "岁", "pinyin": "suì", "meaning": "tuổi", "lesson": "5", "type": "Danh từ"}, {"hanzi": "四", "pinyin": "sì", "meaning": "số 4", "lesson": "5", "type": "Số từ"}, {"hanzi": "五", "pinyin": "wǔ", "meaning": "năm", "lesson": "5", "type": "Số từ"}, {"hanzi": "一", "pinyin": "yī", "meaning": "số 1", "lesson": "5", "type": "Số từ"}, {"hanzi": "有", "pinyin": "yǒu", "meaning": "có", "lesson": "5", "type": "Động từ"}, {"hanzi": "二", "pinyin": "èr", "meaning": "số 2", "lesson": "5", "type": "Số từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "名谁再十五吗关人九g好么没呢 师学女语他您一朋气老你同有见字中对汉哪系四她是不家几六岁谢生国二儿客们đ起了叫ịh七大什我n友八ữ多";
+                        const cumulativeChars = "你二客起中有好学对我h关五气九女没他谢老吗系汉哪再见么语叫名国您g们多生đ字八几十n她ị六大是同友人师岁不家 四一儿呢ữ朋了七谁什";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

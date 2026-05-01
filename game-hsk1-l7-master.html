@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "号", "pinyin": "hào", "meaning": "ngày", "lesson": "7"}, {"hanzi": "今天", "pinyin": "jīntiān", "meaning": "hôm nay", "lesson": "7"}, {"hanzi": "看", "pinyin": "kàn", "meaning": "nhìn, xem", "lesson": "7"}, {"hanzi": "去", "pinyin": "qù", "meaning": "đi, đi đến", "lesson": "7"}, {"hanzi": "请", "pinyin": "qǐng", "meaning": "mời, xin", "lesson": "7"}, {"hanzi": "书", "pinyin": "shū", "meaning": "sách", "lesson": "7"}, {"hanzi": "学校", "pinyin": "xuéxiào", "meaning": "trường", "lesson": "7"}, {"hanzi": "星期", "pinyin": "xīngqī", "meaning": "thứ, tuần", "lesson": "7"}, {"hanzi": "月", "pinyin": "yuè", "meaning": "tháng", "lesson": "7"}, {"hanzi": "字", "pinyin": "zì", "meaning": "chữ", "lesson": "7"}];
+        const vocabulary = [{"hanzi": "号", "pinyin": "hào", "meaning": "ngày", "lesson": "7", "type": "Danh từ"}, {"hanzi": "今天", "pinyin": "jīntiān", "meaning": "hôm nay", "lesson": "7", "type": "Danh từ"}, {"hanzi": "看", "pinyin": "kàn", "meaning": "nhìn, xem", "lesson": "7", "type": "Động từ"}, {"hanzi": "去", "pinyin": "qù", "meaning": "đi, đi đến", "lesson": "7", "type": "Động từ"}, {"hanzi": "请", "pinyin": "qǐng", "meaning": "mời, xin", "lesson": "7", "type": "Danh từ"}, {"hanzi": "书", "pinyin": "shū", "meaning": "sách", "lesson": "7", "type": "Danh từ"}, {"hanzi": "学校", "pinyin": "xuéxiào", "meaning": "trường", "lesson": "7", "type": "Danh từ"}, {"hanzi": "星期", "pinyin": "xīngqī", "meaning": "thứ, tuần", "lesson": "7", "type": "Danh từ"}, {"hanzi": "月", "pinyin": "yuè", "meaning": "tháng", "lesson": "7", "type": "Danh từ"}, {"hanzi": "字", "pinyin": "zì", "meaning": "chữ", "lesson": "7", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "吗么朋老同中系她看是读儿们了我大友名谁十天关九g 女您一你见说校写二客去起八多号好怎没呢学他气对汉哪四会月几六岁请妈生国期叫ị七什字再五人书师语有星不家谢菜đh今n很ữ";
+                        const cumulativeChars = "你客起我h会号再汉么字八她六同不 四呢写学谁中好对去气怎他语国您请多生读书天n大友说儿ữ二有星关九吗菜名叫校今đị是人师岁家期一朋什很五女没谢老系哪g月们看十几了七妈见";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
