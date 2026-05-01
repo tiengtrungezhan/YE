@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            margin: 2rem auto 0;
             gap: 3rem;
-            margin-top: 2rem;
         }
 
         .contact-info {
@@ -57,7 +58,7 @@
         .social-card.facebook i { color: #1877F2; }
         .social-card.tiktok i { color: #000000; }
         .social-card.zalo i { color: #0068FF; }
-        .social-card.email i { color: #EA4335; }
+        .social-card.youtube i { color: #FF0000; }
 
         .contact-form-container {
             background: var(--white);
@@ -141,7 +142,7 @@
 
         @media (max-width: 992px) {
             .contact-wrapper {
-                grid-template-columns: 1fr;
+                flex-direction: column;
             }
         }
 
@@ -201,9 +202,9 @@
                         <i class="fas fa-comment-sms"></i>
                         <span>Zalo</span>
                     </a>
-                    <a href="mailto:tiengtrungezhan@gmail.com" class="social-card email">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
+                    <a href="https://www.youtube.com/@EZHANTIẾNGTRUNG" target="_blank" class="social-card youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
                     </a>
                 </div>
 
@@ -211,107 +212,13 @@
                     <p style="font-weight: 600; color: var(--primary-dark);"><i class="fas fa-phone-alt"></i> Hotline/Zalo:</p>
                     <p style="font-size: 1.2rem; font-weight: 700;">081 800 4397</p>
                 </div>
-            </div>
 
-            <!-- Right Side: Contact Form -->
-            <div class="contact-form-container">
-                <form id="ezhanContactForm" class="contact-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label>Họ và tên</label>
-                            <input type="text" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
-                        </div>
-                        <div class="form-group">
-                            <label>SĐT</label>
-                            <input type="tel" name="phone" placeholder="081 800 xxxx" required>
-                        </div>
-                        <div class="form-group full-width">
-                            <label>Email</label>
-                            <input type="email" name="email" placeholder="email@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Bạn đã học tiếng Trung bao lâu?</label>
-                            <select name="experience" required>
-                                <option value="" disabled selected>Chọn thời gian học</option>
-                                <option value="chưa học">Chưa học</option>
-                                <option value="dưới 3 tháng">Dưới 3 tháng</option>
-                                <option value="dưới 6 tháng">Dưới 6 tháng</option>
-                                <option value="dưới 1 năm">Dưới 1 năm</option>
-                                <option value="trên 1 năm">Trên 1 năm</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Khoá học bạn quan tâm</label>
-                            <select name="course" required>
-                                <option value="" disabled selected>Chọn khoá học</option>
-                                <option value="HSK">HSK</option>
-                                <option value="Giao tiếp">Giao tiếp</option>
-                            </select>
-                        </div>
-                        <div class="form-group full-width">
-                            <label>Yêu cầu của bạn</label>
-                            <textarea name="message" rows="4" placeholder="Bạn muốn tư vấn thêm về điều gì?"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="submit-btn" id="submitBtn">
-                        <i class="fas fa-paper-plane"></i> Gửi Tin Nhắn
-                    </button>
-                </form>
-
-                <div id="successMessage" class="success-message">
-                    <i class="fas fa-check-circle"></i>
-                    <h2>Cảm ơn bạn!</h2>
-                    <p>Thông tin của bạn đã được gửi thành công. EZHAN sẽ liên hệ với bạn sớm nhất có thể!</p>
-                    <button onclick="location.reload()" style="margin-top: 1.5rem; background: var(--primary-color); border: none; padding: 0.8rem 1.5rem; border-radius: 12px; cursor: pointer; font-weight: 600;">Gửi tin nhắn khác</button>
+                <div style="margin-top: 1rem; background: var(--primary-light); padding: 1.5rem; border-radius: 20px; border-left: 5px solid var(--primary-dark);">
+                    <p style="font-weight: 600; color: var(--primary-dark);"><i class="fas fa-envelope"></i> Email:</p>
+                    <p style="font-size: 1.2rem; font-weight: 700;"><a href="mailto:tiengtrungezhan@gmail.com" style="color: var(--text-color); text-decoration: none;">tiengtrungezhan@gmail.com</a></p>
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        const form = document.getElementById('ezhanContactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const successMessage = document.getElementById('successMessage');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            // Thay đổi trạng thái nút
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
-            submitBtn.classList.add('loading');
-
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-
-            try {
-                // URL này cần được thay thế bằng URL của Google Apps Script sau khi bạn deploy
-                // Tôi sẽ cung cấp script để bạn tạo URL này
-                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz_H_M_S_M_S_M_S_M_S/exec'; // Placeholder
-                
-                // Vì demo, tôi sẽ giả lập việc gửi thành công sau 1.5s
-                // Khi bạn có SCRIPT_URL thực tế, hãy bỏ comment phần fetch bên dưới
-                
-                /*
-                const response = await fetch(SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors', // Cần thiết cho Google Apps Script
-                    body: JSON.stringify(data)
-                });
-                */
-
-                // Giả lập delay
-                await new Promise(resolve => setTimeout(resolve, 1500));
-
-                form.style.display = 'none';
-                successMessage.style.display = 'block';
-                
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau hoặc liên hệ trực tiếp qua Zalo.');
-                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Gửi Tin Nhắn';
-                submitBtn.classList.remove('loading');
-            }
-        });
-    </script>
 </body>
 </html>
