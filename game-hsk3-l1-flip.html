@@ -19,8 +19,8 @@
             color: var(--primary-dark); font-weight: 700; z-index: 10;
         }
         .game-container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
-        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .flip-card { background-color: transparent; width: 100%; height: 320px; perspective: 1000px; cursor: pointer; }
+        .single-card-container { display: flex; justify-content: center; align-items: center; margin-top: 2rem; position: relative; }
+        .flip-card { background-color: transparent; width: 100%; max-width: 500px; height: 500px; perspective: 1000px; cursor: pointer; }
         .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
         .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
         .flip-card-front, .flip-card-back { 
@@ -30,20 +30,21 @@
             box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2);
         }
         .flip-card-front { justify-content: center; align-items: center; }
-        .flip-card-front .hanzi { font-size: 4.5rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }
+        .flip-card-front .hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 8rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }
         .flip-card:hover .hanzi { transform: scale(1.1); }
         .flip-card-back { transform: rotateY(180deg); text-align: left; background: #fff; border-color: var(--primary-color); }
         .flip-card.mastered .flip-card-front, .flip-card.mastered .flip-card-back { border-color: #ffd700; background: #fffdf0; }
         .master-badge { position: absolute; top: 15px; right: 15px; font-size: 1.5rem; display: none; z-index: 5; }
         .flip-card.mastered .master-badge { display: block; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
-        .back-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-        .back-hanzi { font-size: 1.8rem; font-weight: 800; color: var(--primary-dark); }
-        .back-pinyin { font-size: 1.1rem; color: #e67e22; font-weight: 700; }
-        .btn-speak { background: var(--primary-light); border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+        .back-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+        .back-hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 3rem; font-weight: 800; color: var(--primary-dark); }
+        .back-pinyin { font-size: 1.8rem; color: #e67e22; font-weight: 700; }
+        .btn-speak { background: var(--primary-light); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: 0.3s; }
         .btn-speak:hover { background: var(--primary-color); transform: scale(1.1); }
-        .back-meaning { font-size: 1.2rem; font-weight: 700; color: #444; }
-        .back-example { font-size: 0.8rem; background: #f9f9f9; padding: 0.6rem; border-radius: 12px; margin-top: 0.5rem; line-height: 1.3; }
+        .back-meaning { font-size: 1.6rem; font-weight: 700; color: #444; }
+        .back-example { font-size: 1.2rem; background: #f9f9f9; padding: 1rem; border-radius: 12px; margin-top: 1rem; line-height: 1.5; }
+        .back-example strong { font-size: 1.2rem; color: var(--primary-dark); }
         .master-btn { margin-top: auto; width: 100%; padding: 0.6rem; border-radius: 12px; border: 2px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 0.85rem; }
         .master-btn.active { background: var(--primary-color); color: white; }
         .progress-container { background: white; padding: 1.5rem; border-radius: 20px; box-shadow: var(--shadow); margin: 2rem 0; }
@@ -62,12 +63,11 @@
         <img src="mascot.png" alt="Home">
     </a>
     <div class="page-container">
+        <a href="game-hsk3.html" class="back-btn">← Quay lại</a>
         <header class="game-header">
-            <a href="game-hsk3.html" class="back-btn" style="position: absolute; left: 0; top: 0;">← Quay lại</a>
             <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh</h1>
-            <p>Bài 1 - Bạn có dự định gì cho cuối tuần?</p>
             <div class="mascot-container">
-                <div class="mascot-bubble" id="mascotSpeech">Cùng mình học từ vựng HSK 3 nhé! 🐼</div>
+                <div class="mascot-bubble" id="mascotSpeech">Cùng mình bắt đầu học nhé! 🐼</div>
                 <img src="mascot-guide.png" style="width: 100%; mix-blend-mode: multiply;" alt="Mascot">
             </div>
         </header>
@@ -81,7 +81,12 @@
                 <button class="btn-control" onclick="resetProgress()">🔄 Học lại</button>
             </div>
         </div>
-        <div class="card-grid" id="cardGrid"></div>
+        <div class="single-card-container" id="cardGrid"></div>
+        <div class="card-navigation" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; align-items: center;">
+            <button class="btn-control" onclick="prevCard()" style="font-size: 1.2rem; padding: 0.8rem 1.5rem;">⬅ Trước</button>
+            <span id="cardCounter" style="font-size: 1.2rem; font-weight: bold; color: var(--text-color);">1 / 10</span>
+            <button class="btn-control" onclick="nextCard()" style="font-size: 1.2rem; padding: 0.8rem 1.5rem;">Sau ➡</button>
+        </div>
     </div>
 
     <div class="celebration-overlay" id="celebration">
@@ -108,7 +113,6 @@
             {"hanzi": "地图", "pinyin": "dìtú", "meaning": "bản đồ", "lesson": "1", "ex_cn": "这张地图很清楚。", "ex_py": "Zhè zhāng dìtú hěn qīngchu.", "ex_vn": "Tấm bản đồ này rất rõ ràng."},
             {"hanzi": "搬", "pinyin": "bān", "meaning": "chuyển (nhà, đồ đạc)", "lesson": "1", "ex_cn": "帮我搬一下这张桌子。", "ex_py": "Bāng wǒ bān yíxià zhè zhāng zhuōzi.", "ex_vn": "Giúp tôi chuyển chiếc bàn này một chút."}
         ];
-
         const grid = document.getElementById('cardGrid');
         const progressFill = document.getElementById('progress');
         const progressPercent = document.getElementById('progressPercent');
@@ -118,43 +122,61 @@
         const celebration = document.getElementById('celebration');
 
         let masteredSet = new Set();
+        let currentCardIndex = 0;
+        const cardCounterEl = document.getElementById('cardCounter');
         totalCountEl.innerText = vocabData.length;
 
         function renderCards() {
             grid.innerHTML = '';
-            vocabData.forEach((word, index) => {
-                const card = document.createElement('div');
-                card.className = 'flip-card' + (masteredSet.has(index) ? ' mastered' : '');
-                card.innerHTML = `
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="master-badge">⭐</div>
-                            <div class="hanzi">${word.hanzi}</div>
+            if(vocabData.length === 0) return;
+            const index = currentCardIndex;
+            const word = vocabData[index];
+            const card = document.createElement('div');
+            card.className = 'flip-card' + (masteredSet.has(index) ? ' mastered' : '');
+            card.innerHTML = `
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="master-badge">⭐</div>
+                        <div class="hanzi">${word.hanzi}</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="back-header">
+                            <span class="back-hanzi">${word.hanzi}</span>
+                            <span class="back-pinyin">${word.pinyin}</span>
                         </div>
-                        <div class="flip-card-back">
-                            <div class="back-header">
-                                <span class="back-hanzi" style="font-size:1.4rem">${word.hanzi}</span>
-                                <span class="back-pinyin">${word.pinyin}</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
-                                <button class="btn-speak" onclick="event.stopPropagation(); speak('${word.hanzi}')">🔊</button>
-                                <div class="back-meaning">${word.meaning}</div>
-                            </div>
-                            <div class="back-example">
-                                <strong style="font-size: 0.75rem; color: var(--primary-dark);">Ví dụ:</strong>
-                                <div style="margin-top:2px">${word.ex_cn || word.hanzi}</div>
-                                <div style="color: #e67e22; font-style: italic; font-size: 0.7rem;">${word.ex_py || word.pinyin}</div>
-                                <div style="color: #666; font-size: 0.7rem; border-top: 1px dashed #eee; margin-top:2px;">${word.ex_vn || word.meaning}</div>
-                            </div>
-                            <button class="master-btn ${masteredSet.has(index) ? 'active' : ''}" onclick="event.stopPropagation(); toggleMaster(${index}, this)">
-                                ${masteredSet.has(index) ? 'Bỏ thuộc' : 'Đã thuộc'}
-                            </button>
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 1rem;">
+                            <button class="btn-speak" onclick="event.stopPropagation(); speak('${word.hanzi}')">🔊</button>
+                            <div class="back-meaning">${word.meaning}</div>
                         </div>
-                    </div>`;
-                card.addEventListener('click', () => card.classList.toggle('flipped'));
-                grid.appendChild(card);
-            });
+                        <div class="back-example">
+                            <strong>Ví dụ:</strong>
+                            <div style="font-family: 'KaiTi', '楷体', 'STKaiti', serif; margin-top:5px; font-size: 1.5rem;">${word.ex_cn || word.hanzi}</div>
+                            <div style="color: #e67e22; font-style: italic; font-size: 1.2rem;">${word.ex_py || word.pinyin}</div>
+                            <div style="color: #666; font-size: 1.1rem; border-top: 1px dashed #ccc; margin-top:5px; padding-top:5px;">${word.ex_vn || word.meaning}</div>
+                        </div>
+                        <button class="master-btn ${masteredSet.has(index) ? 'active' : ''}" onclick="event.stopPropagation(); toggleMaster(${index}, this)">
+                            ${masteredSet.has(index) ? 'Bỏ thuộc' : 'Đã thuộc'}
+                        </button>
+                    </div>
+                </div>`;
+            card.addEventListener('click', () => card.classList.toggle('flipped'));
+            grid.appendChild(card);
+            cardCounterEl.innerText = (currentCardIndex + 1) + " / " + vocabData.length;
         }
+
+        window.prevCard = function() {
+            if(currentCardIndex > 0) {
+                currentCardIndex--;
+                renderCards();
+            }
+        };
+
+        window.nextCard = function() {
+            if(currentCardIndex < vocabData.length - 1) {
+                currentCardIndex++;
+                renderCards();
+            }
+        };
 
         function speak(text) {
             const utterance = new SpeechSynthesisUtterance(text);
@@ -190,12 +212,14 @@
         window.shuffleCards = function() {
             vocabData.sort(() => Math.random() - 0.5);
             masteredSet.clear();
+            currentCardIndex = 0;
             renderCards();
             updateProgress();
         };
 
         window.resetProgress = function() {
             masteredSet.clear();
+            currentCardIndex = 0;
             renderCards();
             updateProgress();
         };
