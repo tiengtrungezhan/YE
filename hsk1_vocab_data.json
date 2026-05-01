@@ -197,8 +197,11 @@
     "hanzi": "个",
     "pinyin": "gè",
     "meaning": "cái",
-    "lesson": "8",
-    "type": "Lượng từ"
+    "lesson": "5",
+    "type": "Lượng từ",
+    "ex_cn": "三个学生。",
+    "ex_py": "Sān ge xuésheng.",
+    "ex_vn": "Ba học sinh."
   },
   {
     "hanzi": "高兴",
@@ -1706,9 +1709,9 @@
     "meaning": "hai (số lượng)",
     "lesson": "5",
     "type": "Số từ",
-    "ex_cn": "他两岁。",
-    "ex_py": "Tā liǎng suì.",
-    "ex_vn": "Nó hai tuổi."
+    "ex_cn": "两个哥哥。",
+    "ex_py": "Liǎng ge gēge.",
+    "ex_vn": "Hai người anh trai."
   },
   {
     "hanzi": "年纪",

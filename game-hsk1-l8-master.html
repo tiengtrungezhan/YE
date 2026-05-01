@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "杯子", "pinyin": "bēizi", "meaning": "ly, tách", "lesson": "8", "type": "Danh từ"}, {"hanzi": "茶", "pinyin": "chá", "meaning": "trà", "lesson": "8", "type": "Danh từ"}, {"hanzi": "吃", "pinyin": "chī", "meaning": "ăn", "lesson": "8", "type": "Động từ"}, {"hanzi": "多少", "pinyin": "duōshao", "meaning": "bao nhiêu", "lesson": "8", "type": "Danh từ"}, {"hanzi": "个", "pinyin": "gè", "meaning": "cái", "lesson": "8", "type": "Lượng từ"}, {"hanzi": "喝", "pinyin": "hē", "meaning": "uống", "lesson": "8", "type": "Động từ"}, {"hanzi": "块", "pinyin": "kuài", "meaning": "đồng (đơn vị tiền tệ)", "lesson": "8", "type": "Lượng từ"}, {"hanzi": "买", "pinyin": "mǎi", "meaning": "mua", "lesson": "8", "type": "Động từ"}, {"hanzi": "米饭", "pinyin": "mǐfàn", "meaning": "cơm", "lesson": "8", "type": "Danh từ"}, {"hanzi": "钱", "pinyin": "qián", "meaning": "tiền", "lesson": "8", "type": "Danh từ"}, {"hanzi": "下午", "pinyin": "xiàwǔ", "meaning": "buổi chiều", "lesson": "8", "type": "Danh từ"}, {"hanzi": "想", "pinyin": "xiǎng", "meaning": "muốn", "lesson": "8", "type": "Động từ"}, {"hanzi": "这", "pinyin": "zhè", "meaning": "đây, này", "lesson": "8", "type": "Đại từ"}];
+        const vocabulary = [{"hanzi": "杯子", "pinyin": "bēizi", "meaning": "ly, tách", "lesson": "8", "type": "Danh từ"}, {"hanzi": "茶", "pinyin": "chá", "meaning": "trà", "lesson": "8", "type": "Danh từ"}, {"hanzi": "吃", "pinyin": "chī", "meaning": "ăn", "lesson": "8", "type": "Động từ"}, {"hanzi": "多少", "pinyin": "duōshao", "meaning": "bao nhiêu", "lesson": "8", "type": "Danh từ"}, {"hanzi": "喝", "pinyin": "hē", "meaning": "uống", "lesson": "8", "type": "Động từ"}, {"hanzi": "块", "pinyin": "kuài", "meaning": "đồng (đơn vị tiền tệ)", "lesson": "8", "type": "Lượng từ"}, {"hanzi": "买", "pinyin": "mǎi", "meaning": "mua", "lesson": "8", "type": "Động từ"}, {"hanzi": "米饭", "pinyin": "mǐfàn", "meaning": "cơm", "lesson": "8", "type": "Danh từ"}, {"hanzi": "钱", "pinyin": "qián", "meaning": "tiền", "lesson": "8", "type": "Danh từ"}, {"hanzi": "下午", "pinyin": "xiàwǔ", "meaning": "buổi chiều", "lesson": "8", "type": "Danh từ"}, {"hanzi": "想", "pinyin": "xiǎng", "meaning": "muốn", "lesson": "8", "type": "Động từ"}, {"hanzi": "这", "pinyin": "zhè", "meaning": "đây, này", "lesson": "8", "type": "Đại từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "十我气关见好汉您贵妈会期很号独呢纪明们姓五起友谁人工问三客下个泰你哪星钱识零她爸书四没夫本丈用八谢少老了块他吃几的对看学是饭名呼同再中有午二公英姐家叫六不日喝岁想外语吗怎字哥员作弟国系韩杯米美年请妻买七越儿师多做认兴九菜什爷婆女今妹男奶生天也法称去高么朋校南月说职茶医这写读大一事两兄子";
+                        const cumulativeChars = "钱气请做他兴家老什奶哥姐好对少说也会五生贵这一看法兄认没饭婆韩块人下米年女是日吃爸谢明弟您七纪很多独学员国期南怎校六再见中友外号越字二吗书两不零夫有语你工了九们男个起汉今美写关妈师四子医买她爷大丈妹八三几客名问读用姓哪高英系本茶杯岁午识去儿星朋公作泰喝妻月天呼谁么想同事称呢叫我职菜的十";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
