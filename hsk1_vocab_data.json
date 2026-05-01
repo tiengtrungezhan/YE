@@ -1094,63 +1094,90 @@
     "pinyin": "jiào",
     "meaning": "tên (là)",
     "lesson": "3",
-    "type": "Danh từ"
+    "type": "Danh từ",
+    "ex_cn": "你叫什么名字？",
+    "ex_py": "Nǐ jiào shénme míngzi?",
+    "ex_vn": "Bạn tên là gì?"
   },
   {
     "hanzi": "吗",
     "pinyin": "ma",
     "meaning": "được dùng ở cuối câu hỏi",
     "lesson": "3",
-    "type": "Trợ từ"
+    "type": "Trợ từ",
+    "ex_cn": "你是老师吗？",
+    "ex_py": "Nǐ shì lǎoshī ma?",
+    "ex_vn": "Bạn là giáo viên phải không?"
   },
   {
     "hanzi": "名字",
     "pinyin": "míngzi",
     "meaning": "tên",
     "lesson": "3",
-    "type": "Danh từ"
+    "type": "Danh từ",
+    "ex_cn": "我叫李明，这是我的名字。",
+    "ex_py": "Wǒ jiào Lǐ Míng, zhè shì wǒ de míngzi.",
+    "ex_vn": "Tôi tên là Lý Minh, đây là tên của tôi."
   },
   {
     "hanzi": "呢",
     "pinyin": "ne",
     "meaning": "được dùng ở cuối câu hỏi",
     "lesson": "3",
-    "type": "Trợ từ"
+    "type": "Trợ từ",
+    "ex_cn": "我很好，你呢？",
+    "ex_py": "Wǒ hěn hǎo, nǐ ne?",
+    "ex_vn": "Tôi rất khỏe, còn bạn?"
   },
   {
     "hanzi": "人",
     "pinyin": "rén",
     "meaning": "người",
     "lesson": "3",
-    "type": "Danh từ"
+    "type": "Danh từ",
+    "ex_cn": "他是中国人。",
+    "ex_py": "Tā shì Zhōngguó rén.",
+    "ex_vn": "Anh ấy là người Trung Quốc."
   },
   {
     "hanzi": "什么",
     "pinyin": "shénme",
     "meaning": "cái gì",
     "lesson": "3",
-    "type": "Đại từ"
+    "type": "Đại từ",
+    "ex_cn": "这是什么？",
+    "ex_py": "Zhè shì shénme?",
+    "ex_vn": "Đây là cái gì?"
   },
   {
     "hanzi": "是",
     "pinyin": "shì",
     "meaning": "là",
     "lesson": "3",
-    "type": "Động từ"
+    "type": "Động từ",
+    "ex_cn": "我是学生。",
+    "ex_py": "Wǒ shì xuésheng.",
+    "ex_vn": "Tôi là học sinh."
   },
   {
     "hanzi": "学生",
     "pinyin": "xuésheng",
     "meaning": "học sinh",
     "lesson": "3",
-    "type": "Động từ"
+    "type": "Động từ",
+    "ex_cn": "大卫是留学生。",
+    "ex_py": "Dàwèi shì liúxuésheng.",
+    "ex_vn": "David là lưu học sinh."
   },
   {
     "hanzi": "中国",
     "pinyin": "Zhōngguó",
     "meaning": "Trung Quốc",
     "lesson": "3",
-    "type": "Danh từ"
+    "type": "Danh từ",
+    "ex_cn": "中国很大。",
+    "ex_py": "Zhōngguó hěn dà.",
+    "ex_vn": "Trung Quốc rất lớn."
   },
   {
     "hanzi": "美国",
