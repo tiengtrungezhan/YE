@@ -947,8 +947,8 @@ def generate_hsk_games(level):
         with open(f'game-hsk{level}-l{lesson_id}-master.html', 'w', encoding='utf-8') as f:
             f.write(MASTER_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json, cumulative_chars=cumulative_chars))
 
-        # Match Page (HSK 1 and HSK 2 only)
-        if level <= 2:
+        # Match Page (HSK 1, 2, and 3)
+        if level <= 3:
             with open(f'game-hsk{level}-l{lesson_id}-match.html', 'w', encoding='utf-8') as f:
                 f.write(MATCH_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json))
 
@@ -965,3 +965,4 @@ def generate_hsk_games(level):
 if __name__ == "__main__":
     generate_hsk_games(1)
     generate_hsk_games(2)
+    generate_hsk_games(3)
