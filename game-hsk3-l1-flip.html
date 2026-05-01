@@ -144,9 +144,12 @@
                             <span class="back-hanzi">${word.hanzi}</span>
                             <span class="back-pinyin">${word.pinyin}</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 0.5rem;">
                             <button class="btn-speak" onclick="event.stopPropagation(); speak('${word.hanzi}')">🔊</button>
                             <div class="back-meaning">${word.meaning}</div>
+                        </div>
+                        <div style="font-size: 1.1rem; color: #555; margin-bottom: 1rem; padding-left: 5px;">
+                            <strong>Từ loại:</strong> ${word.type || word.pos || 'Đang cập nhật'}
                         </div>
                         <div class="back-example">
                             <strong>Ví dụ:</strong>
