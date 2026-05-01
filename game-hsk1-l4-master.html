@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "định ngữ", "pinyin": "de", "meaning": "của, thuộc về", "lesson": "4", "type": "Danh từ"}, {"hanzi": "汉语", "pinyin": "Hànyǔ", "meaning": "tiếng Trung Quốc", "lesson": "4", "type": "Danh từ"}, {"hanzi": "哪", "pinyin": "nǎ", "meaning": "nào", "lesson": "4", "type": "Đại từ"}, {"hanzi": "朋友", "pinyin": "péngyou", "meaning": "bạn", "lesson": "4", "type": "Đại từ"}, {"hanzi": "谁", "pinyin": "shéi", "meaning": "ai", "lesson": "4", "type": "Đại từ"}];
+        const vocabulary = [{"hanzi": "的", "pinyin": "de", "meaning": "của, thuộc về", "lesson": "4", "type": "Trợ từ"}, {"hanzi": "汉语", "pinyin": "Hànyǔ", "meaning": "tiếng Trung Quốc", "lesson": "4", "type": "Danh từ"}, {"hanzi": "哪", "pinyin": "nǎ", "meaning": "nào", "lesson": "4", "type": "Đại từ", "ex_cn": "你是哪人？", "ex_py": "Nǐ shì nǎ rén?", "ex_vn": "Bạn là người ở đâu?"}, {"hanzi": "朋友", "pinyin": "péngyou", "meaning": "bạn", "lesson": "4", "type": "Đại từ"}, {"hanzi": "谁", "pinyin": "shéi", "meaning": "ai", "lesson": "4", "type": "Đại từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生也认五本日六她越ữ谢中您贵老气师哪人 起大再呢ị学么是汉医关们我国他朋不工做十对同见请n怎没高客美韩家南英三员四友七称名字问零呼你什吗事识作泰系兴用叫二姓gh职九语法很一谁đ好八";
+                        const cumulativeChars = "十我气关见好汉您贵很呢们姓五起友谁人工问三客泰你哪识零她四没本用八谢老他对的学是名呼同再中二英家叫六不日语吗怎字员作国系韩美请七越师做认兴九什生也法称高么朋南职医大一事";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

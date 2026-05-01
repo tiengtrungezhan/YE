@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "得", "pinyin": "de", "meaning": "đạt được, (trợ từ)", "lesson": "12", "type": "Trợ từ"}, {"hanzi": "妻子", "pinyin": "qīzi", "meaning": "vợ", "lesson": "12", "type": "Danh từ"}, {"hanzi": "雪", "pinyin": "xuě", "meaning": "tuyết", "lesson": "12", "type": "Danh từ"}, {"hanzi": "零", "pinyin": "líng", "meaning": "số không", "lesson": "12", "type": "Số từ"}, {"hanzi": "度", "pinyin": "dù", "meaning": "độ", "lesson": "12", "type": "Lượng từ"}, {"hanzi": "穿", "pinyin": "chuān", "meaning": "mặc", "lesson": "12", "type": "Động từ"}, {"hanzi": "进", "pinyin": "jìn", "meaning": "vào", "lesson": "12", "type": "Động từ"}, {"hanzi": "弟弟", "pinyin": "dìdi", "meaning": "em trai", "lesson": "12", "type": "Danh từ"}, {"hanzi": "近", "pinyin": "jìn", "meaning": "gần", "lesson": "12", "type": "Tính từ"}];
+        const vocabulary = [{"hanzi": "得", "pinyin": "de", "meaning": "đạt được, (trợ từ)", "lesson": "12", "type": "Trợ từ"}, {"hanzi": "雪", "pinyin": "xuě", "meaning": "tuyết", "lesson": "12", "type": "Danh từ"}, {"hanzi": "零", "pinyin": "líng", "meaning": "số không", "lesson": "12", "type": "Số từ"}, {"hanzi": "度", "pinyin": "dù", "meaning": "độ", "lesson": "12", "type": "Lượng từ"}, {"hanzi": "穿", "pinyin": "chuān", "meaning": "mặc", "lesson": "12", "type": "Động từ"}, {"hanzi": "进", "pinyin": "jìn", "meaning": "vào", "lesson": "12", "type": "Động từ"}, {"hanzi": "近", "pinyin": "jìn", "meaning": "gần", "lesson": "12", "type": "Tính từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "告友啡块女瓜影呼孩写快给牛零什呢要共知篮已多蛋得ị报服右期姓常务男课妈正司七用哥雨不人椅吧大事几丈天兴听很红习谢懂生情公西所旁表想钱这日吗度谁教视苹洗现出粉喂南高始怎外猫候四希机她中还比送少点水就工自错药爸校气让喜您条号起本国名九个帮热么果宜吃夫钟鱼场试八都菜球美奶你上颜第年忙回便路系慢家打息足色道员问đ星休介助间完晚妻舞考米些身跑作职分h五汉前体会千好午进来字脑样歌经关斤车去店黑里早咖床每喝买是步们题月能班睛真 在住二乐读饭边开旅g踢肉院走远衣也泰韩飞接两后桌它穿医学昨再白杯那从冷老纸最唱诉觉过非我以为爱望时同新电东到了和行话运太狗跳泳长有雪备称亮坐羊看离准因近一对下眼鸡三游左越汽可他见做门法贵n面请病认叫漂明房找小师手租茶六件室绍说没朋动岁等ữ迎英语十书别睡识今先儿商哪欢客姐弟子";
+                        const cumulativeChars = "我昨错教见好汉行贵报期歌乐考号跑纪租姓题找来工人远客下泰你千洗药样跳识她试书候望用了块回的看呼体场中午冷再自不飞备喝岁务现能眼色让商情韩美迎里师做认九非到课习男奶条近睡职大左东帮以度助手肉狗给穿会很还明那们店告孩打谁早车游斤门爸白完旅四没院电别舞第少步汽房走几比对学脑名便有瓜家叫前日吗怎桌杯接右常唱买送吧苹先雪知表爷婆司些女鱼天高么朋南室月鸡经点这从欢旁绍子十关每喜介离妈独边宜友休问后过息羊牛晚钱真本始进丈所八路衣钟老可他同话二视姐英件诉六想分颜雨字正作忙系病米年请妻越儿多篮出果兴床菜什喂动快在今妹新也懂法听开校它医椅读两上服住身蛋小气时已共您机猫等呢就五纸起慢球西三个最哪道星希零长夫漂为谢热得水准吃坐是饭间公啡都粉外语觉哥运泳员弟国班咖因和影七红足太生亮面去称说踢要茶爱写睛一事兄黑";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

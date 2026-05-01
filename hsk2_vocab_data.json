@@ -267,13 +267,6 @@
     "type": "Danh từ"
   },
   {
-    "hanzi": "丈夫",
-    "pinyin": "zhàngfu",
-    "meaning": "chồng",
-    "lesson": "3",
-    "type": "Danh từ"
-  },
-  {
     "hanzi": "旁边",
     "pinyin": "pángbiān",
     "meaning": "bên cạnh",
@@ -384,13 +377,6 @@
     "meaning": "dài",
     "lesson": "4",
     "type": "Tính từ"
-  },
-  {
-    "hanzi": "两",
-    "pinyin": "liǎng",
-    "meaning": "hai",
-    "lesson": "4",
-    "type": "Số từ"
   },
   {
     "hanzi": "帮",
@@ -580,13 +566,6 @@
     "meaning": "cân, kilogram",
     "lesson": "6",
     "type": "Lượng từ"
-  },
-  {
-    "hanzi": "姐姐",
-    "pinyin": "jiějie",
-    "meaning": "chị gái",
-    "lesson": "6",
-    "type": "Đại từ"
   },
   {
     "hanzi": "教室",
@@ -848,13 +827,6 @@
     "type": "Phó từ"
   },
   {
-    "hanzi": "哥哥",
-    "pinyin": "gēge",
-    "meaning": "anh trai",
-    "lesson": "10",
-    "type": "Đại từ"
-  },
-  {
     "hanzi": "鸡蛋",
     "pinyin": "jīdàn",
     "meaning": "trứng gà",
@@ -953,13 +925,6 @@
     "type": "Danh từ"
   },
   {
-    "hanzi": "去年",
-    "pinyin": "qùnián",
-    "meaning": "năm ngoái",
-    "lesson": "11",
-    "type": "Danh từ"
-  },
-  {
     "hanzi": "姓",
     "pinyin": "xìng",
     "meaning": "họ",
@@ -972,13 +937,6 @@
     "meaning": "đạt được, (trợ từ)",
     "lesson": "12",
     "type": "Trợ từ"
-  },
-  {
-    "hanzi": "妻子",
-    "pinyin": "qīzi",
-    "meaning": "vợ",
-    "lesson": "12",
-    "type": "Danh từ"
   },
   {
     "hanzi": "雪",
@@ -1014,13 +972,6 @@
     "meaning": "vào",
     "lesson": "12",
     "type": "Động từ"
-  },
-  {
-    "hanzi": "弟弟",
-    "pinyin": "dìdi",
-    "meaning": "em trai",
-    "lesson": "12",
-    "type": "Danh từ"
   },
   {
     "hanzi": "近",
@@ -1196,13 +1147,6 @@
     "meaning": "hàng, hơn nữa",
     "lesson": "15",
     "type": "Phó từ"
-  },
-  {
-    "hanzi": "妹妹",
-    "pinyin": "mèimei",
-    "meaning": "em gái",
-    "lesson": "15",
-    "type": "Danh từ"
   },
   {
     "hanzi": "阴",

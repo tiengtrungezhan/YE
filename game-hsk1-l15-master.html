@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "出租车", "pinyin": "chūzūchē", "meaning": "taxi", "lesson": "15", "type": "Danh từ"}, {"hanzi": "饭店", "pinyin": "fàndiàn", "meaning": "khách sạn, nhà hàng", "lesson": "15", "type": "Danh từ"}, {"hanzi": "飞机", "pinyin": "fēijī", "meaning": "máy bay", "lesson": "15", "type": "Danh từ"}, {"hanzi": "高兴", "pinyin": "gāoxìng", "meaning": "vui, phấn khởi", "lesson": "15", "type": "Danh từ"}, {"hanzi": "能", "pinyin": "néng", "meaning": "có thể", "lesson": "15", "type": "Động từ"}, {"hanzi": "认识", "pinyin": "rènshi", "meaning": "quen, biết", "lesson": "15", "type": "Động từ"}, {"hanzi": "听", "pinyin": "tīng", "meaning": "nghe", "lesson": "15", "type": "Động từ"}, {"hanzi": "坐", "pinyin": "zuò", "meaning": "ngồi", "lesson": "15", "type": "Động từ"}];
+        const vocabulary = [{"hanzi": "出租车", "pinyin": "chūzūchē", "meaning": "taxi", "lesson": "15", "type": "Danh từ"}, {"hanzi": "饭店", "pinyin": "fàndiàn", "meaning": "khách sạn, nhà hàng", "lesson": "15", "type": "Danh từ"}, {"hanzi": "飞机", "pinyin": "fēijī", "meaning": "máy bay", "lesson": "15", "type": "Danh từ"}, {"hanzi": "高兴", "pinyin": "gāoxìng", "meaning": "vui, phấn khởi", "lesson": "15", "type": "Danh từ", "ex_cn": "很高兴。", "ex_py": "Hěn gāoxìng.", "ex_vn": "Rất vui."}, {"hanzi": "能", "pinyin": "néng", "meaning": "có thể", "lesson": "15", "type": "Động từ"}, {"hanzi": "认识", "pinyin": "rènshi", "meaning": "quen, biết", "lesson": "15", "type": "Động từ", "ex_cn": "认识你，很高兴。", "ex_py": "Rènshi nǐ, hěn gāoxìng.", "ex_vn": "Quen biết bạn, rất vui."}, {"hanzi": "听", "pinyin": "tīng", "meaning": "nghe", "lesson": "15", "type": "Động từ"}, {"hanzi": "坐", "pinyin": "zuò", "meaning": "ngồi", "lesson": "15", "type": "Động từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "租生点西了认现米五也本日前六话她桌越车ữ子少谢服中后您苹想贵老气师饭些冷住哪人上茶 机起大再院呢亮喝来菜明ị学水视会和回汉看时么样医是椅星衣关欢们睡先那我国他朋不猫工做十雨能对果块见同请n里觉天怎读没高去校客杯美家韩南英打喜今三飞员小四岁友七商称分面名昨字问零呼吃你钟漂下女姐期什在吗事儿识书太作泰都说候系这年热有兴写东用二叫号个月狗买姓习听店几妈g坐出电h职钱影喂九语开法很多一谁đ午爸八好脑爱";
+                        const cumulativeChars = "十我气昨时关见好狗汉喜您贵机妈猫会期很号独呢明纪那租们姓店五来打起工友谁人问西三客后车下个泰你样哪星钱识零她爸书四没院夫候本电丈用漂八谢衣钟热少老了块他水回吃几的对看脑学坐是饭名呼同中话有午冷视姐再二英公家都叫前六不飞日喝岁想外分语现觉吗雨字怎哥能员作弟国系商韩桌杯和影米美年请妻里买七越儿师多出做苹认果兴先九菜什喂在习爷婆些女太今妹男奶生天也法亮面去听睡称高开么朋校南月说职茶点医椅爱这写读大一欢东事两兄上服住小子";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

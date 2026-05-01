@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6", "type": "Động từ"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6", "type": "Động từ"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6", "type": "Động từ"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6", "type": "Phó từ"}, {"hanzi": "妈妈", "pinyin": "māma", "meaning": "mẹ", "lesson": "6", "type": "Danh từ"}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6", "type": "Động từ"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6", "type": "Động từ"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6", "type": "Đại từ"}];
+        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6", "type": "Động từ"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6", "type": "Động từ"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6", "type": "Động từ"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6", "type": "Phó từ", "ex_cn": "他很好。", "ex_py": "Tā hěn hǎo.", "ex_vn": "Anh ấy rất tốt."}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6", "type": "Động từ"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6", "type": "Động từ"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6", "type": "Đại từ", "ex_cn": "怎么称呼您？", "ex_py": "Zěnme chēnghu nín?", "ex_vn": "Xưng hô với ngài thế nào?"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生也了认五本日六她越ữ谢中您贵老气师哪人 起大再呢菜ị学会么是汉医关们我国他朋不工做十对同见请n怎读没高客美家韩南英三员四岁友七称名字问零呼你女什吗事儿识作泰说系有写兴用二叫姓几妈gh职九语法很多一谁đ八好";
+                        const cumulativeChars = "十我气关见好汉您贵妈会很独呢纪明们姓五起友谁人工问三客泰你哪识零她爸四没夫本丈用八谢老了他几的对学是名呼同再中有二公英姐家叫六不日岁外语吗怎字哥员作弟国系韩美年请妻七越儿师多做认兴九菜什爷婆女妹今男奶生也法称去高么朋南说职医写读大一事两兄子";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

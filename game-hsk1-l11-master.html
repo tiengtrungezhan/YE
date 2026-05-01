@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "电影", "pinyin": "diànyǐng", "meaning": "phim", "lesson": "11", "type": "Danh từ"}, {"hanzi": "点", "pinyin": "diǎn", "meaning": "giờ", "lesson": "11", "type": "Danh từ"}, {"hanzi": "回", "pinyin": "huí", "meaning": "về", "lesson": "11", "type": "Danh từ"}, {"hanzi": "明天", "pinyin": "míngtiān", "meaning": "ngày mai", "lesson": "11", "type": "Danh từ"}, {"hanzi": "年", "pinyin": "nián", "meaning": "năm", "lesson": "11", "type": "Danh từ"}, {"hanzi": "上午", "pinyin": "shàngwǔ", "meaning": "buổi sáng", "lesson": "11", "type": "Danh từ"}, {"hanzi": "时候", "pinyin": "shíhou", "meaning": "lúc, khi", "lesson": "11", "type": "Danh từ"}, {"hanzi": "三", "pinyin": "sān", "meaning": "ba", "lesson": "11", "type": "Số từ"}, {"hanzi": "现在", "pinyin": "xiànzài", "meaning": "bây giờ, hiện tại", "lesson": "11", "type": "Giới từ"}, {"hanzi": "住", "pinyin": "zhù", "meaning": "ở, cư trú", "lesson": "11", "type": "Động từ"}, {"hanzi": "中午", "pinyin": "zhōngwǔ", "meaning": "buổi trưa", "lesson": "11", "type": "Danh từ"}, {"hanzi": "昨天", "pinyin": "zuótiān", "meaning": "hôm qua", "lesson": "11", "type": "Danh từ"}];
+        const vocabulary = [{"hanzi": "电影", "pinyin": "diànyǐng", "meaning": "phim", "lesson": "11", "type": "Danh từ"}, {"hanzi": "点", "pinyin": "diǎn", "meaning": "giờ", "lesson": "11", "type": "Danh từ"}, {"hanzi": "回", "pinyin": "huí", "meaning": "về", "lesson": "11", "type": "Danh từ"}, {"hanzi": "明天", "pinyin": "míngtiān", "meaning": "ngày mai", "lesson": "11", "type": "Danh từ"}, {"hanzi": "年", "pinyin": "nián", "meaning": "năm", "lesson": "11", "type": "Danh từ"}, {"hanzi": "上午", "pinyin": "shàngwǔ", "meaning": "buổi sáng", "lesson": "11", "type": "Danh từ"}, {"hanzi": "时候", "pinyin": "shíhou", "meaning": "lúc, khi", "lesson": "11", "type": "Danh từ"}, {"hanzi": "三", "pinyin": "sān", "meaning": "ba", "lesson": "11", "type": "Số từ", "ex_cn": "一，二，三。", "ex_py": "Yī, èr, sān.", "ex_vn": "Một, hai, ba."}, {"hanzi": "现在", "pinyin": "xiànzài", "meaning": "bây giờ, hiện tại", "lesson": "11", "type": "Giới từ"}, {"hanzi": "住", "pinyin": "zhù", "meaning": "ở, cư trú", "lesson": "11", "type": "Động từ"}, {"hanzi": "中午", "pinyin": "zhōngwǔ", "meaning": "buổi trưa", "lesson": "11", "type": "Danh từ"}, {"hanzi": "昨天", "pinyin": "zuótiān", "meaning": "hôm qua", "lesson": "11", "type": "Danh từ"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生点了现也认米五本日前六她越ữ子少谢中后您想贵老气师饭住哪人上茶 起大再院呢喝明菜ị学会看和回汉时么是医椅星关欢们我国他朋不猫工做十对块同见请n里天怎读没高去校客杯美家韩南英喜今三员小四岁友七商称面名昨字问零呼吃你期下女什在吗事儿识书作泰说候系这年有写兴用二叫号个月狗买姓店几妈g电h职钱影九语法很多一谁đ午爸八好脑";
+                        const cumulativeChars = "十我气昨时关见好狗汉喜您贵妈猫会期很号独呢明纪们姓店五起工友谁人问三客后下个泰你哪星钱识零她爸书四没院夫候本电丈用八谢少老了块他回吃几的对看脑学是饭名呼同中再有午二公英姐家叫前六不日喝岁想外语现吗怎字哥员作弟国系商韩杯和影米美年请妻里买七越儿师多做认兴九菜什在爷婆女今妹男奶生天也法面去称高么朋校南月说职茶点医椅这写读大一欢事两兄上住小子";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

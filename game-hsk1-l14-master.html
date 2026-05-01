@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "东西", "pinyin": "dōngxi", "meaning": "đồ, đồ đạc", "lesson": "14", "type": "Danh từ"}, {"hanzi": "都", "pinyin": "dōu", "meaning": "đều", "lesson": "14", "type": "Phó từ"}, {"hanzi": "分钟", "pinyin": "fēnzhōng", "meaning": "phút", "lesson": "14", "type": "Danh từ"}, {"hanzi": "看见", "pinyin": "kànjiàn", "meaning": "nhìn thấy", "lesson": "14", "type": "Động từ"}, {"hanzi": "开", "pinyin": "kāi", "meaning": "lái", "lesson": "14", "type": "Danh từ"}, {"hanzi": "漂亮", "pinyin": "piàoliang", "meaning": "đẹp", "lesson": "14", "type": "Tính từ"}, {"hanzi": "苹果", "pinyin": "píngguǒ", "meaning": "táo", "lesson": "14", "type": "Danh từ"}, {"hanzi": "说话", "pinyin": "shuōhuà", "meaning": "nói chuyện", "lesson": "14", "type": "Động từ"}, {"hanzi": "先生", "pinyin": "xiānsheng", "meaning": "ông, ngài", "lesson": "14", "type": "Danh từ"}, {"hanzi": "一点儿", "pinyin": "yìdiǎnr", "meaning": "một ít, một chút", "lesson": "14", "type": "Tính từ"}, {"hanzi": "衣服", "pinyin": "yīfu", "meaning": "quần áo", "lesson": "14", "type": "Danh từ"}, {"hanzi": "做", "pinyin": "zuò", "meaning": "làm", "lesson": "14", "type": "Động từ"}];
+        const vocabulary = [{"hanzi": "东西", "pinyin": "dōngxi", "meaning": "đồ, đồ đạc", "lesson": "14", "type": "Danh từ"}, {"hanzi": "都", "pinyin": "dōu", "meaning": "đều", "lesson": "14", "type": "Phó từ"}, {"hanzi": "分钟", "pinyin": "fēnzhōng", "meaning": "phút", "lesson": "14", "type": "Danh từ"}, {"hanzi": "看见", "pinyin": "kànjiàn", "meaning": "nhìn thấy", "lesson": "14", "type": "Động từ"}, {"hanzi": "开", "pinyin": "kāi", "meaning": "lái", "lesson": "14", "type": "Danh từ"}, {"hanzi": "漂亮", "pinyin": "piàoliang", "meaning": "đẹp", "lesson": "14", "type": "Tính từ"}, {"hanzi": "苹果", "pinyin": "píngguǒ", "meaning": "táo", "lesson": "14", "type": "Danh từ"}, {"hanzi": "说话", "pinyin": "shuōhuà", "meaning": "nói chuyện", "lesson": "14", "type": "Động từ"}, {"hanzi": "先生", "pinyin": "xiānsheng", "meaning": "ông, ngài", "lesson": "14", "type": "Danh từ"}, {"hanzi": "一点儿", "pinyin": "yìdiǎnr", "meaning": "một ít, một chút", "lesson": "14", "type": "Tính từ"}, {"hanzi": "衣服", "pinyin": "yīfu", "meaning": "quần áo", "lesson": "14", "type": "Danh từ"}, {"hanzi": "做", "pinyin": "zuò", "meaning": "làm", "lesson": "14", "type": "Động từ", "ex_cn": "你做工作吗？", "ex_py": "Nǐ zuò gōngzuò ma?", "ex_vn": "Bạn có làm việc không?"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "生点西了现也米五认本日前六话她桌越ữ子少谢服中后您苹想贵老气师饭些冷住哪人上茶 起大再院呢亮喝来菜明ị学水视会和回汉看时么样医是椅星衣关欢们睡先那我国他朋不猫工做十雨对果块见同请n里觉天怎读没高去校客杯美家韩南英打喜今三员小四岁友七商称分面名昨字问零呼吃你钟漂下女姐期什在吗事儿识书太作泰都说候系这年热有写兴东用二叫号个月狗买姓习店几妈g电h职钱影喂九语开法很多一谁đ午爸八好脑爱";
+                        const cumulativeChars = "十我气昨时关见好狗汉喜您贵妈猫会期很号独呢明纪那们姓店五来打起工友谁人问西三客后下个泰你样哪星钱识零她爸书四没院夫候本电丈用漂八谢衣钟热少老了块他水回吃几的对看脑学是饭名呼同中话有午冷视姐再二英公家都叫前六不日喝岁想外分语现觉吗雨字怎哥员作弟国系商韩桌杯和影米美年请妻里买七越儿师多做苹认果兴先九菜什喂在习爷婆些女太今妹男奶生天也法亮面去称睡高开么朋校南月说职茶点医椅爱这写读大一欢东事两兄上服住小子";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
