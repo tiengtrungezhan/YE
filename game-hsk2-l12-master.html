@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "得", "pinyin": "de", "meaning": "đạt được, (trợ từ)", "lesson": "12", "type": "Trợ từ"}, {"hanzi": "雪", "pinyin": "xuě", "meaning": "tuyết", "lesson": "12", "type": "Danh từ"}, {"hanzi": "零", "pinyin": "líng", "meaning": "số không", "lesson": "12", "type": "Số từ"}, {"hanzi": "度", "pinyin": "dù", "meaning": "độ", "lesson": "12", "type": "Lượng từ"}, {"hanzi": "穿", "pinyin": "chuān", "meaning": "mặc", "lesson": "12", "type": "Động từ"}, {"hanzi": "进", "pinyin": "jìn", "meaning": "vào", "lesson": "12", "type": "Động từ"}, {"hanzi": "近", "pinyin": "jìn", "meaning": "gần", "lesson": "12", "type": "Tính từ"}];
+        const vocabulary = [{"hanzi": "得", "pinyin": "de", "meaning": "đạt được, (trợ từ)", "lesson": "12", "type": "Trợ từ", "ex_cn": "你走得快。", "ex_py": "Nǐ zǒu de kuài.", "ex_vn": "Bạn đi nhanh."}, {"hanzi": "雪", "pinyin": "xuě", "meaning": "tuyết", "lesson": "12", "type": "Danh từ", "ex_cn": "下雪了。", "ex_py": "Xià xuě le.", "ex_vn": "Tuyết rơi rồi."}, {"hanzi": "零", "pinyin": "líng", "meaning": "số không", "lesson": "12", "type": "Số từ", "ex_cn": "零度。", "ex_py": "Líng dù.", "ex_vn": "Không độ."}, {"hanzi": "度", "pinyin": "dù", "meaning": "độ", "lesson": "12", "type": "Lượng từ", "ex_cn": "十度。", "ex_py": "Shí dù.", "ex_vn": "Mười độ."}, {"hanzi": "穿", "pinyin": "chuān", "meaning": "mặc", "lesson": "12", "type": "Động từ", "ex_cn": "穿衣服。", "ex_py": "Chuān yīfu.", "ex_vn": "Mặc quần áo."}, {"hanzi": "进", "pinyin": "jìn", "meaning": "vào", "lesson": "12", "type": "Động từ", "ex_cn": "请进。", "ex_py": "Qǐng jìn.", "ex_vn": "Mời vào."}, {"hanzi": "近", "pinyin": "jìn", "meaning": "gần", "lesson": "12", "type": "Tính từ", "ex_cn": "很近。", "ex_py": "Hěn jìn.", "ex_vn": "Rất gần."}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "我昨错教见好汉行贵报期歌乐考号跑纪租姓题找来工人远客下泰你千洗药样跳识她试书候望用了块回的看呼体场中午冷再自不飞备喝岁务现能眼色让商情韩美迎里师做认九非到课习男奶条近睡职大左东帮以度助手肉狗给穿会很还明那们店告孩打谁早车游斤门爸白完旅四没院电别舞第少步汽房走几比对学脑名便有瓜家叫前日吗怎桌杯接右常唱买送吧苹先雪知表爷婆司些女鱼天高么朋南室月鸡经点这从欢旁绍子十关每喜介离妈独边宜友休问后过息羊牛晚钱真本始进丈所八路衣钟老可他同话二视姐英件诉六想分颜雨字正作忙系病米年请妻越儿多篮出果兴床菜什喂动快在今妹新也懂法听开校它医椅读两上服住身蛋小气时已共您机猫等呢就五纸起慢球西三个最哪道星希零长夫漂为谢热得水准吃坐是饭间公啡都粉外语觉哥运泳员弟国班咖因和影七红足太生亮面去称说踢要茶爱写睛一事兄黑";
+                        const cumulativeChars = "近哥乐长找谁鸡婆服告教常雨会姐场完喂最钱穿别再睡离职共度想介开工来员歌果它大现猫水称几懂起有问题道汽零样呼南老四要体两孩右少六同时给椅西七校还法吗些送司租今谢跑气菜脑友号望牛绍唱床房好左接第客奶啡洗边以旁室妹块件认希的候名得三运热漂姓息前吧九日她蛋年字备从所什车爷狗能报先休宜听学做八星足小门眼机兴雪里远让中帮粉视正店在知篮坐羊叫国始经条爱作男红看兄见公咖独桌读没助步行系忙妈纸病色影冷韩那习药打医么女哪英试他情院自去也慢多夫走高们吃泰非午怎黑准了比错妻住后颜面点迎进你本呢儿喜分可一球动和昨到天用不二每间电关书考欢泳汉子米您亮饭肉便千买游是杯贵下跳东我因手对为美出朋踢语觉外衣就事瓜岁上身丈越务师鱼课诉这人已早真快斤明回很睛路话都等月爸说茶苹旅白弟新写期晚识商钟飞生个十太喝五舞班纪表家请过";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
