@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "号", "pinyin": "hào", "meaning": "ngày", "lesson": "7", "type": "Danh từ"}, {"hanzi": "今天", "pinyin": "jīntiān", "meaning": "hôm nay", "lesson": "7", "type": "Danh từ"}, {"hanzi": "看", "pinyin": "kàn", "meaning": "nhìn, xem", "lesson": "7", "type": "Động từ"}, {"hanzi": "去", "pinyin": "qù", "meaning": "đi, đi đến", "lesson": "7", "type": "Động từ"}, {"hanzi": "请", "pinyin": "qǐng", "meaning": "mời, xin", "lesson": "7", "type": "Danh từ"}, {"hanzi": "书", "pinyin": "shū", "meaning": "sách", "lesson": "7", "type": "Danh từ"}, {"hanzi": "学校", "pinyin": "xuéxiào", "meaning": "trường", "lesson": "7", "type": "Danh từ"}, {"hanzi": "星期", "pinyin": "xīngqī", "meaning": "thứ, tuần", "lesson": "7", "type": "Danh từ"}, {"hanzi": "月", "pinyin": "yuè", "meaning": "tháng", "lesson": "7", "type": "Danh từ"}, {"hanzi": "字", "pinyin": "zì", "meaning": "chữ", "lesson": "7", "type": "Danh từ"}];
+        const vocabulary = [{"hanzi": "号", "pinyin": "hào", "meaning": "ngày", "lesson": "7", "type": "Danh từ", "ex_cn": "三月十号。", "ex_py": "Sānyuè shí hào.", "ex_vn": "Ngày mùng mười tháng Ba."}, {"hanzi": "今天", "pinyin": "jīntiān", "meaning": "hôm nay", "lesson": "7", "type": "Danh từ", "ex_cn": "今天星期三。", "ex_py": "Jīntiān xīngqīsān.", "ex_vn": "Hôm nay là thứ Tư."}, {"hanzi": "看", "pinyin": "kàn", "meaning": "nhìn, xem", "lesson": "7", "type": "Động từ", "ex_cn": "看，他是谁？", "ex_py": "Kàn, tā shì shéi?", "ex_vn": "Nhìn kìa, anh ấy là ai?"}, {"hanzi": "去", "pinyin": "qù", "meaning": "đi, đi đến", "lesson": "7", "type": "Động từ", "ex_cn": "我去学校。", "ex_py": "Wǒ qù xuéxiào.", "ex_vn": "Tôi đi đến trường."}, {"hanzi": "请", "pinyin": "qǐng", "meaning": "mời, xin", "lesson": "7", "type": "Danh từ", "ex_cn": "请问，你是谁？", "ex_py": "Qǐngwèn, nǐ shì shéi?", "ex_vn": "Xin hỏi, bạn là ai?"}, {"hanzi": "书", "pinyin": "shū", "meaning": "sách", "lesson": "7", "type": "Danh từ", "ex_cn": "我看书。", "ex_py": "Wǒ kàn shū.", "ex_vn": "Tôi đọc sách."}, {"hanzi": "学校", "pinyin": "xuéxiào", "meaning": "trường", "lesson": "7", "type": "Danh từ", "ex_cn": "我去学校。", "ex_py": "Wǒ qù xuéxiào.", "ex_vn": "Tôi đi học."}, {"hanzi": "星期", "pinyin": "xīngqī", "meaning": "thứ, tuần", "lesson": "7", "type": "Danh từ", "ex_cn": "今天星期一。", "ex_py": "Jīntiān xīngqīyī.", "ex_vn": "Hôm nay là thứ Hai."}, {"hanzi": "月", "pinyin": "yuè", "meaning": "tháng", "lesson": "7", "type": "Danh từ", "ex_cn": "三月。", "ex_py": "Sānyuè.", "ex_vn": "Tháng Ba."}, {"hanzi": "字", "pinyin": "zì", "meaning": "chữ", "lesson": "7", "type": "Danh từ", "ex_cn": "你会写字吗？", "ex_py": "Nǐ huì xiě zì ma?", "ex_vn": "Bạn biết viết chữ không?"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "气请做他兴家老什奶哥姐好对说也会五生贵一看法兄认没婆韩人年是女日明爸谢弟您七纪很多独学员国期南怎校六再见中友外号越字二吗书两不零夫有语你工了九们男个起汉今美写关妈师四子医她爷大丈妹八三几客名问读用姓哪高英系本岁识去儿星朋公作泰妻月天呼谁么同事称呢叫我职菜的十";
+                        const cumulativeChars = "贵四纪再员婆丈兴泰汉名姓中做不读同女工今呢是奶美你见您子谢爷客会称爸哥请明识姐作哪菜家么夫朋英职看独友兄怎系叫儿十国五个号九八书七多二吗了学我用呼事生老起们好认气两年妈一医岁去大问写也没天关法三有公妹字师南对期越外韩妻本男语零日什人弟六月她很几高说星他的谁校";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

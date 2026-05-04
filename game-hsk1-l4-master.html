@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "的", "pinyin": "de", "meaning": "của, thuộc về", "lesson": "4", "type": "Trợ từ"}, {"hanzi": "汉语", "pinyin": "Hànyǔ", "meaning": "tiếng Trung Quốc", "lesson": "4", "type": "Danh từ"}, {"hanzi": "哪", "pinyin": "nǎ", "meaning": "nào", "lesson": "4", "type": "Đại từ", "ex_cn": "你是哪人？", "ex_py": "Nǐ shì nǎ rén?", "ex_vn": "Bạn là người ở đâu?"}, {"hanzi": "朋友", "pinyin": "péngyou", "meaning": "bạn", "lesson": "4", "type": "Đại từ"}, {"hanzi": "谁", "pinyin": "shéi", "meaning": "ai", "lesson": "4", "type": "Đại từ"}];
+        const vocabulary = [{"hanzi": "的", "pinyin": "de", "meaning": "của, thuộc về", "lesson": "4", "type": "Trợ từ", "ex_cn": "我是老师的学生。", "ex_py": "Wǒ shì lǎoshī de xuésheng.", "ex_vn": "Tôi là học sinh của thầy giáo."}, {"hanzi": "汉语", "pinyin": "Hànyǔ", "meaning": "tiếng Trung Quốc", "lesson": "4", "type": "Danh từ", "ex_cn": "他是汉语老师。", "ex_py": "Tā shì Hànyǔ lǎoshī.", "ex_vn": "Anh ấy là giáo viên tiếng Trung."}, {"hanzi": "哪", "pinyin": "nǎ", "meaning": "nào", "lesson": "4", "type": "Đại từ", "ex_cn": "你是哪人？", "ex_py": "Nǐ shì nǎ rén?", "ex_vn": "Bạn là người ở đâu?"}, {"hanzi": "朋友", "pinyin": "péngyou", "meaning": "bạn", "lesson": "4", "type": "Đại từ", "ex_cn": "他是我的朋友。", "ex_py": "Tā shì wǒ de péngyou.", "ex_vn": "Anh ấy là bạn của tôi."}, {"hanzi": "谁", "pinyin": "shéi", "meaning": "ai", "lesson": "4", "type": "Đại từ", "ex_cn": "他是谁？", "ex_py": "Tā shì shéi?", "ex_vn": "Anh ấy là ai?"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "气请做他兴家老什好对也贵五生一法认没韩人是日谢您七很学员国南怎见再六中友越字二吗不零语你工九们起汉美关师四医她大八三客问名用姓哪高英系本识朋作泰呼谁么同事称呢叫我职的十";
+                        const cumulativeChars = "贵四再员兴泰汉名姓中做不同工呢是美你见您谢客称请识作哪家么朋英职友怎系叫十国五九八二七吗学我用事呼生老起们好认气医一大问也没关法三字师南对越韩本语零日人什六她很高他的谁";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

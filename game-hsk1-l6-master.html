@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6", "type": "Động từ"}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6", "type": "Động từ"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6", "type": "Động từ"}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6", "type": "Phó từ", "ex_cn": "他很好。", "ex_py": "Tā hěn hǎo.", "ex_vn": "Anh ấy rất tốt."}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6", "type": "Động từ"}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6", "type": "Động từ"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6", "type": "Đại từ", "ex_cn": "怎么称呼您？", "ex_py": "Zěnme chēnghu nín?", "ex_vn": "Xưng hô với ngài thế nào?"}];
+        const vocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "6", "type": "Động từ", "ex_cn": "越南菜很好。", "ex_py": "Yuènán cài hěn hǎo.", "ex_vn": "Món ăn Việt Nam rất ngon."}, {"hanzi": "读", "pinyin": "dú", "meaning": "đọc", "lesson": "6", "type": "Động từ", "ex_cn": "你会读吗？", "ex_py": "Nǐ huì dú ma?", "ex_vn": "Bạn biết đọc không?"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "6", "type": "Động từ", "ex_cn": "我会汉语。", "ex_py": "Wǒ huì Hànyǔ.", "ex_vn": "Tôi biết tiếng Trung."}, {"hanzi": "很", "pinyin": "hěn", "meaning": "rất", "lesson": "6", "type": "Phó từ", "ex_cn": "他很好。", "ex_py": "Tā hěn hǎo.", "ex_vn": "Anh ấy rất tốt."}, {"hanzi": "说", "pinyin": "shuō", "meaning": "nói", "lesson": "6", "type": "Động từ", "ex_cn": "他说汉语。", "ex_py": "Tā shuō Hànyǔ.", "ex_vn": "Anh ấy nói tiếng Trung."}, {"hanzi": "写", "pinyin": "xiě", "meaning": "viết", "lesson": "6", "type": "Động từ", "ex_cn": "你会写吗？", "ex_py": "Nǐ huì xiě ma?", "ex_vn": "Bạn biết viết không?"}, {"hanzi": "怎么", "pinyin": "zěnme", "meaning": "thế nào, làm sao", "lesson": "6", "type": "Đại từ", "ex_cn": "怎么称呼您？", "ex_py": "Zěnme chēnghu nín?", "ex_vn": "Xưng hô với ngài thế nào?"}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "气请做他兴家老什奶哥姐好对说也会五生贵一法兄认没婆韩人年是女日明爸谢弟您七纪很多独学员国南怎见六再中友外越字二吗两不零夫有语你工了九们男个起汉美今写关妈师四子医她爷大丈妹八三几客名问读用姓哪高英系本岁识去儿朋公作泰妻呼谁么同事称呢叫我职菜的十";
+                        const cumulativeChars = "贵四纪再员婆丈兴泰汉名姓中做不读同女工呢是今奶美你见您子谢爷客会称爸哥请明识姐作哪菜家么夫朋英职独友兄怎系叫儿十国五个九八七多二吗了学我用呼事生老起们好认气两年妈一医岁去大问写也没关法三有公妹字师南对越外韩妻本男语零日什人弟六她很几高说他的谁";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

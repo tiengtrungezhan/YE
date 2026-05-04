@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "出租车", "pinyin": "chūzūchē", "meaning": "taxi", "lesson": "15", "type": "Danh từ"}, {"hanzi": "饭店", "pinyin": "fàndiàn", "meaning": "khách sạn, nhà hàng", "lesson": "15", "type": "Danh từ"}, {"hanzi": "飞机", "pinyin": "fēijī", "meaning": "máy bay", "lesson": "15", "type": "Danh từ"}, {"hanzi": "高兴", "pinyin": "gāoxìng", "meaning": "vui, phấn khởi", "lesson": "15", "type": "Danh từ", "ex_cn": "很高兴。", "ex_py": "Hěn gāoxìng.", "ex_vn": "Rất vui."}, {"hanzi": "能", "pinyin": "néng", "meaning": "có thể", "lesson": "15", "type": "Động từ"}, {"hanzi": "认识", "pinyin": "rènshi", "meaning": "quen, biết", "lesson": "15", "type": "Động từ", "ex_cn": "认识你，很高兴。", "ex_py": "Rènshi nǐ, hěn gāoxìng.", "ex_vn": "Quen biết bạn, rất vui."}, {"hanzi": "听", "pinyin": "tīng", "meaning": "nghe", "lesson": "15", "type": "Động từ"}, {"hanzi": "坐", "pinyin": "zuò", "meaning": "ngồi", "lesson": "15", "type": "Động từ"}];
+        const vocabulary = [{"hanzi": "出租车", "pinyin": "chūzūchē", "meaning": "taxi", "lesson": "15", "type": "Danh từ", "ex_cn": "坐出租车。", "ex_py": "Zuò chūzūchē.", "ex_vn": "Đi taxi."}, {"hanzi": "饭店", "pinyin": "fàndiàn", "meaning": "khách sạn, nhà hàng", "lesson": "15", "type": "Danh từ", "ex_cn": "去饭店吃。", "ex_py": "Qù fàndiàn chī.", "ex_vn": "Đến nhà hàng ăn."}, {"hanzi": "飞机", "pinyin": "fēijī", "meaning": "máy bay", "lesson": "15", "type": "Danh từ", "ex_cn": "坐飞机。", "ex_py": "Zuò fēijī.", "ex_vn": "Đi máy bay."}, {"hanzi": "高兴", "pinyin": "gāoxìng", "meaning": "vui, phấn khởi", "lesson": "15", "type": "Danh từ", "ex_cn": "很高兴。", "ex_py": "Hěn gāoxìng.", "ex_vn": "Rất vui."}, {"hanzi": "能", "pinyin": "néng", "meaning": "có thể", "lesson": "15", "type": "Động từ", "ex_cn": "我能去吗？", "ex_py": "Wǒ néng qù ma?", "ex_vn": "Tôi có thể đi không?"}, {"hanzi": "认识", "pinyin": "rènshi", "meaning": "quen, biết", "lesson": "15", "type": "Động từ", "ex_cn": "认识你，很高兴。", "ex_py": "Rènshi nǐ, hěn gāoxìng.", "ex_vn": "Quen biết bạn, rất vui."}, {"hanzi": "听", "pinyin": "tīng", "meaning": "nghe", "lesson": "15", "type": "Động từ", "ex_cn": "听老师说。", "ex_py": "Tīng lǎoshī shuō.", "ex_vn": "Nghe thầy giáo nói."}, {"hanzi": "坐", "pinyin": "zuò", "meaning": "ngồi", "lesson": "15", "type": "Động từ", "ex_cn": "坐下。", "ex_py": "Zuò xià.", "ex_vn": "Ngồi xuống."}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "钱气请和做他兴家老钟什姐奶哥好对少说衣觉也热会五车生贵这一后看坐法兄认习没饭婆韩块亮下人欢分米苹喂年女是果日明吃谢爸飞弟您前七纪很多独候学小员冷里能国上期南怎见六校服中再爱商友外样号越脑字二书吗两不睡零夫有语你工回了喜机桌九电打们男个起汉今美写来关出妈师四狗现太子医买她爷大丈妹在八三些几面时客雨租名问读用视猫姓哪高英东本系院茶漂点话杯岁昨午识影去儿星朋椅公作泰店西喝妻月天呼水谁么想同事称呢那我住叫菜都职开听先的十";
+                        const cumulativeChars = "贵车四纪再住员太些婆和那丈兴现桌泰汉名姓中做不读狗同女下工想今呢是出奶美你见您子谢爷前客会昨称爸哥请米漂明识少苹姐作欢飞哪租菜店家么夫朋机英看候职独点友兄水面猫怎系先在叫儿十国电五喂上个亮钟杯号九八书七多二午吃衣吗了学我用呼事生分里老起打喝们茶好认爱气年两脑妈能一医开岁去都大时问习写也没天商喜关三法视话有睡公块钱椅字妹小热师觉这南对期越西雨外韩妻本男回影东语果样零日饭人什服弟六月她院很坐几来高冷说买听星他后的谁校";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;

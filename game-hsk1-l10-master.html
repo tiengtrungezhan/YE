@@ -50,7 +50,7 @@
         </div>
     </div>
     <script>
-        const vocabulary = [{"hanzi": "本", "pinyin": "běn", "meaning": "quyển, cuốn", "lesson": "10", "type": "Lượng từ"}, {"hanzi": "电脑", "pinyin": "diànnǎo", "meaning": "máy tính", "lesson": "10", "type": "Danh từ"}, {"hanzi": "和", "pinyin": "hé", "meaning": "và", "lesson": "10", "type": "Liên từ"}, {"hanzi": "后面", "pinyin": "hòumiàn", "meaning": "phía sau", "lesson": "10", "type": "Danh từ"}, {"hanzi": "里", "pinyin": "lǐ", "meaning": "trong, bên trong", "lesson": "10", "type": "Danh từ"}, {"hanzi": "没有", "pinyin": "méiyǒu", "meaning": "không có", "lesson": "10", "type": "Phó từ"}, {"hanzi": "前面", "pinyin": "qiánmiàn", "meaning": "phía trước", "lesson": "10", "type": "Danh từ"}, {"hanzi": "喜欢", "pinyin": "xǐhuan", "meaning": "thích", "lesson": "10", "type": "Danh từ"}];
+        const vocabulary = [{"hanzi": "本", "pinyin": "běn", "meaning": "quyển, cuốn", "lesson": "10", "type": "Lượng từ", "ex_cn": "一本书。", "ex_py": "Yì běn shū.", "ex_vn": "Một cuốn sách."}, {"hanzi": "电脑", "pinyin": "diànnǎo", "meaning": "máy tính", "lesson": "10", "type": "Danh từ", "ex_cn": "这是我的电脑。", "ex_py": "Zhè shì wǒ de diànnǎo.", "ex_vn": "Đây là máy tính của tôi."}, {"hanzi": "和", "pinyin": "hé", "meaning": "và", "lesson": "10", "type": "Liên từ", "ex_cn": "我和你。", "ex_py": "Wǒ hé nǐ.", "ex_vn": "Tôi và bạn."}, {"hanzi": "后面", "pinyin": "hòumiàn", "meaning": "phía sau", "lesson": "10", "type": "Danh từ", "ex_cn": "他在我后面。", "ex_py": "Tā zài wǒ hòumiàn.", "ex_vn": "Anh ấy ở phía sau tôi."}, {"hanzi": "里", "pinyin": "lǐ", "meaning": "trong, bên trong", "lesson": "10", "type": "Danh từ", "ex_cn": "他在商店里。", "ex_py": "Tā zài shāngdiàn lǐ.", "ex_vn": "Anh ấy ở trong cửa hàng."}, {"hanzi": "没有", "pinyin": "méiyǒu", "meaning": "không có", "lesson": "10", "type": "Phó từ", "ex_cn": "我没有钱。", "ex_py": "Wǒ méiyǒu qián.", "ex_vn": "Tôi không có tiền."}, {"hanzi": "前面", "pinyin": "qiánmiàn", "meaning": "phía trước", "lesson": "10", "type": "Danh từ", "ex_cn": "他在我前面。", "ex_py": "Tā zài wǒ qiánmiàn.", "ex_vn": "Anh ấy ở phía trước tôi."}, {"hanzi": "喜欢", "pinyin": "xǐhuan", "meaning": "thích", "lesson": "10", "type": "Danh từ", "ex_cn": "我喜欢猫。", "ex_py": "Wǒ xǐhuan māo.", "ex_vn": "Tôi thích mèo."}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
         function initGame() { 
             totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
@@ -69,7 +69,7 @@
                     
                     if (isAllowed) {
                         let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "钱气请和做他兴家老什奶哥姐好对少说也会五生贵这一后看法兄认没饭婆韩块人下欢米年女是日吃爸谢明弟您前七纪很多独学小员里国期南怎校六再见中商友外号越脑字二书吗两不零夫有语你工了喜九电们男个起汉今美写关妈师四狗子医买她爷大丈妹在八三几面客名问读用猫姓哪高英本系院茶杯岁午识去儿星朋椅公作泰店喝妻月天呼谁么想同事称呢叫我职菜的十";
+                        const cumulativeChars = "贵四纪再员婆和丈兴泰汉名姓中做不读狗同女下工想今呢是奶美你见您子谢爷前客会称爸哥请米明识少姐作欢哪菜店家么夫朋英职看独友兄面猫怎系在叫儿十国电五个杯号九八书七多二午吃吗了学我用呼事生里老起喝们茶好认气两年脑妈一医岁去大问写也没天商喜关法三有公块钱椅字妹小师这南对期越外韩妻本男语零日饭人什弟六月她院很几高说买星他后的谁校";
                         for (let c of cleanSentence) {
                             if (!cumulativeChars.includes(c)) {
                                 isAllowed = false;
