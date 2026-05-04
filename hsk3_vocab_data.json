@@ -138,5 +138,2935 @@
     "ex_py": "Bāng wǒ bān yíxià zhè zhāng zhuōzi.",
     "ex_vn": "Giúp tôi chuyển chiếc bàn này một chút.",
     "type": "Động từ"
+  },
+  {
+    "hanzi": "周末",
+    "pinyin": "zhōumò",
+    "meaning": "cuối tuần",
+    "lesson": "1",
+    "type": "Danh từ",
+    "ex_cn": "你周末去哪儿？",
+    "ex_py": "Nǐ zhōumò qù nǎr?",
+    "ex_vn": "Cuối tuần bạn đi đâu?"
+  },
+  {
+    "hanzi": "腿",
+    "pinyin": "tuǐ",
+    "meaning": "chân",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "我的腿疼。",
+    "ex_py": "Wǒ de tuǐ téng.",
+    "ex_vn": "Chân của tôi bị đau."
+  },
+  {
+    "hanzi": "疼",
+    "pinyin": "téng",
+    "meaning": "đau",
+    "lesson": "2",
+    "type": "Tính từ",
+    "ex_cn": "你的腿疼吗？",
+    "ex_py": "Nǐ de tuǐ téng ma?",
+    "ex_vn": "Chân bạn có đau không?"
+  },
+  {
+    "hanzi": "脚",
+    "pinyin": "jiǎo",
+    "meaning": "bàn chân",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "他没穿鞋，脚很冷。",
+    "ex_py": "Tā méi chuān xié, jiǎo hěn lěng.",
+    "ex_vn": "Anh ấy không đi giày, bàn chân rất lạnh."
+  },
+  {
+    "hanzi": "树",
+    "pinyin": "shù",
+    "meaning": "cây",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "这儿有很多树。",
+    "ex_py": "Zhèr yǒu hěn duō shù.",
+    "ex_vn": "Ở đây có rất nhiều cây."
+  },
+  {
+    "hanzi": "容易",
+    "pinyin": "róngyì",
+    "meaning": "dễ dàng",
+    "lesson": "2",
+    "type": "Tính từ",
+    "ex_cn": "这个题很容易。",
+    "ex_py": "Zhège tí hěn róngyì.",
+    "ex_vn": "Câu hỏi này rất dễ."
+  },
+  {
+    "hanzi": "难",
+    "pinyin": "nán",
+    "meaning": "khó",
+    "lesson": "2",
+    "type": "Tính từ",
+    "ex_cn": "汉语不难。",
+    "ex_py": "Hànyǔ bù nán.",
+    "ex_vn": "Tiếng Trung không khó."
+  },
+  {
+    "hanzi": "太太",
+    "pinyin": "tàitai",
+    "meaning": "bà, phu nhân",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "王太太去商店了。",
+    "ex_py": "Wáng tàitai qù shāngdiàn le.",
+    "ex_vn": "Bà Vương đi cửa hàng rồi."
+  },
+  {
+    "hanzi": "秘书",
+    "pinyin": "mìshū",
+    "meaning": "thư ký",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "他是我的秘书。",
+    "ex_py": "Tā shì wǒ de mìshū.",
+    "ex_vn": "Anh ấy là thư ký của tôi."
+  },
+  {
+    "hanzi": "经理",
+    "pinyin": "jīnglǐ",
+    "meaning": "giám đốc",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "经理在办公室。",
+    "ex_py": "Jīnglǐ zài bàngōngshì.",
+    "ex_vn": "Giám đốc ở trong văn phòng."
+  },
+  {
+    "hanzi": "办公室",
+    "pinyin": "bàngōngshì",
+    "meaning": "văn phòng",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "我去办公室找他。",
+    "ex_py": "Wǒ qù bàngōngshì zhǎo tā.",
+    "ex_vn": "Tôi đến văn phòng tìm anh ấy."
+  },
+  {
+    "hanzi": "辆",
+    "pinyin": "liàng",
+    "meaning": "chiếc (lượng từ cho xe)",
+    "lesson": "2",
+    "type": "Lượng từ",
+    "ex_cn": "这辆自行车是我的。",
+    "ex_py": "Zhè liàng zìxíngchē shì wǒ de.",
+    "ex_vn": "Chiếc xe đạp này là của tôi."
+  },
+  {
+    "hanzi": "楼",
+    "pinyin": "lóu",
+    "meaning": "tòa nhà, lầu",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "他在楼上学习。",
+    "ex_py": "Tā zài lóu shàng xuéxí.",
+    "ex_vn": "Anh ấy đang học trên lầu."
+  },
+  {
+    "hanzi": "拿",
+    "pinyin": "ná",
+    "meaning": "cầm, lấy",
+    "lesson": "2",
+    "type": "Động từ",
+    "ex_cn": "请拿一下你的书。",
+    "ex_py": "Qǐng ná yíxià nǐ de shū.",
+    "ex_vn": "Hãy cầm lấy cuốn sách của bạn."
+  },
+  {
+    "hanzi": "把",
+    "pinyin": "bǎ",
+    "meaning": "cái (lượng từ cho vật có cán)",
+    "lesson": "2",
+    "type": "Lượng từ",
+    "ex_cn": "我有一把伞。",
+    "ex_py": "Wǒ yǒu yì bǎ sǎn.",
+    "ex_vn": "Tôi có một chiếc ô."
+  },
+  {
+    "hanzi": "伞",
+    "pinyin": "sǎn",
+    "meaning": "ô, dù",
+    "lesson": "2",
+    "type": "Danh từ",
+    "ex_cn": "别忘了带伞。",
+    "ex_py": "Bié wàngle dài sǎn.",
+    "ex_vn": "Đừng quên mang theo ô."
+  },
+  {
+    "hanzi": "胖",
+    "pinyin": "pàng",
+    "meaning": "béo",
+    "lesson": "2",
+    "type": "Tính từ",
+    "ex_cn": "他最近胖了。",
+    "ex_py": "Tā zuìjìn pàng le.",
+    "ex_vn": "Anh ấy gần đây béo lên rồi."
+  },
+  {
+    "hanzi": "其实",
+    "pinyin": "qíshí",
+    "meaning": "thực ra",
+    "lesson": "2",
+    "type": "Phó từ",
+    "ex_cn": "其实我不喜欢吃鱼。",
+    "ex_py": "Qíshí wǒ bù xǐhuan chī yú.",
+    "ex_vn": "Thực ra tôi không thích ăn cá."
+  },
+  {
+    "hanzi": "瘦",
+    "pinyin": "shòu",
+    "meaning": "gầy",
+    "lesson": "2",
+    "type": "Tính từ",
+    "ex_cn": "她比以前瘦了。",
+    "ex_py": "Tā bǐ yǐqián shòu le.",
+    "ex_vn": "Cô ấy gầy hơn trước rồi."
+  },
+  {
+    "hanzi": "还是",
+    "pinyin": "háishi",
+    "meaning": "hay là",
+    "lesson": "3",
+    "type": "Liên từ",
+    "ex_cn": "你喝咖啡还是喝茶？",
+    "ex_py": "Nǐ hē kāfēi háishi hē chá?",
+    "ex_vn": "Bạn uống cà phê hay là uống trà?"
+  },
+  {
+    "hanzi": "爬山",
+    "pinyin": "páshān",
+    "meaning": "leo núi",
+    "lesson": "3",
+    "type": "Động từ",
+    "ex_cn": "我们周末去爬山吧。",
+    "ex_py": "Wǒmen zhōumò qù páshān ba.",
+    "ex_vn": "Cuối tuần chúng ta đi leo núi đi."
+  },
+  {
+    "hanzi": "小心",
+    "pinyin": "xiǎoxīn",
+    "meaning": "cẩn thận",
+    "lesson": "3",
+    "type": "Tính từ",
+    "ex_cn": "你走路小心点儿。",
+    "ex_py": "Nǐ zǒulù xiǎoxīn diǎnr.",
+    "ex_vn": "Bạn đi đường cẩn thận một chút."
+  },
+  {
+    "hanzi": "条",
+    "pinyin": "tiáo",
+    "meaning": "con, cái (lượng từ cho vật dài)",
+    "lesson": "3",
+    "type": "Lượng từ",
+    "ex_cn": "这条裤子很漂亮。",
+    "ex_py": "Zhè tiáo kùzi hěn piàoliang.",
+    "ex_vn": "Chiếc quần này rất đẹp."
+  },
+  {
+    "hanzi": "裤子",
+    "pinyin": "kùzi",
+    "meaning": "quần",
+    "lesson": "3",
+    "type": "Danh từ",
+    "ex_cn": "我想买一条裤子。",
+    "ex_py": "Wǒ xiǎng mǎi yì tiáo kùzi.",
+    "ex_vn": "Tôi muốn mua một chiếc quần."
+  },
+  {
+    "hanzi": "记得",
+    "pinyin": "jìde",
+    "meaning": "nhớ",
+    "lesson": "3",
+    "type": "Động từ",
+    "ex_cn": "你不记得我了吗？",
+    "ex_py": "Nǐ bù jìde wǒ le ma?",
+    "ex_vn": "Bạn không nhớ tôi sao?"
+  },
+  {
+    "hanzi": "衬衫",
+    "pinyin": "chènshān",
+    "meaning": "áo sơ mi",
+    "lesson": "3",
+    "type": "Danh từ",
+    "ex_cn": "这是一件新衬衫。",
+    "ex_py": "Zhè shì yí jiàn xīn chènshān.",
+    "ex_vn": "Đây là một chiếc áo sơ mi mới."
+  },
+  {
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "meaning": "đồng",
+    "lesson": "3",
+    "type": "Lượng từ",
+    "ex_cn": "这件衣服一百元。",
+    "ex_py": "Zhè jiàn yīfu yìbǎi yuán.",
+    "ex_vn": "Chiếc áo này 100 đồng."
+  },
+  {
+    "hanzi": "新鲜",
+    "pinyin": "xīnxiān",
+    "meaning": "tươi mới",
+    "lesson": "3",
+    "type": "Tính từ",
+    "ex_cn": "这些水果很新鲜。",
+    "ex_py": "Zhèxiē shuǐguǒ hěn xīnxiān.",
+    "ex_vn": "Chỗ hoa quả này rất tươi."
+  },
+  {
+    "hanzi": "甜",
+    "pinyin": "tián",
+    "meaning": "ngọt",
+    "lesson": "3",
+    "type": "Tính từ",
+    "ex_cn": "这个西瓜很甜。",
+    "ex_py": "Zhège xīguā hěn tián.",
+    "ex_vn": "Quả dưa hấu này rất ngọt."
+  },
+  {
+    "hanzi": "只",
+    "pinyin": "zhǐ",
+    "meaning": "chỉ",
+    "lesson": "3",
+    "type": "Phó từ",
+    "ex_cn": "我只喝咖啡。",
+    "ex_py": "Wǒ zhǐ hē kāfēi.",
+    "ex_vn": "Tôi chỉ uống cà phê."
+  },
+  {
+    "hanzi": "放",
+    "pinyin": "fàng",
+    "meaning": "đặt, để",
+    "lesson": "3",
+    "type": "Động từ",
+    "ex_cn": "把书放在桌子上。",
+    "ex_py": "Bǎ shū fàng zài zhuōzi shang.",
+    "ex_vn": "Để cuốn sách lên trên bàn."
+  },
+  {
+    "hanzi": "饮料",
+    "pinyin": "yǐnliào",
+    "meaning": "đồ uống",
+    "lesson": "3",
+    "type": "Danh từ",
+    "ex_cn": "你想喝什么饮料？",
+    "ex_py": "Nǐ xiǎng hē shénme yǐnliào?",
+    "ex_vn": "Bạn muốn uống loại đồ uống nào?"
+  },
+  {
+    "hanzi": "或者",
+    "pinyin": "huòzhě",
+    "meaning": "hoặc là",
+    "lesson": "3",
+    "type": "Liên từ",
+    "ex_cn": "我喝茶或者喝咖啡。",
+    "ex_py": "Wǒ hē chá huòzhě hē kāfēi.",
+    "ex_vn": "Tôi uống trà hoặc là uống cà phê."
+  },
+  {
+    "hanzi": "舒服",
+    "pinyin": "shūfu",
+    "meaning": "dễ chịu, thoải mái",
+    "lesson": "3",
+    "type": "Tính từ",
+    "ex_cn": "坐在椅子上很舒服。",
+    "ex_py": "Zuò zài yǐzi shang hěn shūfu.",
+    "ex_vn": "Ngồi trên ghế rất thoải mái."
+  },
+  {
+    "hanzi": "花",
+    "pinyin": "huā",
+    "meaning": "tiêu (tiền), tốn (thời gian)",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "花了很多钱。",
+    "ex_py": "Huā le hěn duō qián.",
+    "ex_vn": "Đã tiêu rất nhiều tiền."
+  },
+  {
+    "hanzi": "绿",
+    "pinyin": "lǜ",
+    "meaning": "xanh lá cây",
+    "lesson": "3",
+    "type": "Tính từ",
+    "ex_cn": "树是绿色的。",
+    "ex_py": "Shù shì lǜsè de.",
+    "ex_vn": "Cây có màu xanh lá."
+  },
+  {
+    "hanzi": "比赛",
+    "pinyin": "bǐsài",
+    "meaning": "cuộc thi, trận đấu",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "昨天的足球比赛很好看。",
+    "ex_py": "Zuótiān de zúqiú bǐsài hěn hǎokàn.",
+    "ex_vn": "Trận bóng đá hôm qua rất hay."
+  },
+  {
+    "hanzi": "照片",
+    "pinyin": "zhàopiàn",
+    "meaning": "bức ảnh",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "这是我家的照片。",
+    "ex_py": "Zhè shì wǒ jiā de zhàopiàn.",
+    "ex_vn": "Đây là bức ảnh gia đình tôi."
+  },
+  {
+    "hanzi": "年级",
+    "pinyin": "niánjí",
+    "meaning": "lớp, khối (năm thứ...)",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "他是三年级的学生。",
+    "ex_py": "Tā shì sān niánjí de xuésheng.",
+    "ex_vn": "Anh ấy là học sinh lớp 3."
+  },
+  {
+    "hanzi": "又",
+    "pinyin": "yòu",
+    "meaning": "lại (biểu thị sự lặp lại)",
+    "lesson": "4",
+    "type": "Phó từ",
+    "ex_cn": "你怎么又迟到了？",
+    "ex_py": "Nǐ zěnme yòu chídào le?",
+    "ex_vn": "Sao bạn lại đến muộn nữa rồi?"
+  },
+  {
+    "hanzi": "聪明",
+    "pinyin": "cōngming",
+    "meaning": "thông minh",
+    "lesson": "4",
+    "type": "Tính từ",
+    "ex_cn": "那个孩子很聪明。",
+    "ex_py": "Nàge háizi hěn cōngming.",
+    "ex_vn": "Đứa trẻ đó rất thông minh."
+  },
+  {
+    "hanzi": "热情",
+    "pinyin": "rèqíng",
+    "meaning": "nhiệt tình",
+    "lesson": "4",
+    "type": "Tính từ",
+    "ex_cn": "服务员很热情。",
+    "ex_py": "Fúwùyuán hěn rèqíng.",
+    "ex_vn": "Người phục vụ rất nhiệt tình."
+  },
+  {
+    "hanzi": "努力",
+    "pinyin": "nǔlì",
+    "meaning": "nỗ lực, cố gắng",
+    "lesson": "4",
+    "type": "Tính từ",
+    "ex_cn": "我们要努力学习。",
+    "ex_py": "Wǒmen yào nǔlì xuéxí.",
+    "ex_vn": "Chúng ta phải cố gắng học tập."
+  },
+  {
+    "hanzi": "总是",
+    "pinyin": "zǒngshì",
+    "meaning": "luôn luôn",
+    "lesson": "4",
+    "type": "Phó từ",
+    "ex_cn": "他总是笑。",
+    "ex_py": "Tā zǒngshì xiào.",
+    "ex_vn": "Anh ấy luôn cười."
+  },
+  {
+    "hanzi": "回答",
+    "pinyin": "huídá",
+    "meaning": "trả lời",
+    "lesson": "4",
+    "type": "Động từ",
+    "ex_cn": "请回答我的问题。",
+    "ex_py": "Qǐng huídá wǒ de wèntí.",
+    "ex_vn": "Hãy trả lời câu hỏi của tôi."
+  },
+  {
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "meaning": "đứng",
+    "lesson": "4",
+    "type": "Động từ",
+    "ex_cn": "请站在我后面。",
+    "ex_py": "Qǐng zhàn zài wǒ hòumiàn.",
+    "ex_vn": "Hãy đứng ở phía sau tôi."
+  },
+  {
+    "hanzi": "饿",
+    "pinyin": "è",
+    "meaning": "đói",
+    "lesson": "4",
+    "type": "Tính từ",
+    "ex_cn": "我饿了，想吃饭。",
+    "ex_py": "Wǒ è le, xiǎng chī fàn.",
+    "ex_vn": "Tôi đói rồi, muốn ăn cơm."
+  },
+  {
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "meaning": "siêu thị",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "我去超市买东西。",
+    "ex_py": "Wǒ qù chāoshì mǎi dōngxi.",
+    "ex_vn": "Tôi đi siêu thị mua đồ."
+  },
+  {
+    "hanzi": "蛋糕",
+    "pinyin": "dàngāo",
+    "meaning": "bánh kem, bánh ngọt",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "这个蛋糕很好吃。",
+    "ex_py": "Zhège dàngāo hěn hǎochī.",
+    "ex_vn": "Chiếc bánh kem này rất ngon."
+  },
+  {
+    "hanzi": "年轻",
+    "pinyin": "niánqīng",
+    "meaning": "trẻ tuổi",
+    "lesson": "4",
+    "type": "Tính từ",
+    "ex_cn": "李太太很年轻。",
+    "ex_py": "Lǐ tàitai hěn niánqīng.",
+    "ex_vn": "Bà Lý rất trẻ."
+  },
+  {
+    "hanzi": "认真",
+    "pinyin": "rènzhēn",
+    "meaning": "nghiêm túc, chăm chỉ",
+    "lesson": "4",
+    "type": "Tính từ",
+    "ex_cn": "他学习很认真。",
+    "ex_py": "Tā xuéxí hěn rènzhēn.",
+    "ex_vn": "Anh ấy học tập rất chăm chỉ."
+  },
+  {
+    "hanzi": "客人",
+    "pinyin": "kèrén",
+    "meaning": "khách, khách hàng",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "家里来了很多客人。",
+    "ex_py": "Jiā lǐ lái le hěn duō kèrén.",
+    "ex_vn": "Trong nhà có rất nhiều khách đến."
+  },
+  {
+    "hanzi": "发烧",
+    "pinyin": "fāshāo",
+    "meaning": "sốt",
+    "lesson": "5",
+    "type": "Động từ",
+    "ex_cn": "他感冒了，在发烧。",
+    "ex_py": "Tā gǎnmào le, zài fāshāo.",
+    "ex_vn": "Anh ấy bị cảm rồi, đang sốt."
+  },
+  {
+    "hanzi": "为",
+    "pinyin": "wèi",
+    "meaning": "cho, vì",
+    "lesson": "5",
+    "type": "Giới từ",
+    "ex_cn": "这是我为你买的。",
+    "ex_py": "Zhè shì wǒ wèi nǐ mǎi de.",
+    "ex_vn": "Đây là thứ tôi mua cho bạn."
+  },
+  {
+    "hanzi": "照顾",
+    "pinyin": "zhàogù",
+    "meaning": "chăm sóc",
+    "lesson": "5",
+    "type": "Động từ",
+    "ex_cn": "我们要照顾好自己。",
+    "ex_py": "Wǒmen yào zhàogù hǎo zìjǐ.",
+    "ex_vn": "Chúng ta phải chăm sóc tốt cho bản thân."
+  },
+  {
+    "hanzi": "用",
+    "pinyin": "yòng",
+    "meaning": "dùng, sử dụng",
+    "lesson": "5",
+    "type": "Động từ",
+    "ex_cn": "这个怎么用？",
+    "ex_py": "Zhège zěnme yòng?",
+    "ex_vn": "Cái này dùng như thế nào?"
+  },
+  {
+    "hanzi": "感冒",
+    "pinyin": "gǎnmào",
+    "meaning": "cảm mạo, cảm lạnh",
+    "lesson": "5",
+    "type": "Động từ",
+    "ex_cn": "由于天气冷，他感冒了。",
+    "ex_py": "Yóuyú tiānqì lěng, tā gǎnmào le.",
+    "ex_vn": "Do thời tiết lạnh, anh ấy bị cảm rồi."
+  },
+  {
+    "hanzi": "季节",
+    "pinyin": "jìjié",
+    "meaning": "mùa",
+    "lesson": "5",
+    "type": "Danh từ",
+    "ex_cn": "你最喜欢哪个季节？",
+    "ex_py": "Nǐ zuì xǐhuan nǎge jìjié?",
+    "ex_vn": "Bạn thích nhất mùa nào?"
+  },
+  {
+    "hanzi": "当然",
+    "pinyin": "dāngrán",
+    "meaning": "đương nhiên",
+    "lesson": "5",
+    "type": "Phó từ",
+    "ex_cn": "我当然要去。",
+    "ex_py": "Wǒ dāngrán yào qù.",
+    "ex_vn": "Tôi đương nhiên phải đi rồi."
+  },
+  {
+    "hanzi": "春",
+    "pinyin": "chūn",
+    "meaning": "mùa xuân",
+    "lesson": "5",
+    "type": "Danh từ",
+    "ex_cn": "春天的天气很好。",
+    "ex_py": "Chūntiān de tiānqì hěn hǎo.",
+    "ex_vn": "Thời tiết mùa xuân rất tốt."
+  },
+  {
+    "hanzi": "草",
+    "pinyin": "cǎo",
+    "meaning": "cỏ",
+    "lesson": "5",
+    "type": "Danh từ",
+    "ex_cn": "地上的草绿了。",
+    "ex_py": "Dì shàng de cǎo lǜ le.",
+    "ex_vn": "Cỏ trên mặt đất xanh rồi."
+  },
+  {
+    "hanzi": "夏",
+    "pinyin": "xià",
+    "meaning": "mùa hè",
+    "lesson": "5",
+    "type": "Danh từ",
+    "ex_cn": "夏天很热。",
+    "ex_py": "Xiàtiān hěn rè.",
+    "ex_vn": "Mùa hè rất nóng."
+  },
+  {
+    "hanzi": "裙子",
+    "pinyin": "qúnzi",
+    "meaning": "váy",
+    "lesson": "5",
+    "type": "Danh từ",
+    "ex_cn": "她买了一条新裙子。",
+    "ex_py": "Tā mǎi le yì tiáo xīn qúnzi.",
+    "ex_vn": "Cô ấy mua một chiếc váy mới."
+  },
+  {
+    "hanzi": "最近",
+    "pinyin": "zuìjìn",
+    "meaning": "gần đây",
+    "lesson": "5",
+    "type": "Phó từ",
+    "ex_cn": "你最近怎么样？",
+    "ex_py": "Nǐ zuìjìn zěnmeyàng?",
+    "ex_vn": "Gần đây bạn thế nào?"
+  },
+  {
+    "hanzi": "越",
+    "pinyin": "yuè",
+    "meaning": "càng (trong cấu trúc càng... càng...)",
+    "lesson": "5",
+    "type": "Phó từ",
+    "ex_cn": "雨越下越大。",
+    "ex_py": "Yǔ yuè xià yuè dà.",
+    "ex_vn": "Mưa càng lúc càng to."
+  },
+  {
+    "hanzi": "眼镜",
+    "pinyin": "yǎnjìng",
+    "meaning": "kính mắt",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "我需要买新眼镜。",
+    "ex_py": "Wǒ xūyào mǎi xīn yǎnjìng.",
+    "ex_vn": "Tôi cần mua kính mới."
+  },
+  {
+    "hanzi": "突然",
+    "pinyin": "tūrán",
+    "meaning": "đột nhiên",
+    "lesson": "6",
+    "type": "Phó từ/Tính từ",
+    "ex_cn": "他突然走了。",
+    "ex_py": "Tā tūrán zǒu le.",
+    "ex_vn": "Anh ấy đột nhiên đi rồi."
+  },
+  {
+    "hanzi": "离开",
+    "pinyin": "líkāi",
+    "meaning": "rời khỏi",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "他不希望离开家。",
+    "ex_py": "Tā bù xīwàng líkāi jiā.",
+    "ex_vn": "Anh ấy không muốn rời xa nhà."
+  },
+  {
+    "hanzi": "清楚",
+    "pinyin": "qīngchu",
+    "meaning": "rõ ràng",
+    "lesson": "6",
+    "type": "Tính từ",
+    "ex_cn": "我看得很清楚。",
+    "ex_py": "Wǒ kàn de hěn qīngchu.",
+    "ex_vn": "Tôi nhìn rất rõ."
+  },
+  {
+    "hanzi": "刚才",
+    "pinyin": "gāngcái",
+    "meaning": "vừa nãy",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "刚才谁来了？",
+    "ex_py": "Gāngcái shéi lái le?",
+    "ex_vn": "Vừa nãy ai đến vậy?"
+  },
+  {
+    "hanzi": "帮忙",
+    "pinyin": "bāngmáng",
+    "meaning": "giúp đỡ",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "你可以帮我忙吗？",
+    "ex_py": "Nǐ kěyǐ bāng wǒ máng ma?",
+    "ex_vn": "Bạn có thể giúp tôi một tay không?"
+  },
+  {
+    "hanzi": "特别",
+    "pinyin": "tèbié",
+    "meaning": "đặc biệt",
+    "lesson": "6",
+    "type": "Phó từ/Tính từ",
+    "ex_cn": "今天特别冷。",
+    "ex_py": "Jīntiān tèbié lěng.",
+    "ex_vn": "Hôm nay đặc biệt lạnh."
+  },
+  {
+    "hanzi": "讲",
+    "pinyin": "jiǎng",
+    "meaning": "nói, giảng",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "老师在讲课。",
+    "ex_py": "Lǎoshī zài jiǎng kè.",
+    "ex_vn": "Thầy giáo đang giảng bài."
+  },
+  {
+    "hanzi": "明白",
+    "pinyin": "míngbai",
+    "meaning": "hiểu rõ",
+    "lesson": "6",
+    "type": "Động từ/Tính từ",
+    "ex_cn": "你明白我的意思吗？",
+    "ex_py": "Nǐ míngbai wǒ de yìsi ma?",
+    "ex_vn": "Bạn hiểu ý tôi không?"
+  },
+  {
+    "hanzi": "锻炼",
+    "pinyin": "duànliàn",
+    "meaning": "rèn luyện",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "他每天锻炼身体。",
+    "ex_py": "Tā měitiān duànliàn shēntǐ.",
+    "ex_vn": "Anh ấy rèn luyện thân thể mỗi ngày."
+  },
+  {
+    "hanzi": "音乐",
+    "pinyin": "yīnyuè",
+    "meaning": "âm nhạc",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢听音乐。",
+    "ex_py": "Wǒ xǐhuan tīng yīnyuè.",
+    "ex_vn": "Tôi thích nghe nhạc."
+  },
+  {
+    "hanzi": "公园",
+    "pinyin": "gōngyuán",
+    "meaning": "công viên",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "我们在公园运动。",
+    "ex_py": "Wǒmen zài gōngyuán yùndòng.",
+    "ex_vn": "Chúng tôi vận động ở công viên."
+  },
+  {
+    "hanzi": "聊天",
+    "pinyin": "liáotiān",
+    "meaning": "tán gẫu, nói chuyện",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "他们在跟朋友聊天。",
+    "ex_py": "Tāmen zài gēn péngyou liáotiān.",
+    "ex_vn": "Họ đang tán gẫu với bạn bè."
+  },
+  {
+    "hanzi": "睡着",
+    "pinyin": "shuìzháo",
+    "meaning": "ngủ thiếp đi",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "孩子睡着了。",
+    "ex_py": "Háizi shuìzháo le.",
+    "ex_vn": "Đứa trẻ ngủ thiếp đi rồi."
+  },
+  {
+    "hanzi": "更",
+    "pinyin": "gèng",
+    "meaning": "hơn nữa",
+    "lesson": "6",
+    "type": "Phó từ",
+    "ex_cn": "这个更好。",
+    "ex_py": "Zhège gèng hǎo.",
+    "ex_vn": "Cái này tốt hơn."
+  },
+  {
+    "hanzi": "同事",
+    "pinyin": "tóngshì",
+    "meaning": "đồng nghiệp",
+    "lesson": "7",
+    "type": "Danh từ",
+    "ex_cn": "他是我的同事。",
+    "ex_py": "Tā shì wǒ de tóngshì.",
+    "ex_vn": "Anh ấy là đồng nghiệp của tôi."
+  },
+  {
+    "hanzi": "以前",
+    "pinyin": "yǐqián",
+    "meaning": "trước đây",
+    "lesson": "7",
+    "type": "Danh từ",
+    "ex_cn": "以前我住在那儿。",
+    "ex_py": "Yǐqián wǒ zhù zài nàr.",
+    "ex_vn": "Trước đây tôi sống ở đằng kia."
+  },
+  {
+    "hanzi": "银行",
+    "pinyin": "yínháng",
+    "meaning": "ngân hàng",
+    "lesson": "7",
+    "type": "Danh từ",
+    "ex_cn": "我去银行取钱。",
+    "ex_py": "Wǒ qù yínháng qǔ qián.",
+    "ex_vn": "Tôi đến ngân hàng rút tiền."
+  },
+  {
+    "hanzi": "久",
+    "pinyin": "jiǔ",
+    "meaning": "lâu",
+    "lesson": "7",
+    "type": "Tính từ",
+    "ex_cn": "好久不见！",
+    "ex_py": "Hǎo jiǔ bú jiàn!",
+    "ex_vn": "Đã lâu không gặp!"
+  },
+  {
+    "hanzi": "感兴趣",
+    "pinyin": "gǎn xìngqù",
+    "meaning": "cảm thấy hứng thú",
+    "lesson": "7",
+    "type": "Động từ",
+    "ex_cn": "我对学习汉语感兴趣。",
+    "ex_py": "Wǒ duì xuéxí Hànyǔ gǎn xìngqù.",
+    "ex_vn": "Tôi cảm thấy hứng thú với việc học tiếng Trung."
+  },
+  {
+    "hanzi": "结婚",
+    "pinyin": "jiéhūn",
+    "meaning": "kết hôn",
+    "lesson": "7",
+    "type": "Động từ",
+    "ex_cn": "他们下个月结婚。",
+    "ex_py": "Tāmen xià ge yuè jiéhūn.",
+    "ex_vn": "Họ sẽ kết hôn vào tháng sau."
+  },
+  {
+    "hanzi": "欢迎",
+    "pinyin": "huānyíng",
+    "meaning": "hoan nghênh",
+    "lesson": "7",
+    "type": "Động từ",
+    "ex_cn": "欢迎你来我家。",
+    "ex_py": "Huānyíng nǐ lái wǒ jiā.",
+    "ex_vn": "Chào mừng bạn đến nhà tôi."
+  },
+  {
+    "hanzi": "迟到",
+    "pinyin": "chídào",
+    "meaning": "đến muộn",
+    "lesson": "7",
+    "type": "Động từ",
+    "ex_cn": "别迟到了。",
+    "ex_py": "Bié chídào le.",
+    "ex_vn": "Đừng đến muộn nhé."
+  },
+  {
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "meaning": "một nửa",
+    "lesson": "7",
+    "type": "Số từ",
+    "ex_cn": "现在七点半。",
+    "ex_py": "Xiànzài qī diǎn bàn.",
+    "ex_vn": "Bây giờ là bảy giờ rưỡi."
+  },
+  {
+    "hanzi": "接",
+    "pinyin": "jiē",
+    "meaning": "đón, nhận",
+    "lesson": "7",
+    "type": "Động từ",
+    "ex_cn": "我去机场接朋友。",
+    "ex_py": "Wǒ qù jīchǎng jiē péngyou.",
+    "ex_vn": "Tôi đi sân bay đón bạn."
+  },
+  {
+    "hanzi": "刻",
+    "pinyin": "kè",
+    "meaning": "khắc (15 phút)",
+    "lesson": "7",
+    "type": "Lượng từ",
+    "ex_cn": "一点一刻。",
+    "ex_py": "Yī diǎn yí kè.",
+    "ex_vn": "Một giờ mười lăm phút."
+  },
+  {
+    "hanzi": "差",
+    "pinyin": "chà",
+    "meaning": "kém, thiếu",
+    "lesson": "7",
+    "type": "Động từ/Tính từ",
+    "ex_cn": "差一刻十点。",
+    "ex_py": "Chà yí kè shí diǎn.",
+    "ex_vn": "Mười giờ kém mười lăm."
+  },
+  {
+    "hanzi": "满意",
+    "pinyin": "mǎnyì",
+    "meaning": "hài lòng",
+    "lesson": "8",
+    "type": "Động từ",
+    "ex_cn": "经理对他很满意。",
+    "ex_py": "Jīnglǐ duì tā hěn mǎnyì.",
+    "ex_vn": "Giám đốc rất hài lòng với anh ấy."
+  },
+  {
+    "hanzi": "电梯",
+    "pinyin": "diàntī",
+    "meaning": "thang máy",
+    "lesson": "8",
+    "type": "Danh từ",
+    "ex_cn": "坐电梯上楼。",
+    "ex_py": "Zuò diàntī shàng lóu.",
+    "ex_vn": "Đi thang máy lên lầu."
+  },
+  {
+    "hanzi": "层",
+    "pinyin": "céng",
+    "meaning": "tầng",
+    "lesson": "8",
+    "type": "Lượng từ",
+    "ex_cn": "我住在五层。",
+    "ex_py": "Wǒ zhù zài wǔ céng.",
+    "ex_vn": "Tôi sống ở tầng 5."
+  },
+  {
+    "hanzi": "害怕",
+    "pinyin": "hàipà",
+    "meaning": "sợ hãi",
+    "lesson": "8",
+    "type": "Động từ",
+    "ex_cn": "我不害怕。",
+    "ex_py": "Wǒ bù hàipà.",
+    "ex_vn": "Tôi không sợ."
+  },
+  {
+    "hanzi": "熊猫",
+    "pinyin": "xióngmāo",
+    "meaning": "gấu trúc",
+    "lesson": "8",
+    "type": "Danh từ",
+    "ex_cn": "熊猫很可爱。",
+    "ex_py": "Xióngmāo hěn kě\"ài.",
+    "ex_vn": "Gấu trúc rất đáng yêu."
+  },
+  {
+    "hanzi": "见面",
+    "pinyin": "jiànmiàn",
+    "meaning": "gặp mặt",
+    "lesson": "8",
+    "type": "Động từ",
+    "ex_cn": "我们明天见面。",
+    "ex_py": "Wǒmen míngtiān jiànmiàn.",
+    "ex_vn": "Ngày mai chúng ta gặp nhau."
+  },
+  {
+    "hanzi": "安静",
+    "pinyin": "ānjìng",
+    "meaning": "yên tĩnh",
+    "lesson": "8",
+    "type": "Tính từ",
+    "ex_cn": "这里很安静。",
+    "ex_py": "Zhèlǐ hěn ānjìng.",
+    "ex_vn": "Ở đây rất yên tĩnh."
+  },
+  {
+    "hanzi": "可乐",
+    "pinyin": "kělè",
+    "meaning": "coca-cola",
+    "lesson": "8",
+    "type": "Danh từ",
+    "ex_cn": "你想喝可乐吗？",
+    "ex_py": "Nǐ xiǎng hē kělè ma?",
+    "ex_vn": "Bạn muốn uống coca không?"
+  },
+  {
+    "hanzi": "一会儿",
+    "pinyin": "yíhuìr",
+    "meaning": "một lúc, chốc lát",
+    "lesson": "8",
+    "type": "Danh từ",
+    "ex_cn": "等一会儿。",
+    "ex_py": "Děng yíhuìr.",
+    "ex_vn": "Đợi một lát."
+  },
+  {
+    "hanzi": "马上",
+    "pinyin": "mǎshàng",
+    "meaning": "ngay lập tức",
+    "lesson": "8",
+    "type": "Phó từ",
+    "ex_cn": "我马上就到。",
+    "ex_py": "Wǒ mǎshàng jiù dào.",
+    "ex_vn": "Tôi sẽ đến ngay đây."
+  },
+  {
+    "hanzi": "洗手间",
+    "pinyin": "xǐshǒujiān",
+    "meaning": "nhà vệ sinh",
+    "lesson": "8",
+    "type": "Danh từ",
+    "ex_cn": "请问，洗手间在哪儿？",
+    "ex_py": "Qǐngwèn, xǐshǒujiān zài nǎr?",
+    "ex_vn": "Xin hỏi, nhà vệ sinh ở đâu?"
+  },
+  {
+    "hanzi": "老",
+    "pinyin": "lǎo",
+    "meaning": "già, cũ",
+    "lesson": "8",
+    "type": "Tính từ",
+    "ex_cn": "这个地方很老。",
+    "ex_py": "Zhège dìfang hěn lǎo.",
+    "ex_vn": "Nơi này rất cũ."
+  },
+  {
+    "hanzi": "几乎",
+    "pinyin": "jīhū",
+    "meaning": "hầu như",
+    "lesson": "8",
+    "type": "Phó từ",
+    "ex_cn": "我几乎忘了。",
+    "ex_py": "Wǒ jīhū wàng le.",
+    "ex_vn": "Tôi hầu như đã quên rồi."
+  },
+  {
+    "hanzi": "变化",
+    "pinyin": "biànhuà",
+    "meaning": "thay đổi",
+    "lesson": "8",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "这里的变化很大。",
+    "ex_py": "Zhèlǐ de biànhuà hěn dà.",
+    "ex_vn": "Thay đổi ở nơi này rất lớn."
+  },
+  {
+    "hanzi": "健康",
+    "pinyin": "jiànkāng",
+    "meaning": "khỏe mạnh",
+    "lesson": "8",
+    "type": "Tính từ/Danh từ",
+    "ex_cn": "祝你身体健康。",
+    "ex_py": "Zhù nǐ shēntǐ jiànkāng.",
+    "ex_vn": "Chúc bạn sức khỏe dồi dào."
+  },
+  {
+    "hanzi": "重要",
+    "pinyin": "zhòngyào",
+    "meaning": "quan trọng",
+    "lesson": "8",
+    "type": "Tính từ",
+    "ex_cn": "学习很重要。",
+    "ex_py": "Xuéxí hěn zhòngyào.",
+    "ex_vn": "Học tập rất quan trọng."
+  },
+  {
+    "hanzi": "中文",
+    "pinyin": "Zhōngwén",
+    "meaning": "tiếng Trung",
+    "lesson": "9",
+    "type": "Danh từ",
+    "ex_cn": "他的中文说得很好。",
+    "ex_py": "Tā de Zhōngwén shuō de hěn hǎo.",
+    "ex_vn": "Tiếng Trung của anh ấy nói rất tốt."
+  },
+  {
+    "hanzi": "班",
+    "pinyin": "bān",
+    "meaning": "lớp",
+    "lesson": "9",
+    "type": "Danh từ",
+    "ex_cn": "我们在一个班。",
+    "ex_py": "Wǒmen zài yí ge bān.",
+    "ex_vn": "Chúng tôi học cùng một lớp."
+  },
+  {
+    "hanzi": "一样",
+    "pinyin": "yíyàng",
+    "meaning": "giống nhau",
+    "lesson": "9",
+    "type": "Tính từ",
+    "ex_cn": "这两个一样吗？",
+    "ex_py": "Zhè liǎng ge yíyàng ma?",
+    "ex_vn": "Hai cái này giống nhau không?"
+  },
+  {
+    "hanzi": "最后",
+    "pinyin": "zuìhòu",
+    "meaning": "cuối cùng",
+    "lesson": "9",
+    "type": "Danh từ",
+    "ex_cn": "这是最后一次。",
+    "ex_py": "Zhè shì zuìhòu yí cì.",
+    "ex_vn": "Đây là lần cuối cùng."
+  },
+  {
+    "hanzi": "放心",
+    "pinyin": "fàngxīn",
+    "meaning": "yên tâm",
+    "lesson": "9",
+    "type": "Động từ",
+    "ex_cn": "请放心。",
+    "ex_py": "Qǐng fàngxīn.",
+    "ex_vn": "Xin hãy yên tâm."
+  },
+  {
+    "hanzi": "一定",
+    "pinyin": "yídìng",
+    "meaning": "nhất định",
+    "lesson": "9",
+    "type": "Phó từ/Tính từ",
+    "ex_cn": "我一定去。",
+    "ex_py": "Wǒ yídìng qù.",
+    "ex_vn": "Tôi nhất định sẽ đi."
+  },
+  {
+    "hanzi": "担心",
+    "pinyin": "dānxīn",
+    "meaning": "lo lắng",
+    "lesson": "9",
+    "type": "Động từ",
+    "ex_cn": "别担心。",
+    "ex_py": "Bié dānxīn.",
+    "ex_vn": "Đừng lo lắng."
+  },
+  {
+    "hanzi": "比较",
+    "pinyin": "bǐjiào",
+    "meaning": "so sánh, tương đối",
+    "lesson": "9",
+    "type": "Phó từ/Động từ",
+    "ex_cn": "今天比较热。",
+    "ex_py": "Jīntiān bǐjiào rè.",
+    "ex_vn": "Hôm nay tương đối nóng."
+  },
+  {
+    "hanzi": "了解",
+    "pinyin": "liǎojiě",
+    "meaning": "tìm hiểu, hiểu rõ",
+    "lesson": "9",
+    "type": "Động từ",
+    "ex_cn": "我很了解他。",
+    "ex_py": "Wǒ hěn liǎojiě tā.",
+    "ex_vn": "Tôi rất hiểu anh ấy."
+  },
+  {
+    "hanzi": "先",
+    "pinyin": "xiān",
+    "meaning": "trước",
+    "lesson": "9",
+    "type": "Phó từ",
+    "ex_cn": "你先去吧。",
+    "ex_py": "Nǐ xiān qù ba.",
+    "ex_vn": "Bạn đi trước đi."
+  },
+  {
+    "hanzi": "中间",
+    "pinyin": "zhōngjiān",
+    "meaning": "ở giữa",
+    "lesson": "9",
+    "type": "Danh từ",
+    "ex_cn": "他在中间。",
+    "ex_py": "Tā zài zhōngjiān.",
+    "ex_vn": "Anh ấy ở giữa."
+  },
+  {
+    "hanzi": "参加",
+    "pinyin": "cānjiā",
+    "meaning": "tham gia",
+    "lesson": "9",
+    "type": "Động từ",
+    "ex_cn": "你想参加比赛吗？",
+    "ex_py": "Nǐ xiǎng cānjiā bǐsài ma?",
+    "ex_vn": "Bạn có muốn tham gia cuộc thi không?"
+  },
+  {
+    "hanzi": "影响",
+    "pinyin": "yǐngxiǎng",
+    "meaning": "ảnh hưởng",
+    "lesson": "9",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "这对他有影响。",
+    "ex_py": "Zhè duì tā yǒu yǐngxiǎng.",
+    "ex_vn": "Cái này có ảnh hưởng tới anh ấy."
+  },
+  {
+    "hanzi": "个子",
+    "pinyin": "gèzi",
+    "meaning": "vóc dáng, chiều cao",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "他的个子很高。",
+    "ex_py": "Tā de gèzi hěn gāo.",
+    "ex_vn": "Vóc dáng của anh ấy rất cao."
+  },
+  {
+    "hanzi": "矮",
+    "pinyin": "ǎi",
+    "meaning": "thấp, lùn",
+    "lesson": "10",
+    "type": "Tính từ",
+    "ex_cn": "他比我矮。",
+    "ex_py": "Tā bǐ wǒ ǎi.",
+    "ex_vn": "Anh ấy thấp hơn tôi."
+  },
+  {
+    "hanzi": "历史",
+    "pinyin": "lìshǐ",
+    "meaning": "lịch sử",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢历史。",
+    "ex_py": "Wǒ xǐhuan lìshǐ.",
+    "ex_vn": "Tôi thích lịch sử."
+  },
+  {
+    "hanzi": "体育",
+    "pinyin": "tǐyù",
+    "meaning": "thể dục",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "他体育很好。",
+    "ex_py": "Tā tǐyù hěn hǎo.",
+    "ex_vn": "Môn thể dục của anh ấy rất tốt."
+  },
+  {
+    "hanzi": "数学",
+    "pinyin": "shùxué",
+    "meaning": "toán học",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "数学课很有意思。",
+    "ex_py": "Shùxué kè hěn yǒu yìsi.",
+    "ex_vn": "Giờ toán rất thú vị."
+  },
+  {
+    "hanzi": "方便",
+    "pinyin": "fāngbiàn",
+    "meaning": "thuận tiện",
+    "lesson": "10",
+    "type": "Tính từ",
+    "ex_cn": "坐地铁很方便。",
+    "ex_py": "Zuò dìtiě hěn fāngbiàn.",
+    "ex_vn": "Đi tàu điện ngầm rất thuận tiện."
+  },
+  {
+    "hanzi": "骑",
+    "pinyin": "qí",
+    "meaning": "cưỡi, đi (xe đạp, ngựa)",
+    "lesson": "10",
+    "type": "Động từ",
+    "ex_cn": "他骑自行车去学校。",
+    "ex_py": "Tā qí zìxíngchē qù xuéxiào.",
+    "ex_vn": "Anh ấy đi xe đạp đến trường."
+  },
+  {
+    "hanzi": "旧",
+    "pinyin": "jiù",
+    "meaning": "cũ",
+    "lesson": "10",
+    "type": "Tính từ",
+    "ex_cn": "这是旧衣服。",
+    "ex_py": "Zhè shì jiù yīfu.",
+    "ex_vn": "Đây là quần áo cũ."
+  },
+  {
+    "hanzi": "换",
+    "pinyin": "huàn",
+    "meaning": "đổi, thay",
+    "lesson": "10",
+    "type": "Động từ",
+    "ex_cn": "我想换钱。",
+    "ex_py": "Wǒ xiǎng huàn qián.",
+    "ex_vn": "Tôi muốn đổi tiền."
+  },
+  {
+    "hanzi": "地方",
+    "pinyin": "dìfang",
+    "meaning": "địa phương, nơi chốn",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "这是什么地方？",
+    "ex_py": "Zhè shì shénme dìfang?",
+    "ex_vn": "Đây là nơi nào vậy?"
+  },
+  {
+    "hanzi": "中介",
+    "pinyin": "zhōngjiè",
+    "meaning": "môi giới",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "我去中介公司看房子。",
+    "ex_py": "Wǒ qù zhōngjiè gōngsī kàn fángzi.",
+    "ex_vn": "Tôi đến công ty môi giới để xem nhà."
+  },
+  {
+    "hanzi": "主要",
+    "pinyin": "zhǔyào",
+    "meaning": "chủ yếu",
+    "lesson": "10",
+    "type": "Tính từ/Phó từ",
+    "ex_cn": "他是主要老师。",
+    "ex_py": "Tā shì zhǔyào lǎoshī.",
+    "ex_vn": "Anh ấy là giáo viên chính."
+  },
+  {
+    "hanzi": "环境",
+    "pinyin": "huánjìng",
+    "meaning": "môi trường",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "这里的环境很好。",
+    "ex_py": "Zhèlǐ de huánjìng hěn hǎo.",
+    "ex_vn": "Môi trường ở đây rất tốt."
+  },
+  {
+    "hanzi": "附近",
+    "pinyin": "fùjìn",
+    "meaning": "gần đây, lân cận",
+    "lesson": "10",
+    "type": "Danh từ",
+    "ex_cn": "学校附近有个商店。",
+    "ex_py": "Xuéxiào fùjìn yǒu ge shāngdiàn.",
+    "ex_vn": "Gần trường học có một cửa hàng."
+  },
+  {
+    "hanzi": "图书馆",
+    "pinyin": "túshūguǎn",
+    "meaning": "thư viện",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "我在图书馆看书。",
+    "ex_py": "Wǒ zài túshūguǎn kàn shū.",
+    "ex_vn": "Tôi đang đọc sách ở thư viện."
+  },
+  {
+    "hanzi": "借",
+    "pinyin": "jiè",
+    "meaning": "mượn",
+    "lesson": "11",
+    "type": "Động từ",
+    "ex_cn": "我想借一本书。",
+    "ex_py": "Wǒ xiǎng jiè yì běn shū.",
+    "ex_vn": "Tôi muốn mượn một cuốn sách."
+  },
+  {
+    "hanzi": "词典",
+    "pinyin": "cídiǎn",
+    "meaning": "từ điển",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "这是我的词典。",
+    "ex_py": "Zhè shì wǒ de cídiǎn.",
+    "ex_vn": "Đây là từ điển của tôi."
+  },
+  {
+    "hanzi": "还",
+    "pinyin": "huán",
+    "meaning": "trả lại",
+    "lesson": "11",
+    "type": "Động từ",
+    "ex_cn": "别忘了还书。",
+    "ex_py": "Bié wàngle huán shū.",
+    "ex_vn": "Đừng quên trả sách nhé."
+  },
+  {
+    "hanzi": "灯",
+    "pinyin": "dēng",
+    "meaning": "đèn",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "请关灯。",
+    "ex_py": "Qǐng guān dēng.",
+    "ex_vn": "Vui lòng tắt đèn."
+  },
+  {
+    "hanzi": "会议",
+    "pinyin": "huìyì",
+    "meaning": "cuộc họp, hội nghị",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "我们正在开会议。",
+    "ex_py": "Wǒmen zhèngzài kāi huìyì.",
+    "ex_vn": "Chúng tôi đang họp."
+  },
+  {
+    "hanzi": "结束",
+    "pinyin": "jiéshù",
+    "meaning": "kết thúc",
+    "lesson": "11",
+    "type": "Động từ",
+    "ex_cn": "会议结束了。",
+    "ex_py": "Huìyì jiéshù le.",
+    "ex_vn": "Cuộc họp kết thúc rồi."
+  },
+  {
+    "hanzi": "忘记",
+    "pinyin": "wàngjì",
+    "meaning": "quên",
+    "lesson": "11",
+    "type": "Động từ",
+    "ex_cn": "我忘记带钥匙了。",
+    "ex_py": "Wǒ wàngjì dài yàoshi le.",
+    "ex_vn": "Tôi quên mang chìa khóa rồi."
+  },
+  {
+    "hanzi": "空调",
+    "pinyin": "kōngtiáo",
+    "meaning": "máy điều hòa",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "请把空调打开。",
+    "ex_py": "Qǐng bǎ kōngtiáo dǎkāi.",
+    "ex_vn": "Vui lòng bật điều hòa lên."
+  },
+  {
+    "hanzi": "关",
+    "pinyin": "guān",
+    "meaning": "đóng, tắt",
+    "lesson": "11",
+    "type": "Động từ",
+    "ex_cn": "请关门。",
+    "ex_py": "Qǐng guān mén.",
+    "ex_vn": "Vui lòng đóng cửa."
+  },
+  {
+    "hanzi": "地铁",
+    "pinyin": "dìtiě",
+    "meaning": "tàu điện ngầm",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "我坐地铁去公司。",
+    "ex_py": "Wǒ zuò dìtiě qù gōngsī.",
+    "ex_vn": "Tôi đi tàu điện ngầm đến công ty."
+  },
+  {
+    "hanzi": "双",
+    "pinyin": "shuāng",
+    "meaning": "đôi (lượng từ)",
+    "lesson": "11",
+    "type": "Lượng từ",
+    "ex_cn": "我买了一双鞋。",
+    "ex_py": "Wǒ mǎi le yì shuāng xié.",
+    "ex_vn": "Tôi đã mua một đôi giày."
+  },
+  {
+    "hanzi": "筷子",
+    "pinyin": "kuàizi",
+    "meaning": "đũa",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "你会用筷子吗？",
+    "ex_py": "Nǐ huì yòng kuàizi ma?",
+    "ex_vn": "Bạn biết dùng đũa không?"
+  },
+  {
+    "hanzi": "啤酒",
+    "pinyin": "píjiǔ",
+    "meaning": "bia",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "他喜欢喝啤酒。",
+    "ex_py": "Tā xǐhuan hē píjiǔ.",
+    "ex_vn": "Anh ấy thích uống bia."
+  },
+  {
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "meaning": "miệng, ngụm (lượng từ)",
+    "lesson": "11",
+    "type": "Lượng từ/Danh từ",
+    "ex_cn": "喝一口水。",
+    "ex_py": "Hē yì kǒu shuǐ.",
+    "ex_vn": "Uống một ngụm nước."
+  },
+  {
+    "hanzi": "瓶子",
+    "pinyin": "píngzi",
+    "meaning": "chai, lọ",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "桌子上有一个瓶子。",
+    "ex_py": "Zhuōzi shang yǒu yí ge píngzi.",
+    "ex_vn": "Trên bàn có một cái chai."
+  },
+  {
+    "hanzi": "笔记本",
+    "pinyin": "bǐjìběn",
+    "meaning": "vở, máy tính xách tay",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "这是我的笔记本。",
+    "ex_py": "Zhè shì wǒ de bǐjìběn.",
+    "ex_vn": "Đây là vở ghi chép của tôi."
+  },
+  {
+    "hanzi": "电子邮件",
+    "pinyin": "diànzǐ yóujiàn",
+    "meaning": "thư điện tử (email)",
+    "lesson": "11",
+    "type": "Danh từ",
+    "ex_cn": "我给你发电子邮件。",
+    "ex_py": "Wǒ gěi nǐ fā diànzǐ yóujiàn.",
+    "ex_vn": "Tôi gửi email cho bạn."
+  },
+  {
+    "hanzi": "习惯",
+    "pinyin": "xíguàn",
+    "meaning": "thói quen, quen với",
+    "lesson": "11",
+    "type": "Danh từ/Động từ",
+    "ex_cn": "我习惯了这里的生活。",
+    "ex_py": "Wǒ xíguàn le zhèlǐ de shēnghuó.",
+    "ex_vn": "Tôi đã quen với cuộc sống ở đây."
+  },
+  {
+    "hanzi": "太阳",
+    "pinyin": "tàiyáng",
+    "meaning": "mặt trời",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "今天的太阳很大。",
+    "ex_py": "Jīntiān de tàiyáng hěn dà.",
+    "ex_vn": "Hôm nay mặt trời rất nắng."
+  },
+  {
+    "hanzi": "西",
+    "pinyin": "xī",
+    "meaning": "phía Tây",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "太阳从西边下山。",
+    "ex_py": "Tàiyáng cóng xībiān xiàshān.",
+    "ex_vn": "Mặt trời lặn ở phía Tây."
+  },
+  {
+    "hanzi": "生气",
+    "pinyin": "shēngqì",
+    "meaning": "tức giận",
+    "lesson": "12",
+    "type": "Động từ/Tính từ",
+    "ex_cn": "别生气了。",
+    "ex_py": "Bié shēngqì le.",
+    "ex_vn": "Đừng giận nữa mà."
+  },
+  {
+    "hanzi": "行李箱",
+    "pinyin": "xínglixiāng",
+    "meaning": "va li",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "我的行李箱在那儿。",
+    "ex_py": "Wǒ de xínglixiāng zài nàr.",
+    "ex_vn": "Va li của tôi ở đằng kia."
+  },
+  {
+    "hanzi": "自己",
+    "pinyin": "zìjǐ",
+    "meaning": "tự mình",
+    "lesson": "12",
+    "type": "Đại từ",
+    "ex_cn": "我自己去。",
+    "ex_py": "Wǒ zìjǐ qù.",
+    "ex_vn": "Tôi tự đi."
+  },
+  {
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "meaning": "túi xách",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "这是谁的包？",
+    "ex_py": "Zhè shì shéi de bāo?",
+    "ex_vn": "Đây là túi của ai?"
+  },
+  {
+    "hanzi": "发现",
+    "pinyin": "fāxiàn",
+    "meaning": "phát hiện",
+    "lesson": "12",
+    "type": "Động từ",
+    "ex_cn": "我发现他不在家。",
+    "ex_py": "Wǒ fāxiàn tā bú zài jiā.",
+    "ex_vn": "Tôi phát hiện anh ấy không có ở nhà."
+  },
+  {
+    "hanzi": "护照",
+    "pinyin": "hùzhào",
+    "meaning": "hộ chiếu",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "请带好你的护照。",
+    "ex_py": "Qǐng dài hǎo nǐ de hùzhào.",
+    "ex_vn": "Vui lòng mang theo hộ chiếu của bạn."
+  },
+  {
+    "hanzi": "起飞",
+    "pinyin": "qǐfēi",
+    "meaning": "cất cánh",
+    "lesson": "12",
+    "type": "Động từ",
+    "ex_cn": "飞机马上要起飞了。",
+    "ex_py": "Fēijī mǎshàng yào qǐfēi le.",
+    "ex_vn": "Máy bay sắp cất cánh rồi."
+  },
+  {
+    "hanzi": "司机",
+    "pinyin": "sījī",
+    "meaning": "tài xế",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "司机在那儿等你。",
+    "ex_py": "Sījī zài nàr děng nǐ.",
+    "ex_vn": "Tài xế đang đợi bạn ở đằng kia."
+  },
+  {
+    "hanzi": "教",
+    "pinyin": "jiāo",
+    "meaning": "dạy",
+    "lesson": "12",
+    "type": "Động từ",
+    "ex_cn": "他教我汉语。",
+    "ex_py": "Tā jiāo wǒ Hànyǔ.",
+    "ex_vn": "Anh ấy dạy tôi tiếng Trung."
+  },
+  {
+    "hanzi": "画",
+    "pinyin": "huà",
+    "meaning": "vẽ, bức tranh",
+    "lesson": "12",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "他喜欢画画。",
+    "ex_py": "Tā xǐhuan huàhuà.",
+    "ex_vn": "Anh ấy thích vẽ tranh."
+  },
+  {
+    "hanzi": "需要",
+    "pinyin": "xūyào",
+    "meaning": "cần",
+    "lesson": "12",
+    "type": "Động từ",
+    "ex_cn": "我需要你的帮助。",
+    "ex_py": "Wǒ xūyào nǐ de bāngzhù.",
+    "ex_vn": "Tôi cần sự giúp đỡ của bạn."
+  },
+  {
+    "hanzi": "黑板",
+    "pinyin": "hēibǎn",
+    "meaning": "bảng đen",
+    "lesson": "12",
+    "type": "Danh từ",
+    "ex_cn": "请看黑板。",
+    "ex_py": "Qǐng kàn hēibǎn.",
+    "ex_vn": "Vui lòng nhìn lên bảng."
+  },
+  {
+    "hanzi": "终于",
+    "pinyin": "zhōngyú",
+    "meaning": "cuối cùng",
+    "lesson": "13",
+    "type": "Phó từ",
+    "ex_cn": "他终于来了。",
+    "ex_py": "Tā zhōngyú lái le.",
+    "ex_vn": "Anh ấy cuối cùng cũng đến rồi."
+  },
+  {
+    "hanzi": "爷爷",
+    "pinyin": "yéye",
+    "meaning": "ông nội",
+    "lesson": "13",
+    "type": "Danh từ",
+    "ex_cn": "我爷爷在看报纸。",
+    "ex_py": "Wǒ yéye zài kàn bàozhǐ.",
+    "ex_vn": "Ông nội tôi đang đọc báo."
+  },
+  {
+    "hanzi": "礼物",
+    "pinyin": "lǐwù",
+    "meaning": "quà tặng",
+    "lesson": "13",
+    "type": "Danh từ",
+    "ex_cn": "这是送给你的礼物。",
+    "ex_py": "Zhè shì sòng gěi nǐ de lǐwù.",
+    "ex_vn": "Đây là món quà tặng bạn."
+  },
+  {
+    "hanzi": "奶奶",
+    "pinyin": "nǎinai",
+    "meaning": "bà nội",
+    "lesson": "13",
+    "type": "Danh từ",
+    "ex_cn": "我奶奶在做饭。",
+    "ex_py": "Wǒ nǎinai zài zuò fàn.",
+    "ex_vn": "Bà nội tôi đang nấu cơm."
+  },
+  {
+    "hanzi": "遇到",
+    "pinyin": "yùdào",
+    "meaning": "gặp phải",
+    "lesson": "13",
+    "type": "Động từ",
+    "ex_cn": "我在路上遇到了一个朋友。",
+    "ex_py": "Wǒ zài lùshang yùdào le yí ge péngyou.",
+    "ex_vn": "Tôi gặp một người bạn trên đường."
+  },
+  {
+    "hanzi": "一边",
+    "pinyin": "yìbiān",
+    "meaning": "vừa... (vừa làm gì vừa làm gì)",
+    "lesson": "13",
+    "type": "Phó từ",
+    "ex_cn": "他一边吃饭一边看电视。",
+    "ex_py": "Tā yìbiān chīfàn yìbiān kàn diànshì.",
+    "ex_vn": "Anh ấy vừa ăn cơm vừa xem tivi."
+  },
+  {
+    "hanzi": "过去",
+    "pinyin": "guòqù",
+    "meaning": "quá khứ, trước đây",
+    "lesson": "13",
+    "type": "Danh từ/Động từ",
+    "ex_cn": "过去我不喜欢吃肉。",
+    "ex_py": "Guòqù wǒ bù xǐhuan chī ròu.",
+    "ex_vn": "Trước đây tôi không thích ăn thịt."
+  },
+  {
+    "hanzi": "一般",
+    "pinyin": "yìbān",
+    "meaning": "bình thường, thông thường",
+    "lesson": "13",
+    "type": "Tính từ/Phó từ",
+    "ex_cn": "他一般六点起床。",
+    "ex_py": "Tā yìbān liù diǎn qǐchuáng.",
+    "ex_vn": "Anh ấy thường thức dậy lúc 6 giờ."
+  },
+  {
+    "hanzi": "愿意",
+    "pinyin": "yuànyì",
+    "meaning": "tự nguyện, bằng lòng",
+    "lesson": "13",
+    "type": "Động từ năng nguyện",
+    "ex_cn": "我愿意帮你。",
+    "ex_py": "Wǒ yuànyì bāng nǐ.",
+    "ex_vn": "Tôi sẵn lòng giúp bạn."
+  },
+  {
+    "hanzi": "起来",
+    "pinyin": "qǐlái",
+    "meaning": "dậy, đứng lên",
+    "lesson": "13",
+    "type": "Động từ",
+    "ex_cn": "请坐起来。",
+    "ex_py": "Qǐng zuò qǐlái.",
+    "ex_vn": "Vui lòng ngồi dậy."
+  },
+  {
+    "hanzi": "应该",
+    "pinyin": "yīnggāi",
+    "meaning": "nên",
+    "lesson": "13",
+    "type": "Động từ năng nguyện",
+    "ex_cn": "你应该努力学习。",
+    "ex_py": "Nǐ yīnggāi nǔlì xuéxí.",
+    "ex_vn": "Bạn nên cố gắng học tập."
+  },
+  {
+    "hanzi": "生活",
+    "pinyin": "shēnghuó",
+    "meaning": "cuộc sống",
+    "lesson": "13",
+    "type": "Danh từ/Động từ",
+    "ex_cn": "这里的生活很方便。",
+    "ex_py": "Zhèlǐ de shēnghuó hěn fāngbiàn.",
+    "ex_vn": "Cuộc sống ở đây rất thuận tiện."
+  },
+  {
+    "hanzi": "校长",
+    "pinyin": "xiàozhǎng",
+    "meaning": "hiệu trưởng",
+    "lesson": "13",
+    "type": "Danh từ",
+    "ex_cn": "校长在开会。",
+    "ex_py": "Xiàozhǎng zài kāihuì.",
+    "ex_vn": "Hiệu trưởng đang họp."
+  },
+  {
+    "hanzi": "坏",
+    "pinyin": "huài",
+    "meaning": "hỏng, xấu",
+    "lesson": "13",
+    "type": "Tính từ",
+    "ex_cn": "我的手机坏了。",
+    "ex_py": "Wǒ de shǒujī huài le.",
+    "ex_vn": "Điện thoại của tôi hỏng rồi."
+  },
+  {
+    "hanzi": "经常",
+    "pinyin": "jīngcháng",
+    "meaning": "thường xuyên",
+    "lesson": "13",
+    "type": "Phó từ",
+    "ex_cn": "他经常去锻炼。",
+    "ex_py": "Tā jīngcháng qù duànliàn.",
+    "ex_vn": "Anh ấy thường xuyên đi tập thể dục."
+  },
+  {
+    "hanzi": "打扫",
+    "pinyin": "dǎsǎo",
+    "meaning": "quét dọn",
+    "lesson": "14",
+    "type": "Động từ",
+    "ex_cn": "请打扫一下房间。",
+    "ex_py": "Qǐng dǎsǎo yíxià fángjiān.",
+    "ex_vn": "Vui lòng quét dọn phòng một chút."
+  },
+  {
+    "hanzi": "干净",
+    "pinyin": "gānjìng",
+    "meaning": "sạch sẽ",
+    "lesson": "14",
+    "type": "Tính từ",
+    "ex_cn": "房间很干净。",
+    "ex_py": "Fángjiān hěn gānjìng.",
+    "ex_vn": "Phòng rất sạch sẽ."
+  },
+  {
+    "hanzi": "然后",
+    "pinyin": "ránhòu",
+    "meaning": "sau đó",
+    "lesson": "14",
+    "type": "Liên từ",
+    "ex_cn": "先吃饭，然后看电影。",
+    "ex_py": "Xiān chīfàn, ránhòu kàn diànyǐng.",
+    "ex_vn": "Ăn cơm trước, sau đó xem phim."
+  },
+  {
+    "hanzi": "冰箱",
+    "pinyin": "bīngxiāng",
+    "meaning": "tủ lạnh",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "冰箱里有西瓜。",
+    "ex_py": "Bīngxiāng lǐ yǒu xīguā.",
+    "ex_vn": "Trong tủ lạnh có dưa hấu."
+  },
+  {
+    "hanzi": "洗澡",
+    "pinyin": "xǐzǎo",
+    "meaning": "tắm",
+    "lesson": "14",
+    "type": "Động từ",
+    "ex_cn": "他在洗澡。",
+    "ex_py": "Tā zài xǐzǎo.",
+    "ex_vn": "Anh ấy đang tắm."
+  },
+  {
+    "hanzi": "节目",
+    "pinyin": "jiémù",
+    "meaning": "chương trình",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "昨天的节目很好看。",
+    "ex_py": "Zuótiān de jiémù hěn hǎokàn.",
+    "ex_vn": "Chương trình hôm qua rất hay."
+  },
+  {
+    "hanzi": "月亮",
+    "pinyin": "yuèliang",
+    "meaning": "mặt trăng",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "今天的月亮很圆。",
+    "ex_py": "Jīntiān de yuèliang hěn yuán.",
+    "ex_vn": "Trăng hôm nay rất tròn."
+  },
+  {
+    "hanzi": "像",
+    "pinyin": "xiàng",
+    "meaning": "giống",
+    "lesson": "14",
+    "type": "Động từ/Tính từ",
+    "ex_cn": "他长得像他爸爸。",
+    "ex_py": "Tā zhǎng de xiàng tā bàba.",
+    "ex_vn": "Anh ấy trông giống bố mình."
+  },
+  {
+    "hanzi": "盘子",
+    "pinyin": "pánzi",
+    "meaning": "cái đĩa",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "盘子里有水果。",
+    "ex_py": "Pánzi lǐ yǒu shuǐguǒ.",
+    "ex_vn": "Trong đĩa có hoa quả."
+  },
+  {
+    "hanzi": "刮风",
+    "pinyin": "guāfēng",
+    "meaning": "nổi gió",
+    "lesson": "14",
+    "type": "Động từ",
+    "ex_cn": "外面在刮风。",
+    "ex_py": "Wàimiàn zài guāfēng.",
+    "ex_vn": "Bên ngoài đang có gió."
+  },
+  {
+    "hanzi": "叔叔",
+    "pinyin": "shūshu",
+    "meaning": "chú",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "我叔叔在北京工作。",
+    "ex_py": "Wǒ shūshu zài Běijīng gōngzuò.",
+    "ex_vn": "Chú tôi làm việc ở Bắc Kinh."
+  },
+  {
+    "hanzi": "阿姨",
+    "pinyin": "āyí",
+    "meaning": "dì, cô",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "阿姨好！",
+    "ex_py": "Āyí hǎo!",
+    "ex_vn": "Chào cô ạ!"
+  },
+  {
+    "hanzi": "故事",
+    "pinyin": "gùshi",
+    "meaning": "câu chuyện",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢听故事。",
+    "ex_py": "Wǒ xǐhuan tīng gùshi.",
+    "ex_vn": "Tôi thích nghe kể chuyện."
+  },
+  {
+    "hanzi": "声音",
+    "pinyin": "shēngyīn",
+    "meaning": "âm thanh, giọng nói",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "他的声音很好听。",
+    "ex_py": "Tā de shēngyīn hěn hǎotīng.",
+    "ex_vn": "Giọng nói của anh ấy rất hay."
+  },
+  {
+    "hanzi": "菜单",
+    "pinyin": "càidān",
+    "meaning": "thực đơn",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "请给我菜单。",
+    "ex_py": "Qǐng gěi wǒ càidān.",
+    "ex_vn": "Vui lòng cho tôi xem thực đơn."
+  },
+  {
+    "hanzi": "简单",
+    "pinyin": "jiǎndān",
+    "meaning": "đơn giản",
+    "lesson": "14",
+    "type": "Tính từ",
+    "ex_cn": "这个题很简单。",
+    "ex_py": "Zhège tí hěn jiǎndān.",
+    "ex_vn": "Câu hỏi này rất đơn giản."
+  },
+  {
+    "hanzi": "香蕉",
+    "pinyin": "xiāngjiāo",
+    "meaning": "chuối",
+    "lesson": "14",
+    "type": "Danh từ",
+    "ex_cn": "我想吃香蕉。",
+    "ex_py": "Wǒ xiǎng chī xiāngjiāo.",
+    "ex_vn": "Tôi muốn ăn chuối."
+  },
+  {
+    "hanzi": "留学",
+    "pinyin": "liúxué",
+    "meaning": "du học",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "他想去中国留学。",
+    "ex_py": "Tā xiǎng qù Zhōngguó liúxué.",
+    "ex_vn": "Anh ấy muốn đi du học Trung Quốc."
+  },
+  {
+    "hanzi": "水平",
+    "pinyin": "shuǐpíng",
+    "meaning": "trình độ",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "他的汉语水平很高。",
+    "ex_py": "Tā de Hànyǔ shuǐpíng hěn gāo.",
+    "ex_vn": "Trình độ tiếng Trung của anh ấy rất cao."
+  },
+  {
+    "hanzi": "提高",
+    "pinyin": "tígāo",
+    "meaning": "nâng cao",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "我们要提高学习水平。",
+    "ex_py": "Wǒmen yào tígāo xuéxí shuǐpíng.",
+    "ex_vn": "Chúng ta phải nâng cao trình độ học tập."
+  },
+  {
+    "hanzi": "练习",
+    "pinyin": "liànxí",
+    "meaning": "luyện tập, bài tập",
+    "lesson": "15",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "这些练习不难。",
+    "ex_py": "Zhèxiē liànxí bù nán.",
+    "ex_vn": "Những bài tập này không khó."
+  },
+  {
+    "hanzi": "完成",
+    "pinyin": "wánchéng",
+    "meaning": "hoàn thành",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "你完成作业了吗？",
+    "ex_py": "Nǐ wánchéng zuòyè le ma?",
+    "ex_vn": "Bạn hoàn thành bài tập chưa?"
+  },
+  {
+    "hanzi": "句子",
+    "pinyin": "jùzi",
+    "meaning": "câu",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "请读这个句子。",
+    "ex_py": "Qǐng dú zhège jùzi.",
+    "ex_vn": "Vui lòng đọc câu này."
+  },
+  {
+    "hanzi": "其他",
+    "pinyin": "qítā",
+    "meaning": "khác",
+    "lesson": "15",
+    "type": "Đại từ",
+    "ex_cn": "其他人在哪儿？",
+    "ex_py": "Qítā rén zài nǎr?",
+    "ex_vn": "Những người khác ở đâu?"
+  },
+  {
+    "hanzi": "发",
+    "pinyin": "fā",
+    "meaning": "gửi, phát",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "我给你发短信。",
+    "ex_py": "Wǒ gěi nǐ fā duǎnxìn.",
+    "ex_vn": "Tôi gửi tin nhắn cho bạn."
+  },
+  {
+    "hanzi": "要求",
+    "pinyin": "yāoqiú",
+    "meaning": "yêu cầu",
+    "lesson": "15",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "老师对我们的要求很高。",
+    "ex_py": "Lǎoshī duì wǒmen de yāoqiú hěn gāo.",
+    "ex_vn": "Thầy giáo yêu cầu rất cao đối với chúng tôi."
+  },
+  {
+    "hanzi": "注意",
+    "pinyin": "zhùyì",
+    "meaning": "chú ý",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "请注意听老师说。",
+    "ex_py": "Qǐng zhùyì tīng lǎoshī shuō.",
+    "ex_vn": "Vui lòng chú ý nghe thầy giáo nói."
+  },
+  {
+    "hanzi": "上网",
+    "pinyin": "shàngwǎng",
+    "meaning": "lên mạng",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "他每天都上网。",
+    "ex_py": "Tā měitiān dōu shàngwǎng.",
+    "ex_vn": "Anh ấy lên mạng mỗi ngày."
+  },
+  {
+    "hanzi": "除了",
+    "pinyin": "chúle",
+    "meaning": "ngoài ra, trừ phi",
+    "lesson": "15",
+    "type": "Giới từ",
+    "ex_cn": "除了他，大家都来了。",
+    "ex_py": "Chúle tā, dàjiā dōu lái le.",
+    "ex_vn": "Ngoài anh ấy ra, mọi người đều đã đến."
+  },
+  {
+    "hanzi": "新闻",
+    "pinyin": "xīnwén",
+    "meaning": "tin tức",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "我看新闻了。",
+    "ex_py": "Wǒ kàn xīnwén le.",
+    "ex_vn": "Tôi đã xem tin tức rồi."
+  },
+  {
+    "hanzi": "极",
+    "pinyin": "jí",
+    "meaning": "cực kỳ",
+    "lesson": "15",
+    "type": "Phó từ",
+    "ex_cn": "好极了！",
+    "ex_py": "Hǎo jí le!",
+    "ex_vn": "Tốt cực kỳ!"
+  },
+  {
+    "hanzi": "节日",
+    "pinyin": "jiérì",
+    "meaning": "ngày lễ",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "春节是中国人的节日。",
+    "ex_py": "Chūnjié shì Zhōngguó rén de jiérì.",
+    "ex_vn": "Tết Nguyên Đán là ngày lễ của người Trung Quốc."
+  },
+  {
+    "hanzi": "举行",
+    "pinyin": "jǔxíng",
+    "meaning": "tổ chức",
+    "lesson": "15",
+    "type": "Động từ",
+    "ex_cn": "会议在北京举行。",
+    "ex_py": "Huìyì zài Běijīng jǔxíng.",
+    "ex_vn": "Hội nghị được tổ chức ở Bắc Kinh."
+  },
+  {
+    "hanzi": "世界",
+    "pinyin": "shìjiè",
+    "meaning": "thế giới",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "世界很大。",
+    "ex_py": "Shìjiè hěn dà.",
+    "ex_vn": "Thế giới rất lớn."
+  },
+  {
+    "hanzi": "街道",
+    "pinyin": "jiēdào",
+    "meaning": "đường phố",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "这条街道很漂亮。",
+    "ex_py": "Zhè tiáo jiēdào hěn piàoliang.",
+    "ex_vn": "Con phố này rất đẹp."
+  },
+  {
+    "hanzi": "各",
+    "pinyin": "gè",
+    "meaning": "các, mỗi",
+    "lesson": "15",
+    "type": "Đại từ",
+    "ex_cn": "各人有各人的习惯。",
+    "ex_py": "Gè rén yǒu gè rén de xíguàn.",
+    "ex_vn": "Mỗi người có thói quen của mỗi người."
+  },
+  {
+    "hanzi": "文化",
+    "pinyin": "wénhuà",
+    "meaning": "văn hóa",
+    "lesson": "15",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢中国文化。",
+    "ex_py": "Wǒ xǐhuan Zhōngguó wénhuà.",
+    "ex_vn": "Tôi thích văn hóa Trung Quốc."
+  },
+  {
+    "hanzi": "城市",
+    "pinyin": "chéngshì",
+    "meaning": "thành phố",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢这个城市。",
+    "ex_py": "Wǒ xǐhuan zhège chéngshì.",
+    "ex_vn": "Tôi thích thành phố này."
+  },
+  {
+    "hanzi": "如果",
+    "pinyin": "rúguǒ",
+    "meaning": "nếu",
+    "lesson": "16",
+    "type": "Liên từ",
+    "ex_cn": "如果你有时间，就来我家吧。",
+    "ex_py": "Rúguǒ nǐ yǒu shíjiān, jiù lái wǒ jiā ba.",
+    "ex_vn": "Nếu bạn có thời gian thì đến nhà tôi nhé."
+  },
+  {
+    "hanzi": "认为",
+    "pinyin": "rènwéi",
+    "meaning": "cho rằng",
+    "lesson": "16",
+    "type": "Động từ",
+    "ex_cn": "我认为学习汉语不难。",
+    "ex_py": "Wǒ rènwéi xuéxí Hànyǔ bù nán.",
+    "ex_vn": "Tôi cho rằng học tiếng Trung không khó."
+  },
+  {
+    "hanzi": "皮鞋",
+    "pinyin": "píxié",
+    "meaning": "giày da",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "他穿了一双新皮鞋。",
+    "ex_py": "Tā chuān le yì shuāng xīn píxié.",
+    "ex_vn": "Anh ấy đi một đôi giày da mới."
+  },
+  {
+    "hanzi": "帽子",
+    "pinyin": "màozi",
+    "meaning": "mũ, nón",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "这是谁的帽子？",
+    "ex_py": "Zhè shì shéi de màozi?",
+    "ex_vn": "Đây là mũ của ai?"
+  },
+  {
+    "hanzi": "长",
+    "pinyin": "zhǎng",
+    "meaning": "lớn lên, trưởng thành",
+    "lesson": "16",
+    "type": "Động từ",
+    "ex_cn": "他长得很快。",
+    "ex_py": "Tā zhǎng de hěn kuài.",
+    "ex_vn": "Nó lớn nhanh quá."
+  },
+  {
+    "hanzi": "可爱",
+    "pinyin": "kě\"ài",
+    "meaning": "đáng yêu",
+    "lesson": "16",
+    "type": "Tính từ",
+    "ex_cn": "那个孩子很可爱。",
+    "ex_py": "Nàge háizi hěn kě\"ài.",
+    "ex_vn": "Đứa trẻ đó rất đáng yêu."
+  },
+  {
+    "hanzi": "米",
+    "pinyin": "mǐ",
+    "meaning": "mét",
+    "lesson": "16",
+    "type": "Lượng từ",
+    "ex_cn": "这个桌子一米长。",
+    "ex_py": "Zhège zhuōzi yì mǐ cháng.",
+    "ex_vn": "Chiếc bàn này dài một mét."
+  },
+  {
+    "hanzi": "公斤",
+    "pinyin": "gōngjīn",
+    "meaning": "cân (kg)",
+    "lesson": "16",
+    "type": "Lượng từ",
+    "ex_cn": "我要买两公斤苹果。",
+    "ex_py": "Wǒ yào mǎi liǎng gōngjīn píngguǒ.",
+    "ex_vn": "Tôi muốn mua hai cân táo."
+  },
+  {
+    "hanzi": "鼻子",
+    "pinyin": "bízi",
+    "meaning": "mũi",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "他的鼻子很高。",
+    "ex_py": "Tā de bízi hěn gāo.",
+    "ex_vn": "Mũi của anh ấy rất cao."
+  },
+  {
+    "hanzi": "头发",
+    "pinyin": "tóufa",
+    "meaning": "tóc",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "她的头发很长。",
+    "ex_py": "Tā de tóufa hěn cháng.",
+    "ex_vn": "Tóc của cô ấy rất dài."
+  },
+  {
+    "hanzi": "检查",
+    "pinyin": "jiǎnchá",
+    "meaning": "kiểm tra",
+    "lesson": "16",
+    "type": "Động từ",
+    "ex_cn": "医生在检查我的身体。",
+    "ex_py": "Yīshēng zài jiǎnchá wǒ de shēntǐ.",
+    "ex_vn": "Bác sĩ đang kiểm tra sức khỏe cho tôi."
+  },
+  {
+    "hanzi": "刷牙",
+    "pinyin": "shuā yá",
+    "meaning": "đánh răng",
+    "lesson": "16",
+    "type": "Động từ",
+    "ex_cn": "他每天早上都刷牙。",
+    "ex_py": "Tā měitiān zǎoshang dōu shuā yá.",
+    "ex_vn": "Anh ấy đánh răng mỗi sáng."
+  },
+  {
+    "hanzi": "关系",
+    "pinyin": "guānxì",
+    "meaning": "mối quan hệ",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "我们之间的关系很好。",
+    "ex_py": "Wǒmen zhījiān de guānxì hěn hǎo.",
+    "ex_vn": "Quan hệ giữa chúng tôi rất tốt."
+  },
+  {
+    "hanzi": "别人",
+    "pinyin": "biérén",
+    "meaning": "người khác",
+    "lesson": "16",
+    "type": "Đại từ",
+    "ex_cn": "别总是看别人。",
+    "ex_py": "Bié zǒngshì kàn biérén.",
+    "ex_vn": "Đừng lúc nào cũng nhìn người khác."
+  },
+  {
+    "hanzi": "词语",
+    "pinyin": "cíyǔ",
+    "meaning": "từ ngữ",
+    "lesson": "16",
+    "type": "Danh từ",
+    "ex_cn": "请读这个词语。",
+    "ex_py": "Qǐng dú zhège cíyǔ.",
+    "ex_vn": "Vui lòng đọc từ này."
+  },
+  {
+    "hanzi": "请假",
+    "pinyin": "qǐng jià",
+    "meaning": "xin nghỉ",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "他今天请假了。",
+    "ex_py": "Tā jīntiān qǐng jià le.",
+    "ex_vn": "Hôm nay anh ấy xin nghỉ rồi."
+  },
+  {
+    "hanzi": "一共",
+    "pinyin": "yígòng",
+    "meaning": "tổng cộng",
+    "lesson": "17",
+    "type": "Phó từ",
+    "ex_cn": "这里一共有一百人。",
+    "ex_py": "Zhèlǐ yígòng yǒu yìbǎi rén.",
+    "ex_vn": "Ở đây tổng cộng có 100 người."
+  },
+  {
+    "hanzi": "邻居",
+    "pinyin": "línjū",
+    "meaning": "hàng xóm",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "他是我的邻居。",
+    "ex_py": "Tā shì wǒ de línjū.",
+    "ex_vn": "Anh ấy là hàng xóm của tôi."
+  },
+  {
+    "hanzi": "后来",
+    "pinyin": "hòulái",
+    "meaning": "sau đó, về sau",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "后来 he qù Běijīng le.",
+    "ex_py": "Hòulái tā qù Běijīng le.",
+    "ex_vn": "Sau đó anh ấy đi Bắc Kinh rồi."
+  },
+  {
+    "hanzi": "爱好",
+    "pinyin": "àihào",
+    "meaning": "sở thích",
+    "lesson": "17",
+    "type": "Danh từ/Động từ",
+    "ex_cn": "我的爱好是听音乐。",
+    "ex_py": "Wǒ de àihào shì tīng yīnyuè.",
+    "ex_vn": "Sở thích của tôi là nghe nhạc."
+  },
+  {
+    "hanzi": "办法",
+    "pinyin": "bànfǎ",
+    "meaning": "biện pháp, cách thức",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "你有办法吗？",
+    "ex_py": "Nǐ yǒu bànfǎ ma?",
+    "ex_vn": "Bạn có cách nào không?"
+  },
+  {
+    "hanzi": "饱",
+    "pinyin": "bǎo",
+    "meaning": "no",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "我吃饱了。",
+    "ex_py": "Wǒ chī bǎo le.",
+    "ex_vn": "Tôi ăn no rồi."
+  },
+  {
+    "hanzi": "为了",
+    "pinyin": "wèile",
+    "meaning": "để, vì",
+    "lesson": "17",
+    "type": "Giới từ",
+    "ex_cn": "为了学习汉语，他去了中国。",
+    "ex_py": "Wèile xuéxí Hànyǔ, tā qù le Zhōngguó.",
+    "ex_vn": "Để học tiếng Trung, anh ấy đã đi Trung Quốc."
+  },
+  {
+    "hanzi": "决定",
+    "pinyin": "juédìng",
+    "meaning": "quyết định",
+    "lesson": "17",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "我决定明天去。",
+    "ex_py": "Wǒ juédìng míngtiān qù.",
+    "ex_vn": "Tôi quyết định ngày mai đi."
+  },
+  {
+    "hanzi": "选择",
+    "pinyin": "xuǎnzé",
+    "meaning": "lựa chọn",
+    "lesson": "17",
+    "type": "Động từ/Danh từ",
+    "ex_cn": "请做出你的选择。",
+    "ex_py": "Qǐng zuòchū nǐ de xuǎnzé.",
+    "ex_vn": "Vui lòng đưa ra lựa chọn của bạn."
+  },
+  {
+    "hanzi": "冬",
+    "pinyin": "dōng",
+    "meaning": "mùa đông",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "冬天的天气很冷。",
+    "ex_py": "Dōngtiān de tiānqì hěn lěng.",
+    "ex_vn": "Thời tiết mùa đông rất lạnh."
+  },
+  {
+    "hanzi": "必须",
+    "pinyin": "bìxū",
+    "meaning": "phải",
+    "lesson": "17",
+    "type": "Phó từ",
+    "ex_cn": "你必须去。",
+    "ex_py": "Nǐ bìxū qù.",
+    "ex_vn": "Bạn phải đi."
+  },
+  {
+    "hanzi": "根据",
+    "pinyin": "gēnjù",
+    "meaning": "căn cứ vào",
+    "lesson": "17",
+    "type": "Giới từ/Danh từ",
+    "ex_cn": "根据天气，我不去了。",
+    "ex_py": "Gēnjù tiānqì, wǒ bú qù le.",
+    "ex_vn": "Căn cứ vào thời tiết, tôi không đi nữa."
+  },
+  {
+    "hanzi": "情况",
+    "pinyin": "qíngkuàng",
+    "meaning": "tình hình",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "请告诉他这里的情况。",
+    "ex_py": "Qǐng gàosu tā zhèlǐ de qíngkuàng.",
+    "ex_vn": "Vui lòng cho anh ấy biết tình hình ở đây."
+  },
+  {
+    "hanzi": "渴",
+    "pinyin": "kě",
+    "meaning": "khát",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "我渴了，想喝水。",
+    "ex_py": "Wǒ kě le, xiǎng hē shuǐ.",
+    "ex_vn": "Tôi khát rồi, muốn uống nước."
+  },
+  {
+    "hanzi": "向",
+    "pinyin": "xiàng",
+    "meaning": "hướng về",
+    "lesson": "18",
+    "type": "Giới từ",
+    "ex_cn": "向右走。",
+    "ex_py": "Xiàng yòu zǒu.",
+    "ex_vn": "Đi về phía bên phải."
+  },
+  {
+    "hanzi": "万",
+    "pinyin": "wàn",
+    "meaning": "vạn (10.000)",
+    "lesson": "18",
+    "type": "Số từ",
+    "ex_cn": "一万块钱。",
+    "ex_py": "Yí wàn kuài qián.",
+    "ex_vn": "Mười nghìn đồng."
+  },
+  {
+    "hanzi": "嘴",
+    "pinyin": "zuǐ",
+    "meaning": "miệng",
+    "lesson": "18",
+    "type": "Danh từ",
+    "ex_cn": "请张开嘴。",
+    "ex_py": "Qǐng zhāngkāi zuǐ.",
+    "ex_vn": "Vui lòng mở miệng ra."
+  },
+  {
+    "hanzi": "动物",
+    "pinyin": "dòngwù",
+    "meaning": "động vật",
+    "lesson": "18",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢小动物。",
+    "ex_py": "Wǒ xǐhuan xiǎo dòngwù.",
+    "ex_vn": "Tôi thích các loài động vật nhỏ."
+  },
+  {
+    "hanzi": "段",
+    "pinyin": "duàn",
+    "meaning": "đoạn",
+    "lesson": "18",
+    "type": "Lượng từ",
+    "ex_cn": "请读这一段。",
+    "ex_py": "Qǐng dú zhè yí duàn.",
+    "ex_vn": "Vui lòng đọc đoạn này."
+  },
+  {
+    "hanzi": "有名",
+    "pinyin": "yǒumíng",
+    "meaning": "nổi tiếng",
+    "lesson": "18",
+    "type": "Tính từ",
+    "ex_cn": "北京是一个有名的城市。",
+    "ex_py": "Běijīng shì yí ge yǒumíng de chéngshì.",
+    "ex_vn": "Bắc Kinh là một thành phố nổi tiếng."
+  },
+  {
+    "hanzi": "同意",
+    "pinyin": "tóngyì",
+    "meaning": "đồng ý",
+    "lesson": "18",
+    "type": "Động từ",
+    "ex_cn": "我同意你的决定。",
+    "ex_py": "Wǒ tóngyì nǐ de juédìng.",
+    "ex_vn": "Tôi đồng ý với quyết định của bạn."
+  },
+  {
+    "hanzi": "相信",
+    "pinyin": "xiāngxìn",
+    "meaning": "tin tưởng",
+    "lesson": "18",
+    "type": "Động từ",
+    "ex_cn": "我相信他。",
+    "ex_py": "Wǒ xiāngxìn tā.",
+    "ex_vn": "Tôi tin anh ấy."
+  },
+  {
+    "hanzi": "关于",
+    "pinyin": "guānyú",
+    "meaning": "về (vấn đề gì đó)",
+    "lesson": "18",
+    "type": "Giới từ",
+    "ex_cn": "关于这件事，我不清楚。",
+    "ex_py": "Guānyú zhè jiàn shì, wǒ bù qīngchu.",
+    "ex_vn": "Về chuyện này, tôi không rõ."
+  },
+  {
+    "hanzi": "机会",
+    "pinyin": "jīhuì",
+    "meaning": "cơ hội",
+    "lesson": "18",
+    "type": "Danh từ",
+    "ex_cn": "这是一个好机会。",
+    "ex_py": "Zhè shì yí ge hǎo jīhuì.",
+    "ex_vn": "Đây là một cơ hội tốt."
+  },
+  {
+    "hanzi": "国家",
+    "pinyin": "guójiā",
+    "meaning": "quốc gia",
+    "lesson": "18",
+    "type": "Danh từ",
+    "ex_cn": "你是哪个国家的人？",
+    "ex_py": "Nǐ shì nǎge guójiā de rén?",
+    "ex_vn": "Bạn là người nước nào?"
+  },
+  {
+    "hanzi": "种",
+    "pinyin": "zhǒng",
+    "meaning": "loại",
+    "lesson": "18",
+    "type": "Lượng từ",
+    "ex_cn": "我不喜欢这种颜色。",
+    "ex_py": "Wǒ bù xǐhuan zhè zhǒng yánsè.",
+    "ex_vn": "Tôi không thích loại màu này."
+  },
+  {
+    "hanzi": "特点",
+    "pinyin": "tèdiǎn",
+    "meaning": "đặc điểm",
+    "lesson": "18",
+    "type": "Danh từ",
+    "ex_cn": "这个城市有什么特点？",
+    "ex_py": "Zhège chéngshì yǒu shénme tèdiǎn?",
+    "ex_vn": "Thành phố này có đặc điểm gì?"
+  },
+  {
+    "hanzi": "奇怪",
+    "pinyin": "qíguài",
+    "meaning": "kỳ lạ",
+    "lesson": "18",
+    "type": "Tính từ",
+    "ex_cn": "这太奇怪了。",
+    "ex_py": "Zhè tài qíguài le.",
+    "ex_vn": "Chuyện này thật kỳ lạ."
+  },
+  {
+    "hanzi": "地",
+    "pinyin": "de",
+    "meaning": "trợ từ (đặt sau trạng từ)",
+    "lesson": "18",
+    "type": "Trợ từ",
+    "ex_cn": "他高兴地笑了。",
+    "ex_py": "Tā gāoxìng de xiào le.",
+    "ex_vn": "Anh ấy cười một cách vui vẻ."
+  },
+  {
+    "hanzi": "耳朵",
+    "pinyin": "ěrduo",
+    "meaning": "tai",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "小狗的耳朵很大。",
+    "ex_py": "Xiǎo gǒu de ěrduo hěn dà.",
+    "ex_vn": "Tai của chú chó nhỏ rất to."
+  },
+  {
+    "hanzi": "脸",
+    "pinyin": "liǎn",
+    "meaning": "mặt",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "他的脸很圆。",
+    "ex_py": "Tā de liǎn hěn yuán.",
+    "ex_vn": "Mặt của anh ấy rất tròn."
+  },
+  {
+    "hanzi": "短",
+    "pinyin": "duǎn",
+    "meaning": "ngắn",
+    "lesson": "19",
+    "type": "Tính từ",
+    "ex_cn": "这条裤子太短了。",
+    "ex_py": "Zhè tiáo kùzi tài duǎn le.",
+    "ex_vn": "Chiếc quần này ngắn quá."
+  },
+  {
+    "hanzi": "马",
+    "pinyin": "mǎ",
+    "meaning": "ngựa",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "你会骑马吗？",
+    "ex_py": "Nǐ huì qí mǎ ma?",
+    "ex_vn": "Bạn biết cưỡi ngựa không?"
+  },
+  {
+    "hanzi": "张",
+    "pinyin": "zhāng",
+    "meaning": "tờ, tấm (lượng từ)",
+    "lesson": "19",
+    "type": "Lượng từ",
+    "ex_cn": "一张照片。",
+    "ex_py": "Yì zhāng zhàopiàn.",
+    "ex_vn": "Một bức ảnh."
+  },
+  {
+    "hanzi": "位",
+    "pinyin": "wèi",
+    "meaning": "vị (lượng từ kính trọng)",
+    "lesson": "19",
+    "type": "Lượng từ",
+    "ex_cn": "这位是我的老师。",
+    "ex_py": "Zhè wèi shì wǒ de lǎoshī.",
+    "ex_vn": "Vị này là thầy giáo của tôi."
+  },
+  {
+    "hanzi": "蓝",
+    "pinyin": "lán",
+    "meaning": "xanh da trời",
+    "lesson": "19",
+    "type": "Tính từ",
+    "ex_cn": "天空是蓝色的。",
+    "ex_py": "Tiānkōng shì lánsè de.",
+    "ex_vn": "Bầu trời có màu xanh da trời."
+  },
+  {
+    "hanzi": "秋",
+    "pinyin": "qiū",
+    "meaning": "mùa thu",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "秋天很舒服。",
+    "ex_py": "Qiūtiān hěn shūfu.",
+    "ex_vn": "Mùa thu rất dễ chịu."
+  },
+  {
+    "hanzi": "过",
+    "pinyin": "guò",
+    "meaning": "qua, đón (tết, sinh nhật)",
+    "lesson": "19",
+    "type": "Động từ",
+    "ex_cn": "我过生日了。",
+    "ex_py": "Wǒ guò shēngrì le.",
+    "ex_vn": "Tôi đón sinh nhật rồi."
+  },
+  {
+    "hanzi": "鸟",
+    "pinyin": "niǎo",
+    "meaning": "chim",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "树上有小鸟。",
+    "ex_py": "Shù shàng yǒu xiǎo niǎo.",
+    "ex_vn": "Trên cây có chim nhỏ."
+  },
+  {
+    "hanzi": "哭",
+    "pinyin": "kū",
+    "meaning": "khóc",
+    "lesson": "19",
+    "type": "Động từ",
+    "ex_cn": "孩子别哭了。",
+    "ex_py": "Háizi bié kū le.",
+    "ex_vn": "Bé con đừng khóc nữa."
+  },
+  {
+    "hanzi": "黄河",
+    "pinyin": "Huáng Hé",
+    "meaning": "Sông Hoàng Hà",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "黄河是中国的大河。",
+    "ex_py": "Huáng Hé shì Zhōngguó de dà hé.",
+    "ex_vn": "Hoàng Hà là dòng sông lớn của Trung Quốc."
+  },
+  {
+    "hanzi": "船",
+    "pinyin": "chuán",
+    "meaning": "thuyền, tàu",
+    "lesson": "19",
+    "type": "Danh từ",
+    "ex_cn": "坐船去旅游。",
+    "ex_py": "Zuò chuán qù lǚyóu.",
+    "ex_vn": "Đi du lịch bằng thuyền."
+  },
+  {
+    "hanzi": "经过",
+    "pinyin": "jīngguò",
+    "meaning": "trải qua, đi qua",
+    "lesson": "19",
+    "type": "Động từ",
+    "ex_cn": "每天我都经过这里。",
+    "ex_py": "Měitiān wǒ dōu jīngguò zhèlǐ.",
+    "ex_vn": "Ngày nào tôi cũng đi qua đây."
+  },
+  {
+    "hanzi": "照相机",
+    "pinyin": "zhàoxiàngjī",
+    "meaning": "máy ảnh",
+    "lesson": "20",
+    "type": "Danh từ",
+    "ex_cn": "我的照相机坏了。",
+    "ex_py": "Wǒ de zhàoxiàngjī huài le.",
+    "ex_vn": "Máy ảnh của tôi hỏng rồi."
+  },
+  {
+    "hanzi": "被",
+    "pinyin": "bèi",
+    "meaning": "bị, được (cấu trúc bị động)",
+    "lesson": "20",
+    "type": "Giới từ",
+    "ex_cn": "我的手机被他拿走了。",
+    "ex_py": "Wǒ de shǒujī bèi tā názǒu le.",
+    "ex_vn": "Điện thoại của tôi bị anh ấy lấy đi rồi."
+  },
+  {
+    "hanzi": "难过",
+    "pinyin": "nánguò",
+    "meaning": "buồn bã",
+    "lesson": "20",
+    "type": "Tính từ",
+    "ex_cn": "别难过了。",
+    "ex_py": "Bié nánguò le.",
+    "ex_vn": "Đừng buồn nữa."
+  },
+  {
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "meaning": "phía Đông",
+    "lesson": "20",
+    "type": "Danh từ",
+    "ex_cn": "太阳从东边升起。",
+    "ex_py": "Tàiyáng cóng dōngbiān shēngqǐ.",
+    "ex_vn": "Mặt trời mọc ở phía Đông."
+  },
+  {
+    "hanzi": "信用卡",
+    "pinyin": "xìnyòngkǎ",
+    "meaning": "thẻ tín dụng",
+    "lesson": "20",
+    "type": "Danh từ",
+    "ex_cn": "我想办一张信用卡。",
+    "ex_py": "Wǒ xiǎng bàn yì zhāng xìnyòngkǎ.",
+    "ex_vn": "Tôi muốn làm một chiếc thẻ tín dụng."
+  },
+  {
+    "hanzi": "关心",
+    "pinyin": "guānxīn",
+    "meaning": "quan tâm",
+    "lesson": "20",
+    "type": "Động từ",
+    "ex_cn": "谢谢你的关心。",
+    "ex_py": "Xièxie nǐ de guānxīn.",
+    "ex_vn": "Cảm ơn sự quan tâm của bạn."
+  },
+  {
+    "hanzi": "成绩",
+    "pinyin": "chéngjì",
+    "meaning": "thành tích",
+    "lesson": "20",
+    "type": "Danh từ",
+    "ex_cn": "他的考试成绩很好。",
+    "ex_py": "Tā de kǎoshì chéngjì hěn hǎo.",
+    "ex_vn": "Thành tích thi cử của anh ấy rất tốt."
+  },
+  {
+    "hanzi": "碗",
+    "pinyin": "wǎn",
+    "meaning": "bát",
+    "lesson": "20",
+    "type": "Danh từ/Lượng từ",
+    "ex_cn": "一碗米饭。",
+    "ex_py": "Yì wǎn mǐfàn.",
+    "ex_vn": "Một bát cơm."
+  },
+  {
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "meaning": "phút, điểm, phân (tiền)",
+    "lesson": "20",
+    "type": "Lượng từ/Danh từ",
+    "ex_cn": "十分钟。",
+    "ex_py": "Shí fēnzhōng.",
+    "ex_vn": "Mười phút."
+  },
+  {
+    "hanzi": "解决",
+    "pinyin": "jiějué",
+    "meaning": "giải quyết",
+    "lesson": "20",
+    "type": "Động từ",
+    "ex_cn": "这个问题解决了。",
+    "ex_py": "Zhège wèntí jiějué le.",
+    "ex_vn": "Về vấn đề này đã được giải quyết."
+  },
+  {
+    "hanzi": "试",
+    "pinyin": "shì",
+    "meaning": "thử",
+    "lesson": "20",
+    "type": "Động từ",
+    "ex_cn": "我想试一下这件衣服。",
+    "ex_py": "Wǒ xiǎng shì yíxià zhè jiàn yīfu.",
+    "ex_vn": "Tôi muốn thử chiếc áo này một chút."
+  },
+  {
+    "hanzi": "真正",
+    "pinyin": "zhēnzhèng",
+    "meaning": "chân chính, thực sự",
+    "lesson": "20",
+    "type": "Tính từ/Phó từ",
+    "ex_cn": "他是一个真正的朋友。",
+    "ex_py": "Tā shì yí ge zhēnzhèng de péngyou.",
+    "ex_vn": "Anh ấy là một người bạn thực sự."
+  },
+  {
+    "hanzi": "多么",
+    "pinyin": "duōme",
+    "meaning": "biết bao (trong câu cảm thán)",
+    "lesson": "20",
+    "type": "Phó từ",
+    "ex_cn": "这里多么漂亮啊！",
+    "ex_py": "Zhèlǐ duōme piàoliang a!",
+    "ex_vn": "Ở đây đẹp biết bao!"
   }
 ]
