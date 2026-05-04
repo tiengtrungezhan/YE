@@ -922,6 +922,10 @@ def generate_hsk_games(level):
             resultSection.scrollIntoView({{ behavior: 'smooth' }});
         }}
 
+        window.addEventListener('pagehide', () => {{
+            window.speechSynthesis.cancel();
+        }});
+
         initSelector();
         loadDialog(0);
     </script>
