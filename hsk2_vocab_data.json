@@ -175,9 +175,9 @@
     "meaning": "thuốc",
     "lesson": "2",
     "type": "Danh từ",
-    "ex_cn": "吃药。",
-    "ex_py": "Chī yào.",
-    "ex_vn": "Uống thuốc."
+    "ex_cn": "他在吃药。",
+    "ex_py": "Tā zài chī yào.",
+    "ex_vn": "Anh ấy đang uống thuốc."
   },
   {
     "hanzi": "身体",
@@ -215,9 +215,9 @@
     "meaning": "mét",
     "lesson": "2",
     "type": "Danh từ",
-    "ex_cn": "一米。",
-    "ex_py": "Yì mǐ.",
-    "ex_vn": "Một mét."
+    "ex_cn": "这个桌子一米。",
+    "ex_py": "Zhè ge zhuōzi yì mǐ.",
+    "ex_vn": "Cái bàn này dài một mét."
   },
   {
     "hanzi": "知道",
@@ -305,9 +305,9 @@
     "meaning": "một chút, thử",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "看一下。",
-    "ex_py": "Kàn yíxià.",
-    "ex_vn": "Xem một chút."
+    "ex_cn": "请看一下。",
+    "ex_py": "Qǐng kàn yíxià.",
+    "ex_vn": "Xin hãy xem một chút."
   },
   {
     "hanzi": "牛奶",
@@ -315,9 +315,9 @@
     "meaning": "sữa bò",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "喝牛奶。",
-    "ex_py": "Hē niúnǎi.",
-    "ex_vn": "Uống sữa."
+    "ex_cn": "他喝牛奶。",
+    "ex_py": "Tā hē niúnǎi.",
+    "ex_vn": "Anh ấy uống sữa."
   },
   {
     "hanzi": "房间",
@@ -355,9 +355,9 @@
     "meaning": "màu hồng",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "粉色的。",
-    "ex_py": "Fěnsè de.",
-    "ex_vn": "Màu hồng."
+    "ex_cn": "这个是粉色的。",
+    "ex_py": "Zhè ge shì fěnsè de.",
+    "ex_vn": "Cái này là màu hồng."
   },
   {
     "hanzi": "颜色",
@@ -385,9 +385,9 @@
     "meaning": "màu đỏ",
     "lesson": "3",
     "type": "Tính từ",
-    "ex_cn": "红色的。",
-    "ex_py": "Hóngsè de.",
-    "ex_vn": "Màu đỏ."
+    "ex_cn": "这个是红色的。",
+    "ex_py": "Zhè ge shì hóngsè de.",
+    "ex_vn": "Cái này là màu đỏ."
   },
   {
     "hanzi": "生日",
@@ -465,9 +465,9 @@
     "meaning": "bắt đầu",
     "lesson": "4",
     "type": "Động từ",
-    "ex_cn": "开始了。",
-    "ex_py": "Kāishǐ le.",
-    "ex_vn": "Bắt đầu rồi."
+    "ex_cn": "电影开始了。",
+    "ex_py": "Diànyǐng kāishǐ le.",
+    "ex_vn": "Bộ phim bắt đầu rồi."
   },
   {
     "hanzi": "已经",
@@ -485,9 +485,9 @@
     "meaning": "dài",
     "lesson": "4",
     "type": "Tính từ",
-    "ex_cn": "很长。",
-    "ex_py": "Hěn cháng.",
-    "ex_vn": "Rất dài."
+    "ex_cn": "这个路很长。",
+    "ex_py": "Zhè ge lù hěn cháng.",
+    "ex_vn": "Con đường này rất dài."
   },
   {
     "hanzi": "帮",
@@ -545,9 +545,9 @@
     "meaning": "cá",
     "lesson": "5",
     "type": "Danh từ",
-    "ex_cn": "吃鱼。",
-    "ex_py": "Chī yú.",
-    "ex_vn": "Ăn cá."
+    "ex_cn": "他喜欢吃鱼。",
+    "ex_py": "Tā xǐhuan chī yú.",
+    "ex_vn": "Anh ấy thích ăn cá."
   },
   {
     "hanzi": "吧",
@@ -595,9 +595,9 @@
     "meaning": "không tồi, tốt",
     "lesson": "5",
     "type": "Phó từ",
-    "ex_cn": "不错。",
-    "ex_py": "Búcuò.",
-    "ex_vn": "Không tệ."
+    "ex_cn": "这个不错。",
+    "ex_py": "Zhè ge búcuò.",
+    "ex_vn": "Cái này không tệ."
   },
   {
     "hanzi": "考试",
@@ -615,9 +615,9 @@
     "meaning": "cà phê",
     "lesson": "5",
     "type": "Danh từ",
-    "ex_cn": "喝咖啡。",
-    "ex_py": "Hē kāfēi.",
-    "ex_vn": "Uống cà phê."
+    "ex_cn": "她喜欢喝咖啡。",
+    "ex_py": "Tā xǐhuan hē kāfēi.",
+    "ex_vn": "Cô ấy thích uống cà phê."
   },
   {
     "hanzi": "对",
@@ -625,9 +625,9 @@
     "meaning": "đúng, đối với",
     "lesson": "5",
     "type": "Tính từ",
-    "ex_cn": "对了。",
-    "ex_py": "Duì le.",
-    "ex_vn": "Đúng rồi."
+    "ex_cn": "你说对了。",
+    "ex_py": "Nǐ shuō duì le.",
+    "ex_vn": "Bạn nói đúng rồi."
   },
   {
     "hanzi": "以后",
@@ -655,9 +655,9 @@
     "meaning": "ngoài",
     "lesson": "6",
     "type": "Danh từ",
-    "ex_cn": "门外。",
-    "ex_py": "Mén wài.",
-    "ex_vn": "Ngoài cửa."
+    "ex_cn": "他在门外。",
+    "ex_py": "Tā zài mén wài.",
+    "ex_vn": "Anh ấy ở ngoài cửa."
   },
   {
     "hanzi": "自行车",
@@ -695,9 +695,9 @@
     "meaning": "mì sợi",
     "lesson": "6",
     "type": "Danh từ",
-    "ex_cn": "吃面条。",
-    "ex_py": "Chī miàntiáo.",
-    "ex_vn": "Ăn mì."
+    "ex_cn": "我喜欢吃面条。",
+    "ex_py": "Wǒ xǐhuan chī miàntiáo.",
+    "ex_vn": "Tôi thích ăn mì."
   },
   {
     "hanzi": "打篮球",
@@ -755,9 +755,9 @@
     "meaning": "cân, kilogram",
     "lesson": "6",
     "type": "Lượng từ",
-    "ex_cn": "三公斤。",
-    "ex_py": "Sān gōngjīn.",
-    "ex_vn": "Ba cân (kg)."
+    "ex_cn": "这个三公斤。",
+    "ex_py": "Zhè ge sān gōngjīn.",
+    "ex_vn": "Cái này nặng ba cân."
   },
   {
     "hanzi": "教室",
@@ -785,9 +785,9 @@
     "meaning": "đường",
     "lesson": "7",
     "type": "Danh từ",
-    "ex_cn": "路上。",
-    "ex_py": "Lùshang.",
-    "ex_vn": "Trên đường."
+    "ex_cn": "他在路上。",
+    "ex_py": "Tā zài lùshang.",
+    "ex_vn": "Anh ấy ở trên đường."
   },
   {
     "hanzi": "离",
@@ -815,9 +815,9 @@
     "meaning": "xa",
     "lesson": "7",
     "type": "Tính từ",
-    "ex_cn": "不远。",
-    "ex_py": "Bù yuǎn.",
-    "ex_vn": "Không xa."
+    "ex_cn": "学校不远。",
+    "ex_py": "Xuéxiào bù yuǎn.",
+    "ex_vn": "Trường học không xa."
   },
   {
     "hanzi": "公共汽车",
@@ -855,9 +855,9 @@
     "meaning": "nhanh",
     "lesson": "7",
     "type": "Tính từ",
-    "ex_cn": "快点。",
-    "ex_py": "Kuài diǎn.",
-    "ex_vn": "Nhanh một chút."
+    "ex_cn": "你快点。",
+    "ex_py": "Nǐ kuài diǎn.",
+    "ex_vn": "Bạn nhanh lên một chút."
   },
   {
     "hanzi": "过",
@@ -885,9 +885,9 @@
     "meaning": "đến",
     "lesson": "7",
     "type": "Giới từ",
-    "ex_cn": "到了。",
-    "ex_py": "Dào le.",
-    "ex_vn": "Đến rồi."
+    "ex_cn": "我到了。",
+    "ex_py": "Wǒ dào le.",
+    "ex_vn": "Tôi đến rồi."
   },
   {
     "hanzi": "再",
@@ -965,9 +965,9 @@
     "meaning": "trắng",
     "lesson": "8",
     "type": "Tính từ",
-    "ex_cn": "白色的。",
-    "ex_py": "Báisè de.",
-    "ex_vn": "Màu trắng."
+    "ex_cn": "它是白色的。",
+    "ex_py": "Tā shì báisè de.",
+    "ex_vn": "Nó màu trắng."
   },
   {
     "hanzi": "黑",
@@ -975,9 +975,9 @@
     "meaning": "đen",
     "lesson": "8",
     "type": "Tính từ",
-    "ex_cn": "黑色的。",
-    "ex_py": "Hēisè de.",
-    "ex_vn": "Màu đen."
+    "ex_cn": "它是黑色的。",
+    "ex_py": "Tā shì hēisè de.",
+    "ex_vn": "Nó màu đen."
   },
   {
     "hanzi": "贵",
@@ -985,9 +985,9 @@
     "meaning": "đắt",
     "lesson": "8",
     "type": "Tính từ",
-    "ex_cn": "很贵。",
-    "ex_py": "Hěn guì.",
-    "ex_vn": "Rất đắt."
+    "ex_cn": "这个东西很贵。",
+    "ex_py": "Zhè ge dōngxi hěn guì.",
+    "ex_vn": "Món đồ này rất đắt."
   },
   {
     "hanzi": "错",
@@ -995,9 +995,9 @@
     "meaning": "sai",
     "lesson": "9",
     "type": "Tính từ",
-    "ex_cn": "不错。",
-    "ex_py": "Búcuò.",
-    "ex_vn": "Không tệ."
+    "ex_cn": "这个不错。",
+    "ex_py": "Zhè ge búcuò.",
+    "ex_vn": "Cái này không tệ."
   },
   {
     "hanzi": "从",
@@ -1085,9 +1085,9 @@
     "meaning": "xong, hết",
     "lesson": "9",
     "type": "Động từ",
-    "ex_cn": "看完。",
-    "ex_py": "Kàn wán.",
-    "ex_vn": "Xem xong."
+    "ex_cn": "我看完了。",
+    "ex_py": "Wǒ kàn wán le.",
+    "ex_vn": "Tôi xem xong rồi."
   },
   {
     "hanzi": "题",
@@ -1095,9 +1095,9 @@
     "meaning": "câu hỏi, đề bài",
     "lesson": "9",
     "type": "Danh từ",
-    "ex_cn": "做题。",
-    "ex_py": "Zuò tí.",
-    "ex_vn": "Làm bài tập."
+    "ex_cn": "他在做题。",
+    "ex_py": "Tā zài zuò tí.",
+    "ex_vn": "Anh ấy đang làm bài tập."
   },
   {
     "hanzi": "课",
@@ -1105,9 +1105,9 @@
     "meaning": "bài học, môn học",
     "lesson": "10",
     "type": "Động từ",
-    "ex_cn": "上课。",
-    "ex_py": "Shàng kè.",
-    "ex_vn": "Vào học."
+    "ex_cn": "大家上课。",
+    "ex_py": "Dàjiā shàng kè.",
+    "ex_vn": "Mọi người vào học."
   },
   {
     "hanzi": "帮助",
@@ -1125,9 +1125,9 @@
     "meaning": "đừng",
     "lesson": "10",
     "type": "Phó từ",
-    "ex_cn": "别去。",
-    "ex_py": "Bié qù.",
-    "ex_vn": "Đừng đi."
+    "ex_cn": "你别去。",
+    "ex_py": "Nǐ bié qù.",
+    "ex_vn": "Bạn đừng đi."
   },
   {
     "hanzi": "鸡蛋",
@@ -1135,9 +1135,9 @@
     "meaning": "trứng gà",
     "lesson": "10",
     "type": "Danh từ",
-    "ex_cn": "吃鸡蛋。",
-    "ex_py": "Chī jīdàn.",
-    "ex_vn": "Ăn trứng gà."
+    "ex_cn": "我吃鸡蛋。",
+    "ex_py": "Wǒ chī jīdàn.",
+    "ex_vn": "Tôi ăn trứng gà."
   },
   {
     "hanzi": "西瓜",
@@ -1145,9 +1145,9 @@
     "meaning": "dưa hấu",
     "lesson": "10",
     "type": "Danh từ",
-    "ex_cn": "买西瓜。",
-    "ex_py": "Mǎi xīguā.",
-    "ex_vn": "Mua dưa hấu."
+    "ex_cn": "妈妈买西瓜。",
+    "ex_py": "Māma mǎi xīguā.",
+    "ex_vn": "Mẹ mua dưa hấu."
   },
   {
     "hanzi": "正在",
@@ -1305,9 +1305,9 @@
     "meaning": "số không",
     "lesson": "12",
     "type": "Số từ",
-    "ex_cn": "零度。",
-    "ex_py": "Líng dù.",
-    "ex_vn": "Không độ."
+    "ex_cn": "今天零度。",
+    "ex_py": "Jīntiān líng dù.",
+    "ex_vn": "Hôm nay không độ."
   },
   {
     "hanzi": "度",
@@ -1315,9 +1315,9 @@
     "meaning": "độ",
     "lesson": "12",
     "type": "Lượng từ",
-    "ex_cn": "十度。",
-    "ex_py": "Shí dù.",
-    "ex_vn": "Mười độ."
+    "ex_cn": "今天十度。",
+    "ex_py": "Jīntiān shí dù.",
+    "ex_vn": "Hôm nay mười độ."
   },
   {
     "hanzi": "穿",
@@ -1325,9 +1325,9 @@
     "meaning": "mặc",
     "lesson": "12",
     "type": "Động từ",
-    "ex_cn": "穿衣服。",
-    "ex_py": "Chuān yīfu.",
-    "ex_vn": "Mặc quần áo."
+    "ex_cn": "他在穿衣服。",
+    "ex_py": "Tā zài chuān yīfu.",
+    "ex_vn": "Anh ấy đang mặc quần áo."
   },
   {
     "hanzi": "进",
@@ -1355,9 +1355,9 @@
     "meaning": "đang (biểu thị trạng thái duy trì)",
     "lesson": "13",
     "type": "Trợ từ",
-    "ex_cn": "看着。",
-    "ex_py": "Kànzhe.",
-    "ex_vn": "Đang nhìn."
+    "ex_cn": "他看着。",
+    "ex_py": "Tā kànzhe.",
+    "ex_vn": "Anh ấy đang nhìn."
   },
   {
     "hanzi": "手",
@@ -1375,9 +1375,9 @@
     "meaning": "cầm, nắm",
     "lesson": "13",
     "type": "Danh từ",
-    "ex_cn": "拿着。",
-    "ex_py": "Názhe.",
-    "ex_vn": "Đang cầm."
+    "ex_cn": "他拿着。",
+    "ex_py": "Tā názhe.",
+    "ex_vn": "Anh ấy đang cầm."
   },
   {
     "hanzi": "铅笔",
@@ -1405,9 +1405,9 @@
     "meaning": "trưởng, lớn lên",
     "lesson": "13",
     "type": "Tính từ",
-    "ex_cn": "很长。",
-    "ex_py": "Hěn cháng.",
-    "ex_vn": "Rất dài."
+    "ex_cn": "这个路很长。",
+    "ex_py": "Zhè ge lù hěn cháng.",
+    "ex_vn": "Con đường này rất dài."
   },
   {
     "hanzi": "笑",
@@ -1435,9 +1435,9 @@
     "meaning": "luôn luôn, thẳng",
     "lesson": "13",
     "type": "Phó từ",
-    "ex_cn": "一直走。",
-    "ex_py": "Yìzhí zǒu.",
-    "ex_vn": "Đi thẳng suốt."
+    "ex_cn": "你一直走。",
+    "ex_py": "Nǐ yìzhí zǒu.",
+    "ex_vn": "Bạn cứ đi thẳng."
   },
   {
     "hanzi": "往",
@@ -1445,9 +1445,9 @@
     "meaning": "hướng về",
     "lesson": "13",
     "type": "Giới từ",
-    "ex_cn": "往右走。",
-    "ex_py": "Wǎng yòu zǒu.",
-    "ex_vn": "Đi về phía bên phải."
+    "ex_cn": "你往右走。",
+    "ex_py": "Nǐ wǎng yòu zǒu.",
+    "ex_vn": "Bạn đi về phía bên phải."
   },
   {
     "hanzi": "路口",
@@ -1495,9 +1495,9 @@
     "meaning": "lần",
     "lesson": "14",
     "type": "Lượng từ",
-    "ex_cn": "一次。",
-    "ex_py": "Yí cì.",
-    "ex_vn": "Một lần."
+    "ex_cn": "我去过一次。",
+    "ex_py": "Wǒ qù guo yí cì.",
+    "ex_vn": "Tôi đã đi một lần rồi."
   },
   {
     "hanzi": "玩儿",
@@ -1505,9 +1505,9 @@
     "meaning": "chơi",
     "lesson": "14",
     "type": "Động từ",
-    "ex_cn": "去玩儿。",
-    "ex_py": "Qù wánr.",
-    "ex_vn": "Đi chơi."
+    "ex_cn": "我们去玩儿。",
+    "ex_py": "Wǒmen qù wánr.",
+    "ex_vn": "Chúng ta đi chơi đi."
   },
   {
     "hanzi": "晴",
@@ -1555,9 +1555,9 @@
     "meaning": "vé",
     "lesson": "15",
     "type": "Danh từ",
-    "ex_cn": "买票。",
-    "ex_py": "Mǎi piào.",
-    "ex_vn": "Mua vé."
+    "ex_cn": "我去买票。",
+    "ex_py": "Wǒ qù mǎi piào.",
+    "ex_vn": "Tôi đi mua vé."
   },
   {
     "hanzi": "火车站",
@@ -1585,9 +1585,9 @@
     "meaning": "hàng, hơn nữa",
     "lesson": "15",
     "type": "Phó từ",
-    "ex_cn": "更好。",
-    "ex_py": "Gèng hǎo.",
-    "ex_vn": "Tốt hơn."
+    "ex_cn": "这个更好。",
+    "ex_py": "Zhè ge gèng hǎo.",
+    "ex_vn": "Cái này tốt hơn."
   },
   {
     "hanzi": "阴",
@@ -1595,8 +1595,8 @@
     "meaning": "u ám",
     "lesson": "15",
     "type": "Tính từ",
-    "ex_cn": "阴天。",
-    "ex_py": "Yīntiān.",
-    "ex_vn": "Ngày u ám (nhiều mây)."
+    "ex_cn": "今天是阴天。",
+    "ex_py": "Jīntiān shì yīntiān.",
+    "ex_vn": "Hôm nay trời âm u."
   }
 ]

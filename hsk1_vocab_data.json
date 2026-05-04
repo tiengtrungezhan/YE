@@ -4,9 +4,9 @@
     "pinyin": "bù",
     "meaning": "không cần, không, đừng",
     "lesson": "2",
-    "ex_cn": "我不。",
-    "ex_py": "Wǒ bù.",
-    "ex_vn": "Tôi không.",
+    "ex_cn": "我不去。",
+    "ex_py": "Wǒ bú qù.",
+    "ex_vn": "Tôi không đi.",
     "type": "Phó từ"
   },
   {
@@ -72,9 +72,9 @@
     "meaning": "taxi",
     "lesson": "15",
     "type": "Danh từ",
-    "ex_cn": "坐出租车。",
-    "ex_py": "Zuò chūzūchē.",
-    "ex_vn": "Đi taxi."
+    "ex_cn": "我们坐出租车。",
+    "ex_py": "Wǒmen zuò chūzūchē.",
+    "ex_vn": "Chúng tôi đi taxi."
   },
   {
     "hanzi": "菜",
@@ -112,9 +112,9 @@
     "meaning": "tivi",
     "lesson": "13",
     "type": "Danh từ",
-    "ex_cn": "看电视。",
-    "ex_py": "Kàn diànshì.",
-    "ex_vn": "Xem tivi."
+    "ex_cn": "他们在看电视。",
+    "ex_py": "Tāmen zài kàn diànshì.",
+    "ex_vn": "Họ đang xem tivi."
   },
   {
     "hanzi": "电影",
@@ -202,9 +202,9 @@
     "meaning": "đồ, đồ đạc",
     "lesson": "14",
     "type": "Danh từ",
-    "ex_cn": "买东西。",
-    "ex_py": "Mǎi dōngxi.",
-    "ex_vn": "Mua đồ."
+    "ex_cn": "我去买东西。",
+    "ex_py": "Wǒ qù mǎi dōngxi.",
+    "ex_vn": "Tôi đi mua đồ."
   },
   {
     "hanzi": "都",
@@ -232,9 +232,9 @@
     "meaning": "khách sạn, nhà hàng",
     "lesson": "15",
     "type": "Danh từ",
-    "ex_cn": "去饭店吃。",
-    "ex_py": "Qù fàndiàn chī.",
-    "ex_vn": "Đến nhà hàng ăn."
+    "ex_cn": "我们去饭店吃。",
+    "ex_py": "Wǒmen qù fàndiàn chī.",
+    "ex_vn": "Chúng tôi đến nhà hàng ăn."
   },
   {
     "hanzi": "飞机",
@@ -242,9 +242,9 @@
     "meaning": "máy bay",
     "lesson": "15",
     "type": "Danh từ",
-    "ex_cn": "坐飞机。",
-    "ex_py": "Zuò fēijī.",
-    "ex_vn": "Đi máy bay."
+    "ex_cn": "他坐飞机去。",
+    "ex_py": "Tā zuò fēijī qù.",
+    "ex_vn": "Anh ấy đi bằng máy bay."
   },
   {
     "hanzi": "分钟",
@@ -252,9 +252,9 @@
     "meaning": "phút",
     "lesson": "14",
     "type": "Danh từ",
-    "ex_cn": "十分钟。",
-    "ex_py": "Shí fēnzhōng.",
-    "ex_vn": "Mười phút."
+    "ex_cn": "还有十分钟。",
+    "ex_py": "Hái yǒu shí fēnzhōng.",
+    "ex_vn": "Vẫn còn mười phút."
   },
   {
     "hanzi": "个",
@@ -272,9 +272,9 @@
     "meaning": "vui, phấn khởi",
     "lesson": "15",
     "type": "Danh từ",
-    "ex_cn": "很高兴。",
-    "ex_py": "Hěn gāoxìng.",
-    "ex_vn": "Rất vui."
+    "ex_cn": "我很高兴。",
+    "ex_py": "Wǒ hěn gāoxìng.",
+    "ex_vn": "Tôi rất vui."
   },
   {
     "hanzi": "工作",
@@ -332,9 +332,9 @@
     "meaning": "ngày",
     "lesson": "7",
     "type": "Danh từ",
-    "ex_cn": "三月十号。",
-    "ex_py": "Sānyuè shí hào.",
-    "ex_vn": "Ngày mùng mười tháng Ba."
+    "ex_cn": "今天是三月十号。",
+    "ex_py": "Jīntiān shì Sānyuè shí hào.",
+    "ex_vn": "Hôm nay là ngày mười tháng Ba."
   },
   {
     "hanzi": "和",
@@ -459,9 +459,9 @@
     "meaning": "lái",
     "lesson": "14",
     "type": "Danh từ",
-    "ex_cn": "开出租车。",
-    "ex_py": "Kāi chūzūchē.",
-    "ex_vn": "Lái xe taxi."
+    "ex_cn": "他开出租车。",
+    "ex_py": "Tā kāi chūzūchē.",
+    "ex_vn": "Anh ấy lái xe taxi."
   },
   {
     "hanzi": "了",
@@ -706,9 +706,9 @@
     "meaning": "táo",
     "lesson": "14",
     "type": "Danh từ",
-    "ex_cn": "一个苹果。",
-    "ex_py": "Yí ge píngguǒ.",
-    "ex_vn": "Một quả táo."
+    "ex_cn": "我有一个苹果。",
+    "ex_py": "Wǒ yǒu yí ge píngguǒ.",
+    "ex_vn": "Tôi có một quả táo."
   },
   {
     "hanzi": "钱",
@@ -793,9 +793,9 @@
     "meaning": "trái cây",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "吃水果。",
-    "ex_py": "Chī shuǐguǒ.",
-    "ex_vn": "Ăn hoa quả."
+    "ex_cn": "我喜欢吃水果。",
+    "ex_py": "Wǒ xǐhuan chī shuǐguǒ.",
+    "ex_vn": "Tôi thích ăn hoa quả."
   },
   {
     "hanzi": "说",
@@ -823,9 +823,9 @@
     "meaning": "nước",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "喝水。",
-    "ex_py": "Hē shuǐ.",
-    "ex_vn": "Uống nước."
+    "ex_cn": "他在喝水。",
+    "ex_py": "Tā zài hē shuǐ.",
+    "ex_vn": "Anh ấy đang uống nước."
   },
   {
     "hanzi": "上",
@@ -927,9 +927,9 @@
     "meaning": "ba",
     "lesson": "11",
     "type": "Số từ",
-    "ex_cn": "一，二，三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
+    "ex_cn": "我数一，二，三。",
+    "ex_py": "Wǒ shǔ yī, èr, sān.",
+    "ex_vn": "Tôi đếm một, hai, ba."
   },
   {
     "hanzi": "天气",
@@ -1007,9 +1007,9 @@
     "meaning": "nghe",
     "lesson": "15",
     "type": "Động từ",
-    "ex_cn": "听老师说。",
-    "ex_py": "Tīng lǎoshī shuō.",
-    "ex_vn": "Nghe thầy giáo nói."
+    "ex_cn": "大家听老师说。",
+    "ex_py": "Dàjiā tīng lǎoshī shuō.",
+    "ex_vn": "Mọi người nghe thầy giáo nói."
   },
   {
     "hanzi": "喂",
@@ -1114,9 +1114,9 @@
     "meaning": "một ít, một vài",
     "lesson": "12",
     "type": "Số từ",
-    "ex_cn": "这些。",
-    "ex_py": "Zhèxiē.",
-    "ex_vn": "Những cái này."
+    "ex_cn": "这些是我的。",
+    "ex_py": "Zhèxiē shì wǒ de.",
+    "ex_vn": "Những cái này là của tôi."
   },
   {
     "hanzi": "写",
@@ -1204,9 +1204,9 @@
     "meaning": "tháng",
     "lesson": "7",
     "type": "Danh từ",
-    "ex_cn": "三月。",
-    "ex_py": "Sānyuè.",
-    "ex_vn": "Tháng Ba."
+    "ex_cn": "现在是三月。",
+    "ex_py": "Xiànzài shì Sānyuè.",
+    "ex_vn": "Bây giờ là tháng Ba."
   },
   {
     "hanzi": "一点儿",
@@ -1214,9 +1214,9 @@
     "meaning": "một ít, một chút",
     "lesson": "14",
     "type": "Tính từ",
-    "ex_cn": "喝一点儿水。",
-    "ex_py": "Hē yìdiǎnr shuǐ.",
-    "ex_vn": "Uống một chút nước."
+    "ex_cn": "请喝一点儿水。",
+    "ex_py": "Qǐng hē yìdiǎnr shuǐ.",
+    "ex_vn": "Xin hãy uống một chút nước."
   },
   {
     "hanzi": "一",
@@ -1224,9 +1224,9 @@
     "meaning": "số 1",
     "lesson": "5",
     "type": "Số từ",
-    "ex_cn": "一，二，三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
+    "ex_cn": "我数一，二，三。",
+    "ex_py": "Wǒ shǔ yī, èr, sān.",
+    "ex_vn": "Tôi đếm một, hai, ba."
   },
   {
     "hanzi": "衣服",
@@ -1234,9 +1234,9 @@
     "meaning": "quần áo",
     "lesson": "14",
     "type": "Danh từ",
-    "ex_cn": "买衣服。",
-    "ex_py": "Mǎi yīfu.",
-    "ex_vn": "Mua quần áo."
+    "ex_cn": "她去买衣服。",
+    "ex_py": "Tā qù mǎi yīfu.",
+    "ex_vn": "Cô ấy đi mua quần áo."
   },
   {
     "hanzi": "医生",
@@ -1334,9 +1334,9 @@
     "meaning": "ngồi",
     "lesson": "15",
     "type": "Động từ",
-    "ex_cn": "坐下。",
-    "ex_py": "Zuò xià.",
-    "ex_vn": "Ngồi xuống."
+    "ex_cn": "请坐下。",
+    "ex_py": "Qǐng zuò xià.",
+    "ex_vn": "Xin mời ngồi xuống."
   },
   {
     "hanzi": "做",
@@ -1424,9 +1424,9 @@
     "meaning": "số 2",
     "lesson": "5",
     "type": "Số từ",
-    "ex_cn": "一，二，三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
+    "ex_cn": "我数一，二，三。",
+    "ex_py": "Wǒ shǔ yī, èr, sān.",
+    "ex_vn": "Tôi đếm một, hai, ba."
   },
   {
     "hanzi": "叫",
@@ -1544,9 +1544,9 @@
     "meaning": "vui vẻ",
     "lesson": "3",
     "type": "Tính từ",
-    "ex_cn": "很高兴。",
-    "ex_py": "Hěn gāoxìng.",
-    "ex_vn": "Rất vui."
+    "ex_cn": "我很高兴。",
+    "ex_py": "Wǒ hěn gāoxìng.",
+    "ex_vn": "Tôi rất vui."
   },
   {
     "hanzi": "很",
@@ -1764,9 +1764,9 @@
     "meaning": "một",
     "lesson": "2",
     "type": "Số từ",
-    "ex_cn": "一，二，三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
+    "ex_cn": "我数一，二，三。",
+    "ex_py": "Wǒ shǔ yī, èr, sān.",
+    "ex_vn": "Tôi đếm một, hai, ba."
   },
   {
     "hanzi": "二",
@@ -1774,9 +1774,9 @@
     "meaning": "hai",
     "lesson": "2",
     "type": "Số từ",
-    "ex_cn": "一，二，三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
+    "ex_cn": "我数一，二，三。",
+    "ex_py": "Wǒ shǔ yī, èr, sān.",
+    "ex_vn": "Tôi đếm một, hai, ba."
   },
   {
     "hanzi": "三",
@@ -1784,9 +1784,9 @@
     "meaning": "ba",
     "lesson": "2",
     "type": "Số từ",
-    "ex_cn": "一，二，三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
+    "ex_cn": "我数一，二，三。",
+    "ex_py": "Wǒ shǔ yī, èr, sān.",
+    "ex_vn": "Tôi đếm một, hai, ba."
   },
   {
     "hanzi": "四",
