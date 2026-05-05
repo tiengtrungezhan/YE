@@ -318,6 +318,7 @@ def generate_hsk_games(level):
     </div>
     <script>
         const vocabulary = {vocab_json};
+        const allHanzi = {all_hanzi_json};
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
 
         function initGame() {{ 
@@ -329,7 +330,7 @@ def generate_hsk_games(level):
         function splitIntoPhrases(sentence, targetWord) {{
             // Improved splitting: use lesson vocabulary as anchors for "meaningful" chunks
             let cleanSentence = sentence.replace(/[，。？！、\s]/g, '');
-            let lessonWords = vocabulary.map(v => v.hanzi).sort((a, b) => b.length - a.length);
+            let lessonWords = allHanzi.sort((a, b) => b.length - a.length);
             
             let phrases = [];
             let remaining = cleanSentence;
@@ -1033,6 +1034,13 @@ def generate_hsk_games(level):
         with open(dialog_file, 'r', encoding='utf-8') as df:
             dialog_data = json.load(df)
 
+    # Load all hanzi for anchor splitting
+    try:
+        with open('all_hanzi.json', 'r', encoding='utf-8') as f:
+            all_hanzi_json = f.read()
+    except:
+        all_hanzi_json = "[]"
+
     # Generate files
     for lesson_id, vocab_list in lessons.items():
         vocab_json = json.dumps(vocab_list, ensure_ascii=False)
@@ -1046,7 +1054,7 @@ def generate_hsk_games(level):
         # Master Page
         cumulative_chars = get_cumulative_chars(level, int(lesson_id))
         with open(f'game-hsk{level}-l{lesson_id}-master.html', 'w', encoding='utf-8') as f:
-            f.write(MASTER_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, vocab_json=vocab_json, cumulative_chars=cumulative_chars))
+            f.write(MASTER_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, vocab_json=vocab_json, cumulative_chars=cumulative_chars, all_hanzi_json=all_hanzi_json))
 
         # Match Page (HSK 1, 2, and 3)
         if level <= 3:
