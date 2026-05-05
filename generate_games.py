@@ -411,9 +411,9 @@ def generate_hsk_games(level):
             else if (q.type === 10) {{
                 html = `<div class="question-text">Sắp xếp câu chính xác:</div><div class="sub-text">Nghĩa: ${{q.word.ex_vn}}</div><div id="drop-zone" class="phrase-box"></div><div id="drag-zone" class="phrase-box" style="border: none; background: transparent;">${{q.phrases.map(p => `<div class="phrase-item" onclick="movePhrase(this, '${{q.correctSentence}}')">${{p}}</div>`).join('')}}</div>`;
             }} else if (q.type === 11) {{
-                html = `<div class="question-text">Dịch câu sau sang tiếng Trung:</div><div class="sub-text" style="font-size: 1.4rem; color: var(--primary-dark);">${{q.word.ex_vn}}</div><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập câu tiếng Trung..."><button class="submit-btn" onclick="checkTyping('${{q.word.ex_cn.replace(/[，。？！、\s]/g, '')}}')">Gửi đáp án</button>`;
+                html = `<div class="question-text">Dịch câu sau sang tiếng Trung:</div><div class="sub-text" style="font-size: 1.4rem; color: var(--primary-dark);">${{q.word.ex_vn}}</div><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập câu tiếng Trung..."><button class="submit-btn" onclick="checkTyping('${{q.word.ex_cn.replace(/[，。？！\s]/g, '')}}')">Gửi đáp án</button>`;
             }} else if (q.type === 12) {{
-                html = `<div class="question-text">Điền từ vào ô trống:</div><div class="blank-text">${{q.displaySentence.replace("______", "<span class=\"blank-fill\" id=\"blank-target\">?</span>")}}</div><div class="sub-text">Nghĩa: ${{q.word.ex_vn}}</div><div class="options-grid">${{q.options.map(opt => `<button class="option-btn" onclick="checkBlank('${{opt.hanzi}}', '${{q.word.hanzi}}', this)">${{opt.hanzi}}</button>`).join('')}}</div>`;
+                html = `<div class="question-text">Điền từ vào ô trống:</div><div class="blank-text">${{q.displaySentence.replace("______", "<span class='blank-fill' id='blank-target'>?</span>")}}</div><div class="sub-text">Nghĩa: ${{q.word.ex_vn}}</div><div class="options-grid">${{q.options.map(opt => `<button class="option-btn" onclick="checkBlank('${{opt.hanzi}}', '${{q.word.hanzi}}', this)">${{opt.hanzi}}</button>`).join('')}}</div>`;
             }}
 
             card.innerHTML = html;
