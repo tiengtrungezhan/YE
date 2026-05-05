@@ -1015,7 +1015,7 @@ def generate_hsk_games(level):
     for lesson_id, vocab_list in lessons.items():
         vocab_json = json.dumps(vocab_list, ensure_ascii=False)
         
-        level_label = f"{level} 3.0" if level == 1 else str(level)
+        level_label = f"{level} 3.0" if level in [1, 2] else str(level)
         
         # Flip Page
         with open(f'game-hsk{level}-l{lesson_id}-flip.html', 'w', encoding='utf-8') as f:
