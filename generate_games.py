@@ -44,7 +44,7 @@ def generate_hsk_games(level):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lật Thẻ Thông Minh - HSK {level} Bài {lesson_id}</title>
+    <title>Lật Thẻ Thông Minh - HSK {level_label} Bài {lesson_id}</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {{ background: #f0f9ff; }}
@@ -263,7 +263,7 @@ def generate_hsk_games(level):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trùm Từ Vựng - HSK {level} Bài {lesson_id}</title>
+    <title>Trùm Từ Vựng - HSK {level_label} Bài {lesson_id}</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {{ background: #fdf2f8; }}
@@ -506,7 +506,7 @@ def generate_hsk_games(level):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Truy Tìm Cặp Đôi - HSK {level} Bài {lesson_id}</title>
+    <title>Truy Tìm Cặp Đôi - HSK {level_label} Bài {lesson_id}</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {{ background: #fdf2f8; }}
@@ -779,7 +779,7 @@ def generate_hsk_games(level):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siêu Trí Nhớ - HSK {level} Bài {lesson_id}</title>
+    <title>Siêu Trí Nhớ - HSK {level_label} Bài {lesson_id}</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {{ background: #fdf2f8; }}
@@ -827,7 +827,7 @@ def generate_hsk_games(level):
         <a href="game-hsk{level}.html" class="back-btn">← Quay lại</a>
         <header class="game-header">
             <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Siêu Trí Nhớ 🧠</h1>
-            <p>HSK {level} Bài {lesson_id}: Nghe và kể lại bài khóa</p>
+            <p>HSK {level_label} Bài {lesson_id}: Nghe và kể lại bài khóa</p>
         </header>
 
         <div class="memory-container">
@@ -1015,19 +1015,21 @@ def generate_hsk_games(level):
     for lesson_id, vocab_list in lessons.items():
         vocab_json = json.dumps(vocab_list, ensure_ascii=False)
         
+        level_label = f"{level} 3.0" if level == 1 else str(level)
+        
         # Flip Page
         with open(f'game-hsk{level}-l{lesson_id}-flip.html', 'w', encoding='utf-8') as f:
-            f.write(FLIP_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json))
+            f.write(FLIP_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, vocab_json=vocab_json))
         
         # Master Page
         cumulative_chars = get_cumulative_chars(level, int(lesson_id))
         with open(f'game-hsk{level}-l{lesson_id}-master.html', 'w', encoding='utf-8') as f:
-            f.write(MASTER_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json, cumulative_chars=cumulative_chars))
+            f.write(MASTER_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, vocab_json=vocab_json, cumulative_chars=cumulative_chars))
 
         # Match Page (HSK 1, 2, and 3)
         if level <= 3:
             with open(f'game-hsk{level}-l{lesson_id}-match.html', 'w', encoding='utf-8') as f:
-                f.write(MATCH_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json))
+                f.write(MATCH_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, vocab_json=vocab_json))
 
         # Memory Page
         if dialog_data:
@@ -1035,7 +1037,7 @@ def generate_hsk_games(level):
             if lesson_dialogs:
                 dialog_json = json.dumps(lesson_dialogs, ensure_ascii=False)
                 with open(f'game-hsk{level}-l{lesson_id}-memory.html', 'w', encoding='utf-8') as f:
-                    f.write(MEMORY_TEMPLATE.format(level=level, lesson_id=lesson_id, dialog_json=dialog_json))
+                    f.write(MEMORY_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, dialog_json=dialog_json))
 
     print(f"Successfully generated HSK{level} game pages for {len(lessons)} lessons.")
 
