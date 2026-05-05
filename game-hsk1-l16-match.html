@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy Tìm Cặp Đôi - HSK 1 Bài 16</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #fdf2f8; }
+        .game-container { max-width: 800px; margin: 0 auto; padding: 2rem; text-align: center; }
+        .memory-grid { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 1rem; 
+            margin-top: 2rem; 
+        }
+        .memory-card {
+            aspect-ratio: 1/1;
+            background-color: var(--white);
+            cursor: pointer;
+            position: relative;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-weight: bold;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--primary-light);
+            transition: transform 0.2s, background-color 0.2s, opacity 0.6s, border-color 0.2s;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .memory-card:hover:not(.matched):not(.selected) {
+            border-color: var(--primary-color);
+            background-color: #f0f9ff;
+            transform: translateY(-2px);
+        }
+        .memory-card.hanzi {
+            font-size: 2rem;
+            color: var(--primary-dark);
+        }
+        .memory-card.selected {
+            background-color: var(--primary-light);
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        .memory-card.matched {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .stats {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+            display: flex;
+            justify-content: space-around;
+        }
+        .result-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.9);
+            z-index: 100;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .result-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .btn-restart {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+            .memory-grid { grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+            .memory-card { font-size: 0.9rem; }
+            .memory-card.hanzi { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    <div class="page-container">
+        <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
+        <div class="game-container">
+            <h1 style="color: var(--primary-dark); margin-bottom: 1rem;">Truy Tìm Cặp Đôi: Bài 16</h1>
+            <div class="stats">
+                <div>Lượt: <span id="moves">0</span></div>
+                <div>Thời gian: <span id="timer">0</span>s</div>
+                <div>Cặp: <span id="matches">0/8</span></div>
+            </div>
+            <div class="memory-grid" id="gameGrid"></div>
+        </div>
+    </div>
+
+    <div id="resultOverlay" class="result-overlay">
+        <div class="result-content" id="resultContent">
+            <!-- Content will be injected by JS -->
+        </div>
+    </div>
+
+    <script>
+        const allVocabulary = [{"hanzi": "白天", "pinyin": "báitiān", "meaning": "ban ngày", "type": "Danh từ", "ex_cn": "白天我去学校。", "ex_py": "Báitiān wǒ qù xuéxiào.", "ex_vn": "Ban ngày tôi đến trường.", "lesson": "16"}, {"hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "chào bạn", "type": "Cụm từ", "ex_cn": "你好！很高兴认识你。", "ex_py": "Nǐ hǎo! Hěn gāoxìng rènshi nǐ.", "ex_vn": "Chào bạn! Rất vui được quen biết bạn.", "lesson": "16"}, {"hanzi": "不要", "pinyin": "búyào", "meaning": "đừng, không muốn", "type": "Phó từ", "ex_cn": "不要去那里。", "ex_py": "Búyào qù nàr.", "ex_vn": "Đừng đi đến đó.", "lesson": "16"}, {"hanzi": "事", "pinyin": "shì", "meaning": "việc, chuyện", "type": "Danh từ", "ex_cn": "你有什么事？", "ex_py": "Nǐ yǒu shénme shì?", "ex_vn": "Bạn có việc gì không?", "lesson": "16"}, {"hanzi": "们", "pinyin": "men", "meaning": "các (số nhiều)", "type": "Trợ từ", "ex_cn": "我们都是学生。", "ex_py": "Wǒmen dōu shì xuésheng.", "ex_vn": "Chúng tôi đều là học sinh.", "lesson": "16"}, {"hanzi": "国", "pinyin": "guó", "meaning": "nước, quốc gia", "type": "Danh từ", "ex_cn": "你是哪国人？", "ex_py": "Nǐ shì nǎ guó rén?", "ex_vn": "Bạn là người nước nào?", "lesson": "16"}, {"hanzi": "它们", "pinyin": "tāmen", "meaning": "chúng nó (vật)", "type": "Đại từ", "ex_cn": "它们在那儿。", "ex_py": "Tāmen zài nàr.", "ex_vn": "Chúng nó ở đằng kia.", "lesson": "16"}, {"hanzi": "中文", "pinyin": "Zhōngwén", "meaning": "tiếng Trung", "type": "Danh từ", "ex_cn": "我会说中文。", "ex_py": "Wǒ huì shuō Zhōngwén.", "ex_vn": "Tôi biết nói tiếng Trung.", "lesson": "16"}, {"hanzi": "家人", "pinyin": "jiārén", "meaning": "người nhà", "type": "Danh từ", "ex_cn": "我的家人都在越南。", "ex_py": "Wǒ de jiārén dōu zài Yuènán.", "ex_vn": "Người nhà của tôi đều ở Việt Nam.", "lesson": "16"}, {"hanzi": "哪个", "pinyin": "nǎ ge", "meaning": "cái nào", "type": "Đại từ", "ex_cn": "你要哪个？", "ex_py": "Nǐ yào nǎ ge?", "ex_vn": "Bạn muốn cái nào?", "lesson": "16"}, {"hanzi": "哪些", "pinyin": "nǎxiē", "meaning": "những cái nào", "type": "Đại từ", "ex_cn": "哪些是你的？", "ex_py": "Nǎxiē shì nǐ de?", "ex_vn": "Những cái nào là của bạn?", "lesson": "16"}, {"hanzi": "女士", "pinyin": "nǚshì", "meaning": "nữ sĩ, quý bà", "type": "Danh từ", "ex_cn": "王女士在哪儿？", "ex_py": "Wáng nǚshì zài nǎr?", "ex_vn": "Bà Vương ở đâu?", "lesson": "16"}, {"hanzi": "一半", "pinyin": "yíbàn", "meaning": "một nửa", "type": "Số từ", "ex_cn": "我吃了一半。", "ex_py": "Wǒ chī le yíbàn.", "ex_vn": "Tôi đã ăn một nửa.", "lesson": "16"}, {"hanzi": "一些", "pinyin": "yìxiē", "meaning": "một số, một vài", "type": "Số từ", "ex_cn": "买一些水果。", "ex_py": "Mǎi yìxiē shuǐguǒ.", "ex_vn": "Mua một ít hoa quả.", "lesson": "16"}, {"hanzi": "唱", "pinyin": "chàng", "meaning": "hát", "type": "Động từ", "ex_cn": "她喜欢唱歌。", "ex_py": "Tā xǐhuan chànggē.", "ex_vn": "Cô ấy thích hát.", "lesson": "16"}, {"hanzi": "歌", "pinyin": "gē", "meaning": "bài hát", "type": "Danh từ", "ex_cn": "这首歌很好听。", "ex_py": "Zhè shǒu gē hěn hǎotīng.", "ex_vn": "Bài hát này rất hay.", "lesson": "16"}, {"hanzi": "读书", "pinyin": "dúshū", "meaning": "đọc sách, đi học", "type": "Động từ", "ex_cn": "他在读书。", "ex_py": "Tā zài dúshū.", "ex_vn": "Anh ấy đang đọc sách.", "lesson": "16"}, {"hanzi": "听见", "pinyin": "tīngjiàn", "meaning": "nghe thấy", "type": "Động từ", "ex_cn": "我听见了。", "ex_py": "Wǒ tīngjiàn le.", "ex_vn": "Tôi nghe thấy rồi.", "lesson": "16"}, {"hanzi": "第", "pinyin": "dì", "meaning": "thứ (thứ tự)", "type": "Trợ từ", "ex_cn": "这是第一。", "ex_py": "Zhè shì dì yī.", "ex_vn": "Đây là thứ nhất.", "lesson": "16"}, {"hanzi": "电影院", "pinyin": "diànyǐngyuàn", "meaning": "rạp chiếu phim", "type": "Danh từ", "ex_cn": "我们在电影院看电影。", "ex_py": "Wǒmen zài diànyǐngyuàn kàn diànyǐng.", "ex_vn": "Chúng tôi xem phim ở rạp.", "lesson": "16"}, {"hanzi": "书店", "pinyin": "shūdiàn", "meaning": "hiệu sách", "type": "Danh từ", "ex_cn": "我去书店买书。", "ex_py": "Wǒ qù shūdiàn mǎi shū.", "ex_vn": "Tôi đi hiệu sách mua sách.", "lesson": "16"}, {"hanzi": "天", "pinyin": "tiān", "meaning": "ngày, trời", "type": "Danh từ", "ex_cn": "那儿的天很好。", "ex_py": "Nàr de tiān hěn hǎo.", "ex_vn": "Trời ở đó rất đẹp.", "lesson": "16"}, {"hanzi": "超市", "pinyin": "chāoshì", "meaning": "siêu thị", "type": "Danh từ", "ex_cn": "我去超市买东西。", "ex_py": "Wǒ qù chāoshì mǎi dōngxi.", "ex_vn": "Tôi đi siêu thị mua đồ.", "lesson": "16"}, {"hanzi": "包子", "pinyin": "bāozi", "meaning": "bánh bao", "type": "Danh từ", "ex_cn": "我喜欢吃包子。", "ex_py": "Wǒ xǐhuan chī bāozi.", "ex_vn": "Tôi thích ăn bánh bao.", "lesson": "16"}, {"hanzi": "饺子", "pinyin": "jiǎozi", "meaning": "sủi cảo", "type": "Danh từ", "ex_cn": "中国饺子很好吃。", "ex_py": "Zhōngguó jiǎozi hěn hǎochī.", "ex_vn": "Sủi cảo Trung Quốc rất ngon.", "lesson": "16"}, {"hanzi": "面包", "pinyin": "miànbāo", "meaning": "bánh mì", "type": "Danh từ", "ex_cn": "早上吃面包。", "ex_py": "Zǎoshang chī miànbāo.", "ex_vn": "Buổi sáng ăn bánh mì.", "lesson": "16"}, {"hanzi": "饭", "pinyin": "fàn", "meaning": "cơm, bữa ăn", "type": "Danh từ", "ex_cn": "我们在家吃饭。", "ex_py": "Wǒmen zài jiā chī fàn.", "ex_vn": "Chúng tôi ăn cơm ở nhà.", "lesson": "16"}, {"hanzi": "那个", "pinyin": "nà ge", "meaning": "cái kia", "type": "Đại từ", "ex_cn": "那个杯子是我的。", "ex_py": "Nà ge bēizi shì wǒ de.", "ex_vn": "Cái cốc kia là của tôi.", "lesson": "16"}, {"hanzi": "那些", "pinyin": "nàxiē", "meaning": "những cái kia", "type": "Đại từ", "ex_cn": "那些衣服在那儿。", "ex_py": "Nàxiē yīfu zài nàr.", "ex_vn": "Những bộ quần áo kia ở đằng kia.", "lesson": "16"}, {"hanzi": "这个", "pinyin": "zhè ge", "meaning": "cái này", "type": "Đại từ", "ex_cn": "这个东西多少钱？", "ex_py": "Zhè ge dōngxi duōshǎo qián?", "ex_vn": "Cái này bao nhiêu tiền?", "lesson": "16"}, {"hanzi": "元", "pinyin": "yuán", "meaning": "đồng (đơn vị tiền)", "type": "Lượng từ", "ex_cn": "这个十元。", "ex_py": "Zhège shí yuán.", "ex_vn": "Cái này mười tệ.", "lesson": "16"}, {"hanzi": "哪里", "pinyin": "nǎli", "meaning": "đâu, đâu có (khiêm tốn)", "type": "Đại từ", "ex_cn": "哪里哪里，你太客气了。", "ex_py": "Nǎli nǎli, nǐ tài kèqi le.", "ex_vn": "Đâu có đâu có, bạn khách sáo quá.", "lesson": "16"}, {"hanzi": "小朋友", "pinyin": "xiǎopéngyou", "meaning": "bạn nhỏ", "type": "Danh từ", "ex_cn": "小朋友们好！", "ex_py": "Xiǎopéngyoumen hǎo!", "ex_vn": "Chào các bạn nhỏ!", "lesson": "16"}, {"hanzi": "小学", "pinyin": "xiǎoxué", "meaning": "trường tiểu học", "type": "Danh từ", "ex_cn": "他在小学读书。", "ex_py": "Tā zài xiǎoxué dúshū.", "ex_vn": "Nó đang học ở trường tiểu học.", "lesson": "16"}, {"hanzi": "小学生", "pinyin": "xiǎoxuéshēng", "meaning": "học sinh tiểu học", "type": "Danh từ", "ex_cn": "我是小学生。", "ex_py": "Wǒ shì xiǎoxuéshēng.", "ex_vn": "Em là học sinh tiểu học.", "lesson": "16"}, {"hanzi": "中学", "pinyin": "zhōngxué", "meaning": "trường trung học", "type": "Danh từ", "ex_cn": "我们学校是中学。", "ex_py": "Wǒmen xuéxiào shì zhōngxué.", "ex_vn": "Trường chúng tôi là trường trung học.", "lesson": "16"}, {"hanzi": "中学生", "pinyin": "zhōngxuésheng", "meaning": "học sinh trung học", "type": "Danh từ", "ex_cn": "中学生都爱看书。", "ex_py": "Zhōngxuésheng dōu ài kàn shū.", "ex_vn": "Học sinh trung học đều thích đọc sách.", "lesson": "16"}, {"hanzi": "大学", "pinyin": "dàxué", "meaning": "trường đại học", "type": "Danh từ", "ex_cn": "她在河内大学。", "ex_py": "Tā zài Hénèi dàxué.", "ex_vn": "Cô ấy học ở trường Đại học Hà Nội.", "lesson": "16"}, {"hanzi": "前", "pinyin": "qián", "meaning": "trước, phía trước", "type": "Danh từ", "ex_cn": "他在我前边。", "ex_py": "Tā zài wǒ qiánbiān.", "ex_vn": "Anh ấy ở phía trước tôi.", "lesson": "16"}, {"hanzi": "后", "pinyin": "hòu", "meaning": "sau, phía sau", "type": "Danh từ", "ex_cn": "学校后边有一家饭店。", "ex_py": "Xuéxiào hòubiān yǒu yì jiā fàndiàn.", "ex_vn": "Phía sau trường học có một nhà hàng.", "lesson": "16"}, {"hanzi": "边", "pinyin": "biān", "meaning": "phía, bên", "type": "Danh từ", "ex_cn": "哪边是东？", "ex_py": "Nǎbiān shì dōng?", "ex_vn": "Phía nào là phía đông?", "lesson": "16"}, {"hanzi": "那边", "pinyin": "nàbiān", "meaning": "phía bên kia", "type": "Danh từ", "ex_cn": "他在那边。", "ex_py": "Tā zài nàbiān.", "ex_vn": "Anh ấy ở phía bên kia.", "lesson": "16"}, {"hanzi": "那里", "pinyin": "nàli", "meaning": "chỗ kia, đằng kia", "type": "Đại từ", "ex_cn": "他在那里买书。", "ex_py": "Tā zài nàli mǎi shū.", "ex_vn": "Anh ấy mua sách ở đằng kia.", "lesson": "16"}, {"hanzi": "这边", "pinyin": "zhèbiān", "meaning": "phía bên này", "type": "Danh từ", "ex_cn": "请走这边。", "ex_py": "Qǐng zǒu zhèbiān.", "ex_vn": "Xin mời đi bên này.", "lesson": "16"}, {"hanzi": "这里", "pinyin": "zhèlǐ", "meaning": "ở đây, chỗ này", "type": "Đại từ", "ex_cn": "这里很好。", "ex_py": "Zhèlǐ hěn hǎo.", "ex_vn": "Ở đây rất tốt.", "lesson": "16"}, {"hanzi": "外边", "pinyin": "wàibian", "meaning": "bên ngoài", "type": "Danh từ", "ex_cn": "外边在下雨。", "ex_py": "Wàibian zài xià yǔ.", "ex_vn": "Bên ngoài trời đang mưa.", "lesson": "16"}, {"hanzi": "分", "pinyin": "fēn", "meaning": "phút", "type": "Lượng từ", "ex_cn": "现在五点十分。", "ex_py": "Xiànzài wǔ diǎn shí fēn.", "ex_vn": "Bây giờ là 5 giờ 10 phút.", "lesson": "16"}, {"hanzi": "早", "pinyin": "zǎo", "meaning": "sớm, buổi sáng", "type": "Tính từ", "ex_cn": "你来得真早。", "ex_py": "Nǐ láide zhēn zǎo.", "ex_vn": "Bạn đến thật sớm.", "lesson": "16"}, {"hanzi": "早饭", "pinyin": "zǎofàn", "meaning": "bữa sáng", "type": "Danh từ", "ex_cn": "你吃早饭了吗？", "ex_py": "Nǐ chī zǎofàn le ma?", "ex_vn": "Bạn đã ăn sáng chưa?", "lesson": "16"}, {"hanzi": "午饭", "pinyin": "wǔfàn", "meaning": "bữa trưa", "type": "Danh từ", "ex_cn": "我想回家吃午饭。", "ex_py": "Wǒ xiǎng huíjiā chī wǔfàn.", "ex_vn": "Tôi muốn về nhà ăn trưa.", "lesson": "16"}, {"hanzi": "晚", "pinyin": "wǎn", "meaning": "muộn, buổi tối", "type": "Tính từ", "ex_cn": "现在不晚。", "ex_py": "Xiànzài bù wǎn.", "ex_vn": "Bây giờ không muộn.", "lesson": "16"}, {"hanzi": "晚饭", "pinyin": "wǎnfàn", "meaning": "bữa tối", "type": "Danh từ", "ex_cn": "晚饭很好吃。", "ex_py": "Wǎnfàn hěn hǎochī.", "ex_vn": "Bữa tối rất ngon.", "lesson": "16"}, {"hanzi": "星期日", "pinyin": "xīngqīrì", "meaning": "Chủ nhật", "type": "Danh từ", "ex_cn": "星期日我不工作。", "ex_py": "Xīngqīrì wǒ bù gōngzuò.", "ex_vn": "Chủ nhật tôi không làm việc.", "lesson": "16"}, {"hanzi": "星期天", "pinyin": "xīngqītiān", "meaning": "Chủ nhật", "type": "Danh từ", "ex_cn": "星期天去超市。", "ex_py": "Xīngqītiān qù chāoshì.", "ex_vn": "Chủ nhật đi siêu thị.", "lesson": "16"}, {"hanzi": "好看", "pinyin": "hǎokàn", "meaning": "đẹp (nhìn)", "type": "Tính từ", "ex_cn": "那本书很好看。", "ex_py": "Nà běn shū hěn hǎokàn.", "ex_vn": "Cuốn sách đó rất hay.", "lesson": "16"}, {"hanzi": "好听", "pinyin": "hǎotīng", "meaning": "hay (nghe)", "type": "Tính từ", "ex_cn": "这首歌很好听。", "ex_py": "Zhè shǒu gē hěn hǎotīng.", "ex_vn": "Bài hát này rất hay.", "lesson": "16"}, {"hanzi": "好玩儿", "pinyin": "hǎowánr", "meaning": "vui, hay (chơi)", "type": "Tính từ", "ex_cn": "这里很好玩儿。", "ex_py": "Zhèlǐ hěn hǎowánr.", "ex_vn": "Chỗ này rất vui.", "lesson": "16"}, {"hanzi": "雨", "pinyin": "yǔ", "meaning": "mưa", "type": "Danh từ", "ex_cn": "外边在下雨。", "ex_py": "Wàibian zài xià yǔ.", "ex_vn": "Bên ngoài đang mưa.", "lesson": "16"}, {"hanzi": "电话", "pinyin": "diànhuà", "meaning": "điện thoại", "type": "Danh từ", "ex_cn": "那是我的电话。", "ex_py": "Nà shì wǒ de diànhuà.", "ex_vn": "Đó là điện thoại của tôi.", "lesson": "16"}, {"hanzi": "睡", "pinyin": "shuì", "meaning": "ngủ", "type": "Động từ", "ex_cn": "我要去睡觉了。", "ex_py": "Wǒ yào qù shuìjiào le.", "ex_vn": "Tôi đi ngủ đây.", "lesson": "16"}, {"hanzi": "做饭", "pinyin": "zuò fàn", "meaning": "nấu cơm", "type": "Động từ", "ex_cn": "妈妈在做饭。", "ex_py": "Māma zài zuò fàn.", "ex_vn": "Mẹ đang nấu cơm.", "lesson": "16"}, {"hanzi": "见", "pinyin": "jiàn", "meaning": "gặp", "type": "Động từ", "ex_cn": "明天见。", "ex_py": "Míngtiān jiàn.", "ex_vn": "Hẹn gặp lại vào ngày mai.", "lesson": "16"}, {"hanzi": "有的", "pinyin": "yǒude", "meaning": "có cái, có người", "type": "Đại từ", "ex_cn": "有的人喜欢喝茶。", "ex_py": "Yǒude rén xǐhuan hē chá.", "ex_vn": "Có người thích uống trà.", "lesson": "16"}, {"hanzi": "有些", "pinyin": "yǒuxiē", "meaning": "có một số", "type": "Số từ", "ex_cn": "有些东西在那儿。", "ex_py": "Yǒuxiē dōngxi zài nàr.", "ex_vn": "Có một số đồ ở đằng kia.", "lesson": "16"}, {"hanzi": "有点儿", "pinyin": "yǒudiǎnr", "meaning": "có chút", "type": "Phó từ", "ex_cn": "这件衣服有点儿大。", "ex_py": "Zhè jiàn yīfu yǒudiǎnr dà.", "ex_vn": "Chiếc áo này hơi rộng một chút.", "lesson": "16"}, {"hanzi": "病", "pinyin": "bìng", "meaning": "bệnh, ốm", "type": "Danh từ/Động từ", "ex_cn": "他生病了。", "ex_py": "Tā shēngbìng le.", "ex_vn": "Anh ấy bị ốm rồi.", "lesson": "16"}, {"hanzi": "车", "pinyin": "chē", "meaning": "xe", "type": "Danh từ", "ex_cn": "那是他的车。", "ex_py": "Nà shì tā de chē.", "ex_vn": "Đó là xe của anh ấy.", "lesson": "16"}, {"hanzi": "火车", "pinyin": "huǒchē", "meaning": "tàu hỏa", "type": "Danh từ", "ex_cn": "坐火车去上海。", "ex_py": "坐火车去上海。", "ex_vn": "Đi tàu hỏa đến Thượng Hải.", "lesson": "16"}, {"hanzi": "开车", "pinyin": "kāi chē", "meaning": "lái xe", "type": "Động từ", "ex_cn": "你会开车吗？", "ex_py": "Nǐ huì kāi chē ma?", "ex_vn": "Bạn biết lái xe không?", "lesson": "16"}, {"hanzi": "看病", "pinyin": "kànbìng", "meaning": "khám bệnh", "type": "Động từ", "ex_cn": "他去医院看病了。", "ex_py": "Tā qù yīyuàn kànbìng le.", "ex_vn": "Anh ấy đi bệnh viện khám bệnh rồi.", "lesson": "16"}, {"hanzi": "上課", "pinyin": "shàngkè", "meaning": "lên lớp", "type": "Động từ", "ex_cn": "我们八点上课。", "ex_py": "Wǒmen bā diǎn shàngkè.", "ex_vn": "Chúng tôi lên lớp lúc 8 giờ.", "lesson": "16"}, {"hanzi": "上学", "pinyin": "shàngxué", "meaning": "đi học", "type": "Động từ", "ex_cn": "他每天都上学。", "ex_py": "Tā měitiān dōu shàngxué.", "ex_vn": "Nó đi học mỗi ngày.", "lesson": "16"}, {"hanzi": "下班", "pinyin": "xiàbān", "meaning": "tan làm", "type": "Động từ", "ex_cn": "我五点下班。", "ex_py": "Wǒ wǔ diǎn xiàbān.", "ex_vn": "Tôi tan làm lúc 5 giờ.", "lesson": "16"}, {"hanzi": "下课", "pinyin": "xiàkè", "meaning": "tan học", "type": "Động từ", "ex_cn": "下课后去吃饭。", "ex_py": "Xiàkè hòu qù chī fàn.", "ex_vn": "Sau khi tan học thì đi ăn.", "lesson": "16"}];
+        let remainingWords = [...allVocabulary];
+        let currentRoundWords = [];
+        let cardsData = [];
+        let selectedCards = [];
+        let matchedPairs = 0;
+        let moves = 0;
+        let canSelect = true;
+        let timer = 0;
+        let timerInterval = null;
+        let gameStarted = false;
+
+        function initGame(isNewGame = true) {
+            if (isNewGame) {
+                remainingWords = [...allVocabulary].sort(() => Math.random() - 0.5);
+                moves = 0;
+                timer = 0;
+                gameStarted = false;
+                clearInterval(timerInterval);
+                document.getElementById('timer').innerText = '0';
+                document.getElementById('moves').innerText = '0';
+            }
+
+            const gameGrid = document.getElementById('gameGrid');
+            gameGrid.innerHTML = '';
+            cardsData = [];
+            
+            // Take up to 8 words for this round
+            currentRoundWords = remainingWords.splice(0, 8);
+
+            currentRoundWords.forEach((item, index) => {
+                cardsData.push({ id: index, content: item.hanzi, type: 'hanzi' });
+                cardsData.push({ id: index, content: item.meaning, type: 'meaning' });
+            });
+
+            cardsData.sort(() => Math.random() - 0.5);
+
+            cardsData.forEach((data) => {
+                const card = document.createElement('div');
+                card.className = `memory-card ${data.type}`;
+                card.innerText = data.content;
+                card.dataset.id = data.id;
+                
+                card.addEventListener('click', () => selectCard(card));
+                gameGrid.appendChild(card);
+            });
+
+            matchedPairs = 0;
+            selectedCards = [];
+            canSelect = true;
+            updateStats();
+        }
+
+        function startTimer() {
+            if (gameStarted) return;
+            gameStarted = true;
+            timerInterval = setInterval(() => {
+                timer++;
+                document.getElementById('timer').innerText = timer;
+            }, 1000);
+        }
+
+        function selectCard(card) {
+            if (!canSelect || card.classList.contains('selected') || card.classList.contains('matched')) return;
+
+            startTimer();
+            card.classList.add('selected');
+            selectedCards.push(card);
+
+            if (selectedCards.length === 2) {
+                moves++;
+                checkMatch();
+            }
+        }
+
+        function checkMatch() {
+            canSelect = false;
+            const [card1, card2] = selectedCards;
+            const isMatch = card1.dataset.id === card2.dataset.id;
+
+            if (isMatch) {
+                setTimeout(() => {
+                    card1.classList.add('matched');
+                    card2.classList.add('matched');
+                    matchedPairs++;
+                    updateStats();
+                    selectedCards = [];
+                    canSelect = true;
+                    
+                    if (matchedPairs === currentRoundWords.length) {
+                        if (remainingWords.length > 0) {
+                            showNextRoundPrompt();
+                        } else {
+                            clearInterval(timerInterval);
+                            showFinalResult();
+                        }
+                    }
+                }, 400);
+            } else {
+                setTimeout(() => {
+                    card1.classList.remove('selected');
+                    card2.classList.remove('selected');
+                    selectedCards = [];
+                    canSelect = true;
+                }, 600);
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('moves').innerText = moves;
+            document.getElementById('matches').innerText = `${matchedPairs}/${currentRoundWords.length}`;
+            document.getElementById('timer').innerText = timer;
+        }
+
+        function showNextRoundPrompt() {
+            const content = document.getElementById('resultContent');
+            content.innerHTML = `
+                <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1rem;">Xong hiệp này!</h2>
+                <p style="font-size: 1.1rem;">Còn ${remainingWords.length} từ vựng nữa.</p>
+                <button class="btn-restart" onclick="nextRound()">Tiếp tục hiệp kế</button>
+            `;
+            document.getElementById('resultOverlay').style.display = 'flex';
+        }
+
+        function showFinalResult() {
+            const content = document.getElementById('resultContent');
+            content.innerHTML = `
+                <h2 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 1rem;">Hoàn thành!</h2>
+                <p style="font-size: 1.2rem;">Bạn đã học hết từ vựng của bài này.</p>
+                <div style="margin: 1.5rem 0; font-weight: bold; font-size: 1.1rem;">
+                    Tổng thời gian: ${timer} giây<br>
+                    Tổng số lượt: ${moves}
+                </div>
+                <button class="btn-restart" onclick="resetGame()">Chơi Lại Từ Đầu</button>
+            `;
+            document.getElementById('resultOverlay').style.display = 'flex';
+        }
+
+        function nextRound() {
+            document.getElementById('resultOverlay').style.display = 'none';
+            initGame(false);
+        }
+
+        function resetGame() {
+            document.getElementById('resultOverlay').style.display = 'none';
+            initGame(true);
+        }
+
+        initGame();
+    </script>
+</body>
+</html>
