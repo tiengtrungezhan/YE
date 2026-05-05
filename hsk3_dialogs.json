@@ -1,0 +1,1610 @@
+[
+  {
+    "lesson": 1,
+    "dialogs": [
+      {
+        "location": "Nói về kế hoạch cuối tuần",
+        "content": "小刚早就想好了周末的打算。他打算请小丽吃饭、看电影、喝咖啡。小丽还没想好要不要跟他去。",
+        "lines": [
+          {
+            "hanzi": "小刚早就想好了周末的打算。",
+            "pinyin": "Xiǎogāng zǎojiù xiǎnghǎo le zhōumò de dǎsuàn."
+          },
+          {
+            "hanzi": "他打算请小丽吃饭、看电影、喝咖啡。",
+            "pinyin": "Tā dǎsuàn qǐng Xiǎolì chīfàn, kàn diànyǐng, hē kāfēi."
+          },
+          {
+            "hanzi": "小丽还没想好要不要跟他去。",
+            "pinyin": "Xiǎolì hái méi xiǎnghǎo yào bú yào gēn tā qù."
+          }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "儿子一直玩电脑游戏，不写作业。妈妈有点儿着急，因为明天有考试。儿子说他早就复习好了。",
+        "lines": [
+          {
+            "hanzi": "儿子一直玩电脑游戏，不写作业。",
+            "pinyin": "Érzi yìzhí wán diànnǎo yóuxì, bù xiě zuòyè."
+          },
+          {
+            "hanzi": "妈妈有点儿着急，因为明天有考试。",
+            "pinyin": "Māma yǒudiǎnr zháojí, yīnwèi míngtiān yǒu kǎoshì."
+          },
+          {
+            "hanzi": "儿子说他早就复习好了。",
+            "pinyin": "Érzi shuō tā zǎojiù fùxí hǎo le."
+          }
+        ]
+      },
+      {
+        "location": "Nói về kế hoạch đi du lịch",
+        "content": "小丽下个月要去旅游。小刚觉得北方天气不冷也不热，去那里旅游最好玩儿。",
+        "lines": [
+          {
+            "hanzi": "小丽下个月要去旅游。",
+            "pinyin": "Xiǎolì xià ge yuè yào qù lǚyóu."
+          },
+          {
+            "hanzi": "小刚觉得北方天气不冷也不热，去那里旅游最好玩儿。",
+            "pinyin": "Xiǎogāng juéde běifāng tiānqì bù lěng yě bú rè, qù nàr lǚyóu zuì hǎowánr."
+          }
+        ]
+      },
+      {
+        "location": "Chuẩn bị đi du lịch",
+        "content": "他们准备好了水果、面包和茶。小丽还想多带几件衣服。小刚觉得带的东西太多了。",
+        "lines": [
+          {
+            "hanzi": "他们准备好了水果、面包和茶。",
+            "pinyin": "Tāmen zhǔnbèihǎo le shuǐguǒ, miànbāo hé chá."
+          },
+          {
+            "hanzi": "小丽还想多带几件衣服。",
+            "pinyin": "Xiǎolì hái xiǎng duō dài jǐ jiàn yīfu."
+          },
+          {
+            "hanzi": "小刚觉得带的东西太多了。",
+            "pinyin": "Xiǎogāng juéde dài de dōngxi tài duō le."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "dialogs": [
+      {
+        "location": "Trên đường xuống núi",
+        "content": "小丽累了，想坐下休息。小刚说前面的树很多，可以去那里坐坐。小刚觉得上山容易下山难。",
+        "lines": [
+          {
+            "hanzi": "小丽累了，想坐下休息。",
+            "pinyin": "Xiǎolì lèi le, xiǎng zuòxià xiūxi."
+          },
+          {
+            "hanzi": "小刚说前面的树很多，可以去那里坐坐。",
+            "pinyin": "Xiǎogāng shuō qiánmiàn de shù hěn duō, kěyǐ qù nàr zuòzuò."
+          },
+          {
+            "hanzi": "小刚觉得上山容易下山难。",
+            "pinyin": "Xiǎogāng juéde shàngshān róngyì xiàshān nán."
+          }
+        ]
+      },
+      {
+        "location": "Đang gọi điện thoại",
+        "content": "周太太给周经理打电话。秘书说周经理出去了，下午才回来。周太太让经理回来后给她回个电话。",
+        "lines": [
+          {
+            "hanzi": "周太太给周经理打电话。",
+            "pinyin": "Zhōu tàitai gěi Zhōu jīnglǐ dǎ diànhuà."
+          },
+          {
+            "hanzi": "秘书说周经理出去了，下午才回来。",
+            "pinyin": "Mìshū shuō Zhōu jīnglǐ chūqù le, xiàwǔ cái huílái."
+          },
+          {
+            "hanzi": "周太太让经理回来后给她回个电话。",
+            "pinyin": "Zhōu tàitai ràng jīnglǐ huílái hòu gěi tā huí ge diànhuà."
+          }
+        ]
+      },
+      {
+        "location": "Tiễn bạn ở trước cửa tòa nhà",
+        "content": "外面下大雨了。小刚想上楼给小丽拿把伞。小丽说不用了，她叫辆出租车就行了。",
+        "lines": [
+          {
+            "hanzi": "外面下大雨了。",
+            "pinyin": "Wàimiàn xià dàyǔ le."
+          },
+          {
+            "hanzi": "小刚想上楼给小丽拿把伞。",
+            "pinyin": "Xiǎogāng xiǎng shànglóu gěi Xiǎolì ná bǎ sǎn."
+          },
+          {
+            "hanzi": "小丽说不用了，她叫辆出租车就行了。",
+            "pinyin": "Xiǎolì shuō búyòng le, tā jiào liàng chūzūchē jiù xíng le."
+          }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "周太太觉得自己很胖。周明说她每天吃完饭就睡觉，也不出去走走，所以胖了。其实周太太每天都运动。",
+        "lines": [
+          {
+            "hanzi": "周太太觉得自己很胖。",
+            "pinyin": "Zhōu tàitai juéde zìjǐ hěn pàng."
+          },
+          {
+            "hanzi": "周明说她每天吃完饭就睡觉，也不出去走走，所以胖了。",
+            "pinyin": "Zhōumíng shuō tā měitiān chīwán fàn jiù shuìjiào, yě bù chūqù zǒuzǒu, suǒyǐ pàng le."
+          },
+          {
+            "hanzi": "其实周太太每天都运动。",
+            "pinyin": "Qíshí Zhōu tàitai měitiān dōu yùndòng."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 3,
+    "dialogs": [
+      {
+        "location": "Ở nhà chị Lệ",
+        "content": "小刚明天要去爬山。小丽说明天是阴天，电视上说会有云。她不去了，她还有别的事。",
+        "lines": [
+          {
+            "hanzi": "小刚明天要去爬山。",
+            "pinyin": "Xiǎogāng míngtiān yào qù páshān."
+          },
+          {
+            "hanzi": "小丽说明天是阴天，电视上说会有云。",
+            "pinyin": "Xiǎolì shuō míngtiān shì yīntiān, diànshì shàng shuō huì yǒu yún."
+          },
+          {
+            "hanzi": "她不去了，她还有别的事。",
+            "pinyin": "Tā bú qù le, tā hái yǒu bié de shì."
+          }
+        ]
+      },
+      {
+        "location": "Ở cửa hàng bách hóa",
+        "content": "周太太想给周明买条裤子。周明记得已经有两条了。后来周太太又看到一件不错的衬衫。",
+        "lines": [
+          {
+            "hanzi": "周太太想给周明买条裤子。",
+            "pinyin": "Zhōu tàitai xiǎng gěi Zhōumíng mǎi tiáo kùzi."
+          },
+          {
+            "hanzi": "周明记得已经有两条了。",
+            "pinyin": "Zhōumíng jìde yǐjīng yǒu liǎng tiáo le."
+          },
+          {
+            "hanzi": "后来周太太又看到一件不错的衬衫。",
+            "pinyin": "Hòulái Zhōu tàitai yòu kàndào yí jiàn búcuò de chènshān."
+          }
+        ]
+      },
+      {
+        "location": "Ở cửa hàng trái cây",
+        "content": "周太太觉得水果很新鲜。周明想买西瓜或者苹果。周太太说西瓜不甜不要钱。",
+        "lines": [
+          {
+            "hanzi": "周太太觉得水果很新鲜。",
+            "pinyin": "Zhōu tàitai juéde shuǐguǒ hěn xīnxiān."
+          },
+          {
+            "hanzi": "周明想买西瓜或者苹果。",
+            "pinyin": "Zhōumíng xiǎng mǎi xīguā huòzhě píngguǒ."
+          },
+          {
+            "hanzi": "周太太说西瓜不甜不要钱。",
+            "pinyin": "Zhōu tàitai shuō xīguā bù tián búyào qián."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "桌子上放着很多饮料。小丽喜欢喝茶，她觉得冷了或者累了的时候，喝杯热茶会很舒服。",
+        "lines": [
+          {
+            "hanzi": "桌子上放着很多饮料。",
+            "pinyin": "Zhuōzi shàng fàngzhe hěn duō yǐnliào."
+          },
+          {
+            "hanzi": "小丽喜欢喝茶。",
+            "pinyin": "Xiǎolì xǐhuan hē chá."
+          },
+          {
+            "hanzi": "她觉得冷了或者累了的时候，喝杯热茶会很舒服。",
+            "pinyin": "Tā juéde lěng le huòzhě lèi le de shíhou, hē bēi rè chá huì hěn shūfu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "照片里的人是马可和小明。那个又高又漂亮的女孩是三年级的学生。小明不认识她。",
+        "lines": [
+          {
+            "hanzi": "照片里的人是马可和小明。",
+            "pinyin": "Zhàopiàn lǐ de rén shì Mǎkě hé Xiǎomíng."
+          },
+          {
+            "hanzi": "那个又高又漂亮的女孩是三年级的学生。",
+            "pinyin": "Nàge yòu gāo yòu piàoliang de nǚháir shì sān niánjí de xuésheng."
+          },
+          {
+            "hanzi": "小明不认识她。",
+            "pinyin": "Xiǎomíng bù rènshi tā."
+          }
+        ]
+      },
+      {
+        "location": "Trong lớp học",
+        "content": "小丽觉得小红又聪明又热情。小红总是笑着回答老师的问题。大家都非常喜欢她。",
+        "lines": [
+          {
+            "hanzi": "小丽觉得小红又聪明又热情。",
+            "pinyin": "Xiǎolì juéde Xiǎohóng yòu cōngming yòu rèqíng."
+          },
+          {
+            "hanzi": "小红总是笑着回答老师的问题。",
+            "pinyin": "Xiǎohóng zǒngshì xiàozhe huídá lǎoshī de wèntí."
+          },
+          {
+            "hanzi": "大家都非常喜欢她。",
+            "pinyin": "Dàjiā dōu fēicháng xǐhuan tā."
+          }
+        ]
+      },
+      {
+        "location": "Ở trước cửa siêu thị",
+        "content": "小刚有点儿饿了，他们进超市买点儿东西。那里的蛋糕又便宜又好吃。他们还想买点儿喝的。",
+        "lines": [
+          {
+            "hanzi": "小刚有点儿饿了，他们进超市买点儿东西。",
+            "pinyin": "Xiǎogāng yǒudiǎnr è le, tāmen jìn chāoshì mǎi diǎnr dōngxi."
+          },
+          {
+            "hanzi": "那里的蛋糕又便宜又好吃。",
+            "pinyin": "Nàlǐ de dàngāo yòu piányi yòu hǎochī."
+          },
+          {
+            "hanzi": "他们还想买点儿喝的。",
+            "pinyin": "Tāmen hái xiǎng mǎi diǎnr hē de."
+          }
+        ]
+      },
+      {
+        "location": "Ở quán ăn",
+        "content": "经理觉得那里的服务员又年轻又漂亮。她们工作很认真。那个正在跟客人说话的女孩叫李小美。",
+        "lines": [
+          {
+            "hanzi": "经理觉得那里的服务员又年轻又漂亮。",
+            "pinyin": "Jīnglǐ juéde nàlǐ de fúwùyuán yòu niánqīng yòu piàoliang."
+          },
+          {
+            "hanzi": "她们工作很认真。",
+            "pinyin": "Tāmen gōngzuò hěn rènzhēn."
+          },
+          {
+            "hanzi": "那个正在跟客人说话的女孩叫李小美。",
+            "pinyin": "Nàge zhèngzài gēn kèrén shuōhuà de nǚháir jiào Lǐ Xiǎoměi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "dialogs": [
+      {
+        "location": "Tại nhà chị Lệ",
+        "content": "小丽前几天有点儿发烧，现在好多了。朋友为她买了一些绿茶。小丽要吃药，不能喝茶。",
+        "lines": [
+          {
+            "hanzi": "小丽前几天有点儿发烧，现在好多了。",
+            "pinyin": "Xiǎolì qián jǐ tiān yǒudiǎnr fāshāo, xiànzài hǎo duō le."
+          },
+          {
+            "hanzi": "朋友为她买了一些绿茶。",
+            "pinyin": "Péngyou wèi tā mǎi le yìxiē lǜchá."
+          },
+          {
+            "hanzi": "小丽要吃药，不能喝茶。",
+            "pinyin": "Xiǎolì yào chī yào, bù néng hē chá."
+          }
+        ]
+      },
+      {
+        "location": "Nói chuyện qua điện thoại",
+        "content": "周太太明天不能出去玩儿，因为她儿子生病了。她要在家里照顾儿子。张太太祝她儿子早点儿好。",
+        "lines": [
+          {
+            "hanzi": "周太太明天不能出去玩儿，因为她儿子生病了。",
+            "pinyin": "Zhōu tàitai míngtiān bù néng chūqù wánr, yīnwèi tā érzi shēngbìng le."
+          },
+          {
+            "hanzi": "她要在家里照顾儿子。",
+            "pinyin": "Tā yào zài jiālǐ zhàogù érzi."
+          },
+          {
+            "hanzi": "张太太祝她儿子早点儿好。",
+            "pinyin": "Zhāng tàitai zhù tā érzi zǎodiǎnr hǎo."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà anh Cương",
+        "content": "小刚最喜欢春天。春天天气不那么冷，草和树都绿了，花也开了。小丽最喜欢夏天，因为可以穿漂亮的裙子。",
+        "lines": [
+          {
+            "hanzi": "小刚最喜欢春天。",
+            "pinyin": "Xiǎogāng zuì xǐhuan chūntiān."
+          },
+          {
+            "hanzi": "春天天气不那么冷，草和树都绿了，花也开了。",
+            "pinyin": "Chūntiān tiānqì bù nàme lěng, cǎo hé shù dōu lǜ le, huā yě kāi le."
+          },
+          {
+            "hanzi": "小丽最喜欢夏天，因为可以穿漂亮的裙子。",
+            "pinyin": "Xiǎolì zuì xǐhuan xiàtiān, yīnwèi kěyǐ chuān piàoliang de qúnzi."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà anh Cương",
+        "content": "小丽最近越来越胖了。她觉得小刚做的饭越来越好吃，所以她吃得太多了。小刚让她少吃点儿。",
+        "lines": [
+          {
+            "hanzi": "小丽最近越来越胖了。",
+            "pinyin": "Xiǎolì zuìjìn yuèláiyuè pàng le."
+          },
+          {
+            "hanzi": "她觉得小刚做的饭越来越好吃，所以她吃得太多了。",
+            "pinyin": "Tā juéde Xiǎogāng zuò de fàn yuèláiyuè hǎochī, suǒyǐ tā chī de tài duō le."
+          },
+          {
+            "hanzi": "小刚让她少吃点儿。",
+            "pinyin": "Xiǎogāng ràng tā shǎo chī diǎnr."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 6,
+    "dialogs": [
+      {
+        "location": "Trong phòng khách",
+        "content": "周明的眼镜找不到了。周太太没看见。周明离了眼镜，一个字也看不清楚。周太太让他去房间找找，刚才她好像把眼镜放在桌子上了。",
+        "lines": [
+          {
+            "hanzi": "周明的眼镜找不到了。",
+            "pinyin": "Zhōumíng de yǎnjìng zhǎobùdào le."
+          },
+          {
+            "hanzi": "周太太没看见。",
+            "pinyin": "Zhōu tàitai méi kànjiàn."
+          },
+          {
+            "hanzi": "周明离了眼镜，一个字也看不清楚。",
+            "pinyin": "Zhōumíng líle yǎnjìng, yí ge zì yě kànbùqīngchu."
+          },
+          {
+            "hanzi": "周太太让他去房间找找，刚才她好像把眼镜放在桌子上了。",
+            "pinyin": "Zhōu tàitai ràng tā qù fángjiān zhǎozhao, gāngcái tā hǎoxiàng bǎ yǎnjìng fàng zài zhuōzi shàng le."
+          }
+        ]
+      },
+      {
+        "location": "Nói chuyện qua điện thoại",
+        "content": "儿子的作业做完了。他觉得今天的题特别难，他看不懂，也不会做。他请同学来家里给他讲讲。",
+        "lines": [
+          {
+            "hanzi": "儿子的作业做完了。",
+            "pinyin": "Érzi de zuòyè zuòwán le."
+          },
+          {
+            "hanzi": "他觉得今天的题特别难，他看不懂，也不会做。",
+            "pinyin": "Tā juéde jīntiān de tí tèbié nán, tā kànbùdǒng, yě búhuì zuò."
+          },
+          {
+            "hanzi": "他请同学来家里给他讲讲。",
+            "pinyin": "Tā qǐng tóngxué lái jiālǐ gěi tā jiǎngjiang."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "小刚想请小丽吃饭，但是找不到好饭馆。同事建议去听音乐会，因为小丽喜欢听音乐。小刚觉得音乐会人太多，买不到票。",
+        "lines": [
+          {
+            "hanzi": "小刚想请小丽吃饭，但是找不到好饭馆。",
+            "pinyin": "Xiǎogāng xiǎng qǐng Xiǎolì chīfàn, dànshì zhǎobùdào hǎo fànguǎnr."
+          },
+          {
+            "hanzi": "同事建议去听音乐会，因为小丽喜欢听音乐。",
+            "pinyin": "Tóngshì jiànyì qù tīng yīnyuèhuì, yīnwèi Xiǎolì xǐhuan tīng yīnyuè."
+          },
+          {
+            "hanzi": "小刚觉得音乐会人太多，买不到票。",
+            "pinyin": "Xiǎogāng juéde yīnyuèhuì rén tài duō, mǎibúdào piào."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng khách",
+        "content": "周明在喝咖啡。周太太让他喝杯牛奶，这样可以睡得更好。周明说还没买牛奶呢。",
+        "lines": [
+          {
+            "hanzi": "周明 in drinking coffee.",
+            "pinyin": "Zhōumíng zài hē kāfēi."
+          },
+          {
+            "hanzi": "周太太让他喝杯牛奶，这样可以睡得更好。",
+            "pinyin": "Zhōu tàitai ràng tā hē bēi niúnǎi, zhèyàng kěyǐ shuì de gèng hǎo."
+          },
+          {
+            "hanzi": "周明说还没买牛奶呢。",
+            "pinyin": "Zhōumíng shuō hái méi mǎi niúnǎi ne."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "dialogs": [
+      {
+        "location": "Trong văn phòng",
+        "content": "那个漂亮的新同事是小丽。她在北京工作了三年。以前她在银行工作了两年以后才来这家公司的。",
+        "lines": [
+          {
+            "hanzi": "那个漂亮的新同事是小丽。",
+            "pinyin": "Nàge piàoliang de xīn tóngshì shì Xiǎolì."
+          },
+          {
+            "hanzi": "她在北京工作了三年。",
+            "pinyin": "Tā zài Běijīng gōngzuò le sān nián."
+          },
+          {
+            "hanzi": "以前她在银行工作了两年以后才来这家公司的。",
+            "pinyin": "Yǐqián tā zài yínháng gōngzuò le liǎng nián yǐhòu cái lái zhè jiā gōngsī de."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "周末小刚跟小丽去唱歌了。他们唱了两个小时，晚上还去听音乐会了。他们都对音乐感兴趣。",
+        "lines": [
+          {
+            "hanzi": "周末小刚跟小丽去唱歌了。",
+            "pinyin": "Zhōumò Xiǎogāng gēn Xiǎolì qù chànggē le."
+          },
+          {
+            "hanzi": "他们唱了两个小时，晚上还去听音乐会了。",
+            "pinyin": "Tāmen chàng le liǎng ge xiǎoshí, wǎnshang hái qù tīng yīnyuèhuì le."
+          },
+          {
+            "hanzi": "他们都对音乐感兴趣。",
+            "pinyin": "Tāmen dōu duì yīnyuè gǎn xìngqù."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "小刚跟小丽下个月结婚。同事觉得很突然，因为他以为他们刚认识。其实他们已经认识五年了。",
+        "lines": [
+          {
+            "hanzi": "小刚跟小丽下个月结婚。",
+            "pinyin": "Xiǎogāng gēn Xiǎolì xià ge yuè jiéhūn."
+          },
+          {
+            "hanzi": "同事觉得很突然，因为他以为他们刚认识。",
+            "pinyin": "Tóngshì juéde hěn tūrán, yīnwèi tā yǐwéi tāmen gāng rènshi."
+          },
+          {
+            "hanzi": "其实他们已经认识五年了。",
+            "pinyin": "Qíshí tāmen yǐjīng rènshi wǔ nián le."
+          }
+        ]
+      },
+      {
+        "location": "Ở trước cửa công ty",
+        "content": "小丽迟到了一刻钟。其实她不是迟到了，而是小刚的表快了一刻钟。小刚都在这儿坐了半个小时了。",
+        "lines": [
+          {
+            "hanzi": "小丽迟到了一刻钟。",
+            "pinyin": "Xiǎolì chídào le yí kèzhōng."
+          },
+          {
+            "hanzi": "其实她不是迟到了，而是小刚的表快了一刻钟。",
+            "pinyin": "Qíshí tā búshì chídào le, érshì Xiǎogāng de biǎo kuài le yí kèzhōng."
+          },
+          {
+            "hanzi": "小刚都在这儿坐了半个小时了。",
+            "pinyin": "Xiǎogāng dōu zài zhèr zuò le bàn ge xiǎoshí le."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "dialogs": [
+      {
+        "location": "Trong phòng giải lao",
+        "content": "周明最近打算买房子。昨天他去看了，今天又去看了，但他都不满意。有的没电梯，有的层数太高。",
+        "lines": [
+          {
+            "hanzi": "周明最近打算买房子。",
+            "pinyin": "Zhōumíng zuìjìn dǎsuàn mǎi fángzi."
+          },
+          {
+            "hanzi": "昨天他去看了，今天又去看了，但他都不满意。",
+            "pinyin": "Zuótiān tā qù kàn le, jīntiān yòu qù kàn le, dàn tā dōu bù mǎnyì."
+          },
+          {
+            "hanzi": "有的没电梯，有的层数太高。",
+            "pinyin": "Yǒude méi diàntī, yǒude céngshù tài gāo."
+          }
+        ]
+      },
+      {
+        "location": "Ở trường",
+        "content": "马可下个星期就要回国了。他真不想离开北京。小明送他一个小熊猫，欢迎他以后再到中国来。",
+        "lines": [
+          {
+            "hanzi": "马可下个星期就要回国了。",
+            "pinyin": "Mǎkě xià ge xīngqī jiùyào huíguó le."
+          },
+          {
+            "hanzi": "他真不想离开北京。",
+            "pinyin": "Tā zhēn bùxiǎng líkāi Běijīng."
+          },
+          {
+            "hanzi": "小明送他一个小熊猫，欢迎他以后再到中国来。",
+            "pinyin": "Xiǎomíng sòng tā yí ge xiǎo xióngmāo, huānyíng tā yǐhòu zài dào Zhōngguó lái."
+          }
+        ]
+      },
+      {
+        "location": "Ở quán cà phê",
+        "content": "小丽问小刚要坐哪儿。小刚说小丽坐哪儿他就坐哪儿。这里很安静，小刚想喝可乐，他让小丽等一会儿。",
+        "lines": [
+          {
+            "hanzi": "小丽问小刚要坐哪儿。",
+            "pinyin": "Xiǎolì wèn Xiǎogāng yào zuò nǎr."
+          },
+          {
+            "hanzi": "小刚说小丽坐哪儿他就坐哪儿。",
+            "pinyin": "Xiǎogāng shuō Xiǎolì zuò nǎr tā jiù zuò nǎr."
+          },
+          {
+            "hanzi": "这里很安静，小刚想喝可乐，他让小丽等一会儿。",
+            "pinyin": "Zhèlǐ hěn ānjìng, Xiǎogāng xiǎng hē kělè, tā ràng Xiǎolì děng yíhuìr."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà Châu Minh",
+        "content": "老同学快五年没见周太太了。他觉得周太太几乎没变化。周太太觉得自己胖了。老同学觉得健康最重要。",
+        "lines": [
+          {
+            "hanzi": "老同学快五年没见周太太了。",
+            "pinyin": "Lǎo tóngxué kuài wǔ nián méi jiàn Zhōu tàitai le."
+          },
+          {
+            "hanzi": "他觉得周太太几乎没变化。",
+            "pinyin": "Tā juéde Zhōu tàitai jīhū méi biànhuà."
+          },
+          {
+            "hanzi": "周太太觉得自己胖了。",
+            "pinyin": "Zhōu tàitai juéde zìjǐ hěn pàng."
+          },
+          {
+            "hanzi": "老同学觉得健康最重要。",
+            "pinyin": "Lǎo tóngxué juéde jiànkāng zuì zhòngyào."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 9,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "大山觉得马可的中文越说越好了。马可觉得他们班的李静说得更好。大山以前没听说过这个名字，李静是他们的汉语老师。",
+        "lines": [
+          {
+            "hanzi": "大山觉得马可的中文越说越好了。",
+            "pinyin": "Dàshān juéde Mǎkě de Zhōngwén yuè shuō yuè hǎo le."
+          },
+          {
+            "hanzi": "马可觉得他们班的李静说得更好。",
+            "pinyin": "Mǎkě juéde tāmen bān de Lǐ Jìng shuō de gèng hǎo."
+          },
+          {
+            "hanzi": "大山以前没听说过 cái tên này, Lǐ Jìng shì tāmen de Hànyǔ lǎoshī.",
+            "pinyin": "Dàshān yǐqián méi tīngshuō guò zhège míngzi, Lǐ Jìng shì tāmen de Hànyǔ lǎoshī."
+          }
+        ]
+      },
+      {
+        "location": "Ở cửa hàng bánh kem",
+        "content": "小丽已经吃了三块蛋糕了。小刚说这是最后一块。小丽担心越吃越胖，小刚让她放心，他们家的人都很瘦，吃不胖。",
+        "lines": [
+          {
+            "hanzi": "小丽已经吃了三块蛋糕了。",
+            "pinyin": "Xiǎolì yǐjīng chī le sān kuài dàngāo le."
+          },
+          {
+            "hanzi": "小刚说这是最后一块。",
+            "pinyin": "Xiǎogāng shuō zhè shì zuìhòu yí kuài."
+          },
+          {
+            "hanzi": "小丽担心越吃越胖，小刚让她放心，他们家的人都很瘦，吃不胖。",
+            "pinyin": "Xiǎolì dānxīn yuè chī yuè pàng, Xiǎogāng ràng tā fàngxīn, tāmen jiā de rén dōu hěn shòu, chībúpàng."
+          }
+        ]
+      },
+      {
+        "location": "Trên núi",
+        "content": "小丽有点儿害怕，因为山越高，路越难走，也越爬越冷。小刚对这里比较了解，他建议从中间这条路上去。",
+        "lines": [
+          {
+            "hanzi": "小丽有点儿害怕，因为山越高，路越难走，也越爬越冷。",
+            "pinyin": "Xiǎolì yǒudiǎnr hàipà, yīnwèi shān yuè gāo, lù yuè nán zǒu, yě yuè pá yuè lěng."
+          },
+          {
+            "hanzi": "小刚对这里比较了解，他建议从中间这条路上去。",
+            "pinyin": "Xiǎogāng duì zhèlǐ bǐjiào liǎojiě, tā jiànyì cóng zhōngjiān zhè tiáo lù shàngqù."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà bạn Minh",
+        "content": "小明的眼睛跟大熊猫一样，因为他这几天脚疼，没休息好。医生让他多休息，休息得越多，好得越快。",
+        "lines": [
+          {
+            "hanzi": "小明的眼睛跟大熊猫一样，因为他这几天脚疼，没休息好。",
+            "pinyin": "Xiǎomíng de yǎnjìng gēn dàxióngmāo yíyàng, yīnwèi tā zhè jǐ tiān jiǎo téng, méi xiūxi hǎo."
+          },
+          {
+            "hanzi": "医生让他多休息，休息得越多，好得越快。",
+            "pinyin": "Yīshēng ràng tā duō xiūxi, xiūxi de yuè duō, hǎo de yuè kuài."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 10,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "大山和马可比个子。马可比大山高，大山比马可矮一点儿。大山比马可大两岁。马可的汉语说得比大山好一些。",
+        "lines": [
+          {
+            "hanzi": "大山和马可比个子。",
+            "pinyin": "Dàshān hé Mǎkě bǐ gèzi."
+          },
+          {
+            "hanzi": "马可比大山高，大山比马可矮一点儿。",
+            "pinyin": "Mǎkě bǐ Dàshān gāo, Dàshān bǐ Mǎkě ǎi yìdiǎnr."
+          },
+          {
+            "hanzi": "大山比马可大两岁。",
+            "pinyin": "Dàshān bǐ Mǎkě dà liǎng suì."
+          },
+          {
+            "hanzi": "马可的汉语说得比大山好一些。",
+            "pinyin": "Mǎkě de Hànyǔ shuō de bǐ Dàshān hǎo yìxiē."
+          }
+        ]
+      },
+      {
+        "location": "Trong lớp học",
+        "content": "小明喜欢历史课和体育课，不喜欢数学课。他觉得数学比历史难多了。同学要帮他，他们打算每天学一两个小时。",
+        "lines": [
+          {
+            "hanzi": "小明喜欢历史课和体育课，不喜欢数学课。",
+            "pinyin": "Xiǎomíng xǐhuan lìshǐ kè hé tǐyù kè, bù xǐhuan shùxué kè."
+          },
+          {
+            "hanzi": "他觉得数学比历史难多了。",
+            "pinyin": "Tā juéde shùxué bǐ lìshǐ nán duō le."
+          },
+          {
+            "hanzi": "同学要帮 ta, tāmen dǎsuàn měitiān xué yì liǎng ge xiǎoshí.",
+            "pinyin": "Tóngxué yào bāng tā, tāmen dǎsuàn měitiān xué yì liǎng ge xiǎoshí."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "小丽上个月搬家了，因为这里离公司很近。她还打算买辆自行车，骑车七八分钟就能到公司。她原来的那辆车太旧了。",
+        "lines": [
+          {
+            "hanzi": "小丽上个月搬家了， because zhèlǐ lí gōngsī hěn jìn.",
+            "pinyin": "Xiǎolì shàng ge yuè bānjiā le, yīnwèi zhèlǐ lí gōngsī hěn jìn."
+          },
+          {
+            "hanzi": "她还打算买辆自行车，骑车七八分钟就能到公司。",
+            "pinyin": "Tā hái dǎsuàn mǎi liàng zìxíngchē, qí chē qī bā fēnzhōng jiù néng dào gōngsī."
+          },
+          {
+            "hanzi": "她原来的那辆车太旧了。",
+            "pinyin": "Tā yuánlái de nà liàng chē tài jiù le."
+          }
+        ]
+      },
+      {
+        "location": "Đang xem nhà",
+        "content": "大山看中了两处房子。中介说学校外边的房子比学校里边的大一些，环境也更好。大山觉得学校里边的房子更方便，附近有三四个车站。",
+        "lines": [
+          {
+            "hanzi": "大山看中了两处房子。",
+            "pinyin": "Dàshān kànzhòng le liǎng chù fángzi."
+          },
+          {
+            "hanzi": "中介说学校外边的房子比学校里边的大一些，环境也更好。",
+            "pinyin": "Zhōngjiè shuō xuéxiào wàibian de fángzi bǐ xuéxiào lǐbian de dà yìxiē, huánjìng yě gèng hǎo."
+          },
+          {
+            "hanzi": "大山觉得学校里边的房子更方便，附近有三四个车站。",
+            "pinyin": "Dàshān juéde xuéxiào lǐbian de fángzi gèng fāngbiàn, fùjìn yǒu sān sì ge chēzhàn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 11,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "小明要去图书馆借书。同学请他帮个忙，把词典还了。小明让同学放心，离开教室时他会记得把灯关了。",
+        "lines": [
+          {
+            "hanzi": "小明要去图书馆借书。",
+            "pinyin": "Xiǎomíng yào qù túshūguǎn jiè shū."
+          },
+          {
+            "hanzi": "同学请他帮个忙，把词典还了。",
+            "pinyin": "Tóngxué qǐng tā bāng ge máng, bǎ cídiǎn huán le."
+          },
+          {
+            "hanzi": "小明让同学放心，离开教室时他会记得把灯关了。",
+            "pinyin": "Xiǎomíng ràng tóngxué fàngxīn, líkāi jiàoshì shí tā huì jìde bǎ dēng guān le."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng họp",
+        "content": "会议结束后，周明提醒小丽别忘了关空调。王经理两点左右来过电话。周明正准备坐地铁回公司，让小丽等他到了就告诉王经理。",
+        "lines": [
+          {
+            "hanzi": "会议结束后，周明提醒小丽别忘了关空调。",
+            "pinyin": "Huìyì jiéshù hòu, Zhōumíng tíxǐng Xiǎolì bié wàngle guān kōngtiáo."
+          },
+          {
+            "hanzi": "王经理两点左右来过电话。",
+            "pinyin": "Wáng jīnglǐ liǎng diǎn zuǒyòu láiguò diànhuà."
+          },
+          {
+            "hanzi": "周明正准备坐地铁回公司，让小丽等他到了就告诉王经理。",
+            "pinyin": "Zhōumíng zhèng zhǔnbèi zuò dìtiě huí gōngsī, ràng Xiǎolì děng tā dào le jiù gàosu Wáng jīnglǐ."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng khách",
+        "content": "妈妈提醒儿子拿双筷子，因为今天是爸爸的生日。儿子把爸爸的生日忘了。他想请大家喝点儿啤酒，但妈妈说医生让爸爸一口酒都不能喝。",
+        "lines": [
+          {
+            "hanzi": "妈妈提醒儿子拿双筷子，因为今天是爸爸的生日。",
+            "pinyin": "Māma tíxǐng érzi ná shuāng kuàizi, yīnwèi jīntiān shì bàba de shēngrì."
+          },
+          {
+            "hanzi": "儿子把爸爸的生日忘了。",
+            "pinyin": "Érzi bǎ bàba de shēngrì wàng le."
+          },
+          {
+            "hanzi": "他想请大家喝点儿啤酒，但妈妈说医生让爸爸一口酒都不能喝。",
+            "pinyin": "Tā xiǎng qǐng dàjiā hē diǎnr píjiǔ, dàn māma shuō yīshēng ràng bàba yì kǒu jiǔ dōu bùnéng hē."
+          }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "小丽去年买了一个笔记本电脑，现在便宜多了。她想把这个卖了再买个更好的。她习惯每天起床后先看电子邮件。她觉得没有电脑就不能学习和工作了。",
+        "lines": [
+          {
+            "hanzi": "小丽去年买了一个笔记本电脑，现在便宜多了。",
+            "pinyin": "Xiǎolì qùnián mǎi le yí ge bǐjìběn diànnǎo, xiànzài piányi duō le."
+          },
+          {
+            "hanzi": "她想把这个卖了再买个更好的。",
+            "pinyin": "Tā xiǎng bǎ zhège mài le zài mǎi ge gèng hǎo de."
+          },
+          {
+            "hanzi": "她习惯每天起床后先看电子邮件。",
+            "pinyin": "Tā xíguàn měitiān qǐchuáng hòu xiān kàn diànzǐ yóujiàn."
+          },
+          {
+            "hanzi": "她觉得没有电脑就不能学习和工作了。",
+            "pinyin": "Tā juéde méiyǒu diànnǎo jiù bùnéng xuéxí hé gōngzuò le."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 12,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "小明觉得今天太阳从西边出来了，因为小丽起得很早。小丽明天八点要去公司办事。经理生气了，说以后谁八点不到就别来了。",
+        "lines": [
+          {
+            "hanzi": "小明觉得今天太阳从西边出来了，因为小丽起得很早。",
+            "pinyin": "Xiǎomíng juéde jīntiān tàiyáng cóng xībiān chūlái le, yīnwèi Xiǎolì qǐ de hěn zǎo."
+          },
+          {
+            "hanzi": "小丽明天八点要去公司办事。",
+            "pinyin": "Xiǎolì míngtiān bā diǎn yào qù gōngsī bànshì."
+          },
+          {
+            "hanzi": "经理生气了，说以后谁八点不到就别来了。",
+            "pinyin": "Jīnglǐ shēngqì le, shuō yǐhòu shéi bā diǎn búdào jiù bié lái le."
+          }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "小刚要跟周经理去外地办事。小丽帮他把衣服放到行李箱里。小刚让小丽照顾好自己，他也给小丽准备了吃的和喝的。",
+        "lines": [
+          {
+            "hanzi": "小刚要跟周经理去外地办事。",
+            "pinyin": "Xiǎogāng yào gēn Zhōu jīnglǐ qù wàidì bànshì."
+          },
+          {
+            "hanzi": "小丽帮他把衣服放到行李箱里。",
+            "pinyin": "Xiǎolì bāng tā bǎ yīfu fàng dào xínglixiāng lǐ."
+          },
+          {
+            "hanzi": "小刚让小丽照顾好自己，他也给小丽准备了吃的和喝的。",
+            "pinyin": "Xiǎogāng ràng Xiǎolì zhàogù hǎo zìjǐ, tā yě gěi Xiǎolì zhǔnbèi le chī de hé hē de."
+          }
+        ]
+      },
+      {
+        "location": "Ở sân bay",
+        "content": "周明来机场晚了。他在路上发现忘带护照了。飞机马上就要起飞了。司机把他送到机场时，他发现忘记带钱包了。周明只能把重要的东西放在朋友这儿。",
+        "lines": [
+          {
+            "hanzi": "周明来机场晚了。",
+            "pinyin": "Zhōumíng lái jīchǎng wǎn le."
+          },
+          {
+            "hanzi": "他在路上发现忘带护照了。",
+            "pinyin": "Tā zài lùshang fāxiàn wàng dài hùzhào le."
+          },
+          {
+            "hanzi": "飞机马上就要起飞了。",
+            "pinyin": "Fēijī mǎshàng jiùyào qǐfēi le."
+          },
+          {
+            "hanzi": "司机把他送到机场时，他发现忘记带钱包了。",
+            "pinyin": "Sījī bǎ tā sòng dào jīchǎng shí, tā fāxiàn wàngjì dài qiánbāo le."
+          },
+          {
+            "hanzi": "周明只能把重要的东西放在朋友这儿。",
+            "pinyin": "Zhōumíng zhǐnéng bǎ zhòngyào de dōngxi fàng zài péngyou zhèr."
+          }
+        ]
+      },
+      {
+        "location": "Ở trường",
+        "content": "他是中学老师，教学生画画。每次下课前，他都会把学生需要带的东西写在黑板上。他发现总有学生不带铅笔，他觉得这是因为学生没养成好的习惯。",
+        "lines": [
+          {
+            "hanzi": "他是中学老师，教学生画画。",
+            "pinyin": "Tā shì zhōngxué lǎoshī, jiāo xuésheng huàhuà."
+          },
+          {
+            "hanzi": "每次下课前，他都会把学生需要带的东西写在黑板上。",
+            "pinyin": "Měi cì xiàkè qián, tā dōu huì bǎ xuésheng xūyào dài de dōngxi xiě zài hēibǎn shàng."
+          },
+          {
+            "hanzi": "他发现总有学生不带铅笔，他觉得这是因为学生没养成好的习惯。",
+            "pinyin": "Tā fāxiàn zǒng yǒu xuésheng búdài qiānbǐ, tā juéde zhè shì yīnwèi xuésheng méi yǎngchéng hǎo de xíguàn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 13,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "小丽终于回来了，她从商店买了很多东西。她还买了红酒，准备明天跟小刚一起去送给爷爷奶奶。小刚觉得自己已经回来了，小丽不该问礼物的事。",
+        "lines": [
+          {
+            "hanzi": "小丽终于回来了，她 từ shāngdiàn mǎi le hěn duō dōngxi.",
+            "pinyin": "Xiǎolì zhōngyú huílái le, tā cóng shāngdiàn mǎi le hěn duō dōngxi."
+          },
+          {
+            "hanzi": "她还买了红酒，准备明天跟小刚一起去送给爷爷奶奶。",
+            "pinyin": "Tā hái mǎi le hóngjiǔ, zhǔnbèi míngtiān gēn Xiǎogāng yìqǐ qù sòng gěi yéye nǎinai."
+          },
+          {
+            "hanzi": "小刚觉得自己已经回来了，小丽不该问礼物的事。",
+            "pinyin": "Xiǎogāng juéde zìjǐ yǐjīng huílái le, Xiǎolì bù gāi wèn lǐwù de shì."
+          }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "小丽看见小刚和一个女孩进了咖啡店。小刚说那是他在路上遇到的一个老同学。他们一边喝咖啡一边聊了过去的事。小刚回来得晚，是因为没有公共汽车了。",
+        "lines": [
+          {
+            "hanzi": "小丽看见小刚和一个女孩进了咖啡店。",
+            "pinyin": "Xiǎolì kànjiàn Xiǎogāng hé yí ge nǚháir jìn le kāfēidiàn."
+          },
+          {
+            "hanzi": "小刚说那是他在路上遇到的一个老同学。",
+            "pinyin": "Xiǎogāng shuō nà shì tā zài lùshang yùdào de yí ge lǎo tóngxué."
+          },
+          {
+            "hanzi": "他们一边喝咖啡一边聊了过去的事。",
+            "pinyin": "Tāmen yìbiān hē kāfēi yìbiān liáo le guòqù de shì."
+          },
+          {
+            "hanzi": "小刚回来得晚，是因为没有公共汽车了。",
+            "pinyin": "Xiǎogāng huílái de wǎn, shì yīnwèi méiyǒu gōnggòng qìchē le."
+          }
+        ]
+      },
+      {
+        "location": "Nói chuyện qua điện thoại",
+        "content": "同事问小丽周末一般做什么。小丽说她很懒，更愿意在家看电视。同事建议她多出去走走，这样生活会更有意思。小丽觉得有同事在，她的生活已经很有意思了。",
+        "lines": [
+          {
+            "hanzi": "同事问小丽周末一般做什么。",
+            "pinyin": "Tóngshì wèn Xiǎolì zhōumò yìbān zuò shénme."
+          },
+          {
+            "hanzi": "小丽说她很懒，更愿意在家看电视。",
+            "pinyin": "Xiǎolì shuō tā hěn lǎn, gèng yuànyì zài jiā kàn diànshì."
+          },
+          {
+            "hanzi": "同事建议她多出去走走，这样生活会更有意思。",
+            "pinyin": "Tóngshì jiànyì tā duō chūqù zǒuzǒu, zhèyàng shēnghuó huì gèng yǒu yìsi."
+          },
+          {
+            "hanzi": "小丽觉得有同事在，她的生活已经很有意思了。",
+            "pinyin": "Xiǎolì juéde yǒu tóngshì zài, tā de shēnghuó yǐjīng hěn yǒu yìsi."
+          }
+        ]
+      },
+      {
+        "location": "Ở trường",
+        "content": "刚结婚的时候，她丈夫是中学老师。他喜欢一边吃早饭一边看报纸。十年过去了，他已经是校长了。因为太忙，他希望工作之余能多一些休息和陪伴孩子的时间。",
+        "lines": [
+          {
+            "hanzi": "刚结婚的时候，她丈夫是中学老师。",
+            "pinyin": "Gāng jiéhūn de shíhou, tā zhàngfu shì zhōngxué lǎoshī."
+          },
+          {
+            "hanzi": "他喜欢一边吃早饭一边看报纸。",
+            "pinyin": "Tā xǐhuan yìbiān chī zǎofàn yìbiān kàn bàozhǐ."
+          },
+          {
+            "hanzi": "十年过去了，他已经是校长了。",
+            "pinyin": "Shí nián guòqù le, tā yǐjīng shì xiàozhǎng le."
+          },
+          {
+            "hanzi": "因为太忙，他希望工作之余能多一些休息和陪伴孩子的时间。",
+            "pinyin": "Yīnwèi tài máng, tā xīwàng gōngzuò zhī yú néng duō yìxiē xiūxi hé péibàn háizi de shíjiān."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 14,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "周太太催周明打扫房间。周明让周太太别着急，孩子们正在打扫呢。他建议先拿些西瓜，把空调打开，因为天气太热了。",
+        "lines": [
+          {
+            "hanzi": "周太太催周明打扫房间。",
+            "pinyin": "Zhōu tàitai cuī Zhōumíng dǎsǎo fángjiān."
+          },
+          {
+            "hanzi": "周明让周太太别着急，孩子们正在打扫呢。",
+            "pinyin": "Zhōumíng ràng Zhōu tàitai bié zháojí, háizimen zhèngzài dǎsǎo ne."
+          },
+          {
+            "hanzi": "他建议先拿些西瓜，把空调打开，因为天气太热了。",
+            "pinyin": "Tā jiànyì xiān ná xiē xīguā, bǎ kōngtiáo dǎkāi, yīnwèi tiānqì tài rè le."
+          }
+        ]
+      },
+      {
+        "location": "Nói chuyện qua điện thoại",
+        "content": "同事给小刚打电话。小刚刚才在洗澡，没听见。同事想问问公司的一些事情。小刚让同事等他看完电视节目再回电话。",
+        "lines": [
+          {
+            "hanzi": "同事给小刚打电话。",
+            "pinyin": "Tóngshì gěi Xiǎogāng dǎ diànhuà."
+          },
+          {
+            "hanzi": "小刚刚才在洗澡，没听见。",
+            "pinyin": "Xiǎogāng gāngcái zài xǐzǎo, méi tīngjiàn."
+          },
+          {
+            "hanzi": "同事想问问公司的一些事情。",
+            "pinyin": "Tóngshì xiǎng wènwen gōngsī de yìxiē shìqing."
+          },
+          {
+            "hanzi": "小刚让同事等他看完电视节目再回电话。",
+            "pinyin": "Xiǎogāng ràng tóngshì děng tā kànwán diànshì jiémù zài huí diànhuà."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà bạn Minh",
+        "content": "今晚的月亮像个大白盘子。小明建议搬出桌椅，在外边一边看月亮一边吃东西。他还要请叔叔阿姨讲讲年轻时候的故事。",
+        "lines": [
+          {
+            "hanzi": "今晚的月亮像个大白盘子。",
+            "pinyin": "Jīnwǎn de yuèliang xiàng ge dà bái pánzi."
+          },
+          {
+            "hanzi": "小明建议搬出桌椅，在外边一边看月亮一边吃东西。",
+            "pinyin": "Xiǎomíng jiànyì bānchū zhuōyǐ, zài wàibian yìbiān kàn yuèliang yìbiān chī dōngxi."
+          },
+          {
+            "hanzi": "他还要请叔叔阿姨讲讲年轻时候的故事。",
+            "pinyin": "Tā hái yào qǐng shūshu āyí jiǎngjiang niánqīng shíhou de gùshi."
+          }
+        ]
+      },
+      {
+        "location": "Trong văn phòng",
+        "content": "如果你想学会做水果饭，其实很简单。先把米饭做好，再放进新鲜的水果块。比如苹果、香蕉或者西瓜。多吃新鲜水果对身体好。",
+        "lines": [
+          {
+            "hanzi": "如果你想学会做水果饭，其实很简单。",
+            "pinyin": "Rúguǒ nǐ xiǎng xuéhuì zuò shuǐguǒ fàn, qíshí hěn jiǎndān."
+          },
+          {
+            "hanzi": "先把米饭做好，再放进新鲜的水果块。",
+            "pinyin": "Xiān bǎ mǐfàn zuòhǎo, zài fàngjìn xīnxiān de shuǐguǒ kuài."
+          },
+          {
+            "hanzi": "比如苹果、香蕉或者西瓜。",
+            "pinyin": "Bǐrú píngguǒ, xiāngjiāo huòzhě xīguā."
+          },
+          {
+            "hanzi": "多吃新鲜水果对身体好。",
+            "pinyin": "Duō chī xīnxiān shuǐguǒ duì shēntǐ hǎo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 15,
+    "dialogs": [
+      {
+        "location": "Trong văn phòng",
+        "content": "大山来中国留学两年了。老师觉得他学习很认真，练习完成得不错。大山以后有什么不明白的地方，可以给老师打电话或发邮件。",
+        "lines": [
+          {
+            "hanzi": "大山来中国留学两年了。",
+            "pinyin": "Dàshān lái Zhōngguó liúxué liǎng nián le."
+          },
+          {
+            "hanzi": "老师觉得他学习很认真，练习完成得不错。",
+            "pinyin": "Lǎoshī juéde tā xuéxí hěn rènzhēn, liànxí wánchéng de búcuò."
+          },
+          {
+            "hanzi": "大山以后有什么不明白的地方，可以给老师打电话或发邮件。",
+            "pinyin": "Dàshān yǐhòu yǒu shénme bù míngbai de dìfang, kěyǐ gěi lǎoshī dǎ diànhuà huò fā yóujiàn."
+          }
+        ]
+      },
+      {
+        "location": "Trong lớp học",
+        "content": "除了小云，其他人都来了。比赛马上就开始了，小丽很着急。老师让学生们放心，他已经给小云打过电话了，她在路上呢。",
+        "lines": [
+          {
+            "hanzi": "除了小云，其他人都来了。",
+            "pinyin": "Chúle Xiǎoyún, qítā rén dōu lái le."
+          },
+          {
+            "hanzi": "比赛马上就开始了，小丽很着急。",
+            "pinyin": "Bǐsài mǎshàng jiù kāishǐ le, Xiǎolì hěn zháojí."
+          },
+          {
+            "hanzi": "老师让学生们放心，他已经给小云打过电话了，她在路上呢。",
+            "pinyin": "Lǎoshī ràng xuéshengmen fàngxīn, tā yǐjīng gěi Xiǎoyún dǎguò diànhuà le, tā zài lùshang ne."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "现在上网买东西很方便。小刚发现小丽在网上买的衣服有点儿小。小丽不打算退，她想送给弟弟穿。她对这件衣服挺满意的。",
+        "lines": [
+          {
+            "hanzi": "现在上网买东西很方便。",
+            "pinyin": "Xiànzài shàngwǎng mǎi dōngxi hěn fāngbiàn."
+          },
+          {
+            "hanzi": "小刚发现小丽在网上买的衣服有点儿小。",
+            "pinyin": "Xiǎogāng fāxiàn Xiǎolì zài wǎngshàng mǎi de yīfu yǒudiǎnr xiǎo."
+          },
+          {
+            "hanzi": "小丽不打算退，她想送给弟弟穿。",
+            "pinyin": "Xiǎolì bù dǎsuàn tuì, tā xiǎng sòng gěi dìdi chuān."
+          },
+          {
+            "hanzi": "她对这件衣服挺满意的。",
+            "pinyin": "Tā duì zhè jiàn yīfu tǐng mǎnyì de."
+          }
+        ]
+      },
+      {
+        "location": "Trong văn phòng",
+        "content": "除了春节和中秋节，啤酒节也是这里重要的节日。每年夏天这里都会举行一次啤酒节。大家可以一边喝啤酒一边看街道两边的歌舞。",
+        "lines": [
+          {
+            "hanzi": "除了春节和中秋节，啤酒节也是这里重要的节日。",
+            "pinyin": "Chúle Chūnjié hé Zhōngqiūjié, píjiǔjié yěshì zhèlǐ zhòngyào de jiérì."
+          },
+          {
+            "hanzi": "每年夏天这里都会举行一次啤酒节。",
+            "pinyin": "Měinián xiàtiān zhèlǐ dōu huì jǔxíng yí cì píjiǔjié."
+          },
+          {
+            "hanzi": "大家可以一边喝啤酒一边看街道两边的歌舞。",
+            "pinyin": "Dàjiā kěyǐ yìbiān hē píjiǔ yìbiān kàn jiēdào liǎngbiān de gēwǔ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 16,
+    "dialogs": [
+      {
+        "location": "Trong công ty",
+        "content": "小丽想去其他城市看看。周明年轻的时候也这么想，但那时没钱。现在周明觉得没时间了。小丽认为如果有钱又有时间，就一定要去旅游。",
+        "lines": [
+          {
+            "hanzi": "小丽想去其他城市看看。",
+            "pinyin": "Xiǎolì xiǎng qù qítā chéngshì kànkan."
+          },
+          {
+            "hanzi": "周明年轻的时候也这么想，但那时没钱。",
+            "pinyin": "Zhōumíng niánqīng de shíhou yě zhème xiǎng, dàn nàshí méi qián."
+          },
+          {
+            "hanzi": "现在周明觉得没时间了。",
+            "pinyin": "Xiànzài Zhōumíng juéde méi shíjiān le."
+          },
+          {
+            "hanzi": "小丽认为如果有钱又有时间，就一定要去旅游。",
+            "pinyin": "Xiǎolì rènwéi rúguǒ yǒu qián yòu yǒu shíjiān, jiù yídìng yào qù lǚyóu."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà đồng nghiệp",
+        "content": "同事们来看小丽的女儿。小丽送的小皮鞋和小帽子真漂亮。女儿现在一米高了，长得白白的、胖胖的，真可爱，像她爸爸。",
+        "lines": [
+          {
+            "hanzi": "同事们来看小丽的女儿。",
+            "pinyin": "Tóngshìmen lái kàn Xiǎolì de nǚ\"ér."
+          },
+          {
+            "hanzi": "小丽送的小皮鞋和小帽子真漂亮。",
+            "pinyin": "Xiǎolì sòng de xiǎo píxié hé xiǎo màozi zhēn piàoliang."
+          },
+          {
+            "hanzi": "女儿现在一米高了，长得白白的、胖胖的，真可爱，像她爸爸。",
+            "pinyin": "Nǚ\"ér xiànzài yì mǐ gāo le, zhǎng de báibái de, pàngpàng de, zhēn kě\"ài, xiàng tā bàba."
+          }
+        ]
+      },
+      {
+        "location": "Trong công ty",
+        "content": "小丽的牙还是很疼。她去医院检查了几次，但没什么用。医生告诉她，回家后要好好刷牙。",
+        "lines": [
+          {
+            "hanzi": "小丽的牙还是很疼。",
+            "pinyin": "Xiǎolì de yá háishi hěn téng."
+          },
+          {
+            "hanzi": "她去医院检查了几次， nhưng méishénme yòng.",
+            "pinyin": "Tā qù yīyuàn jiǎnchá le jǐ cì, dàn méishénme yòng."
+          },
+          {
+            "hanzi": "医生告诉她，回家后要好好刷牙。",
+            "pinyin": "Yīshēng gàosu tā, huíjiā hòu yào hǎohǎo shuā yá."
+          }
+        ]
+      },
+      {
+        "location": "Trong văn phòng",
+        "content": "很多人觉得现在人与人的关系冷冷的，可能是因为工作太忙，没时间跟别人见面。其实我们应该多对别人笑笑，这样关系就会变得更好。",
+        "lines": [
+          {
+            "hanzi": "很多人觉得现在人与人的关系冷冷的。",
+            "pinyin": "Hěn duō rén juéde xiànzài rén yǔ rén de guānxì lěnglěng de."
+          },
+          {
+            "hanzi": "可能是因为工作太忙，没时间跟别人见面。",
+            "pinyin": "Kěnéng shì yīnwèi gōngzuò tài máng, méi shíjiān gēn biérén jiànmiàn."
+          },
+          {
+            "hanzi": "其实我们应该多对别人笑笑，这样关系就会变得更好。",
+            "pinyin": "Qíshí wǒmen yīnggāi duō duì biérén xiàoxiao, zhèyàng guānxì jiù huì biànhǎo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 17,
+    "dialogs": [
+      {
+        "location": "Trong công ty",
+        "content": "周经理明天要请假，因为他的一个老朋友结婚，他要去参加婚礼。他一共请了三天假。",
+        "lines": [
+          {
+            "hanzi": "周经理明天要请假。",
+            "pinyin": "Zhōu jīnglǐ míngtiān yào qǐng jià."
+          },
+          {
+            "hanzi": "因为他的一个老朋友结婚，他要去参加婚礼。",
+            "pinyin": "Yīnwèi tā de yí ge lǎo péngyou jiéhūn, tā yào qù cānjiā hūnlǐ."
+          },
+          {
+            "hanzi": "他一共请了三天假。",
+            "pinyin": "Tā yígòng qǐng le sān tiān jià."
+          }
+        ]
+      },
+      {
+        "location": "Trong công ty",
+        "content": "那个高高的男人是小丽的丈夫。他们过去是邻居，后来成了大学同学，关系一直很不错。他有很多爱好，比如唱歌、画画和踢足球。",
+        "lines": [
+          {
+            "hanzi": "那个高高的男人是小丽的丈夫。",
+            "pinyin": "Nàge gāogāo de nánrén shì Xiǎolì de zhàngfu."
+          },
+          {
+            "hanzi": "他们过去是邻居，后来成了大学同学，关系一直很不错。",
+            "pinyin": "Tāmen guòqù shì línjū, hòulái chéng le dàxué tóngxué, guānxì yìzhí hěn búcuò."
+          },
+          {
+            "hanzi": "他有很多爱好，比如唱歌、画画和踢足球。",
+            "pinyin": "Tā yǒu hěn duō àihào, bǐrú chànggē, huàhuà hé tī zúqiú."
+          }
+        ]
+      },
+      {
+        "location": "Ở nhà",
+        "content": "周太太觉得哪里都不舒服，周明带她去医院检查。周太太三年前就开始觉得不舒服了，但一直没运动。周明建议她为了健康，从明天起每天去跑步。",
+        "lines": [
+          {
+            "hanzi": "周太太觉得哪里都不舒服，周明带她去医院检查。",
+            "pinyin": "Zhōu tàitai juéde nǎlǐ dōu bù shūfu, Zhōumíng dài tā qù yīyuàn jiǎnchá."
+          },
+          {
+            "hanzi": "周太太三年前就开始觉得不舒服了，但一直没运动。",
+            "pinyin": "Zhōu tàitai sān nián qián jiù kāishǐ juéde bù shūfu le, dàn yìzhí méi yùndòng."
+          },
+          {
+            "hanzi": "周明建议她为了健康，从明天起每天去跑步。",
+            "pinyin": "Zhōumíng jiànyì tā wèile jiànkāng, cóng míngtiān qǐ měitiān qù pǎobù."
+          }
+        ]
+      },
+      {
+        "location": "Trong văn phòng",
+        "content": "运动很重要。早上九点是运动的最好时间。你要根据自己的情况选择运动。如果你很久没爬山或游泳了，运动一会儿就一定要休息休息。运动完渴的时候，不要马上喝水。",
+        "lines": [
+          {
+            "hanzi": "运动很重要。早上九点是运动的最好时间。",
+            "pinyin": "Yùndòng hěn zhòngyào. Zǎoshang jiǔ diǎn shì yùndòng de zuì hǎo shíjiān."
+          },
+          {
+            "hanzi": "你要根据自己的情况选择运动。",
+            "pinyin": "Nǐ yào gēnjù zìjǐ de qíngkuàng xuǎnzé yùndòng."
+          },
+          {
+            "hanzi": "如果你很久没爬山或游泳了，运动一会儿就一定要休息休息。",
+            "pinyin": "Rúguǒ nǐ hěn jiǔ méi páshān huò yóuyǒng le, yùndòng yìhuìr jiù yídìng yào xiūxi xiūxi."
+          },
+          {
+            "hanzi": "运动完渴的时候，不要马上喝水。",
+            "pinyin": "Yùndòng wán kě de shíhou, búyào mǎshàng hē shuǐ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 18,
+    "dialogs": [
+      {
+        "location": "Trong lớp học",
+        "content": "小丽对大家都很好。她觉得只要对别人好，别人也会对她好。老师相信只要她努力学习，一定能取得好成绩。",
+        "lines": [
+          {
+            "hanzi": "小丽对大家都很好。",
+            "pinyin": "Xiǎolì duì dàjiā dōu hěn hǎo."
+          },
+          {
+            "hanzi": "她觉得只要对别人好，别人也会对她好。",
+            "pinyin": "Tā juéde zhǐyào duì biérén hǎo, biérén yě huì duì tā hǎo."
+          },
+          {
+            "hanzi": "老师相信只要她努力学习，一定能取得好成绩。",
+            "pinyin": "Lǎoshī xiāngxìn zhǐyào tā nǔlì xuéxí, yídìng néng qǔdé hǎo chéngjì."
+          }
+        ]
+      },
+      {
+        "location": "Trong phòng giải lao",
+        "content": "小明看了一些关于中国文化的电影。他也想了解关于出国学习的事，妈妈已经同意了。他觉得这是一个好机会。",
+        "lines": [
+          {
+            "hanzi": "小明看了一些关于中国文化的电影。",
+            "pinyin": "Xiǎomíng kàn le yìxiē guānyú Zhōngguó wénhuà de diànyǐng."
+          },
+          {
+            "hanzi": "他也想了解关于出国学习的事，妈妈已经同意了。",
+            "pinyin": "Tā yě xiǎng liǎojiě guānyú chūguó xuéxí de shì, māma yǐjīng tóngyì le."
+          },
+          {
+            "hanzi": "他觉得这是一个好机会。",
+            "pinyin": "Tā juéde zhè shì yí ge hǎo jīhuì."
+          }
+        ]
+      },
+      {
+        "location": "Ở trước cửa siêu thị",
+        "content": "小丽觉得这里的房子挺便宜的，但离公司太远了。她不打算买这里的房子。虽然这里环境不错，但她更喜欢离公司近的地方。",
+        "lines": [
+          {
+            "hanzi": "小丽觉得这里的房子挺便宜的，但离公司太远了。",
+            "pinyin": "Xiǎolì juéde zhèlǐ de fángzi tǐng piányi de, dàn lí gōngsī tài yuǎn le."
+          },
+          {
+            "hanzi": "她不打算买这里的房子。",
+            "pinyin": "Tā bù dǎsuàn mǎi zhèlǐ de fángzi."
+          },
+          {
+            "hanzi": "虽然这里环境不错，但她更喜欢离公司近的地方。",
+            "pinyin": "Suīrán zhèlǐ huánjìng búcuò, dàn tā gèng xǐhuan lí gōngsī jìn de dìfang."
+          }
+        ]
+      },
+      {
+        "location": "Trong văn phòng",
+        "content": "小刚一直很努力学习。他不但聪明，而且很认真。大家都相信他将来一定会有名的。他觉得特点奇怪的地方也很有意思。",
+        "lines": [
+          {
+            "hanzi": "小刚一直很努力学习。",
+            "pinyin": "Xiǎogāng yìzhí hěn nǔlì xuéxí."
+          },
+          {
+            "hanzi": "他不但聪明，而且很认真。",
+            "pinyin": "Tā búdàn cōngming, érqiě hěn rènzhēn."
+          },
+          {
+            "hanzi": "大家都相信他将来一定会有名的。",
+            "pinyin": "Dàjiā dōu xiāngxìn tā jiānglái yídìng huì yǒumíng de."
+          },
+          {
+            "hanzi": "他觉得特点奇怪的地方也很有意思。",
+            "pinyin": "Tā juéde tèdiǎn qíguài de dìfang yě hěn yǒuyìsi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 19,
+    "dialogs": [
+      {
+        "location": "Ở nhà",
+        "content": "女儿最近喜欢把头发放在耳朵后面，妈妈觉得这样可以使她的脸看上去漂亮一些。爸爸也发现她变了，不像小时候那样喜欢短头发了。她现在慢慢开始像个女孩子了。",
+        "lines": [
+          {
+            "hanzi": "女儿最近喜欢把头发放在耳朵后面。",
+            "pinyin": "Nǚ\"ér zuìjìn xǐhuan bǎ tóufa fàng zài ěrduo hòumiàn."
+          },
+          {
+            "hanzi": "妈妈觉得这样可以使她的脸看上去漂亮一些。",
+            "pinyin": "Māma juéde zhèyàng kěyǐ shǐ tā de liǎn kàn shàngqù piàoliang yìxiē."
+          },
+          {
+            "hanzi": "爸爸也发现她变了，不像小时候那样喜欢短头发了。",
+            "pinyin": "Bàba yě fāxiàn tā biàn le, búxiàng xiǎoshíhou nàyàng xǐhuan duǎn tóufa le."
+          },
+          {
+            "hanzi": "她现在慢慢开始像个女孩子了。",
+            "pinyin": "Tā xiànzài mànmàn kāishǐ xiàng ge nǚháizi le."
+          }
+        ]
+      },
+      {
+        "location": "Đang xem ảnh",
+        "content": "照片里的人是小刚。他今天穿着蓝西服，看上去像四十多岁，其实他才三十多岁。穿运动服让他显得更年轻。他是那次骑马比赛最快的一位。",
+        "lines": [
+          {
+            "hanzi": "照片里的人是小刚。",
+            "pinyin": "Zhàopiàn lǐ de rén shì Xiǎogāng."
+          },
+          {
+            "hanzi": "他今天穿着蓝西服，看上去像四十多岁，其实他才三十多岁。",
+            "pinyin": "Tā jīntiān chuānzhe lán xīfú, kàn shàngqù xiàng sìshí duō suì, qíshí tā cái sānshí duō suì."
+          },
+          {
+            "hanzi": "穿运动服让他显得更年轻。",
+            "pinyin": "Chuān yùndòngfú ràng tā xiǎnde gèng niánqīng."
+          },
+          {
+            "hanzi": "他是那次骑马比赛最快的一位。",
+            "pinyin": "Tā shì nà cì qímǎ bǐsài zuì kuài de yí wèi."
+          }
+        ]
+      },
+      {
+        "location": "Tại nhà chị Lệ",
+        "content": "朋友很久没见小丽了。听说小丽有了女儿，他很想送点儿礼物给孩子。小丽的女儿去年秋天出生。她喜欢听爸爸学鸟叫。朋友送的礼物，小丽没办法送。",
+        "lines": [
+          {
+            "hanzi": "朋友很久没见小丽了。",
+            "pinyin": "Péngyou hěn jiǔ méi jiàn Xiǎolì le."
+          },
+          {
+            "hanzi": "听说小丽有了女儿，他很想送点儿礼物给孩子。",
+            "pinyin": "Tīngshuō Xiǎolì yǒu le nǚ\"ér, tā hěn xiǎng sòng diǎnr lǐwù gěi háizi."
+          },
+          {
+            "hanzi": "小丽的女儿去年秋天出生。她喜欢听爸爸学鸟叫。",
+            "pinyin": "Xiǎolì de nǚ\"ér qùnián qiūtiān chūshēng. Tā xǐhuan tīng bàba xué niǎojiào."
+          },
+          {
+            "hanzi": "朋友送的礼物，小丽没办法送。",
+            "pinyin": "Péngyou sòng de lǐwù, Xiǎolì méi bànfǎ sòng."
+          }
+        ]
+      },
+      {
+        "location": "Đang đi du lịch",
+        "content": "这次旅游，他去了不少地方。他坐船去看了黄河。黄河是中国有名的大河。一路上他经过了很多地方，拍了很多照片。他想把照片发给大家，让朋友们也高兴高兴。",
+        "lines": [
+          {
+            "hanzi": "这次旅游，他去了不少地方。",
+            "pinyin": "Zhè cì lǚyóu, tā qù le bùshǎo dìfang."
+          },
+          {
+            "hanzi": "他坐船去看了黄河。",
+            "pinyin": "Tā zuò chuán qù kàn le Huáng Hé."
+          },
+          {
+            "hanzi": "黄河是中国有名的大河。",
+            "pinyin": "Huáng Hé shì Zhōngguó yǒumíng de dà hé."
+          },
+          {
+            "hanzi": "一路上他经过了很多地方，拍了很多照片。",
+            "pinyin": "Yí lùshang tā jīngguò le hěn duō dìfang, pāi le hěn duō zhàopiàn."
+          },
+          {
+            "hanzi": "他想把照片发给大家，让朋友们也高兴高兴。",
+            "pinyin": "Tā xiǎng bǎ zhàopiàn fā gěi dàjiā, ràng péngyoumen yě gāoxìng gāoxìng."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 20,
+    "dialogs": [
+      {
+        "location": "Trong phòng giải lao",
+        "content": "小丽的照相机找不到了。同事建议她再找找，或者去商场再买一个。但是小丽这个月信用卡里的钱已经花得差不多了。",
+        "lines": [
+          {
+            "hanzi": "小丽的照相机找不到了。",
+            "pinyin": "Xiǎolì de zhàoxiàngjī zhǎobùdào le."
+          },
+          {
+            "hanzi": "同事建议她再找找，或者去商场再买一个。",
+            "pinyin": "Tóngshì jiànyì tā zài zhǎozhao, huòzhě qù shāngchǎng zài mǎi yí ge."
+          },
+          {
+            "hanzi": "但是小丽这个月信用卡里的钱已经花得差不多了。",
+            "pinyin": "Dànshì Xiǎolì zhège yuè xìnyòngkǎ lǐ de qián yǐjīng huā de chàbuduō le."
+          }
+        ]
+      },
+      {
+        "location": "Trong lớp học",
+        "content": "小明的男朋友喜欢看足球比赛，小明也受了他的影响。现在看来只有爱，才能让人有变化。小明最近天天上网玩游戏，成绩差极了。",
+        "lines": [
+          {
+            "hanzi": "小明的男朋友喜欢看足球比赛，小明也受了他的影响。",
+            "pinyin": "Xiǎomíng de nánpéngyou xǐhuan kàn zúqiú bǐsài, Xiǎomíng yě shòu le tā de yǐngxiǎng."
+          },
+          {
+            "hanzi": "现在看来只有爱，才能让人有变化。",
+            "pinyin": "Xiànzài kànlái zhǐyǒu ài, cáinéng ràng rén yǒu biànhuà."
+          },
+          {
+            "hanzi": "小明最近天天上网玩游戏，成绩差极了。",
+            "pinyin": "Xiǎomíng zuìjìn tiāntiān shàngwǎng wán yóuxì, chéngjì chà jí le."
+          }
+        ]
+      },
+      {
+        "location": "Trong quán ăn",
+        "content": "大卫经常被别人认错，因为他和他哥哥长得太像了。只有他们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟。他们不但长得像，而且还住在同一个楼，同一个房间。",
+        "lines": [
+          {
+            "hanzi": "大卫经常被别人认错，因为他和他哥哥长得太像了。",
+            "pinyin": "Dàwèi jīngcháng bèi biérén rèncuò, yīnwèi tā hé tā gēge zhǎng de tài xiàng le."
+          },
+          {
+            "hanzi": "只有他们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟。",
+            "pinyin": "Zhǐyǒu tāmen de bàba māma cáinéng fēn chūlái nǎge shì gēge, nǎge shì dìdi."
+          },
+          {
+            "hanzi": "他们不但长得像，而且还住在同一个楼，同一个房间。",
+            "pinyin": "Tāmen búdàn zhǎng de xiàng, érqiě hái zhù zài tóng yí ge lóu, tóng yí ge fángjiān."
+          }
+        ]
+      },
+      {
+        "location": "Trong văn phòng",
+        "content": "年轻人遇到难题，常常很着急，不知道怎么办。其实，只要真正相信自己，很多难题都能解决。不过，我们要相信，多么难的问题，最后都会被解决的。",
+        "lines": [
+          {
+            "hanzi": "年轻人遇到难题，常常很着急，不知道怎么办。",
+            "pinyin": "Niánqīng rén yùdào nántí, chángcháng hěn zháojí, bù zhīdào zěnme bàn."
+          },
+          {
+            "hanzi": "其实，只要真正相信自己，很多难题都能解决。",
+            "pinyin": "Qíshí, zhǐyào zhēnzhèng xiāngxìn zìjǐ, hěn duō nántí dōu néng jiějué."
+          },
+          {
+            "hanzi": "不过，我们要相信，多么难的问题，最后都会被解决的。",
+            "pinyin": "Búguò, wǒmen yào xiāngxìn, duōme nán de wèntí, zuìhòu dōu huì bèi jiějué de."
+          }
+        ]
+      }
+    ]
+  }
+]

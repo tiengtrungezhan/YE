@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu Trí Nhớ - HSK 3 Bài 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #fdf2f8; }
+        .game-header { text-align: center; margin-bottom: 2rem; }
+        .memory-container { max-width: 900px; margin: 0 auto; padding: 2rem; background: white; border-radius: 30px; box-shadow: var(--shadow); }
+        .dialog-selector { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; }
+        .dialog-btn { padding: 0.5rem 1.5rem; border-radius: 10px; border: 2px solid var(--primary-light); background: white; cursor: pointer; font-weight: 700; transition: 0.3s; }
+        .dialog-btn.active { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+        
+        .audio-section-simple { text-align: center; margin-bottom: 2rem; padding: 2rem; background: #f0f9ff; border-radius: 20px; }
+        .btn-speaker { width: 100px; height: 100px; border-radius: 50%; border: none; background: var(--primary-color); color: white; font-size: 3rem; cursor: pointer; transition: 0.3s; box-shadow: 0 10px 25px rgba(165,207,218,0.5); display: flex; align-items: center; justify-content: center; margin: 0 auto; }
+        .btn-speaker:hover { transform: scale(1.1); background: var(--primary-dark); }
+        
+        .practice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+        .practice-box { display: flex; flex-direction: column; gap: 0.5rem; }
+        .practice-box label { font-weight: 800; color: var(--primary-dark); font-size: 0.9rem; }
+        .display-area, .input-area { width: 100%; min-height: 150px; padding: 1.5rem; border-radius: 20px; border: 2px solid #eee; font-size: 1.4rem; line-height: 1.6; font-family: "Noto Sans SC", sans-serif; }
+        .display-area { background: #f9f9f9; color: transparent; user-select: none; transition: 0.3s; }
+        .display-area.visible { color: #333; }
+        .input-area { background: white; resize: none; border-color: var(--primary-light); }
+        .input-area:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 4px rgba(165,207,218,0.2); }
+        
+        .controls { display: flex; justify-content: center; gap: 1.5rem; }
+        .btn-action { padding: 1rem 2rem; border-radius: 15px; border: none; font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 1rem; }
+        .btn-hint { background: #e3f2fd; color: #1976d2; }
+        .btn-submit { background: var(--primary-color); color: white; }
+        .btn-action:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        .result-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px dashed #eee; display: none; }
+        .diff-text { font-size: 1.6rem; margin-bottom: 1rem; line-height: 2; }
+        .char-correct { color: #28a745; }
+        .char-wrong { color: #dc3545; text-decoration: underline; font-weight: 800; }
+        .correction-info { background: #fffdf0; padding: 1.5rem; border-radius: 20px; border: 1px solid #ffeeba; }
+        .correction-item { margin-bottom: 1rem; }
+        .correction-item:last-child { margin-bottom: 0; }
+        .correct-hanzi { font-size: 1.4rem; font-weight: 800; color: var(--primary-dark); }
+        .correct-pinyin { color: #e67e22; font-style: italic; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    <div class="page-container">
+        <a href="game-hsk3.html" class="back-btn">← Quay lại</a>
+        <header class="game-header">
+            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Siêu Trí Nhớ 🧠</h1>
+            <p>HSK 3 Bài 4: Nghe và kể lại bài khóa</p>
+        </header>
+
+        <div class="memory-container">
+            <div class="dialog-selector" id="dialogSelector"></div>
+
+            <div class="audio-section-simple">
+                <button class="btn-speaker" onclick="toggleAudio()" id="mainPlayBtn">🔊</button>
+                <div id="dialogLoc" style="margin-top: 1rem; font-style: italic; color: #888; text-align: center;">Chủ đề: ...</div>
+            </div>
+
+            <div class="practice-grid">
+                <div class="practice-box">
+                    <label>ĐÁP ÁN (ẨN)</label>
+                    <div id="displayArea" class="display-area"></div>
+                </div>
+                <div class="practice-box">
+                    <label>BẠN GÕ VÀO ĐÂY</label>
+                    <textarea id="inputArea" class="input-area" placeholder="Gõ chữ Hán bạn nghe được..."></textarea>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn-action btn-hint" onclick="showHint()">Gợi ý một xíu 💡</button>
+                <button class="btn-action btn-submit" onclick="submitAnswer()">Nộp bài ✅</button>
+            </div>
+
+            <div id="resultSection" class="result-section">
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-dark);">Kết quả kiểm tra:</h2>
+                <div id="diffOutput" class="diff-text"></div>
+                <div class="correction-info" id="correctionInfo"></div>
+                <button class="btn-action btn-submit" style="margin-top: 2rem; width: 100%;" onclick="location.reload()">Thử lại bài này</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dialogs = [{"location": "Trong lớp học", "content": "照片里的人是马可和小明。那个又高又漂亮的女孩是三年级的学生。小明不认识她。", "lines": [{"hanzi": "照片里的人是马可和小明。", "pinyin": "Zhàopiàn lǐ de rén shì Mǎkě hé Xiǎomíng."}, {"hanzi": "那个又高又漂亮的女孩是三年级的学生。", "pinyin": "Nàge yòu gāo yòu piàoliang de nǚháir shì sān niánjí de xuésheng."}, {"hanzi": "小明不认识她。", "pinyin": "Xiǎomíng bù rènshi tā."}]}, {"location": "Trong lớp học", "content": "小丽觉得小红又聪明又热情。小红总是笑着回答老师的问题。大家都非常喜欢她。", "lines": [{"hanzi": "小丽觉得小红又聪明又热情。", "pinyin": "Xiǎolì juéde Xiǎohóng yòu cōngming yòu rèqíng."}, {"hanzi": "小红总是笑着回答老师的问题。", "pinyin": "Xiǎohóng zǒngshì xiàozhe huídá lǎoshī de wèntí."}, {"hanzi": "大家都非常喜欢她。", "pinyin": "Dàjiā dōu fēicháng xǐhuan tā."}]}, {"location": "Ở trước cửa siêu thị", "content": "小刚有点儿饿了，他们进超市买点儿东西。那里的蛋糕又便宜又好吃。他们还想买点儿喝的。", "lines": [{"hanzi": "小刚有点儿饿了，他们进超市买点儿东西。", "pinyin": "Xiǎogāng yǒudiǎnr è le, tāmen jìn chāoshì mǎi diǎnr dōngxi."}, {"hanzi": "那里的蛋糕又便宜又好吃。", "pinyin": "Nàlǐ de dàngāo yòu piányi yòu hǎochī."}, {"hanzi": "他们还想买点儿喝的。", "pinyin": "Tāmen hái xiǎng mǎi diǎnr hē de."}]}, {"location": "Ở quán ăn", "content": "经理觉得那里的服务员又年轻又漂亮。她们工作很认真。那个正在跟客人说话的女孩叫李小美。", "lines": [{"hanzi": "经理觉得那里的服务员又年轻又漂亮。", "pinyin": "Jīnglǐ juéde nàlǐ de fúwùyuán yòu niánqīng yòu piàoliang."}, {"hanzi": "她们工作很认真。", "pinyin": "Tāmen gōngzuò hěn rènzhēn."}, {"hanzi": "那个正在跟客人说话的女孩叫李小美。", "pinyin": "Nàge zhèngzài gēn kèrén shuōhuà de nǚháir jiào Lǐ Xiǎoměi."}]}];
+        let currentDialogIdx = 0;
+
+        const displayArea = document.getElementById('displayArea');
+        const inputArea = document.getElementById('inputArea');
+        const diffOutput = document.getElementById('diffOutput');
+        const correctionInfo = document.getElementById('correctionInfo');
+        const resultSection = document.getElementById('resultSection');
+        const dialogLoc = document.getElementById('dialogLoc');
+        const dialogSelector = document.getElementById('dialogSelector');
+
+        function initSelector() {
+            dialogSelector.innerHTML = '';
+            dialogs.forEach((d, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'dialog-btn' + (idx === 0 ? ' active' : '');
+                btn.innerText = 'Bài khóa ' + (idx + 1);
+                btn.onclick = () => loadDialog(idx);
+                dialogSelector.appendChild(btn);
+            });
+        }
+
+        function loadDialog(idx) {
+            window.speechSynthesis.cancel();
+            document.getElementById('mainPlayBtn').innerHTML = '🔊';
+            
+            currentDialogIdx = idx;
+            const d = dialogs[idx];
+            displayArea.innerText = d.content;
+            displayArea.classList.remove('visible');
+            inputArea.value = '';
+            resultSection.style.display = 'none';
+            dialogLoc.innerText = "Chủ đề: " + d.location;
+            
+            document.querySelectorAll('.dialog-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === idx);
+            });
+        }
+
+        function toggleAudio() {
+            const btn = document.getElementById('mainPlayBtn');
+            if (window.speechSynthesis.speaking) {
+                if (window.speechSynthesis.paused) {
+                    window.speechSynthesis.resume();
+                    btn.innerHTML = '⏸';
+                } else {
+                    window.speechSynthesis.pause();
+                    btn.innerHTML = '▶';
+                }
+                return;
+            }
+            playAudio();
+        }
+
+        function playAudio() {
+            window.speechSynthesis.cancel();
+            const text = dialogs[currentDialogIdx].content;
+            const utterance = new SpeechSynthesisUtterance(text);
+            const btn = document.getElementById('mainPlayBtn');
+            
+            const voices = window.speechSynthesis.getVoices();
+            const preferredVoice = voices.find(v => v.name === 'Tingting') || 
+                                   voices.find(v => v.name.includes('Meijia')) ||
+                                   voices.find(v => v.name.includes('Google') && v.lang.includes('zh')) ||
+                                   voices.find(v => v.lang.includes('zh'));
+            
+            if (preferredVoice) utterance.voice = preferredVoice;
+            utterance.lang = 'zh-CN';
+            utterance.rate = 0.8; 
+
+            utterance.onstart = () => {
+                btn.innerHTML = '⏸';
+            };
+            utterance.onend = () => {
+                btn.innerHTML = '🔊';
+            };
+            utterance.onerror = () => {
+                btn.innerHTML = '🔊';
+            };
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function showHint() {
+            displayArea.classList.add('visible');
+        }
+
+        function submitAnswer() {
+            const correct = dialogs[currentDialogIdx].content.replace(/[，。？！、\s]/g, '');
+            const input = inputArea.value.replace(/[，。？！、\s]/g, '');
+            
+            let html = '';
+            let fullCorrectText = dialogs[currentDialogIdx].content;
+            let j = 0;
+            
+            for (let i = 0; i < fullCorrectText.length; i++) {
+                const char = fullCorrectText[i];
+                if (/[，。？！、\s]/.test(char)) {
+                    html += char;
+                    continue;
+                }
+                
+                if (j < input.length) {
+                    if (input[j] === char) {
+                        html += `<span class="char-correct">${char}</span>`;
+                    } else {
+                        html += `<span class="char-wrong">${char}</span>`;
+                    }
+                    j++;
+                } else {
+                    html += `<span class="char-wrong" style="opacity: 0.5;">${char}</span>`;
+                }
+            }
+
+            diffOutput.innerHTML = html;
+            
+            let correctHtml = '<h3>Xem lại chi tiết:</h3>';
+            dialogs[currentDialogIdx].lines.forEach(line => {
+                correctHtml += `
+                    <div class="correction-item">
+                        <div class="correct-hanzi">${line.hanzi}</div>
+                        <div class="correct-pinyin">${line.pinyin}</div>
+                    </div>
+                `;
+            });
+            correctionInfo.innerHTML = correctHtml;
+            
+            resultSection.style.display = 'block';
+            resultSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.addEventListener('pagehide', () => {
+            window.speechSynthesis.cancel();
+        });
+
+        initSelector();
+        loadDialog(0);
+    </script>
+</body>
+</html>

@@ -932,10 +932,11 @@ def generate_hsk_games(level):
 </body>
 </html>"""
 
-    # Load Dialogues if HSK2
+    # Load Dialogues if level-specific JSON exists
     dialog_data = []
-    if level == 2 and os.path.exists('hsk2_dialogs.json'):
-        with open('hsk2_dialogs.json', 'r', encoding='utf-8') as df:
+    dialog_file = f'hsk{level}_dialogs.json'
+    if os.path.exists(dialog_file):
+        with open(dialog_file, 'r', encoding='utf-8') as df:
             dialog_data = json.load(df)
 
     # Generate files
@@ -956,9 +957,9 @@ def generate_hsk_games(level):
             with open(f'game-hsk{level}-l{lesson_id}-match.html', 'w', encoding='utf-8') as f:
                 f.write(MATCH_TEMPLATE.format(level=level, lesson_id=lesson_id, vocab_json=vocab_json))
 
-        # Memory Page (HSK 2 only for now)
-        if level == 2:
-            lesson_dialogs = next((item['dialogs'] for item in dialog_data if item['lesson'] == lesson_id), [])
+        # Memory Page
+        if dialog_data:
+            lesson_dialogs = next((item['dialogs'] for item in dialog_data if str(item['lesson']) == str(lesson_id)), [])
             if lesson_dialogs:
                 dialog_json = json.dumps(lesson_dialogs, ensure_ascii=False)
                 with open(f'game-hsk{level}-l{lesson_id}-memory.html', 'w', encoding='utf-8') as f:
