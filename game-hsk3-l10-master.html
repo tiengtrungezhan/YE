@@ -8,18 +8,25 @@
     <style>
         body { background: #fdf2f8; }
         .game-wrapper { max-width: 600px; margin: 0 auto; padding: 2rem; text-align: center; }
-        .quiz-card { background: var(--white); border-radius: 30px; padding: 3rem 2rem; box-shadow: var(--shadow); margin-top: 2rem; min-height: 400px; display: flex; flex-direction: column; justify-content: center; position: relative; }
+        .quiz-card { background: var(--white); border-radius: 30px; padding: 3rem 2rem; box-shadow: var(--shadow); margin-top: 2rem; min-height: 450px; display: flex; flex-direction: column; justify-content: center; position: relative; }
         .progress-container { width: 100%; height: 8px; background: #eee; border-radius: 4px; margin-bottom: 2rem; overflow: hidden; }
         .progress-fill { height: 100%; background: var(--primary-color); width: 0%; transition: width 0.3s; }
-        .question-text { font-size: 1.5rem; font-weight: 700; color: var(--text-color); margin-bottom: 2rem; }
+        .question-text { font-size: 1.5rem; font-weight: 700; color: var(--text-color); margin-bottom: 1rem; }
+        .sub-text { font-size: 1.1rem; color: #666; margin-bottom: 2rem; line-height: 1.6; }
         .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
         .option-btn { padding: 1.2rem; background: #f8fbfe; border: 2px solid #eef2f5; border-radius: 15px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: 0.2s; }
-        .option-btn:hover { border-color: var(--primary-color); background: #f0f7f9; }
-        .option-btn.correct { background: #d4edda; border-color: #28a745; color: #155724; }
-        .option-btn.wrong { background: #f8d7da; border-color: #dc3545; color: #721c24; }
-        .audio-btn { background: var(--primary-light); width: 80px; height: 80px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; margin-bottom: 2rem; border: none; }
-        .typing-input { width: 100%; padding: 1.2rem; border: 2px solid #ddd; border-radius: 15px; font-size: 1.5rem; text-align: center; margin-bottom: 1.5rem; }
-        .submit-btn { padding: 1rem 2rem; background: var(--primary-color); color: white; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; width: 100%; }
+        .option-btn:hover:not(:disabled) { border-color: var(--primary-color); background: #f0f7f9; }
+        .option-btn.correct { background: #d4edda !important; border-color: #28a745 !important; color: #155724 !important; }
+        .option-btn.wrong { background: #f8d7da !important; border-color: #dc3545 !important; color: #721c24 !important; }
+        .typing-input { width: 100%; padding: 1.2rem; border: 2px solid #ddd; border-radius: 15px; font-size: 1.4rem; text-align: center; margin-bottom: 1.5rem; transition: 0.3s; }
+        .typing-input:focus { border-color: var(--primary-color); outline: none; box-shadow: 0 0 10px rgba(255,107,107,0.1); }
+        .submit-btn { padding: 1.2rem; background: var(--primary-color); color: white; border: none; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; width: 100%; transition: 0.3s; }
+        .submit-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+        .phrase-box { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin: 1.5rem 0; min-height: 80px; padding: 1rem; border: 2px dashed #ffe4e6; border-radius: 20px; background: #fffafb; }
+        .phrase-item { padding: 0.8rem 1.2rem; background: white; border: 2px solid #ffccd5; border-radius: 12px; cursor: pointer; font-size: 1.2rem; font-weight: 600; color: #e91e63; transition: 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .phrase-item:hover { background: #fff0f3; transform: scale(1.05); }
+        .blank-text { font-size: 1.8rem; letter-spacing: 2px; color: var(--text-color); margin-bottom: 2rem; font-weight: bold; }
+        .blank-fill { color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding: 0 10px; min-width: 60px; display: inline-block; }
         .result-screen { display: none; }
         .score-circle { width: 150px; height: 150px; border-radius: 50%; border: 10px solid var(--primary-light); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; margin: 2rem auto; color: var(--primary-dark); }
     </style>
@@ -44,7 +51,7 @@
                     <div class="score-circle" id="final-score">0%</div>
                     <p id="score-text"></p>
                     <button class="submit-btn" style="margin-top: 2rem;" onclick="location.reload()">Chơi Lại</button>
-                    <a href="game-hsk3-l10-match.html" class="submit-btn" style="margin-top: 1rem; background: #e65100; text-decoration: none; display: block; line-height: 1.5; padding: 1rem 0;">Thử thách Ghép Đôi</a>
+                    <a href="game-hsk3-l10-match.html" class="submit-btn" style="margin-top: 1rem; background: #e65100; text-decoration: none; display: block; line-height: 1.5; padding: 1rem 0; text-align: center;">Thử thách Ghép Đôi</a>
                 </div>
             </div>
         </div>
@@ -52,48 +59,69 @@
     <script>
         const vocabulary = [{"hanzi": "个子", "pinyin": "gèzi", "meaning": "vóc dáng, chiều cao", "lesson": "10", "type": "Danh từ", "ex_cn": "他的个子很高。", "ex_py": "Tā de gèzi hěn gāo.", "ex_vn": "Vóc dáng của anh ấy rất cao."}, {"hanzi": "矮", "pinyin": "ǎi", "meaning": "thấp, lùn", "lesson": "10", "type": "Tính từ", "ex_cn": "他比我矮。", "ex_py": "Tā bǐ wǒ ǎi.", "ex_vn": "Anh ấy thấp hơn tôi."}, {"hanzi": "历史", "pinyin": "lìshǐ", "meaning": "lịch sử", "lesson": "10", "type": "Danh từ", "ex_cn": "我喜欢历史。", "ex_py": "Wǒ xǐhuan lìshǐ.", "ex_vn": "Tôi thích lịch sử."}, {"hanzi": "体育", "pinyin": "tǐyù", "meaning": "thể dục", "lesson": "10", "type": "Danh từ", "ex_cn": "他体育很好。", "ex_py": "Tā tǐyù hěn hǎo.", "ex_vn": "Môn thể dục của anh ấy rất tốt."}, {"hanzi": "数学", "pinyin": "shùxué", "meaning": "toán học", "lesson": "10", "type": "Danh từ", "ex_cn": "数学课很有意思。", "ex_py": "Shùxué kè hěn yǒu yìsi.", "ex_vn": "Giờ toán rất thú vị."}, {"hanzi": "方便", "pinyin": "fāngbiàn", "meaning": "thuận tiện", "lesson": "10", "type": "Tính từ", "ex_cn": "坐地铁很方便。", "ex_py": "Zuò dìtiě hěn fāngbiàn.", "ex_vn": "Đi tàu điện ngầm rất thuận tiện."}, {"hanzi": "骑", "pinyin": "qí", "meaning": "cưỡi, đi (xe đạp, ngựa)", "lesson": "10", "type": "Động từ", "ex_cn": "他骑自行车去学校。", "ex_py": "Tā qí zìxíngchē qù xuéxiào.", "ex_vn": "Anh ấy đi xe đạp đến trường."}, {"hanzi": "旧", "pinyin": "jiù", "meaning": "cũ", "lesson": "10", "type": "Tính từ", "ex_cn": "这是旧衣服。", "ex_py": "Zhè shì jiù yīfu.", "ex_vn": "Đây là quần áo cũ."}, {"hanzi": "换", "pinyin": "huàn", "meaning": "đổi, thay", "lesson": "10", "type": "Động từ", "ex_cn": "我想换钱。", "ex_py": "Wǒ xiǎng huàn qián.", "ex_vn": "Tôi muốn đổi tiền."}, {"hanzi": "地方", "pinyin": "dìfang", "meaning": "địa phương, nơi chốn", "lesson": "10", "type": "Danh từ", "ex_cn": "这是什么地方？", "ex_py": "Zhè shì shénme dìfang?", "ex_vn": "Đây là nơi nào vậy?"}, {"hanzi": "中介", "pinyin": "zhōngjiè", "meaning": "môi giới", "lesson": "10", "type": "Danh từ", "ex_cn": "我去中介公司看房子。", "ex_py": "Wǒ qù zhōngjiè gōngsī kàn fángzi.", "ex_vn": "Tôi đến công ty môi giới để xem nhà."}, {"hanzi": "主要", "pinyin": "zhǔyào", "meaning": "chủ yếu", "lesson": "10", "type": "Tính từ/Phó từ", "ex_cn": "他是主要老师。", "ex_py": "Tā shì zhǔyào lǎoshī.", "ex_vn": "Anh ấy là giáo viên chính."}, {"hanzi": "环境", "pinyin": "huánjìng", "meaning": "môi trường", "lesson": "10", "type": "Danh từ", "ex_cn": "这里的环境很好。", "ex_py": "Zhèlǐ de huánjìng hěn hǎo.", "ex_vn": "Môi trường ở đây rất tốt."}, {"hanzi": "附近", "pinyin": "fùjìn", "meaning": "gần đây, lân cận", "lesson": "10", "type": "Danh từ", "ex_cn": "学校附近有个商店。", "ex_py": "Xuéxiào fùjìn yǒu ge shāngdiàn.", "ex_vn": "Gần trường học có một cửa hàng."}];
         let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
+
         function initGame() { 
-            totalQuestions = Math.min(60, Math.max(20, vocabulary.length * 2));
+            totalQuestions = Math.min(20, vocabulary.length); 
             questions = generateQuestions(); 
             renderQuestion(); 
         }
+
+        function splitIntoPhrases(sentence, targetWord) {
+            // Simple logic to split sentence into meaningful chunks including the target word
+            let phrases = [];
+            if (sentence.includes(targetWord)) {
+                let parts = sentence.split(targetWord);
+                if (parts[0]) phrases.push(...splitLogical(parts[0]));
+                phrases.push(targetWord);
+                if (parts[1]) phrases.push(...splitLogical(parts[1]));
+            } else {
+                phrases = splitLogical(sentence);
+            }
+            return phrases.filter(p => p.length > 0 && !/[，。？！、]/.test(p));
+        }
+
+        function splitLogical(text) {
+            // Split long text into 2-3 char chunks
+            let res = [];
+            for (let i = 0; i < text.length; i += 3) {
+                res.push(text.substr(i, 3));
+            }
+            return res;
+        }
+
         function generateQuestions() {
             let qs = [], shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
             for (let i = 0; i < totalQuestions; i++) {
-                const word = shuffled[i % shuffled.length];
-                let availableTypes = [0, 1, 2, 3];
+                const word = shuffled[i];
+                let type;
                 
-                if (word.ex_cn && word.ex_cn.length > 2) {
-                    let isAllowed = true;
-                    if (3 === 1 && parseInt('10') < 4) isAllowed = false;
-                    
-                    if (isAllowed) {
-                        let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                        const cumulativeChars = "梯希零友九认睡男高爱块安自长骑用穿岁发往方午也谁飞易孩写饭左哪照婆道草备文带爷元房年熊朋汽绿讲第末正黑菜们数踢冷姐接感非贵镜吗没把它喂车慢条楚我纪这秘进呼妈面告还口楼旧史打叫游记电比足点里报路白太到业山星努腿环颜她吧助员喜快儿什租出教五肉趣桌习容久健票急害婚诉么宜六跟结呢解差气其哥职个动热更会新开心机东学乎今妻天虽给站钟作晴对裤师生样前思担常舞周美饮运满情小不才起啊法问过日影了帮题始纸期介只十火拿大聪最季有妹班找做懂旁本行力现育司便主或医几矮雨别跑好刻球得二冒家咖特让笔晚鱼韩奶米独衬答真视总谢泰英步办斤又刚的园昨级疼丈已鸡坐再所饿换迎直近怎茶树果怕右市错半百买篮洗多商准望图睛聊读子兴知唱服老明完北兄胖工床铅女院狗七参想远从苹粉境候件脑轻歌走少漂名经复上笑啡公你吃鲜银就关先边顾夫住觉附识去中意两猫客回体字静西等算超舒春分三休千变当那语在宾考以水绍越料因八红蛋人脚但然门理病玩听甜片音重都姓试弟课瘦能药裙为赛马后汉下校他话化送同国历清着定度场您说戏包眼称糕月响搬是康杯息伞亮乐手馆牛地一请可表辆务者忙层节衫阴和见系些很椅锻要外难四书加爬跳衣欢来南事泳羊迟早旅喝看每次较瓜放雪时身钱爸实室共夏突炼店色离烧号间";
-                        for (let c of cleanSentence) {
-                            if (!cumulativeChars.includes(c)) {
-                                isAllowed = false;
-                                break;
-                            }
-                        }
-                    }
-                    
-                    if (isAllowed) availableTypes.push(5);
+                if (3 === 3) {
+                    // For HSK3, use the 3 specific types requested
+                    const types = [10, 11, 12]; // 10: Scramble, 11: Translation, 12: Blank
+                    type = types[Math.floor(Math.random() * types.length)];
+                } else {
+                    type = Math.floor(Math.random() * 4); // Old types for HSK1, 2
                 }
-                
-                const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+
                 let q = { type, word };
                 
-                if (type === 0 || type === 1 || type === 2) q.options = generateOptions(word, type);
-                if (type === 5) {
-                    let cleanSentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
-                    q.chars = cleanSentence.split('').sort(() => Math.random() - 0.5);
-                    q.correctSentence = cleanSentence;
+                if (type <= 2) q.options = generateOptions(word, type);
+                if (type === 10) {
+                    let sentence = word.ex_cn.replace(/[，。？！、\s]/g, '');
+                    let target = word.hanzi;
+                    q.phrases = splitIntoPhrases(word.ex_cn, target).sort(() => Math.random() - 0.5);
+                    q.correctSentence = sentence;
                 }
+                if (type === 12) {
+                    q.displaySentence = word.ex_cn.replace(word.hanzi, "______");
+                    q.options = generateOptions(word, 0); // Hanzi options
+                }
+                
                 qs.push(q);
             }
             return qs;
         }
+
         function generateOptions(correctWord, type) {
             let options = [correctWord];
             while (options.length < 4 && vocabulary.length >= 4) {
@@ -102,68 +130,112 @@
             }
             return options.sort(() => Math.random() - 0.5);
         }
+
         function renderQuestion() {
             const q = questions[currentQuestion], card = document.getElementById('quiz-card'), progress = document.getElementById('progress');
             progress.style.width = (currentQuestion / totalQuestions) * 100 + '%';
             document.getElementById('progress-text').innerText = (currentQuestion + 1) + '/' + totalQuestions;
+            
             let html = '';
             if (q.type === 0) {
-                html = `<div class="question-text">Nghe và chọn từ đúng:</div><button class="audio-btn" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;
+                html = `<div class="question-text">Nghe và chọn từ đúng:</div><button class="audio-btn" style="background: #fdf2f8; border: none; font-size: 3rem; cursor: pointer;" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;
                 setTimeout(() => speak(q.word.hanzi), 500);
             } else if (q.type === 1) {
                 html = `<div class="question-text">Từ "${q.word.hanzi}" có nghĩa là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.meaning}', '${q.word.meaning}', this)">${opt.meaning}</button>`).join('')}</div>`;
             } else if (q.type === 2) {
                 html = `<div class="question-text">Từ "${q.word.hanzi}" có phiên âm là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.pinyin}', '${q.word.pinyin}', this)">${opt.pinyin}</button>`).join('')}</div>`;
             } else if (q.type === 3) {
-                html = `<div class="question-text">"${q.word.meaning}" trong tiếng Trung viết là gì?</div><div class="input-area"><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập chữ Hán..."><button class="submit-btn" onclick="checkTyping('${q.word.hanzi}')">Gửi</button></div>`;
-            } else if (q.type === 5) {
-                html = `<div class="question-text">Sắp xếp thành câu đúng:</div><div style="color: #666; margin-bottom: 1.5rem; font-size: 1.1rem;">Nghĩa: ${q.word.ex_vn || q.word.meaning}</div><div id="drop-zone" style="min-height: 70px; padding: 1rem; border: 2px dashed #ccc; border-radius: 15px; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; align-items: center;"></div><div id="drag-zone" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">${q.chars.map((char, i) => `<button class="option-btn" style="padding: 0.8rem 1.2rem; font-size: 1.5rem;" onclick="moveChar(this, '${q.correctSentence}')">${char}</button>`).join('')}</div>`;
+                html = `<div class="question-text">"${q.word.meaning}" trong tiếng Trung là gì?</div><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập Hán tự..."><button class="submit-btn" onclick="checkTyping('${q.word.hanzi}')">Kiểm tra</button>`;
+            } 
+            // New Types for HSK3
+            else if (q.type === 10) {
+                html = `<div class="question-text">Sắp xếp câu chính xác:</div><div class="sub-text">Nghĩa: ${q.word.ex_vn}</div><div id="drop-zone" class="phrase-box"></div><div id="drag-zone" class="phrase-box" style="border: none; background: transparent;">${q.phrases.map(p => `<div class="phrase-item" onclick="movePhrase(this, '${q.correctSentence}')">${p}</div>`).join('')}</div>`;
+            } else if (q.type === 11) {
+                html = `<div class="question-text">Dịch câu sau sang tiếng Trung:</div><div class="sub-text" style="font-size: 1.4rem; color: var(--primary-dark);">${q.word.ex_vn}</div><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập câu tiếng Trung..."><button class="submit-btn" onclick="checkTyping('${q.word.ex_cn.replace(/[，。？！、\s]/g, '')}')">Gửi đáp án</button>`;
+            } else if (q.type === 12) {
+                html = `<div class="question-text">Điền từ vào ô trống:</div><div class="blank-text">${q.displaySentence.replace("______", "<span class="blank-fill" id="blank-target">?</span>")}</div><div class="sub-text">Nghĩa: ${q.word.ex_vn}</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkBlank('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;
             }
+
             card.innerHTML = html;
         }
+
         function speak(t) { const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'zh-CN'; window.speechSynthesis.speak(m); }
+        
         function checkAnswer(s, c, b) {
-            document.querySelectorAll('.option-btn').forEach(x => x.disabled = true);
-            if (s === c) { b.classList.add('correct'); score++; } else { b.classList.add('wrong'); document.querySelectorAll('.option-btn').forEach(x => { if(x.innerText===c) x.classList.add('correct'); }); }
-            showNextButton();
+            const btns = document.querySelectorAll('.option-btn');
+            btns.forEach(x => x.disabled = true);
+            if (s === c) { b.classList.add('correct'); score++; } 
+            else { b.classList.add('wrong'); btns.forEach(x => { if(x.innerText === c) x.classList.add('correct'); }); }
+            showNext();
         }
-        function checkTyping(c) {
-            const i = document.getElementById('typing-ans'), v = i.value.trim();
-            if (v === c) { i.style.borderColor = "#28a745"; score++; } else { i.style.borderColor = "#dc3545"; alert('Đáp án đúng: ' + c); }
-            showNextButton();
+
+        function checkBlank(s, c, b) {
+            const target = document.getElementById('blank-target');
+            target.innerText = c;
+            checkAnswer(s, c, b);
         }
-        function moveChar(btn, correctSentence) {
-            const dropZone = document.getElementById('drop-zone');
-            if (btn.parentElement.id === 'drag-zone') {
-                dropZone.appendChild(btn);
+
+        function checkTyping(correct) {
+            const input = document.getElementById('typing-ans');
+            const val = input.value.trim().replace(/[，。？！、\s]/g, '');
+            if (val === correct) {
+                input.style.borderColor = "#28a745";
+                input.style.background = "#d4edda";
+                score++;
             } else {
-                document.getElementById('drag-zone').appendChild(btn);
+                input.style.borderColor = "#dc3545";
+                input.style.background = "#f8d7da";
+                const err = document.createElement('div');
+                err.style = "color: #dc3545; margin-top: 10px; font-weight: bold;";
+                err.innerText = "Đáp án đúng: " + correct;
+                input.parentNode.appendChild(err);
             }
-            
-            let currentStr = Array.from(dropZone.children).map(c => c.innerText).join('');
-            if (document.getElementById('drag-zone').children.length === 0) {
-                if (currentStr === correctSentence) {
-                    dropZone.style.borderColor = '#28a745';
-                    dropZone.style.backgroundColor = '#d4edda';
+            document.querySelector('.submit-btn').disabled = true;
+            showNext();
+        }
+
+        function movePhrase(el, correct) {
+            const dropZone = document.getElementById('drop-zone');
+            const dragZone = document.getElementById('drag-zone');
+            if (el.parentNode === dragZone) dropZone.appendChild(el);
+            else dragZone.appendChild(el);
+
+            const current = Array.from(dropZone.children).map(x => x.innerText).join('');
+            if (dragZone.children.length === 0) {
+                if (current === correct) {
+                    dropZone.style.background = "#d4edda";
                     score++;
                 } else {
-                    dropZone.style.borderColor = '#dc3545';
-                    dropZone.style.backgroundColor = '#f8d7da';
-                    let alertDiv = document.createElement('div');
-                    alertDiv.style = "color: #dc3545; font-weight: bold; margin-top: 1rem;";
-                    alertDiv.innerText = "Sai rồi! Câu đúng là: " + correctSentence;
-                    document.getElementById('quiz-card').appendChild(alertDiv);
+                    dropZone.style.background = "#f8d7da";
+                    const err = document.createElement('div');
+                    err.style = "color: #dc3545; margin-top: 10px; font-weight: bold;";
+                    err.innerText = "Sai rồi! Câu đúng: " + correct;
+                    document.getElementById('quiz-card').appendChild(err);
                 }
-                showNextButton();
+                showNext();
             }
         }
-        function showNextButton() {
-            if (!document.getElementById('next-btn')) {
-                document.getElementById('quiz-card').insertAdjacentHTML('beforeend', '<button id="next-btn" class="submit-btn" style="margin-top: 1.5rem; background: #17a2b8;" onclick="next()">Tiếp Tục ➡</button>');
-            }
+
+        function showNext() {
+            const btn = document.createElement('button');
+            btn.className = "submit-btn";
+            btn.style = "margin-top: 1.5rem; background: #4dabf7;";
+            btn.innerText = "Tiếp theo ➔";
+            btn.onclick = () => {
+                currentQuestion++;
+                if (currentQuestion < totalQuestions) renderQuestion();
+                else showResults();
+            };
+            document.getElementById('quiz-card').appendChild(btn);
         }
-        function next() { currentQuestion++; if (currentQuestion < totalQuestions) renderQuestion(); else showResults(); }
-        function showResults() { document.getElementById('game-ui').style.display = 'none'; document.getElementById('result-ui').style.display = 'block'; document.getElementById('final-score').innerText = Math.round((score/totalQuestions)*100)+'%'; document.getElementById('score-text').innerText = `Bạn đúng ${score}/${totalQuestions} câu.`; }
+
+        function showResults() {
+            document.getElementById('game-ui').style.display = 'none';
+            document.getElementById('result-ui').style.display = 'block';
+            document.getElementById('final-score').innerText = Math.round((score/totalQuestions)*100)+'%';
+            document.getElementById('score-text').innerText = `Bạn đã hoàn thành ${score}/${totalQuestions} câu hỏi.`;
+        }
+
         initGame();
     </script>
 </body>
