@@ -120,6 +120,76 @@
     "type": "Danh từ"
   },
   {
+    "hanzi": "外国",
+    "pinyin": "wàiguó",
+    "meaning": "nước ngoài",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他去外国学习了。",
+    "ex_py": "Tā qù wàiguó xuéxí le.",
+    "ex_vn": "Anh ấy đi nước ngoài du học rồi."
+  },
+  {
+    "hanzi": "出国",
+    "pinyin": "chūguó",
+    "meaning": "đi nước ngoài",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我想出国旅游。",
+    "ex_py": "Wǒ xiǎng chūguó lǚyóu.",
+    "ex_vn": "Tôi muốn đi du lịch nước ngoài."
+  },
+  {
+    "hanzi": "机票",
+    "pinyin": "jīpiào",
+    "meaning": "vé máy bay",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "机票多少钱？",
+    "ex_py": "Jīpiào duōshǎo qián?",
+    "ex_vn": "Vé máy bay bao nhiêu tiền?"
+  },
+  {
+    "hanzi": "酒店",
+    "pinyin": "jiǔdiàn",
+    "meaning": "khách sạn",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我们在酒店住。",
+    "ex_py": "Wǒmen zài jiǔdiàn zhù.",
+    "ex_vn": "Chúng tôi ở khách sạn."
+  },
+  {
+    "hanzi": "球",
+    "pinyin": "qiú",
+    "meaning": "quả bóng",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这是一个红色的球。",
+    "ex_py": "Zhè shì yí ge hóngsè de qiú.",
+    "ex_vn": "Đây là một quả bóng màu đỏ."
+  },
+  {
+    "hanzi": "踢",
+    "pinyin": "tī",
+    "meaning": "đá (bóng)",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他喜欢踢球。",
+    "ex_py": "Tā xǐhuan tīqiú.",
+    "ex_vn": "Anh ấy thích đá bóng."
+  },
+  {
+    "hanzi": "足球",
+    "pinyin": "zúqiú",
+    "meaning": "bóng đá",
+    "lesson": "1",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "下午我们去踢足球。",
+    "ex_py": "Xiàwǔ wǒmen qù tī zúqiú.",
+    "ex_vn": "Chiều nay chúng tôi đi đá bóng."
+  },
+  {
     "hanzi": "生病",
     "pinyin": "shēng bìng",
     "meaning": "sinh bệnh, ốm",
@@ -260,6 +330,66 @@
     "ex_vn": "Tôi không có thời gian."
   },
   {
+    "hanzi": "床",
+    "pinyin": "chuáng",
+    "meaning": "giường",
+    "lesson": "2",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这张床很大。",
+    "ex_py": "Zhè zhāng chuáng hěn dà.",
+    "ex_vn": "Chiếc giường này rất lớn."
+  },
+  {
+    "hanzi": "药店",
+    "pinyin": "yàodiàn",
+    "meaning": "tiệm thuốc",
+    "lesson": "2",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "药店就在那边。",
+    "ex_py": "Yàodiàn jiù zài nàbiān.",
+    "ex_vn": "Tiệm thuốc ở ngay đằng kia."
+  },
+  {
+    "hanzi": "动",
+    "pinyin": "dòng",
+    "meaning": "động, cử động",
+    "lesson": "2",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "别动，在那儿等我。",
+    "ex_py": "Bié dòng, zài nàr děng wǒ.",
+    "ex_vn": "Đừng cử động, ở đó đợi tôi."
+  },
+  {
+    "hanzi": "时",
+    "pinyin": "shí",
+    "meaning": "khi, lúc",
+    "lesson": "2",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "不在家的时候，他在公司。",
+    "ex_py": "Bú zài jiā de shíhou, tā zài gōngsī.",
+    "ex_vn": "Lúc không ở nhà, anh ấy ở công ty."
+  },
+  {
+    "hanzi": "有时",
+    "pinyin": "yǒushí",
+    "meaning": "thỉnh thoảng",
+    "lesson": "2",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他有时去超市。",
+    "ex_py": "Tā yǒushí qù chāoshì.",
+    "ex_vn": "Anh ấy thỉnh thoảng đi siêu thị."
+  },
+  {
+    "hanzi": "周",
+    "pinyin": "zhōu",
+    "meaning": "tuần",
+    "lesson": "2",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "下一周我要考试。",
+    "ex_py": "Xià yì zhōu wǒ yào kǎoshì.",
+    "ex_vn": "Tuần tới tôi phải thi."
+  },
+  {
     "hanzi": "手表",
     "pinyin": "shǒubiǎo",
     "meaning": "đồng hồ đeo tay",
@@ -390,6 +520,66 @@
     "ex_vn": "Cái này là màu đỏ."
   },
   {
+    "hanzi": "花",
+    "pinyin": "huā",
+    "meaning": "hoa",
+    "lesson": "3",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "桌子上有一些花。",
+    "ex_py": "Zhuōzi shang yǒu yìxiē huā.",
+    "ex_vn": "Trên bàn có mấy bông hoa."
+  },
+  {
+    "hanzi": "间",
+    "pinyin": "jiān",
+    "meaning": "gian, phòng",
+    "lesson": "3",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这间房很漂亮。",
+    "ex_py": "Zhè jiān fáng hěn piàoliang.",
+    "ex_vn": "Căn phòng này rất đẹp."
+  },
+  {
+    "hanzi": "红茶",
+    "pinyin": "hóngchá",
+    "meaning": "hồng trà",
+    "lesson": "3",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "你喜欢喝红茶吗？",
+    "ex_py": "Nǐ xǐhuan hē hóngchá ma?",
+    "ex_vn": "Bạn có thích uống hồng trà không?"
+  },
+  {
+    "hanzi": "绿茶",
+    "pinyin": "lǜchá",
+    "meaning": "trà xanh",
+    "lesson": "3",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我不喜欢喝绿茶。",
+    "ex_py": "Wǒ bù xǐhuan hē lǜchá.",
+    "ex_vn": "Tôi không thích uống trà xanh."
+  },
+  {
+    "hanzi": "绿色",
+    "pinyin": "lǜsè",
+    "meaning": "màu xanh lá cây",
+    "lesson": "3",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他穿着绿色的衣服。",
+    "ex_py": "Tā chuānzhe lǜsè de yīfu.",
+    "ex_vn": "Anh ấy mặc bộ quần áo màu xanh lá cây."
+  },
+  {
+    "hanzi": "左",
+    "pinyin": "zuǒ",
+    "meaning": "bên trái",
+    "lesson": "3",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他在 me bên trái。",
+    "ex_py": "Tā zài wǒ zuǒbiān.",
+    "ex_vn": "Anh ấy ở bên trái tôi."
+  },
+  {
     "hanzi": "生日",
     "pinyin": "shēngrì",
     "meaning": "sinh nhật",
@@ -508,6 +698,56 @@
     "ex_cn": "我介绍一下。",
     "ex_py": "Wǒ jièshào yíxià.",
     "ex_vn": "Tôi giới thiệu một chút."
+  },
+  {
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "meaning": "điểm, giờ, gọi món",
+    "lesson": "4",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "现在三点。",
+    "ex_py": "Xiànzài sān diǎn.",
+    "ex_vn": "Bây giờ là 3 giờ."
+  },
+  {
+    "hanzi": "名",
+    "pinyin": "míng",
+    "meaning": "tên, danh tiếng",
+    "lesson": "4",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这名学生学习很好。",
+    "ex_py": "Zhè míng xuésheng xuéxí hěn hǎo.",
+    "ex_vn": "Học sinh này học rất giỏi."
+  },
+  {
+    "hanzi": "头",
+    "pinyin": "tóu",
+    "meaning": "đầu",
+    "lesson": "4",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "你的头怎么了？",
+    "ex_py": "Nǐ de tóu zěnme le?",
+    "ex_vn": "Đầu bạn bị làm sao thế?"
+  },
+  {
+    "hanzi": "那么",
+    "pinyin": "nàme",
+    "meaning": "như thế, vậy thì",
+    "lesson": "4",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "既然你忙，那么以后再说。",
+    "ex_py": "Jìrán nǐ máng, nàme yǐhòu zài shuō.",
+    "ex_vn": "Đã vậy bạn bận, thế thì sau này hãy nói."
+  },
+  {
+    "hanzi": "那样",
+    "pinyin": "nàyàng",
+    "meaning": "như vậy",
+    "lesson": "4",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "别那样说话。",
+    "ex_py": "Bié nàyàng shuōhuà.",
+    "ex_vn": "Đừng nói chuyện kiểu như vậy."
   },
   {
     "hanzi": "外面",
@@ -640,6 +880,46 @@
     "ex_vn": "Sau này hãy nói."
   },
   {
+    "hanzi": "饭馆",
+    "pinyin": "fànguǎn",
+    "meaning": "nhà hàng",
+    "lesson": "5",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这家饭馆很有名。",
+    "ex_py": "Zhè jiā fànguǎn hěn yǒumíng.",
+    "ex_vn": "Quán ăn này rất nổi tiếng."
+  },
+  {
+    "hanzi": "肉",
+    "pinyin": "ròu",
+    "meaning": "thịt",
+    "lesson": "5",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我不喜欢吃肉。",
+    "ex_py": "Wǒ bù xǐhuan chī ròu.",
+    "ex_vn": "Tôi không thích ăn thịt."
+  },
+  {
+    "hanzi": "篮球",
+    "pinyin": "lánqiú",
+    "meaning": "bóng rổ",
+    "lesson": "5",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他喜欢打篮球。",
+    "ex_py": "Tā xǐhuan dǎ lánqiú.",
+    "ex_vn": "Anh ấy thích chơi bóng rổ."
+  },
+  {
+    "hanzi": "游",
+    "pinyin": "yóu",
+    "meaning": "bơi, du lịch",
+    "lesson": "5",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他在水里游。",
+    "ex_py": "Tā zài shuǐ lǐ yóu.",
+    "ex_vn": "Nó đang bơi trong nước."
+  },
+  {
     "hanzi": "门",
     "pinyin": "mén",
     "meaning": "cửa",
@@ -758,6 +1038,46 @@
     "ex_cn": "这个三公斤。",
     "ex_py": "Zhè ge sān gōngjīn.",
     "ex_vn": "Cái này nặng ba cân."
+  },
+  {
+    "hanzi": "唱",
+    "pinyin": "chàng",
+    "meaning": "hát",
+    "lesson": "6",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "她喜欢唱歌。",
+    "ex_py": "Tā xǐhuan chànggē.",
+    "ex_vn": "Cô ấy thích hát."
+  },
+  {
+    "hanzi": "歌",
+    "pinyin": "gē",
+    "meaning": "bài hát",
+    "lesson": "6",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这首歌很好听。",
+    "ex_py": "Zhè shǒu gē hěn hǎotīng.",
+    "ex_vn": "Bài hát này rất hay."
+  },
+  {
+    "hanzi": "读书",
+    "pinyin": "dúshū",
+    "meaning": "đọc sách, đi học",
+    "lesson": "6",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他在读书。",
+    "ex_py": "Tā zài dúshū.",
+    "ex_vn": "Anh ấy đang đọc sách."
+  },
+  {
+    "hanzi": "听见",
+    "pinyin": "tīngjiàn",
+    "meaning": "nghe thấy",
+    "lesson": "6",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我听见了。",
+    "ex_py": "Wǒ tīngjiàn le.",
+    "ex_vn": "Tôi nghe thấy rồi."
   },
   {
     "hanzi": "教室",
@@ -890,6 +1210,66 @@
     "ex_vn": "Tôi đến rồi."
   },
   {
+    "hanzi": "跑",
+    "pinyin": "pǎo",
+    "meaning": "chạy",
+    "lesson": "7",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他在跑步。",
+    "ex_py": "Tā zài pǎobù.",
+    "ex_vn": "Anh ấy đang chạy bộ."
+  },
+  {
+    "hanzi": "走路",
+    "pinyin": "zǒulù",
+    "meaning": "đi bộ",
+    "lesson": "7",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我们走路回家。",
+    "ex_py": "Wǒmen zǒulù huíjiā.",
+    "ex_vn": "Chúng tôi đi bộ về nhà."
+  },
+  {
+    "hanzi": "打",
+    "pinyin": "dǎ",
+    "meaning": "đánh, chơi",
+    "lesson": "7",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他会打网球。",
+    "ex_py": "Tā huì dǎ wǎngqiú.",
+    "ex_vn": "Anh ấy biết chơi quần vợt."
+  },
+  {
+    "hanzi": "打车",
+    "pinyin": "dǎchē",
+    "meaning": "bắt taxi",
+    "lesson": "7",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我们打车去机场。",
+    "ex_py": "Wǒmen dǎchē qù jīchǎng.",
+    "ex_vn": "Chúng tôi bắt taxi đi sân bay."
+  },
+  {
+    "hanzi": "公交车",
+    "pinyin": "gōngjiāochē",
+    "meaning": "xe buýt",
+    "lesson": "7",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我坐公交车上学。",
+    "ex_py": "Wǒ zuò gōngjiāochē shàngxué.",
+    "ex_vn": "Tôi đi xe buýt đi học."
+  },
+  {
+    "hanzi": "过来",
+    "pinyin": "guòlái",
+    "meaning": "qua đây",
+    "lesson": "7",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "请到这边来。",
+    "ex_py": "Qǐng dào zhèbiān lái.",
+    "ex_vn": "Xin hãy qua bên này."
+  },
+  {
     "hanzi": "再",
     "pinyin": "zài",
     "meaning": "lại, tiếp tục",
@@ -988,6 +1368,66 @@
     "ex_cn": "这个东西很贵。",
     "ex_py": "Zhè ge dōngxi hěn guì.",
     "ex_vn": "Món đồ này rất đắt."
+  },
+  {
+    "hanzi": "打开",
+    "pinyin": "dǎkāi",
+    "meaning": "mở ra",
+    "lesson": "8",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "请把书打开。",
+    "ex_py": "Qǐng bǎ shū dǎkāi.",
+    "ex_vn": "Mời mở sách ra."
+  },
+  {
+    "hanzi": "飞",
+    "pinyin": "fēi",
+    "meaning": "bay",
+    "lesson": "8",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "小鸟在飞。",
+    "ex_py": "Xiǎoniǎo zài fēi.",
+    "ex_vn": "Con chim đang bay."
+  },
+  {
+    "hanzi": "白色",
+    "pinyin": "báisè",
+    "meaning": "màu trắng",
+    "lesson": "8",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他喜欢白色的衣服。",
+    "ex_py": "Tā xǐhuan báisè de yīfu.",
+    "ex_vn": "Anh ấy thích quần áo màu trắng."
+  },
+  {
+    "hanzi": "黑色",
+    "pinyin": "hēisè",
+    "meaning": "màu đen",
+    "lesson": "8",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "那是黑色的车。",
+    "ex_py": "Nà shì hēisè de chē.",
+    "ex_vn": "Đó là chiếc xe màu đen."
+  },
+  {
+    "hanzi": "快要",
+    "pinyin": "kuàiyào",
+    "meaning": "sắp sửa",
+    "lesson": "8",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "快要下雨了。",
+    "ex_py": "Kuàiyào xià yǔ le.",
+    "ex_vn": "Sắp mưa rồi."
+  },
+  {
+    "hanzi": "上去",
+    "pinyin": "shàngqù",
+    "meaning": "lên trên",
+    "lesson": "8",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我们在楼下等你，你快上去吧。",
+    "ex_py": "Wǒmen zài lóuxià děng nǐ, nǐ kuài shàngqù ba.",
+    "ex_vn": "Chúng tôi đợi bạn ở dưới lầu, bạn mau lên đi."
   },
   {
     "hanzi": "错",
@@ -1100,6 +1540,76 @@
     "ex_vn": "Anh ấy đang làm bài tập."
   },
   {
+    "hanzi": "词",
+    "pinyin": "cí",
+    "meaning": "từ, từ vựng",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这个词我不认识。",
+    "ex_py": "Zhège cí wǒ bú rènshi.",
+    "ex_vn": "Từ này tôi không biết."
+  },
+  {
+    "hanzi": "从小",
+    "pinyin": "cóngxiǎo",
+    "meaning": "từ nhỏ",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他从小就喜欢音乐。",
+    "ex_py": "Tā cóngxiǎo jiù xǐhuan yīnyuè.",
+    "ex_vn": "Anh ấy từ nhỏ đã thích âm nhạc."
+  },
+  {
+    "hanzi": "高中",
+    "pinyin": "gāozhōng",
+    "meaning": "trung học phổ thông",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他是高中生。",
+    "ex_py": "Tā shì gāozhōngshēng.",
+    "ex_vn": "Cậu ấy là học sinh cấp 3."
+  },
+  {
+    "hanzi": "开学",
+    "pinyin": "kāixué",
+    "meaning": "khai giảng",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "明天就开学了。",
+    "ex_py": "Míngtiān jiù kāixué le.",
+    "ex_vn": "Ngày mai là khai giảng rồi."
+  },
+  {
+    "hanzi": "考",
+    "pinyin": "kǎo",
+    "meaning": "thi",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "你考试考得怎么样？",
+    "ex_py": "Nǐ kǎoshì kǎo de zěnmeyàng?",
+    "ex_vn": "Bạn thi cử thế nào?"
+  },
+  {
+    "hanzi": "忘",
+    "pinyin": "wàng",
+    "meaning": "quên",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我忘了带钱包。",
+    "ex_py": "Wǒ wàng le dài qiánbāo.",
+    "ex_vn": "Tôi quên mang ví tiền rồi."
+  },
+  {
+    "hanzi": "网上",
+    "pinyin": "wǎngshàng",
+    "meaning": "trên mạng",
+    "lesson": "9",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我在网上买东西。",
+    "ex_py": "Wǒ zài wǎngshàng mǎi dōngxi.",
+    "ex_vn": "Tôi mua đồ trên mạng."
+  },
+  {
     "hanzi": "课",
     "pinyin": "kè",
     "meaning": "bài học, môn học",
@@ -1178,6 +1688,66 @@
     "ex_cn": "洗衣服。",
     "ex_py": "Xǐ yīfu.",
     "ex_vn": "Giặt quần áo."
+  },
+  {
+    "hanzi": "上来",
+    "pinyin": "shànglái",
+    "meaning": "lên đây",
+    "lesson": "10",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "请上来坐。",
+    "ex_py": "Qǐng shànglái zuò.",
+    "ex_vn": "Mời lên đây ngồi."
+  },
+  {
+    "hanzi": "上面",
+    "pinyin": "shàngmiàn",
+    "meaning": "bên trên",
+    "lesson": "10",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "桌子上面有书。",
+    "ex_py": "Zhuōzi shàngmiàn yǒu shū.",
+    "ex_vn": "Trên bàn có sách."
+  },
+  {
+    "hanzi": "下来",
+    "pinyin": "xiàlái",
+    "meaning": "xuống đây",
+    "lesson": "10",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他从楼上下来了。",
+    "ex_py": "Tā cóng lóushàng xiàlái le.",
+    "ex_vn": "Anh ấy từ trên lầu đi xuống rồi."
+  },
+  {
+    "hanzi": "下面",
+    "pinyin": "xiàmiàn",
+    "meaning": "bên dưới",
+    "lesson": "10",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "椅子下面有一只猫。",
+    "ex_py": "Yǐzi xiàmiàn yǒu yì zhī māo.",
+    "ex_vn": "Dưới ghế có một con mèo."
+  },
+  {
+    "hanzi": "下去",
+    "pinyin": "xiàqù",
+    "meaning": "xuống đi, tiếp tục",
+    "lesson": "10",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "请继续说下去。",
+    "ex_py": "Qǐng jìxù shuō xiàqù.",
+    "ex_vn": "Xin hãy tiếp tục nói đi."
+  },
+  {
+    "hanzi": "正",
+    "pinyin": "zhèng",
+    "meaning": "đang, chính",
+    "lesson": "10",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他正在看书。",
+    "ex_py": "Tā zhèngzài kànshū.",
+    "ex_vn": "Anh ấy đang đọc sách."
   },
   {
     "hanzi": "唱歌",
@@ -1280,6 +1850,66 @@
     "ex_vn": "Bạn họ gì?"
   },
   {
+    "hanzi": "男孩儿",
+    "pinyin": "nánháir",
+    "meaning": "con trai",
+    "lesson": "11",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "那个男孩儿是谁？",
+    "ex_py": "Nàge nánháir shì shéi?",
+    "ex_vn": "Cậu bé kia là ai thế?"
+  },
+  {
+    "hanzi": "女孩儿",
+    "pinyin": "nǚháir",
+    "meaning": "con gái",
+    "lesson": "11",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "她是一个漂亮的女孩儿。",
+    "ex_py": "Tā shì yí ge piàoliang de nǚháir.",
+    "ex_vn": "Cô ấy là một cô gái xinh đẹp."
+  },
+  {
+    "hanzi": "小孩儿",
+    "pinyin": "xiǎoháir",
+    "meaning": "trẻ con",
+    "lesson": "11",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "小孩儿都爱玩。",
+    "ex_py": "Xiǎoháir dōu ài wán.",
+    "ex_vn": "Trẻ con đều ham chơi."
+  },
+  {
+    "hanzi": "小时候",
+    "pinyin": "xiǎoshíhou",
+    "meaning": "hồi nhỏ",
+    "lesson": "11",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我小时候住在大叻。",
+    "ex_py": "Wǒ xiǎoshíhou zhù zài Dàlè.",
+    "ex_vn": "Hồi nhỏ tôi sống ở Đà Lạt."
+  },
+  {
+    "hanzi": "右",
+    "pinyin": "yòu",
+    "meaning": "bên phải",
+    "lesson": "11",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他在我右边。",
+    "ex_py": "Tā zài wǒ yòubiān.",
+    "ex_vn": "Anh ấy ở bên phải tôi."
+  },
+  {
+    "hanzi": "姓名",
+    "pinyin": "xìngmíng",
+    "meaning": "họ tên",
+    "lesson": "11",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "请写下你的姓名。",
+    "ex_py": "Qǐng xiěxià nǐ de xìngmíng.",
+    "ex_vn": "Vui lòng viết họ tên của bạn xuống."
+  },
+  {
     "hanzi": "得",
     "pinyin": "de",
     "meaning": "đạt được, (trợ từ)",
@@ -1348,6 +1978,66 @@
     "ex_cn": "很近。",
     "ex_py": "Hěn jìn.",
     "ex_vn": "Rất gần."
+  },
+  {
+    "hanzi": "出来",
+    "pinyin": "chūlái",
+    "meaning": "ra đây",
+    "lesson": "12",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "太阳出来了。",
+    "ex_py": "Tàiyáng chūlái le.",
+    "ex_vn": "Mặt trời mọc rồi."
+  },
+  {
+    "hanzi": "出门",
+    "pinyin": "chūmén",
+    "meaning": "ra ngoài, đi xa",
+    "lesson": "12",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他出门还没回来。",
+    "ex_py": "Tā chūmén hái méi huílái.",
+    "ex_vn": "Anh ấy ra ngoài vẫn chưa về."
+  },
+  {
+    "hanzi": "出去",
+    "pinyin": "chūqù",
+    "meaning": "đi ra ngoài",
+    "lesson": "12",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我想出去走走。",
+    "ex_py": "Wǒ xiǎng chūqù zǒuzou.",
+    "ex_vn": "Tôi muốn đi ra ngoài dạo chút."
+  },
+  {
+    "hanzi": "进来",
+    "pinyin": "jìnlái",
+    "meaning": "vào đây",
+    "lesson": "12",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "请进来坐。",
+    "ex_py": "Qǐng jìnlái zuò.",
+    "ex_vn": "Mời vào trong ngồi."
+  },
+  {
+    "hanzi": "进去",
+    "pinyin": "jìnqù",
+    "meaning": "đi vào trong",
+    "lesson": "12",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我们进去吧。",
+    "ex_py": "Wǒmen jìnqù ba.",
+    "ex_vn": "Chúng ta đi vào thôi."
+  },
+  {
+    "hanzi": "里面",
+    "pinyin": "lǐmiàn",
+    "meaning": "bên trong",
+    "lesson": "12",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "书在书包里面。",
+    "ex_py": "Shū zài shūbāo lǐmiàn.",
+    "ex_vn": "Sách ở trong cặp."
   },
   {
     "hanzi": "着",
@@ -1460,6 +2150,66 @@
     "ex_vn": "Ở ngã tư."
   },
   {
+    "hanzi": "本子",
+    "pinyin": "běnzi",
+    "meaning": "cuốn vở",
+    "lesson": "13",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这是我的本子。",
+    "ex_py": "Zhè shì wǒ de běnzi.",
+    "ex_vn": "Đây là cuốn vở của tôi."
+  },
+  {
+    "hanzi": "笔",
+    "pinyin": "bǐ",
+    "meaning": "bút",
+    "lesson": "13",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "借我一支笔。",
+    "ex_py": "Jiè wǒ yì zhī bǐ.",
+    "ex_vn": "Cho tôi mượn một cây bút."
+  },
+  {
+    "hanzi": "书包",
+    "pinyin": "shūbāo",
+    "meaning": "cặp sách",
+    "lesson": "13",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "书包里有书。",
+    "ex_py": "Shūbāo lǐ yǒu shū.",
+    "ex_vn": "Trong cặp có sách."
+  },
+  {
+    "hanzi": "路上",
+    "pinyin": "lùshàng",
+    "meaning": "trên đường",
+    "lesson": "13",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我在回家的路上。",
+    "ex_py": "Wǒ zài huíjiā de lùshàng.",
+    "ex_vn": "Tôi đang trên đường về nhà."
+  },
+  {
+    "hanzi": "门口",
+    "pinyin": "ménkǒu",
+    "meaning": "cổng, lối vào",
+    "lesson": "13",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我们在校门口见。",
+    "ex_py": "Wǒmen zài xiàoménkǒu jiàn.",
+    "ex_vn": "Chúng ta gặp nhau ở cổng trường."
+  },
+  {
+    "hanzi": "门票",
+    "pinyin": "ménpiào",
+    "meaning": "vé vào cửa",
+    "lesson": "13",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "景点的门票很贵。",
+    "ex_py": "Jǐngdiǎn de ménpiào hěn guì.",
+    "ex_vn": "Vé vào cửa khu danh lam thắng cảnh rất đắt."
+  },
+  {
     "hanzi": "意思",
     "pinyin": "yìsi",
     "meaning": "ý nghĩa",
@@ -1530,6 +2280,46 @@
     "ex_vn": "Một trăm đồng."
   },
   {
+    "hanzi": "不好意思",
+    "pinyin": "bùhǎoyìsi",
+    "meaning": "ngại quá, xin lỗi",
+    "lesson": "14",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "不好意思，我迟到了。",
+    "ex_py": "Bùhǎoyìsi, wǒ chídào le.",
+    "ex_vn": "Ngại quá, tôi đến muộn rồi."
+  },
+  {
+    "hanzi": "没意思",
+    "pinyin": "méiyìsi",
+    "meaning": "vô vị, không hay",
+    "lesson": "14",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这个电影没意思。",
+    "ex_py": "Zhège diànyǐng méiyìsi.",
+    "ex_vn": "Bộ phim này không hay."
+  },
+  {
+    "hanzi": "有意思",
+    "pinyin": "yǒuyìsi",
+    "meaning": "thú vị",
+    "lesson": "14",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "这本书很有意思。",
+    "ex_py": "Zhè běn shū hěn yǒuyìsi.",
+    "ex_vn": "Cuốn sách này rất thú vị."
+  },
+  {
+    "hanzi": "但",
+    "pinyin": "dàn",
+    "meaning": "nhưng",
+    "lesson": "14",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "虽然很累，但我很高兴。",
+    "ex_py": "Suīrán hěn lèi, dàn wǒ hěn gāoxìng.",
+    "ex_vn": "Tuy mệt nhưng tôi rất vui."
+  },
+  {
     "hanzi": "日",
     "pinyin": "rì",
     "meaning": "ngày",
@@ -1598,5 +2388,65 @@
     "ex_cn": "今天是阴天。",
     "ex_py": "Jīntiān shì yīntiān.",
     "ex_vn": "Hôm nay trời âm u."
+  },
+  {
+    "hanzi": "过年",
+    "pinyin": "guònián",
+    "meaning": "ăn tết",
+    "lesson": "15",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "过年回家看父母。",
+    "ex_py": "Guònián huíjiā kàn fùmǔ.",
+    "ex_vn": "Ăn tết về nhà thăm bố mẹ."
+  },
+  {
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "meaning": "trạm, đứng",
+    "lesson": "15",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "他在车站等我。",
+    "ex_py": "Tā zài chēzhàn děng wǒ.",
+    "ex_vn": "Anh ấy đợi tôi ở bến xe."
+  },
+  {
+    "hanzi": "车站",
+    "pinyin": "chēzhàn",
+    "meaning": "bến xe",
+    "lesson": "15",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "汽车站在那边。",
+    "ex_py": "Qìchēzhàn zài nàbiān.",
+    "ex_vn": "Bến xe khách ở đằng kia."
+  },
+  {
+    "hanzi": "过去",
+    "pinyin": "guòqù",
+    "meaning": "đi qua, quá khứ",
+    "lesson": "15",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "过去的事就让它过去吧。",
+    "ex_py": "Guòqù de shì jiù ràng tā guòqù ba.",
+    "ex_vn": "Chuyện quá khứ cứ để nó trôi qua đi."
+  },
+  {
+    "hanzi": "回来",
+    "pinyin": "huílái",
+    "meaning": "quay lại",
+    "lesson": "15",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "你什么时候回来？",
+    "ex_py": "Nǐ shénme shíhou huílái?",
+    "ex_vn": "Khi nào bạn về?"
+  },
+  {
+    "hanzi": "回去",
+    "pinyin": "huíqù",
+    "meaning": "đi về",
+    "lesson": "15",
+    "type": "Bổ sung 3.0",
+    "ex_cn": "我该回 khu nàr le。",
+    "ex_py": "Wǒ gāi huíqù le.",
+    "ex_vn": "Tôi phải đi về rồi."
   }
 ]
