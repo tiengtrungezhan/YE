@@ -74,9 +74,9 @@
     "pinyin": "tā",
     "meaning": "anh ấy, ông ấy",
     "lesson": "1",
-    "ex_cn": "他好。",
-    "ex_py": "Tā hǎo.",
-    "ex_vn": "Anh ấy khỏe.",
+    "ex_cn": "他是我的同学。",
+    "ex_py": "Tā shì wǒ de tóngxué.",
+    "ex_vn": "Anh ấy là bạn cùng lớp của tôi.",
     "type": "Đại từ"
   },
   {
@@ -84,9 +84,9 @@
     "pinyin": "tā",
     "meaning": "cô ấy, bà ấy",
     "lesson": "1",
-    "ex_cn": "她好。",
-    "ex_py": "Tā hǎo.",
-    "ex_vn": "Cô ấy khỏe.",
+    "ex_cn": "她是我的朋友。",
+    "ex_py": "Tā shì wǒ de péngyou.",
+    "ex_vn": "Cô ấy là bạn của tôi.",
     "type": "Đại từ"
   },
   {
@@ -94,9 +94,9 @@
     "pinyin": "tāmen",
     "meaning": "bọn họ, các anh ấy",
     "lesson": "1",
-    "ex_cn": "他们好。",
-    "ex_py": "Tāmen hǎo.",
-    "ex_vn": "Họ khỏe.",
+    "ex_cn": "他们都是老师。",
+    "ex_py": "Tāmen dōu shì lǎoshī.",
+    "ex_vn": "Họ đều là giáo viên.",
     "type": "Đại từ"
   },
   {
@@ -104,9 +104,9 @@
     "pinyin": "tāmen",
     "meaning": "các cô ấy, bọn họ (nữ)",
     "lesson": "1",
-    "ex_cn": "她们好。",
-    "ex_py": "Tāmen hǎo.",
-    "ex_vn": "Họ (nữ) khỏe.",
+    "ex_cn": "她们是我的同学。",
+    "ex_py": "Tāmen shì wǒ de tóngxué.",
+    "ex_vn": "Họ là bạn cùng lớp của tôi.",
     "type": "Đại từ"
   },
   {
@@ -114,9 +114,9 @@
     "pinyin": "wǒ",
     "meaning": "tôi, ta",
     "lesson": "1",
-    "ex_cn": "我好。",
-    "ex_py": "Wǒ hǎo.",
-    "ex_vn": "Tôi khỏe.",
+    "ex_cn": "我是越南留学生，在中国学习汉语。",
+    "ex_py": "Wǒ shì Yuènán liúxuéshēng, zài Zhōngguó xuéxí Hànyǔ.",
+    "ex_vn": "Tôi là lưu học sinh Việt Nam, đang học tiếng Trung ở Trung Quốc.",
     "type": "Đại từ"
   },
   {
@@ -125,9 +125,9 @@
     "meaning": "chúng tôi, chúng ta",
     "lesson": "1",
     "type": "Đại từ",
-    "ex_cn": "我们好。",
-    "ex_py": "Wǒmen hǎo.",
-    "ex_vn": "Chúng tôi khỏe."
+    "ex_cn": "我们都是学生。",
+    "ex_py": "Wǒmen dōu shì xuésheng.",
+    "ex_vn": "Chúng tôi đều là học sinh."
   },
   {
     "hanzi": "再见",
@@ -164,9 +164,9 @@
     "pinyin": "bù",
     "meaning": "không cần, không, đừng",
     "lesson": "2",
-    "ex_cn": "我不去。",
-    "ex_py": "Wǒ bú qù.",
-    "ex_vn": "Tôi không đi.",
+    "ex_cn": "我今天不去学校。",
+    "ex_py": "Wǒ jīntiān bù qù xuéxiào.",
+    "ex_vn": "Hôm nay tôi không đi học.",
     "type": "Phó từ"
   },
   {
@@ -264,56 +264,80 @@
     "pinyin": "sì",
     "meaning": "bốn",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我家有四口人。",
+    "ex_py": "Wǒ jiā yǒu sì kǒu rén.",
+    "ex_vn": "Nhà tôi có bốn người."
   },
   {
     "hanzi": "五",
     "pinyin": "wǔ",
     "meaning": "năm",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "他买了五本书。",
+    "ex_py": "Tā mǎi le wǔ běn shū.",
+    "ex_vn": "Anh ấy mua năm cuốn sách."
   },
   {
     "hanzi": "六",
     "pinyin": "liù",
     "meaning": "sáu",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "今天是六月六号。",
+    "ex_py": "Jīntiān shì liù yuè liù hào.",
+    "ex_vn": "Hôm nay là ngày 6 tháng 6."
   },
   {
     "hanzi": "七",
     "pinyin": "qī",
     "meaning": "bảy",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我们班有七个女生。",
+    "ex_py": "Wǒmen bān yǒu qī gè nǚshēng.",
+    "ex_vn": "Lớp chúng tôi có bảy học sinh nữ."
   },
   {
     "hanzi": "八",
     "pinyin": "bā",
     "meaning": "tám",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我今年八岁。",
+    "ex_py": "Wǒ jīnnián bā suì.",
+    "ex_vn": "Năm nay tôi tám tuổi."
   },
   {
     "hanzi": "九",
     "pinyin": "jiǔ",
     "meaning": "chín",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我每天九点上课。",
+    "ex_py": "Wǒ měitiān jiǔ diǎn shàngkè.",
+    "ex_vn": "Mỗi ngày tôi lên lớp lúc 9 giờ."
   },
   {
     "hanzi": "十",
     "pinyin": "shí",
     "meaning": "mười",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "他今年十岁了。",
+    "ex_py": "Tā jīnnián shí suì le.",
+    "ex_vn": "Năm nay anh ấy mười tuổi rồi."
   },
   {
     "hanzi": "零",
     "pinyin": "líng",
     "meaning": "số không",
     "lesson": "2",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "今天气温是零下五度。",
+    "ex_py": "Jīntiān qìwēn shì líng xià wǔ dù.",
+    "ex_vn": "Hôm nay nhiệt độ là âm 5 độ."
   },
   {
     "hanzi": "不要",
@@ -341,7 +365,7 @@
     "meaning": "các (số nhiều)",
     "lesson": "2",
     "type": "Bổ sung 3.0",
-    "ex_cn": "我们 đều là học sinh。",
+    "ex_cn": "我们都是学生。",
     "ex_py": "Wǒmen dōu shì xuésheng.",
     "ex_vn": "Chúng tôi đều là học sinh."
   },
@@ -351,9 +375,9 @@
     "meaning": "tên (là)",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "你叫什么？",
-    "ex_py": "Nǐ jiào shénme?",
-    "ex_vn": "Bạn tên là gì?"
+    "ex_cn": "我叫李明，你叫什么名字？",
+    "ex_py": "Wǒ jiào Lǐ Míng, nǐ jiào shénme míngzi?",
+    "ex_vn": "Tôi tên là Lý Minh, bạn tên là gì?"
   },
   {
     "hanzi": "吗",
@@ -381,9 +405,9 @@
     "meaning": "được dùng ở cuối câu hỏi",
     "lesson": "3",
     "type": "Trợ từ",
-    "ex_cn": "你呢？",
-    "ex_py": "Nǐ ne?",
-    "ex_vn": "Còn bạn?"
+    "ex_cn": "我很好，你呢？",
+    "ex_py": "Wǒ hěn hǎo, nǐ ne?",
+    "ex_vn": "Tôi rất tốt, còn bạn thì sao?"
   },
   {
     "hanzi": "人",
@@ -401,8 +425,8 @@
     "meaning": "cái gì",
     "lesson": "3",
     "type": "Đại từ",
-    "ex_cn": "你叫什么？",
-    "ex_py": "Nǐ jiào shénme?",
+    "ex_cn": "你叫什么名字？",
+    "ex_py": "Nǐ jiào shénme míngzi?",
     "ex_vn": "Bạn tên là gì?"
   },
   {
@@ -411,9 +435,9 @@
     "meaning": "là",
     "lesson": "3",
     "type": "Động từ",
-    "ex_cn": "他是学生。",
-    "ex_py": "Tā shì xuésheng.",
-    "ex_vn": "Anh ấy là học sinh."
+    "ex_cn": "他是我们班的学生，很努力。",
+    "ex_py": "Tā shì wǒmen bān de xuésheng, hěn nǔlì.",
+    "ex_vn": "Anh ấy là học sinh lớp chúng tôi, rất chăm chỉ."
   },
   {
     "hanzi": "学生",
@@ -461,9 +485,9 @@
     "meaning": "vui vẻ",
     "lesson": "3",
     "type": "Tính từ",
-    "ex_cn": "我很高兴。",
-    "ex_py": "Wǒ hěn gāoxìng.",
-    "ex_vn": "Tôi rất vui."
+    "ex_cn": "认识你，我很高兴。",
+    "ex_py": "Rènshi nǐ, wǒ hěn gāoxìng.",
+    "ex_vn": "Tôi rất vui khi được quen bạn."
   },
   {
     "hanzi": "很",
@@ -471,9 +495,9 @@
     "meaning": "rất",
     "lesson": "3",
     "type": "Phó từ",
-    "ex_cn": "他很好。",
-    "ex_py": "Tā hěn hǎo.",
-    "ex_vn": "Anh ấy rất tốt."
+    "ex_cn": "今天的天气很好。",
+    "ex_py": "Jīntiān de tiānqì hěn hǎo.",
+    "ex_vn": "Thời tiết hôm nay rất đẹp."
   },
   {
     "hanzi": "也",
@@ -551,9 +575,9 @@
     "meaning": "bác sĩ",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "他是医生。",
-    "ex_py": "Tā shì yīshēng.",
-    "ex_vn": "Anh ấy là bác sĩ."
+    "ex_cn": "他是医生，每天在医院工作。",
+    "ex_py": "Tā shì yīshēng, měitiān zài yīyuàn gōngzuò.",
+    "ex_vn": "Anh ấy là bác sĩ, mỗi ngày làm việc ở bệnh viện."
   },
   {
     "hanzi": "职员",
@@ -561,9 +585,9 @@
     "meaning": "nhân viên",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "他是职员。",
-    "ex_py": "Tā shì zhíyuán.",
-    "ex_vn": "Anh ấy là nhân viên."
+    "ex_cn": "他是公司职员，每天坐地铁上班。",
+    "ex_py": "Tā shì gōngsī zhíyuán, měitiān zuò dìtiě shàngbān.",
+    "ex_vn": "Anh ấy là nhân viên công ty, mỗi ngày đi tàu điện ngầm đi làm."
   },
   {
     "hanzi": "大学生",
@@ -591,9 +615,9 @@
     "meaning": "công việc / làm việc",
     "lesson": "3",
     "type": "Danh từ/Động từ",
-    "ex_cn": "老师工作。",
-    "ex_py": "Lǎoshī gōngzuò.",
-    "ex_vn": "Thầy giáo làm việc."
+    "ex_cn": "他每天八点开始工作。",
+    "ex_py": "Tā měitiān bā diǎn kāishǐ gōngzuò.",
+    "ex_vn": "Anh ấy bắt đầu làm việc lúc 8 giờ mỗi ngày."
   },
   {
     "hanzi": "请问",
@@ -631,9 +655,9 @@
     "meaning": "họ, họ là",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "他姓什么？",
-    "ex_py": "Tā xìng shénme?",
-    "ex_vn": "Anh ấy họ gì?"
+    "ex_cn": "他姓王，叫王明。",
+    "ex_py": "Tā xìng Wáng, jiào Wáng Míng.",
+    "ex_vn": "Anh ấy họ Vương, tên là Vương Minh."
   },
   {
     "hanzi": "贵姓",
@@ -641,9 +665,9 @@
     "meaning": "quý tính (họ của ngài)",
     "lesson": "3",
     "type": "Danh từ",
-    "ex_cn": "您贵姓？",
-    "ex_py": "Nín guìxìng?",
-    "ex_vn": "Ngài họ gì?"
+    "ex_cn": "请问，您贵姓？",
+    "ex_py": "Qǐngwèn, nín guìxìng?",
+    "ex_vn": "Xin hỏi, quý danh của ngài là gì?"
   },
   {
     "hanzi": "哪",
@@ -651,9 +675,9 @@
     "meaning": "nào",
     "lesson": "3",
     "type": "Đại từ",
-    "ex_cn": "你是哪人？",
-    "ex_py": "Nǐ shì nǎ rén?",
-    "ex_vn": "Bạn là người ở đâu?"
+    "ex_cn": "你是哪个国家的人？",
+    "ex_py": "Nǐ shì nǎge guójiā de rén?",
+    "ex_vn": "Bạn là người nước nào?"
   },
   {
     "hanzi": "国",
@@ -711,9 +735,9 @@
     "meaning": "nào",
     "lesson": "4",
     "type": "Đại từ",
-    "ex_cn": "你是哪人？",
-    "ex_py": "Nǐ shì nǎ rén?",
-    "ex_vn": "Bạn là người ở đâu?"
+    "ex_cn": "你喜欢哪种颜色？",
+    "ex_py": "Nǐ xǐhuan nǎ zhǒng yánsè?",
+    "ex_vn": "Bạn thích màu nào?"
   },
   {
     "hanzi": "朋友",
@@ -731,9 +755,9 @@
     "meaning": "ai",
     "lesson": "4",
     "type": "Đại từ",
-    "ex_cn": "他是谁？",
-    "ex_py": "Tā shì shéi?",
-    "ex_vn": "Anh ấy là ai?"
+    "ex_cn": "那个人是谁，你认识他吗？",
+    "ex_py": "Nàge rén shì shéi, nǐ rènshi tā ma?",
+    "ex_vn": "Người đó là ai, bạn có quen không?"
   },
   {
     "hanzi": "家人",
@@ -751,9 +775,9 @@
     "meaning": "cái nào",
     "lesson": "4",
     "type": "Bổ sung 3.0",
-    "ex_cn": "你要哪个？",
-    "ex_py": "Nǐ yào nǎ ge?",
-    "ex_vn": "Bạn muốn cái nào?"
+    "ex_cn": "这两本书你要哪个？",
+    "ex_py": "Zhè liǎng běn shū nǐ yào nǎge?",
+    "ex_vn": "Trong hai cuốn sách này bạn muốn cuốn nào?"
   },
   {
     "hanzi": "哪些",
@@ -761,9 +785,9 @@
     "meaning": "những cái nào",
     "lesson": "4",
     "type": "Bổ sung 3.0",
-    "ex_cn": "哪些 là của bạn？",
-    "ex_py": "Nǎxiē shì nǐ de?",
-    "ex_vn": "Những cái nào là của bạn?"
+    "ex_cn": "哪些书是你的？",
+    "ex_py": "Nǎxiē shū shì nǐ de?",
+    "ex_vn": "Những cuốn sách nào là của bạn?"
   },
   {
     "hanzi": "女士",
@@ -780,7 +804,10 @@
     "pinyin": "bā",
     "meaning": "số 8",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "他今年八岁，很聪明。",
+    "ex_py": "Tā jīnnián bā suì, hěn cōngming.",
+    "ex_vn": "Năm nay anh ấy tám tuổi, rất thông minh."
   },
   {
     "hanzi": "多",
@@ -798,9 +825,9 @@
     "meaning": "lớn",
     "lesson": "5",
     "type": "Tính từ",
-    "ex_cn": "中国很大。",
-    "ex_py": "Zhōngguó hěn dà.",
-    "ex_vn": "Trung Quốc rất lớn."
+    "ex_cn": "中国是一个很大的国家。",
+    "ex_py": "Zhōngguó shì yí gè hěn dà de guójiā.",
+    "ex_vn": "Trung Quốc là một đất nước rất rộng lớn."
   },
   {
     "hanzi": "个",
@@ -808,16 +835,19 @@
     "meaning": "cái",
     "lesson": "5",
     "type": "Lượng từ",
-    "ex_cn": "三个学生。",
-    "ex_py": "Sān ge xuésheng.",
-    "ex_vn": "Ba học sinh."
+    "ex_cn": "我们班有三十个学生。",
+    "ex_py": "Wǒmen bān yǒu sānshí gè xuésheng.",
+    "ex_vn": "Lớp chúng tôi có ba mươi học sinh."
   },
   {
     "hanzi": "九",
     "pinyin": "jiǔ",
     "meaning": "số 9",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我家住在九楼。",
+    "ex_py": "Wǒ jiā zhù zài jiǔ lóu.",
+    "ex_vn": "Nhà tôi ở tầng chín."
   },
   {
     "hanzi": "几",
@@ -825,9 +855,9 @@
     "meaning": "mấy",
     "lesson": "5",
     "type": "Danh từ",
-    "ex_cn": "你几岁？",
-    "ex_py": "Nǐ jǐ suì?",
-    "ex_vn": "Cháu mấy tuổi rồi?"
+    "ex_cn": "你今年几岁？",
+    "ex_py": "Nǐ jīnnián jǐ suì?",
+    "ex_vn": "Năm nay bạn bao nhiêu tuổi?"
   },
   {
     "hanzi": "了",
@@ -835,16 +865,19 @@
     "meaning": "được dùng để chỉ sự thay đổi",
     "lesson": "5",
     "type": "Trợ từ",
-    "ex_cn": "他三岁了。",
-    "ex_py": "Tā sān suì le.",
-    "ex_vn": "Nó ba tuổi rồi."
+    "ex_cn": "他三岁了，会说很多话。",
+    "ex_py": "Tā sān suì le, huì shuō hěn duō huà.",
+    "ex_vn": "Anh ấy đã ba tuổi, biết nói nhiều rồi."
   },
   {
     "hanzi": "六",
     "pinyin": "liù",
     "meaning": "số 6",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我有六本中文书。",
+    "ex_py": "Wǒ yǒu liù běn Zhōngwén shū.",
+    "ex_vn": "Tôi có sáu cuốn sách tiếng Trung."
   },
   {
     "hanzi": "女儿",
@@ -861,14 +894,20 @@
     "pinyin": "qī",
     "meaning": "số 7",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "他们家有七口人。",
+    "ex_py": "Tāmen jiā yǒu qī kǒu rén.",
+    "ex_vn": "Gia đình họ có bảy người."
   },
   {
     "hanzi": "十",
     "pinyin": "shí",
     "meaning": "số 10",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "弟弟今年十岁了。",
+    "ex_py": "Dìdi jīnnián shí suì le.",
+    "ex_vn": "Em trai năm nay mười tuổi rồi."
   },
   {
     "hanzi": "岁",
@@ -876,23 +915,29 @@
     "meaning": "tuổi",
     "lesson": "5",
     "type": "Danh từ",
-    "ex_cn": "我二十岁。",
-    "ex_py": "Wǒ èrshí suì.",
-    "ex_vn": "Tôi hai mươi tuổi."
+    "ex_cn": "我今年二十岁，是大学生。",
+    "ex_py": "Wǒ jīnnián èrshí suì, shì dàxuéshēng.",
+    "ex_vn": "Năm nay tôi hai mươi tuổi, là sinh viên đại học."
   },
   {
     "hanzi": "四",
     "pinyin": "sì",
     "meaning": "số 4",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "我们小组有四个人。",
+    "ex_py": "Wǒmen xiǎozǔ yǒu sì gè rén.",
+    "ex_vn": "Nhóm chúng tôi có bốn người."
   },
   {
     "hanzi": "五",
     "pinyin": "wǔ",
     "meaning": "năm",
     "lesson": "5",
-    "type": "Số từ"
+    "type": "Số từ",
+    "ex_cn": "他每天五点起床跑步。",
+    "ex_py": "Tā měitiān wǔ diǎn qǐchuáng pǎobù.",
+    "ex_vn": "Mỗi ngày anh ấy thức dậy lúc 5 giờ để chạy bộ."
   },
   {
     "hanzi": "一",
@@ -1110,9 +1155,9 @@
     "meaning": "hai (số lượng)",
     "lesson": "5",
     "type": "Số từ",
-    "ex_cn": "两个哥哥。",
-    "ex_py": "Liǎng ge gēge.",
-    "ex_vn": "Hai người anh trai."
+    "ex_cn": "我有两个哥哥，他们都是医生。",
+    "ex_py": "Wǒ yǒu liǎng gè gēge, tāmen dōu shì yīshēng.",
+    "ex_vn": "Tôi có hai người anh trai, họ đều là bác sĩ."
   },
   {
     "hanzi": "年纪",
@@ -1130,9 +1175,9 @@
     "meaning": "bao nhiêu tuổi",
     "lesson": "5",
     "type": "Cụm từ",
-    "ex_cn": "你多大？",
-    "ex_py": "Nǐ duōdà?",
-    "ex_vn": "Bạn bao nhiêu tuổi?"
+    "ex_cn": "请问，你多大了？",
+    "ex_py": "Qǐngwèn, nǐ duō dà le?",
+    "ex_vn": "Xin hỏi, bạn bao nhiêu tuổi rồi?"
   },
   {
     "hanzi": "今年",
@@ -1200,9 +1245,9 @@
     "meaning": "đọc",
     "lesson": "6",
     "type": "Động từ",
-    "ex_cn": "你会读吗？",
-    "ex_py": "Nǐ huì dú ma?",
-    "ex_vn": "Bạn biết đọc không?"
+    "ex_cn": "他每天都读中文课文。",
+    "ex_py": "Tā měitiān dōu dú Zhōngwén kèwén.",
+    "ex_vn": "Mỗi ngày anh ấy đều đọc bài khóa tiếng Trung."
   },
   {
     "hanzi": "会",
@@ -1210,9 +1255,9 @@
     "meaning": "biết (qua học tập)",
     "lesson": "6",
     "type": "Động từ",
-    "ex_cn": "我会汉语。",
-    "ex_py": "Wǒ huì Hànyǔ.",
-    "ex_vn": "Tôi biết tiếng Trung."
+    "ex_cn": "他会说三种语言。",
+    "ex_py": "Tā huì shuō sān zhǒng yǔyán.",
+    "ex_vn": "Anh ấy biết nói ba thứ tiếng."
   },
   {
     "hanzi": "很",
@@ -1220,9 +1265,9 @@
     "meaning": "rất",
     "lesson": "6",
     "type": "Phó từ",
-    "ex_cn": "他很好。",
-    "ex_py": "Tā hěn hǎo.",
-    "ex_vn": "Anh ấy rất tốt."
+    "ex_cn": "她说汉语说得很好。",
+    "ex_py": "Tā shuō Hànyǔ shuō de hěn hǎo.",
+    "ex_vn": "Cô ấy nói tiếng Trung rất tốt."
   },
   {
     "hanzi": "说",
@@ -1230,9 +1275,9 @@
     "meaning": "nói",
     "lesson": "6",
     "type": "Động từ",
-    "ex_cn": "他说汉语。",
-    "ex_py": "Tā shuō Hànyǔ.",
-    "ex_vn": "Anh ấy nói tiếng Trung."
+    "ex_cn": "他每天练习说汉语。",
+    "ex_py": "Tā měitiān liànxí shuō Hànyǔ.",
+    "ex_vn": "Mỗi ngày anh ấy luyện tập nói tiếng Trung."
   },
   {
     "hanzi": "写",
@@ -1240,9 +1285,9 @@
     "meaning": "viết",
     "lesson": "6",
     "type": "Động từ",
-    "ex_cn": "你会写吗？",
-    "ex_py": "Nǐ huì xiě ma?",
-    "ex_vn": "Bạn biết viết không?"
+    "ex_cn": "他每天练习写汉字。",
+    "ex_py": "Tā měitiān liànxí xiě Hànzì.",
+    "ex_vn": "Mỗi ngày anh ấy luyện tập viết chữ Hán."
   },
   {
     "hanzi": "怎么",
@@ -1280,9 +1325,9 @@
     "meaning": "đọc sách, đi học",
     "lesson": "6",
     "type": "Bổ sung 3.0",
-    "ex_cn": "他在读书。",
-    "ex_py": "Tā zài dúshū.",
-    "ex_vn": "Anh ấy đang đọc sách."
+    "ex_cn": "他在图书馆里读书。",
+    "ex_py": "Tā zài túshūguǎn lǐ dúshū.",
+    "ex_vn": "Anh ấy đang đọc sách trong thư viện."
   },
   {
     "hanzi": "听见",
@@ -1290,9 +1335,9 @@
     "meaning": "nghe thấy",
     "lesson": "6",
     "type": "Bổ sung 3.0",
-    "ex_cn": "我听见了。",
-    "ex_py": "Wǒ tīngjiàn le.",
-    "ex_vn": "Tôi nghe thấy rồi."
+    "ex_cn": "你说得太小声了，我没听见。",
+    "ex_py": "Nǐ shuō de tài xiǎo shēng le, wǒ méi tīngjiàn.",
+    "ex_vn": "Bạn nói nhỏ quá, tôi không nghe thấy."
   },
   {
     "hanzi": "号",
@@ -1320,9 +1365,9 @@
     "meaning": "nhìn, xem",
     "lesson": "7",
     "type": "Động từ",
-    "ex_cn": "看，他是谁？",
-    "ex_py": "Kàn, tā shì shéi?",
-    "ex_vn": "Nhìn kìa, anh ấy là ai?"
+    "ex_cn": "他喜欢看中文书。",
+    "ex_py": "Tā xǐhuan kàn Zhōngwén shū.",
+    "ex_vn": "Anh ấy thích đọc sách tiếng Trung."
   },
   {
     "hanzi": "去",
@@ -1330,9 +1375,9 @@
     "meaning": "đi, đi đến",
     "lesson": "7",
     "type": "Động từ",
-    "ex_cn": "我去学校。",
-    "ex_py": "Wǒ qù xuéxiào.",
-    "ex_vn": "Tôi đi đến trường."
+    "ex_cn": "我明天去学校上课。",
+    "ex_py": "Wǒ míngtiān qù xuéxiào shàngkè.",
+    "ex_vn": "Ngày mai tôi đi học ở trường."
   },
   {
     "hanzi": "请",
@@ -1350,9 +1395,9 @@
     "meaning": "sách",
     "lesson": "7",
     "type": "Danh từ",
-    "ex_cn": "我看书。",
-    "ex_py": "Wǒ kàn shū.",
-    "ex_vn": "Tôi đọc sách."
+    "ex_cn": "我每天晚上都看书。",
+    "ex_py": "Wǒ měitiān wǎnshang dōu kàn shū.",
+    "ex_vn": "Mỗi buổi tối tôi đều đọc sách."
   },
   {
     "hanzi": "学校",
@@ -1360,9 +1405,9 @@
     "meaning": "trường",
     "lesson": "7",
     "type": "Danh từ",
-    "ex_cn": "我去学校。",
-    "ex_py": "Wǒ qù xuéxiào.",
-    "ex_vn": "Tôi đi học."
+    "ex_cn": "我们学校很大，有很多学生。",
+    "ex_py": "Wǒmen xuéxiào hěn dà, yǒu hěn duō xuésheng.",
+    "ex_vn": "Trường chúng tôi rất rộng, có rất nhiều học sinh."
   },
   {
     "hanzi": "星期",
@@ -1400,9 +1445,9 @@
     "meaning": "thứ (thứ tự)",
     "lesson": "7",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这是第一。",
-    "ex_py": "Zhè shì dì yī.",
-    "ex_vn": "Đây là thứ nhất."
+    "ex_cn": "他是班里第一名，成绩很好。",
+    "ex_py": "Tā shì bān lǐ dì yī míng, chéngjì hěn hǎo.",
+    "ex_vn": "Anh ấy đứng nhất lớp, thành tích rất tốt."
   },
   {
     "hanzi": "电影院",
@@ -1450,9 +1495,9 @@
     "meaning": "trà",
     "lesson": "8",
     "type": "Danh từ",
-    "ex_cn": "你喝茶吗？",
-    "ex_py": "Nǐ hē chá ma?",
-    "ex_vn": "Bạn uống trà không?"
+    "ex_cn": "你喝茶还是喝咖啡？",
+    "ex_py": "Nǐ hē chá háishi hē kāfēi?",
+    "ex_vn": "Bạn uống trà hay uống cà phê?"
   },
   {
     "hanzi": "吃",
@@ -1460,9 +1505,9 @@
     "meaning": "ăn",
     "lesson": "8",
     "type": "Động từ",
-    "ex_cn": "我不吃。",
-    "ex_py": "Wǒ bù chī.",
-    "ex_vn": "Tôi không ăn."
+    "ex_cn": "我今天中午不吃米饭。",
+    "ex_py": "Wǒ jīntiān zhōngwǔ bù chī mǐfàn.",
+    "ex_vn": "Hôm nay buổi trưa tôi không ăn cơm."
   },
   {
     "hanzi": "多少",
@@ -1470,9 +1515,9 @@
     "meaning": "bao nhiêu",
     "lesson": "8",
     "type": "Danh từ",
-    "ex_cn": "多少钱？",
-    "ex_py": "Duōshao qián?",
-    "ex_vn": "Bao nhiêu tiền?"
+    "ex_cn": "这件衣服多少钱？",
+    "ex_py": "Zhè jiàn yīfu duōshao qián?",
+    "ex_vn": "Chiếc áo này bao nhiêu tiền?"
   },
   {
     "hanzi": "喝",
@@ -1490,9 +1535,9 @@
     "meaning": "đồng (đơn vị tiền tệ)",
     "lesson": "8",
     "type": "Lượng từ",
-    "ex_cn": "三块钱。",
-    "ex_py": "Sān kuài qián.",
-    "ex_vn": "Ba đồng."
+    "ex_cn": "这本书只要三块钱。",
+    "ex_py": "Zhè běn shū zhǐ yào sān kuài qián.",
+    "ex_vn": "Cuốn sách này chỉ ba đồng thôi."
   },
   {
     "hanzi": "买",
@@ -1500,9 +1545,9 @@
     "meaning": "mua",
     "lesson": "8",
     "type": "Động từ",
-    "ex_cn": "买什么？",
-    "ex_py": "Mǎi shénme?",
-    "ex_vn": "Mua cái gì?"
+    "ex_cn": "我想去超市买东西。",
+    "ex_py": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+    "ex_vn": "Tôi muốn đi siêu thị mua đồ."
   },
   {
     "hanzi": "米饭",
@@ -1510,9 +1555,9 @@
     "meaning": "cơm",
     "lesson": "8",
     "type": "Danh từ",
-    "ex_cn": "我吃米饭。",
-    "ex_py": "Wǒ chī mǐfàn.",
-    "ex_vn": "Tôi ăn cơm."
+    "ex_cn": "我每天中午都吃米饭，不吃面包。",
+    "ex_py": "Wǒ měitiān zhōngwǔ dōu chī mǐfàn, bù chī miànbāo.",
+    "ex_vn": "Mỗi buổi trưa tôi đều ăn cơm, không ăn bánh mì."
   },
   {
     "hanzi": "钱",
@@ -1520,9 +1565,9 @@
     "meaning": "tiền",
     "lesson": "8",
     "type": "Danh từ",
-    "ex_cn": "我有钱。",
-    "ex_py": "Wǒ yǒu qián.",
-    "ex_vn": "Tôi có tiền."
+    "ex_cn": "我身上没有带钱。",
+    "ex_py": "Wǒ shēnshang méiyǒu dài qián.",
+    "ex_vn": "Tôi không mang tiền theo người."
   },
   {
     "hanzi": "下午",
@@ -1530,9 +1575,9 @@
     "meaning": "buổi chiều",
     "lesson": "8",
     "type": "Danh từ",
-    "ex_cn": "今天下午。",
-    "ex_py": "Jīntiān xiàwǔ.",
-    "ex_vn": "Chiều hôm nay."
+    "ex_cn": "今天下午我要去医院。",
+    "ex_py": "Jīntiān xiàwǔ wǒ yào qù yīyuàn.",
+    "ex_vn": "Chiều nay tôi phải đi bệnh viện."
   },
   {
     "hanzi": "想",
@@ -1590,9 +1635,9 @@
     "meaning": "bánh mì",
     "lesson": "8",
     "type": "Bổ sung 3.0",
-    "ex_cn": "早上 ăn bánh mì。",
-    "ex_py": "Zǎoshang chī miànbāo.",
-    "ex_vn": "Buổi sáng ăn bánh mì."
+    "ex_cn": "我每天早上吃面包。",
+    "ex_py": "Wǒ měitiān zǎoshang chī miànbāo.",
+    "ex_vn": "Tôi ăn bánh mì mỗi buổi sáng."
   },
   {
     "hanzi": "饭",
@@ -1630,8 +1675,8 @@
     "meaning": "cái này",
     "lesson": "8",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这个东西 bao nhiêu tiền？",
-    "ex_py": "Zhè ge dōngxi duōshǎo qián?",
+    "ex_cn": "这个东西多少钱？",
+    "ex_py": "Zhège dōngxi duōshao qián?",
     "ex_vn": "Cái này bao nhiêu tiền?"
   },
   {
@@ -1640,9 +1685,9 @@
     "meaning": "đồng (tệ)",
     "lesson": "8",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这个十元。",
-    "ex_py": "Zhège shí yuán.",
-    "ex_vn": "Cái này mười tệ."
+    "ex_cn": "这个苹果要十元钱。",
+    "ex_py": "Zhège píngguǒ yào shí yuán qián.",
+    "ex_vn": "Quả táo này giá mười tệ."
   },
   {
     "hanzi": "工作",
@@ -1650,9 +1695,9 @@
     "meaning": "làm việc; công việc",
     "lesson": "9",
     "type": "Động từ",
-    "ex_cn": "老师工作。",
-    "ex_py": "Lǎoshī gōngzuò.",
-    "ex_vn": "Thầy giáo làm việc."
+    "ex_cn": "他在一家公司工作。",
+    "ex_py": "Tā zài yì jiā gōngsī gōngzuò.",
+    "ex_vn": "Anh ấy làm việc ở một công ty."
   },
   {
     "hanzi": "狗",
@@ -1680,9 +1725,9 @@
     "meaning": "mèo",
     "lesson": "9",
     "type": "Danh từ",
-    "ex_cn": "他家有猫。",
-    "ex_py": "Tā jiā yǒu māo.",
-    "ex_vn": "Nhà anh ấy có mèo."
+    "ex_cn": "他家有两只猫，很可爱。",
+    "ex_py": "Tā jiā yǒu liǎng zhī māo, hěn kě'ài.",
+    "ex_vn": "Nhà anh ấy có hai con mèo, rất đáng yêu."
   },
   {
     "hanzi": "哪儿",
@@ -1690,9 +1735,9 @@
     "meaning": "ở đâu",
     "lesson": "9",
     "type": "Đại từ",
-    "ex_cn": "你在哪儿？",
-    "ex_py": "Nǐ zài nǎr?",
-    "ex_vn": "Bạn ở đâu?"
+    "ex_cn": "你在哪儿？我在图书馆。",
+    "ex_py": "Nǐ zài nǎr? Wǒ zài túshūguǎn.",
+    "ex_vn": "Bạn đang ở đâu? Tôi đang ở thư viện."
   },
   {
     "hanzi": "商店",
@@ -1700,9 +1745,9 @@
     "meaning": "cửa hàng",
     "lesson": "9",
     "type": "Danh từ",
-    "ex_cn": "我去商店。",
-    "ex_py": "Wǒ qù shāngdiàn.",
-    "ex_vn": "Tôi đi cửa hàng."
+    "ex_cn": "我去商店买了一双鞋。",
+    "ex_py": "Wǒ qù shāngdiàn mǎi le yì shuāng xié.",
+    "ex_vn": "Tôi đi cửa hàng mua một đôi giày."
   },
   {
     "hanzi": "少",
@@ -1710,9 +1755,9 @@
     "meaning": "ít",
     "lesson": "9",
     "type": "Tính từ",
-    "ex_cn": "钱不少。",
-    "ex_py": "Qián bù shǎo.",
-    "ex_vn": "Tiền không ít."
+    "ex_cn": "我的钱不少，够用了。",
+    "ex_py": "Wǒ de qián bù shǎo, gòu yòng le.",
+    "ex_vn": "Tiền của tôi không ít, đủ dùng rồi."
   },
   {
     "hanzi": "下",
@@ -1720,9 +1765,9 @@
     "meaning": "bên dưới, phía dưới",
     "lesson": "9",
     "type": "Danh từ",
-    "ex_cn": "椅子下。",
-    "ex_py": "Yǐzi xià.",
-    "ex_vn": "Dưới cái ghế."
+    "ex_cn": "猫在椅子下面睡觉。",
+    "ex_py": "Māo zài yǐzi xiàmiàn shuìjiào.",
+    "ex_vn": "Con mèo đang ngủ ở dưới ghế."
   },
   {
     "hanzi": "小",
@@ -1730,9 +1775,9 @@
     "meaning": "nhỏ, bé",
     "lesson": "9",
     "type": "Tính từ",
-    "ex_cn": "小猫。",
-    "ex_py": "Xiǎo māo.",
-    "ex_vn": "Con mèo nhỏ."
+    "ex_cn": "这只小猫很可爱。",
+    "ex_py": "Zhè zhī xiǎo māo hěn kě'ài.",
+    "ex_vn": "Con mèo nhỏ này rất đáng yêu."
   },
   {
     "hanzi": "医生",
@@ -1740,9 +1785,9 @@
     "meaning": "bác sĩ",
     "lesson": "9",
     "type": "Danh từ",
-    "ex_cn": "他是医生。",
-    "ex_py": "Tā shì yīshēng.",
-    "ex_vn": "Anh ấy là bác sĩ."
+    "ex_cn": "他是医生，在医院工作。",
+    "ex_py": "Tā shì yīshēng, zài yīyuàn gōngzuò.",
+    "ex_vn": "Anh ấy là bác sĩ, làm việc ở bệnh viện."
   },
   {
     "hanzi": "医院",
@@ -1750,9 +1795,9 @@
     "meaning": "bệnh viện",
     "lesson": "9",
     "type": "Danh từ",
-    "ex_cn": "他在医院。",
-    "ex_py": "Tā zài yīyuàn.",
-    "ex_vn": "Anh ấy ở bệnh viện."
+    "ex_cn": "他生病了，去医院看病了。",
+    "ex_py": "Tā shēngbìng le, qù yīyuàn kànbìng le.",
+    "ex_vn": "Anh ấy bị ốm, đi bệnh viện khám bệnh rồi."
   },
   {
     "hanzi": "椅子",
@@ -1770,9 +1815,9 @@
     "meaning": "ở, tại, đang",
     "lesson": "9",
     "type": "Giới từ",
-    "ex_cn": "我在学校。",
-    "ex_py": "Wǒ zài xuéxiào.",
-    "ex_vn": "Tôi ở trường."
+    "ex_cn": "我现在在学校上课。",
+    "ex_py": "Wǒ xiànzài zài xuéxiào shàngkè.",
+    "ex_vn": "Bây giờ tôi đang ở trường học."
   },
   {
     "hanzi": "哪里",
@@ -1820,9 +1865,9 @@
     "meaning": "trường trung học",
     "lesson": "9",
     "type": "Bổ sung 3.0",
-    "ex_cn": "我们学校 là trường trung học。",
-    "ex_py": "Wǒmen xuéxiào shì zhōngxué.",
-    "ex_vn": "Trường chúng tôi là trường trung học."
+    "ex_cn": "他在一所中学教书。",
+    "ex_py": "Tā zài yì suǒ zhōngxué jiāoshū.",
+    "ex_vn": "Anh ấy dạy học ở một trường trung học."
   },
   {
     "hanzi": "中学生",
@@ -1830,9 +1875,9 @@
     "meaning": "học sinh trung học",
     "lesson": "9",
     "type": "Bổ sung 3.0",
-    "ex_cn": "中学生 đều thích đọc sách。",
-    "ex_py": "Zhōngxuésheng dōu ài kàn shū.",
-    "ex_vn": "Học sinh trung học đều thích đọc sách."
+    "ex_cn": "中学生都喜欢玩儿手机。",
+    "ex_py": "Zhōngxuéshēng dōu xǐhuan wánr shǒujī.",
+    "ex_vn": "Học sinh trung học đều thích chơi điện thoại."
   },
   {
     "hanzi": "大学",
@@ -1850,9 +1895,9 @@
     "meaning": "quyển, cuốn",
     "lesson": "10",
     "type": "Lượng từ",
-    "ex_cn": "一本书。",
-    "ex_py": "Yì běn shū.",
-    "ex_vn": "Một cuốn sách."
+    "ex_cn": "我有一本新的中文书。",
+    "ex_py": "Wǒ yǒu yì běn xīn de Zhōngwén shū.",
+    "ex_vn": "Tôi có một cuốn sách tiếng Trung mới."
   },
   {
     "hanzi": "电脑",
@@ -1870,9 +1915,9 @@
     "meaning": "và",
     "lesson": "10",
     "type": "Liên từ",
-    "ex_cn": "我和你。",
-    "ex_py": "Wǒ hé nǐ.",
-    "ex_vn": "Tôi và bạn."
+    "ex_cn": "我和朋友一起去看电影。",
+    "ex_py": "Wǒ hé péngyou yìqǐ qù kàn diànyǐng.",
+    "ex_vn": "Tôi và bạn bè cùng nhau đi xem phim."
   },
   {
     "hanzi": "后面",
@@ -1900,9 +1945,9 @@
     "meaning": "không có",
     "lesson": "10",
     "type": "Phó từ",
-    "ex_cn": "我没有钱。",
-    "ex_py": "Wǒ méiyǒu qián.",
-    "ex_vn": "Tôi không có tiền."
+    "ex_cn": "我今天没有带手机。",
+    "ex_py": "Wǒ jīntiān méiyǒu dài shǒujī.",
+    "ex_vn": "Hôm nay tôi không mang điện thoại theo."
   },
   {
     "hanzi": "前面",
@@ -1920,9 +1965,9 @@
     "meaning": "thích",
     "lesson": "10",
     "type": "Danh từ",
-    "ex_cn": "我喜欢猫。",
-    "ex_py": "Wǒ xǐhuan māo.",
-    "ex_vn": "Tôi thích mèo."
+    "ex_cn": "我很喜欢吃中国菜。",
+    "ex_py": "Wǒ hěn xǐhuan chī Zhōngguó cài.",
+    "ex_vn": "Tôi rất thích ăn món ăn Trung Quốc."
   },
   {
     "hanzi": "前",
@@ -1940,9 +1985,9 @@
     "meaning": "sau, phía sau",
     "lesson": "10",
     "type": "Bổ sung 3.0",
-    "ex_cn": "学校后边 có một nhà hàng。",
-    "ex_py": "Xuéxiào hòubiān yǒu yì jiā fàndiàn.",
-    "ex_vn": "Phía sau trường học có một nhà hàng."
+    "ex_cn": "学校后边有一家餐厅。",
+    "ex_py": "Xuéxiào hòubian yǒu yì jiā cāntīng.",
+    "ex_vn": "Phía sau trường có một nhà hàng."
   },
   {
     "hanzi": "边",
@@ -1950,9 +1995,9 @@
     "meaning": "phía, bên",
     "lesson": "10",
     "type": "Bổ sung 3.0",
-    "ex_cn": "哪边 là phía đông？",
-    "ex_py": "Nǎbiān shì dōng?",
-    "ex_vn": "Phía nào là phía đông?"
+    "ex_cn": "请问，邮局在哪边？",
+    "ex_py": "Qǐngwèn, yóujú zài nǎbian?",
+    "ex_vn": "Xin hỏi, bưu điện ở phía nào?"
   },
   {
     "hanzi": "那边",
@@ -1960,9 +2005,9 @@
     "meaning": "phía bên kia",
     "lesson": "10",
     "type": "Bổ sung 3.0",
-    "ex_cn": "他在那边。",
-    "ex_py": "Tā zài nàbiān.",
-    "ex_vn": "Anh ấy ở phía bên kia."
+    "ex_cn": "他在那边等你呢。",
+    "ex_py": "Tā zài nàbian děng nǐ ne.",
+    "ex_vn": "Anh ấy đang đợi bạn ở đằng kia."
   },
   {
     "hanzi": "那里",
@@ -1980,9 +2025,9 @@
     "meaning": "phía bên này",
     "lesson": "10",
     "type": "Bổ sung 3.0",
-    "ex_cn": "请走这边。",
-    "ex_py": "Qǐng zǒu zhèbiān.",
-    "ex_vn": "Xin mời đi bên này."
+    "ex_cn": "请从这边走，那边不通。",
+    "ex_py": "Qǐng cóng zhèbian zǒu, nàbian bù tōng.",
+    "ex_vn": "Xin hãy đi phía này, phía kia không thông."
   },
   {
     "hanzi": "这里",
@@ -1990,9 +2035,9 @@
     "meaning": "ở đây, chỗ này",
     "lesson": "10",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这里很好。",
-    "ex_py": "Zhèlǐ hěn hǎo.",
-    "ex_vn": "Ở đây rất tốt."
+    "ex_cn": "这里的风景很好，我很喜欢。",
+    "ex_py": "Zhèlǐ de fēngjǐng hěn hǎo, wǒ hěn xǐhuan.",
+    "ex_vn": "Phong cảnh ở đây rất đẹp, tôi rất thích."
   },
   {
     "hanzi": "外边",
@@ -2000,9 +2045,9 @@
     "meaning": "bên ngoài",
     "lesson": "10",
     "type": "Bổ sung 3.0",
-    "ex_cn": "外边 đang mưa。",
-    "ex_py": "Wàibian zài xià yǔ.",
-    "ex_vn": "Bên ngoài trời đang mưa."
+    "ex_cn": "外边正在下雨，别出去。",
+    "ex_py": "Wàibian zhèngzài xià yǔ, bié chūqù.",
+    "ex_vn": "Bên ngoài đang mưa, đừng ra ngoài."
   },
   {
     "hanzi": "电影",
@@ -2010,9 +2055,9 @@
     "meaning": "phim",
     "lesson": "11",
     "type": "Danh từ",
-    "ex_cn": "我看电影。",
-    "ex_py": "Wǒ kàn diànyǐng.",
-    "ex_vn": "Tôi xem phim."
+    "ex_cn": "明天我会跟姐姐去电影院看电影。",
+    "ex_py": "Míngtiān wǒ huì gēn jiějie qù diànyǐngyuàn kàn diànyǐng.",
+    "ex_vn": "Ngày mai tôi sẽ đi rạp chiếu phim xem phim cùng chị gái."
   },
   {
     "hanzi": "点",
@@ -2020,9 +2065,9 @@
     "meaning": "giờ",
     "lesson": "11",
     "type": "Danh từ",
-    "ex_cn": "十点。",
-    "ex_py": "Shí diǎn.",
-    "ex_vn": "Mười giờ."
+    "ex_cn": "现在下午三点。",
+    "ex_py": "Xiànzài xiàwǔ sān diǎn.",
+    "ex_vn": "Bây giờ là 3 giờ chiều."
   },
   {
     "hanzi": "回",
@@ -2030,9 +2075,9 @@
     "meaning": "về",
     "lesson": "11",
     "type": "Danh từ",
-    "ex_cn": "我回家。",
-    "ex_py": "Wǒ huí jiā.",
-    "ex_vn": "Tôi về nhà."
+    "ex_cn": "太晚了，我要回家了。",
+    "ex_py": "Tài wǎn le, wǒ yào huí jiā le.",
+    "ex_vn": "Muộn quá rồi, tôi phải về nhà thôi."
   },
   {
     "hanzi": "明天",
@@ -2060,9 +2105,9 @@
     "meaning": "buổi sáng",
     "lesson": "11",
     "type": "Danh từ",
-    "ex_cn": "今天上午。",
-    "ex_py": "Jīntiān shàngwǔ.",
-    "ex_vn": "Sáng hôm nay."
+    "ex_cn": "我每天上午九点上班。",
+    "ex_py": "Wǒ měitiān shàngwǔ jiǔ diǎn shàngbān.",
+    "ex_vn": "Tôi đi làm lúc 9 giờ sáng mỗi ngày."
   },
   {
     "hanzi": "时候",
@@ -2070,19 +2115,9 @@
     "meaning": "lúc, khi",
     "lesson": "11",
     "type": "Danh từ",
-    "ex_cn": "什么时候？",
-    "ex_py": "Shénme shíhou?",
-    "ex_vn": "Khi nào?"
-  },
-  {
-    "hanzi": "三",
-    "pinyin": "sān",
-    "meaning": "ba",
-    "lesson": "11",
-    "type": "Số từ",
-    "ex_cn": "我数一，二，三。",
-    "ex_py": "Wǒ shǔ yī, èr, sān.",
-    "ex_vn": "Tôi đếm một, hai, ba."
+    "ex_cn": "你什么时候去中国？",
+    "ex_py": "Nǐ shénme shíhou qù Zhōngguó?",
+    "ex_vn": "Bạn sẽ đi Trung Quốc vào lúc nào?"
   },
   {
     "hanzi": "现在",
@@ -2090,9 +2125,9 @@
     "meaning": "bây giờ, hiện tại",
     "lesson": "11",
     "type": "Giới từ",
-    "ex_cn": "现在十点。",
-    "ex_py": "Xiànzài shí diǎn.",
-    "ex_vn": "Bây giờ là mười giờ."
+    "ex_cn": "现在是下午两点，我们开始上课。",
+    "ex_py": "Xiànzài shì xiàwǔ liǎng diǎn, wǒmen kāishǐ shàngkè.",
+    "ex_vn": "Bây giờ là hai giờ chiều, chúng ta bắt đầu học."
   },
   {
     "hanzi": "住",
@@ -2110,9 +2145,9 @@
     "meaning": "buổi trưa",
     "lesson": "11",
     "type": "Danh từ",
-    "ex_cn": "今天中午。",
-    "ex_py": "Jīntiān zhōngwǔ.",
-    "ex_vn": "Trưa hôm nay."
+    "ex_cn": "我中午十二点吃午饭。",
+    "ex_py": "Wǒ zhōngwǔ shí'èr diǎn chī wǔfàn.",
+    "ex_vn": "Tôi ăn cơm trưa lúc 12 giờ."
   },
   {
     "hanzi": "昨天",
@@ -2130,19 +2165,19 @@
     "meaning": "phút",
     "lesson": "11",
     "type": "Bổ sung 3.0",
-    "ex_cn": "现在 5 giờ 10 phút。",
-    "ex_py": "Xiànzài wǔ diǎn shí fēn.",
-    "ex_vn": "Bây giờ là 5 giờ 10 phút."
+    "ex_cn": "现在下午三点五分。",
+    "ex_py": "Xiànzài xiàwǔ sān diǎn wǔ fēn.",
+    "ex_vn": "Bây giờ là 3 giờ 5 phút chiều."
   },
   {
-    "hanzi": "早",
+    "hanzi": "早上",
     "pinyin": "zǎo",
     "meaning": "sớm, buổi sáng",
     "lesson": "11",
     "type": "Bổ sung 3.0",
-    "ex_cn": "你来得 thật sớm。",
-    "ex_py": "Nǐ láide zhēn zǎo.",
-    "ex_vn": "Bạn đến thật sớm."
+    "ex_cn": "我每天早上六点起床。",
+    "ex_py": "Wǒ měitiān zǎoshang liù diǎn qǐchuáng.",
+    "ex_vn": "Mỗi ngày tôi thức dậy lúc 6 giờ sáng."
   },
   {
     "hanzi": "早饭",
@@ -2165,14 +2200,14 @@
     "ex_vn": "Tôi muốn về nhà ăn trưa."
   },
   {
-    "hanzi": "晚",
+    "hanzi": "晚上",
     "pinyin": "wǎn",
     "meaning": "muộn, buổi tối",
     "lesson": "11",
     "type": "Bổ sung 3.0",
-    "ex_cn": "现在 không muộn。",
-    "ex_py": "Xiànzài bù wǎn.",
-    "ex_vn": "Bây giờ không muộn."
+    "ex_cn": "我昨天晚上十一点睡觉。",
+    "ex_py": "Wǒ zuótiān wǎnshang shíyī diǎn shuìjiào.",
+    "ex_vn": "Hôm qua tôi ngủ lúc 11 giờ đêm."
   },
   {
     "hanzi": "晚饭",
@@ -2180,9 +2215,9 @@
     "meaning": "bữa tối",
     "lesson": "11",
     "type": "Bổ sung 3.0",
-    "ex_cn": "晚饭 rất ngon。",
-    "ex_py": "Wǎnfàn hěn hǎochī.",
-    "ex_vn": "Bữa tối rất ngon."
+    "ex_cn": "他今天不想吃晚饭。",
+    "ex_py": "Tā jīntiān bù xiǎng chī wǎnfàn.",
+    "ex_vn": "Hôm nay anh ấy không muốn ăn tối."
   },
   {
     "hanzi": "星期日",
@@ -2190,9 +2225,9 @@
     "meaning": "Chủ nhật",
     "lesson": "11",
     "type": "Bổ sung 3.0",
-    "ex_cn": "星期日 tôi không làm việc。",
+    "ex_cn": "星期日我不工作。",
     "ex_py": "Xīngqīrì wǒ bù gōngzuò.",
-    "ex_vn": "Chủ nhật tôi không làm việc."
+    "ex_vn": "Chủ nhật tôi không đi làm."
   },
   {
     "hanzi": "星期天",
@@ -2200,9 +2235,9 @@
     "meaning": "Chủ nhật",
     "lesson": "11",
     "type": "Bổ sung 3.0",
-    "ex_cn": "星期天 đi siêu thị。",
-    "ex_py": "Xīngqītiān qù chāoshì.",
-    "ex_vn": "Chủ nhật đi siêu thị."
+    "ex_cn": "我每星期天都去超市。",
+    "ex_py": "Wǒ měi xīngqītiān dōu qù chāoshì.",
+    "ex_vn": "Mỗi chủ nhật tôi đều đi siêu thị."
   },
   {
     "hanzi": "来",
@@ -2210,9 +2245,9 @@
     "meaning": "đến, tới",
     "lesson": "12",
     "type": "Động từ",
-    "ex_cn": "我来。",
-    "ex_py": "Wǒ lái.",
-    "ex_vn": "Tôi đến đây."
+    "ex_cn": "他今天来学校了吗？",
+    "ex_py": "Tā jīntiān lái xuéxiào le ma?",
+    "ex_vn": "Hôm nay anh ấy có đến trường không?"
   },
   {
     "hanzi": "冷",
@@ -2220,9 +2255,9 @@
     "meaning": "lạnh",
     "lesson": "12",
     "type": "Tính từ",
-    "ex_cn": "今天很冷。",
-    "ex_py": "Jīntiān hěn lěng.",
-    "ex_vn": "Hôm nay rất lạnh."
+    "ex_cn": "今天天气很冷，我穿了厚厚的外套。",
+    "ex_py": "Jīntiān tiānqì hěn lěng, wǒ chuān le hòu hòu de wàitào.",
+    "ex_vn": "Hôm nay trời rất lạnh, tôi mặc áo khoác dày."
   },
   {
     "hanzi": "那",
@@ -2230,9 +2265,9 @@
     "meaning": "kia, đó",
     "lesson": "12",
     "type": "Đại từ",
-    "ex_cn": "那是谁？",
-    "ex_py": "Nà shì shéi?",
-    "ex_vn": "Đó là ai?"
+    "ex_cn": "那是我的老师，他很好。",
+    "ex_py": "Nà shì wǒ de lǎoshī, tā hěn hǎo.",
+    "ex_vn": "Đó là giáo viên của tôi, thầy ấy rất tốt."
   },
   {
     "hanzi": "那儿",
@@ -2240,9 +2275,9 @@
     "meaning": "đằng kia, ở đó",
     "lesson": "12",
     "type": "Đại từ",
-    "ex_cn": "在那儿。",
-    "ex_py": "Zài nàr.",
-    "ex_vn": "Ở đằng kia."
+    "ex_cn": "你知道那儿有一家很好吃的餐厅。",
+    "ex_py": "Nǐ zhīdào nàr yǒu yì jiā hěn hǎochī de cāntīng.",
+    "ex_vn": "Bạn có biết ở đó có một nhà hàng rất ngon không."
   },
   {
     "hanzi": "热",
@@ -2250,9 +2285,9 @@
     "meaning": "nóng",
     "lesson": "12",
     "type": "Tính từ",
-    "ex_cn": "今天很热。",
-    "ex_py": "Jīntiān hěn rè.",
-    "ex_vn": "Hôm nay rất nóng."
+    "ex_cn": "今天天气很热，我们去游泳吧。",
+    "ex_py": "Jīntiān tiānqì hěn rè, wǒmen qù yóuyǒng ba.",
+    "ex_vn": "Hôm nay trời rất nóng, chúng ta đi bơi đi."
   },
   {
     "hanzi": "水果",
@@ -2270,9 +2305,9 @@
     "meaning": "nước",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "他在喝水。",
-    "ex_py": "Tā zài hē shuǐ.",
-    "ex_vn": "Anh ấy đang uống nước."
+    "ex_cn": "他运动以后喝了很多水。",
+    "ex_py": "Tā yùndòng yǐhòu hē le hěn duō shuǐ.",
+    "ex_vn": "Sau khi tập thể dục, anh ấy uống rất nhiều nước."
   },
   {
     "hanzi": "上",
@@ -2280,9 +2315,9 @@
     "meaning": "trên",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "桌子上。",
-    "ex_py": "Zhuōzi shàng.",
-    "ex_vn": "Trên bàn."
+    "ex_cn": "书在桌子上，你去拿吧。",
+    "ex_py": "Shū zài zhuōzi shàng, nǐ qù ná ba.",
+    "ex_vn": "Sách ở trên bàn, bạn đi lấy đi."
   },
   {
     "hanzi": "天气",
@@ -2300,9 +2335,9 @@
     "meaning": "quá, lắm",
     "lesson": "12",
     "type": "Phó từ",
-    "ex_cn": "太好了！",
-    "ex_py": "Tài hǎo le!",
-    "ex_vn": "Tốt quá rồi!"
+    "ex_cn": "今天的天气太好了，我们去散步吧。",
+    "ex_py": "Jīntiān de tiānqì tài hǎo le, wǒmen qù sànbù ba.",
+    "ex_vn": "Hôm nay thời tiết đẹp quá, chúng ta đi dạo đi."
   },
   {
     "hanzi": "下雨",
@@ -2310,9 +2345,9 @@
     "meaning": "có mưa, đổ mưa",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "今天下雨。",
-    "ex_py": "Jīntiān xià yǔ.",
-    "ex_vn": "Hôm nay trời mưa."
+    "ex_cn": "今天下雨了，我没有带伞，全身都湿了。",
+    "ex_py": "Jīntiān xià yǔ le, wǒ méiyǒu dài sǎn, quánshēn dōu shī le.",
+    "ex_vn": "Hôm nay trời mưa, tôi không mang ô nên ướt hết cả người."
   },
   {
     "hanzi": "些",
@@ -2330,9 +2365,9 @@
     "meaning": "cô",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "她是小姐。",
-    "ex_py": "Tā shì xiǎojiě.",
-    "ex_vn": "Cô ấy là tiểu thư (cô ấy)."
+    "ex_cn": "那位小姐是我们学校的老师。",
+    "ex_py": "Nà wèi xiǎojiě shì wǒmen xuéxiào de lǎoshī.",
+    "ex_vn": "Cô gái đó là giáo viên trường chúng tôi."
   },
   {
     "hanzi": "桌子",
@@ -2340,9 +2375,9 @@
     "meaning": "cái bàn",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "这是桌子。",
-    "ex_py": "Zhè shì zhuōzi.",
-    "ex_vn": "Đây là cái bàn."
+    "ex_cn": "这张桌子是新买的，很漂亮。",
+    "ex_py": "Zhè zhāng zhuōzi shì xīn mǎi de, hěn piàoliang.",
+    "ex_vn": "Chiếc bàn này mới mua, rất đẹp."
   },
   {
     "hanzi": "这儿",
@@ -2350,9 +2385,9 @@
     "meaning": "ở đây, chỗ này",
     "lesson": "12",
     "type": "Đại từ",
-    "ex_cn": "在这儿。",
-    "ex_py": "Zài zhèr.",
-    "ex_vn": "Ở đây."
+    "ex_cn": "你就在这儿等我，我马上回来。",
+    "ex_py": "Nǐ jiù zài zhèr děng wǒ, wǒ mǎshàng huílái.",
+    "ex_vn": "Bạn đợi tôi ở đây, tôi sẽ quay lại ngay."
   },
   {
     "hanzi": "怎么样",
@@ -2370,9 +2405,9 @@
     "meaning": "yêu, thích",
     "lesson": "12",
     "type": "Danh từ",
-    "ex_cn": "我爱妈妈。",
-    "ex_py": "Wǒ ài māma.",
-    "ex_vn": "Con yêu mẹ."
+    "ex_cn": "我爱我的家人和朋友。",
+    "ex_py": "Wǒ ài wǒ de jiārén hé péngyou.",
+    "ex_vn": "Tôi yêu gia đình và bạn bè của tôi."
   },
   {
     "hanzi": "好看",
@@ -2380,9 +2415,9 @@
     "meaning": "đẹp (nhìn)",
     "lesson": "12",
     "type": "Bổ sung 3.0",
-    "ex_cn": "那本书 rất hay。",
-    "ex_py": "Nà běn shū hěn hǎokàn.",
-    "ex_vn": "Cuốn sách đó rất hay."
+    "ex_cn": "那本书很好看，我很喜欢。",
+    "ex_py": "Nà běn shū hěn hǎokàn, wǒ hěn xǐhuan.",
+    "ex_vn": "Cuốn sách đó rất hay, tôi rất thích."
   },
   {
     "hanzi": "好听",
@@ -2390,9 +2425,9 @@
     "meaning": "hay (nghe)",
     "lesson": "12",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这首歌 rất hay。",
-    "ex_py": "Zhè shǒu gē hěn hǎotīng.",
-    "ex_vn": "Bài hát này rất hay."
+    "ex_cn": "这首歌很好听，我每天都听。",
+    "ex_py": "Zhè shǒu gē hěn hǎotīng, wǒ měitiān dōu tīng.",
+    "ex_vn": "Bài hát này rất hay, tôi nghe mỗi ngày."
   },
   {
     "hanzi": "好玩儿",
@@ -2400,9 +2435,9 @@
     "meaning": "vui, hay (chơi)",
     "lesson": "12",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这里 rất vui。",
-    "ex_py": "Zhèlǐ hěn hǎowánr.",
-    "ex_vn": "Chỗ này rất vui."
+    "ex_cn": "这里的游乐园很好玩儿。",
+    "ex_py": "Zhèlǐ de yóulèyuán hěn hǎowánr.",
+    "ex_vn": "Công viên giải trí ở đây rất vui."
   },
   {
     "hanzi": "雨",
@@ -2410,9 +2445,9 @@
     "meaning": "mưa",
     "lesson": "12",
     "type": "Bổ sung 3.0",
-    "ex_cn": "外边 đang mưa。",
-    "ex_py": "Wàibian zài xià yǔ.",
-    "ex_vn": "Bên ngoài đang mưa."
+    "ex_cn": "外边正在下雨，你带伞了吗？",
+    "ex_py": "Wàibian zhèngzài xià yǔ, nǐ dài sǎn le ma?",
+    "ex_vn": "Bên ngoài đang mưa, bạn mang ô chưa?"
   },
   {
     "hanzi": "电视",
@@ -2430,9 +2465,9 @@
     "meaning": "gọi điện thoại",
     "lesson": "13",
     "type": "Danh từ",
-    "ex_cn": "我打电话。",
-    "ex_py": "Wǒ dǎ diànhuà.",
-    "ex_vn": "Tôi gọi điện thoại."
+    "ex_cn": "我给妈妈打电话，告诉她我平安到了。",
+    "ex_py": "Wǒ gěi māma dǎ diànhuà, gàosu tā wǒ píng'ān dào le.",
+    "ex_vn": "Tôi gọi điện cho mẹ, nói với bà là tôi đã đến an toàn."
   },
   {
     "hanzi": "睡觉",
@@ -2440,9 +2475,9 @@
     "meaning": "ngủ",
     "lesson": "13",
     "type": "Động từ",
-    "ex_cn": "我想睡觉。",
-    "ex_py": "Wǒ xiǎng shuìjiào.",
-    "ex_vn": "Tôi muốn đi ngủ."
+    "ex_cn": "他每天晚上十点睡觉。",
+    "ex_py": "Tā měitiān wǎnshang shí diǎn shuìjiào.",
+    "ex_vn": "Mỗi tối anh ấy ngủ lúc 10 giờ."
   },
   {
     "hanzi": "喂",
@@ -2480,9 +2515,9 @@
     "meaning": "ngủ",
     "lesson": "13",
     "type": "Bổ sung 3.0",
-    "ex_cn": "我要 đi ngủ đây。",
-    "ex_py": "Wǒ yào qù shuìjiào le.",
-    "ex_vn": "Tôi đi ngủ đây."
+    "ex_cn": "我要去睡觉了，晚安。",
+    "ex_py": "Wǒ yào qù shuìjiào le, wǎn'ān.",
+    "ex_vn": "Tôi đi ngủ đây, chúc ngủ ngon."
   },
   {
     "hanzi": "做饭",
@@ -2490,9 +2525,9 @@
     "meaning": "nấu cơm",
     "lesson": "13",
     "type": "Bổ sung 3.0",
-    "ex_cn": "妈妈 đang nấu cơm。",
-    "ex_py": "Māma zài zuò fàn.",
-    "ex_vn": "Mẹ đang nấu cơm."
+    "ex_cn": "妈妈正在厨房做饭。",
+    "ex_py": "Māma zhèngzài chúfáng zuòfàn.",
+    "ex_vn": "Mẹ đang nấu cơm trong bếp."
   },
   {
     "hanzi": "东西",
@@ -2510,9 +2545,9 @@
     "meaning": "đều",
     "lesson": "14",
     "type": "Phó từ",
-    "ex_cn": "我们都好。",
-    "ex_py": "Wǒmen dōu hǎo.",
-    "ex_vn": "Chúng tôi đều khỏe."
+    "ex_cn": "我们班的同学都很努力学习。",
+    "ex_py": "Wǒmen bān de tóngxué dōu hěn nǔlì xuéxí.",
+    "ex_vn": "Các bạn trong lớp chúng tôi đều học tập rất chăm chỉ."
   },
   {
     "hanzi": "分钟",
@@ -2550,9 +2585,9 @@
     "meaning": "đẹp",
     "lesson": "14",
     "type": "Tính từ",
-    "ex_cn": "她很漂亮。",
-    "ex_py": "Tā hěn piàoliang.",
-    "ex_vn": "Cô ấy rất đẹp."
+    "ex_cn": "她穿了一件漂亮的裙子。",
+    "ex_py": "Tā chuān le yí jiàn piàoliang de qúnzi.",
+    "ex_vn": "Cô ấy mặc một chiếc váy rất đẹp."
   },
   {
     "hanzi": "苹果",
@@ -2570,9 +2605,9 @@
     "meaning": "nói chuyện",
     "lesson": "14",
     "type": "Động từ",
-    "ex_cn": "他在说话。",
-    "ex_py": "Tā zài shuōhuà.",
-    "ex_vn": "Anh ấy đang nói chuyện."
+    "ex_cn": "上课的时候不要大声说话。",
+    "ex_py": "Shàngkè de shíhou bùyào dàshēng shuōhuà.",
+    "ex_vn": "Khi đang học không được nói chuyện to tiếng."
   },
   {
     "hanzi": "先生",
@@ -2620,9 +2655,9 @@
     "meaning": "gặp",
     "lesson": "14",
     "type": "Bổ sung 3.0",
-    "ex_cn": "明天见。",
-    "ex_py": "Míngtiān jiàn.",
-    "ex_vn": "Hẹn gặp lại vào ngày mai."
+    "ex_cn": "明天见，祝你晚安！",
+    "ex_py": "Míngtiān jiàn, zhù nǐ wǎn'ān!",
+    "ex_vn": "Hẹn gặp ngày mai, chúc bạn ngủ ngon!"
   },
   {
     "hanzi": "有的",
@@ -2630,9 +2665,9 @@
     "meaning": "có cái, có người",
     "lesson": "14",
     "type": "Bổ sung 3.0",
-    "ex_cn": "有的人 thích uống trà。",
-    "ex_py": "Yǒude rén xǐhuan hē chá.",
-    "ex_vn": "Có người thích uống trà."
+    "ex_cn": "有的人喜欢喝茶，有的人喜欢喝咖啡。",
+    "ex_py": "Yǒude rén xǐhuan hē chá, yǒude rén xǐhuan hē kāfēi.",
+    "ex_vn": "Có người thích uống trà, có người thích uống cà phê."
   },
   {
     "hanzi": "有些",
@@ -2640,9 +2675,9 @@
     "meaning": "có một số",
     "lesson": "14",
     "type": "Bổ sung 3.0",
-    "ex_cn": "有些 đồ ở đằng kia。",
-    "ex_py": "Yǒuxiē dōngxi zài nàr.",
-    "ex_vn": "Có một số đồ ở đằng kia."
+    "ex_cn": "桌子上有些书和本子。",
+    "ex_py": "Zhuōzi shàng yǒu xiē shū hé běnzi.",
+    "ex_vn": "Trên bàn có một số sách và vở."
   },
   {
     "hanzi": "有點兒",
@@ -2650,9 +2685,9 @@
     "meaning": "có chút",
     "lesson": "14",
     "type": "Bổ sung 3.0",
-    "ex_cn": "这件衣服 hơi rộng một chút。",
-    "ex_py": "Zhè jiàn yīfu yǒudiǎnr dà.",
-    "ex_vn": "Chiếc áo này hơi rộng một chút."
+    "ex_cn": "这件衣服有点儿大，我想换一件。",
+    "ex_py": "Zhè jiàn yīfu yǒudiǎnr dà, wǒ xiǎng huàn yí jiàn.",
+    "ex_vn": "Chiếc áo này hơi rộng, tôi muốn đổi cái khác."
   },
   {
     "hanzi": "出租车",
@@ -2690,9 +2725,9 @@
     "meaning": "vui, phấn khởi",
     "lesson": "15",
     "type": "Danh từ",
-    "ex_cn": "我很高兴。",
-    "ex_py": "Wǒ hěn gāoxìng.",
-    "ex_vn": "Tôi rất vui."
+    "ex_cn": "听到这个好消息，他非常高兴。",
+    "ex_py": "Tīng dào zhège hǎo xiāoxi, tā fēicháng gāoxìng.",
+    "ex_vn": "Nghe tin vui này, anh ấy vô cùng vui mừng."
   },
   {
     "hanzi": "能",
@@ -2700,9 +2735,9 @@
     "meaning": "có thể",
     "lesson": "15",
     "type": "Động từ",
-    "ex_cn": "我能去吗？",
-    "ex_py": "Wǒ néng qù ma?",
-    "ex_vn": "Tôi có thể đi không?"
+    "ex_cn": "他今天生病了，不能来上课。",
+    "ex_py": "Tā jīntiān shēngbìng le, bù néng lái shàngkè.",
+    "ex_vn": "Hôm nay anh ấy bị ốm, không thể đến lớp được."
   },
   {
     "hanzi": "认识",
@@ -2730,9 +2765,9 @@
     "meaning": "ngồi",
     "lesson": "15",
     "type": "Động từ",
-    "ex_cn": "请坐下。",
-    "ex_py": "Qǐng zuò xià.",
-    "ex_vn": "Xin mời ngồi xuống."
+    "ex_cn": "请坐下，我们开始上课。",
+    "ex_py": "Qǐng zuò xià, wǒmen kāishǐ shàngkè.",
+    "ex_vn": "Mời ngồi xuống, chúng ta bắt đầu học."
   },
   {
     "hanzi": "病",
@@ -2740,9 +2775,9 @@
     "meaning": "bệnh, ốm",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "他 bị ốm rồi。",
-    "ex_py": "Tā shēngbìng le.",
-    "ex_vn": "Anh ấy bị ốm rồi."
+    "ex_cn": "他病了，不能来上课。",
+    "ex_py": "Tā bìng le, bù néng lái shàngkè.",
+    "ex_vn": "Anh ấy bị ốm, không thể đến lớp."
   },
   {
     "hanzi": "车",
@@ -2760,9 +2795,9 @@
     "meaning": "tàu hỏa",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "坐 tàu hỏa đến Thượng Hải。",
-    "ex_py": "Zuò huǒchē qù Shànghǎi.",
-    "ex_vn": "Đi tàu hỏa đến Thượng Hải."
+    "ex_cn": "我们坐火车去上海旅行。",
+    "ex_py": "Wǒmen zuò huǒchē qù Shànghǎi lǚxíng.",
+    "ex_vn": "Chúng tôi đi tàu hỏa đến Thượng Hải du lịch."
   },
   {
     "hanzi": "开车",
@@ -2770,9 +2805,9 @@
     "meaning": "lái xe",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "你会 lái xe không？",
-    "ex_py": "Nǐ huì kāi chē ma?",
-    "ex_vn": "Bạn biết lái xe không?"
+    "ex_cn": "你会开车吗？我不会。",
+    "ex_py": "Nǐ huì kāichē ma? Wǒ bù huì.",
+    "ex_vn": "Bạn có biết lái xe không? Tôi không biết."
   },
   {
     "hanzi": "看病",
@@ -2780,7 +2815,7 @@
     "meaning": "khám bệnh",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "他 đi bệnh viện khám bệnh rồi。",
+    "ex_cn": "他去医院看病了。",
     "ex_py": "Tā qù yīyuàn kànbìng le.",
     "ex_vn": "Anh ấy đi bệnh viện khám bệnh rồi."
   },
@@ -2790,9 +2825,9 @@
     "meaning": "lên lớp",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "我们 lên lớp lúc 8 giờ。",
-    "ex_py": "Wǒmen bā diǎn shàngkè.",
-    "ex_vn": "Chúng tôi lên lớp lúc 8 giờ."
+    "ex_cn": "我们每天八点开始上课。",
+    "ex_py": "Wǒmen měitiān bā diǎn kāishǐ shàngkè.",
+    "ex_vn": "Mỗi ngày chúng tôi bắt đầu vào lớp lúc 8 giờ."
   },
   {
     "hanzi": "上学",
@@ -2800,9 +2835,9 @@
     "meaning": "đi học",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "他 mỗi ngày đều đi học。",
-    "ex_py": "Tā měitiān dōu shàngxué.",
-    "ex_vn": "Nó đi học mỗi ngày."
+    "ex_cn": "他每天骑自行车上学。",
+    "ex_py": "Tā měitiān qí zìxíngchē shàngxué.",
+    "ex_vn": "Mỗi ngày anh ấy đạp xe đi học."
   },
   {
     "hanzi": "下班",
@@ -2810,9 +2845,9 @@
     "meaning": "tan làm",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "我 5 giờ tan làm。",
-    "ex_py": "Wǒ wǔ diǎn xiàbān.",
-    "ex_vn": "Tôi tan làm lúc 5 giờ."
+    "ex_cn": "我每天五点下班回家。",
+    "ex_py": "Wǒ měitiān wǔ diǎn xiàbān huí jiā.",
+    "ex_vn": "Mỗi ngày tôi tan làm lúc 5 giờ về nhà."
   },
   {
     "hanzi": "下课",
@@ -2820,8 +2855,8 @@
     "meaning": "tan học",
     "lesson": "15",
     "type": "Bổ sung 3.0",
-    "ex_cn": "下课 sau đó đi ăn cơm。",
-    "ex_py": "Xiàkè hòu qù chī fàn.",
-    "ex_vn": "Sau khi tan học thì đi ăn."
+    "ex_cn": "下课以后，同学们一起去吃饭。",
+    "ex_py": "Xiàkè yǐhòu, tóngxuémen yìqǐ qù chīfàn.",
+    "ex_vn": "Sau khi tan học, các bạn cùng nhau đi ăn cơm."
   }
 ]

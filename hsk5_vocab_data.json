@@ -1,0 +1,332 @@
+[
+  {
+    "hanzi": "事物",
+    "pinyin": "shìwù",
+    "meaning": "sự vật, mọi thứ",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "世界上的事物都在不断变化。",
+    "ex_py": "Shìjiè shàng de shìwù dōu zài bùduàn biànhuà.",
+    "ex_vn": "Mọi sự vật trên thế giới đều không ngừng thay đổi."
+  },
+  {
+    "hanzi": "高峰",
+    "pinyin": "gāofēng",
+    "meaning": "đỉnh cao, cao điểm",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "他的演艺事业在三十岁时达到了高峰。",
+    "ex_py": "Tā de yǎnyì shìyè zài sānshí suì shí dádào le gāofēng.",
+    "ex_vn": "Sự nghiệp biểu diễn của anh ấy đạt đỉnh cao lúc 30 tuổi."
+  },
+  {
+    "hanzi": "终点",
+    "pinyin": "zhōngdiǎn",
+    "meaning": "điểm cuối, đích đến",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "运动员冲过了终点线，赢得了比赛。",
+    "ex_py": "Yùndòngyuán chōngguò le zhōngdiǎn xiàn, yíngdé le bǐsài.",
+    "ex_vn": "Vận động viên vượt qua vạch đích và giành chiến thắng."
+  },
+  {
+    "hanzi": "迅速",
+    "pinyin": "xùnsù",
+    "meaning": "nhanh chóng, mau lẹ",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "他迅速地做出了决定。",
+    "ex_py": "Tā xùnsù de zuòchū le juédìng.",
+    "ex_vn": "Anh ấy nhanh chóng đưa ra quyết định."
+  },
+  {
+    "hanzi": "深刻",
+    "pinyin": "shēnkè",
+    "meaning": "sâu sắc",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "这部电影给我留下了深刻的印象。",
+    "ex_py": "Zhè bù diànyǐng gěi wǒ liúxià le shēnkè de yìnxiàng.",
+    "ex_vn": "Bộ phim này để lại ấn tượng sâu sắc trong tôi."
+  },
+  {
+    "hanzi": "戏剧",
+    "pinyin": "xìjù",
+    "meaning": "kịch, sân khấu",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "他从小就喜欢看戏剧表演。",
+    "ex_py": "Tā cóngxiǎo jiù xǐhuan kàn xìjù biǎoyǎn.",
+    "ex_vn": "Anh ấy từ nhỏ đã thích xem biểu diễn kịch."
+  },
+  {
+    "hanzi": "投入",
+    "pinyin": "tóurù",
+    "meaning": "đầu tư, dốc tâm vào",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "她把全部精力都投入到工作中。",
+    "ex_py": "Tā bǎ quánbù jīnglì dōu tóurù dào gōngzuò zhōng.",
+    "ex_vn": "Cô ấy dồn toàn bộ sức lực vào công việc."
+  },
+  {
+    "hanzi": "服装",
+    "pinyin": "fúzhuāng",
+    "meaning": "trang phục, trang phục biểu diễn",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "演员们的服装非常华丽。",
+    "ex_py": "Yǎnyuánmen de fúzhuāng fēicháng huálì.",
+    "ex_vn": "Trang phục của các diễn viên rất lộng lẫy."
+  },
+  {
+    "hanzi": "化妆",
+    "pinyin": "huàzhuāng",
+    "meaning": "trang điểm",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "演出前，演员们需要花两个小时化妆。",
+    "ex_py": "Yǎnchū qián, yǎnyuánmen xūyào huā liǎng gè xiǎoshí huàzhuāng.",
+    "ex_vn": "Trước khi biểu diễn, các diễn viên cần hai tiếng để trang điểm."
+  },
+  {
+    "hanzi": "道具",
+    "pinyin": "dàojù",
+    "meaning": "đạo cụ",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "舞台上的道具都是专门定制的。",
+    "ex_py": "Wǔtái shàng de dàojù dōu shì zhuānmén dìngzhì de.",
+    "ex_vn": "Đạo cụ trên sân khấu đều được đặt làm riêng."
+  },
+  {
+    "hanzi": "美术",
+    "pinyin": "měishù",
+    "meaning": "mỹ thuật",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "他从小喜欢画画，长大后学了美术。",
+    "ex_py": "Tā cóngxiǎo xǐhuan huàhuà, zhǎngdà hòu xué le měishù.",
+    "ex_vn": "Từ nhỏ anh ấy đã thích vẽ, lớn lên theo học mỹ thuật."
+  },
+  {
+    "hanzi": "以",
+    "pinyin": "yǐ",
+    "meaning": "bằng, dùng, để (giới từ)",
+    "lesson": "17",
+    "type": "Giới từ",
+    "ex_cn": "他以微笑回应了所有的批评。",
+    "ex_py": "Tā yǐ wēixiào huíyìng le suǒyǒu de pīpíng.",
+    "ex_vn": "Anh ấy dùng nụ cười đáp lại tất cả những lời chỉ trích."
+  },
+  {
+    "hanzi": "良好",
+    "pinyin": "liánghǎo",
+    "meaning": "tốt đẹp, tốt lành",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "他在工作上有良好的表现。",
+    "ex_py": "Tā zài gōngzuò shàng yǒu liánghǎo de biǎoxiàn.",
+    "ex_vn": "Anh ấy có thành tích tốt đẹp trong công việc."
+  },
+  {
+    "hanzi": "争取",
+    "pinyin": "zhēngqǔ",
+    "meaning": "tranh thủ, phấn đấu giành được",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "我们要争取在明年完成这个项目。",
+    "ex_py": "Wǒmen yào zhēngqǔ zài míngnián wánchéng zhège xiàngmù.",
+    "ex_vn": "Chúng ta phải phấn đấu hoàn thành dự án này vào năm sau."
+  },
+  {
+    "hanzi": "忽视",
+    "pinyin": "hūshì",
+    "meaning": "xem nhẹ, bỏ qua",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "不能忽视学生的心理健康问题。",
+    "ex_py": "Bù néng hūshì xuéshēng de xīnlǐ jiànkāng wèntí.",
+    "ex_vn": "Không thể bỏ qua vấn đề sức khỏe tâm lý của học sinh."
+  },
+  {
+    "hanzi": "魅力",
+    "pinyin": "mèilì",
+    "meaning": "sức hút, sức quyến rũ",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "这位演员的魅力吸引了无数观众。",
+    "ex_py": "Zhè wèi yǎnyuán de mèilì xīyǐn le wúshù guānzhòng.",
+    "ex_vn": "Sức hút của diễn viên này thu hút vô số khán giả."
+  },
+  {
+    "hanzi": "糟糕",
+    "pinyin": "zāogāo",
+    "meaning": "tệ hại, tồi tệ",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "今天的天气真糟糕，一直在下雨。",
+    "ex_py": "Jīntiān de tiānqì zhēn zāogāo, yīzhí zài xià yǔ.",
+    "ex_vn": "Thời tiết hôm nay thật tệ, trời cứ mưa mãi."
+  },
+  {
+    "hanzi": "婚礼",
+    "pinyin": "hūnlǐ",
+    "meaning": "đám cưới, lễ cưới",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "他们的婚礼举办得非常隆重。",
+    "ex_py": "Tāmen de hūnlǐ jǔbàn de fēicháng lóngzhòng.",
+    "ex_vn": "Đám cưới của họ được tổ chức rất long trọng."
+  },
+  {
+    "hanzi": "等于",
+    "pinyin": "děngyú",
+    "meaning": "bằng, tương đương với",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "不努力学习等于浪费时间。",
+    "ex_py": "Bù nǔlì xuéxí děngyú làngfèi shíjiān.",
+    "ex_vn": "Không chịu học hành chăm chỉ là lãng phí thời gian."
+  },
+  {
+    "hanzi": "度过",
+    "pinyin": "dùguò",
+    "meaning": "trải qua, sống qua (thời gian)",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "我们在农村度过了一个快乐的假期。",
+    "ex_py": "Wǒmen zài nóngcūn dùguò le yí gè kuàilè de jiàqī.",
+    "ex_vn": "Chúng tôi trải qua một kỳ nghỉ vui vẻ ở nông thôn."
+  },
+  {
+    "hanzi": "告别",
+    "pinyin": "gàobié",
+    "meaning": "tạm biệt, từ biệt",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "他在车站和家人依依不舍地告别。",
+    "ex_py": "Tā zài chēzhàn hé jiārén yīyī bùshě de gàobié.",
+    "ex_vn": "Anh ấy lưu luyến chia tay với gia đình ở nhà ga."
+  },
+  {
+    "hanzi": "平常",
+    "pinyin": "píngcháng",
+    "meaning": "bình thường, thường ngày",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "她平常很安静，今天却十分兴奋。",
+    "ex_py": "Tā píngcháng hěn ānjìng, jīntiān què shífēn xīngfèn.",
+    "ex_vn": "Bình thường cô ấy rất điềm tĩnh, nhưng hôm nay lại rất phấn khích."
+  },
+  {
+    "hanzi": "依然",
+    "pinyin": "yīrán",
+    "meaning": "vẫn còn, vẫn như xưa",
+    "lesson": "17",
+    "type": "Phó từ",
+    "ex_cn": "多年过去了，他依然记得那段美好的时光。",
+    "ex_py": "Duō nián guòqù le, tā yīrán jìde nà duàn měihǎo de shíguāng.",
+    "ex_vn": "Nhiều năm trôi qua, anh ấy vẫn nhớ khoảng thời gian tươi đẹp đó."
+  },
+  {
+    "hanzi": "推荐",
+    "pinyin": "tuījiàn",
+    "meaning": "giới thiệu, đề xuất",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "朋友向我推荐了这家餐厅，味道真的很好。",
+    "ex_py": "Péngyou xiàng wǒ tuījiàn le zhè jiā cāntīng, wèidào zhēn de hěn hǎo.",
+    "ex_vn": "Bạn giới thiệu cho tôi nhà hàng này, hương vị thực sự rất ngon."
+  },
+  {
+    "hanzi": "淋漓尽致",
+    "pinyin": "línlí jìnzhì",
+    "meaning": "thể hiện đầy đủ, triệt để (thành ngữ)",
+    "lesson": "17",
+    "type": "Thành ngữ",
+    "ex_cn": "她把角色的情感表现得淋漓尽致。",
+    "ex_py": "Tā bǎ juésè de qínggǎn biǎoxiàn de línlí jìnzhì.",
+    "ex_vn": "Cô ấy thể hiện cảm xúc của nhân vật một cách trọn vẹn tuyệt vời."
+  },
+  {
+    "hanzi": "评价",
+    "pinyin": "píngjià",
+    "meaning": "đánh giá, nhận xét",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "老师对他的作业给予了很高的评价。",
+    "ex_py": "Lǎoshī duì tā de zuòyè jǐyǔ le hěn gāo de píngjià.",
+    "ex_vn": "Giáo viên đã đánh giá rất cao bài tập của anh ấy."
+  },
+  {
+    "hanzi": "烂",
+    "pinyin": "làn",
+    "meaning": "nát, tệ (thông tục), thối rữa",
+    "lesson": "17",
+    "type": "Tính từ",
+    "ex_cn": "这部电影拍得太烂了，我看了十分钟就走了。",
+    "ex_py": "Zhè bù diànyǐng pāi de tài làn le, wǒ kàn le shí fēnzhōng jiù zǒu le.",
+    "ex_vn": "Bộ phim này dở quá, tôi xem được mười phút là bỏ về rồi."
+  },
+  {
+    "hanzi": "宁可",
+    "pinyin": "nìngkě",
+    "meaning": "thà... (cũng không/còn hơn)",
+    "lesson": "17",
+    "type": "Phó từ",
+    "ex_cn": "他宁可吃苦，也不愿意向困难低头。",
+    "ex_py": "Tā nìngkě chīkǔ, yě bù yuànyì xiàng kùnnán dītóu.",
+    "ex_vn": "Anh ấy thà chịu khổ còn hơn cúi đầu trước khó khăn."
+  },
+  {
+    "hanzi": "集中",
+    "pinyin": "jízhōng",
+    "meaning": "tập trung",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "考试时要集中注意力，不要分心。",
+    "ex_py": "Kǎoshì shí yào jízhōng zhùyìlì, bùyào fēnxīn.",
+    "ex_vn": "Khi thi phải tập trung chú ý, đừng để mất tập trung."
+  },
+  {
+    "hanzi": "体会",
+    "pinyin": "tǐhuì",
+    "meaning": "thấu hiểu, cảm nhận (qua trải nghiệm)",
+    "lesson": "17",
+    "type": "Động từ",
+    "ex_cn": "只有亲身经历，才能真正体会其中的滋味。",
+    "ex_py": "Zhǐyǒu qīnshēn jīnglì, cái néng zhēnzhèng tǐhuì qízhōng de zīwèi.",
+    "ex_vn": "Chỉ khi tự mình trải nghiệm mới có thể thực sự cảm nhận được hương vị của nó."
+  },
+  {
+    "hanzi": "开幕式",
+    "pinyin": "kāimùshì",
+    "meaning": "lễ khai mạc",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "奥运会开幕式令全世界观众叹为观止。",
+    "ex_py": "Àoyùnhuì kāimùshì lìng quán shìjiè guānzhòng tàn wéi guānzhǐ.",
+    "ex_vn": "Lễ khai mạc Thế vận hội khiến khán giả toàn thế giới trầm trồ thán phục."
+  },
+  {
+    "hanzi": "闭幕式",
+    "pinyin": "bìmùshì",
+    "meaning": "lễ bế mạc",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "闭幕式上的烟火表演精彩绝伦。",
+    "ex_py": "Bìmùshì shàng de yānhuǒ biǎoyǎn jīngcǎi juélún.",
+    "ex_vn": "Màn pháo hoa tại lễ bế mạc vô cùng rực rỡ."
+  },
+  {
+    "hanzi": "精力",
+    "pinyin": "jīnglì",
+    "meaning": "sức lực, năng lượng",
+    "lesson": "17",
+    "type": "Danh từ",
+    "ex_cn": "他把所有的精力都投入到这个项目中。",
+    "ex_py": "Tā bǎ suǒyǒu de jīnglì dōu tóurù dào zhège xiàngmù zhōng.",
+    "ex_vn": "Anh ấy dồn hết sức lực vào dự án này."
+  }
+]
