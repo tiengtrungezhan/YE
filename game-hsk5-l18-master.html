@@ -3,45 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRÙM TỪ VỰNG - HSK 5 Bài 18</title>
+    <title>Trùm Từ Vựng - HSK 5 Bài 18: 抽象艺术美不美?</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body { background: #fdf2f8; }
-        .placeholder-container {
-            max-width: 800px;
-            margin: 100px auto;
-            text-align: center;
-            padding: 3rem;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-        }
-        .mode-badge {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            background: #f3e5f5;
-            color: #7b1fa2;
-            border-radius: 100px;
-            font-weight: 800;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            margin-bottom: 1.5rem;
-        }
-        h1 { color: var(--primary-dark); font-size: 2.5rem; margin-bottom: 1rem; }
-        .mascot-box { font-size: 5rem; margin: 2rem 0; }
-        p { color: #666; font-size: 1.2rem; }
-        .back-btn-alt {
-            display: inline-block;
-            margin-top: 3rem;
-            padding: 1rem 2rem;
-            background: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 15px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
-        .back-btn-alt:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(165,207,218,0.4); }
+        .game-wrapper { max-width: 600px; margin: 0 auto; padding: 2rem; text-align: center; }
+        .quiz-card { background: var(--white); border-radius: 30px; padding: 3rem 2rem; box-shadow: var(--shadow); margin-top: 2rem; min-height: 450px; display: flex; flex-direction: column; justify-content: center; position: relative; }
+        .progress-container { width: 100%; height: 8px; background: #eee; border-radius: 4px; margin-bottom: 2rem; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--primary-color); width: 0%; transition: width 0.3s; }
+        .question-text { font-size: 1.5rem; font-weight: 700; color: var(--text-color); margin-bottom: 1rem; }
+        .sub-text { font-size: 1.1rem; color: #666; margin-bottom: 2rem; line-height: 1.6; }
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+        .option-btn { padding: 1.2rem; background: #f8fbfe; border: 2px solid #eef2f5; border-radius: 15px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: 0.2s; }
+        .option-btn:hover:not(:disabled) { border-color: var(--primary-color); background: #f0f7f9; }
+        .option-btn.correct { background: #d4edda !important; border-color: #28a745 !important; color: #155724 !important; }
+        .option-btn.wrong { background: #f8d7da !important; border-color: #dc3545 !important; color: #721c24 !important; }
+        .typing-input { width: 100%; padding: 1.2rem; border: 2px solid #ddd; border-radius: 15px; font-size: 1.4rem; text-align: center; margin-bottom: 1.5rem; transition: 0.3s; }
+        .typing-input:focus { border-color: var(--primary-color); outline: none; }
+        .submit-btn { padding: 1.2rem; background: var(--primary-color); color: white; border: none; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; width: 100%; transition: 0.3s; }
+        .submit-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+        .result-screen { display: none; }
+        .score-circle { width: 150px; height: 150px; border-radius: 50%; border: 10px solid var(--primary-light); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; margin: 2rem auto; color: var(--primary-dark); }
+        .blank-text { font-size: 1.8rem; letter-spacing: 2px; color: var(--text-color); margin-bottom: 2rem; font-weight: bold; }
+        .blank-fill { color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding: 0 10px; min-width: 60px; display: inline-block; }
     </style>
 </head>
 <body>
@@ -49,13 +33,106 @@
         <img src="mascot.png" alt="Home">
     </a>
     <div class="page-container">
-        <div class="placeholder-container">
-            <div class="mode-badge">TRÙM TỪ VỰNG</div>
-            <h1>HSK 5 - Bài 18</h1>
-            <div class="mascot-box">🚀</div>
-            <p>Nội dung bài tập đang được biên soạn.<br>Vui lòng quay lại sau!</p>
-            <a href="game-hsk5.html" class="back-btn-alt">Quay lại danh sách bài</a>
+        <a href="game-hsk5.html" class="back-btn">← Quay lại</a>
+        <div class="game-wrapper">
+            <div id="game-ui">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div class="progress-container" style="margin-bottom: 0; flex: 1;"><div class="progress-fill" id="progress"></div></div>
+                    <div id="progress-text" style="font-weight: bold; color: var(--primary-dark); font-size: 1.1rem; min-width: 50px; text-align: right;"></div>
+                </div>
+                <div class="quiz-card" id="quiz-card"></div>
+            </div>
+            <div id="result-ui" class="result-screen">
+                <div class="quiz-card">
+                    <h1 style="color: var(--primary-dark);">Kết Quả</h1>
+                    <div class="score-circle" id="final-score">0%</div>
+                    <p id="score-text"></p>
+                    <button class="submit-btn" style="margin-top: 2rem;" onclick="location.reload()">Chơi Lại</button>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        const vocabulary = [{"hanzi": "抽象", "pinyin": "chōuxiàng", "meaning": "trừu tượng", "lesson": "18", "type": "Tính từ", "ex_cn": "对有些人来说，抽象艺术比古典艺术更难懂。", "ex_py": "Duì yǒuxiē rén lái shuō, chōuxiàng yìshù bǐ gǔdiǎn yìshù gèng nándǒng.", "ex_vn": "Đối với một số người, nghệ thuật trừu tượng khó hiểu hơn nghệ thuật cổ điển."}, {"hanzi": "古典", "pinyin": "gǔdiǎn", "meaning": "cổ điển", "lesson": "18", "type": "Tính từ", "ex_cn": "她从小就喜欢弹奏古典钢琴曲。", "ex_py": "Tā cóngxiǎo jiù xǐhuan tánzòu gǔdiǎn gāngqín qǔ.", "ex_vn": "Cô ấy từ nhỏ đã thích chơi các bản nhạc piano cổ điển."}, {"hanzi": "欣赏", "pinyin": "xīnshǎng", "meaning": "thưởng thức, đánh giá cao", "lesson": "18", "type": "Động từ", "ex_cn": "我很欣赏他在艺术创作上的独特才华。", "ex_py": "Wǒ hěn xīnshǎng tā zài yìshù chuàngzuò shàng de dútè cáihuá.", "ex_vn": "Tôi rất đánh giá cao tài năng độc đáo của anh ấy trong sáng tạo nghệ thuật."}, {"hanzi": "布", "pinyin": "bù", "meaning": "vải, vải vẽ tranh", "lesson": "18", "type": "Danh từ", "ex_cn": "画家在洁白的画布上涂抹出美丽的色彩。", "ex_py": "Huàjiā zài jiébái de huàbù shàng túmǒ chū měilì de sècǎi.", "ex_vn": "Họa sĩ tô điểm những màu sắc đẹp đẽ lên tấm vải vẽ trắng tinh."}, {"hanzi": "规则", "pinyin": "guīzé", "meaning": "quy tắc, luật lệ, có quy tắc", "lesson": "18", "type": "Danh từ", "ex_cn": "我们在参加比赛时必须遵守游戏规则。", "ex_py": "Wǒmen zài cānjiā bǐsài shí bìxū zūnshǒu yóuxì guīzé.", "ex_vn": "Chúng ta phải tuân thủ quy tắc trò chơi khi tham gia thi đấu."}, {"hanzi": "派", "pinyin": "pài", "meaning": "trường phái, phái", "lesson": "18", "type": "Danh từ", "ex_cn": "这幅画展现了印象派画家的典型风格。", "ex_py": "Zhè fú huà zhǎnxiàn le yìnyàngpài huàjiā de diǎnxíng fēnggé.", "ex_vn": "Bức tranh này thể hiện phong cách điển hình của các họa sĩ trường phái ấn tượng."}, {"hanzi": "作品", "pinyin": "作品", "meaning": "tác phẩm", "lesson": "18", "type": "Danh từ", "ex_cn": "这件艺术作品吸引了无数观众驻足观看。", "ex_py": "Zhè jiàn yìshù zuòpǐn xīyǐn le wúshù guānzhòng zhùzú guānkàn.", "ex_vn": "Tác phẩm nghệ thuật này đã thu hút vô số khán giả dừng chân thưởng lãm."}, {"hanzi": "洒", "pinyin": "sǎ", "meaning": "vẩy, phun, rắc", "lesson": "18", "type": "Động từ", "ex_cn": "他不小心把咖啡洒在刚买的新衣服上。", "ex_py": "Tā bù xiǎoxīn bǎ kāfēi sǎ zài gāng mǎi de xīn yīfu shàng.", "ex_vn": "Anh ấy vô ý làm đổ cà phê lên bộ quần áo mới mua."}, {"hanzi": "极其", "pinyin": "jíqí", "meaning": "cực kỳ, vô cùng", "lesson": "18", "type": "Phó từ", "ex_cn": "这名画家的生平经历极其神秘。", "ex_py": "Zhè míng huàjiā de shēngpíng jīnglì jíqí shénmì.", "ex_vn": "Trải nghiệm cuộc đời của họa sĩ này cực kỳ bí ẩn."}, {"hanzi": "神秘", "pinyin": "shénmì", "meaning": "bí ẩn, thần bí", "lesson": "18", "type": "Tính từ", "ex_cn": "大自然中隐藏着许多神秘的现象。", "ex_py": "Dàzìrán zhōng yǐncáng zhe xǔduō shénmì de xiànhuàng.", "ex_vn": "Trong tự nhiên ẩn chứa rất nhiều hiện tượng bí ẩn."}, {"hanzi": "丑陋", "pinyin": "chǒulòu", "meaning": "xấu xí, xấu xa", "lesson": "18", "type": "Tính từ", "ex_cn": "外表虽然丑陋，但 his inner being is very kind.", "ex_py": "Wàibiǎo suīrán chǒulòu, dàn tā de nèixīn què fēicháng shànliáng.", "ex_vn": "Diện mạo bên ngoài tuy xấu xí, nhưng nội tâm của anh ấy lại rất lương thiện."}, {"hanzi": "自由", "pinyin": "zìyóu", "meaning": "tự do", "lesson": "18", "type": "Tính từ", "ex_cn": "艺术创作应该拥有充分的表达自由。", "ex_py": "Yìshù chuàngzuò yīnggāi yōngyǒu chōngfèn de biǎodá zìyóu.", "ex_vn": "Sáng tạo nghệ thuật nên sở hữu sự tự do biểu đạt đầy đủ."}, {"hanzi": "设计", "pinyin": "shèjì", "meaning": "thiết kế", "lesson": "18", "type": "Động từ", "ex_cn": "这位设计师设计了这座非常现代化的博物馆。", "ex_py": "Zhè wèi shèjìshī shèjì le zhè zuò fēicháng xiàndàihuà de bówùguǎn.", "ex_vn": "Nhà thiết kế này đã thiết kế ngôi bảo tàng vô cùng hiện đại này."}, {"hanzi": "组", "pinyin": "zǔ", "meaning": "nhóm, tổ, lượng từ cho nhóm", "lesson": "18", "type": "Danh từ", "ex_cn": "实验人员把志愿者分成了两组进行对比测试。", "ex_py": "Shíyàn rényuán bǎ zhìyuànzhě fēnchéng le liǎng zǔ jìnxíng duìbǐ cèshì.", "ex_vn": "Nhân viên thí nghiệm chia các tình nguyện viên thành hai nhóm để tiến hành thử nghiệm so sánh."}, {"hanzi": "幅", "pinyin": "fú", "meaning": "bức, tấm (dùng cho tranh vẽ, vải)", "lesson": "18", "type": "Lượng từ", "ex_cn": "墙上挂着一幅由著名大师创作的油画。", "ex_py": "Qiáng shàng guà zhe yī fú yóu zhùmíng dàshī chuàngzuò de yóuhuà.", "ex_vn": "Trên tường treo một bức tranh sơn dầu do một vị đại sư nổi tiếng sáng tác."}, {"hanzi": "出自", "pinyin": "chūzì", "meaning": "đến từ, xuất phát từ", "lesson": "18", "type": "Động từ", "ex_cn": "这两幅画其实出自同一位业余爱好者之手。", "ex_py": "Zhè liǎng fú huà qíshí chūzì tóng yī wèi yèyú àihàozhě zhī shǒu.", "ex_vn": "Hai bức tranh này thực chất đến từ bàn tay của cùng một người nghiệp dư."}, {"hanzi": "业余", "pinyin": "yèyú", "meaning": "nghiệp dư, rảnh rỗi", "lesson": "18", "type": "Tính từ", "ex_cn": "他在业余时间喜欢画一些水彩画。", "ex_py": "Tā zài yèyú shíjiān xǐhuan huà yīxiē shuǐcǎihuà.", "ex_vn": "Anh ấy thích vẽ tranh màu nước vào thời gian rảnh rỗi."}, {"hanzi": "婴儿", "pinyin": "yīng'ér", "meaning": "trẻ sơ sinh, em bé", "lesson": "18", "type": "Danh từ", "ex_cn": "那个婴儿正躺在摇篮里甜甜地熟睡。", "ex_py": "Nàge yīng'ér zhèng tǎng zài yáolán lǐ tiántián de shúshuì.", "ex_vn": "Đứa bé sơ sinh đó đang nằm trong nôi và ngủ một giấc thật ngon lành."}, {"hanzi": "猩猩", "pinyin": "xīngxing", "meaning": "tinh tinh", "lesson": "18", "type": "Danh từ", "ex_cn": "科学家们研究了猩猩的画画行为和习惯。", "ex_py": "Kēxuéjiāmen yánjiū le xīngxing de huàhuà xíngwéi hé xíguàn.", "ex_vn": "Các nhà khoa học đã nghiên cứu hành vi vẽ tranh và thói quen của loài tinh tinh."}, {"hanzi": "涂鸦", "pinyin": "túyā", "meaning": "nét vẽ nguệch ngoạc, vẽ bậy, graffiti", "lesson": "18", "type": "Danh từ", "ex_cn": "墙壁上布满了各种色彩鲜艳의 涂鸦.", "ex_py": "Qiángbì shàng bùmǎn le gèzhǒng sècǎi xiānyàn de yìshù túyā.", "ex_vn": "Bức tường được phủ đầy các hình vẽ nghệ thuật nguệch ngoạc đầy màu sắc sặc sỡ."}, {"hanzi": "签", "pinyin": "qiān", "meaning": "ký tên, thẻ, nhãn", "lesson": "18", "type": "Động từ", "ex_cn": "请在这份艺术品购买合同的右下角签上您的名字。", "ex_py": "Qǐng zài zhè fèn yìshùpǐn gòumǎi hétong de yòuxiàjiǎo qiān shàng nín de míngzi.", "ex_vn": "Xin vui lòng ký tên của bạn vào góc dưới bên phải của hợp đồng mua tác phẩm nghệ thuật này."}, {"hanzi": "其余", "pinyin": "qíyú", "meaning": "còn lại, phần còn lại", "lesson": "18", "type": "Đại từ", "ex_cn": "除了这幅画，其余的作品全部被售出了。", "ex_py": "Chúle zhè fú huà, qíyú de zuòpǐn quánbù bèi shòuchū le.", "ex_vn": "Ngoại trừ bức tranh này, các tác phẩm còn lại toàn bộ đều đã được bán đi."}, {"hanzi": "身份", "pinyin": "shēnfèn", "meaning": "thân phận, danh tính, địa vị", "lesson": "18", "type": "Danh từ", "ex_cn": "在这项测试中，画作创作者的真实身份被隐藏了。", "ex_py": "Zài zhè xiàng cèshì zhōng, huàzuò chuàngzuòzhě de zhēnshí shēnfèn bèi yǐncáng le.", "ex_vn": "Trong bài kiểm tra này, danh tính thực sự của người sáng tác tranh đã được ẩn đi."}, {"hanzi": "确认", "pinyin": "quèrèn", "meaning": "xác nhận, xác định", "lesson": "18", "type": "Động từ", "ex_cn": "我们需要进一步确认这幅画作是不是真品。", "ex_py": "Wǒmen xūyào jìnyībù quèrèn zhè fú huàzuò shì bú shì zhēnpǐn.", "ex_vn": "Chúng tôi cần xác nhận thêm một bước liệu bức tranh này có phải là hàng thật hay không."}, {"hanzi": "随手", "pinyin": "suíshǒu", "meaning": "tiện tay", "lesson": "18", "type": "Phó từ", "ex_cn": "艺术家拿起画笔，随手在画布上画了几条线。", "ex_py": "Yìshùjiā ná qǐ huàbǐ, suíshǒu zài huàbù shàng huà le jǐ tiáo xiàn.", "ex_vn": "Nghệ sĩ cầm cây cọ lên, tiện tay vẽ vài đường nét trên vải."}, {"hanzi": "分辨", "pinyin": "fēnbiàn", "meaning": "phân biệt", "lesson": "18", "type": "Động từ", "ex_cn": "普通人很难分辨大师杰作与儿童涂鸦的区别。", "ex_py": "Pǔtōngrén hěn nán fēnbiàn dàshī jiézuò yǔ értóng túyā de qūbié.", "ex_vn": "Người bình thường rất khó phân biệt sự khác nhau giữa kiệt tác của đại sư và tranh nguệch ngoạc của trẻ em."}, {"hanzi": "挥", "pinyin": "huī", "meaning": "vẫy, gạt, múa (cọ vẽ)", "lesson": "18", "type": "Động từ", "ex_cn": "他在画布前挥动着画笔，尽情抒发自己的情感。", "ex_py": "Tā zài huàbù qián huīdòng zhe huàbǐ, jìnqíng shūfā zìjǐ de qínggǎn.", "ex_vn": "Anh ấy múa cọ vẽ trước bức vải, thỏa sức bày tỏ cảm xúc của mình."}, {"hanzi": "可见", "pinyin": "kějiàn", "meaning": "có thể thấy, rõ ràng là", "lesson": "18", "type": "Liên từ", "ex_cn": "大多数人都选择了原作，可见人类的艺术感知力极强。", "ex_py": "Dàduōshù rén dōu xuǎnzé le yuánzuò, kějiàn rénlèi de yìshù gǎnzhīlì jí qiáng.", "ex_vn": "Đại đa số mọi người đều chọn tác phẩm gốc, có thể thấy khả năng cảm nhận nghệ thuật của con người cực kỳ mạnh mẽ."}, {"hanzi": "哪怕", "pinyin": "nǎpà", "meaning": "cho dù, ngay cả khi", "lesson": "18", "type": "Liên từ", "ex_cn": "哪怕签名被换了，人们依然能认出优秀的作品。", "ex_py": "Nǎpà qiānmíng bèi huàn le, rénmen yīrán néng rèn chū yōuxiù de zuòpǐn.", "ex_vn": "Cho dù chữ ký bị thay đổi, mọi người vẫn có thể nhận ra những tác phẩm xuất sắc."}, {"hanzi": "元素", "pinyin": "yuánsù", "meaning": "yếu tố, nguyên tố", "lesson": "18", "type": "Danh từ", "ex_cn": "色彩和线条是抽象画中最基础的构成元素。", "ex_py": "Sècǎi hé xiàntiáo shì chōuxiànghuà zhōng zuì jīchǔ de gòuchéng yuánsù.", "ex_vn": "Màu sắc và đường nét là những yếu tố cấu thành cơ bản nhất trong tranh trừu tượng."}, {"hanzi": "调整", "pinyin": "tiáozhěng", "meaning": "điều chỉnh", "lesson": "18", "type": "Động từ", "ex_cn": "在改变原图布局前，他多次调整了元素的位置。", "ex_py": "Zài gǎibiàn yuántú bùjú qián, tā duōcì tiáozhěng le yuánsù de wèizhì.", "ex_vn": "Trước khi thay đổi bố cục bức tranh gốc, anh ấy đã điều chỉnh vị trí của các yếu tố nhiều lần."}, {"hanzi": "位置", "pinyin": "wèizhì", "meaning": "vị trí", "lesson": "18", "type": "Danh từ", "ex_cn": "这幅画里物体的位置安排得恰到好处。", "ex_py": "Zhè fú huà lǐ wùtǐ de wèizhì ānpái de qiàdàohǎochù.", "ex_vn": "Vị trí của các vật thể trong bức tranh này được sắp đặt cực kỳ hoàn hảo."}, {"hanzi": "含意", "pinyin": "hányì", "meaning": "hàm ý, ý nghĩa", "lesson": "18", "type": "Danh từ", "ex_cn": "这句诗的含意极其深刻，值得反复品味。", "ex_py": "Zhè jù shī de hányì jíqí shēnkè, zhídé fǎnfù pǐnwèi.", "ex_vn": "Hàm ý của câu thơ này cực kỳ sâu sắc, xứng đáng được thưởng thức nhiều lần."}, {"hanzi": "区域", "pinyin": "qūyù", "meaning": "khu vực, vùng", "lesson": "18", "type": "Danh từ", "ex_cn": "实验显示，当我们看画时，脑部特定区域非常活跃。", "ex_py": "Shíyàn xiǎnshì, dāng wǒmen kàn huà shí, nǎobù tèdìng qūyù fēicháng huóyuè.", "ex_vn": "Thí nghiệm cho thấy, khi chúng ta xem tranh, khu vực đặc định của bộ não hoạt động cực kỳ tích cực."}, {"hanzi": "活跃", "pinyin": "huóyuè", "meaning": "năng nổ, sôi nổi, làm cho sôi nổi", "lesson": "18", "type": "Tính từ", "ex_cn": "台下的观众们提问非常活跃，让讲座很成功。", "ex_py": "Tái xià de guānzhòngmen tíwèn fēicháng huóyuè, ràng jiǎngzuò hěn chénggōng.", "ex_vn": "Khán giả bên dưới sân khấu đặt câu hỏi rất sôi nổi, giúp buổi tọa đàm diễn ra rất thành công."}, {"hanzi": "布局", "pinyin": "bùjú", "meaning": "bố cục, sắp xếp", "lesson": "18", "type": "Danh từ", "ex_cn": "这幅画的画面布局极其讲究，很有艺术感。", "ex_py": "Zhè fú huà de huàmiàn bùjú jíqí jiǎngjiu, hěn yǒu yìshùgǎn.", "ex_vn": "Bố cục hình ảnh của bức tranh này vô cùng tinh tế, mang lại cảm giác đầy nghệ thuật."}, {"hanzi": "事实", "pinyin": "shìshí", "meaning": "sự thật", "lesson": "18", "type": "Danh từ", "ex_cn": "事实证明，抽象艺术同样包含着作者的心血。", "ex_py": "Shìshí zhèngmíng, chōuxiàng yìshù tóngyàng bāohán zhe zuòzhě de xīnxuè.", "ex_vn": "Sự thật chứng minh, nghệ thuật trừu tượng cũng bao hàm tâm huyết của tác giả."}, {"hanzi": "目前", "pinyin": "mùqián", "meaning": "hiện nay, trước mắt", "lesson": "18", "type": "Danh từ", "ex_cn": "目前，该艺术馆正在举办现代艺术展。", "ex_py": "Mùqián, gāi yìshùguǎn zhèngzài jǔbàn xiàndài yìshù zhǎn.", "ex_vn": "Hiện nay, bảo tàng nghệ thuật này đang tổ chức triển lãm nghệ thuật hiện đại."}, {"hanzi": "证据", "pinyin": "zhèngjù", "meaning": "chứng cứ, bằng chứng", "lesson": "18", "type": "Danh từ", "ex_cn": "实验提供了证据，证明人脑能感知画家的用意。", "ex_py": "Shíyàn tígōng le zhèngjù, zhèngmíng rénnǎo néng gǎnzhī huàjiā de yòngyì.", "ex_vn": "Thí nghiệm đã cung cấp bằng chứng chứng minh não người có thể cảm nhận ý đồ của họa sĩ."}, {"hanzi": "话题", "pinyin": "huàtí", "meaning": "chủ đề nói chuyện, đề tài", "lesson": "18", "type": "Danh từ", "ex_cn": "抽象艺术到底美不美，依然是一个备受争议的话题。", "ex_py": "Chōuxiàng yìshù dàodǐ měi bù měi, yīrán shì yí gè bèi shòu zhēngyì de huàtí.", "ex_vn": "Nghệ thuật trừu tượng rốt cuộc có đẹp hay không, vẫn luôn là một đề tài tranh luận sôi nổi."}];
+        let currentQuestion = 0, score = 0, questions = [], totalQuestions = 0;
+
+        function initGame() {
+            totalQuestions = Math.min(20, vocabulary.length);
+            questions = generateQuestions();
+            renderQuestion();
+        }
+
+        function generateOptions(correctWord) {
+            let options = [correctWord];
+            while (options.length < 4 && vocabulary.length >= 4) {
+                const rand = vocabulary[Math.floor(Math.random() * vocabulary.length)];
+                if (!options.includes(rand)) options.push(rand);
+            }
+            return options.sort(() => Math.random() - 0.5);
+        }
+
+        function generateQuestions() {
+            let qs = [], shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
+            for (let i = 0; i < totalQuestions; i++) {
+                const word = shuffled[i % shuffled.length];
+                const type = Math.floor(Math.random() * 3);
+                let q = { type, word };
+                q.options = generateOptions(word);
+                qs.push(q);
+            }
+            return qs;
+        }
+
+        function renderQuestion() {
+            const q = questions[currentQuestion];
+            const card = document.getElementById('quiz-card');
+            const progress = document.getElementById('progress');
+            progress.style.width = (currentQuestion / totalQuestions) * 100 + '%';
+            document.getElementById('progress-text').innerText = (currentQuestion + 1) + '/' + totalQuestions;
+
+            let html = '';
+            if (q.type === 0) {
+                html = `<div class="question-text">Nghe và chọn từ đúng:</div><button style="background:#fdf2f8;border:none;font-size:3rem;cursor:pointer;margin-bottom:1rem;" onclick="speak('${q.word.hanzi}')">🔊</button><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.hanzi}','${q.word.hanzi}',this)">${opt.hanzi}</button>`).join('')}</div>`;
+                setTimeout(() => speak(q.word.hanzi), 500);
+            } else if (q.type === 1) {
+                html = `<div class="question-text">Từ "${q.word.hanzi}" có nghĩa là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.meaning}','${q.word.meaning}',this)">${opt.meaning}</button>`).join('')}</div>`;
+            } else {
+                html = `<div class="question-text">Từ "${q.word.hanzi}" có phiên âm là gì?</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkAnswer('${opt.pinyin}','${q.word.pinyin}',this)">${opt.pinyin}</button>`).join('')}</div>`;
+            }
+            card.innerHTML = html;
+        }
+
+        function speak(t) { const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'zh-CN'; window.speechSynthesis.speak(m); }
+
+        function checkAnswer(s, c, b) {
+            const btns = document.querySelectorAll('.option-btn');
+            btns.forEach(x => x.disabled = true);
+            if (s === c) { b.classList.add('correct'); score++; }
+            else { b.classList.add('wrong'); btns.forEach(x => { if(x.innerText === c || x.innerText.trim() === c) x.classList.add('correct'); }); }
+            showNext();
+        }
+
+        function showNext() {
+            const nextBtn = document.createElement('button');
+            nextBtn.className = "submit-btn";
+            nextBtn.style = "margin-top: 1.5rem; background: #4dabf7;";
+            nextBtn.innerText = "Tiếp theo ➔";
+            nextBtn.onclick = () => {
+                currentQuestion++;
+                if (currentQuestion < totalQuestions) renderQuestion();
+                else showResults();
+            };
+            document.getElementById('quiz-card').appendChild(nextBtn);
+        }
+
+        function showResults() {
+            document.getElementById('game-ui').style.display = 'none';
+            document.getElementById('result-ui').style.display = 'block';
+            document.getElementById('final-score').innerText = Math.round((score/totalQuestions)*100)+'%';
+            document.getElementById('score-text').innerText = `Bạn đã hoàn thành ${score}/${totalQuestions} câu hỏi.`;
+        }
+
+        initGame();
+    </script>
 </body>
 </html>

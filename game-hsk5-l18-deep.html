@@ -3,59 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIỂU SÂU - HSK 5 Bài 18</title>
+    <title>Hiểu Sâu - HSK 5 Bài 18: 抽象艺术美不美?</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body { background: #fff7ed; }
-        .placeholder-container {
-            max-width: 800px;
-            margin: 100px auto;
-            text-align: center;
-            padding: 3rem;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-        }
-        .mode-badge {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            background: #fff3e0;
-            color: #ef6c00;
-            border-radius: 100px;
-            font-weight: 800;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            margin-bottom: 1.5rem;
-        }
-        h1 { color: var(--primary-dark); font-size: 2.5rem; margin-bottom: 1rem; }
-        .mascot-box { font-size: 5rem; margin: 2rem 0; }
-        p { color: #666; font-size: 1.2rem; }
-        .back-btn-alt {
-            display: inline-block;
-            margin-top: 3rem;
-            padding: 1rem 2rem;
-            background: var(--primary-color);
+        body { background: linear-gradient(135deg, #fff8f0 0%, #fff3e0 100%); min-height: 100vh; }
+        .game-wrapper { max-width: 820px; margin: 0 auto; padding: 1.5rem; }
+
+        .lesson-title-bar {
+            background: linear-gradient(135deg, #ef6c00, #ff8f00);
             color: white;
-            text-decoration: none;
-            border-radius: 15px;
-            font-weight: 700;
-            transition: 0.3s;
+            border-radius: 20px;
+            padding: 1.2rem 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 8px 25px rgba(239,108,0,0.35);
         }
-        .back-btn-alt:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(165,207,218,0.4); }
+        .lesson-title-bar h1 { font-size: 1.6rem; margin: 0; }
+        .lesson-title-bar .badge { background: rgba(255,255,255,0.25); border-radius: 12px; padding: 0.4rem 1rem; font-size: 0.85rem; font-weight: 700; }
+
+        /* Reading passage */
+        .passage-box {
+            background: white;
+            border-radius: 20px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+            border-left: 5px solid #ef6c00;
+            position: relative;
+        }
+        .passage-label {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #ef6c00;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .passage-text {
+            font-size: 1.05rem;
+            line-height: 2;
+            color: #333;
+            font-family: "Noto Sans SC", "Source Han Sans", sans-serif;
+        }
+        .passage-text p { margin-bottom: 0.8rem; }
+        .passage-text p:last-child { margin-bottom: 0; }
+
+        /* Progress */
+        .progress-bar-wrap {
+            background: white;
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .progress-track { flex: 1; height: 10px; background: #f0f0f0; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #ef6c00, #ff8f00); border-radius: 10px; transition: width 0.5s ease; width: 0%; }
+        .progress-label { font-weight: 800; color: #ef6c00; font-size: 1rem; min-width: 55px; text-align: right; }
+
+        /* Quiz card */
+        .quiz-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem 2.2rem;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.09);
+            margin-bottom: 1.5rem;
+            min-height: 380px;
+            display: flex;
+            flex-direction: column;
+            animation: slideIn 0.35s ease;
+        }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+        .q-number { font-size: 0.8rem; font-weight: 800; color: #ef6c00; letter-spacing: 1px; margin-bottom: 0.8rem; }
+        .q-text { font-size: 1.25rem; font-weight: 700; color: #222; line-height: 1.6; margin-bottom: 1.5rem; }
+        .q-context {
+            background: #fff8f0;
+            border-radius: 12px;
+            padding: 0.8rem 1.2rem;
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            border-left: 3px solid #ffb74d;
+            line-height: 1.7;
+        }
+
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: auto; }
+        .opt-btn {
+            padding: 1rem 1.2rem;
+            border: 2px solid #e8e8e8;
+            border-radius: 14px;
+            background: #fafafa;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .opt-btn:hover:not(:disabled) { border-color: #ef6c00; background: #fff3e0; color: #e65100; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(239,108,0,0.15); }
+        .opt-btn.correct { border-color: #2e7d32 !important; background: #e8f5e9 !important; color: #1b5e20 !important; }
+        .opt-btn.wrong { border-color: #c62828 !important; background: #ffebee !important; color: #b71c1c !important; }
+        .opt-btn.reveal { border-color: #2e7d32 !important; background: #e8f5e9 !important; color: #1b5e20 !important; }
+
+        .feedback-box {
+            margin-top: 1.2rem;
+            padding: 1rem 1.3rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            display: none;
+        }
+        .feedback-box.correct { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+        .feedback-box.wrong { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+
+        .next-btn {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.9rem 2rem;
+            background: linear-gradient(135deg, #ef6c00, #ff8f00);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            align-self: flex-end;
+        }
+        .next-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(239,108,0,0.4); }
+
+        /* Result screen */
+        .result-screen {
+            display: none;
+            background: white;
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.09);
+            animation: slideIn 0.4s ease;
+        }
+        .result-emoji { font-size: 4rem; margin-bottom: 1rem; }
+        .result-title { font-size: 2rem; font-weight: 800; color: #ef6c00; margin-bottom: 0.5rem; }
+        .score-ring {
+            width: 130px; height: 130px;
+            border-radius: 50%;
+            border: 10px solid #ffe0b2;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; font-weight: 800; color: #ef6c00;
+            margin: 1.5rem auto;
+        }
+        .result-msg { font-size: 1.1rem; color: #666; margin-bottom: 2rem; }
+        .btn-replay {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #ef6c00, #ff8f00);
+            color: white; border: none; border-radius: 14px;
+            font-weight: 800; font-size: 1.1rem; cursor: pointer;
+            transition: 0.2s; margin: 0.5rem;
+        }
+        .btn-replay:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(239,108,0,0.4); }
+        .btn-back-link {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #fff3e0;
+            color: #ef6c00; border: 2px solid #ffcc80;
+            border-radius: 14px; font-weight: 800; font-size: 1rem;
+            text-decoration: none; margin: 0.5rem;
+            transition: 0.2s;
+        }
+        .btn-back-link:hover { background: #ffe0b2; }
     </style>
 </head>
 <body>
-    <a href="index.html" class="home-logo-btn">
-        <img src="mascot.png" alt="Home">
-    </a>
+    <a href="index.html" class="home-logo-btn"><img src="mascot.png" alt="Home"></a>
     <div class="page-container">
-        <div class="placeholder-container">
-            <div class="mode-badge">HIỂU SÂU</div>
-            <h1>HSK 5 - Bài 18</h1>
-            <div class="mascot-box">🚀</div>
-            <p>Nội dung bài tập đang được biên soạn.<br>Vui lòng quay lại sau!</p>
-            <a href="game-hsk5.html" class="back-btn-alt">Quay lại danh sách bài</a>
+        <a href="game-hsk5.html" class="back-btn">← Quay lại</a>
+
+        <div class="game-wrapper">
+            <div class="lesson-title-bar">
+                <h1>📖 Hiểu Sâu</h1>
+                <div class="badge">HSK 5 · Bài 18 · 抽象艺术美不美?</div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar-wrap">
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+                <div class="progress-label" id="progressLabel">0 / 10</div>
+            </div>
+
+            <!-- Quiz Card -->
+            <div class="quiz-card" id="quizCard">
+                <!-- JS injected -->
+            </div>
+
+            <!-- Result Screen -->
+            <div class="result-screen" id="resultScreen">
+                <div class="result-emoji" id="resultEmoji">🏆</div>
+                <div class="result-title">Kết Quả</div>
+                <div class="score-ring" id="scoreRing">0%</div>
+                <div class="result-msg" id="resultMsg"></div>
+                <button class="btn-replay" onclick="startGame()">🔄 Làm Lại</button>
+                <a href="game-hsk5.html" class="btn-back-link">← Danh sách bài</a>
+            </div>
         </div>
     </div>
+
+    <script>
+    const questions = [
+        {
+            q: "Đối với một số người, tại sao nghệ thuật trừu tượng lại không dễ thưởng thức bằng nghệ thuật cổ điển?",
+            context: "对有些人来说，抽象艺术没有古典艺术那么容易欣赏，画布上那些不规则的色块、线条，实在看不出有什么意义。",
+            options: [
+                "A. Vì tranh trừu tượng có giá thành đắt hơn nhiều so với tranh cổ điển",
+                "B. Vì những mảng màu, đường nét bất quy tắc trên vải vẽ dường như không có ý nghĩa rõ ràng",
+                "C. Vì tranh trừu tượng chỉ sử dụng một vài màu sắc đơn điệu",
+                "D. Vì nghệ sĩ trừu tượng không có danh tiếng bằng các nghệ sĩ cổ điển"
+            ],
+            answer: 1,
+            explain: 'Nguyên văn cho biết những mảng màu, đường nét bất quy tắc (不规则) trên vải vẽ thực sự không nhìn ra được có ý nghĩa gì, khiến người xem cảm thấy khó thưởng thức hơn nghệ thuật cổ điển.'
+        },
+        {
+            q: "Ý kiến trái chiều của mọi người khi nhìn thấy những bức tranh trừu tượng dường như được vẩy màu một cách ngẫu nhiên là gì?",
+            context: "抽象派画家的作品中经常见到好像随便洒上颜料而形成的画作，在有人看来极其神秘甚至丑陋，有人却从中感受到对自由、对生命的赞美。",
+            options: [
+                "A. Người thì thấy chúng cực kỳ đắt đỏ, người lại thấy chúng rất bình thường",
+                "B. Người thì cho là thần bí hay xấu xí, người lại cảm nhận được sự ca ngợi tự do và sinh mệnh",
+                "C. Người thì cho là tranh vẽ của trẻ con, người lại nghĩ đó là do máy tính vẽ ra",
+                "D. Tất cả mọi người đều đồng tình đó là kiệt tác nghệ thuật tuyệt vời nhất"
+            ],
+            answer: 1,
+            explain: 'Có người thấy tranh vẩy màu极其神秘 (cực kỳ bí ẩn) thậm chí 丑陋 (xấu xí), có người lại từ đó cảm nhận được sự ca ngợi tự do và sinh mệnh.'
+        },
+        {
+            q: "Trong thí nghiệm thứ nhất, các nhà nghiên cứu yêu cầu tình nguyện viên làm việc gì?",
+            context: "研究人员让志愿者在一组两幅画中选出他们更喜欢的一幅。这些画一组两幅，一幅是著名抽象艺术家的作品，另一幅是业余爱好者、婴儿、黑猩猩或大象的涂鸦。",
+            options: [
+                "A. Yêu cầu vẽ một bức tranh nguệch ngoạc giống hệt tranh của tinh tinh",
+                "B. Yêu cầu chọn ra bức tranh mà họ thích hơn trong một nhóm gồm hai bức tranh (một của họa sĩ, một của nghiệp dư/trẻ em/động vật)",
+                "C. Yêu cầu đoán xem bức tranh nào đắt tiền hơn và giải thích lý do",
+                "D. Yêu cầu chỉnh sửa lại bố cục của các bức tranh cho hợp lý hơn"
+            ],
+            answer: 1,
+            explain: 'Thí nghiệm 1 yêu cầu các tình nguyện viên chọn bức tranh mình thích hơn trong một cặp tranh: một là tác phẩm của họa sĩ trừu tượng nổi tiếng, một là hình vẽ nguệch ngoạc của người nghiệp dư, em bé, tinh tinh hoặc voi.'
+        },
+        {
+            q: "Tình nguyện viên có biết danh tính người vẽ khi thực hiện thí nghiệm thứ nhất không?",
+            context: "这些画都没有署名，或者故意弄乱了签名，志愿者并不知道哪幅画是谁画的。",
+            options: [
+                "A. Có, họ biết rất rõ vì chữ ký của họa sĩ rất nổi tiếng và rõ ràng",
+                "B. Không, vì tranh không có chữ ký hoặc chữ ký đã bị cố ý làm xáo trộn, họ không biết bức nào do ai vẽ",
+                "C. Chỉ những tình nguyện viên có chuyên môn nghệ thuật mới được biết danh tính người vẽ",
+                "D. Họ phải trả tiền để biết được danh tính của các họa sĩ vẽ tranh"
+            ],
+            answer: 1,
+            explain: 'Tranh không ghi tên tác giả hoặc chữ ký bị làm lộn xộn để đảm bảo tính khách quan của thí nghiệm, tình nguyện viên hoàn toàn không biết bức nào là của ai vẽ.'
+        },
+        {
+            q: "Kết quả đáng ngạc nhiên của thí nghiệm thứ nhất là gì?",
+            context: "但测试结果表明，无论志愿者是艺术系的学生还是普通人，大家都更倾向于选择著名艺术家的作品。",
+            options: [
+                "A. Sinh viên mỹ thuật thích tranh của họa sĩ, còn người bình thường thích tranh của tinh tinh vẽ hơn",
+                "B. Hầu hết mọi người đều chọn tranh của trẻ em vẽ vì sự ngây thơ và sinh động",
+                "C. Cho dù là sinh viên mỹ thuật hay người bình thường, mọi người đều có xu hướng chọn tác phẩm của nghệ sĩ nổi tiếng",
+                "D. Kết quả hỗn loạn và không tìm ra bất kỳ xu hướng lựa chọn rõ ràng nào từ tình nguyện viên"
+            ],
+            answer: 2,
+            explain: 'Kết quả thử nghiệm chỉ ra rằng, dù là sinh viên chuyên ngành nghệ thuật hay người bình thường, mọi người đều ưu tiên lựa chọn tác phẩm của nghệ sĩ nổi tiếng hơn các nét vẽ nguệch ngoạc khác.'
+        },
+        {
+            q: "Thí nghiệm thứ nhất chứng minh điều gì về khả năng cảm thụ nghệ thuật của con người?",
+            context: "这说明，哪怕我们不知道原因，我们的眼睛 and 大脑依然能够感受到艺术家在作画时的用心和布局。",
+            options: [
+                "A. Con người chỉ có thể thưởng thức nghệ thuật khi có sự hướng dẫn chi tiết của các chuyên gia",
+                "B. Cho dù không biết lý do, mắt và não của chúng ta vẫn có thể cảm nhận được tâm huyết và sự sắp xếp bố cục của nghệ sĩ",
+                "C. Con người luôn thích những nét vẽ nguệch ngoạc tự nhiên của động vật hơn tranh vẽ của con người",
+                "D. Khả năng cảm thụ nghệ thuật hoàn toàn phụ thuộc vào việc bức tranh đó có chữ ký hay không"
+            ],
+            answer: 1,
+            explain: 'Thí nghiệm chứng minh rằng bộ não và đôi mắt của con người có khả năng cảm nhận được tâm huyết (用心) và sự sắp đặt bố cục (布局) của nghệ sĩ trong tác phẩm, dù không thể dùng lời giải thích lý do cụ thể.'
+        },
+        {
+            q: "Trong thí nghiệm thứ hai, các nhà nghiên cứu đã làm gì với các bức tranh?",
+            context: "研究人员将画作中某些物体的位置进行了移动调整，然后让志愿者对比原作与调整后的画作。",
+            options: [
+                "A. Họ xóa bỏ hoàn toàn các màu sắc của bức tranh và chỉ để lại các đường nét đen trắng",
+                "B. Họ thay đổi chữ ký của họa sĩ thành chữ ký của một đứa trẻ",
+                "C. Họ di chuyển và điều chỉnh vị trí của một số vật thể/yếu tố trong bức tranh rồi cho tình nguyện viên đối chiếu với bức tranh gốc",
+                "D. Họ bán đấu giá các bức tranh để xem bức nào được trả giá cao hơn"
+            ],
+            answer: 2,
+            explain: 'Thí nghiệm 2 tiến hành dịch chuyển, điều chỉnh vị trí một số yếu tố hoặc vật thể trong bức tranh (cả tranh tĩnh vật và trừu tượng) rồi để tình nguyện viên so sánh tranh gốc với tranh đã chỉnh sửa.'
+        },
+        {
+            q: "Phản ứng của tình nguyện viên khi so sánh tác phẩm gốc và tác phẩm bị thay đổi vị trí yếu tố là gì?",
+            context: "几乎所有志愿者都表示更喜欢原作，无论是静物画还是抽象画都是如此。",
+            options: [
+                "A. Họ thích bức tranh đã được điều chỉnh vị trí hơn vì trông nó cân đối hơn",
+                "B. Hầu như tất cả tình nguyện viên đều cho biết họ thích tác phẩm gốc hơn, áp dụng cho cả tranh tĩnh vật lẫn tranh trừu tượng",
+                "C. Họ không nhận ra bất kỳ sự khác biệt nào giữa hai bức tranh",
+                "D. Sinh viên mỹ thuật thích tác phẩm bị điều chỉnh, còn người bình thường thích tác phẩm gốc"
+            ],
+            answer: 1,
+            explain: 'Kết quả thí nghiệm 2 cho thấy hầu như tất cả mọi người đều yêu thích tác phẩm gốc (原作) hơn bức tranh bị di dời vị trí vật thể, dù đó là tranh tĩnh vật hay tranh trừu tượng.'
+        },
+        {
+            q: "Máy quét não đã phát hiện điều gì xảy ra khi tình nguyện viên xem những bức tranh bị thay đổi vị trí các yếu tố?",
+            context: "扫描显示，当欣赏被调整了位置的画作时，志愿者大脑中与“含意”和“解释”相关的区域，活跃性明显下降。",
+            options: [
+                "A. Bộ não của họ trở nên hoạt động mạnh mẽ hơn vì phải cố gắng tìm hiểu ý nghĩa mới",
+                "B. Các vùng não liên quan đến cảm xúc vui vẻ và thư giãn tăng mạnh mức độ hoạt động",
+                "C. Hoạt động tại khu vực não liên quan đến 'hàm ý' và 'giải thích' giảm đi một cách rõ rệt",
+                "D. Không có bất kỳ sự thay đổi sinh lý nào được ghi nhận từ máy quét não bộ"
+            ],
+            answer: 2,
+            explain: 'Khi xem các bức tranh bị di chuyển vị trí các bộ phận, máy quét não hiển thị hoạt động của các vùng não bộ chịu trách nhiệm về "hàm ý" (含意) và "giải thích" (解释) bị giảm đi rõ rệt.'
+        },
+        {
+            q: "Bài khóa kết luận như thế nào về quá trình thưởng thức và tìm kiếm ý nghĩa trong nghệ thuật trừu tượng?",
+            context: "寻找含意的过程本身就是一个挑战，但也是一种自由。这，可能正是抽象艺术的魅力所在。",
+            options: [
+                "A. Việc tìm kiếm ý nghĩa là không cần thiết và chỉ gây lãng phí thời gian của người xem",
+                "B. Quá trình tìm kiếm ý nghĩa tuy là một thử thách nhưng cũng mang lại sự tự do, và đó chính là sức hút của nghệ thuật trừu tượng",
+                "C. Nghệ thuật trừu tượng sẽ sớm bị thay thế hoàn toàn bởi các công nghệ thiết kế hiện đại",
+                "D. Tranh trừu tượng chỉ thực sự có giá trị khi loài vật hoặc trẻ em tham gia vẽ cùng họa sĩ"
+            ],
+            answer: 1,
+            explain: 'Bài khóa kết luận: Việc đi tìm kiếm hàm ý của bức tranh trừu tượng tuy là một thử thách (挑战) nhưng cũng đồng thời là một sự tự do (自由), và đây chính là sức hút (魅力) đặc biệt của nghệ thuật trừu tượng.'
+        }
+    ];
+
+    let current = 0;
+    let score = 0;
+    let answered = false;
+
+    function startGame() {
+        current = 0;
+        score = 0;
+        answered = false;
+        document.getElementById('resultScreen').style.display = 'none';
+        document.getElementById('quizCard').style.display = 'flex';
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        answered = false;
+        const q = questions[current];
+        const card = document.getElementById('quizCard');
+        const total = questions.length;
+
+        // Update progress
+        document.getElementById('progressFill').style.width = (current / total * 100) + '%';
+        document.getElementById('progressLabel').innerText = current + ' / ' + total;
+
+        card.innerHTML = `
+            <div class="q-number">CÂU ${current + 1} / ${total}</div>
+            <div class="q-text">${q.q}</div>
+            <div class="q-context">
+                <strong>Bối cảnh bài khóa:</strong><br>
+                <span>${q.context}</span>
+            </div>
+
+            <div class="options-grid" id="optionsGrid">
+                ${q.options.map((opt, i) => `
+                    <button class="opt-btn" id="opt${i}" onclick="selectAnswer(${i})">${opt}</button>
+                `).join('')}
+            </div>
+            <div class="feedback-box" id="feedbackBox"></div>
+            <button class="next-btn" id="nextBtn" onclick="nextQuestion()">
+                ${current < total - 1 ? 'Câu tiếp theo →' : 'Xem kết quả 🏆'}
+            </button>
+        `;
+    }
+
+    function selectAnswer(idx) {
+        if (answered) return;
+        answered = true;
+
+        const q = questions[current];
+        const correct = q.answer;
+        const fb = document.getElementById('feedbackBox');
+
+        document.querySelectorAll('.opt-btn').forEach(b => b.disabled = true);
+
+        document.getElementById('opt' + idx).classList.add(idx === correct ? 'correct' : 'wrong');
+        if (idx !== correct) {
+            document.getElementById('opt' + correct).classList.add('reveal');
+        }
+
+        if (idx === correct) {
+            score++;
+            fb.className = 'feedback-box correct';
+            fb.innerHTML = '✅ <strong>Chính xác!</strong> ' + q.explain;
+        } else {
+            fb.className = 'feedback-box wrong';
+            fb.innerHTML = '❌ <strong>Chưa đúng.</strong> ' + q.explain;
+        }
+        fb.style.display = 'block';
+
+        const nextBtn = document.getElementById('nextBtn');
+        nextBtn.style.display = 'block';
+    }
+
+    function nextQuestion() {
+        current++;
+        if (current < questions.length) {
+            renderQuestion();
+        } else {
+            showResult();
+        }
+    }
+
+    function showResult() {
+        document.getElementById('quizCard').style.display = 'none';
+        document.getElementById('progressFill').style.width = '100%';
+        document.getElementById('progressLabel').innerText = questions.length + ' / ' + questions.length;
+
+        const pct = Math.round(score / questions.length * 100);
+        let emoji = '💪', msg = '';
+        if (pct === 100) { emoji = '🏆'; msg = 'Xuất sắc! Bạn đã hiểu sâu toàn bộ bài khóa!'; }
+        else if (pct >= 80) { emoji = '🌟'; msg = 'Rất tốt! Bạn hiểu bài khóa khá sâu rồi.'; }
+        else if (pct >= 60) { emoji = '📖'; msg = 'Khá ổn! Hãy đọc lại bài khóa một lần nữa nhé.'; }
+        else { emoji = '🔁'; msg = 'Hãy đọc kỹ bài khóa và thử lại nhé!'; }
+
+        document.getElementById('resultEmoji').innerText = emoji;
+        document.getElementById('scoreRing').innerText = pct + '%';
+        document.getElementById('resultMsg').innerText = `Bạn trả lời đúng ${score}/${questions.length} câu. ${msg}`;
+        document.getElementById('resultScreen').style.display = 'block';
+    }
+
+    startGame();
+    </script>
 </body>
 </html>

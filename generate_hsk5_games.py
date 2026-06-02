@@ -50,7 +50,7 @@ FLIP_TEMPLATE = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lật Thẻ Thông Minh - HSK 5 Bài {lesson_id}</title>
+    <title>Lật Thẻ Thông Minh - HSK 5 Bài {lesson_id}{title_suffix}</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {{ background: #f0f9ff; }}
@@ -256,7 +256,7 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trùm Từ Vựng - HSK 5 Bài {lesson_id}</title>
+    <title>Trùm Từ Vựng - HSK 5 Bài {lesson_id}{title_suffix}</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {{ background: #fdf2f8; }}
@@ -390,19 +390,28 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
+LESSON_TITLES = {
+    14: "北京的四合院",
+    15: "纸上谈兵",
+    16: "体重与节食",
+    17: "在最美好的时刻离开",
+    18: "抽象艺术美不美?"
+}
+
 # Generate files for each lesson
 for lesson_id, vocab_list in lessons.items():
     vocab_json = json.dumps(vocab_list, ensure_ascii=False)
     total = len(vocab_list)
+    title_suffix = f": {LESSON_TITLES[lesson_id]}" if lesson_id in LESSON_TITLES else ""
 
     # Flip Page
     with open(f'game-hsk5-l{lesson_id}-flip.html', 'w', encoding='utf-8') as f:
-        f.write(FLIP_TEMPLATE.format(lesson_id=lesson_id, vocab_json=vocab_json, total=total))
+        f.write(FLIP_TEMPLATE.format(lesson_id=lesson_id, title_suffix=title_suffix, vocab_json=vocab_json, total=total))
     print(f"  ✓ game-hsk5-l{lesson_id}-flip.html")
 
     # Master Page
     with open(f'game-hsk5-l{lesson_id}-master.html', 'w', encoding='utf-8') as f:
-        f.write(MASTER_TEMPLATE.format(lesson_id=lesson_id, vocab_json=vocab_json))
+        f.write(MASTER_TEMPLATE.format(lesson_id=lesson_id, title_suffix=title_suffix, vocab_json=vocab_json))
     print(f"  ✓ game-hsk5-l{lesson_id}-master.html")
 
 print(f"\n✅ Done! Generated games for {len(lessons)} lesson(s): {sorted(lessons.keys())}")

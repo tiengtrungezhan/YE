@@ -157,7 +157,7 @@
             else if (q.type === 10) {
                 html = `<div class="question-text">Sắp xếp câu chính xác:</div><div id="drop-zone" class="phrase-box"></div><div style="text-align: right; margin-bottom: 1rem;"><button onclick="clearDropZone()" style="background: #ff8787; color: white; border: none; padding: 5px 12px; border-radius: 8px; font-size: 0.8rem; cursor: pointer;">Xóa tất cả</button></div><div id="drag-zone" class="phrase-box" style="border: none; background: transparent;">${q.phrases.map(p => `<div class="phrase-item" onclick="movePhrase(this, '${q.correctSentence}')">${p}</div>`).join('')}</div>`;
             } else if (q.type === 11) {
-                html = `<div class="question-text">Dịch câu sau sang tiếng Trung:</div><div class="sub-text" style="font-size: 1.4rem; color: var(--primary-dark);">${q.word.ex_vn}</div><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập câu tiếng Trung..."><button class="submit-btn" onclick="checkTyping('${q.word.ex_cn.replace(/[，。？！\s]/g, '')}')">Gửi đáp án</button>`;
+                html = `<div class="question-text">Dịch câu sau sang tiếng Trung:</div><div class="sub-text" style="font-size: 1.4rem; color: var(--primary-dark); display: flex; align-items: center; justify-content: center; gap: 0.8rem;">${q.word.ex_vn}<button onclick="speakVN(this.dataset.text)" data-text="${q.word.ex_vn}" style="background: none; border: 2px solid var(--primary-color); border-radius: 50%; width: 42px; height: 42px; font-size: 1.3rem; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: 0.2s;" onmouseover="this.style.background='var(--primary-light)'" onmouseout="this.style.background='none'" title="Nghe câu tiếng Việt">🔊</button></div><input type="text" class="typing-input" id="typing-ans" placeholder="Nhập câu tiếng Trung..." data-answer="${q.word.ex_cn}"><button class="submit-btn" onclick="checkTyping('${q.word.ex_cn.replace(/[，。？！\s]/g, '')}', '${q.word.ex_cn}')">Gửi đáp án</button>`;
             } else if (q.type === 12) {
                 html = `<div class="question-text">Điền từ vào ô trống:</div><div class="blank-text">${q.displaySentence.replace("______", "<span class='blank-fill' id='blank-target'>?</span>")}</div><div class="options-grid">${q.options.map(opt => `<button class="option-btn" onclick="checkBlank('${opt.hanzi}', '${q.word.hanzi}', this)">${opt.hanzi}</button>`).join('')}</div>`;
             }
@@ -165,7 +165,8 @@
             card.innerHTML = html;
         }
 
-        function speak(t) { const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'zh-CN'; window.speechSynthesis.speak(m); }
+        function speak(t) { const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'zh-CN'; window.speechSynthesis.cancel(); window.speechSynthesis.speak(m); }
+        function speakVN(t) { const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'vi-VN'; window.speechSynthesis.cancel(); window.speechSynthesis.speak(m); }
         
         function checkAnswer(s, c, b) {
             const btns = document.querySelectorAll('.option-btn');
@@ -181,20 +182,25 @@
             checkAnswer(s, c, b);
         }
 
-        function checkTyping(correct) {
+        function checkTyping(correct, fullSentence) {
             const input = document.getElementById('typing-ans');
             const val = input.value.trim().replace(/[，。？！、\s]/g, '');
+            const speakText = fullSentence || correct;
             if (val === correct) {
                 input.style.borderColor = "#28a745";
                 input.style.background = "#d4edda";
                 score++;
+                // Auto-speak the correct Chinese answer
+                setTimeout(() => speak(speakText), 300);
             } else {
                 input.style.borderColor = "#dc3545";
                 input.style.background = "#f8d7da";
                 const err = document.createElement('div');
-                err.style = "color: #dc3545; margin-top: 10px; font-weight: bold;";
-                err.innerText = "Đáp án đúng: " + correct;
+                err.style = "color: #dc3545; margin-top: 10px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 0.6rem;";
+                err.innerHTML = `Đáp án đúng: <span style="color: #155724; font-size: 1.3rem;">${speakText}</span><button onclick="speak('${speakText}')" style="background: #28a745; color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer;" title="Nghe đáp án tiếng Trung">🔊</button>`;
                 input.parentNode.appendChild(err);
+                // Auto-speak the correct Chinese answer after a short delay
+                setTimeout(() => speak(speakText), 300);
             }
             document.querySelector('.submit-btn').disabled = true;
             showNext();
