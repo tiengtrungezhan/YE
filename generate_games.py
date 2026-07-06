@@ -26,6 +26,14 @@ def generate_hsk_games(level):
         print(f"File {json_file} not found. Skipping HSK{level}.")
         return
 
+    # Load Hanzi Details (Only for HSK 1)
+    hanzi_details = {}
+    if level == 1:
+        details_file = 'hsk1_hanzi_details.json'
+        if os.path.exists(details_file):
+            with open(details_file, 'r', encoding='utf-8') as hf:
+                hanzi_details = json.load(hf)
+
     # Load vocabulary data
     with open(json_file, 'r', encoding='utf-8') as f:
         vocab_data = json.load(f)
@@ -1033,6 +1041,702 @@ def generate_hsk_games(level):
 </body>
 </html>"""
 
+    HANZI_TEMPLATE = """<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Chữ Hán - HSK {level_label} Bài {lesson_id}</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+    <style>
+        body {{ background: #f0f7f9; }}
+        .game-wrapper {{
+            display: flex;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+            align-items: flex-start;
+        }}
+        .char-sidebar {{
+            flex: 0 0 180px;
+            background: var(--white);
+            border-radius: 25px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            max-height: 550px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }}
+        .sidebar-title {{
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+        }}
+        .char-btn {{
+            padding: 0.8rem;
+            background: #f8fbfe;
+            border: 2px solid #eef2f5;
+            border-radius: 15px;
+            font-size: 1.6rem;
+            font-family: "KaiTi", "楷体", "STKaiti", serif;
+            font-weight: bold;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }}
+        .char-btn span {{
+            font-size: 0.9rem;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            color: #666;
+        }}
+        .char-btn:hover {{
+            border-color: var(--primary-color);
+            background: #f0f7f9;
+            transform: translateY(-2px);
+        }}
+        .char-btn.active {{
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }}
+        .char-btn.active span {{
+            color: #fff;
+        }}
+        
+        .char-panel {{
+            flex: 1;
+            background: var(--white);
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            gap: 3rem;
+            min-height: 550px;
+        }}
+        .writer-section {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            flex: 0 0 250px;
+        }}
+        .hanzi-writer-container {{
+            width: 250px;
+            height: 250px;
+            background: #fff;
+            border: 3px solid var(--primary-light);
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(165,207,218,0.15);
+            background-image: 
+                linear-gradient(to right, #f5f5f5 1px, transparent 1px),
+                linear-gradient(to bottom, #f5f5f5 1px, transparent 1px),
+                linear-gradient(to right, transparent 50%, #ffe3e3 1px, transparent 50%),
+                linear-gradient(to bottom, transparent 50%, #ffe3e3 1px, transparent 50%);
+            background-size: 25px 25px, 25px 25px, 100% 100%, 100% 100%;
+        }}
+        
+        .control-buttons {{
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            width: 100%;
+        }}
+        .btn-control {{
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-dark);
+            font-weight: bold;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }}
+        .btn-control:hover {{
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }}
+        .btn-speak-big {{
+            background: #f0f7f9;
+            border-color: var(--primary-color);
+        }}
+        
+        .details-section {{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }}
+        
+        .char-header {{
+            border-bottom: 2px dashed var(--primary-light);
+            padding-bottom: 1rem;
+        }}
+        .char-pinyin-display {{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e67e22;
+        }}
+        .char-meaning-display {{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-top: 0.3rem;
+        }}
+        
+        .pills-container {{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }}
+        .info-pill {{
+            background: #f0f9ff;
+            color: var(--text-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 100px;
+            font-size: 0.95rem;
+            border: 1px solid var(--primary-light);
+            display: flex;
+            gap: 0.5rem;
+        }}
+        .info-pill strong {{
+            color: var(--primary-dark);
+        }}
+        
+        .mnemonic-box {{
+            background: #fffdf0;
+            border: 1px solid #ffeeba;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-top: auto;
+            position: relative;
+        }}
+        .mnemonic-title {{
+            font-weight: bold;
+            color: #d48806;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }}
+        .mnemonic-content {{
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+        }}
+        
+        .evolution-step-card {{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+        }}
+        .evolution-step-card img {{
+            width: 100%;
+            height: 75px;
+            object-fit: contain;
+        }}
+        .evolution-arrow {{
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            font-weight: bold;
+            user-select: none;
+        }}
+        
+        /* Toast notification */
+        .toast {{
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(40,167,69,0.3);
+            z-index: 1000;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+            opacity: 0;
+            pointer-events: none;
+        }}
+        .toast.show {{
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }}
+
+        @media (max-width: 768px) {{
+            .game-wrapper {{
+                flex-direction: column;
+                padding: 1rem;
+            }}
+            .char-sidebar {{
+                flex: 1;
+                width: 100%;
+                max-height: 120px;
+                flex-direction: row;
+                overflow-x: auto;
+                padding: 1rem;
+            }}
+            .sidebar-title {{
+                display: none;
+            }}
+            .char-btn {{
+                flex-shrink: 0;
+                min-width: 80px;
+            }}
+            .char-panel {{
+                flex-direction: column;
+                padding: 2rem;
+                width: 100%;
+                gap: 2rem;
+            }}
+            .writer-section {{
+                width: 100%;
+                flex: none;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    <div class="page-container">
+        <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
+        <h1 style="text-align: center; color: var(--primary-dark); font-size: 2.2rem; margin-bottom: 1rem;">Luyện Chữ Hán HSK {level_label} ✍️</h1>
+        <p style="text-align: center; margin-bottom: 2rem; opacity: 0.8;">Học cách viết, số nét, bộ thủ và mẹo nhớ từng chữ Hán trong bài.</p>
+        
+        <div class="game-wrapper">
+            <div class="char-sidebar" id="charSidebar">
+                <div class="sidebar-title">Chữ Hán</div>
+                <!-- Buttons will be injected here -->
+            </div>
+            
+            <div class="char-panel">
+                <div class="writer-section">
+                    <div id="character-target-div" class="hanzi-writer-container"></div>
+                    <div class="control-buttons">
+                        <button class="btn-control" onclick="animateChar()">▶ Xem viết</button>
+                        <button class="btn-control" onclick="startPractice()">✏ Viết thử</button>
+                        <button class="btn-control btn-speak-big" onclick="speakChar()">🔊 Phát âm</button>
+                    </div>
+                </div>
+                
+                <div class="details-section">
+                    <div class="char-header">
+                        <span class="char-pinyin-display" id="char-pinyin">nǐ</span>
+                        <div class="char-meaning-display" id="char-meaning">bạn, anh, chị</div>
+                    </div>
+                    
+                    <div class="pills-container">
+                        <div class="info-pill"><strong>Bộ thủ:</strong> <span id="char-radical">丨</span></div>
+                        <div class="info-pill"><strong>Số nét:</strong> <span id="char-strokes">7</span></div>
+                    </div>
+                    
+                    <div class="mnemonic-box">
+                        <div class="mnemonic-title">💡 Mẹo Nhớ Chữ Hán</div>
+                        <div class="mnemonic-content" id="char-mnemonic"></div>
+                    </div>
+                    
+                    <div class="illustration-box" id="char-illustration-container" style="display: none; margin-top: 1.5rem; text-align: center; width: 100%;">
+                        <div style="font-weight: bold; color: var(--primary-dark); margin-bottom: 0.8rem; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 0.5rem; justify-content: center;">🎨 Quá trình hình thành chữ Hán</div>
+                        <div id="char-illustration-single-box" style="display: none;">
+                            <img id="char-illustration" src="" style="max-width: 100%; max-height: 180px; border-radius: 15px; border: 1px solid var(--primary-light); box-shadow: 0 4px 10px rgba(0,0,0,0.05);" alt="Infographic">
+                        </div>
+                        <div id="char-illustration-steps-box" style="display: none; justify-content: center; align-items: center; gap: 0.4rem; flex-wrap: wrap; width: 100%;">
+                            <!-- Steps will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="toast" id="toast">Tuyệt vời! Bạn viết rất đẹp! 🎉</div>
+
+    <script>
+        const hanziData = {hanzi_json};
+        const RADICAL_DICT = {{
+            "丨": "Cổn (sổ thẳng)",
+            "丿": "Phiệt (nét phẩy)",
+            "人": "Nhân (người)",
+            "亻": "Nhân (người)",
+            "口": "Khẩu (miệng)",
+            "宀": "Miên (mái nhà)",
+            "日": "Nhật (mặt trời/ngày)",
+            "木": "Mộc (cây)",
+            "水": "Thủy (nước)",
+            "氵": "Thủy (nước)",
+            "言": "Ngôn (nói/lời nói)",
+            "讠": "Ngôn (nói/lời nói)",
+            "门": "Môn (cửa)",
+            "心": "Tâm (tim/lòng)",
+            "忄": "Tâm (tim/lòng)",
+            "禾": "Hòa (lúa)",
+            "女": "Nữ (con gái/phụ nữ)",
+            "贝": "Bối (tiền vỏ sò/bảo bối)",
+            "囗": "Vi (bao quanh/bờ cõi)",
+            "八": "Bát (số tám)",
+            "走": "Tẩu (đi/chạy)",
+            "戈": "Qua (cây thương/vũ khí)",
+            "羊": "Dương (con cừu)",
+            "大": "Đại (to lớn)",
+            "彳": "Xích (bước chân trái)",
+            "乙": "Ất (vị trí thứ hai)",
+            "韦": "Vi (da thú)",
+            "耳": "Nhĩ (tai)",
+            "目": "Mục (mắt)",
+            "王": "Vương (vua/ngọc)",
+            "力": "Lực (sức mạnh)",
+            "月": "Nguyệt (mặt trăng/tháng)",
+            "火": "Hỏa (lửa)",
+            "灬": "Hỏa (lửa)",
+            "土": "Thổ (đất)",
+            "寸": "Thốn (tấc/chiều dài)",
+            "食": "Thực (ăn/thức ăn)",
+            "饣": "Thực (ăn/thức ăn)",
+            "犬": "Khuyển (con chó)",
+            "犭": "Khuyển (con chó)",
+            "父": "Phụ (cha)",
+            "手": "Thủ (tay)",
+            "扌": "Thủ (tay)",
+            "糸": "Mịch (tơ lụa)",
+            "纟": "Mịch (tơ lụa)",
+            "辵": "Sước (chợt đi chợt dừng)",
+            "辶": "Sước (chợt đi chợt dừng)",
+            "艸": "Thảo (cỏ)",
+            "艹": "Thảo (cỏ)",
+            "竹": "Trúc (tre trúc)",
+            "⺮": "Trúc (tre trúc)",
+            "雨": "Vũ (mưa)",
+            "自": "Tự (bản thân/mũi)",
+            "足": "Túc (chân)",
+            "车": "Xa (xe)",
+            "衣": "Y (áo/trang phục)",
+            "衤": "Y (áo/trang phục)",
+            "广": "Quảng (nhà rộng/mái che)",
+            "疒": "Nạch (bệnh tật)",
+            "皿": "Mãnh (bát đĩa/đồ đựng)",
+            "石": "Thạch (đá)",
+            "示": "Thị (mách bảo/thần đất)",
+            "礻": "Thị (mách bảo/thần đất)",
+            "穴": "Huyệt (hang động)",
+            "立": "Lập (đứng thẳng)",
+            "皮": "Bì (da)",
+            "矢": "Thỉ (mũi tên)",
+            "耒": "Lỗi (cái cày)",
+            "聿": "Duật (bút viết)",
+            "肉": "Nhục (thịt)",
+            "臣": "Thần (bầy tôi)",
+            "至": "Chí (đến)",
+            "臼": "Cối (cái cối giã)",
+            "舌": "Thiệt (cái lưỡi)",
+            "舛": "Suyễn (sai lệch)",
+            "舟": "Chu (chiếc thuyền)",
+            "艮": "Cấn (bướng bỉnh/dừng lại)",
+            "色": "Sắc (màu sắc)",
+            "虍": "Hô (vằn hổ)",
+            "虫": "Trùng (sâu bọ)",
+            "血": "Huyết (máu)",
+            "行": "Hành (đi/hàng lối)",
+            "西": "Tây (phía tây)",
+            "见": "Kiến (nhìn thấy)",
+            "角": "Giác (sừng/góc)",
+            "谷": "Cốc (khe núi)",
+            "豆": "Đậu (hạt đậu/cái đậu)",
+            "豕": "Thỉ (con heo)",
+            "豸": "Trĩ (loài sâu không chân)",
+            "赤": "Xích (màu đỏ)",
+            "身": "Thân (thân thể)",
+            "辛": "Tân (cay/vất vả)",
+            "辰": "Thần (sao Thần/giờ Thần)",
+            "邑": "Ấp (vùng đất/thành trì)",
+            "酉": "Dậu (rượu/giờ Dậu)",
+            "釆": "Biện (phân biệt)",
+            "里": "Lý (dặm/làng)",
+            "长": "Trường (dài/trưởng)",
+            "青": "Thanh (màu xanh)",
+            "非": "Phi (không phải/sai)",
+            "面": "Diện (mặt/bề mặt)",
+            "革": "Cách (da thuộc/thay đổi)",
+            "韭": "Cửu (rau hẹ)",
+            "音": "Âm (âm thanh)",
+            "页": "Hiệt (trang giấy/đầu)",
+            "风": "Phong (gió)",
+            "飞": "Phi (bay)",
+            "首": "Thủ (đầu/đứng đầu)",
+            "香": "Hương (mùi thơm)",
+            "马": "Mã (con ngựa)",
+            "骨": "Cốt (xương)",
+            "高": "Cao (cao)",
+            "髟": "Tiêu (tóc dài)",
+            "鬥": "Đấu (chiến đấu)",
+            "鬯": "Sướng (rượu nghệ)",
+            "鬲": "Cách (cái đỉnh/nồi đất)",
+            "鬼": "Quỷ (ma quỷ)",
+            "鱼": "Ngư (con cá)",
+            "鸟": "Điểu (con chim)",
+            "卤": "Lỗ (đất mặn)",
+            "鹿": "Lộc (con hươu)",
+            "麦": "Mạch (lúa mì)",
+            "麻": "Ma (cây gai)",
+            "黄": "Hoàng (màu vàng)",
+            "黍": "Thử (lúa nếp)",
+            "黑": "Hắc (màu đen)",
+            "黹": "Chỉ (may vá/thêu thùa)",
+            "黾": "Mãnh (con ếch/con rùa)",
+            "鼎": "Đỉnh (cái đỉnh đồng)",
+            "鼓": "Cổ (cái trống)",
+            "鼠": "Thử (con chuột)",
+            "鼻": "Tị (mũi)",
+            "齐": "Tề (ngay ngắn/bằng nhau)",
+            "齿": "Sỉ (răng)",
+            "龙": "Long (con rồng)",
+            "龟": "Qui (con rùa)",
+            "龠": "Dược (sáo trúc)",
+            "一": "Nhất (số một)",
+            "丶": "Chủ (chấm)",
+            "亅": "Quyết (nét móc)",
+            "二": "Nhị (số hai)",
+            "亠": "Đầu (nắp, mái che)",
+            "儿": "Nhân (chân người)",
+            "入": "Nhập (vào)",
+            "冂": "Quynh (vùng biên giới)",
+            "冖": "Mịch (trùm khăn lên)",
+            "冫": "Băng (nước đá)",
+            "几": "Kỷ (cái bàn nhỏ)",
+            "凵": "Khảm (há miệng/hố sâu)",
+            "刀": "Đao (con dao)",
+            "刂": "Đao (con dao)",
+            "勹": "Bao (bao bọc)",
+            "匕": "Chủy (cái thìa)",
+            "匚": "Phương (tủ đựng đồ)",
+            "匸": "Hệ (che đậy)",
+            "十": "Thập (số mười)",
+            "卜": "Bốc (xem bói)",
+            "卩": "Tiết (quỳ gối/đốt tre)",
+            "厂": "Hán (sườn núi)",
+            "厶": "Tư (riêng tư)",
+            "又": "Hựu (lại/bàn tay)",
+            "士": "Sĩ (kẻ sĩ)",
+            "夂": "Truy (đi chậm)",
+            "夊": "Tuy (đi chậm)",
+            "夕": "Tịch (buổi tối)",
+            "子": "Tử (con/đứa trẻ)",
+            "寸": "Thốn (tấc)",
+            "小": "Tiểu (nhỏ bé)",
+            "尢": "Uông (yếu đuối)",
+            "尸": "Thi (xác chết)",
+            "屮": "Triệt (mầm non mới mọc)",
+            "山": "Sơn (núi)",
+            "巛": "Xuyên (sông ngòi)",
+            "川": "Xuyên (sông ngòi)",
+            "工": "Công (thợ/công việc)",
+            "己": "Kỷ (bản thân)",
+            "巾": "Cân (khăn)",
+            "干": "Can (lá chắn/thiên can)",
+            "幺": "Yêu (nhỏ nhắn)",
+            "廴": "Dẫn (đi dài)",
+            "廾": "Củng (chắp tay)",
+            "弋": "Dực (bắn cung)",
+            "弓": "Cung (cái cung)",
+            "彐": "Kệ (đầu con heo)",
+            "彡": "Sâm (lông dài)",
+            "支": "Chi (cành cây)",
+            "攴": "Phộc (đánh khẽ)",
+            "攵": "Phộc (đánh khẽ)",
+            "文": "Văn (chữ viết/văn chương)",
+            "斗": "Đấu (cái đấu đong gạo)",
+            "斤": "Cân (cái rìu)",
+            "方": "Phương (hướng/hình vuông)",
+            "无": "Vô (không có)",
+            "曰": "Viết (nói rằng)",
+            "欠": "Khiếm (thiếu thốn)",
+            "止": "Chỉ (dừng lại)",
+            "歹": "Đãi (xấu xa)",
+            "殳": "Thù (binh khí dài)",
+            "毋": "Vô (chớ/không)",
+            "比": "Tỉ (so sánh)",
+            "毛": "Mao (lông)",
+            "氏": "Thị (họ)",
+            "气": "Khí (hơi nước/khí)",
+            "爪": "Trảo (móng vuốt)",
+            "爻": "Hào (hào âm dương)",
+            "爿": "Tường (mảnh gỗ)",
+            "片": "Phiến (mảnh tấm)",
+            "牙": "Nha (răng)",
+            "牛": "Ngưu (con bò)",
+            "牜": "Ngưu (con bò)",
+            "玄": "Huyền (màu đen)",
+            "玉": "Ngọc (viên ngọc)",
+            "瓜": "Qua (quả dưa)",
+            "瓦": "Ngõa (ngói nung)",
+            "甘": "Cam (ngọt)",
+            "生": "Sinh (sinh ra/sống)",
+            "用": "Dụng (sử dụng)",
+            "田": "Điền (ruộng)",
+            "疋": "Sơ (cuộn vải)",
+            "癶": "Bát (bước đi)",
+            "白": "Bạch (màu trắng)",
+            "匚": "Phương (tủ đựng đồ)"
+        }};
+        const characters = Object.keys(hanziData);
+        let selectedChar = characters[0];
+        let writer = null;
+        
+        function initSidebar() {{
+            const sidebar = document.getElementById('charSidebar');
+            characters.forEach((char, idx) => {{
+                const btn = document.createElement('button');
+                btn.className = 'char-btn' + (char === selectedChar ? ' active' : '');
+                btn.innerHTML = char + " <span>(" + hanziData[char].pinyin + ")</span>";
+                btn.onclick = () => selectCharacter(char, btn);
+                sidebar.appendChild(btn);
+            }});
+        }}
+        
+        function selectCharacter(char, btnElement) {{
+            selectedChar = char;
+            document.querySelectorAll('.char-btn').forEach(btn => btn.classList.remove('active'));
+            if (btnElement) {{
+                btnElement.classList.add('active');
+            }}
+            loadCharacter(char);
+        }}
+        
+        function loadCharacter(char) {{
+            document.getElementById('character-target-div').innerHTML = '';
+            
+            const detail = hanziData[char];
+            document.getElementById('char-pinyin').innerText = detail.pinyin;
+            document.getElementById('char-meaning').innerText = detail.meaning;
+            const rawRadical = detail.radical;
+            const radicalTranslation = RADICAL_DICT[rawRadical] || "";
+            document.getElementById('char-radical').innerText = radicalTranslation ? rawRadical + " - " + radicalTranslation : rawRadical;
+            document.getElementById('char-strokes').innerText = detail.strokes;
+            document.getElementById('char-mnemonic').innerText = detail.mnemonic;
+            
+            const illustrationContainer = document.getElementById('char-illustration-container');
+            const singleBox = document.getElementById('char-illustration-single-box');
+            const stepsBox = document.getElementById('char-illustration-steps-box');
+            const timestamp = new Date().getTime();
+            
+            if (detail.illustration_steps && detail.illustration_steps.length > 0) {{
+                singleBox.style.display = 'none';
+                stepsBox.style.display = 'flex';
+                stepsBox.innerHTML = '';
+                
+                const labels = ["Hình vẽ", "Giáp cốt", "Tiểu triện", "Chữ Lệ", "Khải (Hiện đại)"];
+                
+                detail.illustration_steps.forEach((src, idx) => {{
+                    const card = document.createElement('div');
+                    card.className = 'evolution-step-card';
+                    card.innerHTML = '<img src="' + src + '?t=' + timestamp + '" alt="Step ' + (idx+1) + '">';
+                    stepsBox.appendChild(card);
+                    
+                    if (idx < detail.illustration_steps.length - 1) {{
+                        const arrow = document.createElement('div');
+                        arrow.className = 'evolution-arrow';
+                        arrow.innerText = '→';
+                        stepsBox.appendChild(arrow);
+                    }}
+                }});
+                illustrationContainer.style.display = 'block';
+            }} else if (detail.illustration) {{
+                stepsBox.style.display = 'none';
+                singleBox.style.display = 'block';
+                document.getElementById('char-illustration').src = detail.illustration + "?t=" + timestamp;
+                illustrationContainer.style.display = 'block';
+            }} else {{
+                illustrationContainer.style.display = 'none';
+            }}
+            
+            writer = HanziWriter.create('character-target-div', char, {{
+                width: 250,
+                height: 250,
+                padding: 15,
+                showOutline: true,
+                strokeColor: '#8AB8C5',
+                outlineColor: '#f3f3f3',
+                drawingColor: '#e65100',
+                drawingWidth: 6,
+                strokeAnimationSpeed: 1,
+                delayBetweenStrokes: 300
+            }});
+            
+            // Auto play animation
+            setTimeout(() => {{
+                writer.animateCharacter();
+            }}, 300);
+        }}
+        
+        function animateChar() {{
+            if (writer) {{
+                writer.animateCharacter();
+            }}
+        }}
+        
+        function startPractice() {{
+            if (writer) {{
+                writer.quiz({{
+                    onComplete: function(summaryData) {{
+                        showToast("Tuyệt vời! Bạn viết rất chính xác chữ " + selectedChar + "! 🎉");
+                    }}
+                }});
+            }}
+        }}
+        
+        function speakChar() {{
+            const utterance = new SpeechSynthesisUtterance(selectedChar);
+            utterance.lang = 'zh-CN';
+            utterance.rate = 0.8;
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(utterance);
+        }}
+        
+        function showToast(msg) {{
+            const toast = document.getElementById('toast');
+            toast.innerText = msg;
+            toast.classList.add('show');
+            setTimeout(() => {{
+                toast.classList.remove('show');
+            }}, 3000);
+        }}
+        
+        window.addEventListener('pagehide', () => {{
+            window.speechSynthesis.cancel();
+        }});
+        
+        if (characters.length > 0) {{
+            initSidebar();
+            loadCharacter(selectedChar);
+        }}
+    </script>
+</body>
+</html>"""
+
     # Load Dialogues if level-specific JSON exists
     dialog_data = []
     dialog_file = f'hsk{level}_dialogs.json'
@@ -1074,6 +1778,31 @@ def generate_hsk_games(level):
                 dialog_json = json.dumps(lesson_dialogs, ensure_ascii=False)
                 with open(f'game-hsk{level}-l{lesson_id}-memory.html', 'w', encoding='utf-8') as f:
                     f.write(MEMORY_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, dialog_json=dialog_json))
+
+        # Hanzi Page (Only for HSK 1)
+        if level == 1:
+            lesson_chars = []
+            seen_chars = set()
+            for item in vocab_list:
+                for char in item['hanzi']:
+                    if '\u4e00' <= char <= '\u9fff' and char not in seen_chars:
+                        seen_chars.add(char)
+                        lesson_chars.append(char)
+            
+            # Look up details
+            lesson_hanzi_details = {}
+            for c in lesson_chars:
+                lesson_hanzi_details[c] = hanzi_details.get(c, {
+                    "strokes": "N/A",
+                    "radical": "Đang cập nhật",
+                    "pinyin": "",
+                    "meaning": "Đang cập nhật",
+                    "mnemonic": "Chưa có mẹo nhớ cho chữ này."
+                })
+            
+            hanzi_json = json.dumps(lesson_hanzi_details, ensure_ascii=False)
+            with open(f'game-hsk{level}-l{lesson_id}-hanzi.html', 'w', encoding='utf-8') as f:
+                f.write(HANZI_TEMPLATE.format(level=level, level_label=level_label, lesson_id=lesson_id, hanzi_json=hanzi_json))
 
     print(f"Successfully generated HSK{level} game pages for {len(lessons)} lessons.")
 

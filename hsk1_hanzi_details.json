@@ -1,0 +1,1638 @@
+{
+  "一": {
+    "strokes": 1,
+    "radical": "一",
+    "pinyin": "yī",
+    "meaning": "một",
+    "mnemonic": "Một vạch ngang, chỉ số một, sự khởi đầu."
+  },
+  "七": {
+    "strokes": 2,
+    "radical": "一",
+    "pinyin": "qī",
+    "meaning": "bảy",
+    "mnemonic": "Số 7 lộn ngược, nét vẽ chéo qua nhau."
+  },
+  "丈": {
+    "strokes": 3,
+    "radical": "一",
+    "pinyin": "zhàng",
+    "meaning": "trượng (đo lường)",
+    "mnemonic": "Nét chữ X bên dưới một nét ngang."
+  },
+  "三": {
+    "strokes": 3,
+    "radical": "一",
+    "pinyin": "sān",
+    "meaning": "ba",
+    "mnemonic": "Ba vạch ngang chồng lên nhau."
+  },
+  "上": {
+    "strokes": 3,
+    "radical": "一",
+    "pinyin": "shàng",
+    "meaning": "trên, lên",
+    "mnemonic": "Nét dọc đứng trên nét ngang dài, có nét chỉ hướng bên phải hướng lên."
+  },
+  "下": {
+    "strokes": 3,
+    "radical": "一",
+    "pinyin": "xià",
+    "meaning": "dưới, xuống",
+    "mnemonic": "Một nét ngang làm mốc, nét dọc và nét chấm nằm dưới mốc."
+  },
+  "不": {
+    "strokes": 4,
+    "radical": "一",
+    "pinyin": "bù",
+    "meaning": "không",
+    "mnemonic": "Hình chim bay vút lên trời cao, không nhìn thấy bóng dáng."
+  },
+  "东": {
+    "strokes": 5,
+    "radical": "一",
+    "pinyin": "dōng",
+    "meaning": "phía đông",
+    "mnemonic": "Mặt trời mọc lên chiếu qua cành cây (giản thể của 東)."
+  },
+  "两": {
+    "strokes": 7,
+    "radical": "一",
+    "pinyin": "liǎng",
+    "meaning": "hai (lượng)",
+    "mnemonic": "Hai người bên trong một cái khung cân đối."
+  },
+  "个": {
+    "strokes": 3,
+    "radical": "丨",
+    "pinyin": "gè",
+    "meaning": "cái, chiếc",
+    "mnemonic": "Hình người (人) có một nét sổ thẳng đi qua làm đơn vị đếm."
+  },
+  "中": {
+    "strokes": 4,
+    "radical": "丨",
+    "pinyin": "zhōng",
+    "meaning": "giữa, trung",
+    "mnemonic": "Một mũi tên bắn trúng hồng tâm (hình vuông bên ngoài)."
+  },
+  "么": {
+    "strokes": 3,
+    "radical": "丿",
+    "pinyin": "me",
+    "meaning": "sao, cái gì",
+    "mnemonic": "Nét phẩy kết hợp với bộ tư 私 giản thể."
+  },
+  "九": {
+    "strokes": 2,
+    "radical": "乙",
+    "pinyin": "jiǔ",
+    "meaning": "chín",
+    "mnemonic": "Nét phẩy chéo qua nét móc cong."
+  },
+  "也": {
+    "strokes": 3,
+    "radical": "乙",
+    "pinyin": "yě",
+    "meaning": "cũng",
+    "mnemonic": "Hình ảnh con rắn hoặc vật chứa nước, nghĩa cổ là cũng."
+  },
+  "习": {
+    "strokes": 3,
+    "radical": "乙",
+    "pinyin": "xí",
+    "meaning": "học tập, quen với",
+    "mnemonic": "Cánh chim tập bay nhiều lần trên không (giản thể của 習)."
+  },
+  "书": {
+    "strokes": 4,
+    "radical": "乛",
+    "pinyin": "shū",
+    "meaning": "sách",
+    "mnemonic": "Quyển sách gác trên kệ có bút viết chấm mực (giản thể của 書)."
+  },
+  "买": {
+    "strokes": 6,
+    "radical": "乛",
+    "pinyin": "mǎi",
+    "meaning": "mua",
+    "mnemonic": "Đặt tiền vào trong lưới mua hàng hóa (giản thể của 買)."
+  },
+  "了": {
+    "strokes": 2,
+    "radical": "乛",
+    "pinyin": "le",
+    "meaning": "rồi (trợ từ)",
+    "mnemonic": "Hình đứa bé quấn tã, hoàn thành giai đoạn sinh nở."
+  },
+  "事": {
+    "strokes": 8,
+    "radical": "一",
+    "pinyin": "shì",
+    "meaning": "việc, sự việc",
+    "mnemonic": "Bàn tay cầm bút ghi chép lại các sự việc xảy ra."
+  },
+  "二": {
+    "strokes": 2,
+    "radical": "二",
+    "pinyin": "èr",
+    "meaning": "hai",
+    "mnemonic": "Hai nét gạch ngang song song."
+  },
+  "五": {
+    "strokes": 4,
+    "radical": "二",
+    "pinyin": "wǔ",
+    "meaning": "năm",
+    "mnemonic": "Nét đan chéo thể hiện sự kết nối đất trời âm dương."
+  },
+  "些": {
+    "strokes": 8,
+    "radical": "二",
+    "pinyin": "xiē",
+    "meaning": "một số, vài",
+    "mnemonic": "Chữ Thử 此 (ở đây) đặt trên bộ Nhị 二 (hai), chỉ một nhóm nhỏ."
+  },
+  "亮": {
+    "strokes": 9,
+    "radical": "亠",
+    "pinyin": "liàng",
+    "meaning": "sáng",
+    "mnemonic": "Ngôi nhà cao ráo có mái mở đón ánh sáng mặt trời."
+  },
+  "人": {
+    "strokes": 2,
+    "radical": "人",
+    "pinyin": "rén",
+    "meaning": "người",
+    "mnemonic": "Hình hai chân một người đang bước đi vững chãi.",
+    "illustration": "assets/pictograms/ren_pictogram.png"
+  },
+  "什": {
+    "strokes": 4,
+    "radical": "亻",
+    "pinyin": "shén",
+    "meaning": "cái gì",
+    "mnemonic": "Bộ Nhân đứng (người) đứng cạnh chữ Thập (mười)."
+  },
+  "今": {
+    "strokes": 4,
+    "radical": "人",
+    "pinyin": "jīn",
+    "meaning": "nay, hiện tại",
+    "mnemonic": "Mái nhà che phủ lên ký hiệu chỉ thời gian hiện tại."
+  },
+  "他": {
+    "strokes": 5,
+    "radical": "亻",
+    "pinyin": "tā",
+    "meaning": "anh ấy",
+    "mnemonic": "Người đàn ông (Nhân 🚶) đứng cạnh chữ Dã 也 (cũng)."
+  },
+  "them": {
+    "strokes": 5,
+    "radical": "亻",
+    "pinyin": "men",
+    "meaning": "các (số nhiều)",
+    "mnemonic": "Bộ Nhân đứng cạnh chữ Môn (cửa), tụ tập ở cửa."
+  },
+  "们": {
+    "strokes": 5,
+    "radical": "亻",
+    "pinyin": "men",
+    "meaning": "các (số nhiều)",
+    "mnemonic": "Bộ Nhân đứng cạnh chữ Môn 门 (cửa) chỉ tập thể nhiều người."
+  },
+  "会": {
+    "strokes": 6,
+    "radical": "人",
+    "pinyin": "huì",
+    "meaning": "biết, hội họp",
+    "mnemonic": "Nhiều người tập trung dưới một mái nhà lớn để họp bàn."
+  },
+  "住": {
+    "strokes": 7,
+    "radical": "亻",
+    "pinyin": "zhù",
+    "meaning": "ở, cư trú",
+    "mnemonic": "Người đứng bên ngọn đèn chủ (Chủ 主) để dừng chân sinh sống."
+  },
+  "作": {
+    "strokes": 7,
+    "radical": "Scale",
+    "pinyin": "zuò",
+    "meaning": "làm, chế tạo",
+    "mnemonic": "Người đứng bên công cụ đang làm việc liên tục."
+  },
+  "你": {
+    "strokes": 7,
+    "radical": "亻",
+    "pinyin": "nǐ",
+    "meaning": "bạn, anh, chị",
+    "mnemonic": "Bộ Nhân đứng 亻 kết hợp với chữ Nhĩ 尔 (nghĩa là mày, bạn)."
+  },
+  "候": {
+    "strokes": 10,
+    "radical": "亻",
+    "pinyin": "hòu",
+    "meaning": "đợi, khí hậu",
+    "mnemonic": "Người đứng canh gác dùng cung tên bắn mục tiêu theo thời khắc."
+  },
+  "做": {
+    "strokes": 11,
+    "radical": "Content",
+    "pinyin": "zuò",
+    "meaning": "làm, chế tác",
+    "mnemonic": "Người (亻) bắt đầu hành động làm việc (Cổ 古 + Phộc 攵)."
+  },
+  "儿": {
+    "strokes": 2,
+    "radical": "儿",
+    "pinyin": "ér",
+    "meaning": "con trai, trẻ nhỏ",
+    "mnemonic": "Đứa bé đang tập đi, hai chân đứng dang rộng."
+  },
+  "元": {
+    "strokes": 4,
+    "radical": "儿",
+    "pinyin": "yuán",
+    "meaning": "đồng (tiền), đầu tiên",
+    "mnemonic": "Một nét ngang đặt trên chữ Nhân (người), chỉ cái đầu lớn, sự bắt đầu."
+  },
+  "兄": {
+    "strokes": 5,
+    "radical": "儿",
+    "pinyin": "xiōng",
+    "meaning": "anh trai",
+    "mnemonic": "Người có cái miệng to (Khẩu 口) ở trên để dạy bảo các em."
+  },
+  "先": {
+    "strokes": 6,
+    "radical": "儿",
+    "pinyin": "xiān",
+    "meaning": "trước, tiên",
+    "mnemonic": "Người đi bộ bước chân lên phía trước trước tiên."
+  },
+  "兒": {
+    "strokes": 8,
+    "radical": "儿",
+    "pinyin": "ér",
+    "meaning": "con trẻ (phồn thể)",
+    "mnemonic": "Chữ Nhi phồn thể với hình thóp đầu trẻ con chưa khép hẳn."
+  },
+  "八": {
+    "strokes": 2,
+    "radical": "八",
+    "pinyin": "bā",
+    "meaning": "tám",
+    "mnemonic": "Hai nét vẽ tách rời chỉ sự phân chia sang hai bên."
+  },
+  "公": {
+    "strokes": 4,
+    "radical": "八",
+    "pinyin": "gōng",
+    "meaning": "công cộng, chung",
+    "mnemonic": "Sự chia đều (Tư 私 hướng ra ngoài 八) cho mọi người."
+  },
+  "六": {
+    "strokes": 4,
+    "radical": "八",
+    "pinyin": "liù",
+    "meaning": "sáu",
+    "mnemonic": "Bộ đầu 亠 ở trên, bộ bát 八 ở dưới làm ký hiệu số 6."
+  },
+  "关": {
+    "strokes": 6,
+    "radical": "丷",
+    "pinyin": "guān",
+    "meaning": "đóng, liên quan",
+    "mnemonic": "Cánh cổng gỗ được cài then chéo chắc chắn (giản thể của 關)."
+  },
+  "兴": {
+    "strokes": 6,
+    "radical": "八",
+    "pinyin": "xīng",
+    "meaning": "hưng thịnh, vui vẻ",
+    "mnemonic": "Mọi người cùng đồng lòng nâng đỡ tạo sự khởi sắc (giản thể của 興)."
+  },
+  "再": {
+    "strokes": 6,
+    "radical": "冂",
+    "pinyin": "zài",
+    "meaning": "lại, lần nữa",
+    "mnemonic": "Cấu trúc một lần nữa bao bọc đất trời lại bên trong."
+  },
+  "写": {
+    "strokes": 5,
+    "radical": "冖",
+    "pinyin": "xiě",
+    "meaning": "viết",
+    "mnemonic": "Dùng bút viết chữ đặt dưới mái che (giản thể của 寫)."
+  },
+  "冷": {
+    "strokes": 7,
+    "radical": "冫",
+    "pinyin": "lěng",
+    "meaning": "lạnh",
+    "mnemonic": "Bộ Băng 冫 (nước đá) kết hợp với chữ Lệnh 令 (mệnh lệnh)."
+  },
+  "几": {
+    "strokes": 2,
+    "radical": "几",
+    "pinyin": "jǐ",
+    "meaning": "mấy, vài",
+    "mnemonic": "Hình dáng chiếc ghế ngồi nhỏ, ghế băng gỗ."
+  },
+  "出": {
+    "strokes": 5,
+    "radical": "凵",
+    "pinyin": "chū",
+    "meaning": "ra, xuất",
+    "mnemonic": "Hai ngọn núi (Sơn 山) xếp chồng lên nhau vươn cao ra ngoài."
+  },
+  "分": {
+    "strokes": 4,
+    "radical": "刀",
+    "pinyin": "fēn",
+    "meaning": "phút, phân chia",
+    "mnemonic": "Dùng dao (Đao 刀) cắt đôi vật ra thành hai nửa (Bát 八)."
+  },
+  "前": {
+    "strokes": 9,
+    "radical": "刀",
+    "pinyin": "qián",
+    "meaning": "trước",
+    "mnemonic": "Thuyền trôi về phía trước có người cầm dao/chèo rẽ nước."
+  },
+  "包": {
+    "strokes": 5,
+    "radical": "勹",
+    "pinyin": "bāo",
+    "meaning": "bao bọc, bánh bao",
+    "mnemonic": "Bọc lấy bào thai (Tự 巳) đang nằm cuộn tròn trong bụng mẹ."
+  },
+  "医": {
+    "strokes": 7,
+    "radical": "匚",
+    "pinyin": "yī",
+    "meaning": "y học, bác sĩ",
+    "mnemonic": "Mũi tên (Thỉ 矢) đặt trong tủ thuốc chữa bệnh (giản thể của 醫)."
+  },
+  "十": {
+    "strokes": 2,
+    "radical": "十",
+    "pinyin": "shí",
+    "meaning": "mười",
+    "mnemonic": "Một nét ngang và một nét dọc giao nhau tạo thành chữ thập."
+  },
+  "午": {
+    "strokes": 4,
+    "radical": "十",
+    "pinyin": "wǔ",
+    "meaning": "trưa, ngọ",
+    "mnemonic": "Chiếc chày giã gạo giơ cao đứng thẳng vào giờ ngọ."
+  },
+  "半": {
+    "strokes": 5,
+    "radical": "十",
+    "pinyin": "bàn",
+    "meaning": "nửa, bán",
+    "mnemonic": "Hai vật được phân chia đối xứng qua một trục thẳng đứng."
+  },
+  "南": {
+    "strokes": 9,
+    "radical": "十",
+    "pinyin": "nán",
+    "meaning": "phía nam",
+    "mnemonic": "Nhạc cụ treo trong sân hướng về phía Nam ấm áp."
+  },
+  "去": {
+    "strokes": 5,
+    "radical": "厶",
+    "pinyin": "qù",
+    "meaning": "đi, tới",
+    "mnemonic": "Người rời khỏi đống đất (Thổ 土) di chuyển đi nơi khác."
+  },
+  "友": {
+    "strokes": 4,
+    "radical": "𠂇",
+    "pinyin": "yǒu",
+    "meaning": "bạn bè",
+    "mnemonic": "Hai bàn tay chéo nhau thể hiện sự hợp tác gắn kết hữu nghị."
+  },
+  "叫": {
+    "strokes": 5,
+    "radical": "口",
+    "pinyin": "jiào",
+    "meaning": "gọi, kêu",
+    "mnemonic": "Dùng miệng (Khẩu 口) để hét lớn, thu hút sự chú ý."
+  },
+  "号": {
+    "strokes": 5,
+    "radical": "口",
+    "pinyin": "hào",
+    "meaning": "số, hiệu",
+    "mnemonic": "Dùng miệng (口) thổi kèn ra hiệu lệnh lớn (giản thể của 號)."
+  },
+  "吃": {
+    "strokes": 6,
+    "radical": "口",
+    "pinyin": "chī",
+    "meaning": "ăn",
+    "mnemonic": "Dùng miệng (Khẩu 口) nuốt khí/đồ ăn vào trong cổ họng."
+  },
+  "同": {
+    "strokes": 6,
+    "radical": "口",
+    "pinyin": "tóng",
+    "meaning": "cùng, đồng",
+    "mnemonic": "Nhiều người tụ tập trong cùng một mái hiên, chung một lời nói (口)."
+  },
+  "名": {
+    "strokes": 6,
+    "radical": "口",
+    "pinyin": "míng",
+    "meaning": "tên, danh tiếng",
+    "mnemonic": "Buổi tối (Tịch 夕) tối tăm phải gọi tên (Khẩu 口) mới biết nhau."
+  },
+  "后": {
+    "strokes": 6,
+    "radical": "口",
+    "pinyin": "hòu",
+    "meaning": "sau, hoàng hậu",
+    "mnemonic": "Hoàng hậu ban lệnh bằng miệng (口) từ phía sau bức rèm che."
+  },
+  "吗": {
+    "strokes": 6,
+    "radical": "口",
+    "pinyin": "ma",
+    "meaning": "không (hỏi)",
+    "mnemonic": "Dùng miệng (口) hỏi chuyện con ngựa (Mã 马)."
+  },
+  "听": {
+    "strokes": 7,
+    "radical": "口",
+    "pinyin": "tīng",
+    "meaning": "nghe",
+    "mnemonic": "Dùng miệng (口) để nghe lời chỉ dẫn của rìu chỉ huy (giản thể của 聽)."
+  },
+  "员": {
+    "strokes": 7,
+    "radical": "口",
+    "pinyin": "yuán",
+    "meaning": "nhân viên, thành viên",
+    "mnemonic": "Người phụ trách sổ sách tiền nong (Bối 贝) có cái miệng thông thạo (口)."
+  },
+  "呢": {
+    "strokes": 8,
+    "radical": "口",
+    "pinyin": "ne",
+    "meaning": "nhé, cơ chứ (trợ từ)",
+    "mnemonic": "Miệng (口) lẩm bẩm giải thích cho Ni cô (Ni 尼)."
+  },
+  "呼": {
+    "strokes": 8,
+    "radical": "口",
+    "pinyin": "hū",
+    "meaning": "gọi, thở ra",
+    "mnemonic": "Dùng miệng (口) thổi ra hơi hoặc gọi lớn."
+  },
+  "和": {
+    "strokes": 8,
+    "radical": "口",
+    "pinyin": "hé",
+    "meaning": "và, hòa nhã",
+    "mnemonic": "Cây lúa (Hòa 禾) mang hạt gạo nuôi miệng (Khẩu 口) no ấm hòa bình."
+  },
+  "哥": {
+    "strokes": 10,
+    "radical": "口",
+    "pinyin": "gē",
+    "meaning": "anh trai",
+    "mnemonic": "Hai chữ Khả 可 xếp chồng lên nhau chỉ người lớn giọng hơn làm anh."
+  },
+  "哪": {
+    "strokes": 9,
+    "radical": "口",
+    "pinyin": "nǎ",
+    "meaning": "nào, đâu",
+    "mnemonic": "Dùng miệng (口) hỏi xem người đó ở thành trì nào bên kia."
+  },
+  "唱": {
+    "strokes": 11,
+    "radical": "口",
+    "pinyin": "chàng",
+    "meaning": "hát",
+    "mnemonic": "Cái miệng (口) ca hát suốt ngày đêm (xương, nắng rực rỡ 昌)."
+  },
+  "商": {
+    "strokes": 11,
+    "radical": "口",
+    "pinyin": "shāng",
+    "meaning": "thương mại, buôn bán",
+    "mnemonic": "Gia đình ngồi thảo luận trao đổi hàng hóa trong nhà."
+  },
+  "喂": {
+    "strokes": 12,
+    "radical": "口",
+    "pinyin": "wèi",
+    "meaning": "alo, cho ăn",
+    "mnemonic": "Miệng (口) kêu lên để hướng dẫn người cày ruộng (Ủy 畏)."
+  },
+  "喜": {
+    "strokes": 12,
+    "radical": "口",
+    "pinyin": "xǐ",
+    "meaning": "vui mừng, thích",
+    "mnemonic": "Đánh trống ca hát (Cát 吉) bằng miệng (口) chào đón hỷ sự."
+  },
+  "喝": {
+    "strokes": 12,
+    "radical": "口",
+    "pinyin": "hē",
+    "meaning": "uống",
+    "mnemonic": "Miệng (口) mở to để nuốt chất lỏng dưới ánh nắng mặt trời."
+  },
+  "四": {
+    "strokes": 5,
+    "radical": "囗",
+    "pinyin": "sì",
+    "meaning": "bốn",
+    "mnemonic": "Hai người ở bên trong một bức tường thành vuông vức."
+  },
+  "回": {
+    "strokes": 6,
+    "radical": "囗",
+    "pinyin": "huí",
+    "meaning": "về, quay lại",
+    "mnemonic": "Vòng tròn nhỏ quay tròn bên trong vòng tròn lớn."
+  },
+  "国": {
+    "strokes": 8,
+    "radical": "囗",
+    "pinyin": "guó",
+    "meaning": "nước, quốc gia",
+    "mnemonic": "Vương ngọc (Ngọc 玉) quý giá được bảo vệ trong thành trì vuông vức (囗)."
+  },
+  "在": {
+    "strokes": 6,
+    "radical": "土",
+    "pinyin": "zài",
+    "meaning": "ở, đang ở",
+    "mnemonic": "Một người đang đứng trên mặt đất (Thổ 土) có cây cỏ che mát."
+  },
+  "坐": {
+    "strokes": 7,
+    "radical": "土",
+    "pinyin": "zuò",
+    "meaning": "ngồi",
+    "mnemonic": "Hai người (人) ngồi đối diện nhau trò chuyện trên nền đất (Thổ 土)."
+  },
+  "块": {
+    "strokes": 7,
+    "radical": "土",
+    "pinyin": "kuài",
+    "meaning": "cục, miếng, đồng (tiền)",
+    "mnemonic": "Đất (Thổ 土) gom lại thành từng khối, miếng có hình dáng (giản thể của 塊)."
+  },
+  "士": {
+    "strokes": 3,
+    "radical": "士",
+    "pinyin": "shì",
+    "meaning": "kẻ sĩ, học giả",
+    "mnemonic": "Người đàn ông am hiểu từ một (一) đến mười (十)."
+  },
+  "外": {
+    "strokes": 5,
+    "radical": "夕",
+    "pinyin": "wài",
+    "meaning": "ngoài",
+    "mnemonic": "Buổi tối (Tịch 夕) đi ra ngoài bói toán xem điềm lành."
+  },
+  "多": {
+    "strokes": 6,
+    "radical": "夕",
+    "pinyin": "duō",
+    "meaning": "nhiều",
+    "mnemonic": "Hai buổi tối (Tịch 夕) chồng lên nhau chỉ lượng thời gian trôi nhiều."
+  },
+  "大": {
+    "strokes": 3,
+    "radical": "大",
+    "pinyin": "dà",
+    "meaning": "to, lớn",
+    "mnemonic": "Hình người dang rộng hai tay hai chân hết cỡ."
+  },
+  "天": {
+    "strokes": 4,
+    "radical": "大",
+    "pinyin": "tiān",
+    "meaning": "trời, ngày",
+    "mnemonic": "Nét gạch ngang trên đầu chữ Đại (người lớn), chỉ bầu trời bao la."
+  },
+  "太": {
+    "strokes": 4,
+    "radical": "大",
+    "pinyin": "tài",
+    "meaning": "quá, lắm",
+    "mnemonic": "Chữ Đại (to lớn) thêm một dấu chấm ở chân, chỉ cái to vượt mức."
+  },
+  "夫": {
+    "strokes": 4,
+    "radical": "大",
+    "pinyin": "fū",
+    "meaning": "chồng, đàn ông",
+    "mnemonic": "Người đàn ông (Đại 大) đội mũ cài trâm cài tóc."
+  },
+  "女": {
+    "strokes": 3,
+    "radical": "女",
+    "pinyin": "nǚ",
+    "meaning": "nữ, phụ nữ",
+    "mnemonic": "Hình người con gái quỳ gối kính cẩn chắp tay."
+  },
+  "奶": {
+    "strokes": 5,
+    "radical": "女",
+    "pinyin": "nǎi",
+    "meaning": "sữa, bà nội",
+    "mnemonic": "Người phụ nữ (Nữ 女) mang bầu ngực nuôi con nhỏ."
+  },
+  "她": {
+    "strokes": 6,
+    "radical": "女",
+    "pinyin": "tā",
+    "meaning": "cô ấy",
+    "mnemonic": "Người phụ nữ (Nữ 女) đứng cạnh chữ Dã 也 (cũng)."
+  },
+  "好": {
+    "strokes": 6,
+    "radical": "女",
+    "pinyin": "hǎo",
+    "meaning": "tốt, khỏe",
+    "mnemonic": "Người phụ nữ (Nữ 女) sinh được con trai (Tử 子) là điều tốt lành."
+  },
+  "妈": {
+    "strokes": 6,
+    "radical": "女",
+    "pinyin": "mā",
+    "meaning": "mẹ",
+    "mnemonic": "Người phụ nữ (Nữ 女) làm việc vất vả như con ngựa (Mã 马)."
+  },
+  "妹": {
+    "strokes": 8,
+    "radical": "女",
+    "pinyin": "mèi",
+    "meaning": "em gái",
+    "mnemonic": "Người con gái (Nữ 女) chưa lớn hẳn (Vị 未 - chưa)."
+  },
+  "妻": {
+    "strokes": 8,
+    "radical": "女",
+    "pinyin": "qī",
+    "meaning": "vợ",
+    "mnemonic": "Người phụ nữ tay cầm lược chải đầu bới tóc làm vợ."
+  },
+  "姐": {
+    "strokes": 8,
+    "radical": "女",
+    "pinyin": "jiě",
+    "meaning": "chị gái",
+    "mnemonic": "Người phụ nữ (Nữ 女) trong gia đình trông nom bàn thờ tổ tiên (Thả 且)."
+  },
+  "姓": {
+    "strokes": 8,
+    "radical": "女",
+    "pinyin": "xìng",
+    "meaning": "họ",
+    "mnemonic": "Họ do người mẹ (Nữ 女) sinh ra (Sinh 生) từ thời mẫu hệ."
+  },
+  "婆": {
+    "strokes": 11,
+    "radical": "女",
+    "pinyin": "pó",
+    "meaning": "bà cụ, mẹ chồng",
+    "mnemonic": "Người đàn bà (女) có mái tóc bạc trắng như sóng nước (Ba 波)."
+  },
+  "子": {
+    "strokes": 3,
+    "radical": "子",
+    "pinyin": "zǐ",
+    "meaning": "con, đứa bé",
+    "mnemonic": "Đứa bé sơ sinh quấn tã dang hai tay bé bỏng."
+  },
+  "字": {
+    "strokes": 6,
+    "radical": "宀",
+    "pinyin": "zì",
+    "meaning": "chữ, ký tự",
+    "mnemonic": "Đứa trẻ (Tử 子) học viết chữ dưới mái nhà (Miên 宀)."
+  },
+  "学": {
+    "strokes": 8,
+    "radical": "子",
+    "pinyin": "xué",
+    "meaning": "học",
+    "mnemonic": "Hai tay thu thập kiến thức truyền dạy cho đứa trẻ (Tử 子) dưới mái nhà."
+  },
+  "它": {
+    "strokes": 5,
+    "radical": "宀",
+    "pinyin": "tā",
+    "meaning": "nó",
+    "mnemonic": "Con rắn bò vào trong mái nhà (Miên 宀)."
+  },
+  "客": {
+    "strokes": 9,
+    "radical": "宀",
+    "pinyin": "kè",
+    "meaning": "khách",
+    "mnemonic": "Người từ nơi khác đi bộ (Truy 夂) tới thăm nhà (宀) mở miệng (口) chào."
+  },
+  "家": {
+    "strokes": 10,
+    "radical": "宀",
+    "pinyin": "jiā",
+    "meaning": "nhà, gia đình",
+    "mnemonic": "Dưới mái nhà (Miên 宀) nuôi một chú heo (Thệ 豕 - con lợn)."
+  },
+  "对": {
+    "strokes": 5,
+    "radical": "寸",
+    "pinyin": "duì",
+    "meaning": "đúng, đối với",
+    "mnemonic": "Tay cầm thước đo đạc chuẩn xác (giản thể của 對)."
+  },
+  "小": {
+    "strokes": 3,
+    "radical": "小",
+    "pinyin": "xiǎo",
+    "meaning": "nhỏ",
+    "mnemonic": "Một vật được chia nhỏ ra làm ba phần."
+  },
+  "少": {
+    "strokes": 4,
+    "radical": "小",
+    "pinyin": "shǎo",
+    "meaning": "ít",
+    "mnemonic": "Cắt bớt đi một nét từ chữ Tiểu (nhỏ) để chỉ số lượng ít."
+  },
+  "岁": {
+    "strokes": 6,
+    "radical": "山",
+    "pinyin": "suì",
+    "meaning": "tuổi",
+    "mnemonic": "Núi (Sơn 山) trải qua mùa màng thay đổi tuần hoàn (giản thể của 歲)."
+  },
+  "工": {
+    "strokes": 3,
+    "radical": "工",
+    "pinyin": "gōng",
+    "meaning": "công việc, công nhân",
+    "mnemonic": "Hình dáng chiếc thước đo góc của người thợ mộc."
+  },
+  "市": {
+    "strokes": 5,
+    "radical": "巾",
+    "pinyin": "shì",
+    "meaning": "chợ, thành phố",
+    "mnemonic": "Nơi cắm cờ tụ tập mua bán hàng vải (Cân 巾)."
+  },
+  "师": {
+    "strokes": 6,
+    "radical": "巾",
+    "pinyin": "shī",
+    "meaning": "thầy giáo, đạo quân",
+    "mnemonic": "Thầy giáo đứng dạy học đứng cạnh bục giảng cao (giản thể của 師)."
+  },
+  "年": {
+    "strokes": 6,
+    "radical": "干",
+    "pinyin": "nián",
+    "meaning": "năm",
+    "mnemonic": "Người gánh lúa chín thu hoạch sau một năm vất vả."
+  },
+  "店": {
+    "strokes": 8,
+    "radical": "广",
+    "pinyin": "diàn",
+    "meaning": "cửa hàng",
+    "mnemonic": "Cửa hàng buôn bán dưới mái hiên rộng (Quảng 广) bày bục (Chiếm 占)."
+  },
+  "开": {
+    "strokes": 4,
+    "radical": "廾",
+    "pinyin": "kāi",
+    "meaning": "mở",
+    "mnemonic": "Hai bàn tay nhấc chiếc then cài cửa ngang ra để mở."
+  },
+  "弟": {
+    "strokes": 7,
+    "radical": "弓",
+    "pinyin": "dì",
+    "meaning": "em trai",
+    "mnemonic": "Sợi dây quấn quanh cây cung theo thứ tự nhỏ dần."
+  },
+  "影": {
+    "strokes": 15,
+    "radical": "彡",
+    "pinyin": "yǐng",
+    "meaning": "ảnh, bóng dáng",
+    "mnemonic": "Ánh sáng mặt trời (Cảnh 景) chiếu xiên tạo thành bóng râm (彡)."
+  },
+  "很": {
+    "strokes": 9,
+    "radical": "彳",
+    "pinyin": "hěn",
+    "meaning": "rất",
+    "mnemonic": "Người đi bộ (彳) quay đầu trừng mắt (Cấn 艮) tỏ ý bướng bỉnh."
+  },
+  "怎": {
+    "strokes": 9,
+    "radical": "心",
+    "pinyin": "zěn",
+    "meaning": "thế nào",
+    "mnemonic": "Trái tim (Tâm 心) suy nghĩ làm thế nào để hành động."
+  },
+  "您": {
+    "strokes": 11,
+    "radical": "心",
+    "pinyin": "nín",
+    "meaning": "ngài (kính trọng)",
+    "mnemonic": "Chữ 你 (bạn) đặt trên chữ 心 (tấm lòng) thể hiện sự kính trọng."
+  },
+  "想": {
+    "strokes": 13,
+    "radical": "心",
+    "pinyin": "xiǎng",
+    "meaning": "muốn, nhớ, nghĩ",
+    "mnemonic": "Mắt quan sát cây cối (Tương 相) kết hợp với tâm trí (Tâm 心) suy nghĩ."
+  },
+  "我": {
+    "strokes": 7,
+    "radical": "戈",
+    "pinyin": "wǒ",
+    "meaning": "tôi, ta",
+    "mnemonic": "Tay cầm vũ khí bảo vệ (Qua 戈) đại diện cho bản ngã của tôi."
+  },
+  "打": {
+    "strokes": 5,
+    "radical": "扌",
+    "pinyin": "dǎ",
+    "meaning": "đánh, gọi (điện thoại)",
+    "mnemonic": "Bàn tay (Thủ 扌) đóng cây đinh (Đinh 丁) xuống."
+  },
+  "文": {
+    "strokes": 4,
+    "radical": "文",
+    "pinyin": "wén",
+    "meaning": "văn chương, chữ viết",
+    "mnemonic": "Hình nét vẽ trang trí xăm lên ngực của người thời cổ."
+  },
+  "日": {
+    "strokes": 4,
+    "radical": "日",
+    "pinyin": "rì",
+    "meaning": "ngày, mặt trời",
+    "mnemonic": "Hình vòng tròn mặt trời có chấm đen ở chính giữa.",
+    "illustration": "assets/pictograms/ri_pictogram.png"
+  },
+  "早": {
+    "strokes": 6,
+    "radical": "日",
+    "pinyin": "zǎo",
+    "meaning": "sớm",
+    "mnemonic": "Mặt trời (Nhật 日) mọc lên cao trên ngọn cây (Giáp 甲)."
+  },
+  "时": {
+    "strokes": 7,
+    "radical": "日",
+    "pinyin": "shí",
+    "meaning": "thời gian, khi",
+    "mnemonic": "Mặt trời (Nhật 日) di chuyển từng bước đo đạc thời gian (giản thể của 時)."
+  },
+  "明": {
+    "strokes": 8,
+    "radical": "日",
+    "pinyin": "míng",
+    "meaning": "sáng tỏ, ngày mai",
+    "mnemonic": "Sự kết hợp ánh sáng của cả Mặt trời (Nhật 日) và Mặt trăng (Nguyệt 月)."
+  },
+  "星": {
+    "strokes": 9,
+    "radical": "日",
+    "pinyin": "xīng",
+    "meaning": "ngôi sao",
+    "mnemonic": "Mặt trời (Nhật 日) sinh ra (Sinh 生) vô số vì tinh tú sáng lấp lánh."
+  },
+  "昨": {
+    "strokes": 9,
+    "radical": "日",
+    "pinyin": "zuó",
+    "meaning": "hôm qua",
+    "mnemonic": "Mặt trời (Nhật 日) của ngày đã trôi qua (Tạc 乍)."
+  },
+  "是": {
+    "strokes": 9,
+    "radical": "日",
+    "pinyin": "shì",
+    "meaning": "phải, là",
+    "mnemonic": "Mặt trời chiếu thẳng đứng xuống dưới đất chỉ sự chính xác, chân lý."
+  },
+  "晚": {
+    "strokes": 11,
+    "radical": "日",
+    "pinyin": "wǎn",
+    "meaning": "muộn, tối",
+    "mnemonic": "Mặt trời (Nhật 日) lặn xuống khuất bóng người."
+  },
+  "月": {
+    "strokes": 4,
+    "radical": "月",
+    "pinyin": "yuè",
+    "meaning": "tháng, mặt trăng",
+    "mnemonic": "Hình ảnh vầng trăng khuyết có hai nét ngang bên trong.",
+    "illustration": "assets/pictograms/yue_pictogram.png"
+  },
+  "有": {
+    "strokes": 6,
+    "radical": "月",
+    "pinyin": "yǒu",
+    "meaning": "có",
+    "mnemonic": "Bàn tay (Hựu 又) cầm miếng thịt (Nguyệt 月) dâng cúng, biểu thị có vật."
+  },
+  "朋": {
+    "strokes": 8,
+    "radical": "月",
+    "pinyin": "péng",
+    "meaning": "bạn bè",
+    "mnemonic": "Hai vầng trăng sáng song hành bên nhau như đôi bạn thân thiết."
+  },
+  "服": {
+    "strokes": 8,
+    "radical": "月",
+    "pinyin": "fú",
+    "meaning": "quần áo, phục tùng",
+    "mnemonic": "Người quỳ phục tùng đóng dấu bên cạnh con thuyền."
+  },
+  "期": {
+    "strokes": 12,
+    "radical": "月",
+    "pinyin": "qī",
+    "meaning": "kỳ, thời kỳ",
+    "mnemonic": "Chiếc giỏ tre (Kỳ 其) quay theo chu kỳ mặt trăng (Nguyệt 月)."
+  },
+  "本": {
+    "strokes": 5,
+    "radical": "木",
+    "pinyin": "běn",
+    "meaning": "vốn, gốc, quyển (sách)",
+    "mnemonic": "Chữ Mộc 木 (cây) thêm một vạch ở gốc chỉ gốc rễ của cây."
+  },
+  "机": {
+    "strokes": 6,
+    "radical": "木",
+    "pinyin": "jī",
+    "meaning": "máy, cơ hội",
+    "mnemonic": "Khung cửi làm bằng gỗ (Mộc 木) điều khiển tinh vi (giản thể của 機)."
+  },
+  "来": {
+    "strokes": 7,
+    "radical": "木",
+    "pinyin": "lái",
+    "meaning": "đến, lại",
+    "mnemonic": "Cây lúa mạch trĩu hạt mang lại nguồn lương thực (giản thể của 來)."
+  },
+  "杯": {
+    "strokes": 8,
+    "radical": "木",
+    "pinyin": "bēi",
+    "meaning": "cốc, chén",
+    "mnemonic": "Chiếc chén làm bằng gỗ (Mộc 木) không bị hỏng (Phủ 不)."
+  },
+  "果": {
+    "strokes": 8,
+    "radical": "木",
+    "pinyin": "guǒ",
+    "meaning": "quả, trái cây",
+    "mnemonic": "Quả chín hình tròn mọc trên cành cây gỗ (Mộc 木)."
+  },
+  "校": {
+    "strokes": 10,
+    "radical": "木",
+    "pinyin": "xiào",
+    "meaning": "trường học",
+    "mnemonic": "Nơi có nhiều cây xanh (Mộc 木) để học sinh tụ họp (Giao 交)."
+  },
+  "样": {
+    "strokes": 10,
+    "radical": "木",
+    "pinyin": "yàng",
+    "meaning": "kiểu, mẫu",
+    "mnemonic": "Khuôn mẫu làm từ gỗ (Mộc 木) nuôi cừu (Dương 羊) (giản thể của 樣)."
+  },
+  "桌": {
+    "strokes": 10,
+    "radical": "木",
+    "pinyin": "zhuō",
+    "meaning": "cái bàn",
+    "mnemonic": "Cái bàn làm bằng gỗ (Mộc 木) có chân đứng vững bên trên."
+  },
+  "椅": {
+    "strokes": 12,
+    "radical": "木",
+    "pinyin": "yǐ",
+    "meaning": "cái ghế",
+    "mnemonic": "Chiếc ghế làm bằng gỗ (Mộc 木) có chỗ tựa lưng thoải mái."
+  },
+  "欢": {
+    "strokes": 6,
+    "radical": "欠",
+    "pinyin": "huān",
+    "meaning": "vui vẻ",
+    "mnemonic": "Chim bay lượn kêu hót vui vẻ mở miệng (giản thể của 歡)."
+  },
+  "歌": {
+    "strokes": 14,
+    "radical": "欠",
+    "pinyin": "gē",
+    "meaning": "bài hát, ca hát",
+    "mnemonic": "Anh trai (Ca 哥) há to miệng (Khiếm 欠) hát lớn."
+  },
+  "气": {
+    "strokes": 4,
+    "radical": "气",
+    "pinyin": "qì",
+    "meaning": "hơi, không khí",
+    "mnemonic": "Các làn hơi nước bốc lên cao tạo thành mây (giản thể của 氣)."
+  },
+  "水": {
+    "strokes": 4,
+    "radical": "水",
+    "pinyin": "shuǐ",
+    "meaning": "nước",
+    "mnemonic": "Dòng nước chảy xiết ở giữa, hai bên có các tia nước bắn ra.",
+    "illustration": "assets/pictograms/shui_pictogram.png"
+  },
+  "汉": {
+    "strokes": 5,
+    "radical": "氵",
+    "pinyin": "hàn",
+    "meaning": "Hán (dân tộc, chữ viết)",
+    "mnemonic": "Nước sông Hán Thủy chảy qua vùng đất cát (giản thể của 漢)."
+  },
+  "没": {
+    "strokes": 7,
+    "radical": "氵",
+    "pinyin": "méi",
+    "meaning": "không có",
+    "mnemonic": "Nhấn chìm đồ vật xuống dòng nước (Thủy 氵) biến mất tiêu."
+  },
+  "法": {
+    "strokes": 8,
+    "radical": "氵",
+    "pinyin": "fǎ",
+    "meaning": "pháp luật, phương pháp",
+    "mnemonic": "Nước (氵) chảy đi (Khứ 去) tạo ra lẽ công bằng tự nhiên."
+  },
+  "泰": {
+    "strokes": 10,
+    "radical": "水",
+    "pinyin": "tài",
+    "meaning": "bình yên, Thái Lan",
+    "mnemonic": "Người dang tay trượt nước thoải mái, cuộc sống thái bình."
+  },
+  "漂": {
+    "strokes": 14,
+    "radical": "氵",
+    "pinyin": "piào",
+    "meaning": "đẹp, trôi nổi",
+    "mnemonic": "Nước (氵) cuốn trôi giỏ tre đựng đồ dệt nhuộm đẹp đẽ."
+  },
+  "火": {
+    "strokes": 4,
+    "radical": "火",
+    "pinyin": "huǒ",
+    "meaning": "lửa",
+    "mnemonic": "Ngọn lửa bùng cháy có hai tia lửa bắn ra hai bên.",
+    "illustration": "assets/pictograms/huo_pictogram.png"
+  },
+  "点": {
+    "strokes": 9,
+    "radical": "灬",
+    "pinyin": "diǎn",
+    "meaning": "giờ, dấu chấm",
+    "mnemonic": "Đốt lửa (Hỏa 灬) dưới nồi đen (Hắc 黑) để nấu ăn từng chút (giản thể của 點)."
+  },
+  "热": {
+    "strokes": 10,
+    "radical": "灬",
+    "pinyin": "rè",
+    "meaning": "nóng",
+    "mnemonic": "Trồng cây trên đất rồi đốt lửa (灬) hun nóng lên (giản thể của 熱)."
+  },
+  "爱": {
+    "strokes": 10,
+    "radical": "爪",
+    "pinyin": "ài",
+    "meaning": "yêu",
+    "mnemonic": "Tình cảm chân thành từ con tim (Tâm) ôm ấp che chở (giản thể của 愛)."
+  },
+  "爷": {
+    "strokes": 6,
+    "radical": "父",
+    "pinyin": "yé",
+    "meaning": "ông nội",
+    "mnemonic": "Người cha (Phụ 父) đáng kính cầm quyền hành quản lý gia đình."
+  },
+  "爸": {
+    "strokes": 8,
+    "radical": "父",
+    "pinyin": "bà",
+    "meaning": "bố, cha",
+    "mnemonic": "Người cha (Phụ 父) to lớn che chở cho con cái khỏi rắn độc (Ba 巴)."
+  },
+  "狗": {
+    "strokes": 8,
+    "radical": "犭",
+    "pinyin": "gǒu",
+    "meaning": "con chó",
+    "mnemonic": "Thú săn (Khuyển 犭) sủa gọi chủ canh gác cổng vườn (Câu 句)."
+  },
+  "独": {
+    "strokes": 9,
+    "radical": "犭",
+    "pinyin": "dú",
+    "meaning": "cô độc, một mình",
+    "mnemonic": "Con thú săn (犭) canh giữ sâu bọ cô đơn (giản thể của 獨)."
+  },
+  "猫": {
+    "strokes": 11,
+    "radical": "犭",
+    "pinyin": "māo",
+    "meaning": "con mèo",
+    "mnemonic": "Con thú mèo (犭) rình bắt chuột trên ruộng lúa (Miêu 苗)."
+  },
+  "玩": {
+    "strokes": 8,
+    "radical": "王",
+    "pinyin": "wán",
+    "meaning": "chơi, đùa nghịch",
+    "mnemonic": "Vua (Vương 王) ngắm nghía quân cờ ngọc quý (Nguyên 元) giải trí."
+  },
+  "现": {
+    "strokes": 8,
+    "radical": "王",
+    "pinyin": "xiàn",
+    "meaning": "hiện tại, xuất hiện",
+    "mnemonic": "Vua ngọc quý (Vương 王) được nhìn thấy rõ ràng (Kiến 见) (giản thể của 現)."
+  },
+  "班": {
+    "strokes": 10,
+    "radical": "王",
+    "pinyin": "bān",
+    "meaning": "lớp, ca làm việc",
+    "mnemonic": "Dùng dao (Đao 刂) chia đôi miếng ngọc quý (hai chữ Vương 王) cho lớp học."
+  },
+  "生": {
+    "strokes": 5,
+    "radical": "生",
+    "pinyin": "shēng",
+    "meaning": "sinh ra, sống",
+    "mnemonic": "Mầm cây xanh tốt mọc lên từ lòng đất."
+  },
+  "用": {
+    "strokes": 5,
+    "radical": "用",
+    "pinyin": "yòng",
+    "meaning": "dùng, sử dụng",
+    "mnemonic": "Cái chuông đồng hoặc công cụ nông nghiệp để sử dụng."
+  },
+  "电": {
+    "strokes": 5,
+    "radical": "田",
+    "pinyin": "diàn",
+    "meaning": "điện, chớp",
+    "mnemonic": "Lia sét đánh ngang qua ruộng lúa (Điền 田) (giản thể của 電)."
+  },
+  "男": {
+    "strokes": 7,
+    "radical": "田",
+    "pinyin": "nán",
+    "meaning": "nam, đàn ông",
+    "mnemonic": "Người đàn ông dùng lực (Lực 力) cày cấy ngoài ruộng (Điền 田)."
+  },
+  "病": {
+    "strokes": 10,
+    "radical": "疒",
+    "pinyin": "bìng",
+    "meaning": "bệnh, ốm",
+    "mnemonic": "Người nằm giường bệnh (Bệnh 疒) người nóng ran như lửa Bính 丙."
+  },
+  "白": {
+    "strokes": 5,
+    "radical": "白",
+    "pinyin": "bái",
+    "meaning": "trắng",
+    "mnemonic": "Hạt gạo trắng ngần hoặc mặt trời mới mọc phát ra tia sáng trắng."
+  },
+  "的": {
+    "strokes": 8,
+    "radical": "白",
+    "pinyin": "de",
+    "meaning": "của (trợ từ)",
+    "mnemonic": "Tấm bia bắn màu trắng (Bạch 白) có hồng tâm ở giữa (Bao 勺)."
+  },
+  "看": {
+    "strokes": 9,
+    "radical": "目",
+    "pinyin": "kàn",
+    "meaning": "nhìn, xem",
+    "mnemonic": "Đặt bàn tay (Thủ 手) lên trên mắt (Mục 目) che nắng để nhìn xa."
+  },
+  "睡": {
+    "strokes": 13,
+    "radical": "目",
+    "pinyin": "shuì",
+    "meaning": "ngủ",
+    "mnemonic": "Mí mắt (Mục 目) trĩu nặng buông xuống như bông lúa chín (Thùy 垂)."
+  },
+  "租": {
+    "strokes": 10,
+    "radical": "禾",
+    "pinyin": "zū",
+    "meaning": "thuê, cho thuê",
+    "mnemonic": "Nộp thuế bằng lúa (Hòa 禾) cho chủ đất (Thả 且)."
+  },
+  "称": {
+    "strokes": 10,
+    "radical": "禾",
+    "pinyin": "chēng",
+    "meaning": "gọi là, cân đo",
+    "mnemonic": "Đong lúa (Hòa 禾) bằng chiếc cân đong chính xác (giản thể của 稱)."
+  },
+  "第": {
+    "strokes": 11,
+    "radical": "竹",
+    "pinyin": "dì",
+    "meaning": "thứ (thứ tự)",
+    "mnemonic": "Thẻ tre (Trúc 竹) đánh dấu thứ tự từ nhỏ đến lớn."
+  },
+  "米": {
+    "strokes": 6,
+    "radical": "米",
+    "pinyin": "mǐ",
+    "meaning": "gạo, mét",
+    "mnemonic": "Bông lúa trĩu hạt có 4 hạt thóc rụng xung quanh."
+  },
+  "系": {
+    "strokes": 7,
+    "radical": "糸",
+    "pinyin": "xì",
+    "meaning": "hệ, liên kết",
+    "mnemonic": "Sợi chỉ (Mịch 糸) kết nối các mắt xích lại với nhau."
+  },
+  "纪": {
+    "strokes": 6,
+    "radical": "纟",
+    "pinyin": "jì",
+    "meaning": "kỷ kỷ nguyên",
+    "mnemonic": "Sợi chỉ (纟) ghi chép lại các sự kiện lịch sử kỷ nguyên."
+  },
+  "美": {
+    "strokes": 9,
+    "radical": "羊",
+    "pinyin": "měi",
+    "meaning": "đẹp",
+    "mnemonic": "Con cừu (Dương 羊) to béo (Đại 大) trông thật đẹp đẽ và ngon lành."
+  },
+  "老": {
+    "strokes": 6,
+    "radical": "老",
+    "pinyin": "lǎo",
+    "meaning": "già",
+    "mnemonic": "Cụ già tóc dài chống gậy bước đi từng bước."
+  },
+  "职": {
+    "strokes": 11,
+    "radical": "耳",
+    "pinyin": "zhí",
+    "meaning": "chức vụ, công việc",
+    "mnemonic": "Lắng nghe (Nhĩ 耳) bằng tai lời chỉ đạo làm việc (giản thể của 職)."
+  },
+  "能": {
+    "strokes": 10,
+    "radical": "月",
+    "pinyin": "néng",
+    "meaning": "có thể, năng lực",
+    "mnemonic": "Con gấu lớn có sức mạnh to khỏe săn mồi."
+  },
+  "脑": {
+    "strokes": 10,
+    "radical": "月",
+    "pinyin": "nǎo",
+    "meaning": "não, đầu óc",
+    "mnemonic": "Bộ não nằm trong hộp sọ làm bằng thịt (Nguyệt 月) (giản thể của 腦)."
+  },
+  "英": {
+    "strokes": 8,
+    "radical": "艹",
+    "pinyin": "yīng",
+    "meaning": "anh hùng, nước Anh",
+    "mnemonic": "Hoa cỏ (Thảo 艹) nở rộ rực rỡ nhất trong vườn (Ương 央)."
+  },
+  "苹": {
+    "strokes": 8,
+    "radical": "艹",
+    "pinyin": "píng",
+    "meaning": "táo",
+    "mnemonic": "Quả táo mọc trên cây cỏ xanh tươi tốt (giản thể của 蘋)."
+  },
+  "茶": {
+    "strokes": 9,
+    "radical": "艹",
+    "pinyin": "chá",
+    "meaning": "trà, chè",
+    "mnemonic": "Lá trà hái từ cây cỏ (艹) mang về pha nước cho người (人) uống gỗ (木)."
+  },
+  "菜": {
+    "strokes": 11,
+    "radical": "艹",
+    "pinyin": "cài",
+    "meaning": "rau, thức ăn",
+    "mnemonic": "Rau cỏ (Thảo 艹) hái bằng tay (Thải 采) mang về nấu canh."
+  },
+  "衣": {
+    "strokes": 6,
+    "radical": "衣",
+    "pinyin": "yī",
+    "meaning": "áo, quần áo",
+    "mnemonic": "Hình dáng chiếc áo dài cổ trang có tay áo và tà áo rộng."
+  },
+  "西": {
+    "strokes": 6,
+    "radical": "襾",
+    "pinyin": "xī",
+    "meaning": "phía tây",
+    "mnemonic": "Con chim bay về tổ trú ẩn dưới ánh hoàng hôn hướng Tây."
+  },
+  "要": {
+    "strokes": 9,
+    "radical": "覀",
+    "pinyin": "yào",
+    "meaning": "cần, muốn",
+    "mnemonic": "Người phụ nữ (Nữ 女) chắp tay cầu xin vật dụng cần thiết."
+  },
+  "见": {
+    "strokes": 4,
+    "radical": "见",
+    "pinyin": "jiàn",
+    "meaning": "gặp, nhìn thấy",
+    "mnemonic": "Mắt (Mục 目) mở to nhìn thấy người đi tới (giản thể của 見)."
+  },
+  "视": {
+    "strokes": 8,
+    "radical": "礻",
+    "pinyin": "shì",
+    "meaning": "nhìn, thị lực",
+    "mnemonic": "Thần linh (Kỳ 礻) hiển linh cho người trần nhìn thấy (giản thể của 視)."
+  },
+  "觉": {
+    "strokes": 9,
+    "radical": "见",
+    "pinyin": "jué",
+    "meaning": "cảm thấy, tỉnh giấc",
+    "mnemonic": "Trẻ con dưới mái nhà mở mắt nhìn xung quanh tỉnh táo (giản thể của 覺)."
+  },
+  "认": {
+    "strokes": 4,
+    "radical": "讠",
+    "pinyin": "rèn",
+    "meaning": "nhận, biết",
+    "mnemonic": "Dùng ngôn ngữ (Ngôn 讠) để thừa nhận một người (Nhân 人)."
+  },
+  "识": {
+    "strokes": 5,
+    "radical": "讠",
+    "pinyin": "shí",
+    "meaning": "biết, tri thức",
+    "mnemonic": "Dùng lời nói (Ngôn 讠) ghi chép lại lịch sử bằng chữ (giản thể của 識)."
+  },
+  "话": {
+    "strokes": 8,
+    "radical": "讠",
+    "pinyin": "huà",
+    "meaning": "lời nói, thoại",
+    "mnemonic": "Lời nói (Ngôn 讠) phát ra từ lưỡi (Thiệt 舌) ngọt ngào."
+  },
+  "语": {
+    "strokes": 9,
+    "radical": "讠",
+    "pinyin": "yǔ",
+    "meaning": "ngôn ngữ",
+    "mnemonic": "Lời nói (Ngôn 讠) của năm (Ngũ 五) người (Khẩu 口) giao tiếp."
+  },
+  "说": {
+    "strokes": 9,
+    "radical": "讠",
+    "pinyin": "shuō",
+    "meaning": "nói",
+    "mnemonic": "Dùng lời nói (Ngôn 讠) diễn tả niềm vui sướng trong lòng (giản thể của 説)."
+  },
+  "请": {
+    "strokes": 10,
+    "radical": "讠",
+    "pinyin": "qǐng",
+    "meaning": "mời, xin",
+    "mnemonic": "Lời nói (Ngôn 讠) hòa nhã lịch sự như sắc xanh (Thanh 青)."
+  },
+  "读": {
+    "strokes": 10,
+    "radical": "讠",
+    "pinyin": "dú",
+    "meaning": "đọc",
+    "mnemonic": "Dùng lời nói (讠) học tập trao đổi sách vở quý giá (giản thể của 讀)."
+  },
+  "课": {
+    "strokes": 10,
+    "radical": "讠",
+    "pinyin": "kè",
+    "meaning": "bài học, môn học",
+    "mnemonic": "Lời nói giảng dạy (Ngôn 讠) có kết quả tốt tươi quả ngọt (Quả 果)."
+  },
+  "谁": {
+    "strokes": 10,
+    "radical": "讠",
+    "pinyin": "shéi",
+    "meaning": "ai",
+    "mnemonic": "Dùng lời nói (Ngôn 讠) hỏi về nguồn gốc gia tộc chim nhỏ (Chuy 隹)."
+  },
+  "谢": {
+    "strokes": 12,
+    "radical": "讠",
+    "pinyin": "xiè",
+    "meaning": "cảm ơn",
+    "mnemonic": "Lời nói (Ngôn 讠) lịch sự tôn trọng thân thể đối phương (Thân 身 + Thốn 寸)."
+  },
+  "贵": {
+    "strokes": 9,
+    "radical": "贝",
+    "pinyin": "guì",
+    "meaning": "quý, đắt",
+    "mnemonic": "Đồ vật làm bằng ngọc quý đựng trong hộp tiền (Bối 贝) đắt giá."
+  },
+  "起": {
+    "strokes": 10,
+    "radical": "走",
+    "pinyin": "qǐ",
+    "meaning": "dậy, khởi đầu",
+    "mnemonic": "Chạy bộ (Tẩu 走) bắt đầu xuất phát vươn lên cao."
+  },
+  "超": {
+    "strokes": 12,
+    "radical": "走",
+    "pinyin": "chāo",
+    "meaning": "vượt qua, siêu",
+    "mnemonic": "Chạy bộ (Tẩu 走) vượt qua giới hạn của bản thân."
+  },
+  "越": {
+    "strokes": 12,
+    "radical": "走",
+    "pinyin": "yuè",
+    "meaning": "vượt qua, càng",
+    "mnemonic": "Chạy bộ (Tẩu 走) mang theo vũ khí (Qua 戈) vượt biên giới."
+  },
+  "车": {
+    "strokes": 4,
+    "radical": "车",
+    "pinyin": "chē",
+    "meaning": "xe",
+    "mnemonic": "Chiếc xe bò kéo có hai bánh xoay quanh một trục (giản thể của 車)."
+  },
+  "边": {
+    "strokes": 5,
+    "radical": "辶",
+    "pinyin": "biān",
+    "meaning": "bên, cạnh",
+    "mnemonic": "Bước đi (辶) dọc theo ranh giới của vùng đất biên cương (giản thể của 邊)."
+  },
+  "这": {
+    "strokes": 7,
+    "radical": "辶",
+    "pinyin": "zhè",
+    "meaning": "đây, này",
+    "mnemonic": "Ký hiệu chỉ vật nằm ngay dưới bước chân đi (giản thể của 這)."
+  },
+  "那": {
+    "strokes": 6,
+    "radical": "⻏",
+    "pinyin": "nà",
+    "meaning": "kia, đó",
+    "mnemonic": "Ký hiệu chỉ vùng đất xa xôi bên kia thành trì."
+  },
+  "都": {
+    "strokes": 10,
+    "radical": "⻏",
+    "pinyin": "dōu",
+    "meaning": "đều, thủ đô",
+    "mnemonic": "Mọi người tụ họp đông đúc như học giả (Giả 者) ở thủ đô."
+  },
+  "里": {
+    "strokes": 7,
+    "radical": "里",
+    "pinyin": "lǐ",
+    "meaning": "trong, dặm",
+    "mnemonic": "Khu ruộng đất (Điền 田) được phân chia đất đai (Thổ 土) bên trong làng quê."
+  },
+  "钟": {
+    "strokes": 9,
+    "radical": "钅",
+    "pinyin": "zhōng",
+    "meaning": "chuông, đồng hồ",
+    "mnemonic": "Chiếc chuông đúc bằng kim loại đồng (giản thể của 鐘)."
+  },
+  "钱": {
+    "strokes": 10,
+    "radical": "钅",
+    "pinyin": "qián",
+    "meaning": "tiền",
+    "mnemonic": "Vũ khí làm bằng kim loại quý dùng để trao đổi mua bán (giản thể của 錢)."
+  },
+  "问": {
+    "strokes": 6,
+    "radical": "门",
+    "pinyin": "wèn",
+    "meaning": "hỏi",
+    "mnemonic": "Đứng ở cổng cửa lớn (Môn 门) mở miệng (Khẩu 口) hỏi đường."
+  },
+  "院": {
+    "strokes": 9,
+    "radical": "⻖",
+    "pinyin": "yuàn",
+    "meaning": "viện, tòa nhà",
+    "mnemonic": "Tòa nhà lớn xây dựng xung quanh tường lũy che chở."
+  },
+  "雨": {
+    "strokes": 8,
+    "radical": "雨",
+    "pinyin": "yǔ",
+    "meaning": "mưa",
+    "mnemonic": "Những giọt nước mưa rơi xuống từ bầu trời giông bão."
+  },
+  "零": {
+    "strokes": 13,
+    "radical": "雨",
+    "pinyin": "líng",
+    "meaning": "số không, nhỏ lẻ",
+    "mnemonic": "Mưa rơi lác đác từng giọt nhỏ lẻ xuống mặt đất."
+  },
+  "面": {
+    "strokes": 9,
+    "radical": "面",
+    "pinyin": "miàn",
+    "meaning": "mặt, mì sợi",
+    "mnemonic": "Hình dáng khuôn mặt người nhìn trực diện."
+  },
+  "韩": {
+    "strokes": 12,
+    "radical": "韦",
+    "pinyin": "hán",
+    "meaning": "Hàn Quốc",
+    "mnemonic": "Giếng nước cổ có thành cao xây xung quanh bảo vệ (giản thể của 韓)."
+  },
+  "飞": {
+    "strokes": 3,
+    "radical": "飞",
+    "pinyin": "fēi",
+    "meaning": "bay",
+    "mnemonic": "Cánh chim dang rộng bay vút lên bầu trời xanh (giản thể của 飛)."
+  },
+  "饭": {
+    "strokes": 7,
+    "radical": "饣",
+    "pinyin": "fàn",
+    "meaning": "cơm, bữa ăn",
+    "mnemonic": "Thức ăn (Thực 饣) giúp con người ăn no ấm bụng (giản thể của 飯)."
+  },
+  "饺": {
+    "strokes": 9,
+    "radical": "饣",
+    "pinyin": "jiǎo",
+    "meaning": "bánh sủi cảo",
+    "mnemonic": "Bánh làm từ bột mì bao gói thức ăn giao thoa (giản thể của 餃)."
+  },
+  "高": {
+    "strokes": 10,
+    "radical": "高",
+    "pinyin": "gāo",
+    "meaning": "cao",
+    "mnemonic": "Hình ảnh tháp canh cao có mái hiên lớn phía trên."
+  },
+  "點": {
+    "strokes": 17,
+    "radical": "黑",
+    "pinyin": "diǎn",
+    "meaning": "giờ, dấu chấm (phồn thể)",
+    "mnemonic": "Chữ phồn thể của 点 thể hiện việc chấm vết mực đen."
+  }
+}

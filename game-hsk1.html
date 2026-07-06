@@ -94,6 +94,7 @@
         .btn-master { background: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
         .btn-match { background: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
         .btn-speak { background: #fce4ec; color: #c2185b; border: 1px solid #f8bbd0; }
+        .btn-hanzi { background: #e0f2f1; color: #00796b; border: 1px solid #b2dfdb; }
         .game-select-btn:hover { transform: scale(1.05); filter: brightness(0.95); }
     </style>
 </head>
@@ -135,6 +136,7 @@
                 <a href="#" id="flipLink" class="game-select-btn btn-flip">LẬT THẺ BÀI</a>
                 <a href="#" id="masterLink" class="game-select-btn btn-master">TRÙM TỪ VỰNG</a>
                 <a href="#" id="matchLink" class="game-select-btn btn-match">TRUY TÌM CẶP ĐÔI</a>
+                <a href="#" id="hanziLink" class="game-select-btn btn-hanzi">LUYỆN CHỮ HÁN</a>
                 <a href="#" id="speakLink" class="game-select-btn btn-speak" style="display: none;">NÓI ĐI</a>
             </div>
         </div>
@@ -146,6 +148,7 @@
         const flipLink = document.getElementById('flipLink');
         const masterLink = document.getElementById('masterLink');
         const matchLink = document.getElementById('matchLink');
+        const hanziLink = document.getElementById('hanziLink');
         const speakLink = document.getElementById('speakLink');
 
         function openGameSelect(lessonId) {
@@ -155,9 +158,11 @@
             flipLink.href = `game-hsk1-l${lessonId}-flip.html`;
             masterLink.href = `game-hsk1-l${lessonId}-master.html`;
             matchLink.href = `game-hsk1-l${lessonId}-match.html`;
+            hanziLink.href = `game-hsk1-l${lessonId}-hanzi.html`;
             flipLink.style.display = "flex";
             masterLink.style.display = "flex";
             matchLink.style.display = "flex";
+            hanziLink.style.display = "flex";
 
             // Special game "NÓI ĐI" only for Lesson 5
             if (lessonId === 5) {
