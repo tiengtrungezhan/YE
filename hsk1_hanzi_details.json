@@ -166,7 +166,14 @@
     "pinyin": "rén",
     "meaning": "người",
     "mnemonic": "Hình hai chân một người đang bước đi vững chãi.",
-    "illustration": "assets/pictograms/ren_pictogram.png"
+    "illustration": "assets/pictograms/ren_pictogram.png",
+    "illustration_steps": [
+      "assets/pictograms/ren_step1.png",
+      "assets/pictograms/ren_step2.png",
+      "assets/pictograms/ren_step3.png",
+      "assets/pictograms/ren_step4.png",
+      "assets/pictograms/ren_step5.png"
+    ]
   },
   "什": {
     "strokes": 4,
@@ -895,7 +902,14 @@
     "pinyin": "rì",
     "meaning": "ngày, mặt trời",
     "mnemonic": "Hình vòng tròn mặt trời có chấm đen ở chính giữa.",
-    "illustration": "assets/pictograms/ri_pictogram.png"
+    "illustration": "assets/pictograms/ri_pictogram.png",
+    "illustration_steps": [
+      "assets/pictograms/ri_step1.png",
+      "assets/pictograms/ri_step2.png",
+      "assets/pictograms/ri_step3.png",
+      "assets/pictograms/ri_step4.png",
+      "assets/pictograms/ri_step5.png"
+    ]
   },
   "早": {
     "strokes": 6,
@@ -952,7 +966,14 @@
     "pinyin": "yuè",
     "meaning": "tháng, mặt trăng",
     "mnemonic": "Hình ảnh vầng trăng khuyết có hai nét ngang bên trong.",
-    "illustration": "assets/pictograms/yue_pictogram.png"
+    "illustration": "assets/pictograms/yue_pictogram.png",
+    "illustration_steps": [
+      "assets/pictograms/yue_step1.png",
+      "assets/pictograms/yue_step2.png",
+      "assets/pictograms/yue_step3.png",
+      "assets/pictograms/yue_step4.png",
+      "assets/pictograms/yue_step5.png"
+    ]
   },
   "有": {
     "strokes": 6,
@@ -1072,7 +1093,14 @@
     "pinyin": "shuǐ",
     "meaning": "nước",
     "mnemonic": "Dòng nước chảy xiết ở giữa, hai bên có các tia nước bắn ra.",
-    "illustration": "assets/pictograms/shui_pictogram.png"
+    "illustration": "assets/pictograms/shui_pictogram.png",
+    "illustration_steps": [
+      "assets/pictograms/shui_step1.png",
+      "assets/pictograms/shui_step2.png",
+      "assets/pictograms/shui_step3.png",
+      "assets/pictograms/shui_step4.png",
+      "assets/pictograms/shui_step5.png"
+    ]
   },
   "汉": {
     "strokes": 5,
@@ -1115,7 +1143,14 @@
     "pinyin": "huǒ",
     "meaning": "lửa",
     "mnemonic": "Ngọn lửa bùng cháy có hai tia lửa bắn ra hai bên.",
-    "illustration": "assets/pictograms/huo_pictogram.png"
+    "illustration": "assets/pictograms/huo_pictogram.png",
+    "illustration_steps": [
+      "assets/pictograms/huo_step1.png",
+      "assets/pictograms/huo_step2.png",
+      "assets/pictograms/huo_step3.png",
+      "assets/pictograms/huo_step4.png",
+      "assets/pictograms/huo_step5.png"
+    ]
   },
   "点": {
     "strokes": 9,

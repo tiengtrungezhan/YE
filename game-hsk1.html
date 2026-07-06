@@ -114,11 +114,28 @@
 
             <div class="lesson-grid">
                 <script>
+                    const LESSON_NAMES = [
+                        "AI小语，你好！<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Chào AI Tiểu Vũ!</span>",
+                        "我叫李文<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Tôi tên là Lý Văn</span>",
+                        "我是中国人<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Tôi là người Trung Quốc</span>",
+                        "我有两个孩子<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Tôi có hai đứa con</span>",
+                        "今天我休息<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Hôm nay tôi nghỉ ngơi</span>",
+                        "你的手机号是多少？<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Số điện thoại của bạn?</span>",
+                        "我晚上六点半下班<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Tôi tan làm lúc 6h30 tối</span>",
+                        "我爸爸也在医院工作<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Bố tôi làm ở bệnh viện</span>",
+                        "我明天上午在学校学习<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Sáng mai tôi học ở trường</span>",
+                        "这儿的苹果真便宜！<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Táo ở đây rẻ thật đấy!</span>",
+                        "我读大学呢<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Tôi đang học đại học</span>",
+                        "昨天下雪了<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Hôm qua tuyết rơi rồi</span>",
+                        "请给我一杯茶<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Xin cho tôi một ly trà</span>",
+                        "我看了一个电影<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Tôi đã xem một bộ phim</span>",
+                        "大兴机场见！<br><span style='font-size:0.9rem; font-weight:normal; opacity:0.8;'>Hẹn gặp ở sân bay Đại Hưng!</span>"
+                    ];
                     for (let i = 1; i <= 15; i++) {
                         document.write(`
-                            <div class="lesson-card" onclick="openGameSelect(${i})">
-                                <div class="lesson-number">Bài học</div>
-                                <div class="lesson-title">${i}</div>
+                            <div class="lesson-card" onclick="openGameSelect(${i})" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; min-height: 120px;">
+                                <div class="lesson-number">Bài học ${i}</div>
+                                <div class="lesson-title" style="font-size: 1.15rem; font-weight: 800; line-height: 1.4; color: var(--primary-dark); margin-top: 0.5rem;">${LESSON_NAMES[i-1]}</div>
                             </div>
                         `);
                     }
