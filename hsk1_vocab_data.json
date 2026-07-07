@@ -70,6 +70,16 @@
     "type": "Động từ"
   },
   {
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "meaning": "bạn học, bạn cùng lớp",
+    "lesson": "1",
+    "ex_cn": "大家好，我是新同学。",
+    "ex_py": "Dàjiā hǎo, wǒ shì xīn tóngxué.",
+    "ex_vn": "Xin chào mọi người, tôi là bạn mới.",
+    "type": "Danh từ"
+  },
+  {
     "hanzi": "起床",
     "pinyin": "qǐ chuáng",
     "meaning": "ngủ dậy",
@@ -593,11 +603,11 @@
     "hanzi": "您",
     "pinyin": "nín",
     "meaning": "ngài, ông, bà (kính trọng)",
-    "lesson": "6",
+    "lesson": "1",
     "ex_cn": "您好！",
     "ex_py": "Nín hǎo!",
     "ex_vn": "Chào ngài!",
-    "type": "Danh từ"
+    "type": "Đại từ"
   },
   {
     "hanzi": "些",
