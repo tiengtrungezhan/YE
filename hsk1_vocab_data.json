@@ -13,7 +13,7 @@
     "hanzi": "们",
     "pinyin": "men",
     "meaning": "các (số nhiều)",
-    "lesson": "2",
+    "lesson": "3",
     "type": "Bổ sung 3.0",
     "ex_cn": "我们都是学生。",
     "ex_py": "Wǒmen dōu shì xuésheng.",
@@ -83,7 +83,7 @@
     "hanzi": "起床",
     "pinyin": "qǐ chuáng",
     "meaning": "ngủ dậy",
-    "lesson": "2",
+    "lesson": "3",
     "type": "Động từ",
     "ex_cn": "我六点起床。",
     "ex_py": "Wǒ liù diǎn qǐchuáng.",
@@ -107,13 +107,13 @@
     "ex_cn": "我叫李文。",
     "ex_py": "Wǒ jiào Lǐ Wén.",
     "ex_vn": "Tôi tên là Lý Văn.",
-    "lesson": "2"
+    "lesson": "3"
   },
   {
     "hanzi": "不",
     "pinyin": "bù",
     "meaning": "không cần, không, đừng",
-    "lesson": "2",
+    "lesson": "3",
     "ex_cn": "我今天不去学校。",
     "ex_py": "Wǒ jīntiān bù qù xuéxiào.",
     "ex_vn": "Hôm nay tôi không đi học.",
@@ -623,7 +623,7 @@
     "hanzi": "怎么",
     "pinyin": "zěnme",
     "meaning": "thế nào, làm sao",
-    "lesson": "6",
+    "lesson": "2",
     "type": "Đại từ",
     "ex_cn": "怎么称呼您？",
     "ex_py": "Zěnme chēnghu nín?",
@@ -1143,7 +1143,7 @@
     "hanzi": "贵",
     "pinyin": "guì",
     "meaning": "đắt",
-    "lesson": "10",
+    "lesson": "2",
     "type": "Tính từ",
     "ex_cn": "这个东西很贵。",
     "ex_py": "Zhè ge dōngxi hěn guì.",
@@ -1533,7 +1533,7 @@
     "hanzi": "什么",
     "pinyin": "shénme",
     "meaning": "cái gì",
-    "lesson": "12",
+    "lesson": "2",
     "type": "Đại từ",
     "ex_cn": "你叫什么名字？",
     "ex_py": "Nǐ jiào shénme míngzi?",
@@ -2088,5 +2088,85 @@
     "ex_cn": "我爱我的家人和朋友。",
     "ex_py": "Wǒ ài wǒ de jiārén hé péngyou.",
     "ex_vn": "Tôi yêu gia đình và bạn bè của tôi."
+  },
+  {
+    "hanzi": "请问",
+    "pinyin": "qǐngwèn",
+    "meaning": "xin hỏi",
+    "lesson": "2",
+    "ex_cn": "请问，您贵姓？",
+    "ex_py": "Qǐngwèn, nín guì xìng?",
+    "ex_vn": "Xin hỏi, quý danh ngài là gì?",
+    "type": "Động từ"
+  },
+  {
+    "hanzi": "姓",
+    "pinyin": "xìng",
+    "meaning": "họ, họ là",
+    "lesson": "2",
+    "ex_cn": "您贵姓？我姓王。",
+    "ex_py": "Nín guì xìng? Wǒ xìng Wáng.",
+    "ex_vn": "Ngài họ gì? Tôi họ Vương.",
+    "type": "Động từ"
+  },
+  {
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "meaning": "gọi là, tên là",
+    "lesson": "2",
+    "ex_cn": "我叫李文，很高兴认识你。",
+    "ex_py": "Wǒ jiào Lǐ Wén, hěn gāoxìng rènshi nǐ.",
+    "ex_vn": "Tôi tên là Lý Văn, rất vui được gặp bạn.",
+    "type": "Động từ"
+  },
+  {
+    "hanzi": "称呼",
+    "pinyin": "chēnghū",
+    "meaning": "xưng hô, cách gọi",
+    "lesson": "2",
+    "ex_cn": "怎么称呼您？",
+    "ex_py": "Zěnme chēnghū nín?",
+    "ex_vn": "Xưng hô với ngài thế nào?",
+    "type": "Động từ"
+  },
+  {
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "meaning": "không sao",
+    "lesson": "2",
+    "ex_cn": "对不起！没关系。",
+    "ex_py": "Duìbuqǐ! Méi guānxi.",
+    "ex_vn": "Xin lỗi! Không sao.",
+    "type": "Cụm từ"
+  },
+  {
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "rất",
+    "lesson": "2",
+    "ex_cn": "很高兴认识你！",
+    "ex_py": "Hěn gāoxìng rènshi nǐ!",
+    "ex_vn": "Rất vui được gặp bạn!",
+    "type": "Phó từ"
+  },
+  {
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "meaning": "quen biết, nhận ra",
+    "lesson": "2",
+    "ex_cn": "很高兴认识你！",
+    "ex_py": "Hěn gāoxìng rènshi nǐ!",
+    "ex_vn": "Rất vui được gặp bạn!",
+    "type": "Động từ"
+  },
+  {
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "là",
+    "lesson": "2",
+    "ex_cn": "我是学生。",
+    "ex_py": "Wǒ shì xuésheng.",
+    "ex_vn": "Tôi là học sinh.",
+    "type": "Động từ"
   }
 ]
