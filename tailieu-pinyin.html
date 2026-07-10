@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Liệu - Bảng Phiên Âm Pinyin | EZHAN</title>
+    <meta name="description" content="Bảng phiên âm Pinyin tiếng Trung đầy đủ với âm thanh chuẩn - EZHAN">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: var(--bg-gradient); color: var(--text-color); font-family: 'Inter', sans-serif; }
+
+        .page-container {
+            max-width: 1600px !important;
+        }
+        .page-wrap {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1.5rem 0;
+        }
+
+        /* ── HEADER ── */
+        .doc-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .doc-header h1 {
+            font-size: 2rem; font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-dark), #5B8D9C);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 0.4rem;
+        }
+        .doc-header p { color: var(--text-color); opacity: 0.8; font-size: 0.95rem; }
+
+
+        /* ── PINYIN TABLE ── */
+        .section-title {
+            font-size: 1.2rem; font-weight: 800; color: var(--text-color);
+            margin: 1.5rem 0 0.8rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .section-title::before {
+            content: ''; display: block; width: 4px; height: 20px;
+            background: var(--primary-dark);
+            border-radius: 4px;
+        }
+
+        .pinyin-grid {
+            display: flex; flex-wrap: wrap; gap: 0.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .py-card {
+            background: white;
+            border-radius: 14px;
+            padding: 0.5rem 0.4rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            min-width: 70px;
+            text-align: center;
+        }
+        .py-card:hover { border-color: var(--primary-color); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(165, 207, 218, 0.3); }
+        .py-card .py-label {
+            font-size: 0.78rem; font-weight: 700; color: var(--text-color);
+            opacity: 0.5;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            margin-bottom: 0.35rem;
+        }
+        .py-tones {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 4px;
+        }
+        .tone-btn {
+            background: #f5fafd; border: 1.5px solid var(--primary-light);
+            border-radius: 8px; padding: 0.3rem 0.2rem;
+            font-size: 0.95rem; font-weight: 700; color: var(--text-color);
+            cursor: pointer; transition: all 0.15s;
+            line-height: 1.2;
+        }
+        .tone-btn:hover { background: var(--primary-dark); color: white; border-color: var(--primary-dark); transform: scale(1.05); }
+        .tone-btn.playing { background: var(--primary-color); color: white; border-color: var(--primary-color); animation: pulse 0.5s ease; }
+        .tone-btn:disabled { opacity: 0.3; cursor: default; background: #f5f5f5; border-color: #eee; color: #aaa; }
+
+        @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+
+        /* Speaker icon single-tone */
+        .tone-btn-single {
+            background: #f5fafd; border: 1.5px solid var(--primary-light);
+            border-radius: 8px; padding: 0.3rem 0.6rem;
+            font-size: 0.9rem; font-weight: 700; color: var(--text-color);
+            cursor: pointer; transition: all 0.15s;
+        }
+        .tone-btn-single:hover { background: var(--primary-dark); color: white; border-color: var(--primary-dark); }
+
+        /* ── LEGEND ── */
+        .legend {
+            background: white; border-radius: 14px;
+            padding: 1rem 1.2rem; margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+        }
+        .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-color); opacity: 0.9; }
+        .legend-dot { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.9rem; }
+
+        /* Table for consonants + vowels combo */
+        .combo-table-wrap { overflow-x: auto; margin-bottom: 2rem; }
+        .combo-table {
+            border-collapse: separate; border-spacing: 4px;
+            min-width: 900px;
+        }
+        .combo-table th {
+            background: linear-gradient(135deg, var(--primary-dark), #5B8D9C);
+            color: white; font-size: 0.8rem; font-weight: 700;
+            padding: 0.5rem 0.3rem; border-radius: 8px;
+            text-align: center; white-space: nowrap;
+        }
+        .combo-table td {
+            background: white; border-radius: 8px;
+            text-align: center; padding: 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .combo-table td.row-head {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+            color: var(--text-color); font-weight: 800; font-size: 0.9rem;
+            padding: 0.4rem 0.6rem;
+        }
+        .combo-table td.empty { background: #f8f8f8; box-shadow: none; }
+        
+        .syllable-cell {
+            cursor: pointer;
+            padding: 0.8rem 0.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            transition: all 0.2s;
+            border-radius: 6px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            user-select: none;
+        }
+        .syllable-cell:hover {
+            background: var(--primary-light);
+            color: var(--text-color);
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 12px;
+            padding: 6px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--primary-light);
+            z-index: 100;
+            white-space: nowrap;
+            display: flex;
+            gap: 4px;
+            animation: fadeInBalloon 0.15s ease-out;
+        }
+
+        .balloon.hidden {
+            display: none;
+        }
+
+        .balloon::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+        }
+        .balloon::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 7px;
+            border-style: solid;
+            border-color: var(--primary-light) transparent transparent transparent;
+            z-index: -1;
+        }
+
+        .balloon-tone-btn {
+            background: #f5fafd;
+            border: 1.5px solid var(--primary-light);
+            border-radius: 8px;
+            padding: 0.4rem 0.6rem;
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .balloon-tone-btn:hover {
+            background: var(--primary-dark);
+            color: white;
+            border-color: var(--primary-dark);
+            transform: scale(1.08);
+        }
+        .balloon-tone-btn.playing {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        @keyframes fadeInBalloon {
+            from { opacity: 0; transform: translate(-50%, 8px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        @media (max-width: 768px) {
+            .doc-header h1 {
+                font-size: 1.6rem;
+            }
+            .doc-header p {
+                font-size: 0.85rem;
+            }
+            .combo-table th {
+                font-size: 0.72rem;
+                padding: 0.4rem 0.2rem;
+            }
+            .combo-table td.row-head {
+                font-size: 0.8rem;
+                padding: 0.3rem 0.5rem;
+            }
+            .syllable-cell {
+                padding: 0.6rem 0.3rem;
+                font-size: 0.85rem;
+            }
+            .balloon {
+                padding: 4px;
+                border-radius: 10px;
+            }
+            .balloon-tone-btn {
+                font-size: 0.9rem;
+                padding: 0.35rem 0.5rem;
+                border-radius: 6px;
+            }
+            .section-title {
+                font-size: 1.1rem;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    <div class="page-container">
+        <a href="tailieu.html" class="back-btn">← Quay lại danh sách tài liệu</a>
+
+        <div class="page-wrap">
+            <div class="doc-header">
+                <h1>📚 Bảng Phiên Âm Pinyin</h1>
+                <p>Nhấn vào từng âm để nghe phát âm chuẩn — đủ 4 thanh điệu</p>
+            </div>
+
+            <!-- BẢNG TỔNG HỢP -->
+            <div class="section-title">Bảng tổng hợp phụ âm + vần</div>
+            <div class="combo-table-wrap">
+                <table class="combo-table" id="main-table"></table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const BASE = 'https://chinese.com.vn/wp-content/themes/chinese/audio/pinyinchart/';
+
+    // ── DATA ──────────────────────────────────────────────────────────────────
+    // Each cell: null = empty, else audio path prefix (without tone number)
+    const tableHeaders = ['','a','o','e','i*','i**','er','ai','ei','ao','ou','an','en','ang','eng','ong','i','ia','iao','ie','iu','ian','in','iang','ing','iong','u','ua','uo','uai','ui','uan','un','uang','ü','üe','üan','ün'];
+
+    // row data: [rowLabel, ...cells matching headers]
+    // cell = audio_path or null
+    const tableRows = [
+        ['—', 'row1/a','row1/o','row1/e',null,null,'row1/er','row1/ai','row1/ei','row1/ao','row1/ou','row1/an','row1/en','row1/ang','row1/eng',null, 'row1/i_y','row1/ia','row1/iao','row1/ie','row1/iu','row1/ian','row1/in','row1/iang','row1/ing','row1/iong','row1/u_w','row1/ua','row1/uo','row1/uai','row1/ui','row1/uan','row1/un','row1/uang','row1/v','row1/ue','row1/uan2','row1/un2'],
+        ['b','row2/ba','row2/bo',null,null,null,null,'row2/bai','row2/bei','row2/bao',null,'row2/ban','row2/ben','row2/bang','row2/beng',null,'row2/bi',null,'row2/biao','row2/bie',null,'row2/bian','row2/bin',null,'row2/bing',null,'row2/bu',null,null,null,null,null,null,null,null,null,null,null],
+        ['p','row3/pa','row3/po',null,null,null,null,'row3/pai','row3/pei','row3/pao','row3/pou','row3/pan','row3/pen','row3/pang','row3/peng',null,'row3/pi',null,'row3/piao','row3/pie',null,'row3/pian','row3/pin',null,'row3/ping',null,'row3/pu',null,null,null,null,null,null,null,null,null,null,null],
+        ['m','row4/ma','row4/mo','row4/me',null,null,null,'row4/mai','row4/mei','row4/mao','row4/mou','row4/man','row4/men','row4/mang','row4/meng',null,'row4/mi',null,'row4/miao','row4/mie','row4/miu','row4/mian','row4/min',null,'row4/ming',null,'row4/mu',null,null,null,null,null,null,null,null,null,null,null],
+        ['f','row5/fa','row5/fo',null,null,null,null,null,'row5/fei',null,'row5/fou','row5/fan','row5/fen','row5/fang','row5/feng',null,null,null,null,null,null,null,null,null,null,null,'row5/fu',null,null,null,null,null,null,null,null,null,null,null],
+        ['d','row6/da',null,'row6/de',null,null,null,'row6/dai','row6/dei','row6/dao','row6/dou','row6/dan','row6/den','row6/dang','row6/deng','row6/dong','row6/di',null,'row6/diao','row6/die','row6/diu','row6/dian',null,null,'row6/ding',null,'row6/du','row6/dua','row6/duo',null,'row6/dui','row6/duan','row6/dun',null,null,null,null,null],
+        ['t','row7/ta',null,'row7/te',null,null,null,'row7/tai',null,'row7/tao','row7/tou','row7/tan',null,'row7/tang','row7/teng','row7/tong','row7/ti',null,'row7/tiao','row7/tie',null,'row7/tian',null,null,'row7/ting',null,'row7/tu',null,'row7/tuo',null,'row7/tui','row7/tuan','row7/tun',null,null,null,null,null],
+        ['n','row8/na',null,'row8/ne',null,null,null,'row8/nai','row8/nei','row8/nao','row8/nou','row8/nan','row8/nen','row8/nang','row8/neng','row8/nong','row8/ni',null,'row8/niao','row8/nie','row8/niu','row8/nian','row8/nin','row8/niang','row8/ning',null,'row8/nu',null,'row8/nuo',null,null,'row8/nuan',null,null,'row8/nv','row8/nve',null,null],
+        ['l','row9/la',null,'row9/le',null,null,null,'row9/lai','row9/lei','row9/lao','row9/lou','row9/lan',null,'row9/lang','row9/leng','row9/long','row9/li','row9/lia','row9/liao','row9/lie','row9/liu','row9/lian','row9/lin','row9/liang','row9/ling',null,'row9/lu',null,'row9/luo',null,null,'row9/luan','row9/lun',null,'row9/lv','row9/lve',null,null],
+        ['g','row10/ga',null,'row10/ge',null,null,null,'row10/gai','row10/gei','row10/gao','row10/gou','row10/gan','row10/gen','row10/gang','row10/geng','row10/gong',null,null,null,null,null,null,null,null,null,null,'row10/gu','row10/gua','row10/guo','row10/guai','row10/gui','row10/guan','row10/gun','row10/guang',null,null,null,null],
+        ['k','row11/ka',null,'row11/ke',null,null,null,'row11/kai','row11/kei','row11/kao','row11/kou','row11/kan','row11/ken','row11/kang','row11/keng','row11/kong',null,null,null,null,null,null,null,null,null,null,'row11/ku','row11/kua','row11/kuo','row11/kuai','row11/kui','row11/kuan','row11/kun','row11/kuang',null,null,null,null],
+        ['h','row12/ha',null,'row12/he',null,null,null,'row12/hai','row12/hei','row12/hao','row12/hou','row12/han','row12/hen','row12/hang','row12/heng','row12/hong',null,null,null,null,null,null,null,null,null,null,'row12/hu','row12/hua','row12/huo','row12/huai','row12/hui','row12/huan','row12/hun','row12/huang',null,null,null,null],
+        ['j',null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,'row13/ji','row13/jia','row13/jiao','row13/jie','row13/jiu','row13/jian','row13/jin','row13/jiang','row13/jing','row13/jiong','row13/ju',null,null,null,null,'row13/juan','row13/jun',null,null,'row13/jue',null,'row13/jun'],
+        ['q',null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,'row14/qi','row14/qia','row14/qiao','row14/qie','row14/qiu','row14/qian','row14/qin','row14/qiang','row14/qing','row14/qiong','row14/qu',null,null,null,null,'row14/quan','row14/qun',null,null,'row14/que',null,'row14/qun'],
+        ['x',null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,'row15/xi','row15/xia','row15/xiao','row15/xie','row15/xiu','row15/xian','row15/xin','row15/xiang','row15/xing','row15/xiong','row15/xu',null,null,null,null,'row15/xuan','row15/xun',null,null,'row15/xue',null,'row15/xun'],
+        ['zh','row16/zha',null,'row16/zhe',null,'row16/zhi',null,'row16/zhai','row16/zhei','row16/zhao','row16/zhou','row16/zhan','row16/zhen','row16/zhang','row16/zheng','row16/zhong',null,null,null,null,null,null,null,null,null,null,'row16/zhu','row16/zhua','row16/zhuo','row16/zhuai','row16/zhui','row16/zhuan','row16/zhun','row16/zhuang',null,null,null,null],
+        ['ch','row17/cha',null,'row17/che',null,'row17/chi',null,'row17/chai',null,'row17/chao','row17/chou','row17/chan','row17/chen','row17/chang','row17/cheng','row17/chong',null,null,null,null,null,null,null,null,null,null,'row17/chu','row17/chua','row17/chuo','row17/chuai','row17/chui','row17/chuan','row17/chun','row17/chuang',null,null,null,null],
+        ['sh','row18/sha',null,'row18/she',null,'row18/shi',null,'row18/shai','row18/shei','row18/shao','row18/shou','row18/shan','row18/shen','row18/shang','row18/sheng',null,null,null,null,null,null,null,null,null,null,null,'row18/shu','row18/shua','row18/shuo','row18/shuai','row18/shui','row18/shuan','row18/shun','row18/shuang',null,null,null,null],
+        ['r',null,null,'row19/re',null,'row19/ri',null,null,null,'row19/rao','row19/rou','row19/ran','row19/ren','row19/rang','row19/reng','row19/rong',null,null,null,null,null,null,null,null,null,null,'row19/ru',null,'row19/ruo',null,'row19/rui','row19/ruan','row19/run',null,null,null,null,null],
+        ['z','row20/za',null,'row20/ze','row20/zi',null,null,'row20/zai','row20/zei','row20/zao','row20/zou','row20/zan','row20/zen','row20/zang','row20/zeng','row20/zong',null,null,null,null,null,null,null,null,null,null,'row20/zu',null,'row20/zuo',null,'row20/zui','row20/zuan','row20/zun',null,null,null,null,null],
+        ['c','row21/ca',null,'row21/ce','row21/ci',null,null,'row21/cai',null,'row21/cao','row21/cou','row21/can','row21/cen','row21/cang','row21/ceng','row21/cong',null,null,null,null,null,null,null,null,null,null,'row21/cu',null,'row21/cuo',null,'row21/cui','row21/cuan','row21/cun',null,null,null,null,null],
+        ['s','row22/sa',null,'row22/se','row22/si',null,null,'row22/sai',null,'row22/sao','row22/sou','row22/san','row22/sen','row22/sang','row22/seng','row22/song',null,null,null,null,null,null,null,null,null,null,'row22/su',null,'row22/suo',null,'row22/sui','row22/suan','row22/sun',null,null,null,null,null],
+    ];
+
+    // ── AUDIO ────────────────────────────────────────────────────────────────
+    let currentAudio = null;
+    function playAudio(path, toneNum, btn) {
+        if (!path) return;
+        if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; }
+        document.querySelectorAll('.tone-btn.playing, .combo-btn.playing, .balloon-tone-btn.playing').forEach(b => b.classList.remove('playing'));
+        
+        // Map old row paths to correct folder paths on chinese.com.vn
+        let mappedPath = path;
+        const mapping = {
+            'row2/': 'BPMF/', 'row3/': 'BPMF/', 'row4/': 'BPMF/', 'row5/': 'BPMF/',
+            'row6/': 'DTNL/', 'row7/': 'DTNL/', 'row8/': 'DTNL/', 'row9/': 'DTNL/',
+            'row10/': 'GKH/', 'row11/': 'GKH/', 'row12/': 'GKH/',
+            'row13/': 'JQX/', 'row14/': 'JQX/', 'row15/': 'JQX/',
+            'row16/': 'ZHCHSH/', 'row17/': 'ZHCHSH/', 'row18/': 'ZHCHSH/', 'row19/': 'ZHCHSH/',
+            'row20/': 'ZCS/', 'row21/': 'ZCS/', 'row22/': 'ZCS/'
+        };
+        for (const [key, val] of Object.entries(mapping)) {
+            if (path.startsWith(key)) {
+                mappedPath = path.replace(key, val);
+                break;
+            }
+        }
+
+        const url = BASE + mappedPath + toneNum + '.mp3';
+        currentAudio = new Audio(url);
+        if (btn) { btn.classList.add('playing'); currentAudio.onended = () => btn.classList.remove('playing'); }
+        currentAudio.play().catch(() => {});
+    }
+
+    // ── RENDER HELPERS ───────────────────────────────────────────────────────
+    function getTonedSyllable(syllable, tone) {
+        if (tone < 1 || tone > 4) return syllable;
+        const toneMap = {
+            'a': ['ā', 'á', 'ǎ', 'à'],
+            'o': ['ō', 'ó', 'ǒ', 'ò'],
+            'e': ['ē', 'é', 'ě', 'è'],
+            'i': ['ī', 'í', 'ǐ', 'ì'],
+            'u': ['ū', 'ú', 'ǔ', 'ù'],
+            'ü': ['ǖ', 'ǘ', 'ǚ', 'ǜ'],
+            'v': ['ǖ', 'ǘ', 'ǚ', 'ǜ']
+        };
+        
+        let targetVowel = '';
+        if (syllable.includes('a')) targetVowel = 'a';
+        else if (syllable.includes('e')) targetVowel = 'e';
+        else if (syllable.includes('ou')) targetVowel = 'o';
+        else if (syllable.includes('ui')) targetVowel = 'i';
+        else if (syllable.includes('iu')) targetVowel = 'u';
+        else if (syllable.includes('o')) targetVowel = 'o';
+        else if (syllable.includes('i')) targetVowel = 'i';
+        else if (syllable.includes('u')) targetVowel = 'u';
+        else if (syllable.includes('ü')) targetVowel = 'ü';
+        else if (syllable.includes('v')) targetVowel = 'v';
+
+        if (targetVowel) {
+            const tonedChar = toneMap[targetVowel][tone - 1];
+            return syllable.replace(targetVowel, tonedChar);
+        }
+        return syllable;
+    }
+
+    function toggleBalloon(event, element) {
+        event.stopPropagation();
+        const parent = element.parentElement;
+        const balloon = parent.querySelector('.balloon');
+        const isHidden = balloon.classList.contains('hidden');
+        
+        closeAllBalloons();
+        
+        if (isHidden) {
+            balloon.classList.remove('hidden');
+        }
+    }
+
+    function closeAllBalloons() {
+        document.querySelectorAll('.balloon').forEach(b => {
+            b.classList.add('hidden');
+        });
+    }
+
+    // Close balloons when clicking anywhere else
+    document.addEventListener('click', () => {
+        closeAllBalloons();
+    });
+
+    function renderTable() {
+        const table = document.getElementById('main-table');
+        // Header
+        const thead = document.createElement('thead');
+        const hrow = document.createElement('tr');
+        tableHeaders.forEach((h,i) => {
+            const th = document.createElement('th');
+            th.textContent = h.replace(/\*+/g, '') || '';
+            if (i===0) th.style.minWidth = '40px';
+            hrow.appendChild(th);
+        });
+        thead.appendChild(hrow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        tableRows.forEach(row => {
+            const tr = document.createElement('tr');
+            row.forEach((cell, ci) => {
+                const td = document.createElement('td');
+                if (ci === 0) {
+                    td.className = 'row-head';
+                    td.textContent = cell;
+                } else if (!cell) {
+                    td.className = 'empty';
+                } else {
+                    const path = cell;
+                    const label = tableHeaders[ci];
+                    const rowLabel = row[0];
+                    const syllable = rowLabel === '—' ? label : rowLabel + label;
+                    const cleanSyllable = syllable.replace(/\*+/g, '');
+                    
+                    td.innerHTML = `
+                        <div class="syllable-cell" onclick="toggleBalloon(event, this)">
+                            ${cleanSyllable}
+                        </div>
+                        <div class="balloon hidden">
+                            ${[1,2,3,4].map(t => {
+                                const toned = getTonedSyllable(cleanSyllable, t);
+                                return `<button class="balloon-tone-btn" onclick="playAudio('${path}', ${t}, this); event.stopPropagation();" title="${toned}">${toned}</button>`;
+                            }).join('')}
+                        </div>
+                    `;
+                }
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+    }
+
+    // ── INIT ─────────────────────────────────────────────────────────────────
+    renderTable();
+    </script>
+</body>
+</html>

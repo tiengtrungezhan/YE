@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lật Thẻ Thông Minh - HSK 4 Bài 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #f0f9ff; }
+        .game-header { text-align: center; margin-bottom: 2rem; position: relative; }
+        .mascot-container { 
+            position: absolute; right: 0; top: -20px; width: 100px; 
+            animation: bounce 2s infinite ease-in-out; 
+        }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .mascot-bubble {
+            background: white; padding: 10px 15px; border-radius: 20px; box-shadow: var(--shadow);
+            font-size: 0.85rem; position: absolute; right: 110px; top: 10px; width: 150px;
+            color: var(--primary-dark); font-weight: 700; z-index: 10;
+        }
+        .game-container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        .single-card-container { display: flex; justify-content: center; align-items: center; margin-top: 2rem; position: relative; }
+        .flip-card { background-color: transparent; width: 100%; max-width: 500px; height: 520px; perspective: 1000px; cursor: pointer; }
+        .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
+        .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card-front, .flip-card-back { 
+            position: absolute; width: 100%; height: 100%; backface-visibility: hidden; 
+            display: flex; flex-direction: column; border-radius: 30px; padding: 1.2rem; 
+            border: 2px solid var(--primary-light); background: white;
+            box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2);
+        }
+        .flip-card-front { justify-content: center; align-items: center; }
+        .flip-card-front .hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 8rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }
+        .flip-card:hover .hanzi { transform: scale(1.1); }
+        .flip-card-back { transform: rotateY(180deg); text-align: left; background: #fff; border-color: var(--primary-color); }
+        .flip-card.mastered .flip-card-front, .flip-card.mastered .flip-card-back { border-color: #ffd700; background: #fffdf0; }
+        .master-badge { position: absolute; top: 15px; right: 15px; font-size: 1.5rem; display: none; z-index: 5; }
+        .flip-card.mastered .master-badge { display: block; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+        .back-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+        .back-hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 3rem; font-weight: 800; color: var(--primary-dark); }
+        .back-pinyin { font-size: 1.6rem; color: #e67e22; font-weight: 700; }
+        .btn-speak { background: var(--primary-light); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: 0.3s; }
+        .btn-speak:hover { background: var(--primary-color); transform: scale(1.1); }
+        .back-meaning { font-size: 1.5rem; font-weight: 700; color: #444; }
+        .back-example { font-size: 1.1rem; background: #f9f9f9; padding: 1rem; border-radius: 12px; margin-top: 0.8rem; line-height: 1.5; }
+        .back-example strong { font-size: 1.1rem; color: var(--primary-dark); }
+        .master-btn { margin-top: auto; width: 100%; padding: 0.6rem; border-radius: 12px; border: 2px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 0.85rem; }
+        .master-btn.active { background: var(--primary-color); color: white; }
+        .progress-container { background: white; padding: 1.5rem; border-radius: 20px; box-shadow: var(--shadow); margin: 2rem 0; }
+        .progress-text { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 700; color: #555; }
+        .progress-bar { width: 100%; height: 12px; background: #eee; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary-color), var(--primary-dark)); width: 0%; transition: width 0.5s ease-out; }
+        .controls { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+        .btn-control { padding: 0.5rem 1rem; border-radius: 10px; border: 1px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 700; cursor: pointer; transition: 0.3s; font-size: 0.9rem; }
+        .celebration-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.95); z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center; }
+        .trophy { font-size: 5rem; animation: trophyPop 1s infinite alternate; }
+        @keyframes trophyPop { from { transform: scale(1); } to { transform: scale(1.2) rotate(5deg); } }
+        .hint-tap { font-size: 0.9rem; color: #aaa; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    <div class="page-container">
+        <a href="game-hsk4.html" class="back-btn">← Quay lại</a>
+        <header class="game-header">
+            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh</h1>
+            <p style="color:#888; font-size:1rem; margin-top:0.3rem;">HSK 4 · Bài 1 · 19 từ</p>
+            <div class="mascot-container">
+                <div class="mascot-bubble" id="mascotSpeech">Cùng mình bắt đầu học nhé! 🐼</div>
+                <img src="mascot-guide.png" style="width: 100%; mix-blend-mode: multiply;" alt="Mascot">
+            </div>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-text"><span>Tiến độ học tập</span><span id="progressPercent">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+            <div class="stats-info" style="margin-top:0.5rem">Bạn đã thuộc <span id="masteredCount">0</span> / <span id="totalCount">0</span> từ</div>
+            <div class="controls">
+                <button class="btn-control" onclick="shuffleCards()">🔀 Trộn thẻ</button>
+                <button class="btn-control" onclick="resetProgress()">🔄 Học lại</button>
+            </div>
+        </div>
+
+        <div class="single-card-container" id="cardGrid"></div>
+        <p class="hint-tap" style="text-align:center;">👆 Nhấn vào thẻ để lật</p>
+
+        <div class="card-navigation" style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; align-items: center;">
+            <button class="btn-control" onclick="prevCard()" style="font-size: 1.2rem; padding: 0.8rem 1.5rem;">⬅ Trước</button>
+            <span id="cardCounter" style="font-size: 1.2rem; font-weight: bold; color: var(--text-color);">1 / 19</span>
+            <button class="btn-control" onclick="nextCard()" style="font-size: 1.2rem; padding: 0.8rem 1.5rem;">Sau ➡</button>
+        </div>
+    </div>
+
+    <div class="celebration-overlay" id="celebration">
+        <div class="trophy">🏆</div>
+        <h2 style="font-size: 2rem; color: var(--primary-dark); margin: 1rem 0;">TUYỆT VỜI!</h2>
+        <p>Bạn đã làm chủ hoàn toàn bài học này!</p>
+        <button class="btn-control" style="margin-top: 2rem; padding: 1rem 2rem; background: var(--primary-color); color: white;" onclick="document.getElementById('celebration').style.display='none'">Tiếp tục luyện tập</button>
+    </div>
+
+    <script>
+        let vocabData = [
+            {
+                "hanzi": "法律",
+                "pinyin": "fǎlǜ",
+                "meaning": "pháp luật, luật pháp",
+                "pos": "danh từ",
+                "ex_cn": "我们都要遵守法律。",
+                "ex_py": "Wǒmen dōu yào zūnshǒu fǎlǜ.",
+                "ex_vn": "Tất cả chúng ta đều phải tuân thủ pháp luật."
+            },
+            {
+                "hanzi": "俩",
+                "pinyin": "liǎ",
+                "meaning": "hai người/hai cái (= 两个)",
+                "pos": "số từ",
+                "ex_cn": "他俩是好朋友。",
+                "ex_py": "Tā liǎ shì hǎo péngyou.",
+                "ex_vn": "Hai người họ là bạn tốt."
+            },
+            {
+                "hanzi": "印象",
+                "pinyin": "yìnxiàng",
+                "meaning": "ấn tượng",
+                "pos": "danh từ",
+                "ex_cn": "他给我留下了很好的印象。",
+                "ex_py": "Tā gěi wǒ liú xià le hěn hǎo de yìnxiàng.",
+                "ex_vn": "Anh ấy đã để lại cho tôi ấn tượng rất tốt."
+            },
+            {
+                "hanzi": "深",
+                "pinyin": "shēn",
+                "meaning": "sâu; đậm (màu); sâu sắc",
+                "pos": "tính từ",
+                "ex_cn": "他们两个人的感情很深。",
+                "ex_py": "Tāmen liǎng gè rén de gǎnqíng hěn shēn.",
+                "ex_vn": "Tình cảm giữa hai người họ rất sâu sắc."
+            },
+            {
+                "hanzi": "熟悉",
+                "pinyin": "shúxi",
+                "meaning": "quen thuộc, thân thuộc",
+                "pos": "động từ/tính từ",
+                "ex_cn": "他对这里的环境很熟悉。",
+                "ex_py": "Tā duì zhèlǐ de huánjìng hěn shúxi.",
+                "ex_vn": "Anh ấy rất quen thuộc với môi trường ở đây."
+            },
+            {
+                "hanzi": "不仅",
+                "pinyin": "bùjǐn",
+                "meaning": "không chỉ, chẳng những",
+                "pos": "phó từ",
+                "ex_cn": "她不仅聪明，而且很勤奋。",
+                "ex_py": "Tā bùjǐn cōngmíng, érqiě hěn qínfèn.",
+                "ex_vn": "Cô ấy không chỉ thông minh mà còn rất chăm chỉ."
+            },
+            {
+                "hanzi": "性格",
+                "pinyin": "xìnggé",
+                "meaning": "tính cách, tính nết",
+                "pos": "danh từ",
+                "ex_cn": "她的性格开朗，很受大家欢迎。",
+                "ex_py": "Tā de xìnggé kāilǎng, hěn shòu dàjiā huānyíng.",
+                "ex_vn": "Tính cách cô ấy vui vẻ, rất được mọi người yêu mến."
+            },
+            {
+                "hanzi": "开玩笑",
+                "pinyin": "kāi wánxiào",
+                "meaning": "nói đùa, trêu đùa",
+                "pos": "động từ",
+                "ex_cn": "别担心，我只是在开玩笑。",
+                "ex_py": "Bié dānxīn, wǒ zhǐshì zài kāi wánxiào.",
+                "ex_vn": "Đừng lo, tôi chỉ đang nói đùa thôi."
+            },
+            {
+                "hanzi": "从来",
+                "pinyin": "cónglái",
+                "meaning": "từ trước đến nay, chưa bao giờ (với phủ định)",
+                "pos": "phó từ",
+                "ex_cn": "他从来不说谎。",
+                "ex_py": "Tā cónglái bù shuōhuǎng.",
+                "ex_vn": "Anh ấy chưa bao giờ nói dối."
+            },
+            {
+                "hanzi": "最好",
+                "pinyin": "zuìhǎo",
+                "meaning": "tốt nhất; tốt hơn là (lời khuyên)",
+                "pos": "phó từ/tính từ",
+                "ex_cn": "你最好早点出发，以免堵车。",
+                "ex_py": "Nǐ zuìhǎo zǎodiǎn chūfā, yǐmiǎn dǔchē.",
+                "ex_vn": "Bạn tốt hơn là nên xuất phát sớm để tránh tắc đường."
+            },
+            {
+                "hanzi": "共同",
+                "pinyin": "gòngtóng",
+                "meaning": "chung, cùng nhau",
+                "pos": "tính từ/phó từ",
+                "ex_cn": "我们有很多共同的爱好。",
+                "ex_py": "Wǒmen yǒu hěn duō gòngtóng de àihào.",
+                "ex_vn": "Chúng tôi có nhiều sở thích chung."
+            },
+            {
+                "hanzi": "适合",
+                "pinyin": "shìhé",
+                "meaning": "phù hợp, thích hợp",
+                "pos": "động từ",
+                "ex_cn": "这份工作非常适合你。",
+                "ex_py": "Zhè fèn gōngzuò fēicháng shìhé nǐ.",
+                "ex_vn": "Công việc này rất phù hợp với bạn."
+            },
+            {
+                "hanzi": "幸福",
+                "pinyin": "xìngfú",
+                "meaning": "hạnh phúc",
+                "pos": "tính từ/danh từ",
+                "ex_cn": "他们结婚以后生活得很幸福。",
+                "ex_py": "Tāmen jiéhūn yǐhòu shēnghuó de hěn xìngfú.",
+                "ex_vn": "Sau khi kết hôn họ sống rất hạnh phúc."
+            },
+            {
+                "hanzi": "生活",
+                "pinyin": "shēnghuó",
+                "meaning": "cuộc sống; sống, sinh hoạt",
+                "pos": "danh từ/động từ",
+                "ex_cn": "我很喜欢现在的生活。",
+                "ex_py": "Wǒ hěn xǐhuān xiànzài de shēnghuó.",
+                "ex_vn": "Tôi rất thích cuộc sống hiện tại."
+            },
+            {
+                "hanzi": "刚",
+                "pinyin": "gāng",
+                "meaning": "vừa mới, mới vừa",
+                "pos": "phó từ",
+                "ex_cn": "他刚从北京回来。",
+                "ex_py": "Tā gāng cóng Běijīng huí lái.",
+                "ex_vn": "Anh ấy vừa mới trở về từ Bắc Kinh."
+            },
+            {
+                "hanzi": "浪漫",
+                "pinyin": "làngmàn",
+                "meaning": "lãng mạn",
+                "pos": "tính từ",
+                "ex_cn": "他为她准备了一个浪漫的求婚。",
+                "ex_py": "Tā wèi tā zhǔnbèi le yī gè làngmàn de qiúhūn.",
+                "ex_vn": "Anh ấy chuẩn bị cho cô ấy một lời cầu hôn lãng mạn."
+            },
+            {
+                "hanzi": "够",
+                "pinyin": "gòu",
+                "meaning": "đủ; đạt tới",
+                "pos": "động từ/tính từ",
+                "ex_cn": "这些钱够买一件衣服吗？",
+                "ex_py": "Zhèxiē qián gòu mǎi yī jiàn yīfu ma?",
+                "ex_vn": "Số tiền này có đủ để mua một bộ quần áo không?"
+            },
+            {
+                "hanzi": "缺点",
+                "pinyin": "quēdiǎn",
+                "meaning": "khuyết điểm, nhược điểm",
+                "pos": "danh từ",
+                "ex_cn": "每个人都有优点和缺点。",
+                "ex_py": "Měi gè rén dōu yǒu yōudiǎn hé quēdiǎn.",
+                "ex_vn": "Mỗi người đều có ưu điểm và khuyết điểm."
+            },
+            {
+                "hanzi": "接受",
+                "pinyin": "jiēshòu",
+                "meaning": "tiếp nhận, chấp nhận",
+                "pos": "động từ",
+                "ex_cn": "你能接受他的道歉吗？",
+                "ex_py": "Nǐ néng jiēshòu tā de dàoqiàn ma?",
+                "ex_vn": "Bạn có thể chấp nhận lời xin lỗi của anh ấy không?"
+            }
+        ];
+
+        const grid = document.getElementById('cardGrid');
+        const progressFill = document.getElementById('progress');
+        const progressPercent = document.getElementById('progressPercent');
+        const masteredCountEl = document.getElementById('masteredCount');
+        const totalCountEl = document.getElementById('totalCount');
+        const mascotSpeech = document.getElementById('mascotSpeech');
+        const celebration = document.getElementById('celebration');
+
+        let masteredSet = new Set();
+        let currentCardIndex = 0;
+        const cardCounterEl = document.getElementById('cardCounter');
+        totalCountEl.innerText = vocabData.length;
+
+        function renderCards() {
+            grid.innerHTML = '';
+            if (vocabData.length === 0) return;
+            const index = currentCardIndex;
+            const word = vocabData[index];
+            const card = document.createElement('div');
+            card.className = 'flip-card' + (masteredSet.has(index) ? ' mastered' : '');
+            card.innerHTML = `
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="master-badge">⭐</div>
+                        <div class="hanzi">${word.hanzi}</div>
+                        <div style="font-size:1.1rem; color:#bbb; margin-top:1rem;">Nhấn để xem nghĩa</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="back-header">
+                            <span class="back-hanzi">${word.hanzi}</span>
+                            <span class="back-pinyin">${word.pinyin}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 0.5rem;">
+                            <button class="btn-speak" onclick="event.stopPropagation(); speak('${word.hanzi}')">🔊</button>
+                            <div class="back-meaning">${word.meaning}</div>
+                        </div>
+                        <div style="font-size: 1rem; color: #555; margin-bottom: 0.5rem; padding-left: 5px;">
+                            <strong>Từ loại:</strong> ${word.pos || 'Đang cập nhật'}
+                        </div>
+                        <div class="back-example">
+                            <strong>Ví dụ:</strong>
+                            <div style="font-family: 'KaiTi', '楷体', 'STKaiti', serif; margin-top:5px; font-size: 1.4rem;">${word.ex_cn}</div>
+                            <div style="color: #e67e22; font-style: italic; font-size: 1.1rem;">${word.ex_py}</div>
+                            <div style="color: #666; font-size: 1rem; border-top: 1px dashed #ccc; margin-top:5px; padding-top:5px;">${word.ex_vn}</div>
+                        </div>
+                        <button class="master-btn ${masteredSet.has(index) ? 'active' : ''}" onclick="event.stopPropagation(); toggleMaster(${index}, this)">
+                            ${masteredSet.has(index) ? '⭐ Bỏ thuộc' : '✅ Đã thuộc'}
+                        </button>
+                    </div>
+                </div>`;
+            card.addEventListener('click', () => card.classList.toggle('flipped'));
+            grid.appendChild(card);
+            cardCounterEl.innerText = (currentCardIndex + 1) + ' / ' + vocabData.length;
+        }
+
+        window.prevCard = function() {
+            if (currentCardIndex > 0) { currentCardIndex--; renderCards(); }
+        };
+
+        window.nextCard = function() {
+            if (currentCardIndex < vocabData.length - 1) { currentCardIndex++; renderCards(); }
+        };
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextCard();
+            if (e.key === 'ArrowLeft') prevCard();
+        });
+
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'zh-CN';
+            utterance.rate = 0.8;
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function updateProgress() {
+            const count = masteredSet.size;
+            const percent = Math.round((count / vocabData.length) * 100);
+            progressFill.style.width = percent + '%';
+            progressPercent.innerText = percent + '%';
+            masteredCountEl.innerText = count;
+
+            if (percent === 100) {
+                mascotSpeech.innerText = 'Tuyệt vời! Bạn đã thuộc hết rồi! 🏆';
+                celebration.style.display = 'flex';
+            } else if (percent >= 50) mascotSpeech.innerText = 'Sắp xong rồi, bạn học nhanh quá! 🚀';
+            else if (percent > 0) mascotSpeech.innerText = 'Giỏi lắm! Cố gắng lên nhé! 💪';
+        }
+
+        window.toggleMaster = function(index, btn) {
+            if (masteredSet.has(index)) { masteredSet.delete(index); }
+            else { masteredSet.add(index); }
+            renderCards();
+            updateProgress();
+        };
+
+        window.shuffleCards = function() {
+            vocabData.sort(() => Math.random() - 0.5);
+            masteredSet.clear();
+            currentCardIndex = 0;
+            renderCards();
+            updateProgress();
+        };
+
+        window.resetProgress = function() {
+            masteredSet.clear();
+            currentCardIndex = 0;
+            renderCards();
+            updateProgress();
+        };
+
+        renderCards();
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

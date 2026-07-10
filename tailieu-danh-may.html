@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Liệu - Hướng Dẫn Đánh Máy Tiếng Trung | EZHAN</title>
+    <meta name="description" content="Hướng dẫn chi tiết cài đặt và gõ bàn phím tiếng Trung trên máy tính và điện thoại - EZHAN">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: var(--bg-gradient); color: var(--text-color); font-family: 'Inter', sans-serif; }
+
+        .page-container {
+            max-width: 1200px !important;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 992px) {
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ── SECTION CARDS ── */
+        .guide-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .guide-card h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            border-bottom: 2px dashed var(--primary-light);
+            padding-bottom: 0.8rem;
+        }
+
+        .guide-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin: 1.2rem 0 0.6rem;
+        }
+
+        .guide-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            opacity: 0.85;
+            margin-bottom: 1rem;
+        }
+
+        /* ── STEPS ── */
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .step-num {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+
+        /* ── BADGES & KEYS ── */
+        .kbd-key {
+            background: #f1f3f4;
+            border: 1px solid #c1c3c4;
+            border-radius: 5px;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+            padding: 0.1rem 0.4rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #333;
+        }
+
+        .alert-box {
+            background: #e8f4fd;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .alert-box strong {
+            color: var(--primary-dark);
+        }
+
+        /* ── PUNCTUATION TABLE ── */
+        .punc-table-wrap {
+            overflow-x: auto;
+            margin-top: 1rem;
+            border-radius: 12px;
+            border: 1.5px solid var(--primary-light);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .punc-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            min-width: 500px;
+        }
+        .punc-table th, .punc-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1.5px solid var(--primary-light);
+        }
+        .punc-table tr:last-child td {
+            border-bottom: none;
+        }
+        .punc-table th {
+            background: #f5fafd;
+            font-weight: 700;
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--primary-light);
+        }
+        .punc-table th:nth-child(2), .punc-table td:nth-child(2) {
+            text-align: center;
+        }
+        .punc-table th:nth-child(1), .punc-table td:nth-child(1) {
+            width: 25%;
+        }
+        .punc-table th:nth-child(2), .punc-table td:nth-child(2) {
+            width: 35%;
+        }
+        .punc-table th:nth-child(3), .punc-table td:nth-child(3) {
+            width: 40%;
+        }
+
+        /* ── INTERACTIVE TYPING PRACTICE WIDGET ── */
+        .practice-widget {
+            background: linear-gradient(135deg, #ffffff, #f7fafc);
+            border: 2px solid var(--primary-light);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 2rem;
+            text-align: center;
+        }
+
+        .practice-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .practice-word-box {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .practice-target-cn {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: 2px;
+            margin-bottom: 0.4rem;
+        }
+
+        .practice-target-py {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-color);
+            opacity: 0.6;
+            margin-bottom: 0.2rem;
+        }
+
+        .practice-target-mean {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        .practice-input-container {
+            position: relative;
+            margin-bottom: 1.2rem;
+        }
+
+        .practice-input {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border: 2px solid var(--primary-light);
+            border-radius: 14px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            outline: none;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .practice-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(165, 207, 218, 0.25);
+        }
+
+        /* candidate box mimicking real IME */
+        .candidate-box {
+            background: white;
+            border: 1.5px solid var(--primary-light);
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 12px;
+            padding: 8px 16px;
+            overflow-x: auto;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .candidate-item {
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .candidate-item:hover {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
+
+        .candidate-item span {
+            color: var(--primary-dark);
+            margin-right: 4px;
+            font-size: 0.9rem;
+        }
+
+        /* Success & Feedback */
+        .feedback-msg {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.8rem 0;
+            min-height: 24px;
+            transition: all 0.2s;
+        }
+
+        .feedback-success { color: #27ae60; }
+        .feedback-error { color: #e74c3c; }
+
+        .progress-bar-container {
+            background: #edf2f7;
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 0.8rem;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            font-weight: 700;
+            opacity: 0.6;
+        }
+
+        .next-btn {
+            background: var(--primary-dark);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(91, 141, 156, 0.3);
+            margin-top: 0.5rem;
+        }
+        .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(91, 141, 156, 0.4);
+        }
+        .next-btn:disabled {
+            background: #ccc;
+            box-shadow: none;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* ── ILLUSTRATIVE MOCKUPS CSS ── */
+        .ime-mockup {
+            background: #f7fafc;
+            border: 1.5px solid var(--primary-light);
+            border-radius: 16px;
+            padding: 1.2rem;
+            margin: 1.2rem 0;
+            box-shadow: var(--shadow);
+            max-width: 450px;
+        }
+        .mock-input-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        .mock-label {
+            opacity: 0.6;
+        }
+        .mock-typed {
+            background: #edf2f7;
+            padding: 0.3rem 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            color: var(--primary-dark);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .mock-cursor {
+            animation: mockBlink 1.2s infinite;
+            color: var(--primary-dark);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .mock-candidate-bar {
+            display: flex;
+            gap: 12px;
+            background: white;
+            padding: 0.6rem 1rem;
+            border-radius: 10px;
+            border: 1.5px solid var(--primary-light);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            overflow-x: auto;
+        }
+        .mock-cand {
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-color);
+            white-space: nowrap;
+        }
+        .mock-cand span {
+            color: var(--primary-dark);
+            margin-right: 3px;
+        }
+        .mock-cand.active {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
+        @keyframes mockBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .keycap-visual-box {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: #f7fafc;
+            border: 1.5px solid var(--primary-light);
+            padding: 1.2rem 1.5rem;
+            border-radius: 16px;
+            margin: 1.2rem 0;
+            max-width: 450px;
+            box-shadow: var(--shadow);
+        }
+        .keycap-box {
+            background: linear-gradient(135deg, #ffffff, #e2e8f0);
+            border: 1px solid #cbd5e1;
+            border-bottom: 4px solid #94a3b8;
+            border-radius: 12px;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+            position: relative;
+            flex-shrink: 0;
+        }
+        .keycap-main {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #1e293b;
+            line-height: 1;
+            margin-top: 2px;
+        }
+        .keycap-sub {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            position: absolute;
+            top: 4px;
+            right: 6px;
+        }
+        .keycap-arrow {
+            font-size: 1.4rem;
+        }
+        .keycap-result-box {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .result-label {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+        .result-desc {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--text-color);
+        }
+        .result-code {
+            background: white;
+            border: 1.5px solid var(--primary-light);
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: monospace;
+            color: var(--primary-dark);
+        }
+
+        @media (max-width: 992px) {
+            .practice-widget {
+                position: relative !important;
+                top: 0 !important;
+                margin-top: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .doc-header h1 {
+                font-size: 1.6rem !important;
+            }
+            .doc-header p {
+                font-size: 0.85rem;
+            }
+            .guide-card {
+                padding: 1.2rem;
+                border-radius: 16px;
+            }
+            .guide-card h2 {
+                font-size: 1.2rem;
+            }
+            .practice-widget {
+                padding: 1.2rem;
+                border-radius: 20px;
+            }
+            .practice-target-cn {
+                font-size: 2.2rem;
+            }
+            .keycap-visual-box {
+                padding: 1rem;
+                gap: 1rem;
+            }
+            .keycap-box {
+                width: 48px;
+                height: 48px;
+            }
+            .keycap-main {
+                font-size: 1.25rem;
+            }
+            .punc-table th, .punc-table td {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+
+    <div class="page-container">
+        <a href="tailieu.html" class="back-btn">← Quay lại danh sách tài liệu</a>
+
+        <div class="doc-header" style="text-align: center; margin-bottom: 2rem;">
+            <h1 style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), #5B8D9C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">⌨️ Hướng Dẫn Đánh Máy Tiếng Trung</h1>
+            <p style="color: var(--text-color); opacity: 0.8;">Cẩm nang cài đặt bộ gõ và luyện tập gõ chữ Hán chuẩn Pinyin từ căn bản</p>
+        </div>
+
+        <div class="guide-grid">
+            <!-- CỘT TRÁI: NỘI DUNG HƯỚNG DẪN -->
+            <div>
+                <!-- CÀI ĐẶT BỘ GÕ -->
+                <div class="guide-card">
+                    <h2>⚙️ Cài Đặt Bộ Gõ Tiếng Trung (IME)</h2>
+                    <p>Để bắt đầu gõ tiếng Trung, bạn không cần cài thêm phần mềm ngoài nếu không thích, vì tất cả hệ điều hành lớn hiện nay đều đã tích hợp sẵn bàn phím tiếng Trung Pinyin.</p>
+
+                    <h3>1. Trên Windows 10 & 11</h3>
+                    <div class="step-list">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <p>Vào <strong>Settings (Cài đặt)</strong> → <strong>Time & Language</strong> → <strong>Language & region</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <p>Nhấn <strong>Add a language</strong>, nhập tìm kiếm <strong>"Chinese (Simplified, China)"</strong> (tiếng Trung giản thể).</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <p>Nhấn <strong>Next</strong> và cài đặt. Khi dùng, nhấn tổ hợp phím <kbd class="kbd-key">Windows</kbd> + <kbd class="kbd-key">Space</kbd> để chuyển đổi qua lại giữa tiếng Việt và tiếng Trung.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>2. Trên macOS</h3>
+                    <div class="step-list">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <p>Vào <strong>System Settings (Cài đặt hệ thống)</strong> → <strong>Keyboard (Bàn phím)</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <p>Tại mục <strong>Input Sources (Nguồn đầu vào)</strong>, nhấn dấu <kbd class="kbd-key">+</kbd>.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <p>Chọn <strong>Chinese, Simplified</strong> → chọn tiếp bộ gõ <strong>Pinyin - Simplified</strong> và nhấn <strong>Add</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>3. Trên Điện thoại (iOS / Android)</h3>
+                    <p>Vào <strong>Cài đặt bàn phím</strong> → <strong>Ngôn ngữ</strong> → <strong>Thêm bàn phím</strong> → Chọn <strong>Tiếng Trung (Giản thể) - Bính âm (Pinyin 12 phím hoặc QWERTY)</strong>. Khuyên dùng phần mềm bàn phím <strong>Gboard</strong> (Google) hoặc bộ gõ <strong>Sogou Pinyin</strong> nổi tiếng để có trải nghiệm đoán chữ thông minh nhất.</p>
+                </div>
+
+                <!-- QUY TẮC ĐÁNH MÁY -->
+                <div class="guide-card">
+                    <h2>✍️ Quy Tắc Gõ Tiếng Trung Bằng Pinyin</h2>
+                    <p>Nguyên lý hoạt động: Bạn gõ các chữ cái Latin đại diện cho phiên âm Pinyin của từ đó (không cần gõ dấu thanh điệu), bộ gõ sẽ hiển thị danh sách các chữ Hán có phiên âm đó để bạn lựa chọn.</p>
+
+                    <!-- Ảnh minh hoạ Bộ gõ IME bằng HTML/CSS -->
+                    <div class="ime-mockup">
+                        <div class="mock-input-row">
+                            <span class="mock-label">Bộ gõ (Pinyin):</span>
+                            <span class="mock-typed">nihao</span><span class="mock-cursor">|</span>
+                        </div>
+                        <div class="mock-candidate-bar">
+                            <div class="mock-cand active"><span>1.</span>你好</div>
+                            <div class="mock-cand"><span>2.</span>泥好</div>
+                            <div class="mock-cand"><span>3.</span>你号</div>
+                            <div class="mock-cand"><span>4.</span>拟好</div>
+                        </div>
+                    </div>
+
+                    <div class="alert-box">
+                        <strong>⚠️ Quy tắc cốt lõi về chữ Ü:</strong><br>
+                        Trên bàn phím máy tính không có phím <kbd class="kbd-key">ü</kbd>. Do đó, quy ước quốc tế quy định thay thế phím <kbd class="kbd-key">ü</kbd> bằng phím <strong><kbd class="kbd-key">v</kbd></strong>.
+                    </div>
+
+                    <!-- Ảnh minh hoạ phím v bằng HTML/CSS -->
+                    <div class="keycap-visual-box">
+                        <div class="keycap-box">
+                            <div class="keycap-main">V</div>
+                            <div class="keycap-sub">ü</div>
+                        </div>
+                        <div class="keycap-arrow">➡️</div>
+                        <div class="keycap-result-box">
+                            <div class="result-label">女 (nǚ) hoặc 绿 (lǜ)</div>
+                            <div class="result-desc">Cách gõ: <span class="result-code">nv</span> hoặc <span class="result-code">lv</span></div>
+                        </div>
+                    </div>
+
+                    <h3>Các mẹo tăng tốc độ gõ (Gõ tắt):</h3>
+                    <p>• <strong>Gõ cụm từ dài:</strong> Bạn có thể gõ liền mạch pinyin của cụm từ để bộ gõ tự ghép từ đúng. Ví dụ gõ <kbd class="kbd-key">zhongguo</kbd> → ra chữ <strong>中国</strong>.</p>
+                    <p>• <strong>Gõ ký tự viết tắt:</strong> Bạn chỉ cần gõ các chữ cái đầu tiên của các âm tiết. Ví dụ:<br>
+                    - Gõ <kbd class="kbd-key">zg</kbd> → hiện gợi ý <strong>中国 (Zhong Guo)</strong>.<br>
+                    - Gõ <kbd class="kbd-key">nh</kbd> → hiện gợi ý <strong>你好 (Ni Hao)</strong>.<br>
+                    - Gõ <kbd class="kbd-key">xxfx</kbd> → hiện gợi ý <strong>好好学习 (Hao Hao Xue Xi)</strong>.</p>
+                </div>
+
+                <!-- DẤU CÂU TRONG TIẾNG TRUNG -->
+                <div class="guide-card">
+                    <h2>💬 Hệ Thống Dấu Câu Tiếng Trung</h2>
+                    <p>Khi bật chế độ gõ tiếng Trung, các dấu câu thông thường trên bàn phím sẽ tự động chuyển sang ký tự đặc biệt tương ứng của chữ Hán:</p>
+                    <div class="punc-table-wrap">
+                        <table class="punc-table">
+                            <thead>
+                                <tr>
+                                    <th>Dấu câu gốc</th>
+                                    <th>Ký tự tiếng Trung</th>
+                                    <th>Tên gọi & Cách dùng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Phím <kbd class="kbd-key">.</kbd></td>
+                                    <td style="font-size: 1.2rem; font-weight: bold;">。</td>
+                                    <td>Dấu chấm câu (tròn rỗng ruột) kết thúc câu trần thuật.</td>
+                                </tr>
+                                <tr>
+                                    <td>Phím <kbd class="kbd-key">,</kbd></td>
+                                    <td style="font-size: 1.2rem; font-weight: bold;">，</td>
+                                    <td>Dấu phẩy (rộng hơn dấu phẩy thường) ngăn cách các vế câu.</td>
+                                </tr>
+                                <tr>
+                                    <td>Phím <kbd class="kbd-key">\</kbd></td>
+                                    <td style="font-size: 1.2rem; font-weight: bold;">、</td>
+                                    <td>Dấu phẩy liệt kê (Dấu chấm chéo), dùng để ngăn cách các từ cùng loại trong danh sách liệt kê.</td>
+                                </tr>
+                                <tr>
+                                    <td>Phím <kbd class="kbd-key">[</kbd> và <kbd class="kbd-key">]</kbd></td>
+                                    <td style="font-size: 1.1rem; font-weight: bold;">「 」 hoặc 『 』</td>
+                                    <td>Dấu ngoặc kép góc của chữ Hán, tương đương dấu ngoặc kép.</td>
+                                </tr>
+                                <tr>
+                                    <td>Phím <kbd class="kbd-key">?</kbd></td>
+                                    <td style="font-size: 1.2rem; font-weight: bold;">？</td>
+                                    <td>Dấu hỏi chấm full-width rộng hơn câu thông thường.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CỘT PHẢI: WIDGET LUYỆN GÕ TƯƠNG TÁC -->
+            <div>
+                <div class="practice-widget">
+                    <div class="practice-title">
+                        <span>⌨️ Luyện Gõ Tiếng Trung</span>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="practice-progress"></div>
+                    </div>
+                    <div class="progress-text" id="progress-txt">Từ 1 / 7</div>
+
+                    <div class="practice-word-box">
+                        <div class="practice-target-cn" id="word-cn">你好</div>
+                        <div class="practice-target-py" id="word-py">nǐ hǎo</div>
+                        <div class="practice-target-mean" id="word-mean">Xin chào</div>
+                    </div>
+
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 0.5rem; text-align: left;">
+                        👉 Hãy nhập Pinyin của từ phía trên (không cần dấu) vào ô bên dưới, sau đó click chọn chữ Hán gợi ý tương ứng hoặc nhấn các phím số <kbd class="kbd-key">1</kbd>, <kbd class="kbd-key">2</kbd>, <kbd class="kbd-key">3</kbd> để chọn chữ!
+                    </p>
+
+                    <div class="practice-input-container">
+                        <input type="text" class="practice-input" id="typing-input" autocomplete="off" placeholder="Nhập pinyin ở đây..." />
+                        
+                        <div class="candidate-box" id="candidates-container" style="display: none;">
+                            <!-- Candidates will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="feedback-msg" id="feedback-txt"></div>
+
+                    <button class="next-btn" id="next-btn" disabled>Câu tiếp theo →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DATA FOR TYPING PRACTICE
+        const practiceWords = [
+            { cn: '你好', py: 'nǐ hǎo', mean: 'Xin chào', key: 'nihao', candidates: ['你好', '泥好', '你号'] },
+            { cn: '中国', py: 'zhōng guó', mean: 'Trung Quốc', key: 'zhongguo', candidates: ['中国', '种过', '中过'] },
+            { cn: '谢谢', py: 'xiè xie', mean: 'Cảm ơn', key: 'xiexie', candidates: ['谢谢', '写写', '血血'] },
+            { cn: '学习', py: 'xué xí', mean: 'Học tập', key: 'xuexi', candidates: ['学习', '学校', '雪溪'] },
+            { cn: '绿', py: 'lǜ', mean: 'Màu xanh lá', key: 'lv', candidates: ['绿', '律', '旅'] },
+            { cn: '美女', py: 'měi nǚ', mean: 'Mỹ nữ (Cô gái đẹp)', key: 'meinv', candidates: ['美女', '煤女', '每女'] },
+            { cn: '再见', py: 'zài jiàn', mean: 'Tạm biệt', key: 'zaijian', candidates: ['再见', '在建', '灾减'] }
+        ];
+
+        let currentIndex = 0;
+        let answeredCorrectly = false;
+
+        const wordCnEl = document.getElementById('word-cn');
+        const wordPyEl = document.getElementById('word-py');
+        const wordMeanEl = document.getElementById('word-mean');
+        const typingInputEl = document.getElementById('typing-input');
+        const candidatesContainerEl = document.getElementById('candidates-container');
+        const feedbackTxtEl = document.getElementById('feedback-txt');
+        const nextBtnEl = document.getElementById('next-btn');
+        const progressBarEl = document.getElementById('practice-progress');
+        const progressTxtEl = document.getElementById('progress-txt');
+
+        function initWord() {
+            const current = practiceWords[currentIndex];
+            wordCnEl.textContent = current.cn;
+            wordPyEl.textContent = current.py;
+            wordMeanEl.textContent = current.mean;
+            
+            typingInputEl.value = '';
+            typingInputEl.disabled = false;
+            typingInputEl.focus();
+            
+            candidatesContainerEl.style.display = 'none';
+            candidatesContainerEl.innerHTML = '';
+            
+            feedbackTxtEl.textContent = '';
+            feedbackTxtEl.className = 'feedback-msg';
+            
+            nextBtnEl.disabled = true;
+            answeredCorrectly = false;
+
+            // Update progress
+            const progressPercent = (currentIndex / practiceWords.length) * 100;
+            progressBarEl.style.width = `${progressPercent}%`;
+            progressTxtEl.textContent = `Từ ${currentIndex + 1} / ${practiceWords.length}`;
+        }
+
+        typingInputEl.addEventListener('input', (e) => {
+            if (answeredCorrectly) return;
+            const val = e.target.value.trim().toLowerCase();
+            const current = practiceWords[currentIndex];
+
+            if (val === current.key) {
+                // Show candidates
+                showCandidates(current.candidates);
+            } else {
+                candidatesContainerEl.style.display = 'none';
+            }
+        });
+
+        // Add key listener for 1, 2, 3 selection keys
+        typingInputEl.addEventListener('keydown', (e) => {
+            if (answeredCorrectly) return;
+            if (candidatesContainerEl.style.display === 'flex' || candidatesContainerEl.style.display === 'none') {
+                const candidates = practiceWords[currentIndex].candidates;
+                if (e.key === '1') {
+                    selectCandidate(candidates[0]);
+                    e.preventDefault();
+                } else if (e.key === '2') {
+                    selectCandidate(candidates[1]);
+                    e.preventDefault();
+                } else if (e.key === '3') {
+                    selectCandidate(candidates[2]);
+                    e.preventDefault();
+                }
+            }
+        });
+
+        function showCandidates(candidates) {
+            candidatesContainerEl.innerHTML = '';
+            candidates.forEach((cand, idx) => {
+                const item = document.createElement('div');
+                item.className = 'candidate-item';
+                item.innerHTML = `<span>${idx + 1}.</span>${cand}`;
+                item.onclick = () => selectCandidate(cand);
+                candidatesContainerEl.appendChild(item);
+            });
+            candidatesContainerEl.style.display = 'flex';
+        }
+
+        function selectCandidate(selectedCn) {
+            const current = practiceWords[currentIndex];
+            typingInputEl.value = selectedCn;
+            typingInputEl.disabled = true;
+            candidatesContainerEl.style.display = 'none';
+
+            if (selectedCn === current.cn) {
+                feedbackTxtEl.textContent = '🎉 Tuyệt vời! Bạn đã gõ chính xác.';
+                feedbackTxtEl.className = 'feedback-msg feedback-success';
+                answeredCorrectly = true;
+                nextBtnEl.disabled = false;
+                
+                // If it's the last word, update progress to 100%
+                if (currentIndex === practiceWords.length - 1) {
+                    progressBarEl.style.width = '100%';
+                }
+            } else {
+                feedbackTxtEl.textContent = '❌ Sai rồi! Hãy thử lại nhé.';
+                feedbackTxtEl.className = 'feedback-msg feedback-error';
+                
+                // Let them try again after 1.5s
+                setTimeout(() => {
+                    typingInputEl.disabled = false;
+                    typingInputEl.value = '';
+                    typingInputEl.focus();
+                    feedbackTxtEl.textContent = '';
+                }, 1200);
+            }
+        }
+
+        nextBtnEl.onclick = () => {
+            if (currentIndex < practiceWords.length - 1) {
+                currentIndex++;
+                initWord();
+            } else {
+                // Completed all
+                wordCnEl.textContent = '🏆';
+                wordPyEl.textContent = 'HOÀN THÀNH!';
+                wordMeanEl.textContent = 'Bạn đã nắm vững quy tắc gõ chữ Hán chuẩn!';
+                typingInputEl.style.display = 'none';
+                candidatesContainerEl.style.display = 'none';
+                feedbackTxtEl.textContent = 'Chúc mừng bạn đã hoàn thành bài thực hành gõ!';
+                feedbackTxtEl.className = 'feedback-msg feedback-success';
+                nextBtnEl.textContent = 'Luyện lại từ đầu 🔄';
+                nextBtnEl.disabled = false;
+                nextBtnEl.onclick = () => {
+                    currentIndex = 0;
+                    typingInputEl.style.display = 'block';
+                    nextBtnEl.textContent = 'Câu tiếp theo →';
+                    initWord();
+                };
+            }
+        };
+
+        // Initialize first word
+        initWord();
+    </script>
+</body>
+</html>

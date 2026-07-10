@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Liệu Học Tập | EZHAN</title>
+    <meta name="description" content="Tài liệu học tập tiếng Trung đầy đủ và chi tiết - EZHAN">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: var(--bg-gradient); color: var(--text-color); font-family: 'Inter', sans-serif; }
+        
+        .portal-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .portal-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+        .portal-header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-dark), #5B8D9C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.6rem;
+        }
+        .portal-header p {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 1.05rem;
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .doc-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .doc-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 6px;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .doc-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(138, 184, 197, 0.25);
+            border-color: var(--primary-light);
+        }
+
+        .doc-card:hover::before {
+            opacity: 1;
+        }
+
+        .doc-badge {
+            align-self: flex-start;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.4rem 0.8rem;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .doc-card h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 0.6rem;
+        }
+
+        .doc-card p {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            opacity: 0.75;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .doc-action {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            font-size: 0.95rem;
+            transition: gap 0.2s;
+        }
+
+        .doc-card:hover .doc-action {
+            gap: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .portal-container {
+                padding: 1rem 0;
+            }
+            .portal-header {
+                margin-bottom: 2rem;
+            }
+            .portal-header h1 {
+                font-size: 1.7rem;
+            }
+            .portal-header p {
+                font-size: 0.95rem;
+            }
+            .doc-card {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+            .doc-card h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    
+    <div class="page-container">
+        <a href="index.html" class="back-btn">← Quay lại trang chủ</a>
+
+        <div class="portal-container">
+            <div class="portal-header">
+                <h1>📚 Kho Tài Liệu Học Tập</h1>
+                <p>Tổng hợp các tài liệu tra cứu và hướng dẫn bổ ích cho người mới học tiếng Trung</p>
+            </div>
+
+            <div class="docs-grid">
+                <!-- TÀI LIỆU 1 -->
+                <a href="tailieu-pinyin.html" class="doc-card">
+                    <div>
+                        <h2>Bảng Phiên Âm Pinyin</h2>
+                        <p>Bảng tra cứu phụ âm và nguyên âm Pinyin đầy đủ, tích hợp chức năng nghe phát âm chuẩn với đầy đủ 4 thanh điệu.</p>
+                    </div>
+                    <div class="doc-action">
+                        Xem chi tiết tài liệu <span class="arrow">→</span>
+                    </div>
+                </a>
+
+                <!-- TÀI LIỆU 2 -->
+                <a href="tailieu-danh-may.html" class="doc-card">
+                    <div>
+                        <h2>Hướng Dẫn Đánh Máy</h2>
+                        <p>Hướng dẫn chi tiết cách cài đặt bàn phím, gõ chữ Hán, gõ thanh điệu, các mẹo gõ tắt nhanh và bộ gõ tiếng Trung trên máy tính & điện thoại.</p>
+                    </div>
+                    <div class="doc-action">
+                        Xem chi tiết tài liệu <span class="arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

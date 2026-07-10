@@ -178,6 +178,28 @@ main {
     .option-card {
         padding: 2rem;
     }
+
+    .home-logo-btn {
+        width: 48px;
+        height: 48px;
+        top: 12px;
+        left: 12px;
+        padding: 6px;
+    }
+
+    .page-container {
+        padding: 2rem 1rem !important;
+    }
+
+    .content-box {
+        padding: 2rem 1.2rem !important;
+        border-radius: 24px !important;
+    }
+
+    .back-btn {
+        margin-top: 3rem !important;
+        margin-bottom: 1.5rem !important;
+    }
 }
 
 /* Sub-page Specific */
