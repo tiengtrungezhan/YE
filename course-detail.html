@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Khóa Học - EZHAN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 2rem auto 0;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex: 0.8;
+            min-width: 250px;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            background: var(--primary-light);
+            border-color: var(--primary-color);
+        }
+
+        .social-card i {
+            font-size: 2rem;
+            color: var(--primary-dark);
+        }
+
+        .social-card.facebook i { color: #1877F2; }
+        .social-card.tiktok i { color: #000000; }
+        .social-card.zalo i { color: #0068FF; }
+        .social-card.youtube i { color: #FF0000; }
+
+        .curriculum-container {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 32px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--glass-border);
+            flex: 1.2;
+            min-width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .tabs-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 1rem;
+        }
+
+        .tab-btn {
+            padding: 0.6rem 1rem;
+            border-radius: 12px;
+            border: 1px solid #edf2f7;
+            background: #f8fafc;
+            color: var(--text-color);
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn:hover {
+            border-color: var(--primary-color);
+            background: #f0f7f9;
+        }
+
+        .curriculum-detail {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .curriculum-detail.active {
+            display: block;
+        }
+
+        .curriculum-detail h3 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .curriculum-detail p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .curriculum-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .curriculum-list li {
+            padding: 0.8rem 1.2rem;
+            background: #f8fafc;
+            border-radius: 14px;
+            border-left: 4px solid var(--primary-color);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .curriculum-list li strong {
+            color: var(--primary-dark);
+        }
+
+        @media (max-width: 992px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .social-links {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn">
+        <img src="mascot.png" alt="Home">
+    </a>
+    <div class="page-container">
+        <a href="course.html" class="back-btn"><i class="fas fa-arrow-left"></i> Quay lại trang khoá học</a>
+        
+        <div class="contact-header" style="margin-bottom: 3rem; text-align: center;">
+            <h1 style="color: var(--primary-dark); font-size: 2.5rem; margin-bottom: 1rem;">Chi Tiết Khóa Học & Lộ Trình</h1>
+            <p style="font-size: 1.1rem; opacity: 0.8;">Khám phá chương trình học chi tiết và kết nối hỗ trợ tư vấn 24/7.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info">
+                <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.5rem; text-align: center;">Thông Tin Liên Hệ</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/tiengtrungezhan.edu.vn" target="_blank" class="social-card facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@chang.chang334" target="_blank" class="social-card tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>Tiktok</span>
+                    </a>
+                    <a href="https://zalo.me/0818004397" target="_blank" class="social-card zalo">
+                        <i class="fas fa-comment-sms"></i>
+                        <span>Zalo</span>
+                    </a>
+                    <a href="https://www.youtube.com/@EZHANTIẾNGTRUNG" target="_blank" class="social-card youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+
+                <div style="margin-top: 1rem; background: var(--primary-light); padding: 1.5rem; border-radius: 20px; border-left: 5px solid var(--primary-dark);">
+                    <p style="font-weight: 600; color: var(--primary-dark);"><i class="fas fa-phone-alt"></i> Hotline/Zalo:</p>
+                    <p style="font-size: 1.2rem; font-weight: 700;">081 800 4397</p>
+                </div>
+
+                <div style="margin-top: 0.5rem; background: var(--primary-light); padding: 1.5rem; border-radius: 20px; border-left: 5px solid var(--primary-dark);">
+                    <p style="font-weight: 600; color: var(--primary-dark);"><i class="fas fa-envelope"></i> Email:</p>
+                    <p style="font-size: 1.2rem; font-weight: 700;"><a href="mailto:tiengtrungezhan@gmail.com" style="color: var(--text-color); text-decoration: none;">tiengtrungezhan@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- Right Side: Curriculum Details -->
+            <div class="curriculum-container">
+                <h2 style="color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 0.5rem; text-align: center;">Lộ Trình Học Chi Tiết</h2>
+                <div class="tabs-header" style="display: none;">
+                    <button class="tab-btn" id="tab-btn-hsk1" onclick="selectCourse('hsk1')">HSK 1 3.0</button>
+                    <button class="tab-btn" id="tab-btn-hsk2" onclick="selectCourse('hsk2')">HSK 2 3.0</button>
+                    <button class="tab-btn" id="tab-btn-hsk3" onclick="selectCourse('hsk3')">HSK 3 3.0</button>
+                    <button class="tab-btn" id="tab-btn-hsk4" onclick="selectCourse('hsk4')">HSK 4 3.0</button>
+                    <button class="tab-btn" id="tab-btn-hsk5" onclick="selectCourse('hsk5')">HSK 5 3.0</button>
+                    <button class="tab-btn" id="tab-btn-hsk6" onclick="selectCourse('hsk6')">HSK 6 3.0</button>
+                </div>
+
+                <!-- HSK 1 Curriculum -->
+                <div class="curriculum-detail" id="curriculum-hsk1">
+                    <h3>Khởi đầu vững chắc</h3>
+                    <p><strong>Lộ trình: 25 buổi.</strong> Xây dựng nền tảng phát âm chuẩn, nhận diện nét chữ Hán căn bản và giao tiếp đơn giản hàng ngày.</p>
+                    <ul class="curriculum-list">
+                        <li><strong>📍 3 buổi đầu:</strong> Toàn bộ phát âm tiếng Trung (Pinyin, thanh mẫu, vận mẫu, thanh điệu & biến điệu).</li>
+                        <li>
+                            <strong>📍 Bài 1-3:</strong>
+                            <div style="margin-left: 1rem; margin-top: 0.3rem;">
+                                • Các chủ đề giao tiếp: Chào hỏi, giới thiệu họ tên, quốc tịch<br>
+                                • Học đánh máy, quy tắc viết chữ Hán
+                            </div>
+                        </li>
+                        <li><strong>📍 Bài 4-6:</strong> Gia đình, số đếm (0-9999), cách đếm người, số điện thoại & phương thức liên lạc.</li>
+                        <li><strong>📍 Bài 7-9:</strong> Thời gian biểu (giờ đi làm/tan ca/lên lớp), nghề nghiệp & học tập ở trường.</li>
+                        <li><strong>📍 Bài 10-12:</strong> Mua sắm (đắt/rẻ), ăn uống (táo, bánh bao, trà...) & thời tiết (tuyết rơi).</li>
+                        <li><strong>📍 Bài 13-15:</strong> Gọi món tại quán ăn, rủ đi xem phim, sở thích & di chuyển ra sân bay.</li>
+                    </ul>
+                </div>
+
+                <!-- HSK 2 Curriculum -->
+                <div class="curriculum-detail" id="curriculum-hsk2">
+                    <h3>Nhập cuộc</h3>
+                    <p><strong>Lộ trình: 20 buổi.</strong> Mở rộng từ vựng giao tiếp thực tế, tự tin đàm thoại các chủ đề cơ bản và hiểu sâu cấu trúc ngữ pháp.</p>
+                    <ul class="curriculum-list">
+                        <li><strong>📍 Bài 1-3:</strong> Lập kế hoạch du lịch, thời tiết và cuộc sống hàng ngày.</li>
+                        <li><strong>📍 Bài 4-6:</strong> Thể thao, sức khỏe, mua sắm và ăn uống thực tế.</li>
+                        <li><strong>📍 Bài 7-9:</strong> Tìm đường, giao thông, công việc văn phòng và thói quen sinh hoạt.</li>
+                        <li><strong>📍 Bài 10-12:</strong> Thời tiết bốn mùa, trang phục phù hợp, sở thích và giải trí.</li>
+                        <li><strong>📍 Bài 13-15:</strong> Màu sắc, lựa chọn quà tặng, tiệc sinh nhật và giao tiếp xã hội nâng cao.</li>
+                    </ul>
+                </div>
+
+                <!-- HSK 3 Curriculum -->
+                <div class="curriculum-detail" id="curriculum-hsk3">
+                    <h3>Tăng tốc</h3>
+                    <p><strong>Lộ trình: 40 buổi.</strong> Tăng tốc phản xạ giao tiếp trôi chảy hơn, nắm vững ngữ pháp trung cấp và bắt đầu tự viết các đoạn văn ngắn.</p>
+                    <ul class="curriculum-list">
+                        <li><strong>📍 Bài 1-4:</strong> Du lịch trải nghiệm, đặt phòng khách sạn, hỏi và chỉ đường nâng cao.</li>
+                        <li><strong>📍 Bài 5-8:</strong> Hoạt động thể thao, kiểm tra sức khỏe và thói quen sinh hoạt lành mạnh.</li>
+                        <li><strong>📍 Bài 9-12:</strong> Công việc văn phòng, phỏng vấn xin việc, gặp gỡ đối tác và đồng nghiệp.</li>
+                        <li><strong>📍 Bài 13-16:</strong> Đi siêu thị mua sắm, thanh toán bằng thẻ/tiền mặt, lựa chọn quà tặng ý nghĩa.</li>
+                        <li><strong>📍 Bài 17-20:</strong> Đàm thoại xã giao nâng cao, chia sẻ sở thích cá nhân và viết đoạn văn trung cấp.</li>
+                    </ul>
+                </div>
+
+                <!-- HSK 4 Curriculum -->
+                <div class="curriculum-detail" id="curriculum-hsk4">
+                    <h3>Cất cánh</h3>
+                    <p><strong>Lộ trình: 50 buổi.</strong> Tự tin giao tiếp và thảo luận trên nhiều lĩnh vực học tập, công việc; đọc hiểu tốt các văn bản tiếng Trung phổ thông.</p>
+                    <ul class="curriculum-list">
+                        <li><strong>📍 Chủ đề 1:</strong> Thảo luận sâu về công việc, thuyết trình dự án và kỹ năng phỏng vấn xin việc chuyên nghiệp.</li>
+                        <li><strong>📍 Chủ đề 2:</strong> Đọc hiểu văn bản báo chí cơ bản, thảo luận về các hiện tượng xã hội phổ thông hàng ngày.</li>
+                        <li><strong>📍 Chủ đề 3:</strong> Tìm hiểu đời sống văn hóa, phong tục tập quán truyền thống Trung Hoa và các lễ hội lớn.</li>
+                        <li><strong>📍 Chủ đề 4:</strong> Luyện viết luận ngắn, diễn đạt quan điểm cá nhân mạch lạc sử dụng các từ liên kết phức tạp.</li>
+                    </ul>
+                </div>
+
+                <!-- HSK 5 Curriculum -->
+                <div class="curriculum-detail" id="curriculum-hsk5">
+                    <h3>Bay cao</h3>
+                    <p><strong>Lộ trình: 60 buổi.</strong> Làm chủ tiếng Trung cao cấp, dễ dàng đọc hiểu báo chí chuyên môn, xem phim không cần phụ đề và viết luận chuyên sâu.</p>
+                    <ul class="curriculum-list">
+                        <li><strong>📍 Chủ đề 1:</strong> Thảo luận chuyên sâu về các chủ đề kinh tế, văn hóa, khoa học và công nghệ hiện đại.</li>
+                        <li><strong>📍 Chủ đề 2:</strong> Đọc hiểu các báo chí chính thống, tạp chí học thuật tiếng Trung và các tác phẩm văn học ngắn.</li>
+                        <li><strong>📍 Chủ đề 3:</strong> Kỹ năng dịch thuật hai chiều Việt - Trung và Trung - Việt ứng dụng trong thực tế.</li>
+                        <li><strong>📍 Chủ đề 4:</strong> Viết báo cáo chuyên môn, luận văn ngắn thuyết trình chuyên nghiệp trước đám đông.</li>
+                    </ul>
+                </div>
+
+                <!-- HSK 6 Curriculum -->
+                <div class="curriculum-detail" id="curriculum-hsk6">
+                    <h3>Về đích</h3>
+                    <p><strong>Lộ trình: 80 buổi.</strong> Đạt đến trình độ thông thạo cao nhất, giao tiếp tự nhiên và linh hoạt như người bản xứ, tự tin thuyết trình chuyên môn.</p>
+                    <ul class="curriculum-list">
+                        <li><strong>📍 Chủ đề 1:</strong> Nghe hiểu toàn diện các bản tin thời sự, các buổi hội thảo quốc tế và phim ảnh không phụ đề.</li>
+                        <li><strong>📍 Chủ đề 2:</strong> Đọc hiểu sâu các tài liệu chuyên ngành, văn bản hợp đồng thương mại và tác phẩm văn học cổ điển.</li>
+                        <li><strong>📍 Chủ đề 3:</strong> Diễn đạt ý kiến trôi chảy, tranh luận sắc bén và tự nhiên trong mọi bối cảnh đời sống và học thuật.</li>
+                        <li><strong>📍 Chủ đề 4:</strong> Hoàn thiện kỹ năng viết luận văn dài, báo cáo tổng hợp và nghiên cứu tiếng Trung chuyên sâu.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching logic
+        function selectCourse(courseId) {
+            // Hide all curriculums
+            document.querySelectorAll('.curriculum-detail').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected curriculum
+            const targetEl = document.getElementById('curriculum-' + courseId);
+            if (targetEl) {
+                targetEl.classList.add('active');
+            }
+        }
+
+        // Initialize based on URL parameter
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const course = params.get('course') || 'hsk1';
+            selectCourse(course);
+        });
+    </script>
+</body>
+</html>

@@ -243,7 +243,7 @@
     "hanzi": "这",
     "pinyin": "zhè",
     "meaning": "đây, này",
-    "lesson": "3",
+    "lesson": "4",
     "type": "Đại từ",
     "ex_cn": "这是我的书。",
     "ex_py": "Zhè shì wǒ de shū.",
@@ -345,9 +345,9 @@
     "meaning": "ba",
     "lesson": "4",
     "type": "Số từ",
-    "ex_cn": "我数一，二，三。",
-    "ex_py": "Wǒ shǔ yī, èr, sān.",
-    "ex_vn": "Tôi đếm một, hai, ba."
+    "ex_cn": "一、二、三。",
+    "ex_py": "Yī, èr, sān.",
+    "ex_vn": "Một, hai, ba."
   },
   {
     "hanzi": "五",
@@ -533,8 +533,8 @@
     "hanzi": "多少",
     "pinyin": "duōshao",
     "meaning": "bao nhiêu",
-    "lesson": "6",
-    "type": "Danh từ",
+    "lesson": "4",
+    "type": "Đại từ",
     "ex_cn": "这件衣服多少钱？",
     "ex_py": "Zhè jiàn yīfu duōshao qián?",
     "ex_vn": "Chiếc áo này bao nhiêu tiền?"
@@ -1333,11 +1333,11 @@
     "hanzi": "呢",
     "pinyin": "ne",
     "meaning": "được dùng ở cuối câu hỏi",
-    "lesson": "11",
+    "lesson": "4",
     "type": "Trợ từ",
     "ex_cn": "我很好，你呢？",
     "ex_py": "Wǒ hěn hǎo, nǐ ne?",
-    "ex_vn": "Tôi rất tốt, còn bạn thì sao?"
+    "ex_vn": "Tôi rất khỏe, còn bạn?"
   },
   {
     "hanzi": "时候",
@@ -2233,7 +2233,7 @@
     "hanzi": "她",
     "pinyin": "tā",
     "meaning": "cô ấy, bà ấy",
-    "lesson": "3",
+    "lesson": "4",
     "type": "Đại từ",
     "ex_cn": "她是我的老师。",
     "ex_py": "Tā shì wǒ de lǎoshī.",
@@ -2278,5 +2278,205 @@
     "ex_cn": "你太忙了。",
     "ex_py": "Nǐ tài máng le.",
     "ex_vn": "Bạn bận quá."
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "số không",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "今天零度。",
+    "ex_py": "Jīntiān líng dù.",
+    "ex_vn": "Hôm nay không độ."
+  },
+  {
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "số 1",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "一、二、三。",
+    "ex_py": "Yī, èr, sān.",
+    "ex_vn": "Một, hai, ba."
+  },
+  {
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "số 2",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "一、二、三。",
+    "ex_py": "Yī, èr, sān.",
+    "ex_vn": "Một, hai, ba."
+  },
+  {
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "bốn",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "我们家有四口人。",
+    "ex_py": "Wǒmen jiā yǒu sì kǒu rén.",
+    "ex_vn": "Nhà chúng tôi có bốn người."
+  },
+  {
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "sáu",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "他今年六岁了。",
+    "ex_py": "Tā jīnnián liù suì le.",
+    "ex_vn": "Năm nay nó sáu tuổi rồi."
+  },
+  {
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "chín",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "九月十号是教师节。",
+    "ex_py": "Jiǔyuè shí hào shì Jiàoshījié.",
+    "ex_vn": "Ngày 10 tháng 9 là ngày Nhà giáo."
+  },
+  {
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "meaning": "hai (dùng trước lượng từ)",
+    "lesson": "4",
+    "type": "Số từ",
+    "ex_cn": "我有两个哥哥。",
+    "ex_py": "Wǒ yǒu liǎng gè gēge.",
+    "ex_vn": "Tôi có hai người anh trai."
+  },
+  {
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "meaning": "người (lượng từ chỉ thành viên gia đình)",
+    "lesson": "4",
+    "type": "Lượng từ",
+    "ex_cn": "你家有几口人？",
+    "ex_py": "Nǐ jiā yǒu jǐ kǒu rén?",
+    "ex_vn": "Nhà bạn có mấy người."
+  },
+  {
+    "hanzi": "没",
+    "pinyin": "méi",
+    "meaning": "không, chưa",
+    "lesson": "4",
+    "type": "Phó từ",
+    "ex_cn": "我没有弟弟。",
+    "ex_py": "Wǒ méiyǒu dìdi.",
+    "ex_vn": "Tôi không có em trai."
+  },
+  {
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "meaning": "mấy, vài",
+    "lesson": "4",
+    "type": "Đại từ",
+    "ex_cn": "你有几个孩子？",
+    "ex_py": "Nǐ yǒu jǐ gè háizi?",
+    "ex_vn": "Bạn có mấy đứa con?"
+  },
+  {
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "meaning": "mẹ, má",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "我妈妈是老师。",
+    "ex_py": "Wǒ māma shì lǎoshī.",
+    "ex_vn": "Mẹ tôi là giáo viên."
+  },
+  {
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "meaning": "em trai",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "他是我弟弟。",
+    "ex_py": "Tā shì wǒ dìdi.",
+    "ex_vn": "Cậu ấy là em trai tôi."
+  },
+  {
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "meaning": "em gái",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "我有两个妹妹。",
+    "ex_py": "Wǒ yǒu liǎng gè mèimei.",
+    "ex_vn": "Tôi có hai người em gái."
+  },
+  {
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "và, với",
+    "lesson": "4",
+    "type": "Liên từ",
+    "ex_cn": "爸爸和妈妈都在家。",
+    "ex_py": "Bàba hé māma dōu zài jiā.",
+    "ex_vn": "Bố và mẹ đều ở nhà."
+  },
+  {
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "meaning": "con gái",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "她是我女儿。",
+    "ex_py": "Tā shì wǒ nǚ'ér.",
+    "ex_vn": "Con bé là con gái tôi."
+  },
+  {
+    "hanzi": "多大",
+    "pinyin": "duō dà",
+    "meaning": "bao nhiêu tuổi",
+    "lesson": "4",
+    "type": "Cụm từ",
+    "ex_cn": "你女儿今年多大？",
+    "ex_py": "Nǐ nǚ'ér jīnnián duō dà?",
+    "ex_vn": "Con gái bạn năm nay bao nhiêu tuổi?"
+  },
+  {
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "meaning": "tuổi",
+    "lesson": "4",
+    "type": "Lượng từ",
+    "ex_cn": "女儿今年五岁了。",
+    "ex_py": "Nǚ'ér jīnnián wǔ suì le.",
+    "ex_vn": "Con gái năm nay năm tuổi rồi."
+  },
+  {
+    "hanzi": "是的",
+    "pinyin": "shìde",
+    "meaning": "vâng, phải, đúng vậy",
+    "lesson": "4",
+    "type": "Cụm từ",
+    "ex_cn": "是的，他是我儿子。",
+    "ex_py": "Shìde, tā shì wǒ érzi.",
+    "ex_vn": "Vâng, nó là con trai tôi."
+  },
+  {
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "anh ấy, cậu ấy",
+    "lesson": "4",
+    "type": "Đại từ",
+    "ex_cn": "他是我的好朋友。",
+    "ex_py": "Tā shì wǒ de hǎo péngyou.",
+    "ex_vn": "Cậu ấy là bạn tốt của tôi."
+  },
+  {
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "hôm nay",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "今天星期二。",
+    "ex_py": "Jīntiān Xīngqī'èr.",
+    "ex_vn": "Hôm nay là thứ Ba."
   }
 ]
