@@ -90,26 +90,6 @@
     "type": "Động từ"
   },
   {
-    "hanzi": "新",
-    "pinyin": "xīn",
-    "meaning": "mới",
-    "lesson": "1",
-    "ex_cn": "这是我的新自行车。",
-    "ex_py": "Zhè shì wǒ de xīn zìxíngchē.",
-    "ex_vn": "Đây là xe đạp mới của tôi.",
-    "type": "Tính từ"
-  },
-  {
-    "hanzi": "它",
-    "pinyin": "tā",
-    "meaning": "nó",
-    "lesson": "1",
-    "ex_cn": "它的眼睛很漂亮。",
-    "ex_py": "Tā de yǎnjing hěn piàoliang.",
-    "ex_vn": "Mắt của nó rất đẹp.",
-    "type": "Đại từ"
-  },
-  {
     "hanzi": "眼睛",
     "pinyin": "yǎnjing",
     "meaning": "mắt",
@@ -2308,16 +2288,6 @@
     "ex_cn": "虽然很累，但我很高兴。",
     "ex_py": "Suīrán hěn lèi, dàn wǒ hěn gāoxìng.",
     "ex_vn": "Tuy mệt nhưng tôi rất vui."
-  },
-  {
-    "hanzi": "日",
-    "pinyin": "rì",
-    "meaning": "ngày",
-    "lesson": "15",
-    "type": "Danh từ",
-    "ex_cn": "一月一日。",
-    "ex_py": "Yīyuè yīrì.",
-    "ex_vn": "Ngày một tháng Một."
   },
   {
     "hanzi": "新年",

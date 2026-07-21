@@ -1669,5 +1669,40 @@
     "pinyin": "diǎn",
     "meaning": "giờ, dấu chấm (phồn thể)",
     "mnemonic": "Chữ phồn thể của 点 thể hiện việc chấm vết mực đen."
+  },
+  "真": {
+    "strokes": 10,
+    "radical": "目",
+    "pinyin": "zhēn",
+    "meaning": "thật, chân thật",
+    "mnemonic": "Mắt (mục 目) nhìn rõ mười (thập 十) phương tám (bát 八) hướng chân thật không dối lừa."
+  },
+  "新": {
+    "strokes": 13,
+    "radical": "斤",
+    "pinyin": "xīn",
+    "meaning": "mới",
+    "mnemonic": "Dùng rìu (cân 斤) đốn cây (mộc 木) dựng nhà đứng vững (lập 立) tạo nên khởi đầu mới."
+  },
+  "息": {
+    "strokes": 10,
+    "radical": "心",
+    "pinyin": "xī",
+    "meaning": "hơi thở, nghỉ ngơi",
+    "mnemonic": "Tự (自) bản thân điều hòa hơi thở từ sâu trong tim (tâm 心)."
+  },
+  "休": {
+    "strokes": 6,
+    "radical": "亻",
+    "pinyin": "xiū",
+    "meaning": "nghỉ ngơi",
+    "mnemonic": "Người (nhân 亻) đứng tựa vào gốc cây (mộc 木) để nghỉ ngơi."
+  },
+  "条": {
+    "strokes": 7,
+    "radical": "木",
+    "pinyin": "tiáo",
+    "meaning": "sợi, dải, cành cây",
+    "mnemonic": "Dải cây (mộc 木) có cành lá rủ xuống bên dưới."
   }
 }
