@@ -420,16 +420,6 @@
     "ex_vn": "Xin hãy xem một chút."
   },
   {
-    "hanzi": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "sữa bò",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他喝牛奶。",
-    "ex_py": "Tā hē niúnǎi.",
-    "ex_vn": "Anh ấy uống sữa."
-  },
-  {
     "hanzi": "房间",
     "pinyin": "fángjiān",
     "meaning": "phòng",
@@ -938,16 +928,6 @@
     "ex_cn": "我不吃羊肉。",
     "ex_py": "Wǒ bù chī yángròu.",
     "ex_vn": "Tôi không ăn thịt dê."
-  },
-  {
-    "hanzi": "好吃",
-    "pinyin": "hǎochī",
-    "meaning": "ngon",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "很好吃。",
-    "ex_py": "Hěn hǎochī.",
-    "ex_vn": "Rất ngon."
   },
   {
     "hanzi": "面条",
@@ -1648,16 +1628,6 @@
     "ex_cn": "他正在睡觉。",
     "ex_py": "Tā zhèngzài shuìjiào.",
     "ex_vn": "Anh ấy đang ngủ."
-  },
-  {
-    "hanzi": "手机",
-    "pinyin": "shǒujī",
-    "meaning": "điện thoại di động",
-    "lesson": "10",
-    "type": "Danh từ",
-    "ex_cn": "我的手机。",
-    "ex_py": "Wǒ de shǒujī.",
-    "ex_vn": "Điện thoại của tôi."
   },
   {
     "hanzi": "洗",

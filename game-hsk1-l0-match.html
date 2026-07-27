@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Truy Tìm Cặp Đôi - HSK 1 3.0 Bài 5</title>
+    <title>Truy Tìm Cặp Đôi - HSK 1 3.0 Bài 0</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body { background: #fdf2f8; }
@@ -101,7 +101,7 @@
     <div class="page-container">
         <a href="game-hsk1.html" class="back-btn">← Quay lại</a>
         <div class="game-container">
-            <h1 style="color: var(--primary-dark); margin-bottom: 1rem;">Truy Tìm Cặp Đôi: Bài 5</h1>
+            <h1 style="color: var(--primary-dark); margin-bottom: 1rem;">Truy Tìm Cặp Đôi: Bài 0</h1>
             <div class="stats">
                 <div>Lượt: <span id="moves">0</span></div>
                 <div>Thời gian: <span id="timer">0</span>s</div>
@@ -118,7 +118,7 @@
     </div>
 
     <script>
-        const allVocabulary = [{"hanzi": "菜", "pinyin": "cài", "meaning": "món ăn, thức ăn", "lesson": "5", "type": "Động từ", "ex_cn": "越南菜很好。", "ex_py": "Yuènán cài hěn hǎo.", "ex_vn": "Món ăn Việt Nam rất ngon."}, {"hanzi": "面条儿", "pinyin": "miàntiáor", "meaning": "mì, sợi mì", "type": "Danh từ", "ex_cn": "我喜欢吃面条儿。", "ex_py": "Wǒ xǐhuan chī miàntiáor.", "ex_vn": "Tôi thích ăn mì.", "lesson": "5"}, {"hanzi": "休息", "pinyin": "xiūxi", "meaning": "nghỉ ngơi", "lesson": "5", "type": "Động từ", "ex_cn": "请休息。", "ex_py": "Qǐng xiūxi.", "ex_vn": "Xin hãy nghỉ ngơi."}, {"hanzi": "星期天", "pinyin": "xīngqītiān", "meaning": "Chủ nhật", "lesson": "5", "type": "Bổ sung 3.0", "ex_cn": "我每星期天都去超市。", "ex_py": "Wǒ měi xīngqītiān dōu qù chāoshì.", "ex_vn": "Mỗi chủ nhật tôi đều đi siêu thị."}, {"hanzi": "喜欢", "pinyin": "xǐhuan", "meaning": "thích", "lesson": "5", "type": "Danh từ", "ex_cn": "我很喜欢吃中国菜。", "ex_py": "Wǒ hěn xǐhuan chī Zhōngguó cài.", "ex_vn": "Tôi rất thích ăn món ăn Trung Quốc."}, {"hanzi": "月", "pinyin": "yuè", "meaning": "tháng", "lesson": "5", "type": "Danh từ", "ex_cn": "现在是三月。", "ex_py": "Xiànzài shì Sānyuè.", "ex_vn": "Bây giờ là tháng Ba."}, {"hanzi": "做饭", "pinyin": "zuòfàn", "meaning": "nấu cơm", "lesson": "5", "type": "Bổ sung 3.0", "ex_cn": "妈妈正在厨房做饭。", "ex_py": "Māma zhèngzài chúfáng zuòfàn.", "ex_vn": "Mẹ đang nấu cơm trong bếp."}, {"hanzi": "下班", "pinyin": "xiàbān", "meaning": "tan làm", "lesson": "5", "type": "Bổ sung 3.0", "ex_cn": "我每天五点下班回家。", "ex_py": "Wǒ měitiān wǔ diǎn xiàbān huí jiā.", "ex_vn": "Mỗi ngày tôi tan làm lúc 5 giờ về nhà."}, {"hanzi": "真", "pinyin": "zhēn", "meaning": "thật", "lesson": "5", "type": "Phó từ", "ex_cn": "真好！", "ex_py": "Zhēn hǎo!", "ex_vn": "Thật tốt!"}, {"hanzi": "昨天", "pinyin": "zuótiān", "meaning": "hôm qua", "lesson": "5", "type": "Danh từ", "ex_cn": "昨天星期三。", "ex_py": "Zuótiān xīngqīsān.", "ex_vn": "Hôm qua là thứ Tư."}, {"hanzi": "今天", "pinyin": "jīntiān", "meaning": "hôm nay", "lesson": "5", "type": "Danh từ", "ex_cn": "今天星期二。", "ex_py": "Jīntiān Xīngqī'èr.", "ex_vn": "Hôm nay là thứ Ba."}, {"hanzi": "号", "pinyin": "hào", "meaning": "ngày, số", "lesson": "5", "type": "Danh từ", "ex_cn": "今天是十号。", "ex_py": "Jīntiān` shí hào.", "ex_vn": "Hôm nay là ngày mười."}, {"hanzi": "日", "pinyin": "rì", "meaning": "ngày", "lesson": "5", "type": "Danh từ", "ex_cn": "一月一日。", "ex_py": "Yīyuè yīrì.", "ex_vn": "Ngày một tháng Một."}, {"hanzi": "星期", "pinyin": "xīngqī", "meaning": "tuần, thứ", "lesson": "5", "type": "Danh từ", "ex_cn": "今天星期几？", "ex_py": "Jīntiān xīngqī jǐ?", "ex_vn": "Hôm nay là thứ mấy?"}, {"hanzi": "会", "pinyin": "huì", "meaning": "biết (qua học tập)", "lesson": "5", "type": "Động từ", "ex_cn": "我会说汉语。", "ex_py": "Wǒ huì shuō Hànyǔ.", "ex_vn": "Tôi biết nói tiếng Trung."}, {"hanzi": "饺子", "pinyin": "jiǎozi", "meaning": "sủi cảo", "lesson": "5", "type": "Danh từ", "ex_cn": "我喜欢吃饺子。", "ex_py": "Wǒ xǐhuan chī jiǎozi.", "ex_vn": "Tôi thích ăn sủi cảo."}, {"hanzi": "电脑", "pinyin": "diànnǎo", "meaning": "máy tính", "lesson": "5", "type": "Danh từ", "ex_cn": "这是我的电脑。", "ex_py": "Zhè shì wǒ de diànnǎo.", "ex_vn": "Đây là máy tính của tôi."}, {"hanzi": "好看", "pinyin": "hǎokàn", "meaning": "đẹp, hay", "lesson": "5", "type": "Tính từ", "ex_cn": "这本书很好看。", "ex_py": "Zhè běn shū hěn hǎokàn.", "ex_vn": "Cuốn sách này rất hay."}, {"hanzi": "它", "pinyin": "tā", "meaning": "nó", "lesson": "5", "ex_cn": "它的眼睛很漂亮。", "ex_py": "Tā de yǎnjing hěn piàoliang.", "ex_vn": "Mắt của nó rất đẹp.", "type": "Đại từ"}, {"hanzi": "新", "pinyin": "xīn", "meaning": "mới", "lesson": "5", "ex_cn": "这是我的新自行车。", "ex_py": "Zhè shì wǒ de xīn zìxíngchē.", "ex_vn": "Đây là xe đạp mới của tôi.", "type": "Tính từ"}];
+        const allVocabulary = [{"hanzi": "一些", "pinyin": "yìxiē", "meaning": "một số, một vài", "lesson": "0", "type": "Bổ sung 3.0", "ex_cn": "买一些水果。", "ex_py": "Mǎi yìxiē shuǐguǒ.", "ex_vn": "Mua một ít hoa quả."}, {"hanzi": "西安饭店", "pinyin": "Xī'ān Fàndiàn", "meaning": "Nhà hàng Tây An", "type": "Danh từ riêng", "ex_cn": "我们在西安饭店吃饭。", "ex_py": "Wǒmen zài Xī'ān Fàndiàn chīfàn.", "ex_vn": "Chúng tôi ăn cơm ở nhà hàng Tây An.", "lesson": "0"}];
         let remainingWords = [...allVocabulary];
         let currentRoundWords = [];
         let cardsData = [];

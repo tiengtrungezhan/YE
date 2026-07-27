@@ -233,7 +233,7 @@
     "hanzi": "想",
     "pinyin": "xiǎng",
     "meaning": "muốn",
-    "lesson": "3",
+    "lesson": "6",
     "type": "Động từ",
     "ex_cn": "我想去学校。",
     "ex_py": "Wǒ xiǎng qù xuéxiào.",
@@ -453,7 +453,7 @@
     "hanzi": "一些",
     "pinyin": "yìxiē",
     "meaning": "một số, một vài",
-    "lesson": "6",
+    "lesson": "0",
     "type": "Bổ sung 3.0",
     "ex_cn": "买一些水果。",
     "ex_py": "Mǎi yìxiē shuǐguǒ.",
@@ -487,7 +487,7 @@
     "ex_cn": "我们在西安饭店吃饭。",
     "ex_py": "Wǒmen zài Xī'ān Fàndiàn chīfàn.",
     "ex_vn": "Chúng tôi ăn cơm ở nhà hàng Tây An.",
-    "lesson": "6"
+    "lesson": "0"
   },
   {
     "hanzi": "包子",
@@ -563,7 +563,7 @@
     "hanzi": "明天",
     "pinyin": "míngtiān",
     "meaning": "ngày mai",
-    "lesson": "5",
+    "lesson": "6",
     "type": "Danh từ",
     "ex_cn": "明天去学校。",
     "ex_py": "Míngtiān qù xuéxiào.",
@@ -603,7 +603,7 @@
     "hanzi": "怎么",
     "pinyin": "zěnme",
     "meaning": "thế nào, làm sao",
-    "lesson": "2",
+    "lesson": "6",
     "type": "Đại từ",
     "ex_cn": "怎么称呼您？",
     "ex_py": "Zěnme chēnghu nín?",
@@ -1293,7 +1293,7 @@
     "hanzi": "出租车",
     "pinyin": "chūzūchē",
     "meaning": "taxi",
-    "lesson": "11",
+    "lesson": "6",
     "type": "Danh từ",
     "ex_cn": "我们坐出租车。",
     "ex_py": "Wǒmen zuò chūzūchē.",
@@ -2568,5 +2568,115 @@
     "ex_py": "Zhè shì wǒ de xīn zìxíngchē.",
     "ex_vn": "Đây là xe đạp mới của tôi.",
     "type": "Tính từ"
+  },
+  {
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "meaning": "điện thoại di động",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "我的手机。",
+    "ex_py": "Wǒ de shǒujī.",
+    "ex_vn": "Điện thoại của tôi."
+  },
+  {
+    "hanzi": "电话",
+    "pinyin": "diànhuà",
+    "meaning": "điện thoại",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "这是你的电话吗？",
+    "ex_py": "Zhè shì nǐ de diànhuà ma?",
+    "ex_vn": "Đây là điện thoại của bạn phải không?"
+  },
+  {
+    "hanzi": "号码",
+    "pinyin": "hàomǎ",
+    "meaning": "số điện thoại, số",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "请告诉我你的电话号码。",
+    "ex_py": "Qǐng gàosu wǒ nǐ de diànhuà hàomǎ.",
+    "ex_vn": "Xin hãy cho tôi biết số điện thoại của bạn."
+  },
+  {
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "đi",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "你去哪儿？",
+    "ex_py": "Nǐ qù nǎr?",
+    "ex_vn": "Bạn đi đâu thế?"
+  },
+  {
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "meaning": "ở đâu, chỗ nào",
+    "lesson": "6",
+    "type": "Đại từ",
+    "ex_cn": "超市在哪儿？",
+    "ex_py": "Chāoshì zài nǎr?",
+    "ex_vn": "Siêu thị ở đâu?"
+  },
+  {
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "mua",
+    "lesson": "6",
+    "type": "Động từ",
+    "ex_cn": "你想买什么？",
+    "ex_py": "Nǐ xiǎng mǎi shénme?",
+    "ex_vn": "Bạn muốn mua gì?"
+  },
+  {
+    "hanzi": "牛奶",
+    "pinyin": "niúnǎi",
+    "meaning": "sữa bò",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "他喝牛奶。",
+    "ex_py": "Tā hē niúnǎi.",
+    "ex_vn": "Anh ấy uống sữa."
+  },
+  {
+    "hanzi": "晚饭",
+    "pinyin": "wǎnfàn",
+    "meaning": "bữa tối, cơm tối",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "我们去吃晚饭吧。",
+    "ex_py": "Wǒmen qù chī wǎnfàn ba.",
+    "ex_vn": "Chúng ta đi ăn tối đi."
+  },
+  {
+    "hanzi": "那边",
+    "pinyin": "nàbiān",
+    "meaning": "phía bên kia, đằng kia",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "超市在那边。",
+    "ex_py": "Chāoshì zài nàbiān.",
+    "ex_vn": "Siêu thị ở đằng kia."
+  },
+  {
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "meaning": "ngon",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "很好吃。",
+    "ex_py": "Hěn hǎochī.",
+    "ex_vn": "Rất ngon."
+  },
+  {
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "meaning": "cơm",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "我想吃米饭。",
+    "ex_py": "Wǒ xiǎng chī mǐfàn.",
+    "ex_vn": "Tôi muốn ăn cơm."
   }
 ]
