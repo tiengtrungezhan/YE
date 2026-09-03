@@ -1,413 +1,1373 @@
 [
   {
-    "hanzi": "不客气",
-    "pinyin": "bú kèqi",
-    "meaning": "đừng khách sáo",
-    "lesson": "1",
-    "ex_cn": "不客气。",
-    "ex_py": "Bú kèqi.",
-    "ex_vn": "Đừng khách sáo.",
-    "type": "Phó từ"
-  },
-  {
-    "hanzi": "们",
-    "pinyin": "men",
-    "meaning": "các (số nhiều)",
-    "lesson": "3",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "我们都是学生。",
-    "ex_py": "Wǒmen dōu shì xuésheng.",
-    "ex_vn": "Chúng tôi đều là học sinh."
-  },
-  {
     "hanzi": "你",
     "pinyin": "nǐ",
-    "meaning": "bạn, anh, chị",
+    "meaning": "bạn",
     "lesson": "1",
+    "type": "đại từ nhân xưng",
     "ex_cn": "你好！",
-    "ex_py": "Nǐ hǎo!",
-    "ex_vn": "Chào bạn!",
-    "type": "Đại từ"
+    "ex_py": "nǐ hǎo!",
+    "ex_vn": "Xin chào!"
   },
   {
-    "hanzi": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "xin chào",
+    "hanzi": "您",
+    "pinyin": "nín",
+    "meaning": "ngài, ông, bà...",
     "lesson": "1",
-    "ex_cn": "你好，我叫李文。",
-    "ex_py": "Nǐ hǎo, wǒ jiào Lǐ Wén.",
-    "ex_vn": "Xin chào, tôi tên là Lý Văn.",
-    "type": "Cụm từ"
-  },
-  {
-    "hanzi": "你们",
-    "pinyin": "nǐmen",
-    "meaning": "các bạn, các anh, các chị",
-    "lesson": "1",
-    "ex_cn": "你们好！",
-    "ex_py": "Nǐmen hǎo!",
-    "ex_vn": "Xin chào các bạn!",
-    "type": "Đại từ"
-  },
-  {
-    "hanzi": "大家好",
-    "pinyin": "dàjiā hǎo",
-    "meaning": "xin chào mọi người",
-    "lesson": "1",
-    "ex_cn": "大家好，我是新同学。",
-    "ex_py": "Dàjiā hǎo, wǒ shì xīn tóngxué.",
-    "ex_vn": "Xin chào mọi người, tôi là bạn mới.",
-    "type": "Cụm từ"
-  },
-  {
-    "hanzi": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "cảm ơn",
-    "lesson": "1",
-    "ex_cn": "谢谢你！",
-    "ex_py": "Xièxie nǐ!",
-    "ex_vn": "Cảm ơn bạn!",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "同学",
-    "pinyin": "tóngxué",
-    "meaning": "bạn học, bạn cùng lớp",
-    "lesson": "1",
-    "ex_cn": "大家好，我是新同学。",
-    "ex_py": "Dàjiā hǎo, wǒ shì xīn tóngxué.",
-    "ex_vn": "Xin chào mọi người, tôi là bạn mới.",
-    "type": "Danh từ"
-  },
-  {
-    "hanzi": "学生",
-    "pinyin": "xuésheng",
-    "meaning": "học sinh",
-    "lesson": "1",
-    "type": "Động từ",
-    "ex_cn": "他是学生吗？",
-    "ex_py": "Tā shì xuésheng ma?",
-    "ex_vn": "Anh ấy là học sinh phải không?"
-  },
-  {
-    "hanzi": "不",
-    "pinyin": "bù",
-    "meaning": "không cần, không, đừng",
-    "lesson": "3",
-    "ex_cn": "我今天不去学校。",
-    "ex_py": "Wǒ jīntiān bù qù xuéxiào.",
-    "ex_vn": "Hôm nay tôi không đi học.",
-    "type": "Phó từ"
-  },
-  {
-    "hanzi": "对不起",
-    "pinyin": "duìbuqǐ",
-    "meaning": "xin lỗi",
-    "lesson": "2",
-    "ex_cn": "对不起。",
-    "ex_py": "Duìbuqǐ.",
-    "ex_vn": "Xin lỗi.",
-    "type": "Danh từ"
-  },
-  {
-    "hanzi": "高兴",
-    "pinyin": "gāoxìng",
-    "meaning": "vui, phấn khởi",
-    "lesson": "2",
-    "type": "Danh từ",
-    "ex_cn": "听到这个好消息，他非常高兴。",
-    "ex_py": "Tīng dào zhège hǎo xiāoxi, tā fēicháng gāoxìng.",
-    "ex_vn": "Nghe tin vui này, anh ấy vô cùng vui mừng."
-  },
-  {
-    "hanzi": "名字",
-    "pinyin": "míngzi",
-    "meaning": "tên",
-    "lesson": "2",
-    "type": "Danh từ",
-    "ex_cn": "你叫什么名字？",
-    "ex_py": "Nǐ jiào shénme míngzi?",
-    "ex_vn": "Bạn tên là gì?"
+    "type": "đại từ nhân xưng",
+    "ex_cn": "您好！",
+    "ex_py": "nín hǎo!",
+    "ex_vn": "Xin chào!"
   },
   {
     "hanzi": "我",
     "pinyin": "wǒ",
-    "meaning": "tôi, ta",
+    "meaning": "tôi",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "我是学生。",
+    "ex_py": "wǒ shì xuésheng.",
+    "ex_vn": "Tôi là học sinh"
+  },
+  {
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "anh ấy",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "他是我哥哥。",
+    "ex_py": "tā shì wǒ gēge.",
+    "ex_vn": "Anh ấy là anh trai tôi"
+  },
+  {
+    "hanzi": "她",
+    "pinyin": "tā",
+    "meaning": "cô ấy",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "她是我姐姐。",
+    "ex_py": "tā shì wǒ jiějie.",
+    "ex_vn": "Cô ấy là chị gái tôi"
+  },
+  {
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "meaning": "các bạn",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "你们是朋友吗？",
+    "ex_py": "nǐmen shì péngyou ma?",
+    "ex_vn": "Các bạn là bạn bè à?"
+  },
+  {
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "meaning": "chúng tôi, chúng ta",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "我们是好朋友。",
+    "ex_py": "wǒmen shì hǎo péngyou.",
+    "ex_vn": "Chúng tôi là bạn thân"
+  },
+  {
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "meaning": "bọn họ",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "他们是我同学。",
+    "ex_py": "tāmen shì wǒ tóngxué.",
+    "ex_vn": "Họ là bạn học của tôi"
+  },
+  {
+    "hanzi": "它",
+    "pinyin": "tā",
+    "meaning": "nó",
+    "lesson": "1",
+    "type": "đại từ nhân xưng",
+    "ex_cn": "它是我的小猫。",
+    "ex_py": "tā shì wǒ de xiǎomāo.",
+    "ex_vn": "Nó là mèo con của tôi"
+  },
+  {
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "meaning": "khoẻ, tốt, ngon, hay, được, ok...",
+    "lesson": "1",
+    "type": "tính từ",
+    "ex_cn": "我很好。",
+    "ex_py": "wǒ hěn hǎo.",
+    "ex_vn": "Tôi rất khỏe"
+  },
+  {
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "meaning": "thầy / cô giáo, giáo viên",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "这是我的老师。",
+    "ex_py": "zhè shì wǒ de lǎoshī.",
+    "ex_vn": "Đây là giáo viên của tôi"
+  },
+  {
+    "hanzi": "大",
+    "pinyin": "dà",
+    "meaning": "lớn, to",
+    "lesson": "1",
+    "type": "tính từ",
+    "ex_cn": "这个苹果很大。",
+    "ex_py": "zhège píngguǒ hěn dà.",
+    "ex_vn": "Quả táo này rất to"
+  },
+  {
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning": "nhà",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "这是我的家。",
+    "ex_py": "zhè shì wǒ de jiā.",
+    "ex_vn": "Đây là nhà của tôi"
+  },
+  {
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "meaning": "mọi người",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "大家好！",
+    "ex_py": "dàjiā hǎo!",
+    "ex_vn": "Xin chào mọi người!"
+  },
+  {
+    "hanzi": "学",
+    "pinyin": "xué",
+    "meaning": "học",
+    "lesson": "1",
+    "type": "động từ",
+    "ex_cn": "我学中文。",
+    "ex_py": "wǒ xué Zhōngwén.",
+    "ex_vn": "Tôi học tiếng Trung"
+  },
+  {
+    "hanzi": "学生",
+    "pinyin": "xuéshēng",
+    "meaning": "học sinh",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "我是学生。",
+    "ex_py": "wǒ shì xuésheng.",
+    "ex_vn": "Tôi là học sinh"
+  },
+  {
+    "hanzi": "大学",
+    "pinyin": "dàxué",
+    "meaning": "đại học",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "这是我的大学。",
+    "ex_py": "zhè shì wǒ de dàxué.",
+    "ex_vn": "Đây là trường đại học của tôi"
+  },
+  {
+    "hanzi": "大学生",
+    "pinyin": "dàxuéshēng",
+    "meaning": "sinh viên",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "我是大学生。",
+    "ex_py": "wǒ shì dàxuéshēng.",
+    "ex_vn": "Tôi là sinh viên"
+  },
+  {
+    "hanzi": "谢谢",
+    "pinyin": "xièxiè",
+    "meaning": "cảm ơn",
+    "lesson": "1",
+    "type": "Động từ",
+    "ex_cn": "谢谢你们。",
+    "ex_py": "xièxie nǐmen.",
+    "ex_vn": "Cảm ơn các bạn"
+  },
+  {
+    "hanzi": "不",
+    "pinyin": "bù",
+    "meaning": "không (phủ định)",
+    "lesson": "1",
+    "type": "phó từ",
+    "ex_cn": "我不是中国人。",
+    "ex_py": "wǒ bú shì Zhōngguó rén.",
+    "ex_vn": "Tôi không phải người Trung Quốc"
+  },
+  {
+    "hanzi": "不客气",
+    "pinyin": "bù kèqì",
+    "meaning": "đừng khách khí",
+    "lesson": "1",
+    "type": "Cụm từ",
+    "ex_cn": "谢谢你 - 不客气。",
+    "ex_py": "xièxie nǐ - bú kèqi.",
+    "ex_vn": "Cảm ơn bạn - Không có gì"
+  },
+  {
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "meaning": "bạn học",
+    "lesson": "1",
+    "type": "danh từ",
+    "ex_cn": "他是我同学。",
+    "ex_py": "tā shì wǒ tóngxué.",
+    "ex_vn": "Anh ấy là bạn học của tôi"
+  },
+  {
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "meaning": "tạm biệt",
+    "lesson": "1",
+    "type": "Cụm từ",
+    "ex_cn": "老师再见！",
+    "ex_py": "lǎoshī zàijiàn!",
+    "ex_vn": "Tạm biệt thầy/cô giáo!"
+  },
+  {
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "meaning": "xin, mời...",
     "lesson": "2",
-    "ex_cn": "我是越南留学生，在中国学习汉语。",
-    "ex_py": "Wǒ shì Yuènán liúxuéshēng, zài Zhōngguó xuéxí Hànyǔ.",
-    "ex_vn": "Tôi là lưu học sinh Việt Nam, đang học tiếng Trung ở Trung Quốc.",
-    "type": "Đại từ"
+    "type": "động từ",
+    "ex_cn": "我请你去吃饭。",
+    "ex_py": "wǒ qǐng nǐ qù chīfàn.",
+    "ex_vn": "Tôi mời bạn đi ăn cơm"
+  },
+  {
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "meaning": "hỏi",
+    "lesson": "2",
+    "type": "động từ",
+    "ex_cn": "我问你。",
+    "ex_py": "wǒ wèn nǐ.",
+    "ex_vn": "Tôi hỏi bạn"
+  },
+  {
+    "hanzi": "请问",
+    "pinyin": "qǐngwèn",
+    "meaning": "xin hỏi",
+    "lesson": "2",
+    "type": "Cụm từ",
+    "ex_cn": "请问，你是中国人吗？",
+    "ex_py": "qǐngwèn, nǐ shì Zhōngguó rén ma?",
+    "ex_vn": "Xin hỏi, bạn là người Trung Quốc à?"
+  },
+  {
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "meaning": "gọi, gọi là, tên là",
+    "lesson": "2",
+    "type": "động từ",
+    "ex_cn": "这个叫什么？",
+    "ex_py": "zhège jiào shénme?",
+    "ex_vn": "Cái này gọi là gì?"
+  },
+  {
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "meaning": "gì, cái gì",
+    "lesson": "2",
+    "type": "đại từ nghi vấn",
+    "ex_cn": "你叫什么名字？",
+    "ex_py": "nǐ jiào shénme míngzi?",
+    "ex_vn": "Bạn tên là gì?"
+  },
+  {
+    "hanzi": "名字",
+    "pinyin": "míngzì",
+    "meaning": "tên",
+    "lesson": "2",
+    "type": "danh từ",
+    "ex_cn": "你的名字是什么？",
+    "ex_py": "nǐ de míngzi shì shénme?",
+    "ex_vn": "Tên của bạn là gì?"
+  },
+  {
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "là",
+    "lesson": "2",
+    "type": "động từ",
+    "ex_cn": "这是我朋友。",
+    "ex_py": "zhè shì wǒ péngyou.",
+    "ex_vn": "Đây là bạn của tôi"
+  },
+  {
+    "hanzi": "是不是",
+    "pinyin": "shì bùshì",
+    "meaning": "có phải là ... không?",
+    "lesson": "2",
+    "type": "Cụm từ",
+    "ex_cn": "她是不是你同学？",
+    "ex_py": "tā shì bú shì nǐ tóngxué?",
+    "ex_vn": "Cô ấy có phải là bạn học của bạn không?"
+  },
+  {
+    "hanzi": "对",
+    "pinyin": "duì",
+    "meaning": "đúng, chính xác",
+    "lesson": "2",
+    "type": "tính từ",
+    "ex_cn": "对，我是中国人。",
+    "ex_py": "duì, wǒ shì Zhōngguó rén.",
+    "ex_vn": "Đúng, tôi là người Trung Quốc"
+  },
+  {
+    "hanzi": "对不起",
+    "pinyin": "duìbùqǐ",
+    "meaning": "xin lỗi",
+    "lesson": "2",
+    "type": "Cụm từ",
+    "ex_cn": "对不起你。",
+    "ex_py": "duìbuqǐ nǐ.",
+    "ex_vn": "Xin lỗi bạn"
+  },
+  {
+    "hanzi": "没关系",
+    "pinyin": "méiguānxì",
+    "meaning": "không vấn đề gì, không sao",
+    "lesson": "2",
+    "type": "Cụm từ",
+    "ex_cn": "",
+    "ex_py": "",
+    "ex_vn": ""
+  },
+  {
+    "hanzi": "事",
+    "pinyin": "shì",
+    "meaning": "chuyện, việc",
+    "lesson": "2",
+    "type": "danh từ",
+    "ex_cn": "什么事？",
+    "ex_py": "shénme shì?",
+    "ex_vn": "Chuyện gì?"
+  },
+  {
+    "hanzi": "没事",
+    "pinyin": "méishì",
+    "meaning": "không vấn đề gì, không sao",
+    "lesson": "2",
+    "type": "Cụm từ",
+    "ex_cn": "",
+    "ex_py": "",
+    "ex_vn": ""
+  },
+  {
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "rất",
+    "lesson": "2",
+    "type": "phó từ",
+    "ex_cn": "我很好。",
+    "ex_py": "wǒ hěn hǎo.",
+    "ex_vn": "Tôi rất khỏe"
+  },
+  {
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "meaning": "cao",
+    "lesson": "2",
+    "type": "tính từ",
+    "ex_cn": "他很高。",
+    "ex_py": "tā hěn gāo.",
+    "ex_vn": "Anh ấy rất cao"
+  },
+  {
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "meaning": "vui vẻ",
+    "lesson": "2",
+    "type": "tính từ",
+    "ex_cn": "我很高兴。",
+    "ex_py": "wǒ hěn gāoxìng.",
+    "ex_vn": "Tôi rất vui"
+  },
+  {
+    "hanzi": "认识",
+    "pinyin": "rènshí",
+    "meaning": "quen biết, làm quen",
+    "lesson": "2",
+    "type": "động từ",
+    "ex_cn": "你认识他吗？",
+    "ex_py": "nǐ rènshi tā ma?",
+    "ex_vn": "Bạn có biết anh ấy không?"
   },
   {
     "hanzi": "也",
     "pinyin": "yě",
     "meaning": "cũng",
-    "lesson": "3",
-    "ex_cn": "我也是学生。",
-    "ex_py": "Wǒ yěshì xuésheng.",
-    "ex_vn": "Tôi cũng là học sinh.",
-    "type": "Phó từ"
+    "lesson": "2",
+    "type": "phó từ",
+    "ex_cn": "我也很高兴。",
+    "ex_py": "wǒ yě hěn gāoxìng.",
+    "ex_vn": "Tôi cũng rất vui"
   },
   {
-    "hanzi": "法国",
-    "pinyin": "Fǎguó",
-    "meaning": "Pháp",
+    "hanzi": "人",
+    "pinyin": "rén",
+    "meaning": "người",
     "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "我们是法国人。",
-    "ex_py": "Wǒmen shì Fǎguó rén.",
-    "ex_vn": "Chúng tôi là người Pháp."
+    "type": "động từ",
+    "ex_cn": "这个人是谁？",
+    "ex_py": "zhège rén shì shéi?",
+    "ex_vn": "Người này là ai?"
   },
   {
-    "hanzi": "泰国",
-    "pinyin": "Tàiguó",
-    "meaning": "Thái Lan",
+    "hanzi": "的",
+    "pinyin": "de",
+    "meaning": "của",
     "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "她是泰国人。",
-    "ex_py": "Tā shì Tàiguó rén.",
-    "ex_vn": "Cô ấy là người Thái Lan."
+    "type": "trợ từ kết cấu",
+    "ex_cn": "我的爸爸。",
+    "ex_py": "wǒ de bàba.",
+    "ex_vn": "Bố của tôi"
   },
   {
     "hanzi": "中国",
-    "pinyin": "Zhōngguó",
+    "pinyin": "zhōngguó",
     "meaning": "Trung Quốc",
     "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他是中国人。",
-    "ex_py": "Tā shì Zhōngguó rén.",
-    "ex_vn": "Anh ấy là người Trung Quốc."
+    "type": "danh từ",
+    "ex_cn": "我是中国人。",
+    "ex_py": "wǒ shì Zhōngguó rén.",
+    "ex_vn": "Tôi là người Trung Quốc"
   },
   {
     "hanzi": "中文",
-    "pinyin": "Zhōngwén",
+    "pinyin": "zhōngwén",
     "meaning": "tiếng Trung",
     "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他的中文说得很好。",
-    "ex_py": "Tā de Zhōngwén shuō de hěn hǎo.",
-    "ex_vn": "Tiếng Trung của anh ấy nói rất tốt."
+    "type": "danh từ",
+    "ex_cn": "我学中文。",
+    "ex_py": "wǒ xué Zhōngwén.",
+    "ex_vn": "Tôi học tiếng Trung"
   },
   {
-    "hanzi": "对",
-    "pinyin": "duì",
-    "meaning": "đúng, đối với",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "meaning": "đây, này",
     "lesson": "3",
-    "type": "Tính từ",
-    "ex_cn": "你说对了。",
-    "ex_py": "Nǐ shuō duì le.",
-    "ex_vn": "Bạn nói đúng rồi."
+    "type": "đại từ chỉ thị",
+    "ex_cn": "这是什么？",
+    "ex_py": "zhè shì shénme?",
+    "ex_vn": "Đây là cái gì?"
+  },
+  {
+    "hanzi": "那",
+    "pinyin": "nà",
+    "meaning": "kia, đó",
+    "lesson": "3",
+    "type": "đại từ chỉ thị",
+    "ex_cn": "那是我朋友。",
+    "ex_py": "nà shì wǒ péngyou.",
+    "ex_vn": "Kia là bạn của tôi"
+  },
+  {
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "meaning": "ai",
+    "lesson": "3",
+    "type": "đại từ nghi vấn",
+    "ex_cn": "你是谁？",
+    "ex_py": "nǐ shì shéi?",
+    "ex_vn": "Bạn là ai?"
+  },
+  {
+    "hanzi": "朋友",
+    "pinyin": "péngyǒu",
+    "meaning": "bạn bè",
+    "lesson": "3",
+    "type": "danh từ",
+    "ex_cn": "这是我朋友。",
+    "ex_py": "zhè shì wǒ péngyou.",
+    "ex_vn": "Đây là bạn của tôi"
+  },
+  {
+    "hanzi": "男朋友",
+    "pinyin": "nán péngyǒu",
+    "meaning": "bạn trai",
+    "lesson": "3",
+    "type": "danh từ",
+    "ex_cn": "这是我男朋友。",
+    "ex_py": "zhè shì wǒ nán péngyou.",
+    "ex_vn": "Đây là bạn trai của tôi"
+  },
+  {
+    "hanzi": "女朋友",
+    "pinyin": "nǚ péngyǒu",
+    "meaning": "bạn gái",
+    "lesson": "3",
+    "type": "danh từ",
+    "ex_cn": "那是我女朋友。",
+    "ex_py": "nà shì wǒ nǚ péngyou.",
+    "ex_vn": "Kia là bạn gái của tôi"
+  },
+  {
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "meaning": "nào",
+    "lesson": "3",
+    "type": "đại từ chỉ thị",
+    "ex_cn": "你是哪国人？",
+    "ex_py": "nǐ shì nǎ guó rén?",
+    "ex_vn": "Bạn là người nước nào?"
   },
   {
     "hanzi": "国",
     "pinyin": "guó",
     "meaning": "nước, quốc gia",
     "lesson": "3",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "你是哪国人？",
-    "ex_py": "Nǐ shì nǎ guó rén?",
-    "ex_vn": "Bạn là người nước nào?"
+    "type": "danh từ",
+    "ex_cn": "",
+    "ex_py": "",
+    "ex_vn": ""
   },
   {
     "hanzi": "喂",
     "pinyin": "wèi",
     "meaning": "alo",
     "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "喂，你好。",
-    "ex_py": "Wèi, nǐ hǎo.",
-    "ex_vn": "A lô, chào bạn."
+    "type": "Thán từ",
+    "ex_cn": "喂，你是谁？",
+    "ex_py": "wèi, nǐ shì shéi?",
+    "ex_vn": "A lô, bạn là ai?"
   },
   {
-    "hanzi": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "chúng tôi, chúng ta",
+    "hanzi": "姐姐",
+    "pinyin": "jiějiě",
+    "meaning": "chị gái",
     "lesson": "3",
-    "type": "Đại từ",
-    "ex_cn": "我们都是学生。",
-    "ex_py": "Wǒmen dōu shì xuésheng.",
-    "ex_vn": "Chúng tôi đều là học sinh."
+    "type": "danh từ",
+    "ex_cn": "这是我姐姐。",
+    "ex_py": "zhè shì wǒ jiějie.",
+    "ex_vn": "Đây là chị gái của tôi"
+  },
+  {
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "meaning": "công việc / làm việc",
+    "lesson": "3",
+    "type": "danh từ / động từ",
+    "ex_cn": "你的工作是什么？",
+    "ex_py": "nǐ de gōngzuò shì shénme?",
+    "ex_vn": "Công việc của bạn là gì?"
+  },
+  {
+    "hanzi": "还",
+    "pinyin": "hái",
+    "meaning": "vẫn, vẫn còn",
+    "lesson": "3",
+    "type": "phó từ",
+    "ex_cn": "你还想我吗？",
+    "ex_py": "nǐ hái xiǎng wǒ ma?",
+    "ex_vn": "Bạn còn nhớ tôi không?"
+  },
+  {
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "meaning": "bận",
+    "lesson": "3",
+    "type": "tính từ / động từ",
+    "ex_cn": "我很忙。",
+    "ex_py": "wǒ hěn máng.",
+    "ex_vn": "Tôi rất bận"
+  },
+  {
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "meaning": "...không?",
+    "lesson": "3",
+    "type": "trợ từ nghi vấn",
+    "ex_cn": "你是老师吗？",
+    "ex_py": "nǐ shì lǎoshī ma?",
+    "ex_vn": "Bạn là giáo viên à?"
+  },
+  {
+    "hanzi": "太",
+    "pinyin": "tài",
+    "meaning": "quá, lắm",
+    "lesson": "3",
+    "type": "phó từ",
+    "ex_cn": "我工作太忙了。",
+    "ex_py": "wǒ gōngzuò tài máng le.",
+    "ex_vn": "Công việc của tôi quá bận"
   },
   {
     "hanzi": "想",
     "pinyin": "xiǎng",
-    "meaning": "muốn",
-    "lesson": "6",
-    "type": "Động từ",
-    "ex_cn": "我想去学校。",
-    "ex_py": "Wǒ xiǎng qù xuéxiào.",
-    "ex_vn": "Tôi muốn đến trường."
-  },
-  {
-    "hanzi": "这",
-    "pinyin": "zhè",
-    "meaning": "đây, này",
-    "lesson": "4",
-    "type": "Đại từ",
-    "ex_cn": "这是我的书。",
-    "ex_py": "Zhè shì wǒ de shū.",
-    "ex_vn": "Đây là cuốn sách của tôi."
-  },
-  {
-    "hanzi": "爸爸",
-    "pinyin": "bàba",
-    "meaning": "bố, cha",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "他是我爸爸。",
-    "ex_py": "Tā shì wǒ bàba.",
-    "ex_vn": "Anh ấy là bố tôi."
-  },
-  {
-    "hanzi": "八",
-    "pinyin": "bā",
-    "meaning": "số 8",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "他今年八岁，很聪明。",
-    "ex_py": "Tā jīnnián bā suì, hěn cōngming.",
-    "ex_vn": "Năm nay anh ấy tám tuổi, rất thông minh."
-  },
-  {
-    "hanzi": "百",
-    "pinyin": "bǎi",
-    "meaning": "trăm",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "一百块。",
-    "ex_py": "Yìbǎi kuài.",
-    "ex_vn": "Một trăm đồng."
-  },
-  {
-    "hanzi": "个",
-    "pinyin": "gè",
-    "meaning": "cái",
-    "lesson": "4",
-    "type": "Lượng từ",
-    "ex_cn": "我们班有三十个学生。",
-    "ex_py": "Wǒmen bān yǒu sānshí gè xuésheng.",
-    "ex_vn": "Lớp chúng tôi có ba mươi học sinh."
-  },
-  {
-    "hanzi": "哥哥",
-    "pinyin": "gēge",
-    "meaning": "anh trai",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "他是我哥哥。",
-    "ex_py": "Tā shì wǒ gēge.",
-    "ex_vn": "Anh ấy là anh trai tôi."
-  },
-  {
-    "hanzi": "家人",
-    "pinyin": "jiārén",
-    "meaning": "người nhà, gia đình",
-    "type": "Danh từ",
-    "ex_cn": "这是 my 家人。",
-    "ex_py": "Zhè shì wǒ de jiārén.",
-    "ex_vn": "Đây là người nhà của tôi.",
-    "lesson": "4"
-  },
-  {
-    "hanzi": "千",
-    "pinyin": "qiān",
-    "meaning": "nghìn",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "一千块。",
-    "ex_py": "Yìqiān kuài.",
-    "ex_vn": "Một nghìn đồng."
-  },
-  {
-    "hanzi": "七",
-    "pinyin": "qī",
-    "meaning": "số 7",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "他们家有七口人。",
-    "ex_py": "Tāmen jiā yǒu qī kǒu rén.",
-    "ex_vn": "Gia đình họ có bảy người."
-  },
-  {
-    "hanzi": "十",
-    "pinyin": "shí",
-    "meaning": "số 10",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "弟弟今年十岁了。",
-    "ex_py": "Dìdi jīnnián shí suì le.",
-    "ex_vn": "Em trai năm nay mười tuổi rồi."
-  },
-  {
-    "hanzi": "三",
-    "pinyin": "sān",
-    "meaning": "ba",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "一、二、三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
-  },
-  {
-    "hanzi": "五",
-    "pinyin": "wǔ",
-    "meaning": "năm",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "他每天五点起床跑步。",
-    "ex_py": "Tā měitiān wǔ diǎn qǐchuáng pǎobù.",
-    "ex_vn": "Mỗi ngày anh ấy thức dậy lúc 5 giờ để chạy bộ."
+    "meaning": "muốn, nhớ, nghĩ",
+    "lesson": "3",
+    "type": "động từ",
+    "ex_cn": "我想学中文。",
+    "ex_py": "wǒ xiǎng xué Zhōngwén.",
+    "ex_vn": "Tôi muốn học tiếng Trung"
   },
   {
     "hanzi": "有",
     "pinyin": "yǒu",
     "meaning": "có",
     "lesson": "4",
+    "type": "động từ",
+    "ex_cn": "我有很多朋友。",
+    "ex_py": "Wǒ yǒu hěn duō péngyou.",
+    "ex_vn": "Tôi có rất nhiều bạn bè."
+  },
+  {
+    "hanzi": "没有",
+    "pinyin": "méiyǒu",
+    "meaning": "không có",
+    "lesson": "4",
     "type": "Động từ",
-    "ex_cn": "我有三个哥哥。",
-    "ex_py": "Wǒ yǒu sān ge gēge.",
-    "ex_vn": "Tôi có ba người anh trai."
+    "ex_cn": "我没有中国朋友。",
+    "ex_py": "Wǒ méiyǒu Zhōngguó péngyou.",
+    "ex_vn": "Tôi không có bạn bè người Trung Quốc."
+  },
+  {
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "meaning": "bao nhiêu",
+    "lesson": "4",
+    "type": "Đại từ",
+    "ex_cn": "王老师有多少学生？",
+    "ex_py": "Wáng lǎoshī yǒu duōshao xuésheng?",
+    "ex_vn": "Thầy/Cô Vương có bao nhiêu học sinh?"
+  },
+  {
+    "hanzi": "个",
+    "pinyin": "gè",
+    "meaning": "cái, chiếc...",
+    "lesson": "4",
+    "type": "lượng từ",
+    "ex_cn": "你家有几个人？",
+    "ex_py": "Nǐ jiā yǒu jǐ gè rén?",
+    "ex_vn": "Nhà bạn có mấy người?"
+  },
+  {
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "meaning": "mấy",
+    "lesson": "4",
+    "type": "Đại từ",
+    "ex_cn": "你几岁？",
+    "ex_py": "Nǐ jǐ suì?",
+    "ex_vn": "Bạn mấy tuổi?"
+  },
+  {
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "meaning": "anh trai",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "这是我哥哥。",
+    "ex_py": "Zhè shì wǒ gēge.",
+    "ex_vn": "Đây là anh trai tôi."
+  },
+  {
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "meaning": "em trai",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "这是我弟弟。",
+    "ex_py": "Zhè shì wǒ dìdi.",
+    "ex_vn": "Đây là em trai tôi."
+  },
+  {
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "meaning": "em gái",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "这是我妹妹。",
+    "ex_py": "Zhè shì wǒ mèimei.",
+    "ex_vn": "Đây là em gái tôi."
+  },
+  {
+    "hanzi": "兄弟姐妹",
+    "pinyin": "xiōngdì jiěmèi",
+    "meaning": "anh chị em",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "我没有兄弟姐妹。",
+    "ex_py": "Wǒ méiyǒu xiōngdì jiěmèi.",
+    "ex_vn": "Tôi không có anh chị em."
+  },
+  {
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "meaning": "bố",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "这是我爸爸。",
+    "ex_py": "Zhè shì wǒ bàba.",
+    "ex_vn": "Đây là bố tôi."
+  },
+  {
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "meaning": "mẹ",
+    "lesson": "4",
+    "type": "đại từ chỉ thị",
+    "ex_cn": "我妈妈是老师。",
+    "ex_py": "Wǒ māma shì lǎoshī.",
+    "ex_vn": "Mẹ tôi là giáo viên."
+  },
+  {
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "meaning": "còn... thì sao",
+    "lesson": "4",
+    "type": "trợ từ ngữ khí",
+    "ex_cn": "你呢？",
+    "ex_py": "Nǐ ne?",
+    "ex_vn": "Còn bạn thì sao?"
+  },
+  {
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "meaning": "lượng từ thành viên trong gia đình",
+    "lesson": "4",
+    "type": "lượng từ",
+    "ex_cn": "我家有四口人。",
+    "ex_py": "Wǒ jiā yǒu sì kǒu rén.",
+    "ex_vn": "Nhà tôi có bốn người."
+  },
+  {
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "và",
+    "lesson": "4",
+    "type": "liên từ",
+    "ex_cn": "这是我儿子和女儿。",
+    "ex_py": "Zhè shì wǒ érzi hé nǚ'ér.",
+    "ex_vn": "Đây là con trai và con gái của tôi."
   },
   {
     "hanzi": "儿子",
     "pinyin": "érzi",
     "meaning": "con trai",
     "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "他是我儿子。",
-    "ex_py": "Tā shì wǒ érzi.",
-    "ex_vn": "Nó là con trai tôi."
+    "type": "danh từ",
+    "ex_cn": "我儿子今年九岁。",
+    "ex_py": "Wǒ érzi jīnnián jiǔ suì.",
+    "ex_vn": "Con trai tôi năm nay chín tuổi."
   },
   {
-    "hanzi": "菜",
-    "pinyin": "cài",
-    "meaning": "món ăn, thức ăn",
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "meaning": "con gái",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "我女儿今年八岁。",
+    "ex_py": "Wǒ nǚ'ér jīnnián bā suì.",
+    "ex_vn": "Con gái tôi năm nay tám tuổi."
+  },
+  {
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "meaning": "con, con cái",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "这是我们的孩子。",
+    "ex_py": "Zhè shì wǒmen de háizi.",
+    "ex_vn": "Đây là con của chúng tôi."
+  },
+  {
+    "hanzi": "今年",
+    "pinyin": "jīnnián",
+    "meaning": "năm nay",
+    "lesson": "4",
+    "type": "danh từ",
+    "ex_cn": "你今年多大？",
+    "ex_py": "Nǐ jīnnián duō dà?",
+    "ex_vn": "Năm nay bạn bao nhiêu tuổi?"
+  },
+  {
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "meaning": "2 (số lượng)",
+    "lesson": "4",
+    "type": "số từ",
+    "ex_cn": "我有两个哥哥。",
+    "ex_py": "Wǒ yǒu liǎng gè gēge.",
+    "ex_vn": "Tôi có hai người anh trai."
+  },
+  {
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "hôm nay",
     "lesson": "5",
-    "type": "Động từ",
-    "ex_cn": "越南菜很好。",
-    "ex_py": "Yuènán cài hěn hǎo.",
-    "ex_vn": "Món ăn Việt Nam rất ngon."
+    "type": "danh từ",
+    "ex_cn": "今天星期天。",
+    "ex_py": "Jīntiān xīngqītiān.",
+    "ex_vn": "Hôm nay là Chủ nhật."
   },
   {
-    "hanzi": "面条儿",
-    "pinyin": "miàntiáor",
-    "meaning": "mì, sợi mì",
-    "type": "Danh từ",
-    "ex_cn": "我喜欢吃面条儿。",
-    "ex_py": "Wǒ xǐhuan chī miàntiáor.",
-    "ex_vn": "Tôi thích ăn mì.",
-    "lesson": "5"
+    "hanzi": "号",
+    "pinyin": "hào",
+    "meaning": "ngày",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "今天几号？",
+    "ex_py": "Jīntiān jǐ hào?",
+    "ex_vn": "Hôm nay ngày mấy?"
+  },
+  {
+    "hanzi": "日",
+    "pinyin": "rì",
+    "meaning": "ngày",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "今天几日？",
+    "ex_py": "Jīntiān jǐ rì?",
+    "ex_vn": "Hôm nay ngày mấy?"
+  },
+  {
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "meaning": "tháng",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "今天2月10日。",
+    "ex_py": "Jīntiān èr yuè shí rì.",
+    "ex_vn": "Hôm nay là ngày 10 tháng 2."
+  },
+  {
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "meaning": "tuần, thứ",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "今天星期几？",
+    "ex_py": "Jīntiān xīngqī jǐ?",
+    "ex_vn": "Hôm nay là thứ mấy?"
   },
   {
     "hanzi": "休息",
     "pinyin": "xiūxi",
     "meaning": "nghỉ ngơi",
     "lesson": "5",
-    "type": "Động từ",
-    "ex_cn": "请休息。",
-    "ex_py": "Qǐng xiūxi.",
-    "ex_vn": "Xin hãy nghỉ ngơi."
+    "type": "động từ",
+    "ex_cn": "今天我在家休息。",
+    "ex_py": "Jīntiān wǒ zài jiā xiūxi.",
+    "ex_vn": "Hôm nay tôi ở nhà nghỉ ngơi."
+  },
+  {
+    "hanzi": "会",
+    "pinyin": "huì",
+    "meaning": "biết, sẽ",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "你会做饭吗？",
+    "ex_py": "Nǐ huì zuò fàn ma?",
+    "ex_vn": "Bạn biết nấu ăn không?"
+  },
+  {
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "meaning": "làm, nấu",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "你在做什么？",
+    "ex_py": "Nǐ zài zuò shénme?",
+    "ex_vn": "Bạn đang làm gì thế?"
+  },
+  {
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "meaning": "cơm",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "我今天不吃饭。",
+    "ex_py": "Wǒ jīntiān bù chī fàn.",
+    "ex_vn": "Hôm nay tôi không ăn cơm."
+  },
+  {
+    "hanzi": "做饭",
+    "pinyin": "zuòfàn",
+    "meaning": "nấu cơm",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "妈妈在做饭。",
+    "ex_py": "Māma zài zuò fàn.",
+    "ex_vn": "Mẹ đang nấu ăn."
+  },
+  {
+    "hanzi": "饺子",
+    "pinyin": "jiǎozi",
+    "meaning": "bánh sủi cảo",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "我不会做饺子。",
+    "ex_py": "Wǒ bú huì zuò jiǎozi.",
+    "ex_vn": "Tôi không biết làm há cảo."
+  },
+  {
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "meaning": "món ăn / rau",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "我会做一些中国菜。",
+    "ex_py": "Wǒ huì zuò yìxiē Zhōngguó cài.",
+    "ex_vn": "Tôi biết nấu một số món Trung Quốc."
+  },
+  {
+    "hanzi": "一些",
+    "pinyin": "yìxiē",
+    "meaning": "một vài",
+    "lesson": "5",
+    "type": "Lượng từ",
+    "ex_cn": "我有一些中国朋友。",
+    "ex_py": "Wǒ yǒu yìxiē Zhōngguó péngyou.",
+    "ex_vn": "Tôi có một vài người bạn Trung Quốc."
+  },
+  {
+    "hanzi": "上班",
+    "pinyin": "shàngbān",
+    "meaning": "đi làm",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "你今天上班吗？",
+    "ex_py": "Nǐ jīntiān shàngbān ma?",
+    "ex_vn": "Hôm nay bạn có đi làm không?"
+  },
+  {
+    "hanzi": "下班",
+    "pinyin": "xiàbān",
+    "meaning": "tan làm",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "你下班了吗？",
+    "ex_py": "Nǐ xiàbān le ma?",
+    "ex_vn": "Bạn tan làm chưa?"
+  },
+  {
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "meaning": "máy tính",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "这是我的新电脑。",
+    "ex_py": "Zhè shì wǒ de xīn diànnǎo.",
+    "ex_vn": "Đây là máy tính mới của tôi."
+  },
+  {
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "meaning": "điện thoại",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "这是我的新手机。",
+    "ex_py": "Zhè shì wǒ de xīn shǒujī.",
+    "ex_vn": "Đây là điện thoại mới của tôi."
+  },
+  {
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "meaning": "mới",
+    "lesson": "5",
+    "type": "tính từ",
+    "ex_cn": "我的新手机好看吗？",
+    "ex_py": "Wǒ de xīn shǒujī hǎokàn ma?",
+    "ex_vn": "Điện thoại mới của tôi có đẹp không?"
+  },
+  {
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning": "xem / nhìn / đọc",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "我在看书。",
+    "ex_py": "Wǒ zài kàn shū.",
+    "ex_vn": "Tôi đang đọc sách."
+  },
+  {
+    "hanzi": "好看",
+    "pinyin": "hǎokàn",
+    "meaning": "đẹp",
+    "lesson": "5",
+    "type": "tính từ",
+    "ex_cn": "她很好看。",
+    "ex_py": "Tā hěn hǎokàn.",
+    "ex_vn": "Cô ấy rất xinh đẹp."
+  },
+  {
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "meaning": "thích",
+    "lesson": "5",
+    "type": "động từ",
+    "ex_cn": "我喜欢看书。",
+    "ex_py": "Wǒ xǐhuan kàn shū.",
+    "ex_vn": "Tôi thích đọc sách."
+  },
+  {
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "meaning": "thật sự",
+    "lesson": "5",
+    "type": "phó từ",
+    "ex_cn": "这个菜真好吃。",
+    "ex_py": "Zhège cài zhēn hǎochī.",
+    "ex_vn": "Món này thật sự rất ngon."
+  },
+  {
+    "hanzi": "面条",
+    "pinyin": "miàntiáo",
+    "meaning": "mì sợi",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "我喜欢吃面条。",
+    "ex_py": "Wǒ xǐhuan chī miàntiáo.",
+    "ex_vn": "Tôi thích ăn mì sợi."
+  },
+  {
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "meaning": "hôm qua",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "昨天星期几？",
+    "ex_py": "Zuótiān xīngqī jǐ?",
+    "ex_vn": "Hôm qua là thứ mấy?"
+  },
+  {
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "ngày mai",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "明天你上班吗？",
+    "ex_py": "Míngtiān nǐ shàngbān ma?",
+    "ex_vn": "Ngày mai bạn có đi làm không?"
+  },
+  {
+    "hanzi": "去年",
+    "pinyin": "qùnián",
+    "meaning": "năm ngoái",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "去年我去中国。",
+    "ex_py": "Qùnián wǒ qù Zhōngguó.",
+    "ex_vn": "Năm ngoái tôi đi Trung Quốc."
+  },
+  {
+    "hanzi": "明年",
+    "pinyin": "míngnián",
+    "meaning": "năm sau",
+    "lesson": "5",
+    "type": "danh từ",
+    "ex_cn": "明年我会去中国。",
+    "ex_py": "Míngnián wǒ huì qù Zhōngguó.",
+    "ex_vn": "Năm sau tôi sẽ đi Trung Quốc."
+  },
+  {
+    "hanzi": "电话",
+    "pinyin": "diànhuà",
+    "meaning": "điện thoại",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "爸爸，你有个电话。",
+    "ex_py": "Bàba, nǐ yǒu gè diànhuà.",
+    "ex_vn": "Bố ơi, bố có điện thoại này."
+  },
+  {
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "ở, tại",
+    "lesson": "6",
+    "type": "phó từ",
+    "ex_cn": "我在越南。",
+    "ex_py": "Wǒ zài Yuènán.",
+    "ex_vn": "Tôi đang ở Việt Nam."
+  },
+  {
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "đi",
+    "lesson": "6",
+    "type": "động từ",
+    "ex_cn": "你去哪儿？",
+    "ex_py": "Nǐ qù nǎr?",
+    "ex_vn": "Bạn đi đâu đấy?"
+  },
+  {
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "meaning": "trong",
+    "lesson": "6",
+    "type": "Danh từ",
+    "ex_cn": "家里有人吗？",
+    "ex_py": "Jiālǐ yǒu rén ma?",
+    "ex_vn": "Trong nhà có ai không?"
+  },
+  {
+    "hanzi": "哪儿 / 哪里",
+    "pinyin": "nǎr / nǎlǐ",
+    "meaning": "chỗ nào",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "你在哪儿？",
+    "ex_py": "Nǐ zài nǎr?",
+    "ex_vn": "Bạn đang ở đâu?"
+  },
+  {
+    "hanzi": "这儿 / 这里",
+    "pinyin": "zhèr / zhèlǐ",
+    "meaning": "chỗ này",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "这里的菜不好吃。",
+    "ex_py": "Zhèlǐ de cài bù hǎochī.",
+    "ex_vn": "Đồ ăn ở đây không ngon."
+  },
+  {
+    "hanzi": "那儿 / 那里",
+    "pinyin": "nàr / nàlǐ",
+    "meaning": "chỗ kia",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我们去那里买东西吧。",
+    "ex_py": "Wǒmen qù nàlǐ mǎi dōngxi ba.",
+    "ex_vn": "Chúng ta đến đó mua đồ đi."
+  },
+  {
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "meaning": "siêu thị",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我想去超市。",
+    "ex_py": "Wǒ xiǎng qù chāoshì.",
+    "ex_vn": "Tôi muốn đi siêu thị."
+  },
+  {
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "mua",
+    "lesson": "6",
+    "type": "động từ",
+    "ex_cn": "我想买水果。",
+    "ex_py": "Wǒ xiǎng mǎi shuǐguǒ.",
+    "ex_vn": "Tôi muốn mua hoa quả."
+  },
+  {
+    "hanzi": "卖",
+    "pinyin": "mài",
+    "meaning": "bán",
+    "lesson": "6",
+    "type": "động từ",
+    "ex_cn": "这里卖水果吗？",
+    "ex_py": "Zhèlǐ mài shuǐguǒ ma?",
+    "ex_vn": "Ở đây có bán hoa quả không?"
+  },
+  {
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "meaning": "đồ, đồ đạc",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "这是什么东西？",
+    "ex_py": "Zhè shì shénme dōngxi?",
+    "ex_vn": "Đây là cái gì thế?"
+  },
+  {
+    "hanzi": "牛奶",
+    "pinyin": "niúnǎi",
+    "meaning": "sữa bò",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我想喝牛奶。",
+    "ex_py": "Wǒ xiǎng hē niúnǎi.",
+    "ex_vn": "Tôi muốn uống sữa tươi."
+  },
+  {
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning": "ăn",
+    "lesson": "6",
+    "type": "động từ",
+    "ex_cn": "你想吃什么？",
+    "ex_py": "Nǐ xiǎng chī shénme?",
+    "ex_vn": "Bạn muốn ăn gì?"
+  },
+  {
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "meaning": "ngon",
+    "lesson": "6",
+    "type": "tính từ",
+    "ex_cn": "这个菜很好吃。",
+    "ex_py": "Zhège cài hěn hǎochī.",
+    "ex_vn": "Món này rất ngon."
+  },
+  {
+    "hanzi": "早",
+    "pinyin": "zǎo",
+    "meaning": "sớm",
+    "lesson": "6",
+    "type": "tính từ",
+    "ex_cn": "",
+    "ex_py": "",
+    "ex_vn": ""
+  },
+  {
+    "hanzi": "晚",
+    "pinyin": "wǎn",
+    "meaning": "muộn, trễ",
+    "lesson": "6",
+    "type": "tính từ",
+    "ex_cn": "",
+    "ex_py": "",
+    "ex_vn": ""
+  },
+  {
+    "hanzi": "早上",
+    "pinyin": "zǎoshang",
+    "meaning": "buổi sáng",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "今天早上你吃什么？",
+    "ex_py": "Jīntiān zǎoshang nǐ chī shénme?",
+    "ex_vn": "Sáng nay bạn ăn gì?"
+  },
+  {
+    "hanzi": "晚上",
+    "pinyin": "wǎnshang",
+    "meaning": "buổi tối",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "昨天晚上你去玩吗？",
+    "ex_py": "Zuótiān wǎnshang nǐ qù wán ma?",
+    "ex_vn": "Tối qua bạn có đi chơi không?"
+  },
+  {
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "meaning": "buổi trưa",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "今天中午我吃面条。",
+    "ex_py": "Jīntiān zhōngwǔ wǒ chī miàntiáo.",
+    "ex_vn": "Trưa nay tôi ăn mì."
+  },
+  {
+    "hanzi": "早饭",
+    "pinyin": "zǎofàn",
+    "meaning": "bữa sáng",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我还没吃早饭。",
+    "ex_py": "Wǒ hái méi chī zǎofàn.",
+    "ex_vn": "Tôi vẫn chưa ăn sáng."
+  },
+  {
+    "hanzi": "午饭",
+    "pinyin": "wǔfàn",
+    "meaning": "bữa trưa",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "你吃午饭了吗？",
+    "ex_py": "Nǐ chī wǔfàn le ma?",
+    "ex_vn": "Bạn ăn trưa chưa?"
+  },
+  {
+    "hanzi": "晚饭",
+    "pinyin": "wǎnfàn",
+    "meaning": "bữa tối",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我还没吃晚饭。",
+    "ex_py": "Wǒ hái méi chī wǎnfàn.",
+    "ex_vn": "Tôi vẫn chưa ăn tối."
+  },
+  {
+    "hanzi": "那边",
+    "pinyin": "nàbiān",
+    "meaning": "phía bên kia",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我们去那边看看吧。",
+    "ex_py": "Wǒmen qù nàbiān kànkan ba.",
+    "ex_vn": "Chúng ta qua bên kia xem thử đi."
+  },
+  {
+    "hanzi": "包子",
+    "pinyin": "bāozi",
+    "meaning": "bánh bao",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我想吃包子。",
+    "ex_py": "Wǒ xiǎng chī bāozi.",
+    "ex_vn": "Tôi muốn ăn bánh bao."
+  },
+  {
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "meaning": "rất, vô cùng",
+    "lesson": "6",
+    "type": "phó từ",
+    "ex_cn": "这里的菜非常好吃。",
+    "ex_py": "Zhèlǐ de cài fēicháng hǎochī.",
+    "ex_vn": "Đồ ăn ở đây cực kỳ ngon."
+  },
+  {
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "meaning": "cơm trắng",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "今天中午我吃米饭。",
+    "ex_py": "Jīntiān zhōngwǔ wǒ chī mǐfàn.",
+    "ex_vn": "Trưa nay tôi ăn cơm."
+  },
+  {
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "meaning": "ngồi, đi (xe)",
+    "lesson": "6",
+    "type": "động từ",
+    "ex_cn": "你坐在这里吧。",
+    "ex_py": "Nǐ zuò zài zhèlǐ ba.",
+    "ex_vn": "Bạn ngồi ở đây đi."
+  },
+  {
+    "hanzi": "车",
+    "pinyin": "chē",
+    "meaning": "xe, xe cộ",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我们坐车去吧。",
+    "ex_py": "Wǒmen zuò chē qù ba.",
+    "ex_vn": "Chúng ta đi xe máy/ô tô đi."
+  },
+  {
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "meaning": "xe taxi",
+    "lesson": "6",
+    "type": "danh từ",
+    "ex_cn": "我们做出租车去超市吧。",
+    "ex_py": "Wǒmen zuò chūzūchē qù chāoshì ba.",
+    "ex_vn": "Chúng ta đi taxi đến siêu thị đi."
+  },
+  {
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "meaning": "thế nào, sao",
+    "lesson": "6",
+    "type": "phó từ",
+    "ex_cn": "这个汉字怎么写的？",
+    "ex_py": "Zhège Hànzì zěnme xiě de?",
+    "ex_vn": "Chữ Hán này viết như thế nào?"
   },
   {
     "hanzi": "星期日",
@@ -420,36 +1380,6 @@
     "ex_vn": "Chủ nhật tôi không đi làm."
   },
   {
-    "hanzi": "星期天",
-    "pinyin": "xīngqītiān",
-    "meaning": "Chủ nhật",
-    "lesson": "5",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "我每星期天都去超市。",
-    "ex_py": "Wǒ měi xīngqītiān dōu qù chāoshì.",
-    "ex_vn": "Mỗi chủ nhật tôi đều đi siêu thị."
-  },
-  {
-    "hanzi": "喜欢",
-    "pinyin": "xǐhuan",
-    "meaning": "thích",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "我很喜欢吃中国菜。",
-    "ex_py": "Wǒ hěn xǐhuan chī Zhōngguó cài.",
-    "ex_vn": "Tôi rất thích ăn món ăn Trung Quốc."
-  },
-  {
-    "hanzi": "月",
-    "pinyin": "yuè",
-    "meaning": "tháng",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "现在是三月。",
-    "ex_py": "Xiànzài shì Sānyuè.",
-    "ex_vn": "Bây giờ là tháng Ba."
-  },
-  {
     "hanzi": "一些",
     "pinyin": "yìxiē",
     "meaning": "một số, một vài",
@@ -460,26 +1390,6 @@
     "ex_vn": "Mua một ít hoa quả."
   },
   {
-    "hanzi": "做",
-    "pinyin": "zuò",
-    "meaning": "làm",
-    "lesson": "6",
-    "type": "Động từ",
-    "ex_cn": "你做工作吗？",
-    "ex_py": "Nǐ zuò gōngzuò ma?",
-    "ex_vn": "Bạn có làm việc không?"
-  },
-  {
-    "hanzi": "做饭",
-    "pinyin": "zuòfàn",
-    "meaning": "nấu cơm",
-    "lesson": "5",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "妈妈正在厨房做饭。",
-    "ex_py": "Māma zhèngzài chúfáng zuòfàn.",
-    "ex_vn": "Mẹ đang nấu cơm trong bếp."
-  },
-  {
     "hanzi": "西安饭店",
     "pinyin": "Xī'ān Fàndiàn",
     "meaning": "Nhà hàng Tây An",
@@ -488,126 +1398,6 @@
     "ex_py": "Wǒmen zài Xī'ān Fàndiàn chīfàn.",
     "ex_vn": "Chúng tôi ăn cơm ở nhà hàng Tây An.",
     "lesson": "0"
-  },
-  {
-    "hanzi": "包子",
-    "pinyin": "bāozi",
-    "meaning": "bánh bao",
-    "lesson": "6",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "我喜欢吃包子。",
-    "ex_py": "Wǒ xǐhuan chī bāozi.",
-    "ex_vn": "Tôi thích ăn bánh bao."
-  },
-  {
-    "hanzi": "超市",
-    "pinyin": "chāoshì",
-    "meaning": "siêu thị",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "我去超市买东西。",
-    "ex_py": "Wǒ qù chāoshì mǎi dōngxi.",
-    "ex_vn": "Tôi đi siêu thị mua đồ."
-  },
-  {
-    "hanzi": "吃",
-    "pinyin": "chī",
-    "meaning": "ăn",
-    "lesson": "6",
-    "type": "Động từ",
-    "ex_cn": "我今天中午不吃米饭。",
-    "ex_py": "Wǒ jīntiān zhōngwǔ bù chī mǐfàn.",
-    "ex_vn": "Hôm nay buổi trưa tôi không ăn cơm."
-  },
-  {
-    "hanzi": "的",
-    "pinyin": "de",
-    "meaning": "của, thuộc về",
-    "lesson": "3",
-    "type": "Trợ từ",
-    "ex_cn": "我是老师的学生。",
-    "ex_py": "Wǒ shì lǎoshī de xuésheng.",
-    "ex_vn": "Tôi là học sinh của thầy giáo."
-  },
-  {
-    "hanzi": "多少",
-    "pinyin": "duōshao",
-    "meaning": "bao nhiêu",
-    "lesson": "4",
-    "type": "Đại từ",
-    "ex_cn": "这件衣服多少钱？",
-    "ex_py": "Zhè jiàn yīfu duōshao qián?",
-    "ex_vn": "Chiếc áo này bao nhiêu tiền?"
-  },
-  {
-    "hanzi": "东西",
-    "pinyin": "dōngxi",
-    "meaning": "đồ, đồ đạc",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "我去买东西。",
-    "ex_py": "Wǒ qù mǎi dōngxi.",
-    "ex_vn": "Tôi đi mua đồ."
-  },
-  {
-    "hanzi": "非常",
-    "pinyin": "fēicháng",
-    "meaning": "rất, vô cùng",
-    "lesson": "6",
-    "type": "Phó từ",
-    "ex_cn": "非常好。",
-    "ex_py": "Fēicháng hǎo.",
-    "ex_vn": "Rất tốt."
-  },
-  {
-    "hanzi": "明天",
-    "pinyin": "míngtiān",
-    "meaning": "ngày mai",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "明天去学校。",
-    "ex_py": "Míngtiān qù xuéxiào.",
-    "ex_vn": "Ngày mai đi đến trường."
-  },
-  {
-    "hanzi": "那",
-    "pinyin": "nà",
-    "meaning": "kia, đó",
-    "lesson": "3",
-    "type": "Đại từ",
-    "ex_cn": "那是我的老师，他很好。",
-    "ex_py": "Nà shì wǒ de lǎoshī, tā hěn hǎo.",
-    "ex_vn": "Đó là giáo viên của tôi, thầy ấy rất tốt."
-  },
-  {
-    "hanzi": "您",
-    "pinyin": "nín",
-    "meaning": "ngài, ông, bà (kính trọng)",
-    "lesson": "1",
-    "ex_cn": "您好！",
-    "ex_py": "Nín hǎo!",
-    "ex_vn": "Chào ngài!",
-    "type": "Đại từ"
-  },
-  {
-    "hanzi": "些",
-    "pinyin": "xiē",
-    "meaning": "một ít, một vài",
-    "lesson": "6",
-    "type": "Số từ",
-    "ex_cn": "这些是我的。",
-    "ex_py": "Zhèxiē shì wǒ de.",
-    "ex_vn": "Những cái này là của tôi."
-  },
-  {
-    "hanzi": "怎么",
-    "pinyin": "zěnme",
-    "meaning": "thế nào, làm sao",
-    "lesson": "6",
-    "type": "Đại từ",
-    "ex_cn": "怎么称呼您？",
-    "ex_py": "Zěnme chēnghu nín?",
-    "ex_vn": "Xưng hô với ngài thế nào?"
   },
   {
     "hanzi": "吧",
@@ -698,16 +1488,6 @@
     "ex_cn": "你有什么事？",
     "ex_py": "Nǐ yǒu shénme shì?",
     "ex_vn": "Bạn có việc gì không?"
-  },
-  {
-    "hanzi": "下班",
-    "pinyin": "xiàbān",
-    "meaning": "tan làm",
-    "lesson": "5",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "我每天五点下班回家。",
-    "ex_py": "Wǒ měitiān wǔ diǎn xiàbān huí jiā.",
-    "ex_vn": "Mỗi ngày tôi tan làm lúc 5 giờ về nhà."
   },
   {
     "hanzi": "下课",
@@ -808,16 +1588,6 @@
     "ex_cn": "我的房间。",
     "ex_py": "Wǒ de fángjiān.",
     "ex_vn": "Phòng của tôi."
-  },
-  {
-    "hanzi": "工作",
-    "pinyin": "gōngzuò",
-    "meaning": "làm việc; công việc",
-    "lesson": "3",
-    "type": "Động từ",
-    "ex_cn": "他在一家公司工作。",
-    "ex_py": "Tā zài yì jiā gōngsī gōngzuò.",
-    "ex_vn": "Anh ấy làm việc ở một công ty."
   },
   {
     "hanzi": "狗",
@@ -1020,16 +1790,6 @@
     "ex_vn": "Bài hát này rất hay."
   },
   {
-    "hanzi": "朋友",
-    "pinyin": "péngyou",
-    "meaning": "bạn",
-    "lesson": "3",
-    "type": "Đại từ",
-    "ex_cn": "他是我的朋友。",
-    "ex_py": "Tā shì wǒ de péngyou.",
-    "ex_vn": "Anh ấy là bạn của tôi."
-  },
-  {
     "hanzi": "前边",
     "pinyin": "qiánbian",
     "meaning": "phía trước",
@@ -1120,16 +1880,6 @@
     "ex_vn": "Mười phút."
   },
   {
-    "hanzi": "贵",
-    "pinyin": "guì",
-    "meaning": "đắt",
-    "lesson": "2",
-    "type": "Tính từ",
-    "ex_cn": "这个东西很贵。",
-    "ex_py": "Zhè ge dōngxi hěn guì.",
-    "ex_vn": "Món đồ này rất đắt."
-  },
-  {
     "hanzi": "件",
     "pinyin": "jiàn",
     "meaning": "chiếc, kiện (lượng từ quần áo)",
@@ -1178,16 +1928,6 @@
     "ex_cn": "我有一个苹果。",
     "ex_py": "Wǒ yǒu yí ge píngguǒ.",
     "ex_vn": "Tôi có một quả táo."
-  },
-  {
-    "hanzi": "谁",
-    "pinyin": "shéi",
-    "meaning": "ai",
-    "lesson": "3",
-    "type": "Đại từ",
-    "ex_cn": "那个人是谁，你认识他吗？",
-    "ex_py": "Nàge rén shì shéi, nǐ rènshi tā ma?",
-    "ex_vn": "Người đó là ai, bạn có quen không?"
   },
   {
     "hanzi": "商店",
@@ -1260,16 +2000,6 @@
     "lesson": "10"
   },
   {
-    "hanzi": "真",
-    "pinyin": "zhēn",
-    "meaning": "thật",
-    "lesson": "5",
-    "type": "Phó từ",
-    "ex_cn": "真好！",
-    "ex_py": "Zhēn hǎo!",
-    "ex_vn": "Thật tốt!"
-  },
-  {
     "hanzi": "怎么样",
     "pinyin": "zěnmeyàng",
     "meaning": "thế nào",
@@ -1288,16 +2018,6 @@
     "ex_cn": "那是他的车。",
     "ex_py": "Nà shì tā de chē.",
     "ex_vn": "Đó là xe của anh ấy."
-  },
-  {
-    "hanzi": "出租车",
-    "pinyin": "chūzūchē",
-    "meaning": "taxi",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "我们坐出租车。",
-    "ex_py": "Wǒmen zuò chūzūchē.",
-    "ex_vn": "Chúng tôi đi taxi."
   },
   {
     "hanzi": "读",
@@ -1328,16 +2048,6 @@
     "ex_cn": "你会开车吗？我不会。",
     "ex_py": "Nǐ huì kāichē ma? Wǒ bù huì.",
     "ex_vn": "Bạn có biết lái xe không? Tôi không biết."
-  },
-  {
-    "hanzi": "呢",
-    "pinyin": "ne",
-    "meaning": "được dùng ở cuối câu hỏi",
-    "lesson": "4",
-    "type": "Trợ từ",
-    "ex_cn": "我很好，你呢？",
-    "ex_py": "Wǒ hěn hǎo, nǐ ne?",
-    "ex_vn": "Tôi rất khỏe, còn bạn?"
   },
   {
     "hanzi": "时候",
@@ -1430,16 +2140,6 @@
     "ex_vn": "Mời ngồi xuống, chúng ta bắt đầu học."
   },
   {
-    "hanzi": "昨天",
-    "pinyin": "zuótiān",
-    "meaning": "hôm qua",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "昨天星期三。",
-    "ex_py": "Zuótiān xīngqīsān.",
-    "ex_vn": "Hôm qua là thứ Tư."
-  },
-  {
     "hanzi": "病",
     "pinyin": "bìng",
     "meaning": "bệnh, ốm",
@@ -1480,16 +2180,6 @@
     "ex_vn": "Anh ấy đi bệnh viện khám bệnh rồi."
   },
   {
-    "hanzi": "老师",
-    "pinyin": "lǎoshī",
-    "meaning": "thầy/cô giáo",
-    "lesson": "1",
-    "ex_cn": "老师好！",
-    "ex_py": "Lǎoshī hǎo!",
-    "ex_vn": "Chào thầy/cô!",
-    "type": "Danh từ"
-  },
-  {
     "hanzi": "热",
     "pinyin": "rè",
     "meaning": "nóng",
@@ -1498,26 +2188,6 @@
     "ex_cn": "今天天气很热，我们去游泳吧。",
     "ex_py": "Jīntiān tiānqì hěn rè, wǒmen qù yóuyǒng ba.",
     "ex_vn": "Hôm nay trời rất nóng, chúng ta đi bơi đi."
-  },
-  {
-    "hanzi": "人",
-    "pinyin": "rén",
-    "meaning": "người",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他是中国人。",
-    "ex_py": "Tā shì Zhōngguó rén.",
-    "ex_vn": "Anh ấy là người Trung Quốc."
-  },
-  {
-    "hanzi": "什么",
-    "pinyin": "shénme",
-    "meaning": "cái gì",
-    "lesson": "2",
-    "type": "Đại từ",
-    "ex_cn": "你叫什么名字？",
-    "ex_py": "Nǐ jiào shénme míngzi?",
-    "ex_vn": "Bạn tên là gì?"
   },
   {
     "hanzi": "生病",
@@ -1748,16 +2418,6 @@
     "ex_cn": "你吃早饭了吗？",
     "ex_py": "Nǐ chī zǎofàn le ma?",
     "ex_vn": "Bạn đã ăn sáng chưa?"
-  },
-  {
-    "hanzi": "汉语",
-    "pinyin": "Hànyǔ",
-    "meaning": "tiếng Trung Quốc",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他是汉语老师。",
-    "ex_py": "Tā shì Hànyǔ lǎoshī.",
-    "ex_vn": "Anh ấy là giáo viên tiếng Trung."
   },
   {
     "hanzi": "不要",
@@ -2040,16 +2700,6 @@
     "ex_vn": "Bạn sống ở đâu?"
   },
   {
-    "hanzi": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "tạm biệt",
-    "lesson": "1",
-    "ex_cn": "老师再见！",
-    "ex_py": "Lǎoshī zàijiàn!",
-    "ex_vn": "Tạm biệt thầy/cô!",
-    "type": "Danh từ"
-  },
-  {
     "hanzi": "早",
     "pinyin": "zǎo",
     "meaning": "sớm, chào buổi sáng",
@@ -2068,615 +2718,5 @@
     "ex_cn": "我爱我的家人和朋友。",
     "ex_py": "Wǒ ài wǒ de jiārén hé péngyou.",
     "ex_vn": "Tôi yêu gia đình và bạn bè của tôi."
-  },
-  {
-    "hanzi": "请问",
-    "pinyin": "qǐngwèn",
-    "meaning": "xin hỏi",
-    "lesson": "2",
-    "ex_cn": "请问，您贵姓？",
-    "ex_py": "Qǐngwèn, nín guì xìng?",
-    "ex_vn": "Xin hỏi, quý danh ngài là gì?",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "姓",
-    "pinyin": "xìng",
-    "meaning": "họ, họ là",
-    "lesson": "2",
-    "ex_cn": "您贵姓？我姓王。",
-    "ex_py": "Nín guì xìng? Wǒ xìng Wáng.",
-    "ex_vn": "Ngài họ gì? Tôi họ Vương.",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "叫",
-    "pinyin": "jiào",
-    "meaning": "gọi là, tên là",
-    "lesson": "2",
-    "ex_cn": "我叫李文，很高兴认识你。",
-    "ex_py": "Wǒ jiào Lǐ Wén, hěn gāoxìng rènshi nǐ.",
-    "ex_vn": "Tôi tên là Lý Văn, rất vui được gặp bạn.",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "称呼",
-    "pinyin": "chēnghū",
-    "meaning": "xưng hô, cách gọi",
-    "lesson": "2",
-    "ex_cn": "怎么称呼您？",
-    "ex_py": "Zěnme chēnghū nín?",
-    "ex_vn": "Xưng hô với ngài thế nào?",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "没关系",
-    "pinyin": "méi guānxi",
-    "meaning": "không sao",
-    "lesson": "2",
-    "ex_cn": "对不起！没关系。",
-    "ex_py": "Duìbuqǐ! Méi guānxi.",
-    "ex_vn": "Xin lỗi! Không sao.",
-    "type": "Cụm từ"
-  },
-  {
-    "hanzi": "很",
-    "pinyin": "hěn",
-    "meaning": "rất",
-    "lesson": "2",
-    "ex_cn": "很高兴认识你！",
-    "ex_py": "Hěn gāoxìng rènshi nǐ!",
-    "ex_vn": "Rất vui được gặp bạn!",
-    "type": "Phó từ"
-  },
-  {
-    "hanzi": "认识",
-    "pinyin": "rènshi",
-    "meaning": "quen biết, nhận ra",
-    "lesson": "2",
-    "ex_cn": "很高兴认识你！",
-    "ex_py": "Hěn gāoxìng rènshi nǐ!",
-    "ex_vn": "Rất vui được gặp bạn!",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "是",
-    "pinyin": "shì",
-    "meaning": "là",
-    "lesson": "3",
-    "ex_cn": "我是学生。",
-    "ex_py": "Wǒ shì xuésheng.",
-    "ex_vn": "Tôi là học sinh.",
-    "type": "Động từ"
-  },
-  {
-    "hanzi": "越南",
-    "pinyin": "Yuènán",
-    "meaning": "Việt Nam",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "我是越南人。",
-    "ex_py": "Wǒ shì Yuènán rén.",
-    "ex_vn": "Tôi là người Việt Nam."
-  },
-  {
-    "hanzi": "英国",
-    "pinyin": "Yīngguó",
-    "meaning": "Anh (quốc)",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他是英国人。",
-    "ex_py": "Tā shì Yīngguó rén.",
-    "ex_vn": "Anh ấy là người Anh."
-  },
-  {
-    "hanzi": "美国",
-    "pinyin": "Měiguó",
-    "meaning": "Mỹ",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "她来自美国。",
-    "ex_py": "Tā láizì Měiguó.",
-    "ex_vn": "Cô ấy đến từ Mỹ."
-  },
-  {
-    "hanzi": "日本",
-    "pinyin": "Rìběn",
-    "meaning": "Nhật Bản",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "日本在中国旁边。",
-    "ex_py": "Rìběn zài Zhōngguó pángbiān.",
-    "ex_vn": "Nhật Bản ở cạnh Trung Quốc."
-  },
-  {
-    "hanzi": "女朋友",
-    "pinyin": "nǚpéngyou",
-    "meaning": "bạn gái",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "她是我的女朋友。",
-    "ex_py": "Tā shì wǒ de nǚpéngyou.",
-    "ex_vn": "Cô ấy là bạn gái của tôi."
-  },
-  {
-    "hanzi": "男朋友",
-    "pinyin": "nánpéngyou",
-    "meaning": "bạn trai",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "他是我的男朋友。",
-    "ex_py": "Tā shì wǒ de nánpéngyou.",
-    "ex_vn": "Anh ấy là bạn trai của tôi."
-  },
-  {
-    "hanzi": "哪",
-    "pinyin": "nǎ",
-    "meaning": "nào, đâu",
-    "lesson": "3",
-    "type": "Đại từ",
-    "ex_cn": "你是哪国人？",
-    "ex_py": "Nǐ shì nǎ guó rén?",
-    "ex_vn": "Bạn là người nước nào?"
-  },
-  {
-    "hanzi": "吗",
-    "pinyin": "ma",
-    "meaning": "không? (trợ từ câu hỏi)",
-    "lesson": "3",
-    "type": "Trợ từ",
-    "ex_cn": "你是学生吗？",
-    "ex_py": "Nǐ shì xuésheng ma?",
-    "ex_vn": "Bạn có phải là học sinh không?"
-  },
-  {
-    "hanzi": "她",
-    "pinyin": "tā",
-    "meaning": "cô ấy, bà ấy",
-    "lesson": "4",
-    "type": "Đại từ",
-    "ex_cn": "她是我的老师。",
-    "ex_py": "Tā shì wǒ de lǎoshī.",
-    "ex_vn": "Cô ấy là giáo viên của tôi."
-  },
-  {
-    "hanzi": "姐姐",
-    "pinyin": "jiějie",
-    "meaning": "chị gái",
-    "lesson": "3",
-    "type": "Danh từ",
-    "ex_cn": "我有一个姐姐。",
-    "ex_py": "Wǒ yǒu yí gè jiějie.",
-    "ex_vn": "Tôi có một người chị gái."
-  },
-  {
-    "hanzi": "忙",
-    "pinyin": "máng",
-    "meaning": "bận",
-    "lesson": "3",
-    "type": "Tính từ",
-    "ex_cn": "你今天忙吗？",
-    "ex_py": "Nǐ jīntiān máng ma?",
-    "ex_vn": "Hôm nay bạn có bận không?"
-  },
-  {
-    "hanzi": "还",
-    "pinyin": "hái",
-    "meaning": "vẫn còn, cũng",
-    "lesson": "3",
-    "type": "Phó từ",
-    "ex_cn": "她还在工作。",
-    "ex_py": "Tā hái zài gōngzuò.",
-    "ex_vn": "Cô ấy vẫn còn đang làm việc."
-  },
-  {
-    "hanzi": "太",
-    "pinyin": "tài",
-    "meaning": "quá, rất",
-    "lesson": "3",
-    "type": "Phó từ",
-    "ex_cn": "你太忙了。",
-    "ex_py": "Nǐ tài máng le.",
-    "ex_vn": "Bạn bận quá."
-  },
-  {
-    "hanzi": "零",
-    "pinyin": "líng",
-    "meaning": "số không",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "今天零度。",
-    "ex_py": "Jīntiān líng dù.",
-    "ex_vn": "Hôm nay không độ."
-  },
-  {
-    "hanzi": "一",
-    "pinyin": "yī",
-    "meaning": "số 1",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "一、二、三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
-  },
-  {
-    "hanzi": "二",
-    "pinyin": "èr",
-    "meaning": "số 2",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "一、二、三。",
-    "ex_py": "Yī, èr, sān.",
-    "ex_vn": "Một, hai, ba."
-  },
-  {
-    "hanzi": "四",
-    "pinyin": "sì",
-    "meaning": "bốn",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "我们家有四口人。",
-    "ex_py": "Wǒmen jiā yǒu sì kǒu rén.",
-    "ex_vn": "Nhà chúng tôi có bốn người."
-  },
-  {
-    "hanzi": "六",
-    "pinyin": "liù",
-    "meaning": "sáu",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "他今年六岁了。",
-    "ex_py": "Tā jīnnián liù suì le.",
-    "ex_vn": "Năm nay nó sáu tuổi rồi."
-  },
-  {
-    "hanzi": "九",
-    "pinyin": "jiǔ",
-    "meaning": "chín",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "九月十号是教师节。",
-    "ex_py": "Jiǔyuè shí hào shì Jiàoshījié.",
-    "ex_vn": "Ngày 10 tháng 9 là ngày Nhà giáo."
-  },
-  {
-    "hanzi": "两",
-    "pinyin": "liǎng",
-    "meaning": "hai (dùng trước lượng từ)",
-    "lesson": "4",
-    "type": "Số từ",
-    "ex_cn": "我有两个哥哥。",
-    "ex_py": "Wǒ yǒu liǎng gè gēge.",
-    "ex_vn": "Tôi có hai người anh trai."
-  },
-  {
-    "hanzi": "口",
-    "pinyin": "kǒu",
-    "meaning": "người (lượng từ chỉ thành viên gia đình)",
-    "lesson": "4",
-    "type": "Lượng từ",
-    "ex_cn": "你家有几口人？",
-    "ex_py": "Nǐ jiā yǒu jǐ kǒu rén?",
-    "ex_vn": "Nhà bạn có mấy người."
-  },
-  {
-    "hanzi": "没",
-    "pinyin": "méi",
-    "meaning": "không, chưa",
-    "lesson": "4",
-    "type": "Phó từ",
-    "ex_cn": "我没有弟弟。",
-    "ex_py": "Wǒ méiyǒu dìdi.",
-    "ex_vn": "Tôi không có em trai."
-  },
-  {
-    "hanzi": "几",
-    "pinyin": "jǐ",
-    "meaning": "mấy, vài",
-    "lesson": "4",
-    "type": "Đại từ",
-    "ex_cn": "你有几个孩子？",
-    "ex_py": "Nǐ yǒu jǐ gè háizi?",
-    "ex_vn": "Bạn có mấy đứa con?"
-  },
-  {
-    "hanzi": "妈妈",
-    "pinyin": "māma",
-    "meaning": "mẹ, má",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "我妈妈是老师。",
-    "ex_py": "Wǒ māma shì lǎoshī.",
-    "ex_vn": "Mẹ tôi là giáo viên."
-  },
-  {
-    "hanzi": "弟弟",
-    "pinyin": "dìdi",
-    "meaning": "em trai",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "他是我弟弟。",
-    "ex_py": "Tā shì wǒ dìdi.",
-    "ex_vn": "Cậu ấy là em trai tôi."
-  },
-  {
-    "hanzi": "妹妹",
-    "pinyin": "mèimei",
-    "meaning": "em gái",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "我有两个妹妹。",
-    "ex_py": "Wǒ yǒu liǎng gè mèimei.",
-    "ex_vn": "Tôi có hai người em gái."
-  },
-  {
-    "hanzi": "和",
-    "pinyin": "hé",
-    "meaning": "và, với",
-    "lesson": "4",
-    "type": "Liên từ",
-    "ex_cn": "爸爸和妈妈都在家。",
-    "ex_py": "Bàba hé māma dōu zài jiā.",
-    "ex_vn": "Bố và mẹ đều ở nhà."
-  },
-  {
-    "hanzi": "女儿",
-    "pinyin": "nǚ'ér",
-    "meaning": "con gái",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "她是我女儿。",
-    "ex_py": "Tā shì wǒ nǚ'ér.",
-    "ex_vn": "Con bé là con gái tôi."
-  },
-  {
-    "hanzi": "多大",
-    "pinyin": "duō dà",
-    "meaning": "bao nhiêu tuổi",
-    "lesson": "4",
-    "type": "Cụm từ",
-    "ex_cn": "你女儿今年多大？",
-    "ex_py": "Nǐ nǚ'ér jīnnián duō dà?",
-    "ex_vn": "Con gái bạn năm nay bao nhiêu tuổi?"
-  },
-  {
-    "hanzi": "岁",
-    "pinyin": "suì",
-    "meaning": "tuổi",
-    "lesson": "4",
-    "type": "Lượng từ",
-    "ex_cn": "女儿今年五岁了。",
-    "ex_py": "Nǚ'ér jīnnián wǔ suì le.",
-    "ex_vn": "Con gái năm nay năm tuổi rồi."
-  },
-  {
-    "hanzi": "是的",
-    "pinyin": "shìde",
-    "meaning": "vâng, phải, đúng vậy",
-    "lesson": "4",
-    "type": "Cụm từ",
-    "ex_cn": "是的，他是我儿子。",
-    "ex_py": "Shìde, tā shì wǒ érzi.",
-    "ex_vn": "Vâng, nó là con trai tôi."
-  },
-  {
-    "hanzi": "他",
-    "pinyin": "tā",
-    "meaning": "anh ấy, cậu ấy",
-    "lesson": "4",
-    "type": "Đại từ",
-    "ex_cn": "他是我的好朋友。",
-    "ex_py": "Tā shì wǒ de hǎo péngyou.",
-    "ex_vn": "Cậu ấy là bạn tốt của tôi."
-  },
-  {
-    "hanzi": "今天",
-    "pinyin": "jīntiān",
-    "meaning": "hôm nay",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "今天星期二。",
-    "ex_py": "Jīntiān Xīngqī'èr.",
-    "ex_vn": "Hôm nay là thứ Ba."
-  },
-  {
-    "hanzi": "号",
-    "pinyin": "hào",
-    "meaning": "ngày, số",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "今天是十号。",
-    "ex_py": "Jīntiān` shí hào.",
-    "ex_vn": "Hôm nay là ngày mười."
-  },
-  {
-    "hanzi": "日",
-    "pinyin": "rì",
-    "meaning": "ngày",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "一月一日。",
-    "ex_py": "Yīyuè yīrì.",
-    "ex_vn": "Ngày một tháng Một."
-  },
-  {
-    "hanzi": "星期",
-    "pinyin": "xīngqī",
-    "meaning": "tuần, thứ",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "今天星期几？",
-    "ex_py": "Jīntiān xīngqī jǐ?",
-    "ex_vn": "Hôm nay là thứ mấy?"
-  },
-  {
-    "hanzi": "会",
-    "pinyin": "huì",
-    "meaning": "biết (qua học tập)",
-    "lesson": "5",
-    "type": "Động từ",
-    "ex_cn": "我会说汉语。",
-    "ex_py": "Wǒ huì shuō Hànyǔ.",
-    "ex_vn": "Tôi biết nói tiếng Trung."
-  },
-  {
-    "hanzi": "饺子",
-    "pinyin": "jiǎozi",
-    "meaning": "sủi cảo",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "我喜欢吃饺子。",
-    "ex_py": "Wǒ xǐhuan chī jiǎozi.",
-    "ex_vn": "Tôi thích ăn sủi cảo."
-  },
-  {
-    "hanzi": "电脑",
-    "pinyin": "diànnǎo",
-    "meaning": "máy tính",
-    "lesson": "5",
-    "type": "Danh từ",
-    "ex_cn": "这是我的电脑。",
-    "ex_py": "Zhè shì wǒ de diànnǎo.",
-    "ex_vn": "Đây là máy tính của tôi."
-  },
-  {
-    "hanzi": "好看",
-    "pinyin": "hǎokàn",
-    "meaning": "đẹp, hay",
-    "lesson": "5",
-    "type": "Tính từ",
-    "ex_cn": "这本书很好看。",
-    "ex_py": "Zhè běn shū hěn hǎokàn.",
-    "ex_vn": "Cuốn sách này rất hay."
-  },
-  {
-    "hanzi": "它",
-    "pinyin": "tā",
-    "meaning": "nó",
-    "lesson": "5",
-    "ex_cn": "它的眼睛很漂亮。",
-    "ex_py": "Tā de yǎnjing hěn piàoliang.",
-    "ex_vn": "Mắt của nó rất đẹp.",
-    "type": "Đại từ"
-  },
-  {
-    "hanzi": "新",
-    "pinyin": "xīn",
-    "meaning": "mới",
-    "lesson": "5",
-    "ex_cn": "这是我的新自行车。",
-    "ex_py": "Zhè shì wǒ de xīn zìxíngchē.",
-    "ex_vn": "Đây là xe đạp mới của tôi.",
-    "type": "Tính từ"
-  },
-  {
-    "hanzi": "手机",
-    "pinyin": "shǒujī",
-    "meaning": "điện thoại di động",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "我的手机。",
-    "ex_py": "Wǒ de shǒujī.",
-    "ex_vn": "Điện thoại của tôi."
-  },
-  {
-    "hanzi": "电话",
-    "pinyin": "diànhuà",
-    "meaning": "điện thoại",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "这是你的电话吗？",
-    "ex_py": "Zhè shì nǐ de diànhuà ma?",
-    "ex_vn": "Đây là điện thoại của bạn phải không?"
-  },
-  {
-    "hanzi": "号码",
-    "pinyin": "hàomǎ",
-    "meaning": "số điện thoại, số",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "请告诉我你的电话号码。",
-    "ex_py": "Qǐng gàosu wǒ nǐ de diànhuà hàomǎ.",
-    "ex_vn": "Xin hãy cho tôi biết số điện thoại của bạn."
-  },
-  {
-    "hanzi": "去",
-    "pinyin": "qù",
-    "meaning": "đi",
-    "lesson": "6",
-    "type": "Động từ",
-    "ex_cn": "你去哪儿？",
-    "ex_py": "Nǐ qù nǎr?",
-    "ex_vn": "Bạn đi đâu thế?"
-  },
-  {
-    "hanzi": "哪儿",
-    "pinyin": "nǎr",
-    "meaning": "ở đâu, chỗ nào",
-    "lesson": "6",
-    "type": "Đại từ",
-    "ex_cn": "超市在哪儿？",
-    "ex_py": "Chāoshì zài nǎr?",
-    "ex_vn": "Siêu thị ở đâu?"
-  },
-  {
-    "hanzi": "买",
-    "pinyin": "mǎi",
-    "meaning": "mua",
-    "lesson": "6",
-    "type": "Động từ",
-    "ex_cn": "你想买什么？",
-    "ex_py": "Nǐ xiǎng mǎi shénme?",
-    "ex_vn": "Bạn muốn mua gì?"
-  },
-  {
-    "hanzi": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "sữa bò",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "他喝牛奶。",
-    "ex_py": "Tā hē niúnǎi.",
-    "ex_vn": "Anh ấy uống sữa."
-  },
-  {
-    "hanzi": "晚饭",
-    "pinyin": "wǎnfàn",
-    "meaning": "bữa tối, cơm tối",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "我们去吃晚饭吧。",
-    "ex_py": "Wǒmen qù chī wǎnfàn ba.",
-    "ex_vn": "Chúng ta đi ăn tối đi."
-  },
-  {
-    "hanzi": "那边",
-    "pinyin": "nàbiān",
-    "meaning": "phía bên kia, đằng kia",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "超市在那边。",
-    "ex_py": "Chāoshì zài nàbiān.",
-    "ex_vn": "Siêu thị ở đằng kia."
-  },
-  {
-    "hanzi": "好吃",
-    "pinyin": "hǎochī",
-    "meaning": "ngon",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "很好吃。",
-    "ex_py": "Hěn hǎochī.",
-    "ex_vn": "Rất ngon."
-  },
-  {
-    "hanzi": "米饭",
-    "pinyin": "mǐfàn",
-    "meaning": "cơm",
-    "lesson": "6",
-    "type": "Danh từ",
-    "ex_cn": "我想吃米饭。",
-    "ex_py": "Wǒ xiǎng chī mǐfàn.",
-    "ex_vn": "Tôi muốn ăn cơm."
   }
 ]

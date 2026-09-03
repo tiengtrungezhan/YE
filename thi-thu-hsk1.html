@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Thi Thử HSK 1 - EZHAN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .test-card {
+            background: #ffffff;
+            border: 2px solid var(--primary-light);
+            border-radius: 20px;
+            padding: 1.8rem 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(165, 207, 218, 0.15);
+        }
+        .test-card:hover {
+            border-color: var(--primary-dark);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(165, 207, 218, 0.35);
+        }
+        .test-card.disabled {
+            opacity: 0.55;
+            filter: grayscale(0.8);
+            cursor: not-allowed;
+            pointer-events: none;
+            border-style: dashed;
+        }
+        .test-card-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .test-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-color);
+        }
+        .test-status {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
+        .test-status.ready {
+            background: #e8f4f8;
+            color: #4a7883;
+        }
+        .test-status.coming {
+            background: #fdf1de;
+            color: #e8901a;
+        }
+        .test-info {
+            display: flex;
+            gap: 12px;
+            font-size: 0.88rem;
+            opacity: 0.8;
+        }
+        .test-info-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .btn-start {
+            margin-top: 0.5rem;
+            padding: 10px 16px;
+            background: var(--primary-dark);
+            color: white;
+            border-radius: 12px;
+            font-weight: 700;
+            text-align: center;
+            transition: var(--transition);
+        }
+        .test-card:hover .btn-start {
+            background: #4a7883;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn" title="Trang chủ EZHAN">
+        <img src="mascot.png" alt="Home">
+    </a>
+
+    <div class="page-container">
+        <a href="thi-thu-level.html" class="back-btn">← Chọn cấp thi khác</a>
+        
+        <div class="content-box">
+            <h1 style="margin-bottom: 0.5rem; color: var(--primary-dark);">📝 Danh Sách Đề Thi Thử HSK 1 (3.0)</h1>
+            <p style="color: var(--text-color); opacity: 0.7; margin-bottom: 2rem;">Chọn đề thi mô phỏng để bắt đầu làm bài thi như thi thật (Có chấm điểm & đáp án)</p>
+            
+            <div class="test-grid">
+                <a href="thi-thu.html" class="test-card">
+                    <div class="test-card-head">
+                        <div class="test-title">Đề Thi Thử Số 1</div>
+                        <span class="test-status ready">Đã sẵn sàng</span>
+                    </div>
+                    <div class="test-info">
+                        <span class="test-info-item">⏱ 40 Phút</span>
+                        <span class="test-info-item">📋 40 Câu hỏi</span>
+                        <span class="test-info-item">🎧 Audio Mp3</span>
+                    </div>
+                    <div class="btn-start">Vào Làm Bài Thi →</div>
+                </a>
+
+                <a href="#" class="test-card disabled">
+                    <div class="test-card-head">
+                        <div class="test-title">Đề Thi Thử Số 2</div>
+                        <span class="test-status coming">Sắp ra mắt</span>
+                    </div>
+                    <div class="test-info">
+                        <span class="test-info-item">⏱ 40 Phút</span>
+                        <span class="test-info-item">📋 40 Câu hỏi</span>
+                    </div>
+                    <div class="btn-start" style="background:#ccc;">Chưa mở</div>
+                </a>
+
+                <a href="#" class="test-card disabled">
+                    <div class="test-card-head">
+                        <div class="test-title">Đề Thi Thử Số 3</div>
+                        <span class="test-status coming">Sắp ra mắt</span>
+                    </div>
+                    <div class="test-info">
+                        <span class="test-info-item">⏱ 40 Phút</span>
+                        <span class="test-info-item">📋 40 Câu hỏi</span>
+                    </div>
+                    <div class="btn-start" style="background:#ccc;">Chưa mở</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
