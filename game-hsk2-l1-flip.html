@@ -8,43 +8,31 @@
     <style>
         body { background: #f0f9ff; }
         .game-header { text-align: center; margin-bottom: 2rem; position: relative; }
-        .mascot-container { 
-            position: absolute; right: 0; top: -20px; width: 100px; 
-            animation: bounce 2s infinite ease-in-out; 
-        }
+        .mascot-container { position: absolute; right: 0; top: -20px; width: 100px; animation: bounce 2s infinite ease-in-out; }
         @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-        .mascot-bubble {
-            background: white; padding: 10px 15px; border-radius: 20px; box-shadow: var(--shadow);
-            font-size: 0.85rem; position: absolute; right: 110px; top: 10px; width: 150px;
-            color: var(--primary-dark); font-weight: 700; z-index: 10;
-        }
+        .mascot-bubble { background: white; padding: 10px 15px; border-radius: 20px; box-shadow: var(--shadow); font-size: 0.85rem; position: absolute; right: 110px; top: 10px; width: 150px; color: var(--primary-dark); font-weight: 700; z-index: 10; }
         .game-container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
         .single-card-container { display: flex; justify-content: center; align-items: center; margin-top: 2rem; position: relative; }
         .flip-card { background-color: transparent; width: 100%; max-width: 500px; height: 500px; perspective: 1000px; cursor: pointer; }
         .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
         .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
-        .flip-card-front, .flip-card-back { 
-            position: absolute; width: 100%; height: 100%; backface-visibility: hidden; 
-            display: flex; flex-direction: column; border-radius: 30px; padding: 1.2rem; 
-            border: 2px solid var(--primary-light); background: white;
-            box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2);
-        }
+        .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; border-radius: 30px; padding: 1.2rem; border: 2px solid var(--primary-light); background: white; box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2); }
         .flip-card-front { justify-content: center; align-items: center; }
-        .flip-card-front .hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 8rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }
-        .flip-card:hover .hanzi { transform: scale(1.1); }
+        .flip-card-front .hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 6.5rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; word-break: break-all; text-align: center; }
+        .flip-card:hover .hanzi { transform: scale(1.05); }
         .flip-card-back { transform: rotateY(180deg); text-align: left; background: #fff; border-color: var(--primary-color); }
         .flip-card.mastered .flip-card-front, .flip-card.mastered .flip-card-back { border-color: #ffd700; background: #fffdf0; }
         .master-badge { position: absolute; top: 15px; right: 15px; font-size: 1.5rem; display: none; z-index: 5; }
         .flip-card.mastered .master-badge { display: block; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
         .back-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-        .back-hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 3rem; font-weight: 800; color: var(--primary-dark); }
-        .back-pinyin { font-size: 1.8rem; color: #e67e22; font-weight: 700; }
+        .back-hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 2.5rem; font-weight: 800; color: var(--primary-dark); }
+        .back-pinyin { font-size: 1.6rem; color: #e67e22; font-weight: 700; }
         .btn-speak { background: var(--primary-light); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: 0.3s; }
         .btn-speak:hover { background: var(--primary-color); transform: scale(1.1); }
-        .back-meaning { font-size: 1.6rem; font-weight: 700; color: #444; }
-        .back-example { font-size: 1.2rem; background: #f9f9f9; padding: 1rem; border-radius: 12px; margin-top: 1rem; line-height: 1.5; }
-        .back-example strong { font-size: 1.2rem; color: var(--primary-dark); }
+        .back-meaning { font-size: 1.5rem; font-weight: 700; color: #444; }
+        .back-example { font-size: 1.1rem; background: #f9f9f9; padding: 1rem; border-radius: 12px; margin-top: 1rem; line-height: 1.5; }
+        .back-example strong { font-size: 1.1rem; color: var(--primary-dark); }
         .master-btn { margin-top: auto; width: 100%; padding: 0.6rem; border-radius: 12px; border: 2px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 0.85rem; }
         .master-btn.active { background: var(--primary-color); color: white; }
         .progress-container { background: white; padding: 1.5rem; border-radius: 20px; box-shadow: var(--shadow); margin: 2rem 0; }
@@ -63,9 +51,9 @@
         <img src="mascot.png" alt="Home">
     </a>
     <div class="page-container">
-        <a href="game-hsk2.html" class="back-btn">← Quay lại</a>
+        <a href="game-hsk2.html" class="back-btn">← Quay lại danh sách bài</a>
         <header class="game-header">
-            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh</h1>
+            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh - HSK 2 3.0 Bài 1</h1>
             <div class="mascot-container">
                 <div class="mascot-bubble" id="mascotSpeech">Cùng mình bắt đầu học nhé! 🐼</div>
                 <img src="mascot-guide.png" style="width: 100%; mix-blend-mode: multiply;" alt="Mascot">
@@ -97,7 +85,7 @@
     </div>
 
     <script>
-        let vocabData = [{"hanzi": "旅游", "pinyin": "lǚyóu", "meaning": "du lịch", "lesson": "1", "ex_cn": "我喜欢去中国旅游。", "ex_py": "Wǒ xǐhuān qù Zhōngguó lǚyóu.", "ex_vn": "Tôi thích đi du lịch Trung Quốc.", "type": "Động từ"}, {"hanzi": "觉得", "pinyin": "juéde", "meaning": "cảm thấy, cho rằng", "lesson": "1", "ex_cn": "你觉得这本书怎么样？", "ex_py": "Nǐ juéde zhè běn shū zěnmeyàng?", "ex_vn": "Bạn thấy cuốn sách này thế nào?", "type": "Động từ"}, {"hanzi": "最", "pinyin": "zuì", "meaning": "nhất", "lesson": "1", "ex_cn": "我最喜欢吃北京烤鸭。", "ex_py": "Wǒ zuì xǐhuān chī Běijīng kǎoyā.", "ex_vn": "Tôi thích ăn vịt quay Bắc Kinh nhất.", "type": "Phó từ"}, {"hanzi": "为什么", "pinyin": "wèi shénme", "meaning": "tại sao", "lesson": "1", "ex_cn": "你为什么不高兴？", "ex_py": "Nǐ wèishénme bù gāoxìng?", "ex_vn": "Tại sao bạn không vui?", "type": "Giới từ"}, {"hanzi": "也", "pinyin": "yě", "meaning": "cũng", "lesson": "1", "ex_cn": "我也是学生。", "ex_py": "Wǒ yěshì xuésheng.", "ex_vn": "Tôi cũng là học sinh.", "type": "Phó từ"}, {"hanzi": "运动", "pinyin": "yùndòng", "meaning": "vận động, thể thao", "lesson": "1", "ex_cn": "运动对身体好。", "ex_py": "Yùndòng duì shēntǐ hǎo.", "ex_vn": "Vận động tốt cho sức khỏe.", "type": "Động từ"}, {"hanzi": "踢足球", "pinyin": "tī zúqiú", "meaning": "đá bóng", "lesson": "1", "ex_cn": "他每天下午都踢足球。", "ex_py": "Tā měitiān xiàwǔ dōu tī zúqiú.", "ex_vn": "Anh ấy chiều nào cũng đá bóng.", "type": "Danh từ"}, {"hanzi": "一起", "pinyin": "yìqǐ", "meaning": "cùng nhau", "lesson": "1", "ex_cn": "我们一起去吧。", "ex_py": "Wǒmen yìqǐ qù ba.", "ex_vn": "Chúng ta cùng đi nhé.", "type": "Danh từ"}, {"hanzi": "要", "pinyin": "yào", "meaning": "muốn, cần", "lesson": "1", "ex_cn": "我要买一件新衣服。", "ex_py": "Wǒ yào mǎi yí jiàn xīn yīfu.", "ex_vn": "Tôi muốn mua một chiếc áo mới.", "type": "Động từ"}, {"hanzi": "眼睛", "pinyin": "yǎnjing", "meaning": "mắt", "lesson": "1", "ex_cn": "她的眼睛是大大的。", "ex_py": "Tā de yǎnjing shì dàdà de.", "ex_vn": "Mắt của cô ấy to to.", "type": "Danh từ"}, {"hanzi": "外国", "pinyin": "wàiguó", "meaning": "nước ngoài", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "他去外国学习了。", "ex_py": "Tā qù wàiguó xuéxí le.", "ex_vn": "Anh ấy đi nước ngoài du học rồi."}, {"hanzi": "出国", "pinyin": "chūguó", "meaning": "đi nước ngoài", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "我想出国旅游。", "ex_py": "Wǒ xiǎng chūguó lǚyóu.", "ex_vn": "Tôi muốn đi du lịch nước ngoài."}, {"hanzi": "机票", "pinyin": "jīpiào", "meaning": "vé máy bay", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "机票多少钱？", "ex_py": "Jīpiào duōshǎo qián?", "ex_vn": "Vé máy bay bao nhiêu tiền?"}, {"hanzi": "酒店", "pinyin": "jiǔdiàn", "meaning": "khách sạn", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "我们在酒店住。", "ex_py": "Wǒmen zài jiǔdiàn zhù.", "ex_vn": "Chúng tôi ở khách sạn."}, {"hanzi": "球", "pinyin": "qiú", "meaning": "quả bóng", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "这是一个红色的球。", "ex_py": "Zhè shì yí ge hóngsè de qiú.", "ex_vn": "Đây là một quả bóng màu đỏ."}, {"hanzi": "踢", "pinyin": "tī", "meaning": "đá (bóng)", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "他喜欢踢球。", "ex_py": "Tā xǐhuan tīqiú.", "ex_vn": "Anh ấy thích đá bóng."}, {"hanzi": "足球", "pinyin": "zúqiú", "meaning": "bóng đá", "lesson": "1", "type": "Bổ sung 3.0", "ex_cn": "下午我们去踢足球。", "ex_py": "Xiàwǔ wǒmen qù tī zúqiú.", "ex_vn": "Chiều nay chúng tôi đi đá bóng."}];
+        let vocabData = [{"hanzi": "就", "pinyin": "jiù", "meaning": "thì, liền, chính", "lesson": "1", "type": "Phó từ", "ex_cn": "好的，那我给你打电话。", "ex_py": "Hǎo de, nà wǒ gěi nǐ dǎ diànhuà.", "ex_vn": "Được, vậy tôi sẽ gọi điện cho bạn."}, {"hanzi": "给", "pinyin": "gěi", "meaning": "cho, đưa cho", "lesson": "1", "type": "Giới từ", "ex_cn": "她还给我们介绍了很多东西。", "ex_py": "Tā hái gěi wǒmen jièshào le hěn duō dōngxi.", "ex_vn": "Cô ấy còn giới thiệu cho chúng tôi rất nhiều thứ."}, {"hanzi": "让", "pinyin": "ràng", "meaning": "bảo, để, nhường, cho phép", "lesson": "1", "type": "Động từ", "ex_cn": "她让我来接你们。", "ex_py": "Tā ràng wǒ lái jiē nǐmen.", "ex_vn": "Cô ấy bảo tôi đến đón các bạn."}, {"hanzi": "接", "pinyin": "jiē", "meaning": "đón, nhận, nghe (điện thoại)", "lesson": "1", "type": "Động từ", "ex_cn": "不好意思，我接个电话。", "ex_py": "Bù hǎoyìsi, wǒ jiē gè diànhuà.", "ex_vn": "Ngại quá, tôi nghe một cuộc điện thoại."}, {"hanzi": "次", "pinyin": "cì", "meaning": "lần", "lesson": "1", "type": "Lượng từ", "ex_cn": "你们是第一次来北京吗？", "ex_py": "Nǐmen shì dì yī cì lái Běijīng ma?", "ex_vn": "Các bạn là lần đầu tiên đến Bắc Kinh à?"}, {"hanzi": "旅游", "pinyin": "lǚyóu", "meaning": "du lịch", "lesson": "1", "type": "Động từ", "ex_cn": "我们是来旅游的。", "ex_py": "Wǒmen shì lái lǚyóu de.", "ex_vn": "Chúng tôi đến để đi du lịch."}, {"hanzi": "帮忙", "pinyin": "bāngmáng", "meaning": "giúp đỡ, giúp một tay", "lesson": "1", "type": "Động từ", "ex_cn": "我想请你帮个忙。", "ex_py": "Wǒ xiǎng qǐng nǐ bāng gè máng.", "ex_vn": "Tôi muốn nhờ bạn giúp một việc."}, {"hanzi": "不好意思", "pinyin": "bù hǎoyìsi", "meaning": "ngại quá, xin lỗi", "lesson": "1", "type": "Cụm từ", "ex_cn": "不好意思，我接个电话。", "ex_py": "Bù hǎoyìsi, wǒ jiē gè diànhuà.", "ex_vn": "Ngại quá, tôi nghe một cuộc điện thoại."}, {"hanzi": "已经", "pinyin": "yǐjīng", "meaning": "đã... rồi", "lesson": "1", "type": "Phó từ", "ex_cn": "我已经到北京了。", "ex_py": "Wǒ yǐjīng dào Běijīng le.", "ex_vn": "Tôi đã đến Bắc Kinh rồi."}, {"hanzi": "那", "pinyin": "nà", "meaning": "thế thì, vậy thì", "lesson": "1", "type": "Liên từ", "ex_cn": "好的，那我给你打电话。", "ex_py": "Hǎo de, nà wǒ gěi nǐ dǎ diànhuà.", "ex_vn": "Được, vậy tôi sẽ gọi điện cho bạn."}, {"hanzi": "介绍", "pinyin": "jièshào", "meaning": "giới thiệu", "lesson": "1", "type": "Động từ", "ex_cn": "她还给我们介绍了很多东西。", "ex_py": "Tā hái gěi wǒmen jièshào le hěn duō dōngxi.", "ex_vn": "Cô ấy còn giới thiệu cho chúng tôi rất nhiều thứ."}, {"hanzi": "有时", "pinyin": "yǒushí", "meaning": "thỉnh thoảng, có lúc", "lesson": "1", "type": "Phó từ", "ex_cn": "我有时不太懂她的意思。", "ex_py": "Wǒ yǒushí bú tài dǒng tā de yìsi.", "ex_vn": "Thỉnh thoảng tôi không hiểu lắm ý của cô ấy."}, {"hanzi": "懂", "pinyin": "dǒng", "meaning": "hiểu", "lesson": "1", "type": "Động từ", "ex_cn": "我有时不太懂她的意思。", "ex_py": "Wǒ yǒushí bú tài dǒng tā de yìsi.", "ex_vn": "Thỉnh thoảng tôi không hiểu lắm ý của cô ấy."}, {"hanzi": "意思", "pinyin": "yìsi", "meaning": "ý nghĩa, ý", "lesson": "1", "type": "Danh từ", "ex_cn": "我有时不太懂她的意思。", "ex_py": "Wǒ yǒushí bú tài dǒng tā de yìsi.", "ex_vn": "Thỉnh thoảng tôi không hiểu lắm ý của cô ấy."}, {"hanzi": "北京烤鸭", "pinyin": "Běijīng kǎoyā", "meaning": "vịt quay Bắc Kinh", "lesson": "1", "type": "Danh từ", "ex_cn": "她请我们吃了北京烤鸭。", "ex_py": "Tā qǐng wǒmen chī le Běijīng kǎoyā.", "ex_vn": "Cô ấy mời chúng tôi ăn vịt quay Bắc Kinh."}];
         const grid = document.getElementById('cardGrid');
         const progressFill = document.getElementById('progress');
         const progressPercent = document.getElementById('progressPercent');

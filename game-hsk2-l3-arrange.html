@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Câu Sắp Xếp - HSK 2 3.0 Bài 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #fdf2f8; }
+        .game-wrapper { max-width: 700px; margin: 0 auto; padding: 2rem; text-align: center; }
+        .quiz-card { background: var(--white); border-radius: 30px; padding: 2.5rem 2rem; box-shadow: var(--shadow); margin-top: 1.5rem; min-height: 420px; display: flex; flex-direction: column; justify-content: center; position: relative; }
+        .progress-container { width: 100%; height: 10px; background: #eee; border-radius: 5px; margin-bottom: 1.5rem; overflow: hidden; }
+        .progress-fill { height: 100%; background: #00796b; width: 0%; transition: width 0.3s; }
+        .question-title { font-size: 1.5rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.5rem; }
+        .question-sub { font-size: 1.1rem; color: #666; margin-bottom: 1.5rem; }
+        .phrase-box { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin: 1.5rem 0; min-height: 80px; padding: 1.2rem; border: 2px dashed #b2dfdb; border-radius: 20px; background: #e0f2f1; transition: 0.3s; }
+        .phrase-item { padding: 0.8rem 1.2rem; background: white; border: 2px solid #00796b; border-radius: 14px; cursor: pointer; font-size: 1.3rem; font-weight: 700; color: #004d40; transition: 0.2s; box-shadow: 0 3px 8px rgba(0,0,0,0.06); font-family: "KaiTi", "楷体", "STKaiti", serif; }
+        .phrase-item:hover { background: #b2dfdb; transform: scale(1.05); }
+        .submit-btn { padding: 1.2rem; background: #00796b; color: white; border: none; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; width: 100%; transition: 0.3s; margin-top: 1rem; }
+        .submit-btn:hover { background: #004d40; transform: translateY(-2px); }
+        .audio-btn-big { background: #e0f2f1; border: 2px solid #00796b; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; margin-left: 10px; transition: 0.2s; }
+        .audio-btn-big:hover { background: #b2dfdb; transform: scale(1.1); }
+        .result-screen { display: none; }
+        .score-circle { width: 140px; height: 140px; border-radius: 50%; border: 8px solid #00796b; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: 800; margin: 1.5rem auto; color: #004d40; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn"><img src="mascot.png" alt="Home"></a>
+    <div class="page-container">
+        <a href="game-hsk2.html" class="back-btn">← Quay lại danh sách bài</a>
+        <div class="game-wrapper">
+            <div id="game-ui">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="progress-container" style="margin-bottom: 0; flex: 1;"><div class="progress-fill" id="progress"></div></div>
+                    <div id="progress-text" style="font-weight: bold; color: var(--primary-dark); font-size: 1.1rem; min-width: 50px; text-align: right;">1/10</div>
+                </div>
+                <div class="quiz-card" id="quiz-card"></div>
+            </div>
+            <div id="result-ui" class="result-screen">
+                <div class="quiz-card">
+                    <h1 style="color: var(--primary-dark);">KẾT QUẢ SẮP XẾP CÂU</h1>
+                    <div class="score-circle" id="final-score">0%</div>
+                    <p id="score-text" style="font-size: 1.2rem; color: #555;"></p>
+                    <button class="submit-btn" onclick="location.reload()">Luyện Tập Lại</button>
+                    <a href="game-hsk2-l3-translate.html" class="submit-btn" style="background: #e65100; text-decoration: none; display: block; text-align: center; margin-top: 1rem; line-height: 1.2;">Thử sức Dịch Việt Trung ➔</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sentences = [{"cn": "这是我的手表。", "vn": "Đây là đồng hồ của tôi.", "phrases": ["这是我", "的手表", "。"]}, {"cn": "一千块。", "vn": "Một nghìn đồng.", "phrases": ["一千", "块。"]}, {"cn": "我看报纸。", "vn": "Tôi đọc báo.", "phrases": ["我看", "报纸。"]}, {"cn": "送你。", "vn": "Tặng bạn.", "phrases": ["送你", "。"]}, {"cn": "请看一下。", "vn": "Xin hãy xem một chút.", "phrases": ["请看", "一下。"]}, {"cn": "我的房间。", "vn": "Phòng của tôi.", "phrases": ["我的", "房间。"]}, {"cn": "在他旁边。", "vn": "Ở bên cạnh anh ấy.", "phrases": ["在他", "旁边。"]}, {"cn": "真好！", "vn": "Thật tốt!", "phrases": ["真好", "！"]}, {"cn": "这个是粉色的。", "vn": "Cái này là màu hồng.", "phrases": ["这个是", "粉色的", "。"]}, {"cn": "什么颜色？", "vn": "Màu gì?", "phrases": ["什么", "颜色？"]}];
+        let currentIndex = 0;
+        let score = 0;
+        function renderQuestion() {
+            const item = sentences[currentIndex];
+            const card = document.getElementById('quiz-card');
+            document.getElementById('progress').style.width = ((currentIndex + 1) / sentences.length * 100) + '%';
+            document.getElementById('progress-text').innerText = (currentIndex + 1) + '/' + sentences.length;
+            let shuffled = [...item.phrases].sort(() => Math.random() - 0.5);
+            card.innerHTML = `
+                <div class="question-title">Câu ${currentIndex + 1}: Sắp xếp câu hoàn chỉnh</div>
+                <div id="drop-zone" class="phrase-box"></div>
+                <div style="text-align: right; margin-bottom: 0.5rem;">
+                    <button onclick="clearDropZone()" style="background: #ff8787; color: white; border: none; padding: 6px 14px; border-radius: 10px; font-size: 0.85rem; cursor: pointer; font-weight: bold;">Xóa tất cả</button>
+                </div>
+                <div id="drag-zone" class="phrase-box" style="border: none; background: transparent;">
+                    ${shuffled.map(p => `<div class="phrase-item" onclick="movePhrase(this, '${item.cn}')">${p}</div>`).join('')}
+                </div>
+                <div id="feedback-zone" style="margin-top: 1rem;"></div>
+            `;
+        }
+        function movePhrase(el, correctStr) {
+            const dropZone = document.getElementById('drop-zone');
+            const dragZone = document.getElementById('drag-zone');
+            if (el.parentNode === dragZone) dropZone.appendChild(el);
+            else dragZone.appendChild(el);
+            const currentStr = Array.from(dropZone.children).map(x => x.innerText).join('').replace(/[，。？！\s]/g, '');
+            const cleanCorrect = correctStr.replace(/[，。？！\s]/g, '');
+            if (dragZone.children.length === 0 && dropZone.children.length > 0) {
+                const feedback = document.getElementById('feedback-zone');
+                if (currentStr === cleanCorrect) {
+                    dropZone.style.background = "#d4edda"; dropZone.style.borderColor = "#28a745"; score++;
+                    feedback.innerHTML = `<div style="color: #28a745; font-weight: bold; font-size: 1.3rem; margin-bottom: 1rem;">Correct! Bạn ghép rất chuẩn! 🎉 <button class="audio-btn-big" onclick="speak('${correctStr}')">🔊</button></div>`;
+                    speak(correctStr); showNextBtn();
+                } else {
+                    dropZone.style.background = "#f8d7da"; dropZone.style.borderColor = "#dc3545";
+                    feedback.innerHTML = `<div style="color: #dc3545; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem;">Chưa đúng rồi!<br><span style="color: #155724; font-size: 1.3rem;">Đáp án đúng: ${correctStr}</span> <button class="audio-btn-big" onclick="speak('${correctStr}')">🔊</button></div>`;
+                    speak(correctStr); showNextBtn();
+                }
+            }
+        }
+        function clearDropZone() {
+            const dropZone = document.getElementById('drop-zone');
+            const dragZone = document.getElementById('drag-zone');
+            while (dropZone.firstChild) dragZone.appendChild(dropZone.firstChild);
+            dropZone.style.background = "#e0f2f1"; dropZone.style.borderColor = "#b2dfdb";
+        }
+        function showNextBtn() {
+            const dragItems = document.querySelectorAll('.phrase-item');
+            dragItems.forEach(b => b.onclick = null);
+            const btn = document.createElement('button');
+            btn.className = "submit-btn";
+            btn.innerText = currentIndex < sentences.length - 1 ? "Câu tiếp theo ➔" : "Xem kết quả 🏆";
+            btn.onclick = () => { currentIndex++; if (currentIndex < sentences.length) renderQuestion(); else showResults(); };
+            document.getElementById('quiz-card').appendChild(btn);
+        }
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'zh-CN'; utterance.rate = 0.8;
+            window.speechSynthesis.cancel(); window.speechSynthesis.speak(utterance);
+        }
+        function showResults() {
+            document.getElementById('game-ui').style.display = 'none';
+            document.getElementById('result-ui').style.display = 'block';
+            const pct = Math.round((score / sentences.length) * 100);
+            document.getElementById('final-score').innerText = pct + '%';
+            document.getElementById('score-text').innerText = `Bạn đã hoàn thành chính xác ${score} / ${sentences.length} câu sắp xếp.`;
+        }
+        renderQuestion();
+    </script>
+</body>
+</html>

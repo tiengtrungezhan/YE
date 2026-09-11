@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Chữ Hán - HSK 2 3.0 Bài 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+    <style>
+        body { background: #f0f7f9; }
+        .game-wrapper { display: flex; gap: 2rem; max-width: 1000px; margin: 2rem auto; align-items: flex-start; }
+        .char-sidebar { flex: 0 0 180px; background: var(--white); border-radius: 25px; padding: 1.5rem; box-shadow: var(--shadow); max-height: 550px; overflow-y: auto; display: flex; flex-direction: column; gap: 0.8rem; }
+        .sidebar-title { font-size: 0.9rem; font-weight: bold; color: var(--primary-dark); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; text-align: center; border-bottom: 2px solid var(--primary-light); padding-bottom: 0.5rem; }
+        .char-btn { padding: 0.8rem; background: #f8fbfe; border: 2px solid #eef2f5; border-radius: 15px; font-size: 1.6rem; font-family: "KaiTi", "楷体", "STKaiti", serif; font-weight: bold; color: var(--text-color); cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 0.8rem; }
+        .char-btn span { font-size: 0.9rem; font-family: Arial, sans-serif; font-weight: normal; color: #666; }
+        .char-btn:hover { border-color: var(--primary-color); background: #f0f7f9; transform: translateY(-2px); }
+        .char-btn.active { background: var(--primary-color); border-color: var(--primary-color); color: white; }
+        .char-btn.active span { color: #fff; }
+        .char-panel { flex: 1; background: var(--white); border-radius: 30px; padding: 3rem; box-shadow: var(--shadow); display: flex; gap: 3rem; min-height: 550px; }
+        .writer-section { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; flex: 0 0 250px; }
+        .hanzi-writer-container { width: 250px; height: 250px; background: #fff; border: 3px solid var(--primary-light); border-radius: 20px; position: relative; box-shadow: 0 10px 25px rgba(165,207,218,0.15); background-image: linear-gradient(to right, #f5f5f5 1px, transparent 1px), linear-gradient(to bottom, #f5f5f5 1px, transparent 1px), linear-gradient(to right, transparent 50%, #ffe3e3 1px, transparent 50%), linear-gradient(to bottom, transparent 50%, #ffe3e3 1px, transparent 50%); background-size: 25px 25px, 25px 25px, 100% 100%, 100% 100%; }
+        .control-buttons { display: flex; flex-direction: column; gap: 0.8rem; width: 100%; }
+        .btn-control { padding: 0.8rem 1.5rem; border-radius: 12px; border: 2px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: bold; font-size: 0.95rem; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .btn-control:hover { background: var(--primary-color); color: white; transform: translateY(-2px); }
+        .btn-speak-big { background: #f0f7f9; border-color: var(--primary-color); }
+        .details-section { flex: 1; display: flex; flex-direction: column; gap: 1.5rem; }
+        .char-header { border-bottom: 2px dashed var(--primary-light); padding-bottom: 1rem; }
+        .char-pinyin-display { font-size: 2rem; font-weight: bold; color: #e67e22; }
+        .char-meaning-display { font-size: 1.3rem; font-weight: bold; color: var(--text-color); margin-top: 0.3rem; }
+        .pills-container { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .info-pill { background: #f0f9ff; color: var(--text-color); padding: 0.6rem 1.2rem; border-radius: 100px; font-size: 0.95rem; border: 1px solid var(--primary-light); display: flex; gap: 0.5rem; }
+        .info-pill strong { color: var(--primary-dark); }
+        .mnemonic-box { background: #fffdf0; border: 1px solid #ffeeba; border-radius: 20px; padding: 1.5rem; margin-top: auto; position: relative; }
+        .mnemonic-title { font-weight: bold; color: #d48806; margin-bottom: 0.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .mnemonic-content { font-size: 1.05rem; line-height: 1.6; color: #555; }
+        .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); background: #28a745; color: white; padding: 1rem 2rem; border-radius: 50px; font-weight: bold; box-shadow: 0 10px 25px rgba(40,167,69,0.3); z-index: 1000; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s; opacity: 0; pointer-events: none; }
+        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+        @media (max-width: 768px) { .game-wrapper { flex-direction: column; padding: 1rem; } .char-sidebar { flex: 1; width: 100%; max-height: 120px; flex-direction: row; overflow-x: auto; padding: 1rem; } .sidebar-title { display: none; } .char-btn { flex-shrink: 0; min-width: 80px; } .char-panel { flex-direction: column; padding: 2rem; width: 100%; gap: 2rem; } .writer-section { width: 100%; flex: none; } }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-logo-btn"><img src="mascot.png" alt="Home"></a>
+    <div class="page-container">
+        <a href="game-hsk2.html" class="back-btn">← Quay lại danh sách bài</a>
+        <h1 style="text-align: center; color: var(--primary-dark); font-size: 2.2rem; margin-bottom: 1rem;">Luyện Chữ Hán HSK 2 3.0 Bài 3 ✍️</h1>
+        <p style="text-align: center; margin-bottom: 2rem; opacity: 0.8;">Học cách viết, số nét, bộ thủ và mẹo nhớ từng chữ Hán trong bài.</p>
+        <div class="game-wrapper">
+            <div class="char-sidebar" id="charSidebar"><div class="sidebar-title">Chữ Hán</div></div>
+            <div class="char-panel">
+                <div class="writer-section">
+                    <div id="character-target-div" class="hanzi-writer-container"></div>
+                    <div class="control-buttons">
+                        <button class="btn-control" onclick="animateChar()">▶ Xem viết</button>
+                        <button class="btn-control" onclick="startPractice()">✏ Viết thử</button>
+                        <button class="btn-control btn-speak-big" onclick="speakChar()">🔊 Phát âm</button>
+                    </div>
+                </div>
+                <div class="details-section">
+                    <div class="char-header">
+                        <span class="char-pinyin-display" id="char-pinyin"></span>
+                        <div class="char-meaning-display" id="char-meaning"></div>
+                    </div>
+                    <div class="pills-container">
+                        <div class="info-pill"><strong>Bộ thủ:</strong> <span id="char-radical">丨</span></div>
+                        <div class="info-pill"><strong>Số nét:</strong> <span id="char-strokes">6</span></div>
+                    </div>
+                    <div class="mnemonic-box">
+                        <div class="mnemonic-title">💡 Mẹo Nhớ Chữ Hán</div>
+                        <div class="mnemonic-content" id="char-mnemonic"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast" id="toast">Tuyệt vời! Bạn viết rất đẹp! 🎉</div>
+    <script>
+        const hanziData = {"手": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 手", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 手 để ghi nhớ lâu hơn."}, "表": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 表", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 表 để ghi nhớ lâu hơn."}, "千": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 千", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 千 để ghi nhớ lâu hơn."}, "报": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 报", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 报 để ghi nhớ lâu hơn."}, "纸": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 纸", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 纸 để ghi nhớ lâu hơn."}, "送": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 送", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 送 để ghi nhớ lâu hơn."}, "一": {"strokes": 1, "radical": "一", "pinyin": "yī", "meaning": "một", "mnemonic": "Một vạch ngang, chỉ số một, sự khởi đầu."}, "下": {"strokes": 3, "radical": "一", "pinyin": "xià", "meaning": "dưới, xuống", "mnemonic": "Một nét ngang làm mốc, nét dọc và nét chấm nằm dưới mốc."}, "房": {"strokes": 8, "radical": "户", "pinyin": "", "meaning": "Chữ Hán: 房", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 房 để ghi nhớ lâu hơn."}, "间": {"strokes": 7, "radical": "门", "pinyin": "", "meaning": "Chữ Hán: 间", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 间 để ghi nhớ lâu hơn."}, "旁": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 旁", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 旁 để ghi nhớ lâu hơn."}, "边": {"strokes": 5, "radical": "辶", "pinyin": "biān", "meaning": "bên, cạnh", "mnemonic": "Bước đi (辶) dọc theo ranh giới của vùng đất biên cương (giản thể của 邊)."}, "真": {"strokes": 10, "radical": "目", "pinyin": "zhēn", "meaning": "thật, chân thật", "mnemonic": "Mắt (mục 目) nhìn rõ mười (thập 十) phương tám (bát 八) hướng chân thật không dối lừa."}, "粉": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 粉", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 粉 để ghi nhớ lâu hơn."}, "色": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 色", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 色 để ghi nhớ lâu hơn."}, "颜": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 颜", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 颜 để ghi nhớ lâu hơn."}, "左": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 左", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 左 để ghi nhớ lâu hơn."}, "红": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 红", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 红 để ghi nhớ lâu hơn."}, "花": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 花", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 花 để ghi nhớ lâu hơn."}, "茶": {"strokes": 9, "radical": "艹", "pinyin": "chá", "meaning": "trà, chè", "mnemonic": "Lá trà hái từ cây cỏ (艹) mang về pha nước cho người (人) uống gỗ (木)."}, "绿": {"strokes": 6, "radical": "一", "pinyin": "", "meaning": "Chữ Hán: 绿", "mnemonic": "Quan sát thứ tự nét và kết cấu của chữ 绿 để ghi nhớ lâu hơn."}};
+        const RADICAL_DICT = {"丨": "Cổn (sổ thẳng)", "丿": "Phiệt (nét phẩy)", "人": "Nhân (người)", "亻": "Nhân (người)", "口": "Khẩu (miệng)", "宀": "Miên (mái nhà)", "日": "Nhật (mặt trời/ngày)", "木": "Mộc (cây)", "水": "Thủy (nước)", "氵": "Thủy (nước)", "言": "Ngôn (nói/lời nói)", "讠": "Ngôn (nói/lời nói)", "门": "Môn (cửa)", "心": "Tâm (tim/lòng)", "忄": "Tâm (tim/lòng)", "禾": "Hòa (lúa)", "女": "Nữ (con gái/phụ nữ)", "贝": "Bối (tiền vỏ sò/bảo bối)", "囗": "Vi (bao quanh)", "八": "Bát (số tám)", "走": "Tẩu (đi/chạy)", "戈": "Qua (vũ khí)", "羊": "Dương (con cừu)", "大": "Đại (to lớn)", "彳": "Xích (bước chân trái)", "乙": "Ất", "耳": "Nhĩ (tai)", "目": "Mục (mắt)", "王": "Vương (vua)", "力": "Lực (sức mạnh)", "月": "Nguyệt (mặt trăng/tháng)", "火": "Hỏa (lửa)", "灬": "Hỏa (lửa)", "土": "Thổ (đất)", "寸": "Thốn (tấc)", "食": "Thực (ăn)", "饣": "Thực (ăn)", "犬": "Khuyển (con chó)", "犭": "Khuyển (con chó)", "父": "Phụ (cha)", "手": "Thủ (tay)", "扌": "Thủ (tay)", "糸": "Mịch (tơ lụa)", "纟": "Mịch (tơ lụa)", "辵": "Sước (đi)", "辶": "Sước (đi)", "艸": "Thảo (cỏ)", "艹": "Thảo (cỏ)", "竹": "Trúc (tre)", "⺮": "Trúc (tre)", "雨": "Vũ (mưa)", "自": "Tự (bản thân)", "足": "Túc (chân)", "车": "Xa (xe)", "衣": "Y (áo)", "衤": "Y (áo)", "广": "Quảng (mái che)", "疒": "Nạch (bệnh)", "皿": "Mãnh (đồ đựng)", "石": "Thạch (đá)", "示": "Thị (mách bảo)", "礻": "Thị (mách bảo)", "穴": "Huyệt (hang)", "立": "Lập (đứng)", "皮": "Bì (da)", "矢": "Thỉ (mũi tên)", "肉": "Nhục (thịt)", "舌": "Thiệt (lưỡi)", "舟": "Chu (thuyền)", "虫": "Trùng (sâu bọ)", "血": "Huyết (máu)", "行": "Hành (đi)", "见": "Kiến (nhìn)", "角": "Giác (sừng)", "身": "Thân (thân thể)", "辛": "Tân (cay)", "酉": "Dậu (rượu)", "里": "Lý (dặm)", "长": "Trường (dài)", "风": "Phong (gió)", "飞": "Phi (bay)", "首": "Thủ (đầu)", "香": "Hương (thơm)", "马": "Mã (ngựa)", "高": "Cao (cao)", "鱼": "Ngư (cá)", "鸟": "Điểu (chim)", "黄": "Hoàng (vàng)", "黑": "Hắc (đen)", "鼻": "Tị (mũi)", "一": "Nhất (một)", "丶": "Chủ (chấm)", "二": "Nhị (hai)", "亠": "Đầu (nắp)", "儿": "Nhân (chân)", "几": "Kỷ (bàn nhỏ)", "刀": "Đao (dao)", "刂": "Đao (dao)", "十": "Thập (mười)", "又": "Hựu (lại)", "子": "Tử (con)", "小": "Tiểu (nhỏ)", "工": "Công (thợ)", "巾": "Cân (khăn)", "干": "Can", "弓": "Cung (cung)", "方": "Phương (hướng)", "白": "Bạch (trắng)"};
+        const characters = Object.keys(hanziData);
+        let selectedChar = characters[0];
+        let writer = null;
+        function initSidebar() {
+            const sidebar = document.getElementById('charSidebar');
+            characters.forEach((char) => {
+                const btn = document.createElement('button');
+                btn.className = 'char-btn' + (char === selectedChar ? ' active' : '');
+                btn.innerHTML = char + " <span>(" + (hanziData[char].pinyin || '') + ")</span>";
+                btn.onclick = () => selectCharacter(char, btn);
+                sidebar.appendChild(btn);
+            });
+        }
+        function selectCharacter(char, btnElement) {
+            selectedChar = char;
+            document.querySelectorAll('.char-btn').forEach(btn => btn.classList.remove('active'));
+            if (btnElement) btnElement.classList.add('active');
+            loadCharacter(char);
+        }
+        function loadCharacter(char) {
+            document.getElementById('character-target-div').innerHTML = '';
+            const detail = hanziData[char];
+            document.getElementById('char-pinyin').innerText = detail.pinyin || '';
+            document.getElementById('char-meaning').innerText = detail.meaning || `Chữ Hán: ${char}`;
+            const rawRadical = detail.radical || '一';
+            const radicalTranslation = RADICAL_DICT[rawRadical] || "";
+            document.getElementById('char-radical').innerText = radicalTranslation ? rawRadical + " - " + radicalTranslation : rawRadical;
+            document.getElementById('char-strokes').innerText = detail.strokes || 6;
+            document.getElementById('char-mnemonic').innerText = detail.mnemonic || "Luyện viết theo đúng thứ tự các nét.";
+            writer = HanziWriter.create('character-target-div', char, {
+                width: 250, height: 250, padding: 15, showOutline: true,
+                strokeColor: '#00796b', outlineColor: '#f3f3f3', drawingColor: '#e65100',
+                drawingWidth: 6, strokeAnimationSpeed: 1, delayBetweenStrokes: 300
+            });
+            setTimeout(() => { writer.animateCharacter(); }, 300);
+        }
+        function animateChar() { if (writer) writer.animateCharacter(); }
+        function startPractice() { if (writer) writer.quiz({ onComplete: function() { showToast("Tuyệt vời! Bạn viết rất chính xác chữ " + selectedChar + "! 🎉"); } }); }
+        function speakChar() {
+            const utterance = new SpeechSynthesisUtterance(selectedChar);
+            utterance.lang = 'zh-CN'; utterance.rate = 0.8;
+            window.speechSynthesis.cancel(); window.speechSynthesis.speak(utterance);
+        }
+        function showToast(msg) {
+            const toast = document.getElementById('toast'); toast.innerText = msg; toast.classList.add('show');
+            setTimeout(() => { toast.classList.remove('show'); }, 3000);
+        }
+        if (characters.length > 0) { initSidebar(); loadCharacter(selectedChar); }
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@
     <style>
         .lesson-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 1.2rem;
             margin-top: 2rem;
         }
@@ -16,14 +16,15 @@
             background: #fff;
             border: 1px solid var(--primary-light);
             border-radius: 20px;
-            padding: 2rem 1.5rem;
+            padding: 1.5rem;
             text-align: center;
             cursor: pointer;
             transition: var(--transition);
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            justify-content: space-between;
+            min-height: 120px;
         }
         .lesson-card:hover {
             border-color: var(--primary-color);
@@ -32,7 +33,7 @@
             background: #f0f7f9;
         }
         .lesson-number { font-size: 0.8rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; }
-        .lesson-title { font-weight: 800; font-size: 1.5rem; color: var(--primary-dark); }
+        .lesson-title { font-weight: 800; font-size: 1.15rem; line-height: 1.4; color: var(--primary-dark); margin-top: 0.5rem; }
 
         /* Modal Styles */
         .modal {
@@ -51,10 +52,10 @@
         .modal.active { display: flex; }
         .modal-content {
             background: var(--white);
-            padding: 3rem;
+            padding: 2.5rem;
             border-radius: 30px;
             width: 90%;
-            max-width: 500px;
+            max-width: 520px;
             text-align: center;
             box-shadow: 0 20px 50px rgba(0,0,0,0.2);
             animation: popUp 0.3s ease-out;
@@ -72,24 +73,25 @@
             cursor: pointer;
             opacity: 0.5;
         }
-        .modal-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 2rem; color: var(--text-color); }
-        .game-select-buttons { display: flex; flex-direction: column; gap: 1rem; }
+        .modal-title { font-size: 1.35rem; font-weight: 800; margin-bottom: 1.8rem; color: var(--text-color); line-height: 1.4; }
+        .game-select-buttons { display: flex; flex-direction: column; gap: 0.9rem; }
         .game-select-btn {
-            padding: 1.2rem;
-            border-radius: 15px;
+            padding: 1.1rem 1.5rem;
+            border-radius: 16px;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
+            font-weight: 800;
+            font-size: 1.05rem;
             transition: var(--transition);
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 0.8rem;
+            justify-content: flex-start;
+            gap: 1rem;
         }
-        .btn-flip { background: #e3f2fd; color: #1976d2; border: 1px solid #bbdefb; }
-        .btn-master { background: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
-        .btn-match { background: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
-        .game-select-btn:hover { transform: scale(1.05); filter: brightness(0.95); }
+        .btn-flip { background: #e3f2fd; color: #1976d2; border: 1.5px solid #bbdefb; }
+        .btn-hanzi { background: #e0f2f1; color: #00796b; border: 1.5px solid #b2dfdb; }
+        .btn-arrange { background: #f3e5f5; color: #7b1fa2; border: 1.5px solid #e1bee7; }
+        .btn-translate { background: #fff3e0; color: #e65100; border: 1.5px solid #ffe0b2; }
+        .game-select-btn:hover { transform: translateY(-3px); filter: brightness(0.96); box-shadow: 0 6px 15px rgba(0,0,0,0.08); }
     </style>
 </head>
 <body>
@@ -104,15 +106,22 @@
                 <div class="hsk-badge" style="width: 40px; height: 40px; font-size: 1rem;">2</div>
                 HSK 2 3.0: Chọn Bài Học
             </h1>
-            <p>Nhấn vào một bài học để chọn chế độ chơi:</p>
+            <p>Nhấn vào một bài học để chọn chế độ chơi (4 phần):</p>
 
             <div class="lesson-grid">
                 <script>
+                    const LESSON_TITLES = [
+                        "她请我们吃了北京烤鸭<br><span style='font-size:0.85rem; font-weight:normal; opacity:0.8;'>Cô ấy mời chúng tôi ăn vịt quay Bắc Kinh</span>",
+                        "Bài 2", "Bài 3", "Bài 4", "Bài 5",
+                        "Bài 6", "Bài 7", "Bài 8", "Bài 9", "Bài 10",
+                        "Bài 11", "Bài 12", "Bài 13", "Bài 14", "Bài 15"
+                    ];
+
                     for (let i = 1; i <= 15; i++) {
                         document.write(`
                             <div class="lesson-card" onclick="openGameSelect(${i})">
-                                <div class="lesson-number">Bài học</div>
-                                <div class="lesson-title">${i}</div>
+                                <div class="lesson-number">Bài học ${i}</div>
+                                <div class="lesson-title">${LESSON_TITLES[i-1]}</div>
                             </div>
                         `);
                     }
@@ -127,10 +136,22 @@
             <span class="modal-close" onclick="closeModal()">&times;</span>
             <div class="modal-title" id="modalTitle">Bài học 1</div>
             <div class="game-select-buttons">
-                <a href="#" id="flipLink" class="game-select-btn btn-flip">LẬT THẺ BÀI</a>
-                <a href="#" id="masterLink" class="game-select-btn btn-master">TRÙM TỪ VỰNG</a>
-                <a href="#" id="matchLink" class="game-select-btn btn-match">TRUY TÌM CẶP ĐÔI</a>
-                <a href="#" id="memoryLink" class="game-select-btn btn-memory" style="background: #e0f2f1; color: #00695c; border: 1px solid #b2dfdb;">SIÊU TRÍ NHỚ</a>
+                <a href="#" id="flipLink" class="game-select-btn btn-flip">
+                    <span style="font-size: 1.4rem;">🎴</span>
+                    <span>Phần 1: Lật thẻ bài</span>
+                </a>
+                <a href="#" id="hanziLink" class="game-select-btn btn-hanzi">
+                    <span style="font-size: 1.4rem;">✍️</span>
+                    <span>Phần 2: Luyện chữ Hán</span>
+                </a>
+                <a href="#" id="arrangeLink" class="game-select-btn btn-arrange">
+                    <span style="font-size: 1.4rem;">🧩</span>
+                    <span>Phần 3: 10 câu sắp xếp</span>
+                </a>
+                <a href="#" id="translateLink" class="game-select-btn btn-translate">
+                    <span style="font-size: 1.4rem;">🌐</span>
+                    <span>Phần 4: 10 câu dịch Việt Trung</span>
+                </a>
             </div>
         </div>
     </div>
@@ -139,20 +160,24 @@
         const modal = document.getElementById('gameModal');
         const modalTitle = document.getElementById('modalTitle');
         const flipLink = document.getElementById('flipLink');
-        const masterLink = document.getElementById('masterLink');
-        const matchLink = document.getElementById('matchLink');
-        const memoryLink = document.getElementById('memoryLink');
+        const hanziLink = document.getElementById('hanziLink');
+        const arrangeLink = document.getElementById('arrangeLink');
+        const translateLink = document.getElementById('translateLink');
+
+        const PLAIN_TITLES = [
+            "她请我们吃了北京烤鸭",
+            "Bài 2", "Bài 3", "Bài 4", "Bài 5",
+            "Bài 6", "Bài 7", "Bài 8", "Bài 9", "Bài 10",
+            "Bài 11", "Bài 12", "Bài 13", "Bài 14", "Bài 15"
+        ];
 
         function openGameSelect(lessonId) {
-            modalTitle.innerText = `Bài học ${lessonId}`;
+            modalTitle.innerHTML = `Bài ${lessonId}: ${PLAIN_TITLES[lessonId-1]}`;
             
             flipLink.href = `game-hsk2-l${lessonId}-flip.html`;
-            masterLink.href = `game-hsk2-l${lessonId}-master.html`;
-            matchLink.href = `game-hsk2-l${lessonId}-match.html`;
-            
-            // Enable Memory game for all lessons
-            memoryLink.href = `game-hsk2-l${lessonId}-memory.html`;
-            memoryLink.style.display = "flex";
+            hanziLink.href = `game-hsk2-l${lessonId}-hanzi.html`;
+            arrangeLink.href = `game-hsk2-l${lessonId}-arrange.html`;
+            translateLink.href = `game-hsk2-l${lessonId}-translate.html`;
             
             modal.classList.add('active');
         }

@@ -8,43 +8,31 @@
     <style>
         body { background: #f0f9ff; }
         .game-header { text-align: center; margin-bottom: 2rem; position: relative; }
-        .mascot-container { 
-            position: absolute; right: 0; top: -20px; width: 100px; 
-            animation: bounce 2s infinite ease-in-out; 
-        }
+        .mascot-container { position: absolute; right: 0; top: -20px; width: 100px; animation: bounce 2s infinite ease-in-out; }
         @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-        .mascot-bubble {
-            background: white; padding: 10px 15px; border-radius: 20px; box-shadow: var(--shadow);
-            font-size: 0.85rem; position: absolute; right: 110px; top: 10px; width: 150px;
-            color: var(--primary-dark); font-weight: 700; z-index: 10;
-        }
+        .mascot-bubble { background: white; padding: 10px 15px; border-radius: 20px; box-shadow: var(--shadow); font-size: 0.85rem; position: absolute; right: 110px; top: 10px; width: 150px; color: var(--primary-dark); font-weight: 700; z-index: 10; }
         .game-container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
         .single-card-container { display: flex; justify-content: center; align-items: center; margin-top: 2rem; position: relative; }
         .flip-card { background-color: transparent; width: 100%; max-width: 500px; height: 500px; perspective: 1000px; cursor: pointer; }
         .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
         .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
-        .flip-card-front, .flip-card-back { 
-            position: absolute; width: 100%; height: 100%; backface-visibility: hidden; 
-            display: flex; flex-direction: column; border-radius: 30px; padding: 1.2rem; 
-            border: 2px solid var(--primary-light); background: white;
-            box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2);
-        }
+        .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; border-radius: 30px; padding: 1.2rem; border: 2px solid var(--primary-light); background: white; box-shadow: 0 10px 30px rgba(165, 207, 218, 0.2); }
         .flip-card-front { justify-content: center; align-items: center; }
-        .flip-card-front .hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 8rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; }
-        .flip-card:hover .hanzi { transform: scale(1.1); }
+        .flip-card-front .hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 6.5rem; font-weight: 800; color: var(--primary-dark); transition: transform 0.3s; word-break: break-all; text-align: center; }
+        .flip-card:hover .hanzi { transform: scale(1.05); }
         .flip-card-back { transform: rotateY(180deg); text-align: left; background: #fff; border-color: var(--primary-color); }
         .flip-card.mastered .flip-card-front, .flip-card.mastered .flip-card-back { border-color: #ffd700; background: #fffdf0; }
         .master-badge { position: absolute; top: 15px; right: 15px; font-size: 1.5rem; display: none; z-index: 5; }
         .flip-card.mastered .master-badge { display: block; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
         .back-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-        .back-hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 3rem; font-weight: 800; color: var(--primary-dark); }
-        .back-pinyin { font-size: 1.8rem; color: #e67e22; font-weight: 700; }
+        .back-hanzi { font-family: "KaiTi", "楷体", "STKaiti", serif; font-size: 2.5rem; font-weight: 800; color: var(--primary-dark); }
+        .back-pinyin { font-size: 1.6rem; color: #e67e22; font-weight: 700; }
         .btn-speak { background: var(--primary-light); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: 0.3s; }
         .btn-speak:hover { background: var(--primary-color); transform: scale(1.1); }
-        .back-meaning { font-size: 1.6rem; font-weight: 700; color: #444; }
-        .back-example { font-size: 1.2rem; background: #f9f9f9; padding: 1rem; border-radius: 12px; margin-top: 1rem; line-height: 1.5; }
-        .back-example strong { font-size: 1.2rem; color: var(--primary-dark); }
+        .back-meaning { font-size: 1.5rem; font-weight: 700; color: #444; }
+        .back-example { font-size: 1.1rem; background: #f9f9f9; padding: 1rem; border-radius: 12px; margin-top: 1rem; line-height: 1.5; }
+        .back-example strong { font-size: 1.1rem; color: var(--primary-dark); }
         .master-btn { margin-top: auto; width: 100%; padding: 0.6rem; border-radius: 12px; border: 2px solid var(--primary-color); background: white; color: var(--primary-dark); font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 0.85rem; }
         .master-btn.active { background: var(--primary-color); color: white; }
         .progress-container { background: white; padding: 1.5rem; border-radius: 20px; box-shadow: var(--shadow); margin: 2rem 0; }
@@ -63,9 +51,9 @@
         <img src="mascot.png" alt="Home">
     </a>
     <div class="page-container">
-        <a href="game-hsk2.html" class="back-btn">← Quay lại</a>
+        <a href="game-hsk2.html" class="back-btn">← Quay lại danh sách bài</a>
         <header class="game-header">
-            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh</h1>
+            <h1 style="color: var(--primary-dark); font-size: 2.2rem;">Lật Thẻ Thông Minh - HSK 2 3.0 Bài 6</h1>
             <div class="mascot-container">
                 <div class="mascot-bubble" id="mascotSpeech">Cùng mình bắt đầu học nhé! 🐼</div>
                 <img src="mascot-guide.png" style="width: 100%; mix-blend-mode: multiply;" alt="Mascot">
