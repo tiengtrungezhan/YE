@@ -147,6 +147,21 @@ def get_hanzi_details_dict(vocab_list):
                     elif char in "黑": radical = "黑"; strokes = 12
                     elif char in "更": radical = "曰"; strokes = 7
                     elif char in "颜": radical = "页"; strokes = 15
+                    elif char in "快": radical = "忄"; strokes = 7
+                    elif char in "面": radical = "面"; strokes = 9
+                    elif char in "等": radical = "竹"; strokes = 12
+                    elif char in "会": radical = "人"; strokes = 6
+                    elif char in "爷": radical = "父"; strokes = 6
+                    elif char in "奶": radical = "女"; strokes = 5
+                    elif char in "礼": radical = "礻"; strokes = 5
+                    elif char in "物": radical = "牛"; strokes = 8
+                    elif char in "准": radical = "冫"; strokes = 10
+                    elif char in "备": radical = "夂"; strokes = 8
+                    elif char in "茶": radical = "艹"; strokes = 9
+                    elif char in "跟": radical = "足"; strokes = 13
+                    elif char in "走": radical = "走"; strokes = 7
+                    elif char in "酒": radical = "酉"; strokes = 10
+                    elif char in "店": radical = "广"; strokes = 8
 
                     details[char] = {
                         "strokes": strokes,
@@ -453,6 +468,94 @@ def get_lesson_sentences(lesson_id, vocab_list):
                 "cn": "你喜欢什么颜色的衣服？",
                 "vn": "Bạn thích quần áo màu gì?",
                 "phrases": ["你喜欢", "什么颜色的衣服？"]
+            }
+        ]
+    if lesson_id == 5:
+        return [
+            {
+                "cn": "你快来看，这个电影很有意思。",
+                "vn": "Bạn mau đến xem này, bộ phim này rất hay.",
+                "phrases": ["你快来看，", "这个电影", "很有意思。"]
+            },
+            {
+                "cn": "你快下来，我们在下面等你。",
+                "vn": "Bạn mau xuống đây đi, chúng tôi ở dưới chờ bạn.",
+                "phrases": ["你快下来，", "我们在下面", "等你。"]
+            },
+            {
+                "cn": "老师在上面，你快上来吧。",
+                "vn": "Thầy giáo ở bên trên, bạn mau lên đây đi.",
+                "phrases": ["老师在上面，", "你快", "上来吧。"]
+            },
+            {
+                "cn": "我不上去了，在教室门口等你。",
+                "vn": "Tôi không đi lên nữa, ở cổng phòng học chờ bạn.",
+                "phrases": ["我不上去了，", "在教室门口", "等你。"]
+            },
+            {
+                "cn": "桌子下面有一个黑色的书包。",
+                "vn": "Dưới cái bàn có một chiếc cặp sách màu đen.",
+                "phrases": ["桌子下面", "有一个", "黑色的书包。"]
+            },
+            {
+                "cn": "请等一下，我去买两杯水。",
+                "vn": "Xin đợi một chút, tôi đi mua hai ly nước.",
+                "phrases": ["请等一下，", "我去买", "两杯水。"]
+            },
+            {
+                "cn": "工作太累了，你休息一会儿吧。",
+                "vn": "Công việc mệt quá rồi, bạn nghỉ ngơi một lúc đi.",
+                "phrases": ["工作太累了，", "你休息", "一会儿吧。"]
+            },
+            {
+                "cn": "我一会儿就下去找你。",
+                "vn": "Một lát nữa tôi sẽ đi xuống tìm bạn.",
+                "phrases": ["我一会儿", "就下去", "找你。"]
+            },
+            {
+                "cn": "外面很冷，快进来喝杯热茶吧。",
+                "vn": "Bên ngoài rất lạnh, mau vào đây uống ly trà nóng đi.",
+                "phrases": ["外面很冷，", "快进来", "喝杯热茶吧。"]
+            },
+            {
+                "cn": "我爷爷今年七十岁了。",
+                "vn": "Ông nội tôi năm nay 70 tuổi rồi.",
+                "phrases": ["我爷爷", "今年", "七十岁了。"]
+            },
+            {
+                "cn": "我奶奶喜欢喝中国茶。",
+                "vn": "Bà nội tôi thích uống trà Trung Quốc.",
+                "phrases": ["我奶奶", "喜欢喝", "中国茶。"]
+            },
+            {
+                "cn": "这个书包是我送你的生日礼物。",
+                "vn": "Chiếc cặp sách này là món quà sinh nhật tôi tặng bạn.",
+                "phrases": ["这个书包是", "我送你的", "生日礼物。"]
+            },
+            {
+                "cn": "这是给孩子们准备的礼物。",
+                "vn": "Đây là món quà chuẩn bị cho bọn trẻ.",
+                "phrases": ["这是", "给孩子们", "准备的礼物。"]
+            },
+            {
+                "cn": "我想去买一杯奶茶。",
+                "vn": "Tôi muốn đi mua một ly trà sữa.",
+                "phrases": ["我想去", "买一杯奶茶。"]
+            },
+            {
+                "cn": "我想跟你一起去北京旅游。",
+                "vn": "Tôi muốn cùng bạn đi Bắc Kinh du lịch.",
+                "phrases": ["我想跟你", "一起去", "北京旅游。"]
+            },
+            {
+                "cn": "我们吃完饭是走回酒店的。",
+                "vn": "Chúng tôi ăn cơm xong là đi bộ về khách sạn.",
+                "phrases": ["我们吃完饭", "是走回", "酒店的。"]
+            },
+            {
+                "cn": "这家酒店离车站很近。",
+                "vn": "Khách sạn này cách bến xe rất gần.",
+                "phrases": ["这家酒店", "离车站", "很近。"]
             }
         ]
     
