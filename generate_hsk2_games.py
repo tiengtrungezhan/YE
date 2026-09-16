@@ -127,9 +127,26 @@ def get_hanzi_details_dict(vocab_list):
                     elif char in "为": radical = "丶"; strokes = 4
                     elif char in "什": radical = "亻"; strokes = 4
                     elif char in "错": radical = "钅"; strokes = 8
-                    elif char in "送": radical = "辶"; strokes = 9
                     elif char in "每": radical = "母"; strokes = 7
                     elif char in "累": radical = "田"; strokes = 11
+                    elif char in "商": radical = "口"; strokes = 11
+                    elif char in "场": radical = "土"; strokes = 6
+                    elif char in "进": radical = "辶"; strokes = 7
+                    elif char in "条": radical = "夂"; strokes = 7
+                    elif char in "裤": radical = "衤"; strokes = 12
+                    elif char in "白": radical = "白"; strokes = 5
+                    elif char in "色": radical = "色"; strokes = 6
+                    elif char in "因": radical = "囗"; strokes = 6
+                    elif char in "试": radical = "讠"; strokes = 8
+                    elif char in "红": radical = "纟"; strokes = 6
+                    elif char in "所": radical = "户"; strokes = 8
+                    elif char in "以": radical = "人"; strokes = 4
+                    elif char in "书": radical = "乛"; strokes = 4
+                    elif char in "包": radical = "勹"; strokes = 5
+                    elif char in "绿": radical = "纟"; strokes = 11
+                    elif char in "黑": radical = "黑"; strokes = 12
+                    elif char in "更": radical = "曰"; strokes = 7
+                    elif char in "颜": radical = "页"; strokes = 15
 
                     details[char] = {
                         "strokes": strokes,
@@ -353,6 +370,89 @@ def get_lesson_sentences(lesson_id, vocab_list):
                 "cn": "我觉得他这个月每天都很累。",
                 "vn": "Tôi cảm thấy tháng này ngày nào anh ấy cũng rất mệt.",
                 "phrases": ["我觉得", "他这个月", "每天都很累。"]
+            }
+        ]
+    if lesson_id == 4:
+        return [
+            {
+                "cn": "我们来过这家商场吗？",
+                "vn": "Chúng ta từng đến trung tâm thương mại này chưa?",
+                "phrases": ["我们", "来过", "这家商场吗？"]
+            },
+            {
+                "cn": "我和朋友一起去商场买衣服。",
+                "vn": "Tôi cùng bạn đi trung tâm thương mại mua quần áo.",
+                "phrases": ["我和朋友", "一起去", "商场买衣服。"]
+            },
+            {
+                "cn": "老师在教室里，我们进去吧。",
+                "vn": "Thầy giáo đang ở trong phòng học, chúng ta đi vào đi.",
+                "phrases": ["老师在教室里，", "我们", "进去吧。"]
+            },
+            {
+                "cn": "我想买条裤子。",
+                "vn": "Tôi muốn mua một chiếc quần.",
+                "phrases": ["我想", "买条裤子。"]
+            },
+            {
+                "cn": "这条黑色的裤子很漂亮。",
+                "vn": "Chiếc quần màu đen này rất đẹp.",
+                "phrases": ["这条黑色的裤子", "很漂亮。"]
+            },
+            {
+                "cn": "我喜欢白色的衣服。",
+                "vn": "Tôi thích quần áo màu trắng.",
+                "phrases": ["我喜欢", "白色的衣服。"]
+            },
+            {
+                "cn": "因为今天太累了，所以我想早点儿回家。",
+                "vn": "Bởi vì hôm nay quá mệt, cho nên tôi muốn về nhà sớm một chút.",
+                "phrases": ["因为今天太累了，", "所以", "我想", "早点儿回家。"]
+            },
+            {
+                "cn": "你试试那条红色的吧。",
+                "vn": "Bạn thử chiếc màu đỏ kia đi.",
+                "phrases": ["你试试", "那条红色的吧。"]
+            },
+            {
+                "cn": "桌子上有两个红色的苹果。",
+                "vn": "Trên bàn có hai quả táo màu đỏ.",
+                "phrases": ["桌子上有", "两个红色的苹果。"]
+            },
+            {
+                "cn": "因为今天太冷了，所以我们打车去吧。",
+                "vn": "Bởi vì hôm nay quá lạnh, cho nên chúng mình đi taxi đi.",
+                "phrases": ["因为今天太冷了，", "所以", "我们打车去吧。"]
+            },
+            {
+                "cn": "我想买个新书包。",
+                "vn": "Tôi muốn mua một chiếc cặp sách mới.",
+                "phrases": ["我想买个", "新书包。"]
+            },
+            {
+                "cn": "朋友在那边，我们过去吧。",
+                "vn": "Bạn bè ở đằng kia, chúng ta qua đó đi.",
+                "phrases": ["朋友在那边，", "我们过去吧。"]
+            },
+            {
+                "cn": "我喜欢绿色的书包。",
+                "vn": "Tôi thích chiếc cặp sách màu xanh lá.",
+                "phrases": ["我喜欢", "绿色的书包。"]
+            },
+            {
+                "cn": "红色的、绿色的、黑色的，你想买哪个？",
+                "vn": "Màu đỏ, màu xanh lá, màu đen, bạn muốn mua cái nào?",
+                "phrases": ["红色的、", "绿色的、", "黑色的，", "你想买哪个？"]
+            },
+            {
+                "cn": "我也觉得绿色的更好看。",
+                "vn": "Tôi cũng cảm thấy màu xanh lá đẹp hơn.",
+                "phrases": ["我也觉得", "绿色的更好看。"]
+            },
+            {
+                "cn": "你喜欢什么颜色的衣服？",
+                "vn": "Bạn thích quần áo màu gì?",
+                "phrases": ["你喜欢", "什么颜色的衣服？"]
             }
         ]
     

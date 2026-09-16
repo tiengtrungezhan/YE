@@ -460,174 +460,164 @@
     "ex_vn": "Tôi cảm thấy tháng này ngày nào anh ấy cũng rất mệt."
   },
   {
-    "hanzi": "生日",
-    "pinyin": "shēngrì",
-    "meaning": "sinh nhật",
+    "hanzi": "过",
+    "pinyin": "guò",
+    "meaning": "qua, từng",
+    "lesson": "4",
+    "type": "Động từ / Trợ từ",
+    "ex_cn": "我们来过这家商场吗？",
+    "ex_py": "Wǒmen lái guò zhè jiā shāngchǎng ma?",
+    "ex_vn": "Chúng ta từng đến trung tâm thương mại này chưa?"
+  },
+  {
+    "hanzi": "商场",
+    "pinyin": "shāngchǎng",
+    "meaning": "trung tâm thương mại",
     "lesson": "4",
     "type": "Danh từ",
-    "ex_cn": "生日快乐！",
-    "ex_py": "Shēngrì kuàilè!",
-    "ex_vn": "Chúc mừng sinh nhật!"
+    "ex_cn": "我和朋友一起去商场买衣服。",
+    "ex_py": "Wǒ hé péngyou yìqǐ qù shāngchǎng mǎi yīfu.",
+    "ex_vn": "Tôi cùng bạn đi trung tâm thương mại mua quần áo."
   },
   {
-    "hanzi": "快乐",
-    "pinyin": "kuàilè",
-    "meaning": "vui vẻ",
-    "lesson": "4",
-    "type": "Danh từ",
-    "ex_cn": "天天快乐。",
-    "ex_py": "Tiāntiān kuàilè.",
-    "ex_vn": "Mỗi ngày đều vui vẻ."
-  },
-  {
-    "hanzi": "给",
-    "pinyin": "gěi",
-    "meaning": "cho",
-    "lesson": "4",
-    "type": "Giới từ",
-    "ex_cn": "给我。",
-    "ex_py": "Gěi wǒ.",
-    "ex_vn": "Cho tôi."
-  },
-  {
-    "hanzi": "接",
-    "pinyin": "jiē",
-    "meaning": "đón, nhận",
+    "hanzi": "进去",
+    "pinyin": "jìnqù",
+    "meaning": "đi vào",
     "lesson": "4",
     "type": "Động từ",
-    "ex_cn": "接电话。",
-    "ex_py": "Jiē diànhuà.",
-    "ex_vn": "Nghe điện thoại."
+    "ex_cn": "老师在教室里，我们进去吧。",
+    "ex_py": "Lǎoshī zài jiàoshì lǐ, wǒmen jìnqù ba.",
+    "ex_vn": "Thầy giáo đang ở trong phòng học, chúng ta đi vào đi."
   },
   {
-    "hanzi": "晚上",
-    "pinyin": "wǎnshang",
-    "meaning": "buổi tối",
+    "hanzi": "条",
+    "pinyin": "tiáo",
+    "meaning": "chiếc, cái (lượng từ chỉ quần, sông...)",
+    "lesson": "4",
+    "type": "Lượng từ",
+    "ex_cn": "我想买条裤子。",
+    "ex_py": "Wǒ xiǎng mǎi tiáo kùzi.",
+    "ex_vn": "Tôi muốn mua một chiếc quần."
+  },
+  {
+    "hanzi": "裤子",
+    "pinyin": "kùzi",
+    "meaning": "quần",
     "lesson": "4",
     "type": "Danh từ",
-    "ex_cn": "今天晚上。",
-    "ex_py": "Jīntiān wǎnshang.",
-    "ex_vn": "Tối hôm nay."
+    "ex_cn": "这条黑色的裤子很漂亮。",
+    "ex_py": "Zhè tiáo hēisè de kùzi hěn piàoliang.",
+    "ex_vn": "Chiếc quần màu đen này rất đẹp."
   },
   {
-    "hanzi": "问",
-    "pinyin": "wèn",
-    "meaning": "hỏi",
+    "hanzi": "白色",
+    "pinyin": "báisè",
+    "meaning": "màu trắng",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢白色的衣服。",
+    "ex_py": "Wǒ xǐhuan báisè de yīfu.",
+    "ex_vn": "Tôi thích quần áo màu trắng."
+  },
+  {
+    "hanzi": "因为",
+    "pinyin": "yīnwèi",
+    "meaning": "bởi vì",
+    "lesson": "4",
+    "type": "Liên từ",
+    "ex_cn": "因为今天太累了，所以我想早点儿回家。",
+    "ex_py": "Yīnwèi jīntiān tài lèi le, suǒyǐ wǒ xiǎng zǎodiǎnr huí jiā.",
+    "ex_vn": "Bởi vì hôm nay quá mệt, cho nên tôi muốn về nhà sớm một chút."
+  },
+  {
+    "hanzi": "试",
+    "pinyin": "shì",
+    "meaning": "thử",
     "lesson": "4",
     "type": "Động từ",
-    "ex_cn": "我问老师。",
-    "ex_py": "Wǒ wèn lǎoshī.",
-    "ex_vn": "Tôi hỏi thầy giáo."
+    "ex_cn": "你试试那条红色的吧。",
+    "ex_py": "Nǐ shìshi nà tiáo hóngsè de ba.",
+    "ex_vn": "Bạn thử chiếc màu đỏ kia đi."
   },
   {
-    "hanzi": "非常",
-    "pinyin": "fēicháng",
-    "meaning": "rất, vô cùng",
+    "hanzi": "红色",
+    "pinyin": "hóngsè",
+    "meaning": "màu đỏ",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "桌子上有两个红色的苹果。",
+    "ex_py": "Zhuōzi shang yǒu liǎng gè hóngsè de píngguǒ.",
+    "ex_vn": "Trên bàn có hai quả táo màu đỏ."
+  },
+  {
+    "hanzi": "所以",
+    "pinyin": "suǒyǐ",
+    "meaning": "cho nên",
+    "lesson": "4",
+    "type": "Liên từ",
+    "ex_cn": "因为今天太冷了，所以我们打车去吧。",
+    "ex_py": "Yīnwèi jīntiān tài lěng le, suǒyǐ wǒmen dǎchē qù ba.",
+    "ex_vn": "Bởi vì hôm nay quá lạnh, cho nên chúng mình đi taxi đi."
+  },
+  {
+    "hanzi": "书包",
+    "pinyin": "shūbāo",
+    "meaning": "cặp sách, ba lô",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "我想买个新书包。",
+    "ex_py": "Wǒ xiǎng mǎi gè xīn shūbāo.",
+    "ex_vn": "Tôi muốn mua một chiếc cặp sách mới."
+  },
+  {
+    "hanzi": "过去",
+    "pinyin": "guòqù",
+    "meaning": "đi qua",
+    "lesson": "4",
+    "type": "Động từ",
+    "ex_cn": "朋友在那边，我们过去吧。",
+    "ex_py": "Péngyou zài nàbiān, wǒmen guòqù ba.",
+    "ex_vn": "Bạn bè ở đằng kia, chúng ta qua đó đi."
+  },
+  {
+    "hanzi": "绿色",
+    "pinyin": "lǜsè",
+    "meaning": "màu xanh lá",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "我喜欢绿色的书包。",
+    "ex_py": "Wǒ xǐhuan lǜsè de shūbāo.",
+    "ex_vn": "Tôi thích chiếc cặp sách màu xanh lá."
+  },
+  {
+    "hanzi": "黑色",
+    "pinyin": "hēisè",
+    "meaning": "màu đen",
+    "lesson": "4",
+    "type": "Danh từ",
+    "ex_cn": "红色的、绿色的、黑色的，你想买哪个？",
+    "ex_py": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎ gè?",
+    "ex_vn": "Màu đỏ, màu xanh lá, màu đen, bạn muốn mua cái nào?"
+  },
+  {
+    "hanzi": "更",
+    "pinyin": "gèng",
+    "meaning": "càng, hơn",
     "lesson": "4",
     "type": "Phó từ",
-    "ex_cn": "非常好。",
-    "ex_py": "Fēicháng hǎo.",
-    "ex_vn": "Rất tốt."
+    "ex_cn": "我也觉得绿色的更好看。",
+    "ex_py": "Wǒ yě juéde lǜsè de gèng hǎokàn.",
+    "ex_vn": "Tôi cũng cảm thấy màu xanh lá đẹp hơn."
   },
   {
-    "hanzi": "开始",
-    "pinyin": "kāishǐ",
-    "meaning": "bắt đầu",
-    "lesson": "4",
-    "type": "Động từ",
-    "ex_cn": "电影开始了。",
-    "ex_py": "Diànyǐng kāishǐ le.",
-    "ex_vn": "Bộ phim bắt đầu rồi."
-  },
-  {
-    "hanzi": "已经",
-    "pinyin": "yǐjīng",
-    "meaning": "đã",
-    "lesson": "4",
-    "type": "Phó từ",
-    "ex_cn": "已经十点了。",
-    "ex_py": "Yǐjīng shí diǎn le.",
-    "ex_vn": "Đã 10 giờ rồi."
-  },
-  {
-    "hanzi": "长",
-    "pinyin": "cháng",
-    "meaning": "dài",
-    "lesson": "4",
-    "type": "Tính từ",
-    "ex_cn": "这个路很长。",
-    "ex_py": "Zhè ge lù hěn cháng.",
-    "ex_vn": "Con đường này rất dài."
-  },
-  {
-    "hanzi": "帮",
-    "pinyin": "bāng",
-    "meaning": "giúp",
+    "hanzi": "颜色",
+    "pinyin": "yánsè",
+    "meaning": "màu sắc",
     "lesson": "4",
     "type": "Danh từ",
-    "ex_cn": "我帮你。",
-    "ex_py": "Wǒ bāng nǐ.",
-    "ex_vn": "Tôi giúp bạn."
-  },
-  {
-    "hanzi": "介绍",
-    "pinyin": "jièshào",
-    "meaning": "giới thiệu",
-    "lesson": "4",
-    "type": "Động từ",
-    "ex_cn": "我介绍一下。",
-    "ex_py": "Wǒ jièshào yíxià.",
-    "ex_vn": "Tôi giới thiệu một chút."
-  },
-  {
-    "hanzi": "点",
-    "pinyin": "diǎn",
-    "meaning": "điểm, giờ, gọi món",
-    "lesson": "4",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "现在三点。",
-    "ex_py": "Xiànzài sān diǎn.",
-    "ex_vn": "Bây giờ là 3 giờ."
-  },
-  {
-    "hanzi": "名",
-    "pinyin": "míng",
-    "meaning": "tên, danh tiếng",
-    "lesson": "4",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "这名学生学习很好。",
-    "ex_py": "Zhè míng xuésheng xuéxí hěn hǎo.",
-    "ex_vn": "Học sinh này học rất giỏi."
-  },
-  {
-    "hanzi": "头",
-    "pinyin": "tóu",
-    "meaning": "đầu",
-    "lesson": "4",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "你的头怎么了？",
-    "ex_py": "Nǐ de tóu zěnme le?",
-    "ex_vn": "Đầu bạn bị làm sao thế?"
-  },
-  {
-    "hanzi": "那么",
-    "pinyin": "nàme",
-    "meaning": "như thế, vậy thì",
-    "lesson": "4",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "既然你忙，那么以后再说。",
-    "ex_py": "Jìrán nǐ máng, nàme yǐhòu zài shuō.",
-    "ex_vn": "Đã vậy bạn bận, thế thì sau này hãy nói."
-  },
-  {
-    "hanzi": "那样",
-    "pinyin": "nàyàng",
-    "meaning": "như vậy",
-    "lesson": "4",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "别那样说话。",
-    "ex_py": "Bié nàyàng shuōhuà.",
-    "ex_vn": "Đừng nói chuyện kiểu như vậy."
+    "ex_cn": "你喜欢什么颜色的衣服？",
+    "ex_py": "Nǐ xǐhuan shénme yánsè de yīfu?",
+    "ex_vn": "Bạn thích quần áo màu gì?"
   },
   {
     "hanzi": "外面",
