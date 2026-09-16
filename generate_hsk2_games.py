@@ -96,6 +96,24 @@ def get_hanzi_details_dict(vocab_list):
                     elif char in "舞": radical = "夕"; strokes = 14
                     elif char in "房": radical = "户"; strokes = 8
                     elif char in "间": radical = "门"; strokes = 7
+                    elif char in "公": radical = "八"; strokes = 4
+                    elif char in "交": radical = "亠"; strokes = 6
+                    elif char in "车": radical = "车"; strokes = 4
+                    elif char in "但": radical = "亻"; strokes = 7
+                    elif char in "站": radical = "立"; strokes = 10
+                    elif char in "远": radical = "辶"; strokes = 7
+                    elif char in "打": radical = "扌"; strokes = 5
+                    elif char in "还": radical = "辶"; strokes = 7
+                    elif char in "啊": radical = "口"; strokes = 10
+                    elif char in "万": radical = "一"; strokes = 3
+                    elif char in "名": radical = "口"; strokes = 6
+                    elif char in "网": radical = "冂"; strokes = 6
+                    elif char in "国": radical = "囗"; strokes = 8
+                    elif char in "教": radical = "攵"; strokes = 11
+                    elif char in "室": radical = "宀"; strokes = 9
+                    elif char in "票": radical = "示"; strokes = 11
+                    elif char in "别": radical = "刂"; strokes = 7
+                    elif char in "过": radical = "辶"; strokes = 6
 
                     details[char] = {
                         "strokes": strokes,
@@ -150,14 +168,97 @@ def get_lesson_sentences(lesson_id, vocab_list):
                 "phrases": ["她还", "给我们", "介绍了", "很多东西。"]
             },
             {
-                "cn": "我有时不太懂 headquarters/她的意思。", # clean Chinese sentence: "我 headquarters/..." -> "我" "有时" "不太懂" " headquarters/" -> "我" "有时" "不太懂" "她的" "意思"
+                "cn": "我有时不太懂她的意思。",
                 "vn": "Thỉnh thoảng tôi không hiểu lắm ý của cô ấy.",
-                "phrases": ["我", "有时", "不太懂", " headquarters/她的意思。"]
+                "phrases": ["我", "有时", "不太懂", "她的意思。"]
             },
             {
                 "cn": "她请我们吃了北京烤鸭。",
                 "vn": "Cô ấy mời chúng tôi ăn vịt quay Bắc Kinh.",
                 "phrases": ["她请", "我们", "吃了", "北京烤鸭。"]
+            }
+        ]
+    if lesson_id == 2:
+        return [
+            {
+                "cn": "我坐公交车去学校。",
+                "vn": "Tôi đi xe buýt đến trường.",
+                "phrases": ["我", "坐公交车", "去", "学校。"]
+            },
+            {
+                "cn": "这个苹果很好吃，但太贵了。",
+                "vn": "Quả táo này rất ngon, nhưng đắt quá.",
+                "phrases": ["这个苹果", "很好吃，", "但", "太贵了。"]
+            },
+            {
+                "cn": "我在车站等你。",
+                "vn": "Tôi ở trạm xe đợi bạn.",
+                "phrases": ["我", "在车站", "等你。"]
+            },
+            {
+                "cn": "我家离学校不远。",
+                "vn": "Nhà tôi cách trường không xa.",
+                "phrases": ["我家", "离学校", "不远。"]
+            },
+            {
+                "cn": "今天太冷了，我们打车去饭店吧。",
+                "vn": "Hôm nay lạnh quá, chúng mình đi taxi đến nhà hàng nhé.",
+                "phrases": ["今天太冷了，", "我们", "打车去", "饭店吧。"]
+            },
+            {
+                "cn": "你想喝茶还是喝水？",
+                "vn": "Bạn muốn uống trà hay uống nước?",
+                "phrases": ["你想", "喝茶", "还是", "喝水？"]
+            },
+            {
+                "cn": "今天天气真好啊！",
+                "vn": "Thời tiết hôm nay thật là tốt!",
+                "phrases": ["今天天气", "真好啊！"]
+            },
+            {
+                "cn": "那个学校有一万名学生。",
+                "vn": "Trường học đó có một vạn (10.000) học sinh.",
+                "phrases": ["那个学校", "有", "一万名", "学生。"]
+            },
+            {
+                "cn": "我们学校有三十名老师。",
+                "vn": "Trường chúng tôi có ba mươi giáo viên.",
+                "phrases": ["我们学校", "有", "三十名", "老师。"]
+            },
+            {
+                "cn": "我在网上买了一本书。",
+                "vn": "Tôi đã mua một cuốn sách trên mạng.",
+                "phrases": ["我", "在网上", "买了一本书。"]
+            },
+            {
+                "cn": "他有很多外国朋友。",
+                "vn": "Anh ấy có rất nhiều bạn nước ngoài.",
+                "phrases": ["他", "有很多", "外国朋友。"]
+            },
+            {
+                "cn": "这个学校有二十间教室。",
+                "vn": "Trường học này có hai mươi phòng học.",
+                "phrases": ["这个学校", "有", "二十间", "教室。"]
+            },
+            {
+                "cn": "老师和学生都在教室里。",
+                "vn": "Thầy giáo và học sinh đều ở trong phòng học.",
+                "phrases": ["老师和学生", "都在", "教室里。"]
+            },
+            {
+                "cn": "请问，去北京的火车票多少钱？",
+                "vn": "Xin hỏi, vé tàu hỏa đi Bắc Kinh bao nhiêu tiền?",
+                "phrases": ["请问，", "去北京的", "火车票", "多少钱？"]
+            },
+            {
+                "cn": "太晚了，你别看电视了。",
+                "vn": "Muộn quá rồi, bạn đừng xem tivi nữa.",
+                "phrases": ["太晚了，", "你", "别看电视了。"]
+            },
+            {
+                "cn": "你过来，我有话对你说。",
+                "vn": "Bạn qua đây, tôi có lời muốn nói với bạn.",
+                "phrases": ["你过来，", "我有话", "对你说。"]
             }
         ]
     
