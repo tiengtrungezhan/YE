@@ -111,9 +111,25 @@ def get_hanzi_details_dict(vocab_list):
                     elif char in "国": radical = "囗"; strokes = 8
                     elif char in "教": radical = "攵"; strokes = 11
                     elif char in "室": radical = "宀"; strokes = 9
-                    elif char in "票": radical = "示"; strokes = 11
                     elif char in "别": radical = "刂"; strokes = 7
                     elif char in "过": radical = "辶"; strokes = 6
+                    elif char in "回": radical = "囗"; strokes = 6
+                    elif char in "这": radical = "辶"; strokes = 7
+                    elif char in "么": radical = "丿"; strokes = 3
+                    elif char in "完": radical = "宀"; strokes = 7
+                    elif char in "起": radical = "走"; strokes = 10
+                    elif char in "出": radical = "凵"; strokes = 5
+                    elif char in "洗": radical = "氵"; strokes = 9
+                    elif char in "自": radical = "自"; strokes = 6
+                    elif char in "己": radical = "己"; strokes = 3
+                    elif char in "拿": radical = "手"; strokes = 10
+                    elif char in "手": radical = "手"; strokes = 4
+                    elif char in "为": radical = "丶"; strokes = 4
+                    elif char in "什": radical = "亻"; strokes = 4
+                    elif char in "错": radical = "钅"; strokes = 8
+                    elif char in "送": radical = "辶"; strokes = 9
+                    elif char in "每": radical = "母"; strokes = 7
+                    elif char in "累": radical = "田"; strokes = 11
 
                     details[char] = {
                         "strokes": strokes,
@@ -259,6 +275,84 @@ def get_lesson_sentences(lesson_id, vocab_list):
                 "cn": "你过来，我有话对你说。",
                 "vn": "Bạn qua đây, tôi có lời muốn nói với bạn.",
                 "phrases": ["你过来，", "我有话", "对你说。"]
+            }
+        ]
+    if lesson_id == 3:
+        return [
+            {
+                "cn": "爸爸下午五点回来。",
+                "vn": "Bố 5 giờ chiều quay về.",
+                "phrases": ["爸爸", "下午五点", "回来。"]
+            },
+            {
+                "cn": "今天回来这么晚啊！",
+                "vn": "Hôm nay về muộn thế này à!",
+                "phrases": ["今天回来", "这么晚啊！"]
+            },
+            {
+                "cn": "工作太多了，下班的时候没做完。",
+                "vn": "Công việc nhiều quá, lúc tan làm chưa làm xong.",
+                "phrases": ["工作太多了，", "下班的时候", "没做完。"]
+            },
+            {
+                "cn": "我和朋友一起去商店。",
+                "vn": "Tôi cùng bạn đi đến cửa hàng.",
+                "phrases": ["我和朋友", "一起", "去商店。"]
+            },
+            {
+                "cn": "今天天气不好，别出去了。",
+                "vn": "Hôm nay thời tiết không tốt, đừng đi ra ngoài nữa.",
+                "phrases": ["今天天气不好，", "别出去了。"]
+            },
+            {
+                "cn": "吃苹果前要洗手。",
+                "vn": "Trước khi ăn táo cần rửa tay.",
+                "phrases": ["吃苹果前", "要洗手。"]
+            },
+            {
+                "cn": "这是我自己做的中国菜。",
+                "vn": "Đây là món ăn Trung Quốc do tự tay tôi làm.",
+                "phrases": ["这是", "我自己做的", "中国菜。"]
+            },
+            {
+                "cn": "请拿桌子上的水喝。",
+                "vn": "Xin hãy lấy nước trên bàn uống.",
+                "phrases": ["请拿", "桌子上的水", "喝。"]
+            },
+            {
+                "cn": "我去洗洗手。",
+                "vn": "Tôi đi rửa tay một chút.",
+                "phrases": ["我去", "洗洗手。"]
+            },
+            {
+                "cn": "你今天为什么没去学校？",
+                "vn": "Hôm nay tại sao bạn không đi học?",
+                "phrases": ["你今天", "为什么", "没去学校？"]
+            },
+            {
+                "cn": "这家饭店的菜很不错。",
+                "vn": "Món ăn của nhà hàng này rất khá.",
+                "phrases": ["这家饭店的菜", "很不错。"]
+            },
+            {
+                "cn": "我送你一个大苹果。",
+                "vn": "Tôi tặng bạn một quả táo lớn.",
+                "phrases": ["我送你", "一个大苹果。"]
+            },
+            {
+                "cn": "太晚了，我想回去了。",
+                "vn": "Muộn quá rồi, tôi muốn đi về rồi.",
+                "phrases": ["太晚了，", "我想", "回去了。"]
+            },
+            {
+                "cn": "我每天早上喝一杯牛奶。",
+                "vn": "Tôi mỗi sáng uống một ly sữa tươi.",
+                "phrases": ["我每天早上", "喝一杯牛奶。"]
+            },
+            {
+                "cn": "我觉得他这个月每天都很累。",
+                "vn": "Tôi cảm thấy tháng này ngày nào anh ấy cũng rất mệt.",
+                "phrases": ["我觉得", "他这个月", "每天都很累。"]
             }
         ]
     
