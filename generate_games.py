@@ -216,7 +216,8 @@ def generate_hsk_games(level):
         }};
 
         function speak(text) {{
-            const utterance = new SpeechSynthesisUtterance(text);
+            const cleanText = text.includes('/') ? text.split('/')[0].trim() : text;
+            const utterance = new SpeechSynthesisUtterance(cleanText);
             utterance.lang = 'zh-CN';
             utterance.rate = 0.8;
             window.speechSynthesis.speak(utterance);
@@ -338,7 +339,15 @@ def generate_hsk_games(level):
         function splitIntoPhrases(sentence, targetWord) {{
             // Improved splitting: use lesson vocabulary as anchors for "meaningful" chunks
             let cleanSentence = sentence.replace(/[，。？！、\s]/g, '');
-            let lessonWords = allHanzi.sort((a, b) => b.length - a.length);
+            let lessonWords = [];
+            allHanzi.forEach(w => {{
+                if (w.includes('/')) {{
+                    w.split('/').forEach(part => lessonWords.push(part.trim()));
+                }} else {{
+                    lessonWords.push(w);
+                }}
+            }});
+            lessonWords.sort((a, b) => b.length - a.length);
             
             let phrases = [];
             let remaining = cleanSentence;
@@ -386,7 +395,12 @@ def generate_hsk_games(level):
                     q.phrases = splitIntoPhrases(word.ex_cn, word.hanzi).sort(() => Math.random() - 0.5);
                 }}
                 if (type === 12) {{
-                    q.displaySentence = word.ex_cn.replace(word.hanzi, "______");
+                    let targetMatch = word.hanzi;
+                    if (targetMatch.includes('/')) {{
+                        let parts = targetMatch.split('/').map(w => w.trim());
+                        targetMatch = parts.find(p => word.ex_cn.includes(p)) || targetMatch;
+                    }}
+                    q.displaySentence = word.ex_cn.replace(targetMatch, "______");
                     q.options = generateOptions(word, 0);
                 }}
                 
@@ -432,7 +446,7 @@ def generate_hsk_games(level):
             card.innerHTML = html;
         }}
 
-        function speak(t) {{ const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'zh-CN'; window.speechSynthesis.cancel(); window.speechSynthesis.speak(m); }}
+        function speak(t) {{ const cleanT = t.includes('/') ? t.split('/')[0].trim() : t; const m = new SpeechSynthesisUtterance(); m.text = cleanT; m.lang = 'zh-CN'; window.speechSynthesis.cancel(); window.speechSynthesis.speak(m); }}
         function speakVN(t) {{ const m = new SpeechSynthesisUtterance(); m.text = t; m.lang = 'vi-VN'; window.speechSynthesis.cancel(); window.speechSynthesis.speak(m); }}
         
         function checkAnswer(s, c, b) {{

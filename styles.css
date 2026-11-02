@@ -148,6 +148,36 @@ main {
     opacity: 0.7;
 }
 
+.option-card.card-locked {
+    opacity: 0.65;
+    position: relative;
+    cursor: not-allowed;
+    filter: grayscale(0.2);
+}
+
+.option-card.card-locked:hover {
+    transform: none;
+    box-shadow: var(--shadow);
+    background: var(--glass-bg);
+}
+
+.option-card.card-locked:hover .option-icon {
+    background: var(--primary-light);
+    transform: none;
+}
+
+.lock-badge {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #b45309;
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -321,4 +351,9 @@ main {
 .home-logo-btn:hover {
     transform: scale(1.1) rotate(-5deg);
     box-shadow: 0 5px 15px rgba(165, 207, 218, 0.6);
+}
+
+/* Bỏ in đậm tất cả chữ Hán trong bài thi và hệ thống */
+.hanzi, .zh, .zh-char, .py-pair .zh-char, .q-prompt, .q-question, .passage-box, .fill-sentence, .opt .txt, .bank-item .hanzi, .verdict .zh, .part-guide .zh, .ex-prompt, .zh-punct {
+    font-weight: 400 !important;
 }

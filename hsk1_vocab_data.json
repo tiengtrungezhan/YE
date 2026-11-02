@@ -1370,14 +1370,204 @@
     "ex_vn": "Chữ Hán này viết như thế nào?"
   },
   {
-    "hanzi": "星期日",
-    "pinyin": "xīngqīrì",
-    "meaning": "Chủ nhật",
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "meaning": "hiện tại, bây giờ",
     "lesson": "7",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "星期日我不工作。",
-    "ex_py": "Xīngqīrì wǒ bù gōngzuò.",
-    "ex_vn": "Chủ nhật tôi không đi làm."
+    "type": "danh từ",
+    "ex_cn": "现在几点？",
+    "ex_py": "Xiànzài jǐ diǎn?",
+    "ex_vn": "Bây giờ mấy giờ?"
+  },
+  {
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "meaning": "giờ",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "现在8点。",
+    "ex_py": "Xiànzài bā diǎn.",
+    "ex_vn": "Bây giờ 8 giờ."
+  },
+  {
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "meaning": "phút",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "8点15分。",
+    "ex_py": "Bā diǎn shíwǔ fēn.",
+    "ex_vn": "8 giờ 15 phút."
+  },
+  {
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "meaning": "phút",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "我5分钟后回家。",
+    "ex_py": "Wǒ wǔ fēnzhōng hòu huíjiā.",
+    "ex_vn": "5 phút nữa tôi về nhà."
+  },
+  {
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "meaning": "buổi sáng",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "上午我吃一个包子。",
+    "ex_py": "Shàngwǔ wǒ chī yí gè bāozi.",
+    "ex_vn": "Buổi sáng tôi ăn một cái bánh bao."
+  },
+  {
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "meaning": "buổi chiều",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "下午你去玩吗？",
+    "ex_py": "Xiàwǔ nǐ qù wán ma?",
+    "ex_vn": "Buổi chiều bạn đi chơi không?"
+  },
+  {
+    "hanzi": "上课",
+    "pinyin": "shàngkè",
+    "meaning": "lên lớp, vào học",
+    "lesson": "7",
+    "type": "động từ",
+    "ex_cn": "明天你上课吗？",
+    "ex_py": "Míngtiān nǐ shàngkè ma?",
+    "ex_vn": "Ngày mai bạn có đi học không?"
+  },
+  {
+    "hanzi": "下课",
+    "pinyin": "xiàkè",
+    "meaning": "tan học, hết giờ",
+    "lesson": "7",
+    "type": "động từ",
+    "ex_cn": "你几点下课？",
+    "ex_py": "Nǐ jǐ diǎn xiàkè?",
+    "ex_vn": "Mấy giờ bạn tan học?"
+  },
+  {
+    "hanzi": "见",
+    "pinyin": "jiàn",
+    "meaning": "gặp, thấy",
+    "lesson": "7",
+    "type": "động từ",
+    "ex_cn": "明天见。",
+    "ex_py": "Míngtiān jiàn.",
+    "ex_vn": "Ngày mai gặp lại."
+  },
+  {
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "meaning": "trợ từ (nhé, đi, thôi)",
+    "lesson": "7",
+    "type": "trợ từ ngữ khí",
+    "ex_cn": "我们去看电影吧。",
+    "ex_py": "Wǒmen qù kàn diànyǐng ba.",
+    "ex_vn": "Chúng mình đi xem phim đi."
+  },
+  {
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "meaning": "phim",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "你喜欢看电影吗？",
+    "ex_py": "Nǐ xǐhuan kàn diànyǐng ma?",
+    "ex_vn": "Bạn thích xem phim không?"
+  },
+  {
+    "hanzi": "电影院",
+    "pinyin": "diànyǐngyuàn",
+    "meaning": "rạp chiếu phim",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "我们在电影院见吧。",
+    "ex_py": "Wǒmen zài diànyǐngyuàn jiàn ba.",
+    "ex_vn": "Chúng ta gặp nhau ở rạp chiếu phim nhé."
+  },
+  {
+    "hanzi": "事",
+    "pinyin": "shì",
+    "meaning": "việc, chuyện",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "下午我有事儿了。",
+    "ex_py": "Xiàwǔ wǒ yǒu shìr le.",
+    "ex_vn": "Buổi chiều tôi có việc rồi."
+  },
+  {
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "meaning": "nửa, rưỡi",
+    "lesson": "7",
+    "type": "số từ",
+    "ex_cn": "我四点半下课。",
+    "ex_py": "Wǒ sì diǎn bàn xiàkè.",
+    "ex_vn": "Tôi tan học lúc 4 giờ rưỡi."
+  },
+  {
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "ở, tại",
+    "lesson": "7",
+    "type": "giới từ / động từ",
+    "ex_cn": "我在房间里看书。",
+    "ex_py": "Wǒ zài fángjiān lǐ kànshū.",
+    "ex_vn": "Tôi đang đọc sách trong phòng."
+  },
+  {
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "meaning": "bệnh viện",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "爸爸在医院工作。",
+    "ex_py": "Bàba zài yīyuàn gōngzuò.",
+    "ex_vn": "Bố làm việc ở bệnh viện."
+  },
+  {
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "meaning": "bác sĩ",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "我爸爸是医生。",
+    "ex_py": "Wǒ bàba shì yīshēng.",
+    "ex_vn": "Bố tôi là bác sĩ."
+  },
+  {
+    "hanzi": "店",
+    "pinyin": "diàn",
+    "meaning": "tiệm",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "我去店里买东西。",
+    "ex_py": "Wǒ qù diàn lǐ mǎi dōngxi.",
+    "ex_vn": "Tôi đi cửa hàng mua đồ."
+  },
+  {
+    "hanzi": "菜 / 蔬菜",
+    "pinyin": "cài / shūcài",
+    "meaning": "món ăn, rau",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "弟弟不喜欢吃蔬菜。",
+    "ex_py": "Dìdi bù xǐhuan chī shūcài.",
+    "ex_vn": "Em trai không thích ăn rau."
+  },
+  {
+    "hanzi": "后",
+    "pinyin": "hòu",
+    "meaning": "sau, sau khi",
+    "lesson": "7",
+    "type": "danh từ",
+    "ex_cn": "学校后有一家超市。",
+    "ex_py": "Xuéxiào hòu yǒu yì jiā chāoshì.",
+    "ex_vn": "Sau trường học có một siêu thị."
   },
   {
     "hanzi": "一些",
@@ -1398,136 +1588,6 @@
     "ex_py": "Wǒmen zài Xī'ān Fàndiàn chīfàn.",
     "ex_vn": "Chúng tôi ăn cơm ở nhà hàng Tây An.",
     "lesson": "0"
-  },
-  {
-    "hanzi": "吧",
-    "pinyin": "ba",
-    "meaning": "nhé, đi",
-    "lesson": "7",
-    "type": "Trợ từ",
-    "ex_cn": "走吧。",
-    "ex_py": "Zǒu ba.",
-    "ex_vn": "Đi thôi."
-  },
-  {
-    "hanzi": "半",
-    "pinyin": "bàn",
-    "meaning": "một nửa",
-    "lesson": "7",
-    "type": "Số từ",
-    "ex_cn": "现在七点半。",
-    "ex_py": "Xiànzài qī diǎn bàn.",
-    "ex_vn": "Bây giờ là bảy giờ rưỡi."
-  },
-  {
-    "hanzi": "店",
-    "pinyin": "diàn",
-    "meaning": "cửa hàng, tiệm",
-    "type": "Danh từ",
-    "ex_cn": "这家店很漂亮。",
-    "ex_py": "Zhè jiā diàn hěn piàoliang.",
-    "ex_vn": "Cửa hàng này rất đẹp.",
-    "lesson": "7"
-  },
-  {
-    "hanzi": "电影院",
-    "pinyin": "diànyǐngyuàn",
-    "meaning": "rạp chiếu phim",
-    "lesson": "7",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "我们在电影院看电影。",
-    "ex_py": "Wǒmen zài diànyǐngyuàn kàn diànyǐng.",
-    "ex_vn": "Chúng tôi xem phim ở rạp."
-  },
-  {
-    "hanzi": "分钟",
-    "pinyin": "fēnzhōng",
-    "meaning": "phút",
-    "lesson": "7",
-    "type": "Danh từ",
-    "ex_cn": "还有十分钟。",
-    "ex_py": "Hái yǒu shí fēnzhōng.",
-    "ex_vn": "Vẫn còn mười phút."
-  },
-  {
-    "hanzi": "上班",
-    "pinyin": "shàng bān",
-    "meaning": "đi làm",
-    "lesson": "7",
-    "type": "Động từ",
-    "ex_cn": "我去上班。",
-    "ex_py": "Wǒ qù shàngbān.",
-    "ex_vn": "Tôi đi làm."
-  },
-  {
-    "hanzi": "上课",
-    "pinyin": "shàngkè",
-    "meaning": "lên lớp",
-    "lesson": "7",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "我们每天八点开始上课。",
-    "ex_py": "Wǒmen měitiān bā diǎn kāishǐ shàngkè.",
-    "ex_vn": "Mỗi ngày chúng tôi bắt đầu vào lớp lúc 8 giờ."
-  },
-  {
-    "hanzi": "上午",
-    "pinyin": "shàngwǔ",
-    "meaning": "buổi sáng",
-    "lesson": "7",
-    "type": "Danh từ",
-    "ex_cn": "我每天上午九点上班。",
-    "ex_py": "Wǒ měitiān shàngwǔ jiǔ diǎn shàngbān.",
-    "ex_vn": "Tôi đi làm lúc 9 giờ sáng mỗi ngày."
-  },
-  {
-    "hanzi": "事",
-    "pinyin": "shì",
-    "meaning": "việc, chuyện",
-    "lesson": "7",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "你有什么事？",
-    "ex_py": "Nǐ yǒu shénme shì?",
-    "ex_vn": "Bạn có việc gì không?"
-  },
-  {
-    "hanzi": "下课",
-    "pinyin": "xiàkè",
-    "meaning": "tan học",
-    "lesson": "7",
-    "type": "Bổ sung 3.0",
-    "ex_cn": "下课以后，同学们一起去吃饭。",
-    "ex_py": "Xiàkè yǐhòu, tóngxuémen yìqǐ qù chīfàn.",
-    "ex_vn": "Sau khi tan học, các bạn cùng nhau đi ăn cơm."
-  },
-  {
-    "hanzi": "现在",
-    "pinyin": "xiànzài",
-    "meaning": "bây giờ, hiện tại",
-    "lesson": "7",
-    "type": "Giới từ",
-    "ex_cn": "现在是下午两点，我们开始上课。",
-    "ex_py": "Xiànzài shì xiàwǔ liǎng diǎn, wǒmen kāishǐ shàngkè.",
-    "ex_vn": "Bây giờ là hai giờ chiều, chúng ta bắt đầu học."
-  },
-  {
-    "hanzi": "下午",
-    "pinyin": "xiàwǔ",
-    "meaning": "buổi chiều",
-    "lesson": "7",
-    "type": "Danh từ",
-    "ex_cn": "今天下午我要去医院。",
-    "ex_py": "Jīntiān xiàwǔ wǒ yào qù yīyuàn.",
-    "ex_vn": "Chiều nay tôi phải đi bệnh viện."
-  },
-  {
-    "hanzi": "早上",
-    "pinyin": "zǎoshang",
-    "meaning": "buổi sáng",
-    "lesson": "7",
-    "type": "Danh từ",
-    "ex_cn": "今天早上。",
-    "ex_py": "Jīntiān zǎoshang.",
-    "ex_vn": "Sáng hôm nay."
   },
   {
     "hanzi": "胡医生",

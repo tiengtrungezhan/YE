@@ -1704,5 +1704,19 @@
     "pinyin": "tiáo",
     "meaning": "sợi, dải, cành cây",
     "mnemonic": "Dải cây (mộc 木) có cành lá rủ xuống bên dưới."
+  },
+  "吧": {
+    "strokes": 7,
+    "radical": "口",
+    "pinyin": "ba",
+    "meaning": "nhé, đi, thôi (trợ từ ngữ khí)",
+    "mnemonic": "Bộ Khẩu (口) bên cạnh chữ Ba (巴), dùng lời nói nhẹ nhàng để rủ rê, gợi ý."
+  },
+  "蔬": {
+    "strokes": 14,
+    "radical": "艹",
+    "pinyin": "shū",
+    "meaning": "rau",
+    "mnemonic": "Bộ Thảo (艹) ở trên chỉ loài thực vật, dưới là chữ Sơ (疏), chỉ các loại rau cỏ trồng làm thực phẩm."
   }
 }

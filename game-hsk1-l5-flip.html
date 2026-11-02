@@ -167,7 +167,8 @@
         };
 
         function speak(text) {
-            const utterance = new SpeechSynthesisUtterance(text);
+            const cleanText = text.includes('/') ? text.split('/')[0].trim() : text;
+            const utterance = new SpeechSynthesisUtterance(cleanText);
             utterance.lang = 'zh-CN';
             utterance.rate = 0.8;
             window.speechSynthesis.speak(utterance);
