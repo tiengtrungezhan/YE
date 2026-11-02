@@ -1718,5 +1718,236 @@
     "pinyin": "shū",
     "meaning": "rau",
     "mnemonic": "Bộ Thảo (艹) ở trên chỉ loài thực vật, dưới là chữ Sơ (疏), chỉ các loại rau cỏ trồng làm thực phẩm."
+  },
+  "房": {
+    "strokes": 8,
+    "radical": "户",
+    "pinyin": "fáng",
+    "meaning": "phòng, nhà",
+    "mnemonic": "Dưới mái nhà (hộ 户) có phương hướng (phương 方), tạo nên gian phòng ấm cúng."
+  },
+  "间": {
+    "strokes": 7,
+    "radical": "门",
+    "pinyin": "jiān",
+    "meaning": "gian, phòng, khoảng giữa",
+    "mnemonic": "Cánh cửa (môn 门) hé mở đón ánh sáng mặt trời (nhật 日), tức khoảng không gian bên trong."
+  },
+  "只": {
+    "strokes": 5,
+    "radical": "口",
+    "pinyin": "zhī",
+    "meaning": "con (lượng từ), chỉ",
+    "mnemonic": "Miệng (khẩu 口) trên hai nét bát (八), biểu thị một con vật hoặc cá thể riêng biệt."
+  },
+  "到": {
+    "strokes": 8,
+    "radical": "刂",
+    "pinyin": "dào",
+    "meaning": "đến, tới",
+    "mnemonic": "Đến nơi (chí 至) dùng dao (đao 刂) khắc ghi lại điểm mốc."
+  },
+  "穿": {
+    "strokes": 9,
+    "radical": "穴",
+    "pinyin": "chuān",
+    "meaning": "mặc, xỏ, xuyên qua",
+    "mnemonic": "Dưới hang động (huyệt 穴), nha (răng 牙) xuyên qua cắn xé. Mặc đồ giống như chui người qua hang."
+  },
+  "货": {
+    "strokes": 8,
+    "radical": "贝",
+    "pinyin": "huò",
+    "meaning": "hàng hoá, của cải",
+    "mnemonic": "Biến đổi (hóa 化) tài bảo/vỏ sò (bối 贝) thành hàng hóa trao đổi."
+  },
+  "斤": {
+    "strokes": 4,
+    "radical": "斤",
+    "pinyin": "jīn",
+    "meaning": "cân (0.5kg), rìu",
+    "mnemonic": "Hình dạng chiếc rìu dùng để đẽo gọt và làm quả cân đo lường."
+  },
+  "便": {
+    "strokes": 9,
+    "radical": "亻",
+    "pinyin": "biàn / pián",
+    "meaning": "tiện lợi, rẻ (trong 便宜)",
+    "mnemonic": "Người (nhân 亻) nói lời đổi mới (canh 更), giúp mọi việc trở nên thuận tiện, tiện lợi."
+  },
+  "售": {
+    "strokes": 11,
+    "radical": "口",
+    "pinyin": "shòu",
+    "meaning": "bán, bán hàng",
+    "mnemonic": "Chim nhỏ (chuy 隹) mở miệng (khẩu 口) hót để chào bán hàng."
+  },
+  "宜": {
+    "strokes": 8,
+    "radical": "宀",
+    "pinyin": "yí",
+    "meaning": "thích hợp, vừa phải, rẻ",
+    "mnemonic": "Dưới mái nhà (miên 宀) bày đồ thờ (thư thả 且), mọi việc đều tốt đẹp, thích hợp."
+  },
+  "件": {
+    "strokes": 6,
+    "radical": "亻",
+    "pinyin": "jiàn",
+    "meaning": "chiếc, bộ, kiện (quần áo, việc)",
+    "mnemonic": "Con người (nhân 亻) dùng sức chia đôi con bò (ngưu 牛) thành từng phần, từng kiện."
+  },
+  "道": {
+    "strokes": 12,
+    "radical": "辶",
+    "pinyin": "dào",
+    "meaning": "đường, đạo lý, biết (trong 知道)",
+    "mnemonic": "Thủ (đầu 首) đi trên con đường (quai xước 辶), vừa đi vừa suy ngẫm để thấu hiểu đạo lý, tri thức."
+  },
+  "知": {
+    "strokes": 8,
+    "radical": "矢",
+    "pinyin": "zhī",
+    "meaning": "biết, hiểu biết, tri thức",
+    "mnemonic": "Lời nói từ miệng (khẩu 口) nhanh và chuẩn xác như mũi tên (thỉ 矢), thể hiện sự hiểu biết sâu sắc."
+  },
+  "床": {
+    "strokes": 7,
+    "radical": "广",
+    "pinyin": "chuáng",
+    "meaning": "giường, cái giường",
+    "mnemonic": "Chiếc giường bằng gỗ (mộc 木) đặt dưới mái nhà rộng (quảng 广) để nằm nghỉ ngơi."
+  },
+  "正": {
+    "strokes": 5,
+    "radical": "一",
+    "pinyin": "zhèng",
+    "meaning": "đúng, chính, đang (chỉ hành động đang diễn ra)",
+    "mnemonic": "Một (nhất 一) nét dừng (chỉ 止) lại đúng nơi quy định, ngay thẳng chính trực."
+  },
+  "找": {
+    "strokes": 7,
+    "radical": "扌",
+    "pinyin": "zhǎo",
+    "meaning": "tìm kiếm, thối lại (tiền)",
+    "mnemonic": "Dùng bàn tay (thủ 扌) cầm vũ khí (qua 戈) đi tìm kiếm mục tiêu."
+  },
+  "雪": {
+    "strokes": 11,
+    "radical": "雨",
+    "pinyin": "xuě",
+    "meaning": "tuyết",
+    "mnemonic": "Dưới cơn mưa (vũ 雨) mùa đông, dùng chổi (kệ 彐) quét tuyết trắng đọng trên mặt đất."
+  },
+  "药": {
+    "strokes": 9,
+    "radical": "艹",
+    "pinyin": "yào",
+    "meaning": "thuốc",
+    "mnemonic": "Cây cỏ (thảo 艹) đem lại niềm vui (lạc 约/乐), chữa khỏi bệnh tật gọi là thuốc."
+  },
+  "司": {
+    "strokes": 5,
+    "radical": "口",
+    "pinyin": "sī",
+    "meaning": "quản lý, cơ quan (trong 公司)",
+    "mnemonic": "Một người đứng chỉ huy và mở miệng (khẩu 口) ban hành mệnh lệnh quản lý công việc."
+  },
+  "得": {
+    "strokes": 11,
+    "radical": "彳",
+    "pinyin": "dé / de",
+    "meaning": "được, thấy (trong 觉得)",
+    "mnemonic": "Đi bước ngắn (xích 彳) tìm mặt trời (nhật 日) và đo một thốn (thốn 寸), làm việc cần cù thì sẽ được kết quả."
+  },
+  "可": {
+    "strokes": 5,
+    "radical": "口",
+    "pinyin": "kě",
+    "meaning": "có thể, khả dĩ",
+    "mnemonic": "Miệng (khẩu 口) có thể nói lời thuận tai, biểu thị sự cho phép, tán thành."
+  },
+  "以": {
+    "strokes": 4,
+    "radical": "人",
+    "pinyin": "yǐ",
+    "meaning": "lấy, dùng, có thể (trong 可以)",
+    "mnemonic": "Dáng người cầm cái cày làm việc, biểu thị dựa vào, dùng vào việc gì."
+  },
+  "题": {
+    "strokes": 15,
+    "radical": "页",
+    "pinyin": "tí",
+    "meaning": "đề tài, vấn đề, câu hỏi",
+    "mnemonic": "Đứng dưới ánh mặt trời (nhật 日) đúng đắn (thị 是) suy nghĩ bằng đầu óc (hiệt 页) để giải quyết đề thi, câu hỏi."
+  },
+  "卖": {
+    "strokes": 8,
+    "radical": "十",
+    "pinyin": "mài",
+    "meaning": "bán, tiêu thụ",
+    "mnemonic": "Chữ thập (thập 十) trên chữ mãi (买 - mua), mang đồ mua về đi bán lại để kiếm lời."
+  },
+  "务": {
+    "strokes": 5,
+    "radical": "力",
+    "pinyin": "wù",
+    "meaning": "công việc, phục vụ (trong 服务)",
+    "mnemonic": "Dùng mâu giáo và ra sức lực (lực 力) làm nhiệm vụ, phục vụ."
+  },
+  "给": {
+    "strokes": 9,
+    "radical": "纟",
+    "pinyin": "gěi",
+    "meaning": "cho, tặng, đưa cho",
+    "mnemonic": "Dùng sợi tơ (mịch 纟) kết hợp (hợp 合) lại đem biếu tặng, đưa cho người khác."
+  },
+  "鸡": {
+    "strokes": 7,
+    "radical": "鸟",
+    "pinyin": "jī",
+    "meaning": "con gà",
+    "mnemonic": "Con chim/gia cầm (điểu 鸟) có nét chữ hữu (又), gáy sáng sớm chính là con gà."
+  },
+  "蛋": {
+    "strokes": 11,
+    "radical": "虫",
+    "pinyin": "dàn",
+    "meaning": "quả trứng",
+    "mnemonic": "Dưới chân (疋) sinh ra quả trứng nằm trên loài sâu bọ (trùng 虫), biểu thị trứng sinh nở."
+  },
+  "北": {
+    "strokes": 5,
+    "radical": "匕",
+    "pinyin": "běi",
+    "meaning": "hướng bắc, phía bắc",
+    "mnemonic": "Hai người ngồi quay lưng lại với nhau (bối 背) tránh gió lạnh từ phương bắc."
+  },
+  "京": {
+    "strokes": 8,
+    "radical": "亠",
+    "pinyin": "jīng",
+    "meaning": "kinh đô, thủ đô, to lớn",
+    "mnemonic": "Hình ảnh toà lầu cao lớn xây dựng trên gò đất cao tại kinh đô nguy nga."
+  },
+  "安": {
+    "strokes": 6,
+    "radical": "宀",
+    "pinyin": "ān",
+    "meaning": "an toàn, yên bình",
+    "mnemonic": "Dưới mái nhà (miên 宀) có người phụ nữ (nữ 女) chăm lo gia đình thì mọi sự đều yên ấm, bình an."
+  },
+  "场": {
+    "strokes": 6,
+    "radical": "土",
+    "pinyin": "chǎng",
+    "meaning": "sân, bãi, quảng trường",
+    "mnemonic": "Đất đai (thổ 土) rộng mở dưới ánh nắng mặt trời chiếu rọi (dương 𠃓), tạo thành khoảng sân bãi."
+  },
+  "接": {
+    "strokes": 11,
+    "radical": "扌",
+    "pinyin": "jiē",
+    "meaning": "đón, nhận, tiếp xúc",
+    "mnemonic": "Bàn tay (thủ 扌) vươn ra đón nhận người phụ nữ (thiếp 妾), biểu thị việc đón tiếp, nhận lấy."
   }
 }
