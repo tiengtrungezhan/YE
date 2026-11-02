@@ -226,28 +226,7 @@ body.home-page {
     align-items: center;
 }
 
-.home-header .brand-row {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.7rem;
-    margin-bottom: 0.1rem;
-}
 
-.home-header .header-mascot {
-    width: clamp(40px, 5.5vh, 55px);
-    height: clamp(40px, 5.5vh, 55px);
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    animation: mascotWiggle 3.2s infinite ease-in-out;
-    filter: drop-shadow(0 4px 8px rgba(138, 184, 197, 0.4));
-}
-
-@keyframes mascotWiggle {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-3px) rotate(-6deg); }
-    75% { transform: translateY(-2px) rotate(6deg); }
-}
 
 .home-header .logo {
     font-size: clamp(2.4rem, 3.6vw, 3.4rem);
