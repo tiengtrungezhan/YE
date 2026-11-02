@@ -237,21 +237,18 @@ body.home-page {
     color: var(--text-color);
     opacity: 0.9;
     letter-spacing: 0.8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.35rem;
+    text-align: center;
 }
 .home-header .tag-char {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     color: var(--primary-dark);
     font-weight: 700;
     font-size: 1.15em;
     background: rgba(165, 207, 218, 0.25);
     padding: 0 8px;
+    margin: 0 3px;
     border-radius: 8px;
+    vertical-align: middle;
 }
 
 /* 2. CENTER SECTION: 5 CARDS IN A SINGLE HORIZONTAL ROW */
