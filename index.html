@@ -5,91 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EZHAN - Từ Học Đến Hành | Tiếng Trung Pro</title>
     <meta name="description" content="EZHAN - Nền tảng học tiếng Trung qua trò chơi cực thú vị. Từ 学 đến 习, từ học đến hành.">
-    
-    
-    
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Floating background elements for extra "wow" */
-        .blob {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: var(--primary-color);
-            filter: blur(80px);
-            opacity: 0.2;
-            z-index: -1;
-            border-radius: 50%;
-        }
-        .blob-1 { top: -100px; left: -100px; }
-        .blob-2 { bottom: -100px; right: -100px; }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="home-page">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
-    <header>
+    <!-- 1. PHẦN TOP: Logo & Slogan -->
+    <header class="home-header">
         <div class="logo-container">
-            <div class="logo">EZHAN</div>
-            <div class="tagline">Từ <span>学</span> đến <span>习</span>, Từ học đến hành</div>
+            <h1 class="logo">EZHAN</h1>
+            <p class="tagline">Từ <span class="tag-char">学</span> đến <span class="tag-char">习</span>, từ học đến hành</p>
         </div>
     </header>
 
-    <main>
-        <div class="options-container">
+    <!-- 2. PHẦN Ở GIỮA: 5 Khung chọn xếp hàng ngang -->
+    <main class="home-main">
+        <div class="options-container home-grid-5">
+            <!-- 1. Vào game -->
             <a href="game.html" class="option-card" id="btn-game">
                 <div class="option-icon">
-                    <img src="mascot-game.png" alt="Game Icon">
+                    <img src="mascot-game.png" alt="Vào Game">
                 </div>
                 <div class="option-text">
                     <div class="option-title">Vào Game</div>
+                    <div class="option-desc">Trò chơi HSK 3.0</div>
                 </div>
             </a>
 
+            <!-- 2. Khoá học -->
+            <a href="course.html" class="option-card" id="btn-course">
+                <div class="option-icon">
+                    <img src="mascot-course.png" alt="Khoá Học">
+                </div>
+                <div class="option-text">
+                    <div class="option-title">Khoá Học</div>
+                    <div class="option-desc">Lộ trình bài bản</div>
+                </div>
+            </a>
+
+            <!-- 3. Tài liệu -->
+            <a href="tailieu.html" class="option-card" id="btn-docs">
+                <div class="option-icon">
+                    <img src="mascot-guide.png" alt="Tài Liệu">
+                </div>
+                <div class="option-text">
+                    <div class="option-title">Tài Liệu</div>
+                    <div class="option-desc">Học liệu & mẹo nhớ</div>
+                </div>
+            </a>
+
+            <!-- 4. Thi thử (Tạm khoá) -->
             <!-- [TẠM KHOÁ THI THỬ] Khi mở lại: đổi href="thi-thu-level.html", bỏ class "card-locked", onclick và thẻ lock-badge -->
             <a href="javascript:void(0)" class="option-card card-locked" id="btn-thi-thu" onclick="alert('Tính năng Thi Thử đang tạm khoá để cập nhật. Vui lòng quay lại sau nhé!')">
                 <div class="option-icon">
-                    <img src="mascot-test.png" alt="Test Icon" style="object-fit: cover; object-position: 40% center; width: 100%; height: 100%; border-radius: 20px;">
+                    <img src="mascot-test-square.png" alt="Thi Thử">
                 </div>
                 <div class="option-text">
                     <div class="option-title">Thi Thử</div>
+                    <div class="option-desc">Đề thi mô phỏng</div>
                     <span class="lock-badge">🔒 Tạm khoá</span>
                 </div>
             </a>
 
-            <a href="course.html" class="option-card" id="btn-course">
+            <!-- 5. Liên hệ -->
+            <a href="contact.html" class="option-card" id="btn-contact">
                 <div class="option-icon">
-                    <img src="mascot-course.png" alt="Course Icon">
-                </div>
-                <div class="option-text">
-                    <div class="option-title">Khoá Học</div>
-                </div>
-            </a>
-
-            <a href="tailieu.html" class="option-card" id="btn-docs">
-                <div class="option-icon">
-                    <img src="mascot-guide.png" alt="Docs Icon" style="object-fit: cover; object-position: center; width: 100%; height: 100%; border-radius: 20px;">
-                </div>
-                <div class="option-text">
-                    <div class="option-title">Tài liệu</div>
-                </div>
-            </a>
-
-            <a href="contact.html" class="option-card" id="btn-contact" style="grid-column: 1 / -1; max-width: 320px; justify-self: center; width: 100%;">
-                <div class="option-icon">
-                    <img src="mascot-contact.png" alt="Contact Icon">
+                    <img src="mascot-contact.png" alt="Liên Hệ">
                 </div>
                 <div class="option-text">
                     <div class="option-title">Liên Hệ</div>
+                    <div class="option-desc">Tư vấn & hỗ trợ</div>
                 </div>
             </a>
         </div>
     </main>
 
-    <footer style="padding: 2rem; text-align: center; opacity: 0.6; font-size: 0.9rem;">
-        &copy; 2026 EZHAN Team. All rights reserved.
+    <!-- 3. PHẦN BOT: Thông tin -->
+    <footer class="home-footer">
+        <div class="home-info-bar">
+            <div class="info-item info-about">
+                <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="info-details">
+                    <span class="info-label">EZHAN - Tiếng Trung Pro</span>
+                    <span class="info-sub">Học tiếng Trung chuẩn HSK 3.0 qua phản xạ & trò chơi tương tác</span>
+                </div>
+            </div>
+
+            <div class="info-divider"></div>
+
+            <div class="info-item info-contact">
+                <div class="info-icon"><i class="fas fa-headset"></i></div>
+                <div class="info-details">
+                    <span class="info-label">Hotline / Zalo: <a href="https://zalo.me/0818004397" target="_blank">081 800 4397</a></span>
+                    <span class="info-sub">Email: <a href="mailto:tiengtrungezhan@gmail.com">tiengtrungezhan@gmail.com</a></span>
+                </div>
+            </div>
+
+            <div class="info-divider"></div>
+
+            <div class="info-item info-social">
+                <div class="social-mini-links">
+                    <a href="https://www.facebook.com/tiengtrungezhan.edu.vn" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@chang.chang334" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@EZHANTIẾNGTRUNG" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <span class="info-copy">&copy; 2026 EZHAN Team. All rights reserved.</span>
+            </div>
+        </div>
     </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
